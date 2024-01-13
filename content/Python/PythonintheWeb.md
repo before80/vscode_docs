@@ -16,13 +16,13 @@ draft = false
 
 We are happy to announce **experimental** support for running Python code on the Web. To try it out, install the latest pre-release version of the [Experimental - Python for the Web](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-python-web-wasm) extension from the Marketplace. This work is based on WASM in Python, which is currently in development. To learn more about how it works and the ongoing progress, you can read [Compiling Python to WebAssembly (WASM)](https://pythondev.readthedocs.io/wasm.html).
 
-&zeroWidthSpace;我们很高兴地宣布对在 Web 上运行 Python 代码的实验性支持。要试用它，请从 Marketplace 安装最新预发布版本的实验性 - Python for the Web 扩展。这项工作基于 Python 中的 WASM，目前正在开发中。要详细了解其工作原理和正在进行的进度，您可以阅读将 Python 编译到 WebAssembly (WASM)。
+​​​	我们很高兴地宣布对在 Web 上运行 Python 代码的实验性支持。要试用它，请从 Marketplace 安装最新预发布版本的实验性 - Python for the Web 扩展。这项工作基于 Python 中的 WASM，目前正在开发中。要详细了解其工作原理和正在进行的进度，您可以阅读将 Python 编译到 WebAssembly (WASM)。
 
 ## [Prerequisites 先决条件](https://code.visualstudio.com/docs/python/python-web#_prerequisites)
 
 The following prerequisites are needed to use the extension:
 
-&zeroWidthSpace;使用该扩展需要以下先决条件：
+​​​	使用该扩展需要以下先决条件：
 
 - You need to have the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub) extension installed.
   您需要安装 GitHub 存储库扩展。
@@ -41,7 +41,7 @@ The following prerequisites are needed to use the extension:
 
 The screenshot below shows the execution of a simple Python program in the browser. The program consists of two files `app.py` and `hello.py` stored on the local file system.
 
-&zeroWidthSpace;下图显示了在浏览器中执行一个简单的 Python 程序。该程序由存储在本地文件系统上的两个文件 `app.py` 和 `hello.py` 组成。
+​​​	下图显示了在浏览器中执行一个简单的 Python 程序。该程序由存储在本地文件系统上的两个文件 `app.py` 和 `hello.py` 组成。
 
 ![Execution of Python code stored on a local disk](./PythonintheWeb_img/execution-local-files.png)
 
@@ -49,7 +49,7 @@ The screenshot below shows the execution of a simple Python program in the brows
 
 The extension comes with an integrated Python REPL. To activate it, run the command **Python WASM: Start REPL**.
 
-&zeroWidthSpace;该扩展附带一个集成的 Python REPL。要激活它，请运行命令 Python WASM：启动 REPL。
+​​​	该扩展附带一个集成的 Python REPL。要激活它，请运行命令 Python WASM：启动 REPL。
 
 ![Start Python Repl](./PythonintheWeb_img/repl.png)
 
@@ -57,7 +57,7 @@ The extension comes with an integrated Python REPL. To activate it, run the comm
 
 There is support for debugging Python files on the Web and it uses the same UI as VS Code Desktop [debugging](https://code.visualstudio.com/docs/python/debugging). The features currently supported are:
 
-&zeroWidthSpace;支持在 Web 上调试 Python 文件，并且它使用与 VS Code 桌面调试相同的 UI。当前支持的功能有：
+​​​	支持在 Web 上调试 Python 文件，并且它使用与 VS Code 桌面调试相同的 UI。当前支持的功能有：
 
 - Set breakpoints
   设置断点
@@ -72,7 +72,7 @@ There is support for debugging Python files on the Web and it uses the same UI a
 
 The screenshot below shows an active debug session. The files are hosted directly on GitHub on this [sample repository](https://github.com/dbaeumer/python-sample).
 
-&zeroWidthSpace;下图显示了一个活动的调试会话。这些文件直接托管在 GitHub 上的此示例存储库中。
+​​​	下图显示了一个活动的调试会话。这些文件直接托管在 GitHub 上的此示例存储库中。
 
 ![Debugging a Python program](./PythonintheWeb_img/debug.png)
 
@@ -80,23 +80,23 @@ The screenshot below shows an active debug session. The files are hosted directl
 
 The extension uses a pre-configured Python environment based on the [CPython WebAssembly builds](https://github.com/tiran/cpython-wasm-test/releases). The build used is `Python-3.11.0-wasm32-wasi-16.zip`.
 
-&zeroWidthSpace;该扩展使用基于 CPython WebAssembly 构建的预配置 Python 环境。使用的构建是 `Python-3.11.0-wasm32-wasi-16.zip` 。
+​​​	该扩展使用基于 CPython WebAssembly 构建的预配置 Python 环境。使用的构建是 `Python-3.11.0-wasm32-wasi-16.zip` 。
 
 You can create your own Python environment, including source wheel Python packages, following these steps:
 
-&zeroWidthSpace;您可以按照以下步骤创建自己的 Python 环境，包括源轮 Python 包：
+​​​	您可以按照以下步骤创建自己的 Python 环境，包括源轮 Python 包：
 
 - Create a new GitHub repository.
 
-  &zeroWidthSpace;创建一个新的 GitHub 存储库。
+  ​​​	创建一个新的 GitHub 存储库。
 
 - Download a wasm-wasi-16 build from [cpython-wasm-test/releases](https://github.com/tiran/cpython-wasm-test/releases) and expand it into the root of the repository.
 
-  &zeroWidthSpace;从 cpython-wasm-test/releases 下载 wasm-wasi-16 构建，并将其展开到存储库的根目录中。
+  ​​​	从 cpython-wasm-test/releases 下载 wasm-wasi-16 构建，并将其展开到存储库的根目录中。
 
 - To add source wheel packages, do the following:
 
-  &zeroWidthSpace;要添加源轮包，请执行以下操作：
+  ​​​	要添加源轮包，请执行以下操作：
 
   - Create a `site-packages` folder in the root.
     在根目录中创建一个 `site-packages` 文件夹。
@@ -105,11 +105,11 @@ You can create your own Python environment, including source wheel Python packag
 
 - Commit the changes.
 
-  &zeroWidthSpace;提交更改。
+  ​​​	提交更改。
 
 - Change the `python.wasm.runtime` setting to point to your GitHub repository. For example:
 
-  &zeroWidthSpace;将 `python.wasm.runtime` 设置更改为指向您的 GitHub 存储库。例如：
+  ​​​	将 `python.wasm.runtime` 设置更改为指向您的 GitHub 存储库。例如：
 
   ```
   {
@@ -121,7 +121,7 @@ You can create your own Python environment, including source wheel Python packag
 
 The Python for the Web support doesn't provide all the features available when running source code on your local machine. The major limitations in the Python interpreter are:
 
-&zeroWidthSpace;Python for the Web 支持不提供在本地计算机上运行源代码时可用的所有功能。Python 解释器中的主要限制是：
+​​​	Python for the Web 支持不提供在本地计算机上运行源代码时可用的所有功能。Python 解释器中的主要限制是：
 
 - No socket support.
   不支持套接字。
@@ -136,10 +136,10 @@ The Python for the Web support doesn't provide all the features available when r
 
 The work would have not been possible without the support of the Python community, who are building and maintaining the necessary WASM files of CPython.
 
-&zeroWidthSpace;如果没有 Python 社区构建和维护 CPython 的必要 WASM 文件，这项工作是不可能完成的。
+​​​	如果没有 Python 社区构建和维护 CPython 的必要 WASM 文件，这项工作是不可能完成的。
 
 ## [Feedback 反馈](https://code.visualstudio.com/docs/python/python-web#_feedback)
 
 If you run into issues while using the Python for the Web extension, you can enter issues in the [vscode-python-web-wasm](https://github.com/microsoft/vscode-python-web-wasm) repository.
 
-&zeroWidthSpace;如果您在使用 Python for the Web 扩展时遇到问题，可以在 vscode-python-web-wasm 存储库中输入问题。
+​​​	如果您在使用 Python for the Web 扩展时遇到问题，可以在 vscode-python-web-wasm 存储库中输入问题。

@@ -16,11 +16,11 @@ draft = false
 
 The [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extension pack contains a rich set of extensions that make it easy to discover and interact with the cloud services that power your Java applications.
 
-&zeroWidthSpace;Azure 工具扩展包包含一组丰富的扩展，可轻松发现和交互为 Java 应用程序提供支持的云服务。
+​​​	Azure 工具扩展包包含一组丰富的扩展，可轻松发现和交互为 Java 应用程序提供支持的云服务。
 
 The extension pack supports the following development workflows:
 
-&zeroWidthSpace;扩展包支持以下开发工作流：
+​​​	扩展包支持以下开发工作流：
 
 - Deploy Java applications (including containers) to [Azure App Service](https://azure.microsoft.com/services/app-service).
   将 Java 应用程序（包括容器）部署到 Azure App Service。
@@ -33,13 +33,13 @@ The extension pack supports the following development workflows:
 
 If you are interested in a specific Azure service, you can also directly search for it on the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/VSCode) to see if there's an available extension.
 
-&zeroWidthSpace;如果您对某个特定的 Azure 服务感兴趣，您还可以在 Visual Studio Code Marketplace 上直接搜索它，以查看是否有可用的扩展。
+​​​	如果您对某个特定的 Azure 服务感兴趣，您还可以在 Visual Studio Code Marketplace 上直接搜索它，以查看是否有可用的扩展。
 
 ## [Deployment tutorials 部署教程](https://code.visualstudio.com/docs/java/java-on-azure#_deployment-tutorials)
 
 The following tutorials below walk you through the details. You can also check the [Java Azure Developer's Center](https://learn.microsoft.com/azure/developer/java) for all things on Azure for Java developers.
 
-&zeroWidthSpace;以下教程将详细介绍这些内容。您还可以查看 Java Azure 开发人员中心，了解 Java 开发人员在 Azure 上的所有内容。
+​​​	以下教程将详细介绍这些内容。您还可以查看 Java Azure 开发人员中心，了解 Java 开发人员在 Azure 上的所有内容。
 
 | Tutorial 教程                                                | Description 说明                                             | Related Tools 相关工具                                       |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |

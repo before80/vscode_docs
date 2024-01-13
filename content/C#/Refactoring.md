@@ -16,7 +16,7 @@ draft = false
 
 Visual Studio Code gives you many ways to refactor your source code as well as Quick Fixes to generate code and fix issues while you're coding. To access them, click on the 'light bulb' icon that appears or use the command **Quick Fix** command Ctrl+. to display a list of Quick Fixes and refactoring options. You can also right-click the editor and select **Refactor** Ctrl+Shift+R to only display refactoring options.
 
-&zeroWidthSpace;Visual Studio Code 为您提供了多种重构源代码的方法，以及快速修复功能，以便在您编码时生成代码并修复问题。若要访问它们，请单击出现的“灯泡”图标或使用命令快速修复命令 Ctrl+. 以显示快速修复和重构选项的列表。您还可以右键单击编辑器并选择重构 Ctrl+Shift+R，以仅显示重构选项。
+​​​	Visual Studio Code 为您提供了多种重构源代码的方法，以及快速修复功能，以便在您编码时生成代码并修复问题。若要访问它们，请单击出现的“灯泡”图标或使用命令快速修复命令 Ctrl+. 以显示快速修复和重构选项的列表。您还可以右键单击编辑器并选择重构 Ctrl+Shift+R，以仅显示重构选项。
 
 ## [Supported refactorings and Quick Fixes 支持的重构和快速修复](https://code.visualstudio.com/docs/csharp/refactoring#_supported-refactorings-and-quick-fixes)
 
@@ -121,11 +121,11 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Adds `await` keyword to a function call.
 
-&zeroWidthSpace;操作：向函数调用添加 `await` 关键字。
+​​​	操作：向函数调用添加 `await` 关键字。
 
 **When:** When you're calling a function within an asynchronous method.
 
-&zeroWidthSpace;时机：在异步方法中调用函数时。
+​​​	时机：在异步方法中调用函数时。
 
 **How-to:
 操作方法：**
@@ -143,15 +143,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Generate a new constructor with parameters based on selected class members.
 
-&zeroWidthSpace;操作：根据所选类成员生成带参数的新构造函数。
+​​​	操作：根据所选类成员生成带参数的新构造函数。
 
 **When:** You introduce a new constructor and want to properly declare it automatically with all the correct parameters.
 
-&zeroWidthSpace;时机：引入新构造函数并希望自动正确声明所有参数时。
+​​​	时机：引入新构造函数并希望自动正确声明所有参数时。
 
 **Why:** You could declare the constructor before using it, however this feature generates it automatically.
 
-&zeroWidthSpace;原因：您可以在使用构造函数之前声明它，但此功能会自动生成它。
+​​​	原因：您可以在使用构造函数之前声明它，但此功能会自动生成它。
 
 **How-to:
 操作方法：**
@@ -169,15 +169,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** The [DebuggerDisplay Attribute](https://learn.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute?view=vs-2022) controls how an object, property, or field is displayed in the debugger variable windows.
 
-&zeroWidthSpace;作用：DebuggerDisplay 特性控制对象、属性或字段在调试器变量窗口中的显示方式。
+​​​	作用：DebuggerDisplay 特性控制对象、属性或字段在调试器变量窗口中的显示方式。
 
 **When:** You want to [pin properties](https://learn.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor?view=vs-2022#pin-properties-in-data-tips) within the debugger programmatically in your code.
 
-&zeroWidthSpace;时机：您希望在代码中以编程方式在调试器中固定属性。
+​​​	时机：您希望在代码中以编程方式在调试器中固定属性。
 
 **Why:** Pinning properties allows you to quickly inspect objects by their properties by bubbling up that property to the top of the object's property list within the debugger.
 
-&zeroWidthSpace;原因：固定属性允许您通过将该属性冒泡到调试器中对象属性列表的顶部，从而按属性快速检查对象。
+​​​	原因：固定属性允许您通过将该属性冒泡到调试器中对象属性列表的顶部，从而按属性快速检查对象。
 
 **How-to:
 操作方法：**
@@ -195,15 +195,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Lets you automatically add an explicit cast to an expression, based on usage.
 
-&zeroWidthSpace;作用：允许您根据用法自动将显式强制转换添加到表达式。
+​​​	作用：允许您根据用法自动将显式强制转换添加到表达式。
 
 **When:** You need to add an explicit cast to an expression and want to properly assign it automatically.
 
-&zeroWidthSpace;何时：您需要向表达式添加显式强制转换并希望自动正确地分配它。
+​​​	何时：您需要向表达式添加显式强制转换并希望自动正确地分配它。
 
 **Why:** You could add an explicit cast to an expression manually, however this feature adds it automatically based on the code context.
 
-&zeroWidthSpace;原因：您可以手动向表达式添加显式强制转换，但是此功能会根据代码上下文自动添加它。
+​​​	原因：您可以手动向表达式添加显式强制转换，但是此功能会根据代码上下文自动添加它。
 
 **How-to:
 操作方法：**
@@ -219,15 +219,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Add file headers to existing files, projects, and solutions using an [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
 
-&zeroWidthSpace;内容：使用 EditorConfig 向现有文件、项目和解决方案添加文件头。
+​​​	内容：使用 EditorConfig 向现有文件、项目和解决方案添加文件头。
 
 **When:** You want to easily add a file header to files, projects, and solutions.
 
-&zeroWidthSpace;何时：您希望轻松地向文件、项目和解决方案添加文件头。
+​​​	何时：您希望轻松地向文件、项目和解决方案添加文件头。
 
 **Why:** Your team requires you to include a file header for copyright purposes.
 
-&zeroWidthSpace;原因：您的团队要求您出于版权目的包含文件头。
+​​​	原因：您的团队要求您出于版权目的包含文件头。
 
 **How-to:
 操作方法：**
@@ -249,15 +249,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Lets you immediately add the necessary imports or using directives for copy-and-pasted code.
 
-&zeroWidthSpace;作用：可立即为复制粘贴的代码添加必要的 import 或 using 指令。
+​​​	作用：可立即为复制粘贴的代码添加必要的 import 或 using 指令。
 
 **When:** It's common practice to copy code from different places in your project or other sources and paste it in to new code. This Quick Action finds missing imports directives for copy-and-pasted code and then prompts you to add them. This code fix can also add references from project to project.
 
-&zeroWidthSpace;时机：通常做法是从项目或其他源的不同位置复制代码，然后将其粘贴到新代码中。此快速操作可查找复制粘贴的代码中缺少的 import 指令，然后提示您添加它们。此代码修复还可以添加项目之间的引用。
+​​​	时机：通常做法是从项目或其他源的不同位置复制代码，然后将其粘贴到新代码中。此快速操作可查找复制粘贴的代码中缺少的 import 指令，然后提示您添加它们。此代码修复还可以添加项目之间的引用。
 
 **Why:** Because the Quick Action automatically adds necessary imports, you don't need to manually copy the using directives that your code needs.
 
-&zeroWidthSpace;原因：因为快速操作会自动添加必要的导入，您无需手动复制代码所需的 using 指令。
+​​​	原因：因为快速操作会自动添加必要的导入，您无需手动复制代码所需的 using 指令。
 
 **How-to:
 操作方法：**
@@ -275,11 +275,11 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Append a named argument to the specified parameter value in a function call.
 
-&zeroWidthSpace;内容：在函数调用中将命名参数追加到指定的参数值。
+​​​	内容：在函数调用中将命名参数追加到指定的参数值。
 
 **When:** If you have a method with a lot of parameters, you can add named arguments to make your code more readable.
 
-&zeroWidthSpace;何时：如果您有一个包含大量参数的方法，则可以添加命名参数以使代码更具可读性。
+​​​	何时：如果您有一个包含大量参数的方法，则可以添加命名参数以使代码更具可读性。
 
 **How-to:
 操作方法：**
@@ -297,15 +297,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Convert an anonymous type to class.
 
-&zeroWidthSpace;用途：将匿名类型转换为类。
+​​​	用途：将匿名类型转换为类。
 
 **When:** You have an anonymous type that you want to continue to build on in a class.
 
-&zeroWidthSpace;时机：当您有一个匿名类型并希望在类中继续构建它时。
+​​​	时机：当您有一个匿名类型并希望在类中继续构建它时。
 
 **Why:** Anonymous types are useful if you're only using them locally. As your code grows, it's nice to have an easy way to promote them to a class.
 
-&zeroWidthSpace;原因：如果您仅在本地使用匿名类型，它们非常有用。随着代码的增长，最好有一种简单的方法将它们提升为类。
+​​​	原因：如果您仅在本地使用匿名类型，它们非常有用。随着代码的增长，最好有一种简单的方法将它们提升为类。
 
 **How-to:
 操作方法：**
@@ -323,15 +323,15 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 **What:** Convert between an auto-implemented property to a full property.
 
-&zeroWidthSpace;内容：在自动实现的属性和完整属性之间转换。
+​​​	内容：在自动实现的属性和完整属性之间转换。
 
 **When:** The logic of the property has changed.
 
-&zeroWidthSpace;时机：属性的逻辑已更改。
+​​​	时机：属性的逻辑已更改。
 
 **Why:** You can convert between an auto-implemented property to a full property manually, however this feature will automatically do the work for you.
 
-&zeroWidthSpace;原因：您可以手动在自动实现的属性和完整属性之间转换，但是此功能会自动为您完成这项工作。
+​​​	原因：您可以手动在自动实现的属性和完整属性之间转换，但是此功能会自动为您完成这项工作。
 
 **How-to:
 操作方法：**
@@ -345,13 +345,13 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 Select **Convert to full property.**
 
-&zeroWidthSpace;选择转换为完整属性。
+​​​	选择转换为完整属性。
 
 ![Convert to full property example](./Refactoring_img/convert-to-full-property.png)
 
 Select **Use auto property.**
 
-&zeroWidthSpace;选择使用自动属性。
+​​​	选择使用自动属性。
 
 ![Use auto property example](./Refactoring_img/use-auto-property.png)
 
@@ -359,11 +359,11 @@ Select **Use auto property.**
 
 **What:** Convert a variable between a regular cast and a try cast using the `as` keyword.
 
-&zeroWidthSpace;内容：使用 `as` 关键字在常规强制转换和尝试强制转换之间转换变量。
+​​​	内容：使用 `as` 关键字在常规强制转换和尝试强制转换之间转换变量。
 
 **When:** When you expect the cast to fail under certain scenarios (`as`) or if you never expect the cast to fail (direct cast).
 
-&zeroWidthSpace;时机：当您希望强制转换在某些情况下失败（ `as` ）或您从不希望强制转换失败（直接强制转换）时。
+​​​	时机：当您希望强制转换在某些情况下失败（ `as` ）或您从不希望强制转换失败（直接强制转换）时。
 
 **How-to:
 操作方法：**
@@ -377,13 +377,13 @@ Select **Use auto property.**
 
 Select **Change to cast**.
 
-&zeroWidthSpace;选择“更改为强制转换”。
+​​​	选择“更改为强制转换”。
 
 ![Change to cast example](./Refactoring_img/change-to-cast.png)
 
 Select **Change to `as` expression.**
 
-&zeroWidthSpace;选择“更改为 `as` 表达式”。
+​​​	选择“更改为 `as` 表达式”。
 
 ![Change to  expression example](./Refactoring_img/change-to-as-expression.png)
 
@@ -391,11 +391,11 @@ Select **Change to `as` expression.**
 
 **What:** If you have a [for](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/for) loop in your code, you can use this refactoring to convert it to a [foreach](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/foreach-in) statement.
 
-&zeroWidthSpace;内容：如果您在代码中有一个 for 循环，您可以使用此重构将其转换为 foreach 语句。
+​​​	内容：如果您在代码中有一个 for 循环，您可以使用此重构将其转换为 foreach 语句。
 
 **Why:** Reasons you might want to convert a for loop to a foreach statement include:
 
-&zeroWidthSpace;原因：您可能希望将 for 循环转换为 foreach 语句的原因包括：
+​​​	原因：您可能希望将 for 循环转换为 foreach 语句的原因包括：
 
 - You don't use the local loop variable inside the loop except as an index to access items.
   您在循环中不使用局部循环变量，除了用作访问项的索引。
@@ -404,7 +404,7 @@ Select **Change to `as` expression.**
 
 Reasons you might want to convert a foreach statement to a for loop include:
 
-&zeroWidthSpace;您可能希望将 foreach 语句转换为 for 循环的原因包括：
+​​​	您可能希望将 foreach 语句转换为 for 循环的原因包括：
 
 - You want to use the local loop variable inside the loop for more than just accessing the item.
   您希望在循环中使用局部循环变量，而不仅仅是访问项。
@@ -423,13 +423,13 @@ Reasons you might want to convert a foreach statement to a for loop include:
 
 Select **Convert to `for`**.
 
-&zeroWidthSpace;选择转换为 `for` 。
+​​​	选择转换为 `for` 。
 
 ![Convert to  example](./Refactoring_img/convert-to-for.png)
 
 Select **Convert to `foreach`**.
 
-&zeroWidthSpace;选择转换为 `foreach` 。
+​​​	选择转换为 `foreach` 。
 
 ![Convert to ](./Refactoring_img/convert-to-foreach.png)
 
@@ -439,11 +439,11 @@ Select **Convert to `foreach`**.
 
 **What:** Lets you convert a Get method into a property (and optionally your Set method).
 
-&zeroWidthSpace;内容：允许您将 Get 方法转换为属性（还可以选择 Set 方法）。
+​​​	内容：允许您将 Get 方法转换为属性（还可以选择 Set 方法）。
 
 **When:** You have a Get method that does not contain any logic.
 
-&zeroWidthSpace;时机：您有一个不包含任何逻辑的 Get 方法。
+​​​	时机：您有一个不包含任何逻辑的 Get 方法。
 
 **How-to:
 操作方法：**
@@ -461,11 +461,11 @@ Select **Convert to `foreach`**.
 
 **What:** Lets you convert a property to a Get method
 
-&zeroWidthSpace;作用：允许您将属性转换为获取方法
+​​​	作用：允许您将属性转换为获取方法
 
 **When:** You have a property that involves more than immediately setting and getting a value
 
-&zeroWidthSpace;时机：您有一个属性，它涉及的不仅仅是立即设置和获取值
+​​​	时机：您有一个属性，它涉及的不仅仅是立即设置和获取值
 
 **How-to:
 操作方法：**
@@ -483,15 +483,15 @@ Select **Convert to `foreach`**.
 
 **What:** Convert an `if` statement to a [switch statement](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/switch) or to the C# 8.0 [switch expression](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-8#switch-expressions).
 
-&zeroWidthSpace;作用：将 `if` 语句转换为 switch 语句或 C# 8.0 switch 表达式。
+​​​	作用：将 `if` 语句转换为 switch 语句或 C# 8.0 switch 表达式。
 
 **When:** You want to convert an `if` statement to a `switch` statement or a `switch` expression and vice versa.
 
-&zeroWidthSpace;何时：您想将 `if` 语句转换为 `switch` 语句或 `switch` 表达式，反之亦然。
+​​​	何时：您想将 `if` 语句转换为 `switch` 语句或 `switch` 表达式，反之亦然。
 
 **Why:** If you are using an `if` statement, this refactoring enables an easy transition to switch statements or switch expressions.
 
-&zeroWidthSpace;原因：如果您正在使用 `if` 语句，此重构可轻松转换到 switch 语句或 switch 表达式。
+​​​	原因：如果您正在使用 `if` 语句，此重构可轻松转换到 switch 语句或 switch 表达式。
 
 **How-to:
 操作方法：**
@@ -505,19 +505,19 @@ Select **Convert to `foreach`**.
 
 Select **Convert to `switch` statement**.
 
-&zeroWidthSpace;选择转换为 `switch` 语句。
+​​​	选择转换为 `switch` 语句。
 
 ![Convert to  statement example](./Refactoring_img/convert-to-switch-statement.png)
 
 Select **Convert to `switch` expression**.
 
-&zeroWidthSpace;选择转换为 `switch` 表达式。
+​​​	选择转换为 `switch` 表达式。
 
 ![Convert to  expression example](./Refactoring_img/convert-to-switch-expression.png)
 
 Select **Convert to `if` statement**.
 
-&zeroWidthSpace;选择转换为 `if` 语句。
+​​​	选择转换为 `if` 语句。
 
 ![Convert to  statement example](./Refactoring_img/convert-to-if-statement.png)
 
@@ -525,15 +525,15 @@ Select **Convert to `if` statement**.
 
 **What:** Lets you convert between regular string and verbatim string literals.
 
-&zeroWidthSpace;内容：允许您在常规字符串和原义字符串文本之间进行转换。
+​​​	内容：允许您在常规字符串和原义字符串文本之间进行转换。
 
 **When:** You either want to save space or provide more clarity in your code.
 
-&zeroWidthSpace;时机：当您想要节省空间或在代码中提供更多清晰度时。
+​​​	时机：当您想要节省空间或在代码中提供更多清晰度时。
 
 **Why:** Converting a verbatim string literal to a regular string literal can help save space. Converting a regular string literal to a verbatim string literal can provide more clarity.
 
-&zeroWidthSpace;原因：将原义字符串文本转换为常规字符串文本有助于节省空间。将常规字符串文本转换为原义字符串文本可以提供更多清晰度。
+​​​	原因：将原义字符串文本转换为常规字符串文本有助于节省空间。将常规字符串文本转换为原义字符串文本可以提供更多清晰度。
 
 **How-to:
 操作方法：**
@@ -547,21 +547,21 @@ Select **Convert to `if` statement**.
 
 Select **Convert to regular string**.
 
-&zeroWidthSpace;选择转换为常规字符串。
+​​​	选择转换为常规字符串。
 
 Select **Convert to verbatim string**.
 
-&zeroWidthSpace;选择转换为原义字符串。
+​​​	选择转换为原义字符串。
 
 ## [Convert class to record 将类转换为记录](https://code.visualstudio.com/docs/csharp/refactoring#_convert-class-to-record)
 
 **What:** Convert your class to a C# record.
 
-&zeroWidthSpace;内容：将类转换为 C# 记录。
+​​​	内容：将类转换为 C# 记录。
 
 **When:** When you want to quickly change your class to a record, which is tailored for storing data and immutability.
 
-&zeroWidthSpace;时机：当您想快速将类更改为记录时，记录专为存储数据和不可变性而设计。
+​​​	时机：当您想快速将类更改为记录时，记录专为存储数据和不可变性而设计。
 
 **How-to:
 操作方法：**
@@ -581,15 +581,15 @@ Select **Convert to verbatim string**.
 
 **What:** Convert a local function to a method.
 
-&zeroWidthSpace;内容：将局部函数转换为方法。
+​​​	内容：将局部函数转换为方法。
 
 **When:** You have a local function that you want to define outside your current local context.
 
-&zeroWidthSpace;时机：您有一个局部函数，您想在当前局部上下文之外定义它。
+​​​	时机：您有一个局部函数，您想在当前局部上下文之外定义它。
 
 **Why:** You want to convert a local function into a method so that you can call it outside your local context. You might want to convert to a method when your local function is getting too long. When you define the function in a separate method, your code is easier to read.
 
-&zeroWidthSpace;原因：您想将局部函数转换为方法，以便可以在局部上下文之外调用它。当局部函数过长时，您可能需要转换为方法。当您在单独的方法中定义函数时，代码更易于阅读。
+​​​	原因：您想将局部函数转换为方法，以便可以在局部上下文之外调用它。当局部函数过长时，您可能需要转换为方法。当您在单独的方法中定义函数时，代码更易于阅读。
 
 **How-to:
 操作方法：**
@@ -607,11 +607,11 @@ Select **Convert to verbatim string**.
 
 **What:** Convert a number between a hexadecimal, binary, or decimal number.
 
-&zeroWidthSpace;用途：在十六进制、二进制或十进制数字之间转换数字。
+​​​	用途：在十六进制、二进制或十进制数字之间转换数字。
 
 **When:** Use when you want to automatically convert a number to the desired base without having to manually calculate the conversion.
 
-&zeroWidthSpace;时机：当您想要自动将数字转换为所需进制而不必手动计算转换时使用。
+​​​	时机：当您想要自动将数字转换为所需进制而不必手动计算转换时使用。
 
 **How-to:
 操作方法：**
@@ -625,19 +625,19 @@ Select **Convert to verbatim string**.
 
 Select **Convert to decimal**.
 
-&zeroWidthSpace;选择转换为十进制。
+​​​	选择转换为十进制。
 
 ![Convert to decimal example](./Refactoring_img/convert-numeric-literal-to-decimal.png)
 
 Select **Convert to hex**.
 
-&zeroWidthSpace;选择转换为十六进制。
+​​​	选择转换为十六进制。
 
 ![Convert to hex example](./Refactoring_img/convert-numeric-literal-to-hex.png)
 
 Select **Convert to binary**.
 
-&zeroWidthSpace;选择转换为二进制。
+​​​	选择转换为二进制。
 
 ![Convert to binary example](./Refactoring_img/convert-numeric-literal-to-binary.png)
 
@@ -645,15 +645,15 @@ Select **Convert to binary**.
 
 **What:** Convert a `String.Format` formatted result string (or placeholder) to an interpolated string.
 
-&zeroWidthSpace;内容：将 `String.Format` 格式的结果字符串（或占位符）转换为插值字符串。
+​​​	内容：将 `String.Format` 格式的结果字符串（或占位符）转换为插值字符串。
 
 **When:** Use when you want to an interpolated string quickly.
 
-&zeroWidthSpace;时机：当您想快速获得插值字符串时使用。
+​​​	时机：当您想快速获得插值字符串时使用。
 
 **Why:** Interpolated strings can give you a more readable version of `String.Format` and can let you access your variable name directly.
 
-&zeroWidthSpace;原因：插值字符串可以为您提供更具可读性的 `String.Format` 版本，并且可以直接访问您的变量名。
+​​​	原因：插值字符串可以为您提供更具可读性的 `String.Format` 版本，并且可以直接访问您的变量名。
 
 **How-to:
 操作方法：**
@@ -671,11 +671,11 @@ Select **Convert to binary**.
 
 **What:** Change a regular string to an interpolated string.
 
-&zeroWidthSpace;作用：将常规字符串更改为插值字符串。
+​​​	作用：将常规字符串更改为插值字符串。
 
 **When:** Use when you want to clean up your code and make it more readable.
 
-&zeroWidthSpace;时机：在您想要清理代码并使其更具可读性时使用。
+​​​	时机：在您想要清理代码并使其更具可读性时使用。
 
 **How-to:
 操作方法：**
@@ -695,26 +695,26 @@ Select **Convert to binary**.
 
 **What:** Convert your tuple to a `struct`
 
-&zeroWidthSpace;内容：将元组转换为 `struct`
+​​​	内容：将元组转换为 `struct`
 
 **When:** Use when want to quickly change your tuple to a `struct` and want to have fixed data you want to access multiple times.
 
-&zeroWidthSpace;时机：当您想快速将元组更改为 `struct` 并希望拥有固定数据以便多次访问时使用。
+​​​	时机：当您想快速将元组更改为 `struct` 并希望拥有固定数据以便多次访问时使用。
 
 **How-to:
 操作方法：**
 
 1. Place your cursor on the tuple.
 
-   &zeroWidthSpace;将光标放在元组上。
+   ​​​	将光标放在元组上。
 
 2. Press Ctrl+.to trigger the **Quick Actions and Refactorings** menu.
 
-   &zeroWidthSpace;按 Ctrl+. 触发快速操作和重构菜单。
+   ​​​	按 Ctrl+. 触发快速操作和重构菜单。
 
 3. Select one of the following options:
 
-   &zeroWidthSpace;选择以下选项之一：
+   ​​​	选择以下选项之一：
 
    - Select **Convert to `struct` -> updating usages in containing member**
      选择转换为 `struct` -> 更新包含成员中的用法
@@ -733,15 +733,15 @@ Select **Convert to binary**.
 
 **What:** Lets you turn a field into a property, and update all usages of that field to use the newly created property.
 
-&zeroWidthSpace;作用：允许您将字段转换为属性，并将该字段的所有用法更新为使用新创建的属性。
+​​​	作用：允许您将字段转换为属性，并将该字段的所有用法更新为使用新创建的属性。
 
 **When:** You want to move a field into a property, and update all references to that field.
 
-&zeroWidthSpace;时机：当您想将字段移至属性并更新对该字段的所有引用时。
+​​​	时机：当您想将字段移至属性并更新对该字段的所有引用时。
 
 **Why:** You want to give other classes access to a field, but don't want those classes to have direct access. By wrapping the field in a property, you could write code to verify the value being assigned, for example.
 
-&zeroWidthSpace;原因：您想让其他类访问字段，但不想让这些类具有直接访问权限。例如，通过将字段包装在属性中，您可以编写代码来验证正在分配的值。
+​​​	原因：您想让其他类访问字段，但不想让这些类具有直接访问权限。例如，通过将字段包装在属性中，您可以编写代码来验证正在分配的值。
 
 **How-to:
 操作方法：**
@@ -755,13 +755,13 @@ Select **Convert to binary**.
 
 Select **Encapsulate field: <fieldname> (and use property)**.
 
-&zeroWidthSpace;选择封装字段：<字段名>（并使用属性）。
+​​​	选择封装字段：<字段名>（并使用属性）。
 
 ![Encapsulate field and use property example](./Refactoring_img/encapsulate-field-use-property.png)
 
 Select **Encapsulate field: <fieldname> (but still use field)**.
 
-&zeroWidthSpace;选择封装字段：<字段名>（但仍使用字段）。
+​​​	选择封装字段：<字段名>（但仍使用字段）。
 
 ![Encapsulate field but still use field example](./Refactoring_img/encapsulate-field-still-use-field.png)
 
@@ -769,15 +769,15 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 **What:** Lets you generate Comparison operators for types that implement `IComparable`.
 
-&zeroWidthSpace;作用：允许您为实现 `IComparable` 的类型生成比较运算符。
+​​​	作用：允许您为实现 `IComparable` 的类型生成比较运算符。
 
 **When:** You have a type that implements `IComparable` we will automatically add the comparison operators.
 
-&zeroWidthSpace;时机：当您拥有实现 `IComparable` 的类型时，我们将自动添加比较运算符。
+​​​	时机：当您拥有实现 `IComparable` 的类型时，我们将自动添加比较运算符。
 
 **Why:** If you are implementing a value type, you should consider overriding the `Equals` method to gain increased performance over the default implementation of the `Equals` method on `ValueType`.
 
-&zeroWidthSpace;原因：如果您正在实现值类型，则应考虑重写 `Equals` 方法，以提高 `ValueType` 上 `Equals` 方法的默认实现的性能。
+​​​	原因：如果您正在实现值类型，则应考虑重写 `Equals` 方法，以提高 `ValueType` 上 `Equals` 方法的默认实现的性能。
 
 **How-to:
 操作方法：**
@@ -793,15 +793,15 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 **What:** Lets you immediately generate the code for a new default constructor on a class.
 
-&zeroWidthSpace;作用：允许您立即为类生成新默认构造函数的代码。
+​​​	作用：允许您立即为类生成新默认构造函数的代码。
 
 **When:** You introduce a new default constructor and want to properly declare it automatically.
 
-&zeroWidthSpace;何时：您引入一个新的默认构造函数并希望自动正确声明它。
+​​​	何时：您引入一个新的默认构造函数并希望自动正确声明它。
 
 **Why:** You could declare the constructor before using it, however this feature generates it automatically.
 
-&zeroWidthSpace;原因：您可以在使用构造函数之前声明它，但是此功能会自动生成它。
+​​​	原因：您可以在使用构造函数之前声明它，但是此功能会自动生成它。
 
 **How-to:
 操作方法：**
@@ -819,15 +819,15 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 **What:** Automatically generates a method parameter.
 
-&zeroWidthSpace;内容：自动生成一个方法参数。
+​​​	内容：自动生成一个方法参数。
 
 **When:** You reference a variable in a method that doesn't exist in the current context and receive an error; you can generate a parameter as a code fix.
 
-&zeroWidthSpace;何时：您在方法中引用了一个在当前上下文中不存在的变量并收到错误；您可以生成一个参数作为代码修复。
+​​​	何时：您在方法中引用了一个在当前上下文中不存在的变量并收到错误；您可以生成一个参数作为代码修复。
 
 **Why:** You can quickly modify a method signature without losing context.
 
-&zeroWidthSpace;原因：您可以在不丢失上下文的情况下快速修改方法签名。
+​​​	原因：您可以在不丢失上下文的情况下快速修改方法签名。
 
 **How-to:
 操作方法：**
@@ -845,11 +845,11 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 **What:** Define your interface's methods explicitly in a class. An explicit interface implementation is a class member that is only called through the specified interface.
 
-&zeroWidthSpace;内容：在类中显式定义接口的方法。显式接口实现是仅通过指定接口调用的类成员。
+​​​	内容：在类中显式定义接口的方法。显式接口实现是仅通过指定接口调用的类成员。
 
 **When:** Use when:
 
-&zeroWidthSpace;时机：在以下情况下使用：
+​​​	时机：在以下情况下使用：
 
 - You don't want the same implementation to be called for multiple interfaces.
   您不希望对多个接口调用相同的实现。
@@ -872,7 +872,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 **What:** Define your interface's methods implicitly in a class. An implicit interface implementation is when an interface's methods and properties are directly added to the class as public methods.
 
-&zeroWidthSpace;作用：在类中隐式定义接口的方法。隐式接口实现是指将接口的方法和属性作为公共方法直接添加到类中。
+​​​	作用：在类中隐式定义接口的方法。隐式接口实现是指将接口的方法和属性作为公共方法直接添加到类中。
 
 **How-to:
 方法：**
@@ -890,15 +890,15 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 **What:** Inline method refactoring.
 
-&zeroWidthSpace;作用：内联方法重构。
+​​​	作用：内联方法重构。
 
 **When:** You want to replace usages of a static, instance, and extension method within a single statement body with an option to remove the original method declaration.
 
-&zeroWidthSpace;何时：当您想用一个选项来替换单个语句体中静态方法、实例方法和扩展方法的使用情况，同时删除原始方法声明时。
+​​​	何时：当您想用一个选项来替换单个语句体中静态方法、实例方法和扩展方法的使用情况，同时删除原始方法声明时。
 
 **Why:** This refactoring provides a clearer syntax.
 
-&zeroWidthSpace;原因：此重构提供了更清晰的语法。
+​​​	原因：此重构提供了更清晰的语法。
 
 **How-to:
 操作方法：**
@@ -912,13 +912,13 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 Select **Inline <QualifiedMethodName>** to remove the inline method declaration:
 
-&zeroWidthSpace;选择“内联 ”以删除内联方法声明：
+​​​	选择“内联 ”以删除内联方法声明：
 
 ![Inline method example](./Refactoring_img/inline-method.png)
 
 Select **Inline and keep <QualifiedMethodName>** to preserve the original method declaration:
 
-&zeroWidthSpace;选择“内联并保留 ”以保留原始方法声明：
+​​​	选择“内联并保留 ”以保留原始方法声明：
 
 ![Inline and keep method example](./Refactoring_img/inline-method-keep.png)
 
@@ -926,15 +926,15 @@ Select **Inline and keep <QualifiedMethodName>** to preserve the original method
 
 **What:** Lets you remove a temporary variable and replace it with its value instead.
 
-&zeroWidthSpace;内容：允许您删除临时变量并用其值替换它。
+​​​	内容：允许您删除临时变量并用其值替换它。
 
 **When:** The use of the temporary variable makes the code harder to understand.
 
-&zeroWidthSpace;何时：使用临时变量会使代码更难理解。
+​​​	何时：使用临时变量会使代码更难理解。
 
 **Why:** Removing a temporary variable may make the code easier to read.
 
-&zeroWidthSpace;原因：删除临时变量可能会使代码更易于阅读。
+​​​	原因：删除临时变量可能会使代码更易于阅读。
 
 **How-to:
 操作方法：**
@@ -952,15 +952,15 @@ Select **Inline and keep <QualifiedMethodName>** to preserve the original method
 
 **What:** Lets you immediately generate a local variable to replace an existing expression.
 
-&zeroWidthSpace;作用：允许您立即生成一个局部变量来替换现有表达式。
+​​​	作用：允许您立即生成一个局部变量来替换现有表达式。
 
 **When:** You have code that could be easily reused later if it were in a local variable.
 
-&zeroWidthSpace;何时：如果您有可以轻松地在局部变量中重复使用的代码。
+​​​	何时：如果您有可以轻松地在局部变量中重复使用的代码。
 
 **Why:** You could copy and paste the code multiple times to use it in various locations, however it would be better to perform the operation once, store the result in a local variable, and use the local variable throughout.
 
-&zeroWidthSpace;原因：您可以复制并粘贴代码多次以在各个位置使用它，但是最好执行一次操作，将结果存储在局部变量中，并在整个过程中使用局部变量。
+​​​	原因：您可以复制并粘贴代码多次以在各个位置使用它，但是最好执行一次操作，将结果存储在局部变量中，并在整个过程中使用局部变量。
 
 **How-to:
 操作方法：**
@@ -974,27 +974,27 @@ Select **Inline and keep <QualifiedMethodName>** to preserve the original method
 
 Select **Introduce local -> Introduce local for <expression>**
 
-&zeroWidthSpace;选择引入局部 -> 为 引入局部
+​​​	选择引入局部 -> 为 引入局部
 
 ![Introduce local for expression example](./Refactoring_img/introduce-local-variable-for-expression.png)
 
 Select **Introduce local -> Introduce local for all occurrences of <expression>**
 
-&zeroWidthSpace;选择引入局部 -> 为 的所有出现引入局部
+​​​	选择引入局部 -> 为 的所有出现引入局部
 
 ## [Introduce parameter 引入参数](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-parameter)
 
 **What:** Lets you immediately generate a new parameter to replace an existing expression.
 
-&zeroWidthSpace;作用：允许您立即生成一个新参数来替换现有表达式。
+​​​	作用：允许您立即生成一个新参数来替换现有表达式。
 
 **When:** You have code that could be easily reused later if it were in a parameter.
 
-&zeroWidthSpace;时机：如果您有可以轻松地在参数中重复使用的代码。
+​​​	时机：如果您有可以轻松地在参数中重复使用的代码。
 
 **Why:** You could copy and paste the code multiple times to use it in various locations, however it would be better to perform the operation once, store the result in a parameter, and use the parameter throughout.
 
-&zeroWidthSpace;原因：您可以多次复制和粘贴代码以在各个位置使用它，但是最好执行一次操作，将结果存储在参数中，并在整个过程中使用该参数。
+​​​	原因：您可以多次复制和粘贴代码以在各个位置使用它，但是最好执行一次操作，将结果存储在参数中，并在整个过程中使用该参数。
 
 **How-to:
 操作方法：**
@@ -1008,19 +1008,19 @@ Select **Introduce local -> Introduce local for all occurrences of <expression>*
 
 Select **Introduce parameter for <expression> -> and update call sites directly**
 
-&zeroWidthSpace;选择为 引入参数 -> 并直接更新调用站点
+​​​	选择为 引入参数 -> 并直接更新调用站点
 
 ![Update call sites directly example](./Refactoring_img/introduce-parameter-directly.png)
 
 Select **Introduce parameter for <expression> -> into extracted method**
 
-&zeroWidthSpace;选择为 引入参数 -> 到提取的方法中
+​​​	选择为 引入参数 -> 到提取的方法中
 
 ![Introduce parameter into extracted method example](./Refactoring_img/introduce-parameter-extracted-method.png)
 
 Select **Introduce parameter for <expression> -> into new overload**
 
-&zeroWidthSpace;选择为 引入参数 -> 到新的重载中
+​​​	选择为 引入参数 -> 到新的重载中
 
 ![Introduce parameter into new overload example](./Refactoring_img/introduce-parameter-overload.png)
 
@@ -1028,11 +1028,11 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Add a `using` statement / code block to your `IDisposable` instance.
 
-&zeroWidthSpace;内容：向 `IDisposable` 实例添加 `using` 语句/代码块。
+​​​	内容：向 `IDisposable` 实例添加 `using` 语句/代码块。
 
 **When:** You have an `IDisposable` instance that you want to ensure is acquired, used, and disposed correctly.
 
-&zeroWidthSpace;时机：当您有一个 `IDisposable` 实例，您希望确保正确获取、使用和处置它时。
+​​​	时机：当您有一个 `IDisposable` 实例，您希望确保正确获取、使用和处置它时。
 
 **How-to:
 操作方法：**
@@ -1050,15 +1050,15 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Lets you invert a conditional expression or a conditional `and` \ `or` operator.
 
-&zeroWidthSpace;作用：允许您反转条件表达式或条件 `and` \ `or` 运算符。
+​​​	作用：允许您反转条件表达式或条件 `and` \ `or` 运算符。
 
 **When:** You have a conditional expression or conditional `and` \ `or` operator that would be better understood if inverted.
 
-&zeroWidthSpace;时机：当您有条件表达式或条件 `and` \ `or` 运算符，反转后更易理解时。
+​​​	时机：当您有条件表达式或条件 `and` \ `or` 运算符，反转后更易理解时。
 
 **Why:** Inverting an expression or conditional `and` \ `or` operator by hand can take much longer and possibly introduce errors. This code fix helps you do this refactoring automatically.
 
-&zeroWidthSpace;原因：手动反转表达式或条件 `and` \ `or` 运算符可能需要更长时间，并且可能会引入错误。此代码修复可帮助您自动执行此重构。
+​​​	原因：手动反转表达式或条件 `and` \ `or` 运算符可能需要更长时间，并且可能会引入错误。此代码修复可帮助您自动执行此重构。
 
 **How-to:
 操作方法：**
@@ -1078,15 +1078,15 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Lets you invert an `if` or `if else` statement without changing the meaning of the code.
 
-&zeroWidthSpace;用途：允许您反转 `if` 或 `if else` 语句，而无需更改代码的含义。
+​​​	用途：允许您反转 `if` 或 `if else` 语句，而无需更改代码的含义。
 
 **When:** When you have an `if` or `if else` statement that would be better understood when inverted.
 
-&zeroWidthSpace;时机：当您有 `if` 或 `if else` 语句时，反转后会更容易理解。
+​​​	时机：当您有 `if` 或 `if else` 语句时，反转后会更容易理解。
 
 **Why:** Inverting an `if` or `if else` statement by hand can take much longer and possibly introduce errors. This code fix helps you do this refactoring automatically.
 
-&zeroWidthSpace;原因：手动反转 `if` 或 `if else` 语句可能需要更长时间，并且可能会引入错误。此代码修复可帮助您自动执行此重构。
+​​​	原因：手动反转 `if` 或 `if else` 语句可能需要更长时间，并且可能会引入错误。此代码修复可帮助您自动执行此重构。
 
 **How-to:
 操作方法：**
@@ -1104,15 +1104,15 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Make a member static.
 
-&zeroWidthSpace;作用：使成员变为静态。
+​​​	作用：使成员变为静态。
 
 **When:** You want a non-static member to be static.
 
-&zeroWidthSpace;时机：您希望非静态成员变为静态时。
+​​​	时机：您希望非静态成员变为静态时。
 
 **Why:** Static members improve readability: knowing that specific code is isolated makes it easier to understand, reread, and reuse.
 
-&zeroWidthSpace;原因：静态成员提高了可读性：知道特定代码是隔离的，这使得理解、重读和重用变得更容易。
+​​​	原因：静态成员提高了可读性：知道特定代码是隔离的，这使得理解、重读和重用变得更容易。
 
 **How-to:
 操作方法：**
@@ -1130,15 +1130,15 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Lets you move variable declarations closer to their usage.
 
-&zeroWidthSpace;作用：允许您将变量声明移至更靠近其使用位置。
+​​​	作用：允许您将变量声明移至更靠近其使用位置。
 
 **When:** You have variable declarations that can be in a narrower scope.
 
-&zeroWidthSpace;何时：您有可以缩小范围的变量声明。
+​​​	何时：您有可以缩小范围的变量声明。
 
 **Why:** You could leave it as it is, but that may cause readability issues or information hiding. This is a chance to refactor to improve readability.
 
-&zeroWidthSpace;原因：您可以保持原样，但这可能会导致可读性问题或信息隐藏。这是一个重构以提高可读性的机会。
+​​​	原因：您可以保持原样，但这可能会导致可读性问题或信息隐藏。这是一个重构以提高可读性的机会。
 
 **How-to:
 操作方法：**
@@ -1156,15 +1156,15 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Lets you move the selected type to a separate file with the same name.
 
-&zeroWidthSpace;内容：允许您将选定的类型移至具有相同名称的单独文件中。
+​​​	内容：允许您将选定的类型移至具有相同名称的单独文件中。
 
 **When:** You have multiple classes, structs, interfaces, etc. in the same file that you want to separate.
 
-&zeroWidthSpace;何时：您在同一文件中有多个类、结构、接口等，您希望将它们分开。
+​​​	何时：您在同一文件中有多个类、结构、接口等，您希望将它们分开。
 
 **Why:** Placing multiple types in the same file can make it difficult to find these types. By moving types to files with the same name, code becomes more readable and easier to navigate.
 
-&zeroWidthSpace;原因：将多个类型放在同一个文件中可能会使查找这些类型变得困难。通过将类型移至具有相同名称的文件，代码变得更具可读性和更易于导航。
+​​​	原因：将多个类型放在同一个文件中可能会使查找这些类型变得困难。通过将类型移至具有相同名称的文件，代码变得更具可读性和更易于导航。
 
 **How-to:
 操作方法：**
@@ -1182,15 +1182,15 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Lets you invert a `for` statement.
 
-&zeroWidthSpace;作用：允许您反转 `for` 语句。
+​​​	作用：允许您反转 `for` 语句。
 
 **When:** Use when you want to reverse the meaning of a `for` statement and how it iterates.
 
-&zeroWidthSpace;时机：当您想要反转 `for` 语句的含义及其迭代方式时使用。
+​​​	时机：当您想要反转 `for` 语句的含义及其迭代方式时使用。
 
 **Why:** Inverting a `for` statement by hand can take much longer and possibly introduce errors. This code fix helps you do this refactoring automatically.
 
-&zeroWidthSpace;原因：手动反转 `for` 语句可能需要更长时间，并且可能会引入错误。此代码修复可帮助您自动执行此重构。
+​​​	原因：手动反转 `for` 语句可能需要更长时间，并且可能会引入错误。此代码修复可帮助您自动执行此重构。
 
 **How-to:
 操作方法：**
@@ -1208,22 +1208,22 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 **What:** Split or merge `if` statements.
 
-&zeroWidthSpace;内容：拆分或合并 `if` 语句。
+​​​	内容：拆分或合并 `if` 语句。
 
 **When:** You want to split an `if` statement that uses the `&&` or `||` operators into a nested `if` statement, or merge an `if` statement with an outer `if` statement.
 
-&zeroWidthSpace;时机：当您想将使用 `&&` 或 `||` 运算符的 `if` 语句拆分为嵌套 `if` 语句，或将 `if` 语句与外部 `if` 语句合并时。
+​​​	时机：当您想将使用 `&&` 或 `||` 运算符的 `if` 语句拆分为嵌套 `if` 语句，或将 `if` 语句与外部 `if` 语句合并时。
 
 **Why:** It's a matter of style preference.
 
-&zeroWidthSpace;原因：这是一种风格偏好问题。
+​​​	原因：这是一种风格偏好问题。
 
 **How-to:
 操作方法：**
 
 If you want to split the `if` statement:
 
-&zeroWidthSpace;如果您想拆分 `if` 语句：
+​​​	如果您想拆分 `if` 语句：
 
 1. Place your cursor in the `if` statement by the `&&` or `||` operator.
    将光标放在 `if` 语句中的 `&&` 或 `||` 运算符旁边。
@@ -1236,7 +1236,7 @@ If you want to split the `if` statement:
 
 If you want to merge the inner `if` statement with the outer `if` statement:
 
-&zeroWidthSpace;如果要将内部 `if` 语句与外部 `if` 语句合并：
+​​​	如果要将内部 `if` 语句与外部 `if` 语句合并：
 
 1. Place your cursor in the inner `if` keyword.
    将光标放在内部 `if` 关键字中。
@@ -1251,15 +1251,15 @@ If you want to merge the inner `if` statement with the outer `if` statement:
 
 **What:** Use this refactoring to replace `var` in a local variable declaration with an explicit type.
 
-&zeroWidthSpace;作用：使用此重构可将局部变量声明中的 `var` 替换为显式类型。
+​​​	作用：使用此重构可将局部变量声明中的 `var` 替换为显式类型。
 
 **Why:** To improve the code's readability or when you don't want to initialize the variable in the declaration.
 
-&zeroWidthSpace;原因：为了提高代码的可读性，或者当您不想在声明中初始化变量时。
+​​​	原因：为了提高代码的可读性，或者当您不想在声明中初始化变量时。
 
 However, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/var) must be used when a variable is initialized with an anonymous type and the properties of the object are accessed at a later point. For more information, see [Implicitly typed local variables (C#)](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables).
 
-&zeroWidthSpace;但是，当使用匿名类型初始化变量并在稍后访问对象的属性时，必须使用 var。有关详细信息，请参阅隐式类型化局部变量 (C#)。
+​​​	但是，当使用匿名类型初始化变量并在稍后访问对象的属性时，必须使用 var。有关详细信息，请参阅隐式类型化局部变量 (C#)。
 
 **How-to:
 操作方法：**
@@ -1277,11 +1277,11 @@ However, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keyw
 
 **What:** Use this refactoring to replace an explicit type in a local variable declaration with `var`.
 
-&zeroWidthSpace;用途：使用此重构来用 `var` 替换局部变量声明中的显式类型。
+​​​	用途：使用此重构来用 `var` 替换局部变量声明中的显式类型。
 
 **Why:** To fit your personal coding conventions and to have less code displayed. [Var](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/var) must be used when a variable is initialized with an anonymous type and the properties of the object are accessed at a later point. For more information, see [Implicitly typed local variables (C#)](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables).
 
-&zeroWidthSpace;原因：为了符合您的个人编码约定并减少显示的代码。当使用匿名类型初始化变量并在稍后访问对象的属性时，必须使用 Var。有关详细信息，请参阅隐式类型局部变量 (C#)。
+​​​	原因：为了符合您的个人编码约定并减少显示的代码。当使用匿名类型初始化变量并在稍后访问对象的属性时，必须使用 Var。有关详细信息，请参阅隐式类型局部变量 (C#)。
 
 **How-to:
 操作方法：**
@@ -1299,15 +1299,15 @@ However, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keyw
 
 **What:** Lets you refactor a lambda expression to use an expression body or a block body.
 
-&zeroWidthSpace;内容：允许您重构 lambda 表达式以使用表达式主体或块主体。
+​​​	内容：允许您重构 lambda 表达式以使用表达式主体或块主体。
 
 **When:** You prefer lambda expressions to use either an expression body or a block body.
 
-&zeroWidthSpace;时机：您希望 lambda 表达式使用表达式主体或块主体。
+​​​	时机：您希望 lambda 表达式使用表达式主体或块主体。
 
 **Why:** Lambda expressions can be refactored to improve readability according to your user preference.
 
-&zeroWidthSpace;原因：可以根据您的用户偏好重构 lambda 表达式以提高可读性。
+​​​	原因：可以根据您的用户偏好重构 lambda 表达式以提高可读性。
 
 **How-to:
 操作方法：**
@@ -1321,13 +1321,13 @@ However, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keyw
 
 Select **Use block body for lambda expressions**.
 
-&zeroWidthSpace;选择对 lambda 表达式使用块主体。
+​​​	选择对 lambda 表达式使用块主体。
 
 ![Use block body for lambda expressions example](./Refactoring_img/use-block-body-for-lambda-expression.png)
 
 Select **Use expression body for lambda expressions**.
 
-&zeroWidthSpace;选择对 lambda 表达式使用表达式主体。
+​​​	选择对 lambda 表达式使用表达式主体。
 
 ![Use expression body for lambda expressions](./Refactoring_img/use-expression-body-for-lambda-expressions.png)
 
@@ -1335,11 +1335,11 @@ Select **Use expression body for lambda expressions**.
 
 **What:** Converts a code block to using a recursive pattern. This refactoring works with switch statements, property pattern matching, tuple pattern matching, and positional pattern matching.
 
-&zeroWidthSpace;内容：将代码块转换为使用递归模式。此重构适用于 switch 语句、属性模式匹配、元组模式匹配和位置模式匹配。
+​​​	内容：将代码块转换为使用递归模式。此重构适用于 switch 语句、属性模式匹配、元组模式匹配和位置模式匹配。
 
 **When:** Using recursive patterns can make your code more readable / cleaner.
 
-&zeroWidthSpace;时机：使用递归模式可以使您的代码更具可读性/更简洁。
+​​​	时机：使用递归模式可以使您的代码更具可读性/更简洁。
 
 **How-to:
 操作方法：**
@@ -1353,13 +1353,13 @@ Select **Use expression body for lambda expressions**.
 
 Select **Convert `switch` statement to expression**.
 
-&zeroWidthSpace;选择将 `switch` 语句转换为表达式。
+​​​	选择将 `switch` 语句转换为表达式。
 
 ![Convert  statement to expression example](./Refactoring_img/convert-switch-statement-to-expression.png)
 
 Select **Use recursive patterns**.
 
-&zeroWidthSpace;选择使用递归模式。
+​​​	选择使用递归模式。
 
 ![Use recursive patterns before example](./Refactoring_img/use-recursive-patterns-before.png)
 
@@ -1371,15 +1371,15 @@ Select **Use recursive patterns**.
 
 **What:** Lets you wrap and align chains of method calls.
 
-&zeroWidthSpace;作用：允许您换行并对齐方法调用链。
+​​​	作用：允许您换行并对齐方法调用链。
 
 **When:** You have a long chain consisting of several method calls in one statement.
 
-&zeroWidthSpace;时机：当您在一个语句中具有由多个方法调用组成的长链时。
+​​​	时机：当您在一个语句中具有由多个方法调用组成的长链时。
 
 **Why:** Reading a long list is easier when they're wrapped or indented according to user preference.
 
-&zeroWidthSpace;原因：根据用户偏好换行或缩进时，阅读长列表会更容易。
+​​​	原因：根据用户偏好换行或缩进时，阅读长列表会更容易。
 
 **How-to:
 操作方法：**
@@ -1397,15 +1397,15 @@ Select **Use recursive patterns**.
 
 **What:** Lets you wrap, indent, and align parameters or arguments.
 
-&zeroWidthSpace;作用：允许您换行、缩进并对齐参数或参数。
+​​​	作用：允许您换行、缩进并对齐参数或参数。
 
 **When:** You have a method declaration or call that has multiple parameters or arguments.
 
-&zeroWidthSpace;何时：您有一个具有多个参数或自变量的方法声明或调用。
+​​​	何时：您有一个具有多个参数或自变量的方法声明或调用。
 
 **Why:** Reading a long list of parameters or arguments is easier when they're wrapped or indented according to user preference.
 
-&zeroWidthSpace;原因：根据用户偏好换行或缩进长参数或自变量列表时，阅读起来更轻松。
+​​​	原因：根据用户偏好换行或缩进长参数或自变量列表时，阅读起来更轻松。
 
 **How-to:
 操作方法：**
@@ -1419,19 +1419,19 @@ Select **Use recursive patterns**.
 
 Select **Wrap every parameter -> Align wrapped parameters**
 
-&zeroWidthSpace;选择换行每个参数 -> 对齐换行的参数
+​​​	选择换行每个参数 -> 对齐换行的参数
 
 ![Align wrapped parameters example](./Refactoring_img/wrap-every-parameter-align.png)
 
 Select **Wrap every parameter -> Indent all parameters**
 
-&zeroWidthSpace;选择换行每个参数 -> 缩进所有参数
+​​​	选择换行每个参数 -> 缩进所有参数
 
 ![Indent all parameters example](./Refactoring_img/wrap-every-parameter-indent.png)
 
 Select **Wrap every parameter -> Indent wrapped parameters**
 
-&zeroWidthSpace;选择换行每个参数 -> 缩进换行的参数
+​​​	选择换行每个参数 -> 缩进换行的参数
 
 ![Indent wrapped parameters example](./Refactoring_img/wrap-every-parameter-indent-wrapped.png)
 
@@ -1439,15 +1439,15 @@ Select **Wrap every parameter -> Indent wrapped parameters**
 
 **What:** Lets you wrap binary expressions.
 
-&zeroWidthSpace;作用：允许您包装二进制表达式。
+​​​	作用：允许您包装二进制表达式。
 
 **When:** You have a binary expression.
 
-&zeroWidthSpace;时机：您有一个二进制表达式。
+​​​	时机：您有一个二进制表达式。
 
 **Why:** Reading a binary expression is easier when it is wrapped to user preference.
 
-&zeroWidthSpace;原因：当二进制表达式包装成用户首选项时，阅读起来更容易。
+​​​	原因：当二进制表达式包装成用户首选项时，阅读起来更容易。
 
 **How-to:
 操作方法：**

@@ -16,7 +16,7 @@ draft = false
 
 You can use [Azure](https://azure.microsoft.com/) directly from Visual Studio Code through extensions. Using either the [Azure CLI](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli) or the various extensions in the [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extension pack, you can have your application running in Azure in minutes.
 
-&zeroWidthSpace;您可以通过扩展直接从 Visual Studio Code 使用 Azure。使用 Azure CLI 或 Azure 工具扩展包中的各种扩展，您可以在几分钟内让您的应用程序在 Azure 中运行。
+​​​	您可以通过扩展直接从 Visual Studio Code 使用 Azure。使用 Azure CLI 或 Azure 工具扩展包中的各种扩展，您可以在几分钟内让您的应用程序在 Azure 中运行。
 
 ![app service](./Extensions_img/azure-tools.png)
 
@@ -24,7 +24,7 @@ You can use [Azure](https://azure.microsoft.com/) directly from Visual Studio Co
 
 There are many VS Code extensions on the [Marketplace](https://marketplace.visualstudio.com/search?term=azure&target=VSCode&category=All categories&sortBy=Relevance) that make it easy to build and host applications on Azure.
 
-&zeroWidthSpace;Marketplace 上有许多 VS Code 扩展，可以轻松地在 Azure 上构建和托管应用程序。
+​​​	Marketplace 上有许多 VS Code 扩展，可以轻松地在 Azure 上构建和托管应用程序。
 
 ![Azure Functions](./Extensions_img/Microsoft.VisualStudio.Services.Icons.png)
 
@@ -98,13 +98,13 @@ ms-azuretools
 
 > **Tip:** Click on an extension tile above to read the description and reviews in the Marketplace.
 >
-> &zeroWidthSpace;提示：单击上面的扩展磁贴以阅读 Marketplace 中的说明和评论。
+> ​​​	提示：单击上面的扩展磁贴以阅读 Marketplace 中的说明和评论。
 
 ## [Searching for extensions 正在搜索扩展](https://code.visualstudio.com/docs/azure/extensions#_searching-for-extensions)
 
 You can also search for Azure or cloud extensions in the VS Code Extensions view (Ctrl+Shift+X) and type 'azure'.
 
-&zeroWidthSpace;您还可以在 VS Code 扩展视图 (Ctrl+Shift+X) 中搜索 Azure 或云扩展，然后键入“azure”。
+​​​	您还可以在 VS Code 扩展视图 (Ctrl+Shift+X) 中搜索 Azure 或云扩展，然后键入“azure”。
 
 ![popular Azure extensions](./Extensions_img/popular-azure-extensions.png)
 

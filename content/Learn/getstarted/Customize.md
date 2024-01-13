@@ -16,7 +16,7 @@ draft = false
 
 In this video, we walk you through customizing Visual Studio Code using themes.
 
-&zeroWidthSpace;在此视频中，我们将引导您使用主题自定义 Visual Studio Code。
+​​​	在此视频中，我们将引导您使用主题自定义 Visual Studio Code。
 
 <iframe src="https://www.youtube-nocookie.com/embed/HOShAQzOy4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Personalize VS Code with themes" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 

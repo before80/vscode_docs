@@ -16,39 +16,39 @@ draft = false
 
 Visual Studio Code is the most popular free code editor among JavaScript developers around the world according to the [State of JS 2020 survey](https://2020.stateofjs.com/other-tools/#text_editors). It is easily customizable and has a rich ecosystem of extensions to help your students learn Node.js and JavaScript.
 
-&zeroWidthSpace;根据 2020 年 JS 状态调查，Visual Studio Code 是全球 JavaScript 开发人员中最受欢迎的免费代码编辑器。它易于自定义，并拥有丰富的扩展生态系统，可帮助您的学生学习 Node.js 和 JavaScript。
+​​​	根据 2020 年 JS 状态调查，Visual Studio Code 是全球 JavaScript 开发人员中最受欢迎的免费代码编辑器。它易于自定义，并拥有丰富的扩展生态系统，可帮助您的学生学习 Node.js 和 JavaScript。
 
 Below is a case study of a Computer Science educator in Thailand and includes his recommendations for VS Code extensions and settings in the classroom.
 
-&zeroWidthSpace;以下是泰国一位计算机科学教育工作者的案例研究，其中包括他对课堂中 VS Code 扩展和设置的建议。
+​​​	以下是泰国一位计算机科学教育工作者的案例研究，其中包括他对课堂中 VS Code 扩展和设置的建议。
 
 ## [Intro to Web Development at Naresuan University 那瑞宣大学 Web 开发入门](https://code.visualstudio.com/learn/educators/nodejs#_intro-to-web-development-at-naresuan-university)
 
 [Charles Allen](https://th.linkedin.com/in/ajahncharles) is a lecturer at [Naresuan University](https://www.nu.ac.th/) in Thailand, where he teaches several Computer Science and Business courses. He teaches a project-based Web Development course, where students build a TypeScript app using the [Vue.js](https://vuejs.org/) framework and [Firebase](https://firebase.google.com/) platform.
 
-&zeroWidthSpace;Charles Allen 是泰国那瑞宣大学的讲师，他在那里教授多门计算机科学和商业课程。他教授一门基于项目的 Web 开发课程，学生使用 Vue.js 框架和 Firebase 平台构建 TypeScript 应用。
+​​​	Charles Allen 是泰国那瑞宣大学的讲师，他在那里教授多门计算机科学和商业课程。他教授一门基于项目的 Web 开发课程，学生使用 Vue.js 框架和 Firebase 平台构建 TypeScript 应用。
 
 ### [Why Visual Studio Code? 为什么选择 Visual Studio Code？](https://code.visualstudio.com/learn/educators/nodejs#_why-visual-studio-code)
 
 Charles has been using Visual Studio Code to teach for the past four years. In his own words:
 
-&zeroWidthSpace;Charles 在过去四年里一直使用 Visual Studio Code 进行教学。用他自己的话说：
+​​​	Charles 在过去四年里一直使用 Visual Studio Code 进行教学。用他自己的话说：
 
 > "The more realistic the learning environment, the more comprehensive the education. I am not just teaching code; I'm also teaching the tools, tactics, and teamwork my students will need to start building for themselves. VS Code is the first choice of web professionals, so it’s the first choice for my class!"
 >
-> &zeroWidthSpace;"学习环境越逼真，教育就越全面。我不仅教授代码；我还教授我的学生在为自己构建时所需掌握的工具、策略和团队合作。VS Code 是网络专业人士的首选，因此也是我课堂的首选！"
+> ​​​	"学习环境越逼真，教育就越全面。我不仅教授代码；我还教授我的学生在为自己构建时所需掌握的工具、策略和团队合作。VS Code 是网络专业人士的首选，因此也是我课堂的首选！"
 
 ### [Portable setup 便携式设置](https://code.visualstudio.com/learn/educators/nodejs#_portable-setup)
 
 VS Code is great for Charles because it has a [portable mode](https://code.visualstudio.com/docs/editor/portable), which stores all of VS Code's application data in one location. He prepares a single "image", [available on GitHub](https://github.com/AjahnCharles/lab-image-win), containing his favorite extensions, settings, and cached versions of some libraries. This customized folder structure can be quickly copied to every lab machine without needing to run installers, download additional files, or manually configure each machine.
 
-&zeroWidthSpace;VS Code 非常适合 Charles，因为它具有便携式模式，该模式将所有 VS Code 的应用程序数据存储在一个位置。他在 GitHub 上准备了一个包含他最喜欢的扩展、设置和某些库的缓存版本的单个"映像"。此自定义文件夹结构可以快速复制到每台实验室计算机，而无需运行安装程序、下载其他文件或手动配置每台计算机。
+​​​	VS Code 非常适合 Charles，因为它具有便携式模式，该模式将所有 VS Code 的应用程序数据存储在一个位置。他在 GitHub 上准备了一个包含他最喜欢的扩展、设置和某些库的缓存版本的单个"映像"。此自定义文件夹结构可以快速复制到每台实验室计算机，而无需运行安装程序、下载其他文件或手动配置每台计算机。
 
 ## [Classroom extensions 课堂扩展](https://code.visualstudio.com/learn/educators/nodejs#_classroom-extensions)
 
 The extensions he likes to have installed:
 
-&zeroWidthSpace;他喜欢安装的扩展：
+​​​	他喜欢安装的扩展：
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - His favorite! Auto-formatting keeps students focused on program logic and linting helps them quickly find, understand, and fix errors in their JavaScript code.
   ESLint - 他最喜欢！自动格式化使学生专注于程序逻辑，而 linting 帮助他们快速查找、理解和修复 JavaScript 代码中的错误。
@@ -61,13 +61,13 @@ The extensions he likes to have installed:
 
 These extensions are also part of the Node.js and JavaScript Education Extension Pack below!
 
-&zeroWidthSpace;这些扩展也是下面的 Node.js 和 JavaScript 教育扩展包的一部分！
+​​​	这些扩展也是下面的 Node.js 和 JavaScript 教育扩展包的一部分！
 
 ## [Classroom settings 课堂设置](https://code.visualstudio.com/learn/educators/nodejs#_classroom-settings)
 
 And here are his recommended settings, which help his students have consistent formatting of their code to make his life reviewing and grading their work that much easier. You can use his settings by editing the [settings file](https://code.visualstudio.com/docs/getstarted/settings) and pasting these in:
 
-&zeroWidthSpace;以下是他的推荐设置，这些设置可帮助他的学生统一代码格式，从而使他检查和评分他们的作业变得更加容易。您可以通过编辑设置文件并粘贴以下内容来使用他的设置：
+​​​	以下是他的推荐设置，这些设置可帮助他的学生统一代码格式，从而使他检查和评分他们的作业变得更加容易。您可以通过编辑设置文件并粘贴以下内容来使用他的设置：
 
 ```
 {
@@ -119,19 +119,19 @@ And here are his recommended settings, which help his students have consistent f
 
 Thank you Charles for sharing your experiences and favorite VS Code settings! If you're interested in using VS Code for your Node.js web development classes, you can get started with the [Node.js and JavaScript Education Extension Pack](https://marketplace.visualstudio.com/items?itemName=tanhakabir.node-js-education-extension-pack) that contains Charles' favorite extensions, extensions for real-time collaboration, and more!
 
-&zeroWidthSpace;感谢 Charles 分享您的经验和最喜欢的 VS Code 设置！如果您有兴趣在 Node.js Web 开发课程中使用 VS Code，那么您可以使用包含 Charles 最喜欢的扩展、用于实时协作的扩展等的 Node.js 和 JavaScript 教育扩展包来开始！
+​​​	感谢 Charles 分享您的经验和最喜欢的 VS Code 设置！如果您有兴趣在 Node.js Web 开发课程中使用 VS Code，那么您可以使用包含 Charles 最喜欢的扩展、用于实时协作的扩展等的 Node.js 和 JavaScript 教育扩展包来开始！
 
 ## [Node.js and JavaScript Extension Pack Node.js 和 JavaScript 扩展包](https://code.visualstudio.com/learn/educators/nodejs#_nodejs-and-javascript-extension-pack)
 
 Unsure which extensions to recommend to your students? You can point your students to the [Node.js and JavaScript Education Extension Pack](https://marketplace.visualstudio.com/items?itemName=tanhakabir.node-js-education-extension-pack) that contains essential and helpful extensions for the classroom. You can download the extension pack from the [VS Code Marketplace](https://marketplace.visualstudio.com/vscode):
 
-&zeroWidthSpace;不确定向学生推荐哪些扩展？您可以向学生推荐 Node.js 和 JavaScript 教育扩展包，其中包含课堂上必备且有用的扩展。您可以从 VS Code Marketplace 下载扩展包：
+​​​	不确定向学生推荐哪些扩展？您可以向学生推荐 Node.js 和 JavaScript 教育扩展包，其中包含课堂上必备且有用的扩展。您可以从 VS Code Marketplace 下载扩展包：
 
 [![Node.js and JavaScript Education Extension Pack](./Node_jsandJavaScript_img/node-js-extension-pack.png)](https://marketplace.visualstudio.com/items?itemName=tanhakabir.node-js-education-extension-pack)
 
 The extension pack contains:
 
-&zeroWidthSpace;扩展包包含：
+​​​	扩展包包含：
 
 - [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) and [npm IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) for verifying status of npm packages(installed or not) and auto-completions.
   npm 和 npm IntelliSense，用于验证 npm 包的状态（已安装或未安装）和自动完成。
@@ -152,6 +152,6 @@ The extension pack contains:
 
 Build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code and Node.js. View full details of the lessons at [Build a Node.js app for Azure Cosmos DB](https://learn.microsoft.com/training/modules/build-node-cosmos-app-vscode).
 
-&zeroWidthSpace;使用 Visual Studio Code 和 Node.js 构建一个数据库应用程序，以便在 Azure Cosmos DB 中存储和查询数据。在构建适用于 Azure Cosmos DB 的 Node.js 应用程序中查看课程的完整详细信息。
+​​​	使用 Visual Studio Code 和 Node.js 构建一个数据库应用程序，以便在 Azure Cosmos DB 中存储和查询数据。在构建适用于 Azure Cosmos DB 的 Node.js 应用程序中查看课程的完整详细信息。
 
 ![Build a Node.js app for Azure Cosmos DB](./Node_jsandJavaScript_img/learn-build-node-app.png)

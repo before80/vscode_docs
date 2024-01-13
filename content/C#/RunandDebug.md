@@ -16,27 +16,27 @@ draft = false
 
 You can debug C# applications in Visual Studio Code using the [Microsoft C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension.
 
-&zeroWidthSpace;您可以在 Visual Studio Code 中使用 Microsoft C# 扩展调试 C# 应用程序。
+​​​	您可以在 Visual Studio Code 中使用 Microsoft C# 扩展调试 C# 应用程序。
 
 ## [Run and Debug 运行和调试](https://code.visualstudio.com/docs/csharp/debugging#_run-and-debug)
 
 The [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension along with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) provides multiple ways to run and debug your C# application.
 
-&zeroWidthSpace;C# 扩展与 C# Dev Kit 一起提供了多种运行和调试 C# 应用程序的方法。
+​​​	C# 扩展与 C# Dev Kit 一起提供了多种运行和调试 C# 应用程序的方法。
 
 To run and debug without C# Dev Kit, see [Microsoft C# extension's GitHub page](https://aka.ms/vscode/coreclr/debug) for documentation.
 
-&zeroWidthSpace;若要运行和调试而不使用 C# Dev Kit，请参阅 Microsoft C# 扩展的 GitHub 页面以获取文档。
+​​​	若要运行和调试而不使用 C# Dev Kit，请参阅 Microsoft C# 扩展的 GitHub 页面以获取文档。
 
 ### [Debug with F5 使用 F5 调试](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-f5)
 
 With the C# Dev Kit extension installed and no debug configurations available to select in the Debug view, you can start debugging your project by having a `.cs` file opened and then pressing F5. The debugger will automatically find your project and start debugging. If you have multiple projects, it will prompt for which project you would like to start debugging.
 
-&zeroWidthSpace;安装了 C# Dev Kit 扩展且在“调试”视图中没有可供选择的调试配置时，您可以通过打开 `.cs` 文件然后按 F5 来开始调试项目。调试器将自动查找您的项目并开始调试。如果您有多个项目，它将提示您要开始调试哪个项目。
+​​​	安装了 C# Dev Kit 扩展且在“调试”视图中没有可供选择的调试配置时，您可以通过打开 `.cs` 文件然后按 F5 来开始调试项目。调试器将自动查找您的项目并开始调试。如果您有多个项目，它将提示您要开始调试哪个项目。
 
 You can also start a debugging session from the **Run and Debug** view from the side bar of VS Code. See more at [Debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging).
 
-&zeroWidthSpace;您还可以从 VS Code 侧边栏的“运行和调试”视图开始调试会话。请参阅 VS Code 中的调试了解更多信息。
+​​​	您还可以从 VS Code 侧边栏的“运行和调试”视图开始调试会话。请参阅 VS Code 中的调试了解更多信息。
 
 ![Debugging using Run and Debug](https://code.visualstudio.com/assets/docs/csharp/debugging/run-and-debug.gif)
 
@@ -44,11 +44,11 @@ You can also start a debugging session from the **Run and Debug** view from the 
 
 With the C# Dev Kit extension installed, there is a **Debug** context menu when you right-click on your project in the Solution Explorer.
 
-&zeroWidthSpace;安装了 C# Dev Kit 扩展后，在解决方案资源管理器中右键单击项目时，会出现“调试”上下文菜单。
+​​​	安装了 C# Dev Kit 扩展后，在解决方案资源管理器中右键单击项目时，会出现“调试”上下文菜单。
 
 There are three options:
 
-&zeroWidthSpace;有三个选项：
+​​​	有三个选项：
 
 - **Start New Instance** - This starts your project with a debugger attached.
   启动新实例 - 这将启动您的项目并附加调试器。
@@ -63,11 +63,11 @@ There are three options:
 
 With the C# Dev Kit extension installed, you can also start debugging from the Command Palette Ctrl+Shift+P by using the **Debug: Select and Start Debugging** command.
 
-&zeroWidthSpace;安装了 C# Dev Kit 扩展后，您还可以通过使用“调试：选择并开始调试”命令，从命令面板 Ctrl+Shift+P 开始调试。
+​​​	安装了 C# Dev Kit 扩展后，您还可以通过使用“调试：选择并开始调试”命令，从命令面板 Ctrl+Shift+P 开始调试。
 
 Note: This adds a launch configuration entry to your debug dropdown list.
 
-&zeroWidthSpace;注意：这会向您的调试下拉列表中添加一个启动配置条目。
+​​​	注意：这会向您的调试下拉列表中添加一个启动配置条目。
 
 ![Debugging using Command Palette](https://code.visualstudio.com/assets/docs/csharp/debugging/select-and-start-debugging.gif)
 
@@ -75,13 +75,13 @@ Note: This adds a launch configuration entry to your debug dropdown list.
 
 With the C# Dev Kit extension installed, you can create dynamic launch configurations. How you create them depends if your project has an existing `launch.json` file.
 
-&zeroWidthSpace;安装了 C# Dev Kit 扩展后，您可以创建动态启动配置。创建方式取决于您的项目是否有现有的 `launch.json` 文件。
+​​​	安装了 C# Dev Kit 扩展后，您可以创建动态启动配置。创建方式取决于您的项目是否有现有的 `launch.json` 文件。
 
 #### [Existing launch.json 现有的 launch.json](https://code.visualstudio.com/docs/csharp/debugging#_existing-launchjson)
 
 If you have an existing `launch.json`, you can go to the Debug view, select the dropdown, and select the `C#` option. This should give you a selection of launch targets that you can add to your dropdown list. After selecting, you can hit F5 or **Start Debugging** with the newly generated configuration.
 
-&zeroWidthSpace;如果您有现有的 `launch.json` ，则可以转到“调试”视图，选择下拉列表，然后选择 `C#` 选项。这应该会为您提供一些启动目标，您可以将它们添加到您的下拉列表中。选择后，您可以按 F5 或使用新生成的配置开始调试。
+​​​	如果您有现有的 `launch.json` ，则可以转到“调试”视图，选择下拉列表，然后选择 `C#` 选项。这应该会为您提供一些启动目标，您可以将它们添加到您的下拉列表中。选择后，您可以按 F5 或使用新生成的配置开始调试。
 
 ![Add Dynamic C# Configuration](https://code.visualstudio.com/assets/docs/csharp/debugging/add-dynamic-configuration.gif)
 
@@ -89,7 +89,7 @@ If you have an existing `launch.json`, you can go to the Debug view, select the 
 
 If you do not have a `launch.json` in your project, you can add and access these dynamic configurations in the **Show all automatic debug configurations** in the Debug view.
 
-&zeroWidthSpace;如果您的项目中没有 `launch.json` ，您可以在“调试”视图中显示所有自动调试配置，以添加和访问这些动态配置。
+​​​	如果您的项目中没有 `launch.json` ，您可以在“调试”视图中显示所有自动调试配置，以添加和访问这些动态配置。
 
 ![Debug with Show all automatic debug configurations](./RunandDebug_img/show-all-automatic-debug-config.gif)
 
@@ -97,11 +97,11 @@ If you do not have a `launch.json` in your project, you can add and access these
 
 You can remove the generated configurations with Command Palette Ctrl+Shift+P and using the command **Debug: Select and Start Debugging**.
 
-&zeroWidthSpace;您可以使用命令面板 Ctrl+Shift+P 和命令“调试：选择并开始调试”删除生成的配置。
+​​​	您可以使用命令面板 Ctrl+Shift+P 和命令“调试：选择并开始调试”删除生成的配置。
 
 In the dropdown, it lists all your existing debug configurations. If you hover over the dynamic configurations, a clickable trashcan icon appears on the right. You can select that icon to remove the dynamic configuration.
 
-&zeroWidthSpace;在下拉列表中，它会列出您所有现有的调试配置。如果您将鼠标悬停在动态配置上，右侧会出现一个可点击的垃圾桶图标。您可以选择该图标以删除动态配置。
+​​​	在下拉列表中，它会列出您所有现有的调试配置。如果您将鼠标悬停在动态配置上，右侧会出现一个可点击的垃圾桶图标。您可以选择该图标以删除动态配置。
 
 ![Remove dynamic configuration](./RunandDebug_img/delete-dynamic-config.gif)
 
@@ -109,13 +109,13 @@ In the dropdown, it lists all your existing debug configurations. If you hover o
 
 If you are using the C# Dev Kit, we recommend not using this option. However, if you have the need to modify the debug configuration directly, see [Configuring launch.json for C# debugging](https://code.visualstudio.com/docs/csharp/debugger-settings).
 
-&zeroWidthSpace;如果您使用的是 C# Dev Kit，我们建议不要使用此选项。但是，如果您需要直接修改调试配置，请参阅针对 C# 调试配置 launch.json。
+​​​	如果您使用的是 C# Dev Kit，我们建议不要使用此选项。但是，如果您需要直接修改调试配置，请参阅针对 C# 调试配置 launch.json。
 
 ## [Attaching to a process 附加到进程](https://code.visualstudio.com/docs/csharp/debugging#_attaching-to-a-process)
 
 You can attach to a C# process using with the Command Palette Ctrl+Shift+P and running the **Debug: Attach to a .NET 5+ or .NET Core process** command.
 
-&zeroWidthSpace;您可以使用命令面板 Ctrl+Shift+P 并运行“调试：附加到 .NET 5+ 或 .NET Core 进程”命令，附加到 C# 进程。
+​​​	您可以使用命令面板 Ctrl+Shift+P 并运行“调试：附加到 .NET 5+ 或 .NET Core 进程”命令，附加到 C# 进程。
 
 ![Attach to a C# process](./RunandDebug_img/attach-to-process.png)
 
@@ -123,25 +123,25 @@ You can attach to a C# process using with the Command Palette Ctrl+Shift+P and r
 
 There are many options and settings available to configure the debugger. You can use `launchSettings.json`, VS Code [User Settings](https://code.visualstudio.com/docs/getstarted/settings) to modify your debug options, or directly modify your `launch.json`.
 
-&zeroWidthSpace;有很多选项和设置可用于配置调试器。您可以使用 `launchSettings.json` 、VS Code 用户设置来修改您的调试选项，或直接修改您的 `launch.json` 。
+​​​	有很多选项和设置可用于配置调试器。您可以使用 `launchSettings.json` 、VS Code 用户设置来修改您的调试选项，或直接修改您的 `launch.json` 。
 
 ### [launchSettings.json](https://code.visualstudio.com/docs/csharp/debugging#_launchsettingsjson)
 
 If you have `launchSettings.json` from Visual Studio, you should see your profiles listed using [Run from F5](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-f5) or [Run from Command Palette](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-command-palette).
 
-&zeroWidthSpace;如果您从 Visual Studio 中拥有 `launchSettings.json` ，您应该会看到使用 F5 运行或从命令面板运行列出的配置文件。
+​​​	如果您从 Visual Studio 中拥有 `launchSettings.json` ，您应该会看到使用 F5 运行或从命令面板运行列出的配置文件。
 
 ![Debugging using launchSettings.json](./RunandDebug_img/launch-profiles-debug.gif)
 
 Refer to [Configuring C# debugging](https://code.visualstudio.com/docs/csharp/debugger-settings) for more details.
 
-&zeroWidthSpace;有关更多详细信息，请参阅配置 C# 调试。
+​​​	有关更多详细信息，请参阅配置 C# 调试。
 
 ### [User settings 用户设置](https://code.visualstudio.com/docs/csharp/debugging#_user-settings)
 
 If you have settings that you wish to change while using the C# debugger, you can find these options under **File** > **Preferences** > **Settings** (Ctrl+,) and searching for these options.
 
-&zeroWidthSpace;如果您在使用 C# 调试器时希望更改设置，您可以在“文件”>“首选项”>“设置”(Ctrl+,) 下找到这些选项并搜索这些选项。
+​​​	如果您在使用 C# 调试器时希望更改设置，您可以在“文件”>“首选项”>“设置”(Ctrl+,) 下找到这些选项并搜索这些选项。
 
 - `csharp.debug.stopAtEntry` - If true, the debugger should stop at the entry point of the target. This option defaults to `false`.
   `csharp.debug.stopAtEntry` - 如果为 true，调试器应在目标的入口点处停止。此选项默认为 `false` 。
@@ -290,13 +290,13 @@ If you have settings that you wish to change while using the C# debugger, you ca
 
 The C# Debugger supports various breakpoints, such as source line breakpoints, conditional breakpoints, and logpoints.
 
-&zeroWidthSpace;C# 调试器支持各种断点，例如源代码行断点、条件断点和日志点。
+​​​	C# 调试器支持各种断点，例如源代码行断点、条件断点和日志点。
 
 ### [Breakpoint - conditional breakpoint 断点 - 条件断点](https://code.visualstudio.com/docs/csharp/debugging#_breakpoint-conditional-breakpoint)
 
 With the help of expression evaluation, the debugger also supports conditional breakpoint. You can set your breakpoint to break when expression evaluates to true.
 
-&zeroWidthSpace;借助表达式评估，调试器还支持条件断点。当表达式评估为 true 时，您可以设置断点以中断。
+​​​	借助表达式评估，调试器还支持条件断点。当表达式评估为 true 时，您可以设置断点以中断。
 
 ![Conditional Breakpoints](https://code.visualstudio.com/assets/docs/csharp/debugging/conditional-breakpoint.gif)
 
@@ -304,15 +304,15 @@ With the help of expression evaluation, the debugger also supports conditional b
 
 Logpoints (also known as Tracepoints in Visual Studio) allow you to send output to Debug Console without editing code. They're different from breakpoints because they don't stop the execution flow of your application.
 
-&zeroWidthSpace;Logpoint（在 Visual Studio 中也称为 Tracepoint）允许您将输出发送到调试控制台，而无需编辑代码。它们不同于断点，因为它们不会停止应用程序的执行流。
+​​​	Logpoint（在 Visual Studio 中也称为 Tracepoint）允许您将输出发送到调试控制台，而无需编辑代码。它们不同于断点，因为它们不会停止应用程序的执行流。
 
 To add a Logpoint, right-click in the far-left margin next to a line of code. Select **Add Logpoint** and type the message you want to log. Any expression between curly braces ('{' and '}') will be evaluated when the Logpoint is hit.
 
-&zeroWidthSpace;要添加 Logpoint，请右键单击代码行旁边的最左侧边距。选择“添加 Logpoint”，然后键入要记录的消息。当 Logpoint 命中时，将计算大括号（“{”和“}”）之间的任何表达式。
+​​​	要添加 Logpoint，请右键单击代码行旁边的最左侧边距。选择“添加 Logpoint”，然后键入要记录的消息。当 Logpoint 命中时，将计算大括号（“{”和“}”）之间的任何表达式。
 
 The following tokens are also supported in the log message:
 
-&zeroWidthSpace;日志消息中还支持以下标记：
+​​​	日志消息中还支持以下标记：
 
 | Token 令牌                                                   | Description 说明                                             | Example Output 示例输出                                      |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -334,31 +334,31 @@ The following tokens are also supported in the log message:
 
 The C# debugger supports configuration options for when the debugger stops when exceptions are thrown or caught. This is done through two different entries in the **BREAKPOINTS** section of the **Run** view:
 
-&zeroWidthSpace;C# 调试器支持在异常被引发或捕获时调试器停止的配置选项。这是通过“运行”视图的“断点”部分中的两个不同条目完成的：
+​​​	C# 调试器支持在异常被引发或捕获时调试器停止的配置选项。这是通过“运行”视图的“断点”部分中的两个不同条目完成的：
 
 ![Exceptions settings in BREAKPOINTS Run View](./RunandDebug_img/exception-settings.gif)
 
 Note that the **BREAKPOINTS** section will be missing these entries until the first time that the folder has been debugged with the C# debugger.
 
-&zeroWidthSpace;请注意，“断点”部分在使用 C# 调试器首次调试文件夹之前不会显示这些条目。
+​​​	请注意，“断点”部分在使用 C# 调试器首次调试文件夹之前不会显示这些条目。
 
 Checking **All Exceptions** will configure the debugger to stop when an exception is thrown. If [Just My Code](https://code.visualstudio.com/docs/csharp/debugger-settings#_just-my-code) is enabled (which it is by default), the debugger will not break if an exception is internally thrown and caught in library code. However, if the exception is thrown in library code and returned to user code, the debugger will break.
 
-&zeroWidthSpace;选中“所有异常”将配置调试器以便在引发异常时停止。如果启用了“仅限我的代码”（默认情况下已启用），如果异常在库代码中被内部引发并捕获，调试器将不会中断。但是，如果异常在库代码中引发并返回到用户代码，调试器将中断。
+​​​	选中“所有异常”将配置调试器以便在引发异常时停止。如果启用了“仅限我的代码”（默认情况下已启用），如果异常在库代码中被内部引发并捕获，调试器将不会中断。但是，如果异常在库代码中引发并返回到用户代码，调试器将中断。
 
 Checking **User-Unhandled Exceptions** will configure the debugger to stop when an exception is caught in non-user code after having been thrown in user code or traveled through user code. Exceptions that become user-unhandled aren't always a bug in the process being debugged -- it could be that user code is implementing an API and is expected to raise an exception. In many cases there is an actual problem, so, by default, the debugger will stop when an exception becomes user-unhandled.
 
-&zeroWidthSpace;检查用户未处理的异常将配置调试器，以便在异常在用户代码中引发后或在用户代码中传播后在非用户代码中捕获时停止。成为用户未处理的异常并不总是正在调试的进程中的错误——可能是用户代码正在实现 API，并且应该引发异常。在许多情况下存在实际问题，因此，默认情况下，当异常成为用户未处理时，调试器将停止。
+​​​	检查用户未处理的异常将配置调试器，以便在异常在用户代码中引发后或在用户代码中传播后在非用户代码中捕获时停止。成为用户未处理的异常并不总是正在调试的进程中的错误——可能是用户代码正在实现 API，并且应该引发异常。在许多情况下存在实际问题，因此，默认情况下，当异常成为用户未处理时，调试器将停止。
 
 ### [Exception Conditions 异常条件](https://code.visualstudio.com/docs/csharp/debugging#_exception-conditions)
 
 Both checkboxes support conditions to break on only selected exception types. To edit the condition, select the pencil icon (see image above) or right-click on the entry and invoke **Edit Condition**. The condition is a comma-separated list of exception types to break on, or if the list starts with '!', a list of exception types to ignore.
 
-&zeroWidthSpace;两个复选框都支持仅在选定的异常类型上中断的条件。要编辑条件，请选择铅笔图标（见上图）或右键单击条目并调用编辑条件。该条件是中断的异常类型的逗号分隔列表，或者如果列表以“！”开头，则为要忽略的异常类型的列表。
+​​​	两个复选框都支持仅在选定的异常类型上中断的条件。要编辑条件，请选择铅笔图标（见上图）或右键单击条目并调用编辑条件。该条件是中断的异常类型的逗号分隔列表，或者如果列表以“！”开头，则为要忽略的异常类型的列表。
 
 Examples conditions:
 
-&zeroWidthSpace;示例条件：
+​​​	示例条件：
 
 | Example condition value 示例条件值                           | Result 结果                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -371,33 +371,33 @@ Examples conditions:
 
 The debugger also lets you evaluate expressions in the **WATCH** window as well as the Debug Console.
 
-&zeroWidthSpace;调试器还允许您在 WATCH 窗口以及调试控制台中评估表达式。
+​​​	调试器还允许您在 WATCH 窗口以及调试控制台中评估表达式。
 
 ## [Hot Reload 热重载](https://code.visualstudio.com/docs/csharp/debugging#_hot-reload)
 
 With the C# Dev Kit extension installed, the debugger allows you to apply C# code changes while debugging.
 
-&zeroWidthSpace;安装了 C# Dev Kit 扩展后，调试器允许您在调试时应用 C# 代码更改。
+​​​	安装了 C# Dev Kit 扩展后，调试器允许您在调试时应用 C# 代码更改。
 
 ![Hot Reload displayed in the debugging toolbar](https://code.visualstudio.com/assets/docs/csharp/debugging/hotreload-toolbar.png)
 
 In order to enable Hot Reload, `csharp.experimental.debug.hotReload` must be set to true, see [User settings](https://code.visualstudio.com/docs/csharp/debugging#_user-settings) for more information. The Hot Reload session will only start if the target debugger engine supports applying code changes.
 
-&zeroWidthSpace;为了启用热重载， `csharp.experimental.debug.hotReload` 必须设置为 true，有关更多信息，请参阅用户设置。仅当目标调试器引擎支持应用代码更改时，热重载会话才会启动。
+​​​	为了启用热重载， `csharp.experimental.debug.hotReload` 必须设置为 true，有关更多信息，请参阅用户设置。仅当目标调试器引擎支持应用代码更改时，热重载会话才会启动。
 
 ### [Supported projects and scenarios 支持的项目和方案](https://code.visualstudio.com/docs/csharp/debugging#_supported-projects-and-scenarios)
 
 C# Dev Kit supports the "classic" Hot Reload experience, also known as Edit and Continue. You can apply code changes while debugging regardless if you are stopped at a breakpoint or the program is running.
 
-&zeroWidthSpace;C# Dev Kit 支持“经典”热重载体验，也称为编辑并继续。无论您是在断点处停止还是程序正在运行，您都可以在调试时应用代码更改。
+​​​	C# Dev Kit 支持“经典”热重载体验，也称为编辑并继续。无论您是在断点处停止还是程序正在运行，您都可以在调试时应用代码更改。
 
 As of November 2023, some features such as `MetadataUpdateHandler`, which enables ASP.NET Core applications to automatically refresh the browser [after a change is made](https://learn.microsoft.com/dotnet/api/system.reflection.metadata.metadataupdatehandlerattribute?view=net-8.0), are not available yet. Applying code changes without debugging is also not supported.
 
-&zeroWidthSpace;截至 2023 年 11 月，某些功能（例如 `MetadataUpdateHandler` ）尚未推出，该功能使 ASP.NET Core 应用程序在进行更改后自动刷新浏览器。也不支持在不调试的情况下应用代码更改。
+​​​	截至 2023 年 11 月，某些功能（例如 `MetadataUpdateHandler` ）尚未推出，该功能使 ASP.NET Core 应用程序在进行更改后自动刷新浏览器。也不支持在不调试的情况下应用代码更改。
 
 The runtime added support for applying changes while debugging on Linux/macOS in .NET 8, so a runtime version of .NET 8+ is required when applying code changes for .NET apps running on these operating systems.
 
-&zeroWidthSpace;运行时在 .NET 8 中添加了对在 Linux/macOS 上调试时应用更改的支持，因此在为运行在这些操作系统上的 .NET 应用应用代码更改时，需要 .NET 8+ 的运行时版本。
+​​​	运行时在 .NET 8 中添加了对在 Linux/macOS 上调试时应用更改的支持，因此在为运行在这些操作系统上的 .NET 应用应用代码更改时，需要 .NET 8+ 的运行时版本。
 
 | Application Type 应用程序类型   | Supports Hot Reload with C# Dev Kit 支持使用 C# Dev Kit 进行热重载 | .NET 8+ Required .NET 8+ 必需     |
 | :------------------------------ | :----------------------------------------------------------- | :-------------------------------- |
@@ -410,13 +410,13 @@ The runtime added support for applying changes while debugging on Linux/macOS in
 
 See [supported projects](https://code.visualstudio.com/docs/csharp/cs-dev-kit-faq#_what-project-types-are-currently-supported) for more information on projects currently supported by C# Dev Kit. Also see the [C# Dev Kit FAQ](https://code.visualstudio.com/docs/csharp/cs-dev-kit-faq#_hot-reload) for more information on troubleshooting other unsupported scenarios.
 
-&zeroWidthSpace;有关 C# Dev Kit 当前支持的项目，请参阅受支持的项目，了解更多信息。有关对其他不受支持的方案进行故障排除的更多信息，请参阅 C# Dev Kit 常见问题解答。
+​​​	有关 C# Dev Kit 当前支持的项目，请参阅受支持的项目，了解更多信息。有关对其他不受支持的方案进行故障排除的更多信息，请参阅 C# Dev Kit 常见问题解答。
 
 ### [How to apply code changes 如何应用代码更改](https://code.visualstudio.com/docs/csharp/debugging#_how-to-apply-code-changes)
 
 Once a Hot Reload session starts and new changes are made, you can apply these changes to your application with any of the following actions:
 
-&zeroWidthSpace;热重载会话开始并做出新的更改后，您可以通过以下任一操作将这些更改应用到您的应用程序：
+​​​	热重载会话开始并做出新的更改后，您可以通过以下任一操作将这些更改应用到您的应用程序：
 
 | Action 操作                                                  | Explanation 说明                                             |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -430,7 +430,7 @@ Once a Hot Reload session starts and new changes are made, you can apply these c
 
 Read on to find out about:
 
-&zeroWidthSpace;继续阅读以了解：
+​​​	继续阅读以了解：
 
 - [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Find out how to use the debugger in VS Code with your project for any language.
   调试 - 了解如何将调试器与任何语言的项目一起在 VS Code 中使用。

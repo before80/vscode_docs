@@ -33,7 +33,7 @@ draft = false
 
 You can also run VS Code from the terminal by typing 'code' after adding it to the path:
 
-&zeroWidthSpace;您还可以在将 VS Code 添加到路径后，通过在终端中键入“code”来运行 VS Code：
+​​​	您还可以在将 VS Code 添加到路径后，通过在终端中键入“code”来运行 VS Code：
 
 - Launch VS Code.
   启动 VS Code。
@@ -47,13 +47,13 @@ You can also run VS Code from the terminal by typing 'code' after adding it to t
 
 > **Note:** If you still have the old `code` alias in your `.bash_profile` (or equivalent) from an early VS Code version, remove it and replace it by executing the **Shell Command: Install 'code' command in PATH** command.
 >
-> &zeroWidthSpace;注意：如果您在早期版本的 VS Code 中的 `.bash_profile` （或等效版本）中仍然有旧的 `code` 别名，请将其删除并通过执行 Shell 命令：在 PATH 命令中安装“code”命令来替换它。
+> ​​​	注意：如果您在早期版本的 VS Code 中的 `.bash_profile` （或等效版本）中仍然有旧的 `code` 别名，请将其删除并通过执行 Shell 命令：在 PATH 命令中安装“code”命令来替换它。
 
 ### [Alternative manual instructions 备选的手动说明](https://code.visualstudio.com/docs/setup/mac#_alternative-manual-instructions)
 
 Instead of running the command above, you can manually add VS Code to your path, to do so run the following commands:
 
-&zeroWidthSpace;您可以手动将 VS Code 添加到您的路径中，而不是运行上述命令，为此，请运行以下命令：
+​​​	您可以手动将 VS Code 添加到您的路径中，而不是运行上述命令，为此，请运行以下命令：
 
 ```
 cat << EOF >> ~/.bash_profile
@@ -64,15 +64,15 @@ EOF
 
 Start a new terminal to pick up your `.bash_profile` changes.
 
-&zeroWidthSpace;启动一个新的终端来获取您的 `.bash_profile` 更改。
+​​​	启动一个新的终端来获取您的 `.bash_profile` 更改。
 
 **Note**: The leading slash `\` is required to prevent `$PATH` from expanding during the concatenation. Remove the leading slash if you want to run the export command directly in a terminal.
 
-&zeroWidthSpace;注意：需要前导斜杠 `\` 以防止 `$PATH` 在连接期间展开。如果您想直接在终端中运行 export 命令，请删除前导斜杠。
+​​​	注意：需要前导斜杠 `\` 以防止 `$PATH` 在连接期间展开。如果您想直接在终端中运行 export 命令，请删除前导斜杠。
 
 **Note**: Since `zsh` became the default shell in macOS Catalina, run the following commands to add VS Code to your path:
 
-&zeroWidthSpace;注意：由于 `zsh` 已成为 macOS Catalina 中的默认 shell，因此请运行以下命令将 VS Code 添加到您的路径中：
+​​​	注意：由于 `zsh` 已成为 macOS Catalina 中的默认 shell，因此请运行以下命令将 VS Code 添加到您的路径中：
 
 ```
 cat << EOF >> ~/.zprofile
@@ -85,7 +85,7 @@ EOF
 
 Out of the box VS Code adds actions to navigate in editor history as well as the full Debug tool bar to control the debugger on your Touch Bar:
 
-&zeroWidthSpace;开箱即用的 VS Code 会添加操作以在编辑器历史记录中导航，以及完整的调试工具栏以控制触控栏上的调试器：
+​​​	开箱即用的 VS Code 会添加操作以在编辑器历史记录中导航，以及完整的调试工具栏以控制触控栏上的调试器：
 
 ![macOS Touch Bar](./macOS_img/touchbar.gif)
 
@@ -93,29 +93,29 @@ Out of the box VS Code adds actions to navigate in editor history as well as the
 
 After upgrading to macOS Mojave version, you may see dialogs saying "Visual Studio Code would like to access your {calendar/contacts/photos}." This is due to the new privacy protections in Mojave and is not specific to VS Code. The same dialogs may be displayed when running other applications as well. The dialog is shown once for each type of personal data and it is fine to choose **Don't Allow** since VS Code does not need access to those folders.
 
-&zeroWidthSpace;升级到 macOS Mojave 版本后，您可能会看到提示“Visual Studio Code 想要访问您的 {日历/联系人/照片}”的对话框。这是由于 Mojave 中的新隐私保护措施所致，并非 VS Code 特有。运行其他应用程序时也可能会显示相同的对话框。此对话框针对每种类型的个人数据显示一次，选择“不允许”是可以的，因为 VS Code 无需访问这些文件夹。
+​​​	升级到 macOS Mojave 版本后，您可能会看到提示“Visual Studio Code 想要访问您的 {日历/联系人/照片}”的对话框。这是由于 Mojave 中的新隐私保护措施所致，并非 VS Code 特有。运行其他应用程序时也可能会显示相同的对话框。此对话框针对每种类型的个人数据显示一次，选择“不允许”是可以的，因为 VS Code 无需访问这些文件夹。
 
 ## [Updates 更新](https://code.visualstudio.com/docs/setup/mac#_updates)
 
 VS Code ships monthly [releases](https://code.visualstudio.com/updates) and supports auto-update when a new release is available. If you're prompted by VS Code, accept the newest update and it will get installed (you won't need to do anything else to get the latest bits).
 
-&zeroWidthSpace;VS Code 每月发布版本，并在有新版本可用时支持自动更新。如果 VS Code 提示您，请接受最新的更新，它将得到安装（您无需执行任何其他操作即可获取最新版本）。
+​​​	VS Code 每月发布版本，并在有新版本可用时支持自动更新。如果 VS Code 提示您，请接受最新的更新，它将得到安装（您无需执行任何其他操作即可获取最新版本）。
 
 > Note: You can [disable auto-update](https://code.visualstudio.com/docs/supporting/faq#_how-do-i-opt-out-of-vs-code-autoupdates) if you prefer to update VS Code on your own schedule.
 >
-> &zeroWidthSpace;注意：如果您希望按照自己的计划更新 VS Code，则可以禁用自动更新。
+> ​​​	注意：如果您希望按照自己的计划更新 VS Code，则可以禁用自动更新。
 
 ## [Preferences menu 首选项菜单](https://code.visualstudio.com/docs/setup/mac#_preferences-menu)
 
 You can configure VS Code through [settings](https://code.visualstudio.com/docs/getstarted/settings), [color themes](https://code.visualstudio.com/docs/getstarted/themes), and [custom keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) available through the **File** > **Preferences** menu group.
 
-&zeroWidthSpace;您可以通过“文件”>“首选项”菜单组中提供的设置、颜色主题和自定义键绑定来配置 VS Code。
+​​​	您可以通过“文件”>“首选项”菜单组中提供的设置、颜色主题和自定义键绑定来配置 VS Code。
 
 ## [Next steps 后续步骤](https://code.visualstudio.com/docs/setup/mac#_next-steps)
 
 Once you have installed VS Code, these topics will help you learn more about VS Code:
 
-&zeroWidthSpace;安装 VS Code 后，这些主题将帮助您详细了解 VS Code：
+​​​	安装 VS Code 后，这些主题将帮助您详细了解 VS Code：
 
 - [Additional Components](https://code.visualstudio.com/docs/setup/additional-components) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
   其他组件 - 了解如何安装 Git、Node.js、TypeScript 和 Yeoman 等工具。
@@ -130,16 +130,16 @@ Once you have installed VS Code, these topics will help you learn more about VS 
 
 If you are running macOS Mojave version, you may see dialogs saying "Visual Studio Code would like to access your {calendar/contacts/photos}." This is due to the new privacy protections in Mojave [discussed above](https://code.visualstudio.com/docs/setup/mac#_mojave-privacy-protections). It is fine to choose **Don't Allow** since VS Code does not need access to those folders.
 
-&zeroWidthSpace;如果您运行的是 macOS Mojave 版本，您可能会看到对话框，提示“Visual Studio Code 想要访问您的 {日历/联系人/照片}”。这是由于 Mojave 中讨论的新隐私保护。选择“不允许”是可以的，因为 VS Code 不需要访问这些文件夹。
+​​​	如果您运行的是 macOS Mojave 版本，您可能会看到对话框，提示“Visual Studio Code 想要访问您的 {日历/联系人/照片}”。这是由于 Mojave 中讨论的新隐私保护。选择“不允许”是可以的，因为 VS Code 不需要访问这些文件夹。
 
 ### [VS Code fails to update VS Code 无法更新](https://code.visualstudio.com/docs/setup/mac#_vs-code-fails-to-update)
 
 If VS Code doesn't update once it restarts, it might be set under quarantine by macOS. Follow the steps in this [issue](https://github.com/microsoft/vscode/issues/7426#issuecomment-425093469) for resolution.
 
-&zeroWidthSpace;如果 VS Code 在重新启动后无法更新，它可能被 macOS 隔离了。按照此问题中的步骤进行解决。
+​​​	如果 VS Code 在重新启动后无法更新，它可能被 macOS 隔离了。按照此问题中的步骤进行解决。
 
 ### [Does VS Code run on Apple silicon machines? VS Code 是否可以在 Apple 芯片电脑上运行？](https://code.visualstudio.com/docs/setup/mac#_does-vs-code-run-on-apple-silicon-machines)
 
 Yes, VS Code supports macOS Arm64 builds that can run on Macs with the Apple silicon chipsets. You can install the Universal build, which includes both Intel and Apple silicon builds, or one of the platform specific builds.
 
-&zeroWidthSpace;是的，VS Code 支持可以在搭载 Apple 芯片的 Mac 上运行的 macOS Arm64 版本。您可以安装通用版本（包括 Intel 和 Apple 芯片版本）或其中一个特定于平台的版本。
+​​​	是的，VS Code 支持可以在搭载 Apple 芯片的 Mac 上运行的 macOS Arm64 版本。您可以安装通用版本（包括 Intel 和 Apple 芯片版本）或其中一个特定于平台的版本。

@@ -16,7 +16,7 @@ draft = false
 
 The [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) extensions for Visual Studio Code make it easy to deploy Python applications (including containers) to [Azure App Service](https://azure.microsoft.com/services/app-service) and to deploy serverless code to [Azure Functions](https://azure.microsoft.com/services/functions).
 
-&zeroWidthSpace;Visual Studio Code 的 Azure 工具扩展可轻松将 Python 应用程序（包括容器）部署到 Azure 应用服务，并将无服务器代码部署到 Azure Functions。
+​​​	Visual Studio Code 的 Azure 工具扩展可轻松将 Python 应用程序（包括容器）部署到 Azure 应用服务，并将无服务器代码部署到 Azure Functions。
 
 ![Azure Tools extension](./DeployPythonApps_img/azure-tools.png)
 
@@ -24,7 +24,7 @@ The [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.
 
 The following tutorials on the [Python Azure Developer's Center](https://learn.microsoft.com/azure/developer/python) walk you though the details.
 
-&zeroWidthSpace;Python Azure 开发者中心上的以下教程将引导您了解详细信息。
+​​​	Python Azure 开发者中心上的以下教程将引导您了解详细信息。
 
 | Tutorial 教程                                                | Description 说明                                             | Related Tools 相关工具                                       |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |

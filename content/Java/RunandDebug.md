@@ -16,11 +16,11 @@ draft = false
 
 Visual Studio Code allows you to debug Java applications through the [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug) extension. It's a lightweight Java debugger based on [Java Debug Server](https://github.com/microsoft/java-debug), which extends the [Language Support for Java™ by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java).
 
-&zeroWidthSpace;Visual Studio Code 允许您通过 Java 扩展程序的调试器来调试 Java 应用程序。它是一个基于 Java 调试服务器的轻量级 Java 调试器，它扩展了 Red Hat 的 Java™ 语言支持。
+​​​	Visual Studio Code 允许您通过 Java 扩展程序的调试器来调试 Java 应用程序。它是一个基于 Java 调试服务器的轻量级 Java 调试器，它扩展了 Red Hat 的 Java™ 语言支持。
 
 Here's a list of supported debugging features:
 
-&zeroWidthSpace;以下是受支持的调试功能列表：
+​​​	以下是受支持的调试功能列表：
 
 - Launch/Attach
   启动/附加
@@ -47,7 +47,7 @@ Here's a list of supported debugging features:
 
 The Java debugger is an open-source project, which welcomes contributors to collaborate through GitHub repositories:
 
-&zeroWidthSpace;Java 调试器是一个开源项目，欢迎贡献者通过 GitHub 存储库进行协作：
+​​​	Java 调试器是一个开源项目，欢迎贡献者通过 GitHub 存储库进行协作：
 
 - [Debugger for Java
   Java 调试器](https://github.com/microsoft/vscode-java-debug)
@@ -56,52 +56,52 @@ The Java debugger is an open-source project, which welcomes contributors to coll
 
 If you run into any issues when using the features below, you can contact us by entering an [issue](https://github.com/microsoft/vscode-java-pack/issues).
 
-&zeroWidthSpace;如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
+​​​	如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
 
 ## [Install 安装](https://code.visualstudio.com/docs/java/java-debugging#_install)
 
 To get the complete Java language support in Visual Studio Code, you can install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack), which includes the Debugger for Java extension.
 
-&zeroWidthSpace;若要获得 Visual Studio Code 中完整的 Java 语言支持，可以安装 Java 扩展包，其中包括 Java 调试器扩展。
+​​​	若要获得 Visual Studio Code 中完整的 Java 语言支持，可以安装 Java 扩展包，其中包括 Java 调试器扩展。
 
 [Install the Extension Pack for Java
 安装 Java 扩展包](vscode:extension/vscjava.vscode-java-pack)
 
 > For details on how to get started with the extension pack, you can review the [Getting Started with Java](https://code.visualstudio.com/docs/java/java-tutorial) tutorial.
 >
-> &zeroWidthSpace;有关如何开始使用扩展包的详细信息，您可以查看 Java 入门教程。
+> ​​​	有关如何开始使用扩展包的详细信息，您可以查看 Java 入门教程。
 
 ## [Configure 配置](https://code.visualstudio.com/docs/java/java-debugging#_configure)
 
 By default, the debugger will run out-of-box by automatically finding the main class and generating a default launch configuration in memory to launch your application.
 
-&zeroWidthSpace;默认情况下，调试器将自动查找主类并在内存中生成默认启动配置以启动应用程序，从而开箱即用。
+​​​	默认情况下，调试器将自动查找主类并在内存中生成默认启动配置以启动应用程序，从而开箱即用。
 
 If you would like to customize and persist your launch configuration, you can select the **create a launch.json file** link in the **Run and Debug** view.
 
-&zeroWidthSpace;如果要自定义并保留启动配置，可以在“运行和调试”视图中选择“创建 launch.json 文件”链接。
+​​​	如果要自定义并保留启动配置，可以在“运行和调试”视图中选择“创建 launch.json 文件”链接。
 
 ![Debug Menu](./RunandDebug_img/run-debug-button.png)
 
 The `launch.json` file is located in a `.vscode` folder in your workspace (project root folder).
 
-&zeroWidthSpace; `launch.json` 文件位于工作区（项目根文件夹）中的 `.vscode` 文件夹中。
+​​​	 `launch.json` 文件位于工作区（项目根文件夹）中的 `.vscode` 文件夹中。
 
 For more details on how to create the `launch.json`, read [Launch configurations](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations); for more details on configuration options for Java, you can read [Configuration options](https://code.visualstudio.com/docs/java/java-debugging#_configuration-options).
 
-&zeroWidthSpace;有关如何创建 `launch.json` 的更多详细信息，请阅读启动配置；有关 Java 配置选项的更多详细信息，可以阅读配置选项。
+​​​	有关如何创建 `launch.json` 的更多详细信息，请阅读启动配置；有关 Java 配置选项的更多详细信息，可以阅读配置选项。
 
 ## [Run and Debug 运行和调试](https://code.visualstudio.com/docs/java/java-debugging#_run-and-debug)
 
 The debugger extension provides multiple ways to run and debug your Java application.
 
-&zeroWidthSpace;调试器扩展提供了多种运行和调试 Java 应用程序的方法。
+​​​	调试器扩展提供了多种运行和调试 Java 应用程序的方法。
 
 ### [Run from CodeLens 从 CodeLens 运行](https://code.visualstudio.com/docs/java/java-debugging#_run-from-codelens)
 
 You will find **Run|Debug** on the [CodeLens](https://code.visualstudio.com/blogs/2017/02/12/code-lens-roundup) of your `main()` function.
 
-&zeroWidthSpace;您将在 `main()` 函数的 CodeLens 上找到运行 | 调试。
+​​​	您将在 `main()` 函数的 CodeLens 上找到运行 | 调试。
 
 ![CodeLens](./RunandDebug_img/java-codelens.png)
 
@@ -109,7 +109,7 @@ You will find **Run|Debug** on the [CodeLens](https://code.visualstudio.com/blog
 
 Another way to start debugging is to select **Run Java** or **Debug Java** menu from the top editor title bar.
 
-&zeroWidthSpace;另一种开始调试的方法是从顶部编辑器标题栏中选择“运行 Java”或“调试 Java”菜单。
+​​​	另一种开始调试的方法是从顶部编辑器标题栏中选择“运行 Java”或“调试 Java”菜单。
 
 ![EditorMenu](./RunandDebug_img/run-menu.png)
 
@@ -117,13 +117,13 @@ Another way to start debugging is to select **Run Java** or **Debug Java** menu 
 
 Pressing F5, the debugger will automatically find the entry point of your project and start debugging. You can also start a debugging session from the **Run and Debug** view from the side bar of VS Code. See more at [Debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging).
 
-&zeroWidthSpace;按 F5，调试器将自动找到项目的入口点并开始调试。您还可以从 VS Code 侧边栏的“运行和调试”视图中启动调试会话。请参阅 VS Code 中的调试。
+​​​	按 F5，调试器将自动找到项目的入口点并开始调试。您还可以从 VS Code 侧边栏的“运行和调试”视图中启动调试会话。请参阅 VS Code 中的调试。
 
 ## [Debugging single files 调试单个文件](https://code.visualstudio.com/docs/java/java-debugging#_debugging-single-files)
 
 In addition to support for debugging Java projects managed by build tools, VS Code also supports for debugging single Java files without any project.
 
-&zeroWidthSpace;除了支持由构建工具管理的 Java 项目调试之外，VS Code 还支持在没有任何项目的情况下调试单个 Java 文件。
+​​​	除了支持由构建工具管理的 Java 项目调试之外，VS Code 还支持在没有任何项目的情况下调试单个 Java 文件。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Debugging a single Main.java file" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -133,7 +133,7 @@ In addition to support for debugging Java projects managed by build tools, VS Co
 
 The default Debug Console in VS Code doesn't support inputs. If your program need inputs from a terminal, you can use the Integrated Terminal (Ctrl+`) within VS Code or an external terminal to launch it. You can also use the user setting `java.debug.settings.console` to configure a global console for all Java debug sessions.
 
-&zeroWidthSpace;VS Code 中的默认调试控制台不支持输入。如果您的程序需要来自终端的输入，则可以使用 VS Code 中的集成终端 (Ctrl+`) 或外部终端来启动它。您还可以使用用户设置 `java.debug.settings.console` 为所有 Java 调试会话配置全局控制台。
+​​​	VS Code 中的默认调试控制台不支持输入。如果您的程序需要来自终端的输入，则可以使用 VS Code 中的集成终端 (Ctrl+`) 或外部终端来启动它。您还可以使用用户设置 `java.debug.settings.console` 为所有 Java 调试会话配置全局控制台。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Debugging a Java app that takes input via the Integrated Terminal" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -143,13 +143,13 @@ The default Debug Console in VS Code doesn't support inputs. If your program nee
 
 The Debugger for Java supports various breakpoints, such as line breakpoints, conditional breakpoints, data breakpoints, logpoints.
 
-&zeroWidthSpace;Java 调试器支持各种断点，例如行断点、条件断点、数据断点、日志点。
+​​​	Java 调试器支持各种断点，例如行断点、条件断点、数据断点、日志点。
 
 ### [Breakpoint - Conditional breakpoint 断点 - 条件断点](https://code.visualstudio.com/docs/java/java-debugging#_breakpoint-conditional-breakpoint)
 
 With the help of expression evaluation, the debugger also supports conditional breakpoint. You can set your breakpoint to break when expression evaluates to true.
 
-&zeroWidthSpace;借助表达式评估，调试器还支持条件断点。当表达式评估为 true 时，您可以设置断点以中断。
+​​​	借助表达式评估，调试器还支持条件断点。当表达式评估为 true 时，您可以设置断点以中断。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Setting a conditional breakpoint when i==1000" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -159,7 +159,7 @@ With the help of expression evaluation, the debugger also supports conditional b
 
 You can have the debugger break when a variable changes its value. Note that the data breakpoint can only be set inside a debug session. This means you need to launch your application and break on a regular breakpoint first. You can then pick a field in the **VARIABLES** view and set a data breakpoint.
 
-&zeroWidthSpace;当变量更改其值时，您可以让调试器中断。请注意，数据断点只能在调试会话中设置。这意味着您需要先启动应用程序并在常规断点处中断。然后，您可以在 VARIABLES 视图中选择一个字段并设置数据断点。
+​​​	当变量更改其值时，您可以让调试器中断。请注意，数据断点只能在调试会话中设置。这意味着您需要先启动应用程序并在常规断点处中断。然后，您可以在 VARIABLES 视图中选择一个字段并设置数据断点。
 
 ![Data Breakpoint](./RunandDebug_img/data-breakpoint.png)
 
@@ -167,7 +167,7 @@ You can have the debugger break when a variable changes its value. Note that the
 
 [Logpoints](https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach#_introducing-logpoints) is also supported by Java Debugger. Logpoints allow you to send output to Debug Console without editing code. They're different from breakpoints because they don't stop the execution flow of your application.
 
-&zeroWidthSpace;Java 调试器也支持日志点。日志点允许您将输出发送到调试控制台，而无需编辑代码。它们不同于断点，因为它们不会停止应用程序的执行流。
+​​​	Java 调试器也支持日志点。日志点允许您将输出发送到调试控制台，而无需编辑代码。它们不同于断点，因为它们不会停止应用程序的执行流。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Adding a Logpoint that outputs the value of result.size to the Debug Console" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -177,7 +177,7 @@ You can have the debugger break when a variable changes its value. Note that the
 
 The debugger also lets you evaluate expressions in the **WATCH** window as well as the Debug Console.
 
-&zeroWidthSpace;调试器还允许您在 WATCH 窗口以及调试控制台中评估表达式。
+​​​	调试器还允许您在 WATCH 窗口以及调试控制台中评估表达式。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Add an expression to the WATCH window to display the owner object" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -187,7 +187,7 @@ The debugger also lets you evaluate expressions in the **WATCH** window as well 
 
 Another advanced feature the debugger supports is 'Hot Code' replacement. Hot Code Replace (HCR) is a debugging technique whereby the Debugger for Java transmits the class changes over the debugging channel to another Java Virtual Machine (JVM). HCR facilitates experimental development and fosters iterative trial-and-error coding. With this new feature, you can start a debugging session and change a Java file in your development environment, and the debugger will replace the code in the running JVM. No restart is required, which is why it's called "hot". Below is an illustration of how you can use HCR with Debugger for Java in VS Code.
 
-&zeroWidthSpace;调试器支持的另一个高级功能是“热代码”替换。热代码替换 (HCR) 是一种调试技术，Java 调试器通过该技术将类更改通过调试通道传输到另一个 Java 虚拟机 (JVM)。HCR 便于实验性开发并促进迭代试错编码。借助此新功能，您可以在开发环境中启动调试会话并更改 Java 文件，调试器将替换正在运行的 JVM 中的代码。无需重新启动，这就是它被称为“热”的原因。下面说明了如何在 VS Code 中将 HCR 与 Java 调试器配合使用。
+​​​	调试器支持的另一个高级功能是“热代码”替换。热代码替换 (HCR) 是一种调试技术，Java 调试器通过该技术将类更改通过调试通道传输到另一个 Java 虚拟机 (JVM)。HCR 便于实验性开发并促进迭代试错编码。借助此新功能，您可以在开发环境中启动调试会话并更改 Java 文件，调试器将替换正在运行的 JVM 中的代码。无需重新启动，这就是它被称为“热”的原因。下面说明了如何在 VS Code 中将 HCR 与 Java 调试器配合使用。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Using Hot Code replacement to change string output during a debug session" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -195,7 +195,7 @@ Another advanced feature the debugger supports is 'Hot Code' replacement. Hot Co
 
 You may use the debug setting `java.debug.settings.hotCodeReplace` to control how to trigger Hot Code Replace. The possible setting values are:
 
-&zeroWidthSpace;您可以使用调试设置 `java.debug.settings.hotCodeReplace` 来控制如何触发热代码替换。可能的设置值包括：
+​​​	您可以使用调试设置 `java.debug.settings.hotCodeReplace` 来控制如何触发热代码替换。可能的设置值包括：
 
 - `manual` - Click the toolbar to apply the changes (default).
   `manual` - 单击工具栏以应用更改（默认）。
@@ -208,7 +208,7 @@ You may use the debug setting `java.debug.settings.hotCodeReplace` to control ho
 
 Step filter is supported by the extension to filter out types that you do not want to see or step through while debugging. With this feature, you can configure the packages to filter within your `launch.json` so they could be skipped when you step through.
 
-&zeroWidthSpace;扩展支持步骤筛选，以筛选出您在调试时不想查看或逐步执行的类型。借助此功能，您可以配置要筛选的包，以便在您逐步执行时跳过它们。
+​​​	扩展支持步骤筛选，以筛选出您在调试时不想查看或逐步执行的类型。借助此功能，您可以配置要筛选的包，以便在您逐步执行时跳过它们。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Adding a stepfilter to avoid stepping into java.lang.ClassLoader" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -218,7 +218,7 @@ Step filter is supported by the extension to filter out types that you do not wa
 
 There are many options and settings available to configure the debugger. For example, configuring the JVM arguments and environment variables is easily done with launch options.
 
-&zeroWidthSpace;有很多选项和设置可用于配置调试器。例如，使用启动选项可以轻松配置 JVM 参数和环境变量。
+​​​	有很多选项和设置可用于配置调试器。例如，使用启动选项可以轻松配置 JVM 参数和环境变量。
 
 <video autoplay="" loop="" muted="" playsinline="" controls="" title="Adding various configuration options to the workspace launch.json file" data-immersive-translate-walked="91797590-0916-4334-b87d-8f934ea008b8" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 616.662px; max-width: 100%; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></video>
 
@@ -226,15 +226,15 @@ There are many options and settings available to configure the debugger. For exa
 
 Consult the documentation for the [Language Support for Java™ by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java) extension for help with setting up your project.
 
-&zeroWidthSpace;有关如何设置项目的帮助，请参阅 Red Hat 的 Language Support for Java™ 扩展的文档。
+​​​	有关如何设置项目的帮助，请参阅 Red Hat 的 Language Support for Java™ 扩展的文档。
 
 For many commonly used setups, there are samples available in [VS Code Java Debugger Configuration](https://github.com/microsoft/vscode-java-debug/blob/main/Configuration.md). The document explains how the Java debugger automatically generates configurations for you, and if you need to modify them, how to do so with Main class, different arguments, environment, attaching to other Java processes, and usage of more advanced features.
 
-&zeroWidthSpace;对于许多常用设置，VS Code Java 调试器配置中提供了示例。该文档说明了 Java 调试器如何自动为您生成配置，如果您需要修改它们，还说明了如何使用主类、不同的参数、环境、附加到其他 Java 进程以及使用更高级的功能来修改它们。
+​​​	对于许多常用设置，VS Code Java 调试器配置中提供了示例。该文档说明了 Java 调试器如何自动为您生成配置，如果您需要修改它们，还说明了如何使用主类、不同的参数、环境、附加到其他 Java 进程以及使用更高级的功能来修改它们。
 
 Below are all the configurations available for `Launch` and `Attach`. For more information about how to write the `launch.json` file, refer to [Debugging](https://code.visualstudio.com/docs/editor/debugging).
 
-&zeroWidthSpace;以下是 `Launch` 和 `Attach` 可用的所有配置。有关如何编写 `launch.json` 文件的更多信息，请参阅调试。
+​​​	以下是 `Launch` 和 `Attach` 可用的所有配置。有关如何编写 `launch.json` 文件的更多信息，请参阅调试。
 
 ### [Launch 启动](https://code.visualstudio.com/docs/java/java-debugging#_launch)
 
@@ -598,11 +598,11 @@ Below are all the configurations available for `Launch` and `Attach`. For more i
 
 If you encounter issues when using the debugger, a detailed troubleshooting guide can be found in the [vscode-java-debug GitHub repository](https://github.com/microsoft/vscode-java-debug/blob/main/Troubleshooting.md).
 
-&zeroWidthSpace;如果您在使用调试器时遇到问题，可以在 vscode-java-debug GitHub 存储库中找到详细的故障排除指南。
+​​​	如果您在使用调试器时遇到问题，可以在 vscode-java-debug GitHub 存储库中找到详细的故障排除指南。
 
 Common issues explained include:
 
-&zeroWidthSpace;说明的常见问题包括：
+​​​	说明的常见问题包括：
 
 - Java Language Support extension fails to start.
   Java 语言支持扩展无法启动。
@@ -633,20 +633,20 @@ Common issues explained include:
 
 You can find the full list of issues at the [vscode-java-debug](https://github.com/microsoft/vscode-java-debug/issues) repository. You can submit a [bug or feature suggestion](https://github.com/microsoft/vscode-java-debug/issues/new) and participate in the community driven [vscode-java-debug Gitter channel](https://gitter.im/Microsoft/vscode-java-debug).
 
-&zeroWidthSpace;您可以在 vscode-java-debug 存储库中找到完整的问题列表。您可以提交错误或功能建议，并参与社区驱动的 vscode-java-debug Gitter 频道。
+​​​	您可以在 vscode-java-debug 存储库中找到完整的问题列表。您可以提交错误或功能建议，并参与社区驱动的 vscode-java-debug Gitter 频道。
 
 ## [Next steps 后续步骤](https://code.visualstudio.com/docs/java/java-debugging#_next-steps)
 
 Read on to find out about:
 
-&zeroWidthSpace;继续阅读以了解：
+​​​	继续阅读以了解：
 
 - [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Find out how to use the debugger in VS Code with your project for any language.
   调试 - 了解如何将调试器与任何语言的项目一起在 VS Code 中使用。
 
 And for Java:
 
-&zeroWidthSpace;对于 Java：
+​​​	对于 Java：
 
 - [Java testing](https://code.visualstudio.com/docs/java/java-testing) - Test Java within VS Code with the Java Test Runner extension.
   Java 测试 - 使用 Java Test Runner 扩展在 VS Code 中测试 Java。

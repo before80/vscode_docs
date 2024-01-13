@@ -16,11 +16,11 @@ draft = false
 
 The steps for uninstalling Visual Studio Code will depend on your platform (Windows, macOS, or Linux) and the install option that you used. For example on Windows, you can use the System or User Windows Installers or download a `.zip` file and extract the contents anywhere on your machine.
 
-&zeroWidthSpace;卸载 Visual Studio Code 的步骤取决于你的平台（Windows、macOS 或 Linux）以及你使用的安装选项。例如，在 Windows 上，你可以使用系统或用户 Windows 安装程序，或下载一个 `.zip` 文件并将内容解压到你的计算机上的任意位置。
+​​​	卸载 Visual Studio Code 的步骤取决于你的平台（Windows、macOS 或 Linux）以及你使用的安装选项。例如，在 Windows 上，你可以使用系统或用户 Windows 安装程序，或下载一个 `.zip` 文件并将内容解压到你的计算机上的任意位置。
 
 In general, you would uninstall VS Code as you would any other desktop application and follow your platform's recommended flow for uninstalling software. Specific platform guidance is provided below as well as how to [completely clean up](https://code.visualstudio.com/docs/setup/uninstall#_clean-uninstall) any remaining VS Code configuration files.
 
-&zeroWidthSpace;通常，你可以像卸载任何其他桌面应用程序一样卸载 VS Code，并按照你的平台推荐的软件卸载流程进行操作。下面提供了特定平台的指导，以及如何彻底清理任何剩余的 VS Code 配置文件。
+​​​	通常，你可以像卸载任何其他桌面应用程序一样卸载 VS Code，并按照你的平台推荐的软件卸载流程进行操作。下面提供了特定平台的指导，以及如何彻底清理任何剩余的 VS Code 配置文件。
 
 ## [Windows](https://code.visualstudio.com/docs/setup/uninstall#_windows)
 
@@ -28,7 +28,7 @@ In general, you would uninstall VS Code as you would any other desktop applicati
 
 If you installed VS Code via the Windows Installer, either the User or System version, use the installer to remove VS Code.
 
-&zeroWidthSpace;如果你通过 Windows 安装程序（用户版或系统版）安装了 VS Code，请使用该安装程序来移除 VS Code。
+​​​	如果你通过 Windows 安装程序（用户版或系统版）安装了 VS Code，请使用该安装程序来移除 VS Code。
 
 - Start menu
 
@@ -58,23 +58,23 @@ If you installed VS Code via the Windows Installer, either the User or System ve
 
 If you installed VS Code on Windows by downloading and extracting one of the `.zip` files found on the [Visual Studio Code website](https://code.visualstudio.com/#alt-downloads), you can uninstall by deleting the folder where you extracted the `.zip` contents.
 
-&zeroWidthSpace;如果您通过下载并解压 Visual Studio Code 网站上找到的 `.zip` 文件之一在 Windows 上安装了 VS Code，则可以通过删除解压 `.zip` 内容的文件夹来卸载。
+​​​	如果您通过下载并解压 Visual Studio Code 网站上找到的 `.zip` 文件之一在 Windows 上安装了 VS Code，则可以通过删除解压 `.zip` 内容的文件夹来卸载。
 
 ## [macOS](https://code.visualstudio.com/docs/setup/uninstall#_macos)
 
 To uninstall VS Code on macOS, open **Finder** and go to **Applications**. Right-click on the Visual Studio Code application and select **Move to Trash**.
 
-&zeroWidthSpace;要在 macOS 上卸载 VS Code，请打开 Finder 并转到应用程序。右键单击 Visual Studio Code 应用程序，然后选择“移至废纸篓”。
+​​​	要在 macOS 上卸载 VS Code，请打开 Finder 并转到应用程序。右键单击 Visual Studio Code 应用程序，然后选择“移至废纸篓”。
 
 ## [Linux](https://code.visualstudio.com/docs/setup/uninstall#_linux)
 
 To uninstall VS Code on Linux, you should use your package manager's uninstall or remove option. The exact command line will differ depending on which package manager you used (for example, `apt-get`, `rpn`, `dnf`, `yum`, etc.).
 
-&zeroWidthSpace;要在 Linux 上卸载 VS Code，您应该使用包管理器的卸载或删除选项。确切的命令行会根据您使用的包管理器而有所不同（例如， `apt-get` 、 `rpn` 、 `dnf` 、 `yum` 等）。
+​​​	要在 Linux 上卸载 VS Code，您应该使用包管理器的卸载或删除选项。确切的命令行会根据您使用的包管理器而有所不同（例如， `apt-get` 、 `rpn` 、 `dnf` 、 `yum` 等）。
 
 The names for the VS Code packages are:
 
-&zeroWidthSpace;VS Code 包的名称为：
+​​​	VS Code 包的名称为：
 
 - `code` - VS Code Stable release
   `code` - VS Code 稳定版
@@ -83,7 +83,7 @@ The names for the VS Code packages are:
 
 For example, if you installed VS Code via the Debian package (`.deb`) and `apt-get` package manager, you would run:
 
-&zeroWidthSpace;例如，如果您通过 Debian 包 ( `.deb` ) 和 `apt-get` 包管理器安装了 VS Code，则您将运行：
+​​​	例如，如果您通过 Debian 包 ( `.deb` ) 和 `apt-get` 包管理器安装了 VS Code，则您将运行：
 
 ```
 sudo apt-get remove code
@@ -91,17 +91,17 @@ sudo apt-get remove code
 
 where `code` is the name of the VS Code Debian package.
 
-&zeroWidthSpace;其中 `code` 是 VS Code Debian 包的名称。
+​​​	其中 `code` 是 VS Code Debian 包的名称。
 
 ## [Clean uninstall 彻底卸载](https://code.visualstudio.com/docs/setup/uninstall#_clean-uninstall)
 
 If you want to remove all user data after uninstalling VS Code, you can delete the user data folders `Code` and `.vscode`. This will return you to the state before you installed VS Code. This can also be used to reset all settings if you don't want to uninstall VS Code.
 
-&zeroWidthSpace;如果您想在卸载 VS Code 后删除所有用户数据，则可以删除用户数据文件夹 `Code` 和 `.vscode` 。这会让您回到安装 VS Code 之前状态。如果您不想卸载 VS Code，也可以使用此方法重置所有设置。
+​​​	如果您想在卸载 VS Code 后删除所有用户数据，则可以删除用户数据文件夹 `Code` 和 `.vscode` 。这会让您回到安装 VS Code 之前状态。如果您不想卸载 VS Code，也可以使用此方法重置所有设置。
 
 The folder locations will vary depending on your platform:
 
-&zeroWidthSpace;文件夹位置会根据您的平台而有所不同：
+​​​	文件夹位置会根据您的平台而有所不同：
 
 - **Windows** - Delete `%APPDATA%\Code` and `%USERPROFILE%\.vscode`.
   Windows - 删除 `%APPDATA%\Code` 和 `%USERPROFILE%\.vscode` 。

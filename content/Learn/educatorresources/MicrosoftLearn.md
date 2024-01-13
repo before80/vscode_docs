@@ -16,14 +16,14 @@ draft = false
 
 If you're looking for resources for your students to get started with Visual Studio Code, check out this curated list of Learn modules. These modules are designed to walk you through step-by-step to set up your work environment or finish a small project, all while familiarizing you with the VS Code interface.
 
-&zeroWidthSpace;如果您正在寻找资源来帮助您的学生开始使用 Visual Studio Code，请查看此精选的 Learn 模块列表。这些模块旨在逐步引导您设置工作环境或完成一个小项目，同时让您熟悉 VS Code 界面。
+​​​	如果您正在寻找资源来帮助您的学生开始使用 Visual Studio Code，请查看此精选的 Learn 模块列表。这些模块旨在逐步引导您设置工作环境或完成一个小项目，同时让您熟悉 VS Code 界面。
 
 [Set up your Python beginner development environment
 设置 Python 初学者开发环境](https://learn.microsoft.com/training/modules/python-install-vscode/)
 
 Get started with learning Python by installing and configuring the tools you'll need to build real applications.
 
-&zeroWidthSpace;通过安装和配置构建真实应用程序所需的工具，开始学习 Python。
+​​​	通过安装和配置构建真实应用程序所需的工具，开始学习 Python。
 
 [![img](./MicrosoftLearn_img/learn-python-vscode.png)](https://learn.microsoft.com/training/modules/python-install-vscode)
 
@@ -32,7 +32,7 @@ Get started with learning Python by installing and configuring the tools you'll 
 
 Utilize the tight integration of Visual Studio Code with the Git source-control management system.
 
-&zeroWidthSpace;利用 Visual Studio Code 与 Git 源代码管理系统的紧密集成。
+​​​	利用 Visual Studio Code 与 Git 源代码管理系统的紧密集成。
 
 [![img](./MicrosoftLearn_img/learn-git.png)](https://learn.microsoft.com/training/modules/use-git-from-vs-code/)
 
@@ -41,7 +41,7 @@ Utilize the tight integration of Visual Studio Code with the Git source-control 
 
 Learn the basics of Python.
 
-&zeroWidthSpace;学习 Python 的基础知识。
+​​​	学习 Python 的基础知识。
 
 [![img](./MicrosoftLearn_img/learn-python-notebooks.png)](https://learn.microsoft.com/training/modules/basic-python-nasa/)
 
@@ -50,6 +50,6 @@ Learn the basics of Python.
 
 Build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code and Node.js.
 
-&zeroWidthSpace;使用 Visual Studio Code 和 Node.js 构建一个数据库应用，以在 Azure Cosmos DB 中存储和查询数据。
+​​​	使用 Visual Studio Code 和 Node.js 构建一个数据库应用，以在 Azure Cosmos DB 中存储和查询数据。
 
 [![img](./MicrosoftLearn_img/learn-node-app.png)](https://learn.microsoft.com/training/modules/build-node-cosmos-app-vscode/)

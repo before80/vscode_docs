@@ -16,21 +16,21 @@ draft = false
 
 Formatting makes source code easier to read by human beings. By enforcing particular rules and conventions such as line spacing, indents, and spacing around operators, the code becomes more visually organized and comprehensible. You can view an example on the [autopep8](https://pypi.org/project/autopep8/) page. Keep in mind, formatting doesn't affect the functionality of the code itself.
 
-&zeroWidthSpace;格式化使源代码更易于人类阅读。通过强制执行特定规则和约定（例如行距、缩进和运算符周围的间距），代码在视觉上变得更有条理和易于理解。您可以在 autopep8 页面上查看示例。请记住，格式化不会影响代码本身的功能。
+​​​	格式化使源代码更易于人类阅读。通过强制执行特定规则和约定（例如行距、缩进和运算符周围的间距），代码在视觉上变得更有条理和易于理解。您可以在 autopep8 页面上查看示例。请记住，格式化不会影响代码本身的功能。
 
 [Linting](https://code.visualstudio.com/docs/python/linting) helps to prevent errors by analyzing code for common syntactical, stylistic, and functional errors and unconventional programming practices. Although there is a little overlap between formatting and linting, the two capabilities are complementary.
 
-&zeroWidthSpace;通过分析代码中的常见语法、风格和功能错误以及非常规编程实践，Linting 有助于防止错误。尽管格式化和 linting 之间存在一些重叠，但这两个功能是互补的。
+​​​	通过分析代码中的常见语法、风格和功能错误以及非常规编程实践，Linting 有助于防止错误。尽管格式化和 linting 之间存在一些重叠，但这两个功能是互补的。
 
 ## [Choose a formatter 选择格式化程序](https://code.visualstudio.com/docs/python/formatting#_choose-a-formatter)
 
 Install the formatting tool of your choice from the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode).
 
-&zeroWidthSpace;从 VS Code Marketplace 安装您选择的格式化工具。
+​​​	从 VS Code Marketplace 安装您选择的格式化工具。
 
 Microsoft publishes the following formatting extensions:
 
-&zeroWidthSpace;Microsoft 发布以下格式化扩展：
+​​​	Microsoft 发布以下格式化扩展：
 
 | Formatter 格式化程序             | Extension 扩展                                               |
 | :------------------------------- | :----------------------------------------------------------- |
@@ -39,7 +39,7 @@ Microsoft publishes the following formatting extensions:
 
 Formatter extensions offered by the community:
 
-&zeroWidthSpace;社区提供的格式化程序扩展：
+​​​	社区提供的格式化程序扩展：
 
 | Formatter 格式化程序 | Extension 扩展                                               |
 | :------------------- | :----------------------------------------------------------- |
@@ -48,7 +48,7 @@ Formatter extensions offered by the community:
 
 Furthermore, below are formatter extensions that support import sorting:
 
-&zeroWidthSpace;此外，以下是支持导入排序的格式化程序扩展：
+​​​	此外，以下是支持导入排序的格式化程序扩展：
 
 | Formatter 格式化程序 | Extension 扩展                                               |
 | :------------------- | :----------------------------------------------------------- |
@@ -57,13 +57,13 @@ Furthermore, below are formatter extensions that support import sorting:
 
 > **Note**: If you don't find your preferred formatter in the table above or in the Marketplace, you can add support for it via an extension. You can use the [Python Extension Template](https://code.visualstudio.com/api/advanced-topics/python-extension-template) to integrate new Python tools into VS Code.
 >
-> &zeroWidthSpace;注意：如果您在上面的表格或市场中找不到您喜欢的格式化程序，您可以通过扩展来添加对它的支持。您可以使用 Python 扩展模板将新的 Python 工具集成到 VS Code 中。
+> ​​​	注意：如果您在上面的表格或市场中找不到您喜欢的格式化程序，您可以通过扩展来添加对它的支持。您可以使用 Python 扩展模板将新的 Python 工具集成到 VS Code 中。
 
 ## [Set a default formatter 设置默认格式化程序](https://code.visualstudio.com/docs/python/formatting#_set-a-default-formatter)
 
 Once you install a formatter extension, you can select it as the default formatter for Python files in VS Code by following the steps below:
 
-&zeroWidthSpace;安装格式化程序扩展后，您可以按照以下步骤将其选为 VS Code 中 Python 文件的默认格式化程序：
+​​​	安装格式化程序扩展后，您可以按照以下步骤将其选为 VS Code 中 Python 文件的默认格式化程序：
 
 1. Open a Python file in VS Code.
    在 VS Code 中打开一个 Python 文件。
@@ -78,11 +78,11 @@ Once you install a formatter extension, you can select it as the default formatt
 
 Alternatively, you can set it as the default formatter for all Python files by setting `"editor.defaultFormatter"` in your User `settings.json` file, under a `[python]` scope. You can open `settings.json` with the **Preferences: Open User Settings (JSON)** command.
 
-&zeroWidthSpace;或者，您也可以通过在 `"editor.defaultFormatter"` 文件中，在 `[python]` 范围内设置 `settings.json` ，将其设置为所有 Python 文件的默认格式化程序。您可以使用“首选项：打开用户设置 (JSON)”命令打开 `settings.json` 。
+​​​	或者，您也可以通过在 `"editor.defaultFormatter"` 文件中，在 `[python]` 范围内设置 `settings.json` ，将其设置为所有 Python 文件的默认格式化程序。您可以使用“首选项：打开用户设置 (JSON)”命令打开 `settings.json` 。
 
 For example, to set Black Formatter as the default formatter, add the following setting to your User `settings.json` file:
 
-&zeroWidthSpace;例如，要将 Black Formatter 设置为默认格式化程序，请将以下设置添加到您的用户 `settings.json` 文件中：
+​​​	例如，要将 Black Formatter 设置为默认格式化程序，请将以下设置添加到您的用户 `settings.json` 文件中：
 
 ```
   "[python]": {
@@ -92,11 +92,11 @@ For example, to set Black Formatter as the default formatter, add the following 
 
 In order to set a formatter extension as an import sorter, you can set your preference under `"editor.codeActionsOnSave"` in your User `settings.json` file or your Workspace `settings.json` file, under a `[python]` scope. You can open these `settings.json` files using the **Preferences: Open User Settings (JSON)** and **Preferences: Open Workspace Settings (JSON)** commands respectively. This will enable import sorting on save for all Python files.
 
-&zeroWidthSpace;为了将格式化程序扩展名设置为导入排序器，您可以在用户 `settings.json` 文件或工作区 `settings.json` 文件中的 `[python]` 范围内设置您的首选项。您可以分别使用“首选项：打开用户设置 (JSON)”和“首选项：打开工作区设置 (JSON)”命令打开这些 `settings.json` 文件。这将为所有 Python 文件启用保存时的导入排序。
+​​​	为了将格式化程序扩展名设置为导入排序器，您可以在用户 `settings.json` 文件或工作区 `settings.json` 文件中的 `[python]` 范围内设置您的首选项。您可以分别使用“首选项：打开用户设置 (JSON)”和“首选项：打开工作区设置 (JSON)”命令打开这些 `settings.json` 文件。这将为所有 Python 文件启用保存时的导入排序。
 
 For example, to set Ruff as your preferred import sorter, you can add the following setting to your User `settings.json` or your Workspace `settings.json` file:
 
-&zeroWidthSpace;例如，要将 Ruff 设置为您的首选导入排序器，您可以将以下设置添加到您的用户 `settings.json` 或工作区 `settings.json` 文件中：
+​​​	例如，要将 Ruff 设置为您的首选导入排序器，您可以将以下设置添加到您的用户 `settings.json` 或工作区 `settings.json` 文件中：
 
 ```
 {
@@ -112,11 +112,11 @@ For example, to set Ruff as your preferred import sorter, you can add the follow
 
 You can format your code by right-clicking on the editor and selecting **Format Document**, or by using the Shift+Alt+F keyboard shortcut.
 
-&zeroWidthSpace;您可以通过右键单击编辑器并选择“格式化文档”或使用 Shift+Alt+F 键盘快捷键来格式化您的代码。
+​​​	您可以通过右键单击编辑器并选择“格式化文档”或使用 Shift+Alt+F 键盘快捷键来格式化您的代码。
 
 You can also add the following setting to your User `settings.json` file to enable formatting on save for your code:
 
-&zeroWidthSpace;您还可以将以下设置添加到您的用户 `settings.json` 文件中，以便为您的代码启用保存时格式化：
+​​​	您还可以将以下设置添加到您的用户 `settings.json` 文件中，以便为您的代码启用保存时格式化：
 
 ```
   "[python]": {
@@ -128,7 +128,7 @@ You can also add the following setting to your User `settings.json` file to enab
 
 Each formatter extension may have its own settings, but the ones below are supported by both [autopep8](https://marketplace.visualstudio.com/items?itemName=ms-python.autopep8) and [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter):
 
-&zeroWidthSpace;每个格式化程序扩展名可能都有其自己的设置，但以下设置受 autopep8 和 Black Formatter 支持：
+​​​	每个格式化程序扩展名可能都有其自己的设置，但以下设置受 autopep8 和 Black Formatter 支持：
 
 | Setting Suffix 设置 后缀   | Default value 默认值 | Description 说明                                             |
 | :------------------------- | :------------------- | :----------------------------------------------------------- |
@@ -142,7 +142,7 @@ Each formatter extension may have its own settings, but the ones below are suppo
 
 If formatting fails, check the following possible causes:
 
-&zeroWidthSpace;如果格式化失败，请检查以下可能原因：
+​​​	如果格式化失败，请检查以下可能原因：
 
 | Problem 问题                                                 | Solution 解决方案                                            |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -153,7 +153,7 @@ If formatting fails, check the following possible causes:
 
 > **Note**: If you don't find your preferred formatter listed above, you can add support via an extension. The [Python Extension Template](https://code.visualstudio.com/api/advanced-topics/python-extension-template) makes it easy to integrate new Python tools into VS Code.
 >
-> &zeroWidthSpace;注意：如果您在上面未找到您首选的格式化程序，您可以通过扩展添加支持。Python 扩展模板可以轻松地将新的 Python 工具集成到 VS Code 中。
+> ​​​	注意：如果您在上面未找到您首选的格式化程序，您可以通过扩展添加支持。Python 扩展模板可以轻松地将新的 Python 工具集成到 VS Code 中。
 
 ## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/formatting#_next-steps)
 

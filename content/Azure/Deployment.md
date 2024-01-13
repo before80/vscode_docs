@@ -16,17 +16,17 @@ draft = false
 
 Visual Studio Code makes it easy to deploy your applications to the cloud with [Azure](https://azure.microsoft.com/) and we've created walkthroughs to help you get started.
 
-&zeroWidthSpace;借助 Azure，Visual Studio Code 使您能够轻松地将应用程序部署到云端，我们还创建了演练来帮助您入门。
+​​​	借助 Azure，Visual Studio Code 使您能够轻松地将应用程序部署到云端，我们还创建了演练来帮助您入门。
 
 Whether your workflow is through the [Azure CLI](https://learn.microsoft.com/cli/azure) or [Azure App Service](https://azure.microsoft.com/services/app-service), using a Docker container, or creating serverless [Azure Functions](https://azure.microsoft.com/services/functions/), you'll find the deployment steps you need.
 
-&zeroWidthSpace;无论您的工作流是通过 Azure CLI 或 Azure App Service，使用 Docker 容器，还是创建无服务器 Azure Functions，您都会找到所需的部署步骤。
+​​​	无论您的工作流是通过 Azure CLI 或 Azure App Service，使用 Docker 容器，还是创建无服务器 Azure Functions，您都会找到所需的部署步骤。
 
 ## [Deployment tutorials 部署教程](https://code.visualstudio.com/docs/azure/deployment#_deployment-tutorials)
 
 The tutorials and topics below describe different ways of creating and deploying apps to Azure via Visual Studio Code:
 
-&zeroWidthSpace;以下教程和主题介绍了通过 Visual Studio Code 创建和部署应用程序到 Azure 的不同方法：
+​​​	以下教程和主题介绍了通过 Visual Studio Code 创建和部署应用程序到 Azure 的不同方法：
 
 | Tutorial(s) 教程                                             | Description 说明                                             | Framework / Language 框架/语言                               |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -37,7 +37,7 @@ The tutorials and topics below describe different ways of creating and deploying
 
 You can find additional tutorials and walkthroughs on the [Azure Developer Center](https://learn.microsoft.com/azure/developer), including language-specific articles for JavaScript and Node.js, Python, Java, and .NET.
 
-&zeroWidthSpace;您可以在 Azure 开发者中心找到其他教程和演练，包括针对 JavaScript 和 Node.js、Python、Java 和 .NET 的特定语言文章。
+​​​	您可以在 Azure 开发者中心找到其他教程和演练，包括针对 JavaScript 和 Node.js、Python、Java 和 .NET 的特定语言文章。
 
 ## [Next steps 后续步骤](https://code.visualstudio.com/docs/azure/deployment#_next-steps)
 

@@ -16,11 +16,11 @@ draft = false
 
 This learning path introduces you to the world of Python. Explore modules and learning paths inspired by National Aeronautics and Space Administration (NASA) scientists to prepare you for a career in space exploration. Visit [Microsoft Learn training](https://learn.microsoft.com/training/topics/nasa) for the full list of modules.
 
-&zeroWidthSpace;此学习路径向您介绍 Python 世界。探索受美国国家航空航天局 (NASA) 科学家启发的模块和学习路径，为您的太空探索事业做好准备。访问 Microsoft Learn 培训以获取模块的完整列表。
+​​​	此学习路径向您介绍 Python 世界。探索受美国国家航空航天局 (NASA) 科学家启发的模块和学习路径，为您的太空探索事业做好准备。访问 Microsoft Learn 培训以获取模块的完整列表。
 
 Through these modules, you will:
 
-&zeroWidthSpace;通过这些模块，您将：
+​​​	通过这些模块，您将：
 
 - Understand and install the tools needed to learn programming
   了解并安装学习编程所需的工具
@@ -36,7 +36,7 @@ Through these modules, you will:
 
 Learn how Python and data science play a role in the innovative solutions that NASA creates.
 
-&zeroWidthSpace;了解 Python 和数据科学如何在 NASA 创建的创新解决方案中发挥作用。
+​​​	了解 Python 和数据科学如何在 NASA 创建的创新解决方案中发挥作用。
 
 [![img](./NASALessons_img/nasa-python1.png)](https://learn.microsoft.com/training/paths/introduction-python-space-exploration-nasa/?WT.mc_id=python-0000-cxa)
 
@@ -45,7 +45,7 @@ Learn how Python and data science play a role in the innovative solutions that N
 
 Create an AI model that can classify types of space rock present in a photo.
 
-&zeroWidthSpace;创建一个 AI 模型，该模型可以对照片中存在的太空岩石类型进行分类。
+​​​	创建一个 AI 模型，该模型可以对照片中存在的太空岩石类型进行分类。
 
 [![img](./NASALessons_img/nasa-python2.png)](https://learn.microsoft.com/training/paths/classify-space-rocks-artificial-intelligence-nasa/?WT.mc_id=python-0000-cxa)
 
@@ -54,6 +54,6 @@ Create an AI model that can classify types of space rock present in a photo.
 
 This will introduce you to the world of machine learning and help you build a simple ML model.
 
-&zeroWidthSpace;这将向您介绍机器学习的世界，并帮助您构建一个简单的 ML 模型。
+​​​	这将向您介绍机器学习的世界，并帮助您构建一个简单的 ML 模型。
 
 [![img](./NASALessons_img/nasa-python3.png)](https://learn.microsoft.com/training/paths/machine-learning-predict-launch-delay-nasa/?WT.mc_id=python-0000-cxa)

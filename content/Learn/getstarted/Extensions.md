@@ -16,7 +16,7 @@ draft = false
 
 In this video, we walk you through installing Visual Studio Code extensions.
 
-&zeroWidthSpace;在本视频中，我们将引导您完成 Visual Studio Code 扩展的安装。
+​​​	在本视频中，我们将引导您完成 Visual Studio Code 扩展的安装。
 
 <iframe src="https://www.youtube-nocookie.com/embed/SKcZ3cwX8lA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Unlock the power of VS Code's extensions" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
@@ -24,7 +24,7 @@ In this video, we walk you through installing Visual Studio Code extensions.
 
 Next video: [Personalize Visual Studio Code](https://code.visualstudio.com/learn/get-started/personalize)
 
-&zeroWidthSpace;下一视频：个性化 Visual Studio Code
+​​​	下一视频：个性化 Visual Studio Code
 
 ## [Outline 大纲](https://code.visualstudio.com/learn/get-started/extensions#_outline)
 

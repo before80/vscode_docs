@@ -16,11 +16,11 @@ draft = false
 
 The Python Extension for Visual Studio Code is highly configurable. This page describes the key settings you can work with.
 
-&zeroWidthSpace;Visual Studio Code 的 Python 扩展高度可配置。此页面介绍您可以使用的主要设置。
+​​​	Visual Studio Code 的 Python 扩展高度可配置。此页面介绍您可以使用的主要设置。
 
 For general information about working with settings in VS Code, refer to [User and workspace settings](https://code.visualstudio.com/docs/getstarted/settings), as well as the [Variables reference](https://code.visualstudio.com/docs/editor/variables-reference) for information about predefined variable support.
 
-&zeroWidthSpace;有关在 VS Code 中使用设置的常规信息，请参阅用户和工作区设置，以及变量参考以了解有关预定义变量支持的信息。
+​​​	有关在 VS Code 中使用设置的常规信息，请参阅用户和工作区设置，以及变量参考以了解有关预定义变量支持的信息。
 
 ## [General Python settings 常规 Python 设置](https://code.visualstudio.com/docs/python/settings-reference#_general-python-settings)
 
@@ -48,7 +48,7 @@ For general information about working with settings in VS Code, refer to [User a
 
 > **Note:** If you have never changed your language server setting, your language server is set to Pylance via the “Default” setting value.
 >
-> &zeroWidthSpace;注意：如果您从未更改过语言服务器设置，则您的语言服务器将通过“默认”设置值设置为 Pylance。
+> ​​​	注意：如果您从未更改过语言服务器设置，则您的语言服务器将通过“默认”设置值设置为 Pylance。
 
 | Setting 设置 (python.) | Default 默认 | Description 说明                                             |
 | :--------------------- | :----------- | :----------------------------------------------------------- |
@@ -60,7 +60,7 @@ For general information about working with settings in VS Code, refer to [User a
 
 The language server settings apply when `python.languageServer` is `Pylance` or `Default`. If you have difficulties with the language server, see [Troubleshooting](https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md) in the language server repository.
 
-&zeroWidthSpace;当 `python.languageServer` 为 `Pylance` 或 `Default` 时，应用语言服务器设置。如果您在使用语言服务器时遇到困难，请参阅语言服务器存储库中的故障排除。
+​​​	当 `python.languageServer` 为 `Pylance` 或 `Default` 时，应用语言服务器设置。如果您在使用语言服务器时遇到困难，请参阅语言服务器存储库中的故障排除。
 
 | Setting 设置 (python.analysis.) | Default 默认  | Description 说明                                             |
 | :------------------------------ | :------------ | :----------------------------------------------------------- |
@@ -93,7 +93,7 @@ The language server settings apply when `python.languageServer` is `Pylance` or 
 
 This section details all the available rules that can be customized using the `python.analysis.diagnosticSeverityOverrides` setting as shown in the following example.
 
-&zeroWidthSpace;诊断严重性规则
+​​​	诊断严重性规则
 
 ```
 {
@@ -190,67 +190,67 @@ This section details all the available rules that can be customized using the `p
 
 The Python extension settings support predefined variables. Similar to the general VS Code settings, variables use the **${variableName}** syntax. Specifically, the extension supports the following variables:
 
-&zeroWidthSpace;Python 扩展设置支持预定义变量。与常规 VS Code 设置类似，变量使用 ${variableName} 语法。具体来说，该扩展支持以下变量：
+​​​	Python 扩展设置支持预定义变量。与常规 VS Code 设置类似，变量使用 ${variableName} 语法。具体来说，该扩展支持以下变量：
 
 - **${cwd}** - the task runner's current working directory on startup
 
-  &zeroWidthSpace;${cwd} - 任务运行器在启动时的当前工作目录
+  ​​​	${cwd} - 任务运行器在启动时的当前工作目录
 
 - **${workspaceFolder}** - the path of the folder opened in VS Code
 
-  &zeroWidthSpace;${workspaceFolder} - 在 VS Code 中打开的文件夹的路径
+  ​​​	${workspaceFolder} - 在 VS Code 中打开的文件夹的路径
 
 - **${workspaceRootFolderName}** - the name of the folder opened in VS Code without any slashes (/)
 
-  &zeroWidthSpace;${workspaceRootFolderName} - 在 VS Code 中打开的文件夹的名称，不带任何斜杠 (/)
+  ​​​	${workspaceRootFolderName} - 在 VS Code 中打开的文件夹的名称，不带任何斜杠 (/)
 
 - **${workspaceFolderBasename}** - the name of the folder opened in VS Code without any slashes (/)
 
-  &zeroWidthSpace;${workspaceFolderBasename} - 在 VS Code 中打开的文件夹的名称，不带任何斜杠 (/)
+  ​​​	${workspaceFolderBasename} - 在 VS Code 中打开的文件夹的名称，不带任何斜杠 (/)
 
 - **${file}** - the current opened file
 
-  &zeroWidthSpace;${file} - 当前打开的文件
+  ​​​	${file} - 当前打开的文件
 
 - **${relativeFile}** - the current opened file relative to `workspaceFolder`
 
-  &zeroWidthSpace;${relativeFile} - 当前打开的文件相对于 `workspaceFolder`
+  ​​​	${relativeFile} - 当前打开的文件相对于 `workspaceFolder`
 
 - **${relativeFileDirname}** - the current opened file's dirname relative to `workspaceFolder`
 
-  &zeroWidthSpace;${relativeFileDirname} - 当前打开文件的 dirname 相对于 `workspaceFolder`
+  ​​​	${relativeFileDirname} - 当前打开文件的 dirname 相对于 `workspaceFolder`
 
 - **${fileBasename}** - the current opened file's basename
 
-  &zeroWidthSpace;${fileBasename} - 当前打开文件的 basename
+  ​​​	${fileBasename} - 当前打开文件的 basename
 
 - **${fileBasenameNoExtension}** - the current opened file's basename with no file extension
 
-  &zeroWidthSpace;${fileBasenameNoExtension} - 当前打开文件的 basename，不带文件扩展名
+  ​​​	${fileBasenameNoExtension} - 当前打开文件的 basename，不带文件扩展名
 
 - **${fileDirname}** - the current opened file's dirname
 
-  &zeroWidthSpace;${fileDirname} - 当前打开文件的 dirname
+  ​​​	${fileDirname} - 当前打开文件的 dirname
 
 - **${fileExtname}** - the current opened file's extension
 
-  &zeroWidthSpace;${fileExtname} - 当前打开文件的扩展名
+  ​​​	${fileExtname} - 当前打开文件的扩展名
 
 - **${lineNumber}** - the current selected line number in the active file
 
-  &zeroWidthSpace;${lineNumber} - 活动文件中当前选定的行号
+  ​​​	${lineNumber} - 活动文件中当前选定的行号
 
 - **${selectedText}** - the current selected text in the active file
 
-  &zeroWidthSpace;${selectedText} - 活动文件中当前选定的文本
+  ​​​	${selectedText} - 活动文件中当前选定的文本
 
 - **${execPath}** - the path to the running VS Code executable
 
-  &zeroWidthSpace;${execPath} - 正在运行的 VS Code 可执行文件的路径
+  ​​​	${execPath} - 正在运行的 VS Code 可执行文件的路径
 
 For additional information about predefined variables and example usages, see the [Variables reference](https://code.visualstudio.com/docs/editor/variables-reference) in the general VS Code docs.
 
-&zeroWidthSpace;有关预定义变量和示例用法的更多信息，请参阅常规 VS Code 文档中的变量参考。
+​​​	有关预定义变量和示例用法的更多信息，请参阅常规 VS Code 文档中的变量参考。
 
 ## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/settings-reference#_next-steps)
 
