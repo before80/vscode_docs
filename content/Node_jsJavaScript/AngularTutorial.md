@@ -14,17 +14,17 @@ draft = false
 
 
 
-[Angular](https://angular.io/) is a popular web development platform developed and maintained by Google. Angular uses [TypeScript](https://code.visualstudio.com/docs/languages/typescript) as its main programming language. The Visual Studio Code editor supports TypeScript IntelliSense and code navigation out of the box, so you can do Angular development without installing any other extension.
+[Angular](https://angular.io/) is a popular web development platform developed and maintained by Google. Angular uses [TypeScript]({{< ref "/Languages/TypeScript" >}}) as its main programming language. The Visual Studio Code editor supports TypeScript IntelliSense and code navigation out of the box, so you can do Angular development without installing any other extension.
 
 ​​	Angular 是一个由 Google 开发和维护的流行的 Web 开发平台。Angular 使用 TypeScript 作为其主要编程语言。Visual Studio Code 编辑器开箱即用地支持 TypeScript IntelliSense 和代码导航，因此您无需安装任何其他扩展即可进行 Angular 开发。
 
 ![Welcome to app](./AngularTutorial_img/Welcome-to-app.png)
 
-> **Note**: To help get you started with Angular development, you can use the [Angular profile template](https://code.visualstudio.com/docs/editor/profiles#_angular-profile-template) that includes useful extensions, settings, and code snippets.
+> **Note**: To help get you started with Angular development, you can use the [Angular profile template]({{< ref "/UserGuide/Profiles#_angular-profile-template" >}}) that includes useful extensions, settings, and code snippets.
 >
 > ​​	注意：为了帮助您开始 Angular 开发，您可以使用包含有用扩展、设置和代码段的 Angular 配置文件模板。
 
-## [Welcome to Angular 欢迎使用 Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_welcome-to-angular)
+## [Welcome to Angular 欢迎使用 Angular]({{< ref "/Node_jsJavaScript/AngularTutorial#_welcome-to-angular" >}})
 
 We'll be using the [Angular CLI](https://cli.angular.io/) for this tutorial. To install and use the command line interface as well as run the Angular application server, you'll need the [Node.js](https://nodejs.org/) JavaScript runtime and [npm](https://www.npmjs.com/) (the Node.js package manager) installed. npm is included with Node.js which you can install from [Node.js downloads](https://nodejs.org/en/download/).
 
@@ -50,7 +50,7 @@ This may take a few minutes to install. You can now create a new Angular applica
 ng new my-app
 ```
 
-`my-app` is the name of the folder for your application. The `ng new` command prompts you with options for the generated application. Accept the defaults by pressing the Enter key. This may take a few minutes to create the Angular application in [TypeScript](https://code.visualstudio.com/docs/languages/typescript) and install its dependencies.
+`my-app` is the name of the folder for your application. The `ng new` command prompts you with options for the generated application. Accept the defaults by pressing the Enter key. This may take a few minutes to create the Angular application in [TypeScript]({{< ref "/Languages/TypeScript" >}}) and install its dependencies.
 
 ​​	 `my-app` 是应用程序的文件夹名称。 `ng new` 命令会提示您有关生成的应用程序的选项。按 Enter 键接受默认值。这可能需要几分钟才能用 TypeScript 创建 Angular 应用程序并安装其依赖项。
 
@@ -76,7 +76,7 @@ cd my-app
 code .
 ```
 
-### [Syntax highlighting and bracket matching 语法突出显示和括号匹配](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_syntax-highlighting-and-bracket-matching)
+### [Syntax highlighting and bracket matching 语法突出显示和括号匹配]({{< ref "/Node_jsJavaScript/AngularTutorial#_syntax-highlighting-and-bracket-matching" >}})
 
 Now expand the `src\app` folder and select the `app.component.ts` file. You'll notice that VS Code has syntax highlighting for the various source code elements and, if you put the cursor on a parenthesis, the matching bracket is also selected.
 
@@ -84,7 +84,7 @@ Now expand the `src\app` folder and select the `app.component.ts` file. You'll n
 
 ![angular bracket matching](./AngularTutorial_img/bracket-matching.png)
 
-### [IntelliSense](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_intellisense)
+### [IntelliSense]({{< ref "/Node_jsJavaScript/AngularTutorial#_intellisense" >}})
 
 As you hover your mouse over text in the file, you'll see that VS Code gives you information about key items in your source code. Items such as variables, classes and Angular decorators are a few examples where you'll be presented with this information.
 
@@ -104,13 +104,13 @@ You can click the information button (`i`) to see a flyout with more documentati
 
 ![angular intellisense](./AngularTutorial_img/intellisense.png)
 
-VS Code uses the TypeScript language service for code intelligence ([IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)) and it has a feature called [Automatic Type Acquisition](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition) (ATA). ATA pulls down the npm Type Declaration files (`*.d.ts`) for the npm modules referenced in the `package.json`.
+VS Code uses the TypeScript language service for code intelligence ([IntelliSense]({{< ref "/UserGuide/IntelliSense" >}})) and it has a feature called [Automatic Type Acquisition]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_typings-and-automatic-type-acquisition" >}}) (ATA). ATA pulls down the npm Type Declaration files (`*.d.ts`) for the npm modules referenced in the `package.json`.
 
 ​​	VS Code 使用 TypeScript 语言服务进行代码智能（IntelliSense），并且它具有一个称为自动类型获取 (ATA) 的功能。ATA 会提取 `package.json` 中引用的 npm 模块的 npm 类型声明文件 ( `*.d.ts` )。
 
-### [Go to Definition, Peek definition 转到定义、查看定义](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_go-to-definition-peek-definition)
+### [Go to Definition, Peek definition 转到定义、查看定义]({{< ref "/Node_jsJavaScript/AngularTutorial#_go-to-definition-peek-definition" >}})
 
-Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (F12) or **Peek Definition** (Alt+F12). Open the `app.module.ts` file and put the cursor over `AppComponent` in the `bootstrap` property declaration, right click and select **Peek Definition**. A [Peek window](https://code.visualstudio.com/docs/editor/editingevolved#_peek) will open showing the `AppComponent` definition from `app.component.ts`.
+Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (F12) or **Peek Definition** (Alt+F12). Open the `app.module.ts` file and put the cursor over `AppComponent` in the `bootstrap` property declaration, right click and select **Peek Definition**. A [Peek window]({{< ref "/UserGuide/CodeNavigation#_peek" >}}) will open showing the `AppComponent` definition from `app.component.ts`.
 
 ​​	通过 TypeScript 语言服务，VS Code 还可以在编辑器中通过转到定义 (F12) 或查看定义 (Alt+F12) 提供类型定义信息。打开 `app.module.ts` 文件，并将光标放在 `bootstrap` 属性声明中的 `AppComponent` 上，右键单击并选择查看定义。将打开一个查看窗口，显示来自 `app.component.ts` 的 `AppComponent` 定义。
 
@@ -120,7 +120,7 @@ Press Escape to close the Peek window.
 
 ​​	按 Escape 关闭查看窗口。
 
-## [Hello World](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_hello-world)
+## [Hello World]({{< ref "/Node_jsJavaScript/AngularTutorial#_hello-world" >}})
 
 Let's update the sample application to "Hello World". Go back to the `app.component.ts` file and change the `title` string in `AppComponent` to "Hello World".
 
@@ -143,13 +143,13 @@ Once you save the `app.component.ts` file, the running instance of the server wi
 
 ​​	保存 `app.component.ts` 文件后，服务器的正在运行的实例将更新网页，您将看到“欢迎来到 Hello World!!”。
 
-> **Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：VS Code 支持自动保存，默认情况下会在延迟后保存您的文件。选中“文件”菜单中的“自动保存”选项以启用自动保存，或直接配置 `files.autoSave` 用户设置。
 
 ![hello world](./AngularTutorial_img/hello-world.png)
 
-## [Debugging Angular 调试 Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_debugging-angular)
+## [Debugging Angular 调试 Angular]({{< ref "/Node_jsJavaScript/AngularTutorial#_debugging-angular" >}})
 
 To debug the client side Angular code, we'll use the built-in JavaScript debugger.
 
@@ -159,7 +159,7 @@ To debug the client side Angular code, we'll use the built-in JavaScript debugge
 >
 > ​​	注意：本教程假定您已安装 Edge 浏览器。如果您想使用 Chrome 进行调试，请将启动 `type` 替换为 `chrome` 。Firefox 浏览器也有一个调试器。
 
-### [Set a breakpoint 设置断点](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_set-a-breakpoint)
+### [Set a breakpoint 设置断点]({{< ref "/Node_jsJavaScript/AngularTutorial#_set-a-breakpoint" >}})
 
 To set a breakpoint in `app.component.ts`, click on the gutter to the left of the line numbers. This will set a breakpoint which will be visible as a red circle.
 
@@ -167,9 +167,9 @@ To set a breakpoint in `app.component.ts`, click on the gutter to the left of th
 
 ![set a breakpoint](./AngularTutorial_img/breakpoint.png)
 
-### [Configure the debugger 配置调试器](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_configure-the-debugger)
+### [Configure the debugger 配置调试器]({{< ref "/Node_jsJavaScript/AngularTutorial#_configure-the-debugger" >}})
 
-We need to initially configure the [debugger](https://code.visualstudio.com/docs/editor/debugging). To do so, go to the **Run and Debug** view (Ctrl+Shift+D) and select the **create a launch.json file** link to create a `launch.json` debugger configuration file. Choose **Web App (Edge)** from the **Select debugger** dropdown list. This will create a `launch.json` file in a new `.vscode` folder in your project which includes a configuration to launch the website.
+We need to initially configure the [debugger]({{< ref "/UserGuide/Debugging" >}}). To do so, go to the **Run and Debug** view (Ctrl+Shift+D) and select the **create a launch.json file** link to create a `launch.json` debugger configuration file. Choose **Web App (Edge)** from the **Select debugger** dropdown list. This will create a `launch.json` file in a new `.vscode` folder in your project which includes a configuration to launch the website.
 
 ​​	我们需要先配置调试器。为此，请转到“运行和调试”视图（Ctrl+Shift+D），然后选择“创建 launch.json 文件”链接以创建一个 `launch.json` 调试器配置文件。从“选择调试器”下拉列表中选择“Web App（Edge）”。这将在项目中的新 `.vscode` 文件夹中创建一个 `launch.json` 文件，其中包含用于启动网站的配置。
 
@@ -204,13 +204,13 @@ You can step through your source code (F10), inspect variables such as `AppCompo
 
 ![debug variable](./AngularTutorial_img/debug-variable.png)
 
-For more information about the debugger and its available options, check out our documentation on [browser debugging](https://code.visualstudio.com/docs/nodejs/browser-debugging).
+For more information about the debugger and its available options, check out our documentation on [browser debugging]({{< ref "/Node_jsJavaScript/BrowserDebugging" >}}).
 
 ​​	有关调试器及其可用选项的更多信息，请查看我们关于浏览器调试的文档。
 
-## [Angular profile template Angular 配置文件模板](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_angular-profile-template)
+## [Angular profile template Angular 配置文件模板]({{< ref "/Node_jsJavaScript/AngularTutorial#_angular-profile-template" >}})
 
-[Profiles](https://code.visualstudio.com/docs/editor/profiles) let you quickly switch your extensions, settings, and UI layout depending on your current project or task. To help you get started with Angular development, you can use the [Angular profile template](https://code.visualstudio.com/docs/editor/profiles#_angular-profile-template), which is a curated profile with useful extensions and settings. You can use the profile template as is or use it as a starting point to customize further for you own workflows.
+[Profiles]({{< ref "/UserGuide/Profiles" >}}) let you quickly switch your extensions, settings, and UI layout depending on your current project or task. To help you get started with Angular development, you can use the [Angular profile template]({{< ref "/UserGuide/Profiles#_angular-profile-template" >}}), which is a curated profile with useful extensions and settings. You can use the profile template as is or use it as a starting point to customize further for you own workflows.
 
 ​​	配置文件可让您根据当前项目或任务快速切换扩展、设置和 UI 布局。为了帮助您开始 Angular 开发，您可以使用 Angular 配置文件模板，这是一个经过策划的配置文件，其中包含有用的扩展和设置。您可以按原样使用配置文件模板，或将其用作起点，以便进一步自定义以适应您自己的工作流。
 
@@ -224,31 +224,31 @@ Once you select a profile template, you can review the settings and extensions, 
 
 ​​	选择配置文件模板后，您可以查看设置和扩展，并删除不想包含在新配置文件中的各个项目。根据模板创建新配置文件后，对设置、扩展或 UI 所做的更改将保留在您的配置文件中。
 
-## [Popular Starter Kits 流行入门工具包](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_popular-starter-kits)
+## [Popular Starter Kits 流行入门工具包]({{< ref "/Node_jsJavaScript/AngularTutorial#_popular-starter-kits" >}})
 
 In this tutorial, we used the Angular CLI to create a simple Angular application. There are lots of great samples and starter kits available to help build your first Angular application.
 
 ​​	在本教程中，我们使用 Angular CLI 创建了一个简单的 Angular 应用程序。有很多很棒的示例和入门工具包可帮助您构建第一个 Angular 应用程序。
 
-### [Recipes 配方](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_recipes)
+### [Recipes 配方]({{< ref "/Node_jsJavaScript/AngularTutorial#_recipes" >}})
 
 The VS Code team has created [recipes](https://github.com/microsoft/vscode-recipes) for more complex debugging scenarios. There you'll find the [Debugging with Angular CLI](https://github.com/microsoft/vscode-recipes/tree/main/Angular-CLI) recipe which also uses the Angular CLI and goes into detail on debugging the generated project's unit tests.
 
 ​​	VS Code 团队已为更复杂的调试方案创建了配方。您将在其中找到“使用 Angular CLI 进行调试”配方，该配方也使用 Angular CLI，并详细介绍了如何调试生成的项目的单元测试。
 
-### [MEAN Starter MEAN 入门](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_mean-starter)
+### [MEAN Starter MEAN 入门]({{< ref "/Node_jsJavaScript/AngularTutorial#_mean-starter" >}})
 
-If you'd like to see a full MEAN (MongoDB, Express, Angular, Node.js) stack example, look at [MEAN.JS](https://meanjs.org/). They have documentation and an application generator for a sample MEAN project. You'll need to install and start [MongoDB](https://docs.mongodb.com/v3.0/installation/), but you'll quickly have a MEAN application running. VS Code also has great [MongoDB support](https://code.visualstudio.com/docs/azure/mongodb) through the [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) extension.
+If you'd like to see a full MEAN (MongoDB, Express, Angular, Node.js) stack example, look at [MEAN.JS](https://meanjs.org/). They have documentation and an application generator for a sample MEAN project. You'll need to install and start [MongoDB](https://docs.mongodb.com/v3.0/installation/), but you'll quickly have a MEAN application running. VS Code also has great [MongoDB support]({{< ref "/Azure/MongoDB" >}}) through the [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) extension.
 
 ​​	如果您想查看完整的 MEAN（MongoDB、Express、Angular、Node.js）堆栈示例，请查看 MEAN.JS。他们有文档和一个应用程序生成器，可用于示例 MEAN 项目。您需要安装并启动 MongoDB，但您很快就会运行一个 MEAN 应用程序。VS Code 还通过 Azure 数据库扩展提供了出色的 MongoDB 支持。
 
-### [React](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_react)
+### [React]({{< ref "/Node_jsJavaScript/AngularTutorial#_react" >}})
 
-[React](https://reactjs.org/) is a library for building user interfaces and it is more minimal than angular. If you'd like to see an example of React working with VS Code, check out the [Using React in VS Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial) tutorial. It will walk you through creating an React application and configuring the `launch.json` file for the JavaScript debugger.
+[React](https://reactjs.org/) is a library for building user interfaces and it is more minimal than angular. If you'd like to see an example of React working with VS Code, check out the [Using React in VS Code]({{< ref "/Node_jsJavaScript/ReactTutorial" >}}) tutorial. It will walk you through creating an React application and configuring the `launch.json` file for the JavaScript debugger.
 
 ​​	React 是一个用于构建用户界面的库，它比 Angular 更精简。如果您想看一个 React 与 VS Code 配合使用的示例，请查看在 VS Code 中使用 React 教程。它将指导您创建 React 应用程序并为 JavaScript 调试器配置 `launch.json` 文件。
 
-## [Angular Extensions Angular 扩展](https://code.visualstudio.com/docs/nodejs/angular-tutorial#_angular-extensions)
+## [Angular Extensions Angular 扩展]({{< ref "/Node_jsJavaScript/AngularTutorial#_angular-extensions" >}})
 
 In addition to the features VS Code provides out of the box, you can install VS Code extensions for greater functionality.
 

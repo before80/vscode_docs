@@ -18,7 +18,7 @@ Get started with C# in Visual Studio Code by watching these introductory videos!
 
 ​​​	观看这些入门视频，开始在 Visual Studio Code 中使用 C#！这些视频旨在帮助您设置 C# Dev Kit，并在 VS Code 中构建和调试 C# 项目。观看这些快速教程后，您将能够享受 VS Code 丰富的 C# 功能集。
 
-## [What is C# Dev Kit? 什么是 C# Dev Kit？](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_what-is-c-dev-kit)
+## [What is C# Dev Kit? 什么是 C# Dev Kit？]({{< ref "/C#/IntroVideos#_what-is-c-dev-kit" >}})
 
 This video explains how VS Code together with the C# Dev Kit extension provide a productive and powerful C# development environment.
 
@@ -28,7 +28,7 @@ This video explains how VS Code together with the C# Dev Kit extension provide a
 
 
 
-## [Installing C# Dev Kit 安装 C# Dev Kit](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_installing-c-dev-kit)
+## [Installing C# Dev Kit 安装 C# Dev Kit]({{< ref "/C#/IntroVideos#_installing-c-dev-kit" >}})
 
 Learn how to install Visual Studio Code and C# Dev Kit and create your first C# project.
 
@@ -38,7 +38,7 @@ Learn how to install Visual Studio Code and C# Dev Kit and create your first C# 
 
 
 
-## [C# project management C# 项目管理](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_c-project-management)
+## [C# project management C# 项目管理]({{< ref "/C#/IntroVideos#_c-project-management" >}})
 
 This video shows you how to navigate your C# project using the Solution Explorer in C# Dev Kit.
 
@@ -48,7 +48,7 @@ This video shows you how to navigate your C# project using the Solution Explorer
 
 
 
-## [VS Code C# productivity VS Code C# 生产力](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_vs-code-c-productivity)
+## [VS Code C# productivity VS Code C# 生产力]({{< ref "/C#/IntroVideos#_vs-code-c-productivity" >}})
 
 This video shows you how to write C# code in VS Code and discover cool productivity tools you can use along the way!
 
@@ -58,7 +58,7 @@ This video shows you how to write C# code in VS Code and discover cool productiv
 
 
 
-## [Debugging C# apps 调试 C# 应用程序](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_debugging-c-apps)
+## [Debugging C# apps 调试 C# 应用程序]({{< ref "/C#/IntroVideos#_debugging-c-apps" >}})
 
 This video shows you how to debug your C# application using C# Dev Kits debugger tools.
 
@@ -68,7 +68,7 @@ This video shows you how to debug your C# application using C# Dev Kits debugger
 
 
 
-## [Testing C# apps 测试 C# 应用](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_testing-c-apps)
+## [Testing C# apps 测试 C# 应用]({{< ref "/C#/IntroVideos#_testing-c-apps" >}})
 
 This video shows you how to test your C# application using C# Dev Kit.
 
@@ -78,7 +78,7 @@ This video shows you how to test your C# application using C# Dev Kit.
 
 
 
-## [How to contribute to C# in VS Code 如何在 VS Code 中为 C# 做出贡献](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_how-to-contribute-to-c-in-vs-code)
+## [How to contribute to C# in VS Code 如何在 VS Code 中为 C# 做出贡献]({{< ref "/C#/IntroVideos#_how-to-contribute-to-c-in-vs-code" >}})
 
 This video explains about how you can contribute to a better C# experience in VS Code.
 
@@ -88,9 +88,9 @@ This video explains about how you can contribute to a better C# experience in VS
 
 
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/csharp/introvideos-csharp#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C#/IntroVideos#_next-steps" >}})
 
-- Learn about all the [C# Editing Experience](https://code.visualstudio.com/docs/languages/csharp) available in VS Code.
+- Learn about all the [C# Editing Experience]({{< ref "/Languages/C#" >}}) available in VS Code.
   了解 VS Code 中提供的所有 C# 编辑体验。
-- [Get Started with C#](https://code.visualstudio.com/docs/csharp/get-started) in VS Code.
+- [Get Started with C#]({{< ref "/C#/GetStarted" >}}) in VS Code.
   在 VS Code 中开始使用 C#。

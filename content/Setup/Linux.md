@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [Installation 安装](https://code.visualstudio.com/docs/setup/linux#_installation)
+## [Installation 安装]({{< ref "/Setup/Linux#_installation" >}})
 
 See the [Download Visual Studio Code](https://code.visualstudio.com/download) page for a complete list of available installation options.
 
@@ -24,7 +24,7 @@ By downloading and using Visual Studio Code, you agree to the [license terms](ht
 
 ​​​	通过下载和使用 Visual Studio Code，您同意许可条款和隐私声明。
 
-### [Debian and Ubuntu based distributions 基于 Debian 和 Ubuntu 的发行版](https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions)
+### [Debian and Ubuntu based distributions 基于 Debian 和 Ubuntu 的发行版]({{< ref "/Setup/Linux#_debian-and-ubuntu-based-distributions" >}})
 
 The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to download and install the [.deb package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760868), either through the graphical software center if it's available, or through the command line with:
 
@@ -64,7 +64,7 @@ sudo apt update
 sudo apt install code # or code-insiders
 ```
 
-### [RHEL, Fedora, and CentOS based distributions 基于 RHEL、Fedora 和 CentOS 的发行版](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions)
+### [RHEL, Fedora, and CentOS based distributions 基于 RHEL、Fedora 和 CentOS 的发行版]({{< ref "/Setup/Linux#_rhel-fedora-and-centos-based-distributions" >}})
 
 We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
 
@@ -97,7 +97,7 @@ Due to the manual signing process and the system we use to publish, the yum repo
 
 ​​​	由于手动签名过程和我们用于发布的系统，yum 存储库可能会滞后，无法立即获取最新版本的 VS Code。
 
-### [Snap](https://code.visualstudio.com/docs/setup/linux#_snap)
+### [Snap]({{< ref "/Setup/Linux#_snap" >}})
 
 Visual Studio Code is officially distributed as a Snap package in the [Snap Store](https://snapcraft.io/store):
 
@@ -125,7 +125,7 @@ Learn more about snaps from the [official Snap Documentation](https://docs.snapc
 
 ​​​	从官方 Snap 文档中了解有关 snap 的更多信息。
 
-### [openSUSE and SLE-based distributions 基于 openSUSE 和 SLE 的发行版](https://code.visualstudio.com/docs/setup/linux#_opensuse-and-slebased-distributions)
+### [openSUSE and SLE-based distributions 基于 openSUSE 和 SLE 的发行版]({{< ref "/Setup/Linux#_opensuse-and-slebased-distributions" >}})
 
 The yum repository above also works for openSUSE and SLE-based systems, the following script will install the key and repository:
 
@@ -145,7 +145,7 @@ sudo zypper refresh
 sudo zypper install code
 ```
 
-### [AUR package for Arch Linux 适用于 Arch Linux 的 AUR 软件包](https://code.visualstudio.com/docs/setup/linux#_aur-package-for-arch-linux)
+### [AUR package for Arch Linux 适用于 Arch Linux 的 AUR 软件包]({{< ref "/Setup/Linux#_aur-package-for-arch-linux" >}})
 
 There is a community-maintained [Arch User Repository package for VS Code](https://aur.archlinux.org/packages/visual-studio-code-bin).
 
@@ -155,7 +155,7 @@ To get more information about the installation from the AUR, please consult the 
 
 ​​​	要获取有关从 AUR 安装的更多信息，请参阅以下 wiki 条目：安装 AUR 软件包。
 
-### [Nix package for NixOS (or any Linux distribution using Nix package manager) 适用于 NixOS（或任何使用 Nix 软件包管理器的 Linux 发行版）的 Nix 软件包](https://code.visualstudio.com/docs/setup/linux#_nix-package-for-nixos-or-any-linux-distribution-using-nix-package-manager)
+### [Nix package for NixOS (or any Linux distribution using Nix package manager) 适用于 NixOS（或任何使用 Nix 软件包管理器的 Linux 发行版）的 Nix 软件包]({{< ref "/Setup/Linux#_nix-package-for-nixos-or-any-linux-distribution-using-nix-package-manager" >}})
 
 There is a community maintained [VS Code Nix package](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/vscode/vscode.nix) in the nixpkgs repository. In order to install it using Nix, set `allowUnfree` option to true in your `config.nix` and execute:
 
@@ -165,7 +165,7 @@ There is a community maintained [VS Code Nix package](https://github.com/NixOS/n
 nix-env -i vscode
 ```
 
-### [Installing .rpm package manually 手动安装 .rpm 软件包](https://code.visualstudio.com/docs/setup/linux#_installing-rpm-package-manually)
+### [Installing .rpm package manually 手动安装 .rpm 软件包]({{< ref "/Setup/Linux#_installing-rpm-package-manually" >}})
 
 The [VS Code .rpm package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760867) can also be manually downloaded and installed, however, auto-updating won't work unless the repository above is installed. Once downloaded it can be installed using your package manager, for example with `dnf`:
 
@@ -179,17 +179,17 @@ Note that other binaries are also available on the [VS Code download page](https
 
 ​​​	请注意，VS Code 下载页面上还提供了其他二进制文件。
 
-## [Updates 更新](https://code.visualstudio.com/docs/setup/linux#_updates)
+## [Updates 更新]({{< ref "/Setup/Linux#_updates" >}})
 
 VS Code ships monthly and you can see when a new release is available by checking the [release notes](https://code.visualstudio.com/updates). If the VS Code repository was installed correctly, then your system package manager should handle auto-updating in the same way as other packages on the system.
 
 ​​​	VS Code 每月发布，您可以通过查看发行说明来了解何时有新版本可用。如果 VS Code 存储库已正确安装，那么您的系统包管理器应以与系统上其他包相同的方式处理自动更新。
 
-**Note:** Updates are automatic and run in the background for the [Snap package](https://code.visualstudio.com/docs/setup/linux#_snap).
+**Note:** Updates are automatic and run in the background for the [Snap package]({{< ref "/Setup/Linux#_snap" >}}).
 
 ​​​	注意：对于 Snap 包，更新是自动的，并在后台运行。
 
-## [Node.js](https://code.visualstudio.com/docs/setup/linux#_nodejs)
+## [Node.js]({{< ref "/Setup/Linux#_nodejs" >}})
 
 Node.js is a popular platform and runtime for easily building and running JavaScript applications. It also includes [npm](https://www.npmjs.com/), a Package Manager for Node.js modules. You'll see Node.js and npm mentioned frequently in our documentation and some optional VS Code tooling requires Node.js (for example, the VS Code [extension generator](https://code.visualstudio.com/api/get-started/your-first-extension)).
 
@@ -199,13 +199,13 @@ If you'd like to install Node.js on Linux, see [Installing Node.js via package m
 
 ​​​	如果您想在 Linux 上安装 Node.js，请参阅通过包管理器安装 Node.js 以查找适用于您的 Linux 发行版的 Node.js 包和安装说明。您还可以使用 Node 版本管理器来安装和支持多个版本的 Node.js。
 
-To learn more about JavaScript and Node.js, see our [Node.js tutorial](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial), where you'll learn about running and debugging Node.js applications with VS Code.
+To learn more about JavaScript and Node.js, see our [Node.js tutorial]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}), where you'll learn about running and debugging Node.js applications with VS Code.
 
 ​​​	要详细了解 JavaScript 和 Node.js，请参阅我们的 Node.js 教程，您将在其中学习如何使用 VS Code 运行和调试 Node.js 应用程序。
 
-## [Setting VS Code as the default text editor 将 VS Code 设置为默认文本编辑器](https://code.visualstudio.com/docs/setup/linux#_setting-vs-code-as-the-default-text-editor)
+## [Setting VS Code as the default text editor 将 VS Code 设置为默认文本编辑器]({{< ref "/Setup/Linux#_setting-vs-code-as-the-default-text-editor" >}})
 
-### [xdg-open](https://code.visualstudio.com/docs/setup/linux#_xdgopen)
+### [xdg-open]({{< ref "/Setup/Linux#_xdgopen" >}})
 
 You can set the default text editor for text files (`text/plain`) that is used by `xdg-open` with the following command:
 
@@ -215,7 +215,7 @@ You can set the default text editor for text files (`text/plain`) that is used b
 xdg-mime default code.desktop text/plain
 ```
 
-### [Debian alternatives system Debian 备选系统](https://code.visualstudio.com/docs/setup/linux#_debian-alternatives-system)
+### [Debian alternatives system Debian 备选系统]({{< ref "/Setup/Linux#_debian-alternatives-system" >}})
 
 Debian-based distributions allow setting a default **editor** using the [Debian alternatives system](https://wiki.debian.org/DebianAlternatives), without concern for the MIME type. You can set this by running the following and selecting code:
 
@@ -233,13 +233,13 @@ If Visual Studio Code doesn't show up as an alternative to `editor`, you need to
 sudo update-alternatives --install /usr/bin/editor editor $(which code) 10
 ```
 
-## [Windows as a Linux developer machine Windows 作为 Linux 开发人员计算机](https://code.visualstudio.com/docs/setup/linux#_windows-as-a-linux-developer-machine)
+## [Windows as a Linux developer machine Windows 作为 Linux 开发人员计算机]({{< ref "/Setup/Linux#_windows-as-a-linux-developer-machine" >}})
 
 Another option for Linux development with VS Code is to use a Windows machine with the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) (WSL).
 
 ​​​	使用 VS Code 进行 Linux 开发的另一个选择是使用装有适用于 Linux 的 Windows 子系统 (WSL) 的 Windows 计算机。
 
-### [Windows Subsystem for Linux 适用于 Linux 的 Windows 子系统](https://code.visualstudio.com/docs/setup/linux#_windows-subsystem-for-linux)
+### [Windows Subsystem for Linux 适用于 Linux 的 Windows 子系统]({{< ref "/Setup/Linux#_windows-subsystem-for-linux" >}})
 
 With WSL, you can install and run Linux distributions on Windows. This enables you to develop and test your source code on Linux while still working locally on a Windows machine. WSL supports Linux distributions such as Ubuntu, Debian, SUSE, and Alpine available from the Microsoft Store.
 
@@ -249,26 +249,26 @@ When coupled with the [WSL](https://marketplace.visualstudio.com/items?itemName=
 
 ​​​	与 WSL 扩展结合使用时，您可以在 WSL 上的 Linux 发行版环境中运行时获得完整的 VS Code 编辑和调试支持。
 
-See the [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl) documentation to learn more or try the [Working in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial) introductory tutorial.
+See the [Developing in WSL]({{< ref "/Remote/WindowsSubsystemforLinux" >}}) documentation to learn more or try the [Working in WSL]({{< ref "/Remote/WSLTutorial" >}}) introductory tutorial.
 
 ​​​	请参阅在 WSL 中进行开发文档以了解更多信息或尝试在 WSL 中工作入门教程。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/setup/linux#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Setup/Linux#_next-steps" >}})
 
 Once you have installed VS Code, these topics will help you learn more about it:
 
 ​​​	安装 VS Code 后，以下主题将帮助您详细了解它：
 
-- [Additional Components](https://code.visualstudio.com/docs/setup/additional-components) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
+- [Additional Components]({{< ref "/Setup/AdditionalComponents" >}}) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
   其他组件 - 了解如何安装 Git、Node.js、TypeScript 和 Yeoman 等工具。
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - A quick orientation to VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - A quick orientation to VS Code.
   用户界面 - VS Code 的快速入门。
-- [User/Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences through settings.
+- [User/Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences through settings.
   用户/工作区设置 - 了解如何通过设置将 VS Code 配置为您的首选项。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/setup/linux#_common-questions)
+## [Common questions 常见问题]({{< ref "/Setup/Linux#_common-questions" >}})
 
-### [Azure VM Issues Azure VM 问题](https://code.visualstudio.com/docs/setup/linux#_azure-vm-issues)
+### [Azure VM Issues Azure VM 问题]({{< ref "/Setup/Linux#_azure-vm-issues" >}})
 
 I'm getting a "Running without the SUID sandbox" error?
 
@@ -278,7 +278,7 @@ You can safely ignore this error.
 
 ​​​	您可以安全地忽略此错误。
 
-### [Debian and moving files to trash Debian 和将文件移动到回收站](https://code.visualstudio.com/docs/setup/linux#_debian-and-moving-files-to-trash)
+### [Debian and moving files to trash Debian 和将文件移动到回收站]({{< ref "/Setup/Linux#_debian-and-moving-files-to-trash" >}})
 
 If you see an error when deleting files from the VS Code Explorer on the Debian operating system, it might be because the trash implementation that VS Code is using is not there.
 
@@ -292,7 +292,7 @@ Run these commands to solve this issue:
 sudo apt-get install gvfs libglib2.0-bin
 ```
 
-### [Conflicts with VS Code packages from other repositories 与其他存储库中的 VS Code 软件包发生冲突](https://code.visualstudio.com/docs/setup/linux#_conflicts-with-vs-code-packages-from-other-repositories)
+### [Conflicts with VS Code packages from other repositories 与其他存储库中的 VS Code 软件包发生冲突]({{< ref "/Setup/Linux#_conflicts-with-vs-code-packages-from-other-repositories" >}})
 
 Some distributions, for example [Pop!_OS](https://pop.system76.com/) provide their own `code` package. To ensure the official VS Code repository is used, create a file named `/etc/apt/preferences.d/code` with the following content:
 
@@ -304,7 +304,7 @@ Pin: origin "packages.microsoft.com"
 Pin-Priority: 9999
 ```
 
-### ["Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC) “Visual Studio Code 无法监视此大型工作区中的文件更改”（错误 ENOSPC）](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
+### ["Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC) “Visual Studio Code 无法监视此大型工作区中的文件更改”（错误 ENOSPC）]({{< ref "/Setup/Linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc" >}})
 
 When you see this notification, it indicates that the VS Code file watcher is running out of handles because the workspace is large and contains many files. Before adjusting platform limits, make sure that potentially large folders, such as Python `.venv`, are added to the `files.watcherExclude` setting (more details below). The current limit can be viewed by running:
 
@@ -334,7 +334,7 @@ While 524,288 is the maximum number of files that can be watched, if you're in a
 
 ​​​	基于 Arch 的发行版（包括 Manjaro）要求您更改不同的文件；请改而执行以下步骤。
 
-Another option is to exclude specific workspace directories from the VS Code file watcher with the `files.watcherExclude` [setting](https://code.visualstudio.com/docs/getstarted/settings). The default for `files.watcherExclude` excludes `node_modules` and some folders under `.git`, but you can add other directories that you don't want VS Code to track.
+Another option is to exclude specific workspace directories from the VS Code file watcher with the `files.watcherExclude` [setting]({{< ref "/GetStarted/Settings" >}}). The default for `files.watcherExclude` excludes `node_modules` and some folders under `.git`, but you can add other directories that you don't want VS Code to track.
 
 ​​​	另一个选项是使用 `files.watcherExclude` 设置从 VS Code 文件监视器中排除特定的工作区目录。 `files.watcherExclude` 的默认值排除 `node_modules` 和 `.git` 下的某些文件夹，但您可以添加您不希望 VS Code 跟踪的其他目录。
 
@@ -346,7 +346,7 @@ Another option is to exclude specific workspace directories from the VS Code fil
   }
 ```
 
-### [I can't see Chinese characters in Ubuntu 我在 Ubuntu 中看不到中文字符](https://code.visualstudio.com/docs/setup/linux#_i-cant-see-chinese-characters-in-ubuntu)
+### [I can't see Chinese characters in Ubuntu 我在 Ubuntu 中看不到中文字符]({{< ref "/Setup/Linux#_i-cant-see-chinese-characters-in-ubuntu" >}})
 
 We're working on a fix. In the meantime, open the application menu, then choose **File** > **Preferences** > **Settings**. In the **Text Editor** > **Font** section, set "Font Family" to `Droid Sans Mono, Droid Sans Fallback`. If you'd rather edit the `settings.json` file directly, set `editor.fontFamily` as shown:
 
@@ -356,7 +356,7 @@ We're working on a fix. In the meantime, open the application menu, then choose 
     "editor.fontFamily": "Droid Sans Mono, Droid Sans Fallback"
 ```
 
-### [Package git is not installed 未安装软件包 git](https://code.visualstudio.com/docs/setup/linux#_package-git-is-not-installed)
+### [Package git is not installed 未安装软件包 git]({{< ref "/Setup/Linux#_package-git-is-not-installed" >}})
 
 This error can appear during installation and is typically caused by the package manager's lists being out of date. Try updating them and installing again:
 
@@ -373,7 +373,7 @@ sudo yum check-update
 sudo dnf check-update
 ```
 
-### [The code bin command does not bring the window to the foreground on Ubuntu Ubuntu 上的 code bin 命令不会将窗口置于前台](https://code.visualstudio.com/docs/setup/linux#_the-code-bin-command-does-not-bring-the-window-to-the-foreground-on-ubuntu)
+### [The code bin command does not bring the window to the foreground on Ubuntu Ubuntu 上的 code bin 命令不会将窗口置于前台]({{< ref "/Setup/Linux#_the-code-bin-command-does-not-bring-the-window-to-the-foreground-on-ubuntu" >}})
 
 Running `code .` on Ubuntu when VS Code is already open in the current directory will not bring VS Code into the foreground. This is a feature of the OS which can be disabled using `ccsm`.
 
@@ -392,7 +392,7 @@ Under **General** > **General Options** > **Focus & Raise Behaviour**, set "Focu
 
 ​​​	无法安装 .deb 软件包，因为“/etc/apt/sources.list.d/vscode.list：没有这样的文件或目录”
 
-### [Cannot install .deb package due to "/etc/apt/sources.list.d/vscode.list: No such file or directory" 当 不存在或您无权创建该文件时，可能会发生这种情况。要解决此问题，请尝试手动创建文件夹和一个空的 文件：](https://code.visualstudio.com/docs/setup/linux#_cannot-install-deb-package-due-to-etcaptsourceslistdvscodelist-no-such-file-or-directory)
+### [Cannot install .deb package due to "/etc/apt/sources.list.d/vscode.list: No such file or directory" 当 不存在或您无权创建该文件时，可能会发生这种情况。要解决此问题，请尝试手动创建文件夹和一个空的 文件：]({{< ref "/Setup/Linux#_cannot-install-deb-package-due-to-etcaptsourceslistdvscodelist-no-such-file-or-directory" >}})
 
 This can happen when `sources.list.d` doesn't exist or you don't have access to create the file. To fix this, try manually creating the folder and an empty `vscode.list` file:
 
@@ -403,11 +403,11 @@ sudo mkdir /etc/apt/sources.list.d
 sudo touch /etc/apt/sources.list.d/vscode.list
 ```
 
-### [Cannot move or resize the window while X forwarding a remote window 如果您使用 X 转发远程使用 VS Code，则需要使用本机标题栏以确保您可以正确操作窗口。您可以通过将 设置为 来切换到使用它。使用自定义标题栏](https://code.visualstudio.com/docs/setup/linux#_cannot-move-or-resize-the-window-while-x-forwarding-a-remote-window)
+### [Cannot move or resize the window while X forwarding a remote window 如果您使用 X 转发远程使用 VS Code，则需要使用本机标题栏以确保您可以正确操作窗口。您可以通过将 设置为 来切换到使用它。使用自定义标题栏]({{< ref "/Setup/Linux#_cannot-move-or-resize-the-window-while-x-forwarding-a-remote-window" >}})
 
 If you are using X forwarding to use VS Code remotely, you will need to use the native title bar to ensure you can properly manipulate the window. You can switch to using it by setting `window.titleBarStyle` to `native`.
 
-### [Using the custom title bar](https://code.visualstudio.com/docs/setup/linux#_using-the-custom-title-bar)
+### [Using the custom title bar]({{< ref "/Setup/Linux#_using-the-custom-title-bar" >}})
 
 The custom title bar and menus were enabled by default on Linux for several months. The custom title bar has been a success on Windows, but the customer response on Linux suggests otherwise. Based on feedback, we have decided to make this setting opt-in on Linux and leave the native title bar as the default.
 
@@ -417,13 +417,13 @@ The custom title bar provides many benefits including great theming support and 
 
 ​​​	自定义标题栏提供了许多好处，包括出色的主题支持以及通过键盘导航和屏幕阅读器实现更好的可访问性。遗憾的是，这些好处无法很好地移植到 Linux 平台。Linux 具有各种桌面环境和窗口管理器，这些环境和管理器可能会让 VS Code 主题对用户来说显得陌生。对于需要可访问性改进的用户，我们建议在使用屏幕阅读器以可访问性模式运行时启用自定义标题栏。您仍可以使用“窗口：标题栏样式 ( `window.titleBarStyle` )”设置手动设置标题栏。
 
-### [Broken cursor in editor with display scaling enabled 启用显示缩放时编辑器中的光标损坏](https://code.visualstudio.com/docs/setup/linux#_broken-cursor-in-editor-with-display-scaling-enabled)
+### [Broken cursor in editor with display scaling enabled 启用显示缩放时编辑器中的光标损坏]({{< ref "/Setup/Linux#_broken-cursor-in-editor-with-display-scaling-enabled" >}})
 
 Due to an upstream [issue #14787](https://github.com/electron/electron/issues/14787) with Electron, the mouse cursor may render incorrectly with scaling enabled. If you notice that the usual text cursor is not being rendered inside the editor as you would expect, try falling back to the native menu bar by configuring the setting `window.titleBarStyle` to `native`.
 
 ​​​	由于 Electron 中的上游问题 #14787，启用缩放时鼠标光标可能呈现不正确。如果您注意到通常的文本光标未按预期在编辑器内呈现，请尝试通过将设置 `window.titleBarStyle` 配置为 `native` 来回退到原生菜单栏。
 
-### [Repository changed its origin value 存储库更改了其 origin 值](https://code.visualstudio.com/docs/setup/linux#_repository-changed-its-origin-value)
+### [Repository changed its origin value 存储库更改了其 origin 值]({{< ref "/Setup/Linux#_repository-changed-its-origin-value" >}})
 
 If you receive an error similar to the following:
 

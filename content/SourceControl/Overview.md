@@ -14,7 +14,7 @@ draft = false
 
 
 
-Visual Studio Code has integrated source control management (SCM) and includes [Git](https://git-scm.com/) support out-of-the-box. Many other source control providers are available through [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) on the VS Code Marketplace.
+Visual Studio Code has integrated source control management (SCM) and includes [Git](https://git-scm.com/) support out-of-the-box. Many other source control providers are available through [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) on the VS Code Marketplace.
 
 ​​	Visual Studio Code 集成了源代码管理 (SCM)，并开箱即用地支持 Git。VS Code Marketplace 上的扩展提供了许多其他源代码控制提供程序。
 
@@ -22,7 +22,7 @@ Visual Studio Code has integrated source control management (SCM) and includes [
 
 
 
-## [Working in a Git repository 在 Git 存储库中工作](https://code.visualstudio.com/docs/sourcecontrol/overview#_working-in-a-git-repository)
+## [Working in a Git repository 在 Git 存储库中工作]({{< ref "/SourceControl/Overview#_working-in-a-git-repository" >}})
 
 > **Just getting started with Git?** The [git-scm](https://git-scm.com/documentation) website is a good place to start, with a popular online [book](https://git-scm.com/book), Getting Started [videos](https://git-scm.com/video/what-is-git) and [cheat sheets](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf). The VS Code documentation assumes you are already familiar with Git.
 >
@@ -50,7 +50,7 @@ You can also find indicators of the **status of your repository** in the bottom-
 >
 > ​​	提示：您可以在 Git 存储库的子目录中打开 VS Code。VS Code 的 Git 服务仍将照常工作，显示存储库中的所有更改，但范围目录之外的文件更改会以工具提示着色，指示它们位于当前工作区之外。
 
-## [Commit 提交](https://code.visualstudio.com/docs/sourcecontrol/overview#_commit)
+## [Commit 提交]({{< ref "/SourceControl/Overview#_commit" >}})
 
 **Staging** (git add) and **unstaging** (git reset) can be done via contextual actions in the files or by drag-and-drop.
 
@@ -84,7 +84,7 @@ More specific **Commit** actions can be found in the **Views and More Actions** 
 
 
 
-## [Cloning a repository 克隆存储库](https://code.visualstudio.com/docs/sourcecontrol/overview#_cloning-a-repository)
+## [Cloning a repository 克隆存储库]({{< ref "/SourceControl/Overview#_cloning-a-repository" >}})
 
 If you haven't opened a folder yet, the Source Control view will give you the options to **Open Folder** from your local machine or **Clone Repository**.
 
@@ -112,11 +112,11 @@ You'll also see the option to **Clone from GitHub**. Once you authenticate with 
 
 ​​	您还会看到从 GitHub 克隆的选项。在 VS Code 中使用 GitHub 帐户进行身份验证后，您将能够按名称搜索存储库，并选择任何存储库进行克隆。您还可以使用命令面板（Ctrl+Shift+P）中的 Git：克隆命令启动克隆 Git 存储库的流程。若要查看分步演练，请观看我们的从 VS Code 克隆存储库视频。
 
-> **Note**: If you'd like to work on a repository without cloning the contents to your local machine, you can install the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension to browse and edit directly on GitHub. You can learn more in the [GitHub Repositories extension](https://code.visualstudio.com/docs/sourcecontrol/github#_github-repositories-extension) section.
+> **Note**: If you'd like to work on a repository without cloning the contents to your local machine, you can install the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension to browse and edit directly on GitHub. You can learn more in the [GitHub Repositories extension]({{< ref "/SourceControl/CollaborateonGitHub#_github-repositories-extension" >}}) section.
 >
 > ​​	注意：如果您想处理存储库而不将内容克隆到本地计算机，则可以安装 GitHub Repositories 扩展以直接在 GitHub 上浏览和编辑。您可以在 GitHub Repositories 扩展部分中了解更多信息。
 
-## [Branches and Tags 分支和标记](https://code.visualstudio.com/docs/sourcecontrol/overview#_branches-and-tags)
+## [Branches and Tags 分支和标记]({{< ref "/SourceControl/Overview#_branches-and-tags" >}})
 
 <iframe src="https://www.youtube.com/embed/b9LTz6joMf8?clip=Ugkxcq7zDGA4aMi8p7lICNMzTANn_8ozU5gK&amp;clipt=EPiBAxj08QU" width="640" height="320" allowfullscreen="true" frameborder="0" title="Create Git Branches in Visual Studio Code" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
@@ -136,21 +136,21 @@ The **Git: Create Branch** command lets you quickly create a new branch. Just pr
 
 ​​	Git: Create Branch 命令可让您快速创建新分支。只需提供新分支的名称，VS Code 就会创建该分支并切换到该分支。如果您选择从...创建新分支，您将获得一个额外的提示，允许您指定新分支应指向哪个提交。
 
-## [Remotes 远程](https://code.visualstudio.com/docs/sourcecontrol/overview#_remotes)
+## [Remotes 远程]({{< ref "/SourceControl/Overview#_remotes" >}})
 
 Given that your repository is connected to some remote and that your checked out branch has an [upstream link](https://git-scm.com/book/ch3-5.html) to a branch in that remote, VS Code offers you useful actions to **push**, **pull**, and **sync** that branch (the latter will run a **pull** command followed by a **push** command). You can find these actions in the **Views and More Actions** `...` menu, along with the option to **add or remove a remote**.
 
 ​​	鉴于您的存储库已连接到某个远程存储库，并且您签出的分支具有指向该远程存储库中某个分支的上游链接，VS Code 为您提供了有用的操作来推送、拉取和同步该分支（后者将运行一个拉取命令，然后运行一个推送命令）。您可以在“视图”和“更多操作” `...` 菜单中找到这些操作，以及添加或删除远程存储库的选项。
 
-VS Code is able to periodically fetch changes from your remotes. This enables VS Code to show how many changes your local repository is ahead or behind the remote. This feature is disabled by default and you can use the `git.autofetch` [setting](https://code.visualstudio.com/docs/getstarted/settings) to enable it.
+VS Code is able to periodically fetch changes from your remotes. This enables VS Code to show how many changes your local repository is ahead or behind the remote. This feature is disabled by default and you can use the `git.autofetch` [setting]({{< ref "/GetStarted/Settings" >}}) to enable it.
 
 ​​	VS Code 能够定期从远程获取更改。这使 VS Code 能够显示本地存储库比远程存储库超前或落后多少更改。此功能默认情况下处于禁用状态，您可以使用 `git.autofetch` 设置启用它。
 
-> **Tip:** You should [set up a credential helper](https://docs.github.com/get-started/getting-started-with-git/caching-your-github-credentials-in-git) to avoid getting asked for credentials every time VS Code talks to your Git remotes. If you don't do this, you may want to consider disabling automatic fetching via the `git.autofetch` [setting](https://code.visualstudio.com/docs/getstarted/settings) to reduce the number of prompts you get.
+> **Tip:** You should [set up a credential helper](https://docs.github.com/get-started/getting-started-with-git/caching-your-github-credentials-in-git) to avoid getting asked for credentials every time VS Code talks to your Git remotes. If you don't do this, you may want to consider disabling automatic fetching via the `git.autofetch` [setting]({{< ref "/GetStarted/Settings" >}}) to reduce the number of prompts you get.
 >
 > ​​	提示：您应该设置一个凭据帮助程序，以避免每次 VS Code 与 Git 远程通信时都被要求提供凭据。如果您不这样做，您可能需要考虑通过 `git.autofetch` 设置禁用自动获取，以减少收到的提示数量。
 
-## [Git Status Bar actions Git 状态栏操作](https://code.visualstudio.com/docs/sourcecontrol/overview#_git-status-bar-actions)
+## [Git Status Bar actions Git 状态栏操作]({{< ref "/SourceControl/Overview#_git-status-bar-actions" >}})
 
 There is a **Synchronize Changes** action in the Status Bar, next to the branch indicator, when the current checked out branch has an upstream branch configured. **Synchronize Changes** will pull remote changes down to your local repository and then push local commits to the upstream branch.
 
@@ -164,7 +164,7 @@ If there is no upstream branch configured and the Git repository has remotes set
 
 ![git status bar publish](./Overview_img/git-status-bar-publish.png)
 
-## [Gutter indicators 槽指示符](https://code.visualstudio.com/docs/sourcecontrol/overview#_gutter-indicators)
+## [Gutter indicators 槽指示符]({{< ref "/SourceControl/Overview#_gutter-indicators" >}})
 
 If you open a folder that is a Git repository and begin making changes, VS Code will add useful annotations to the gutter and to the overview ruler.
 
@@ -179,7 +179,7 @@ If you open a folder that is a Git repository and begin making changes, VS Code 
 
 ![Gutter indicators](./Overview_img/gutter.png)
 
-## [Merge conflicts 合并冲突](https://code.visualstudio.com/docs/sourcecontrol/overview#_merge-conflicts)
+## [Merge conflicts 合并冲突]({{< ref "/SourceControl/Overview#_merge-conflicts" >}})
 
 ![Git merge](./Overview_img/merge-conflict.png)
 
@@ -187,7 +187,7 @@ Merge conflicts are recognized by VS Code. Differences are highlighted and there
 
 ​​	VS Code 可识别合并冲突。差异会突出显示，并提供内联操作以接受其中一项或两项更改。解决冲突后，暂存冲突文件，以便提交这些更改。
 
-## [3-way merge editor 三方合并编辑器](https://code.visualstudio.com/docs/sourcecontrol/overview#_3way-merge-editor)
+## [3-way merge editor 三方合并编辑器]({{< ref "/SourceControl/Overview#_3way-merge-editor" >}})
 
 To help you resolve merge conflicts, VS Code provides a 3-way merge editor where you can interactively accept incoming and current changes and view and edit the resulting merged file. The 3-way merge editor is opened by selecting the **Resolve in Merge Editor** button in the bottom right corner of a file with Git merge conflicts.
 
@@ -199,7 +199,7 @@ The 3-way merge editor displays separate views for **Incoming** changes (on the 
 
 ![3-way merge editor](./Overview_img/merge-editor-overview.png)
 
-### [Resolving conflicts 解决冲突](https://code.visualstudio.com/docs/sourcecontrol/overview#_resolving-conflicts)
+### [Resolving conflicts 解决冲突]({{< ref "/SourceControl/Overview#_resolving-conflicts" >}})
 
 The 3-way merge editor allows you to resolve conflicts by accepting either one or both changes. You can also manually edit the result of the merge.
 
@@ -213,13 +213,13 @@ Use the **Ignore** buttons to accept neither the incoming nor current change, bu
 
 ​​	使用“忽略”按钮既不接受传入的更改也不接受当前更改，但将冲突标记为已解决。这会将冲突区域重置为在进行任何更改之前的状态。
 
-### [Completing the merge 完成合并](https://code.visualstudio.com/docs/sourcecontrol/overview#_completing-the-merge)
+### [Completing the merge 完成合并]({{< ref "/SourceControl/Overview#_completing-the-merge" >}})
 
 You can use the conflict counter in the right of the result editor to keep track of how many unresolved conflicts are remaining. Clicking on the counter jumps to the next unresolved conflict. Once all conflicts are resolved, you can complete the merge by selecting **Complete Merge** in the bottom right corner. This stages the file and closes the merge editor.
 
 ​​	您可以使用结果编辑器右侧的冲突计数器来跟踪剩余的未解决冲突数。单击计数器可跳转到下一个未解决的冲突。解决所有冲突后，您可以通过选择右下角的“完成合并”来完成合并。这会暂存文件并关闭合并编辑器。
 
-### [Alternative layouts and more 备用布局等](https://code.visualstudio.com/docs/sourcecontrol/overview#_alternative-layouts-and-more)
+### [Alternative layouts and more 备用布局等]({{< ref "/SourceControl/Overview#_alternative-layouts-and-more" >}})
 
 Selecting the three dots (**···**) in the top right corner of the merge editor opens a context menu with additional options. You can switch to a vertical layout and display the base view, which shows the state of the file before any changes were made.
 
@@ -229,7 +229,7 @@ The three dots next to **Incoming**, **Current**, and **Result** offer options f
 
 ​​	“传入”、“当前”和“结果”旁边的三个点为每个视图提供选项，例如显示与基准的并排差异、接受所有更改或重置结果。
 
-### [Understanding conflicts 了解冲突](https://code.visualstudio.com/docs/sourcecontrol/overview#_understanding-conflicts)
+### [Understanding conflicts 了解冲突]({{< ref "/SourceControl/Overview#_understanding-conflicts" >}})
 
 If you want to learn more about the details of how 3-way merge editors work, we can recommend the following video:
 
@@ -239,7 +239,7 @@ If you want to learn more about the details of how 3-way merge editors work, we 
 
 
 
-## [Viewing diffs 查看差异](https://code.visualstudio.com/docs/sourcecontrol/overview#_viewing-diffs)
+## [Viewing diffs 查看差异]({{< ref "/SourceControl/Overview#_viewing-diffs" >}})
 
 Our Git tooling supports viewing of diffs within VS Code.
 
@@ -251,7 +251,7 @@ Our Git tooling supports viewing of diffs within VS Code.
 >
 > ​​	提示：您可以通过首先在资源管理器或打开的编辑器列表中右键单击文件并选择“选择以比较”，然后右键单击要比较的第二个文件并选择“与‘您选择的_文件名’比较”来比较任意两个文件。或者，从键盘按 Ctrl+Shift+P 并选择“文件：将活动文件与...比较”，您将看到最近文件的列表。
 
-### [Accessible Diff Viewer 无障碍差异查看器](https://code.visualstudio.com/docs/sourcecontrol/overview#_accessible-diff-viewer)
+### [Accessible Diff Viewer 无障碍差异查看器]({{< ref "/SourceControl/Overview#_accessible-diff-viewer" >}})
 
 There is an Accessible Diff Viewer in the Diff editor that presents changes in a unified patch format. You can navigate between changes with **Go to Next Difference** (F7) and **Go to Previous Difference** (Shift+F7). Lines can be navigated with arrow keys and pressing Enter will jump back in the Diff editor and the selected line.
 
@@ -263,7 +263,7 @@ There is an Accessible Diff Viewer in the Diff editor that presents changes in a
 
 ​​	注意：此体验对屏幕阅读器用户特别有帮助。
 
-## [Timeline view 时间线视图](https://code.visualstudio.com/docs/sourcecontrol/overview#_timeline-view)
+## [Timeline view 时间线视图]({{< ref "/SourceControl/Overview#_timeline-view" >}})
 
 The Timeline view, accessible at the bottom of the File Explorer by default, is a unified view for visualizing time-series events (for example, Git commits) for a file.
 
@@ -275,7 +275,7 @@ VS Code's built-in Git support provides the Git commit history of the specified 
 
 ​​	VS Code 的内置 Git 支持提供指定文件的 Git 提交历史记录。选择提交将打开该提交引入的更改的差异视图。右键单击提交时，您将获得“复制提交 ID”和“复制提交消息”的选项。
 
-Visual Studio Code supports more Git history workflows through [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) available on the VS Code Marketplace.
+Visual Studio Code supports more Git history workflows through [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) available on the VS Code Marketplace.
 
 ​​	Visual Studio Code 通过 VS Code Marketplace 上提供的扩展支持更多 Git 历史记录工作流。
 
@@ -319,7 +319,7 @@ huizhou
 >
 > ​​	提示：单击扩展磁贴以阅读 Marketplace 中的描述和评论。
 
-## [Git output window Git 输出窗口](https://code.visualstudio.com/docs/sourcecontrol/overview#_git-output-window)
+## [Git output window Git 输出窗口]({{< ref "/SourceControl/Overview#_git-output-window" >}})
 
 You can always peek under the hood to see the Git commands we are using. This is helpful if something strange is happening or if you are just curious. :)
 
@@ -329,7 +329,7 @@ To open the Git output window, run **View** > **Output** and select **Log (Git)*
 
 ​​	要打开 Git 输出窗口，请运行视图 > 输出，然后从下拉列表中选择日志 (Git)。
 
-## [Initialize a repository 初始化存储库](https://code.visualstudio.com/docs/sourcecontrol/overview#_initialize-a-repository)
+## [Initialize a repository 初始化存储库]({{< ref "/SourceControl/Overview#_initialize-a-repository" >}})
 
 If your workspace is on your local machine, you can enable Git source control by creating a Git repository with the **Initialize Repository** command. When VS Code doesn't detect an existing Git repository, the Source Control view will give you the options to **Initialize Repository** or **Publish to GitHub**.
 
@@ -341,7 +341,7 @@ You can also run the **Git: Initialize Repository** and **Publish to GitHub** co
 
 ​​	您还可以从命令面板（Ctrl+Shift+P）运行“Git: 初始化存储库”和“发布到 GitHub”命令。运行“初始化存储库”将创建必要的 Git 存储库元数据文件，并将工作区文件显示为准备暂存的未跟踪更改。发布到 GitHub 会将您的工作区文件夹直接发布到 GitHub 存储库，允许您在私有和公有存储库之间进行选择。请查看我们的发布存储库视频，以获取有关发布到 GitHub 的更多信息。
 
-## [VS Code as Git editor VS Code 作为 Git 编辑器](https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-editor)
+## [VS Code as Git editor VS Code 作为 Git 编辑器]({{< ref "/SourceControl/Overview#_vs-code-as-git-editor" >}})
 
 When you launch VS Code from the command line, you can pass the `--wait` argument to make the launch command wait until you have closed the new VS Code instance. This can be useful when you configure VS Code as your Git external editor so Git will wait until you close the launched VS Code instance.
 
@@ -385,7 +385,7 @@ Now you can run `git config --global -e` and use VS Code as editor for configuri
 
 ​​	现在，您可以运行 `git config --global -e` 并使用 VS Code 作为编辑器来配置 Git。
 
-### [VS Code as Git difftool and mergetool VS Code 作为 Git difftool 和 mergetool](https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-difftool-and-mergetool)
+### [VS Code as Git difftool and mergetool VS Code 作为 Git difftool 和 mergetool]({{< ref "/SourceControl/Overview#_vs-code-as-git-difftool-and-mergetool" >}})
 
 You can use VS Code's diff and merge capabilities even when using Git from command-line. Add the following to your Git configurations to use VS Code as the diff and merge tool:
 
@@ -419,13 +419,13 @@ To summarize, here are some examples of where you can use VS Code as the editor:
 - `git difftool <commit>^ <commit>` use VS Code as the diff editor for changes
   `git difftool <commit>^ <commit>` 将 VS Code 用作更改的差异编辑器
 
-## [Working with GitHub Pull Requests and Issues 使用 GitHub 拉取请求和问题](https://code.visualstudio.com/docs/sourcecontrol/overview#_working-with-github-pull-requests-and-issues)
+## [Working with GitHub Pull Requests and Issues 使用 GitHub 拉取请求和问题]({{< ref "/SourceControl/Overview#_working-with-github-pull-requests-and-issues" >}})
 
-Visual Studio Code can also bring in GitHub's pull requests and issues. Create your PRs in VS Code, review with comments, and approve them without switching context. Learn more about [GitHub PRs and Issues in VS Code](https://code.visualstudio.com/docs/sourcecontrol/github).
+Visual Studio Code can also bring in GitHub's pull requests and issues. Create your PRs in VS Code, review with comments, and approve them without switching context. Learn more about [GitHub PRs and Issues in VS Code]({{< ref "/SourceControl/CollaborateonGitHub" >}}).
 
 ​​	Visual Studio Code 还可以引入 GitHub 的拉取请求和问题。在 VS Code 中创建 PR，通过评论进行审查，并在不切换上下文的情况下批准它们。详细了解 VS Code 中的 GitHub PR 和问题。
 
-## [SCM Providers SCM 提供程序](https://code.visualstudio.com/docs/sourcecontrol/overview#_scm-providers)
+## [SCM Providers SCM 提供程序]({{< ref "/SourceControl/Overview#_scm-providers" >}})
 
 ![Git Extension Pack](https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/git-extension-pack/0.1.3/1502005480329/Microsoft.VisualStudio.Services.Icons.Default)
 
@@ -472,7 +472,7 @@ VS Code has support for handling multiple Source Control providers simultaneousl
 
 ![Source Control Repositories view option in overflow menu](https://code.visualstudio.com/assets/docs/sourcecontrol/overview/scm-providers-list.png)
 
-### [SCM Provider extensions SCM 提供程序扩展](https://code.visualstudio.com/docs/sourcecontrol/overview#_scm-provider-extensions)
+### [SCM Provider extensions SCM 提供程序扩展]({{< ref "/SourceControl/Overview#_scm-provider-extensions" >}})
 
 If you would like to install another SCM provider, you can search on the **scm providers** extension category in the **Extensions** view (Ctrl+Shift+X). Start typing '@ca' and you will see suggestions for extension categories like debuggers and linters. Select `@category:"scm providers"` to see available SCM providers.
 
@@ -480,17 +480,17 @@ If you would like to install another SCM provider, you can search on the **scm p
 
 ![SCM Provider category in the marketplace](https://code.visualstudio.com/assets/docs/sourcecontrol/overview/scm-provider-category.png)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/sourcecontrol/overview#_next-steps)
+## [Next steps 后续步骤]({{< ref "/SourceControl/Overview#_next-steps" >}})
 
 - [Intro Video - Git Version Control](https://code.visualstudio.com/docs/introvideos/versioncontrol) - An introductory video providing an overview of VS Code Git support.
   简介视频 - Git 版本控制 - 一个介绍性视频，概述了 VS Code Git 支持。
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn about the powerful VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn about the powerful VS Code editor.
   基本编辑 - 了解功能强大的 VS Code 编辑器。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - This is where VS Code really shines
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - This is where VS Code really shines
   调试 - 这是 VS Code 真正出彩的地方
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - Running tasks with Gulp, Grunt, and Jake. Showing Errors and Warnings
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - Running tasks with Gulp, Grunt, and Jake. Showing Errors and Warnings
   任务 - 使用 Gulp、Grunt 和 Jake 运行任务。显示错误和警告
 - [Source Control API](https://code.visualstudio.com/api/extension-guides/scm-provider) - If you want to integrate another Source Control provider into VS Code, see our Source Control API.
   源代码管理 API - 如果您想将另一个源代码管理提供程序集成到 VS Code 中，请参阅我们的源代码管理 API。

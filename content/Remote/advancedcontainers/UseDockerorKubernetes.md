@@ -44,7 +44,7 @@ You'll be prompted to pick a pre-defined container configuration from our [first
 **Accessing an existing Docker or Minikube instance from a container
 从容器访问现有 Docker 或 Minikube 实例**
 
-- [Docker-from-Docker](https://aka.ms/vscode-remote/samples/docker-from-docker) - Also known as "Docker-outside-of-Docker", this illustrates how you can use the Docker (or Moby) CLI in your dev container to connect to your host's Docker daemon by bind mounting the Docker Unix socket. Lower overhead and can reuse your machine's cache, but has [bind mounting limitations](https://code.visualstudio.com/remote/advancedcontainers/use-docker-kubernetes#_mounting-host-volumes-with-docker-from-inside-a-container).
+- [Docker-from-Docker](https://aka.ms/vscode-remote/samples/docker-from-docker) - Also known as "Docker-outside-of-Docker", this illustrates how you can use the Docker (or Moby) CLI in your dev container to connect to your host's Docker daemon by bind mounting the Docker Unix socket. Lower overhead and can reuse your machine's cache, but has [bind mounting limitations]({{< ref "/Remote/advancedcontainers/UseDockerorKubernetes#_mounting-host-volumes-with-docker-from-inside-a-container" >}}).
 
   ​​	Docker-from-Docker - 也称为“Docker-outside-of-Docker”，演示了如何在开发容器中使用 Docker（或 Moby）CLI 通过绑定挂载 Docker Unix 套接字连接到主机的 Docker 守护程序。开销较低，并且可以重复使用计算机的缓存，但存在绑定挂载限制。
 
@@ -60,7 +60,7 @@ There is also documentation on the [Docker-in-Docker](https://github.com/devcont
 
 ​​	在上面的示例中引用的 Docker-in-Docker、Docker-from-Docker 和 Kubernetes 安装脚本上还提供了文档，您可以重复使用这些文档。
 
-## [Mounting host volumes with Docker from inside a container 在容器内使用 Docker 挂载主机卷](https://code.visualstudio.com/remote/advancedcontainers/use-docker-kubernetes#_mounting-host-volumes-with-docker-from-inside-a-container)
+## [Mounting host volumes with Docker from inside a container 在容器内使用 Docker 挂载主机卷]({{< ref "/Remote/advancedcontainers/UseDockerorKubernetes#_mounting-host-volumes-with-docker-from-inside-a-container" >}})
 
 When following the [Docker-in-Docker](https://aka.ms/vscode-remote/samples/docker-in-docker) model, using the Docker CLI from inside a dev container will cause it to interact with a Docker daemon running in the same place. This means that you can "bind" mount anything inside the dev container into the "inner" containers you create.
 
@@ -74,7 +74,7 @@ For example, this will "just work":
 docker run -v /workspace/examplefile.txt:/incontainer/path debian
 ```
 
-However, if you want to bind mount a host folder available into this inner container, you need to [mount it](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount) into your dev container first.
+However, if you want to bind mount a host folder available into this inner container, you need to [mount it]({{< ref "/Remote/advancedcontainers/Addlocalfilemount" >}}) into your dev container first.
 
 ​​	但是，如果您想将可用于此内部容器的主机文件夹绑定挂载，则需要先将其挂载到您的开发容器中。
 

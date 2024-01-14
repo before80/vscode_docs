@@ -14,7 +14,7 @@ draft = false
 
 
 
-Visual Studio Code is a code editor-centric development tool, so it doesn't come with any embedded application server. For most servers, you will need to deploy them using the command line, and then use the appropriate debugger [configuration](https://code.visualstudio.com/docs/java/java-debugging#_configure) if you want to attach to it.
+Visual Studio Code is a code editor-centric development tool, so it doesn't come with any embedded application server. For most servers, you will need to deploy them using the command line, and then use the appropriate debugger [configuration]({{< ref "/Java/RunandDebug#_configure" >}}) if you want to attach to it.
 
 ​​​	Visual Studio Code 是一款以代码编辑器为中心的开发工具，因此它不附带任何嵌入式应用程序服务器。对于大多数服务器，您需要使用命令行部署它们，然后使用适当的调试器配置（如果您想附加到它）。
 
@@ -22,7 +22,7 @@ On the other hand, we know that for certain Java workloads, server integration i
 
 ​​​	另一方面，我们知道对于某些 Java 工作负载，服务器集成非常有用。使用 Visual Studio Code，您可以找到流行应用程序服务器的第三方扩展，例如 Tomcat、Jetty 和 Open Liberty，在本地使用这些服务器时很有用。
 
-For [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard), see [Spring Boot in Visual Studio Code](https://code.visualstudio.com/docs/java/java-spring-boot).
+For [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard), see [Spring Boot in Visual Studio Code]({{< ref "/Java/SpringBoot" >}}).
 
 ​​​	有关 Spring Boot Dashboard，请参阅 Visual Studio Code 中的 Spring Boot。
 
@@ -30,7 +30,7 @@ If you run into any issues when using the features below, you can contact us by 
 
 ​​​	如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
 
-## [Community Server Connectors 社区服务器连接器](https://code.visualstudio.com/docs/java/java-tomcat-jetty#_community-server-connectors)
+## [Community Server Connectors 社区服务器连接器]({{< ref "/Java/ApplicationServers#_community-server-connectors" >}})
 
 The [Community Server Connectors](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector) extension is published by Red Hat. It provides a Remote Server Protocol-based server connector, which can start, stop, publish to, and otherwise control community runtimes and servers like [Apache Felix](https://felix.apache.org/documentation/index.html), [Karaf](https://karaf.apache.org/), and [Tomcat](https://tomcat.apache.org/).
 
@@ -40,7 +40,7 @@ The [Community Server Connectors](https://marketplace.visualstudio.com/items?ite
 
 
 
-## [Other Servers 其他服务器](https://code.visualstudio.com/docs/java/java-tomcat-jetty#_other-servers)
+## [Other Servers 其他服务器]({{< ref "/Java/ApplicationServers#_other-servers" >}})
 
 The [Open Liberty Tools](https://marketplace.visualstudio.com/items?itemName=Open-Liberty.liberty-dev-vscode-ext) extension lets you run your application on Open Liberty, allowing you to deploy, test, and debug your application from Visual Studio Code.
 

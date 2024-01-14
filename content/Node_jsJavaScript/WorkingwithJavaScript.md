@@ -18,9 +18,9 @@ This topic describes some of the advanced JavaScript features supported by Visua
 
 ​​	本主题介绍 Visual Studio Code 支持的一些高级 JavaScript 功能。通过使用 TypeScript 语言服务，VS Code 可以提供智能补全（IntelliSense）以及 JavaScript 类型检查。
 
-## [IntelliSense](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_intellisense)
+## [IntelliSense]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_intellisense" >}})
 
-Visual Studio Code's JavaScript [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) provides intelligent code completion, parameter info, references search, and many other advanced language features. Our JavaScript IntelliSense is powered by the [JavaScript language service](https://github.com/microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio) developed by the TypeScript team. While IntelliSense should just work for most JavaScript projects without any configuration, you can make IntelliSense even more useful with [JSDoc](https://code.visualstudio.com/docs/languages/javascript#_jsdoc-support) or by configuring a `jsconfig.json` project.
+Visual Studio Code's JavaScript [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) provides intelligent code completion, parameter info, references search, and many other advanced language features. Our JavaScript IntelliSense is powered by the [JavaScript language service](https://github.com/microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio) developed by the TypeScript team. While IntelliSense should just work for most JavaScript projects without any configuration, you can make IntelliSense even more useful with [JSDoc]({{< ref "/Languages/JavaScript#_jsdoc-support" >}}) or by configuring a `jsconfig.json` project.
 
 ​​	Visual Studio Code 的 JavaScript IntelliSense 提供智能代码补全、参数信息、引用搜索以及许多其他高级语言功能。我们的 JavaScript IntelliSense 由 TypeScript 团队开发的 JavaScript 语言服务提供支持。虽然 IntelliSense 应该适用于大多数 JavaScript 项目，无需任何配置，但您可以通过 JSDoc 或配置 `jsconfig.json` 项目使 IntelliSense 更有用。
 
@@ -36,7 +36,7 @@ In addition to objects, methods, and properties, the JavaScript IntelliSense win
 
 ​​	除了对象、方法和属性之外，JavaScript IntelliSense 窗口还为文件中的符号提供基本单词补全。
 
-### [Typings and Automatic Type Acquisition 类型和自动类型获取](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition)
+### [Typings and Automatic Type Acquisition 类型和自动类型获取]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_typings-and-automatic-type-acquisition" >}})
 
 IntelliSense for JavaScript libraries and frameworks is powered by TypeScript type declaration (typings) files. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience in a performant manner.
 
@@ -64,7 +64,7 @@ Type declaration files are automatically downloaded and managed by Visual Studio
 }
 ```
 
-You can alternately explicitly list packages to acquire type declaration files for in a [jsconfig.json](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_javascript-projects-jsconfigjson).
+You can alternately explicitly list packages to acquire type declaration files for in a [jsconfig.json]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_javascript-projects-jsconfigjson" >}}).
 
 ​​	您也可以在 jsconfig.json 中列出要获取类型声明文件的包。
 
@@ -80,9 +80,9 @@ Most common JavaScript libraries ship with declaration files or have type declar
 
 ​​	大多数常见的 JavaScript 库都附带声明文件或提供类型声明文件。您可以使用 TypeSearch 网站搜索库的类型声明文件包。
 
-### [Fixing npm not installed warning for Automatic Type Acquisition 修复自动类型获取的 npm 未安装警告](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_fixing-npm-not-installed-warning-for-automatic-type-acquisition)
+### [Fixing npm not installed warning for Automatic Type Acquisition 修复自动类型获取的 npm 未安装警告]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_fixing-npm-not-installed-warning-for-automatic-type-acquisition" >}})
 
-[Automatic Type Acquisition](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition) uses [npm](https://www.npmjs.com/), the Node.js package manager, to install and manage Type Declaration (typings) files. To ensure that Automatic Type Acquisition works properly, first ensure that you have npm installed on your machine.
+[Automatic Type Acquisition]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_typings-and-automatic-type-acquisition" >}}) uses [npm](https://www.npmjs.com/), the Node.js package manager, to install and manage Type Declaration (typings) files. To ensure that Automatic Type Acquisition works properly, first ensure that you have npm installed on your machine.
 
 ​​	自动类型获取使用 npm（Node.js 包管理器）来安装和管理类型声明 (typings) 文件。为了确保自动类型获取正常工作，首先确保您的计算机上已安装 npm。
 
@@ -94,7 +94,7 @@ npm is installed with the Node.js runtime, which is available for download from 
 
 ​​	npm 与 Node.js 运行时一起安装，后者可从 Nodejs.org 下载。安装当前的 LTS（长期支持）版本，npm 可执行文件将默认添加到您的系统路径中。
 
-If you have npm installed but still see a warning message, you can explicitly tell VS Code where npm is installed with the `typescript.npm` [setting](https://code.visualstudio.com/docs/getstarted/settings). This should be set to the full path of the npm executable on your machine, and this does not have to match the version of npm you are using to manage packages in your workspace. `typescript.npm` requires TypeScript 2.3.4+.
+If you have npm installed but still see a warning message, you can explicitly tell VS Code where npm is installed with the `typescript.npm` [setting]({{< ref "/GetStarted/Settings" >}}). This should be set to the full path of the npm executable on your machine, and this does not have to match the version of npm you are using to manage packages in your workspace. `typescript.npm` requires TypeScript 2.3.4+.
 
 ​​	如果您已安装 npm 但仍看到警告消息，则可以使用 `typescript.npm` 设置明确告知 VS Code npm 的安装位置。这应设置为计算机上 npm 可执行文件的完整路径，并且不必与您用于管理工作区中包的 npm 版本匹配。 `typescript.npm` 需要 TypeScript 2.3.4+。
 
@@ -108,7 +108,7 @@ For example, on Windows, you would add a path like this to your `settings.json` 
 }
 ```
 
-## [JavaScript projects (jsconfig.json) JavaScript 项目 (jsconfig.json)](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_javascript-projects-jsconfigjson)
+## [JavaScript projects (jsconfig.json) JavaScript 项目 (jsconfig.json)]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_javascript-projects-jsconfigjson" >}})
 
 The presence of a [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig) file in a directory indicates that the directory is the root of a JavaScript project. `jsconfig.json` specifies the root files and the options for the language features provided by the [JavaScript language service](https://github.com/microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio). For common setups, a `jsconfig.json` file is not required, however, there are situations when you will want to add a `jsconfig.json`.
 
@@ -121,7 +121,7 @@ The presence of a [jsconfig.json](https://code.visualstudio.com/docs/languages/j
 - You are using the TypeScript compiler to down-level compile JavaScript source code.
   您正在使用 TypeScript 编译器向下编译 JavaScript 源代码。
 
-### [Location of jsconfig.json jsconfig.json 的位置](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_location-of-jsconfigjson)
+### [Location of jsconfig.json jsconfig.json 的位置]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_location-of-jsconfigjson" >}})
 
 To define our code as a JavaScript project, create `jsconfig.json` at the root of your JavaScript code as shown below. A JavaScript project is the source files of the project and should not include the derived or packaged files (such as a `dist` directory).
 
@@ -139,7 +139,7 @@ Illustrated below is a project with a `client` and `server` folder, showing two 
 
 ![multiple jsconfigs](./WorkingwithJavaScript_img/complex_jsconfig_setup.png)
 
-### [Writing jsconfig.json 编写 jsconfig.json](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_writing-jsconfigjson)
+### [Writing jsconfig.json 编写 jsconfig.json]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_writing-jsconfigjson" >}})
 
 Below is a simple template for `jsconfig.json` file, which defines the JavaScript `target` to be `ES6` and the `exclude` attribute excludes the `node_modules` folder. You can copy and paste this code into your `jsconfig.json` file.
 
@@ -185,7 +185,7 @@ For more information, see the full [jsconfig.json documentation](https://code.vi
 
 ​​	有关详细信息，请参阅完整的 jsconfig.json 文档。
 
-### [Migrating to TypeScript 迁移到 TypeScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_migrating-to-typescript)
+### [Migrating to TypeScript 迁移到 TypeScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_migrating-to-typescript" >}})
 
 It is possible to have mixed TypeScript and JavaScript projects. To start migrating to TypeScript, rename your `jsconfig.json` file to `tsconfig.json` and set the `allowJs` property to `true`. For more information, see [Migrating from JavaScript](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html).
 
@@ -195,7 +195,7 @@ It is possible to have mixed TypeScript and JavaScript projects. To start migrat
 >
 > ​​	注意： `jsconfig.json` 与 `tsconfig.json` 文件相同，只是将 `allowJs` 设置为 true。请参阅此处有关 `tsconfig.json` 的文档，以查看其他可用选项。
 
-## [Type checking JavaScript 类型检查 JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_type-checking-javascript)
+## [Type checking JavaScript 类型检查 JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_type-checking-javascript" >}})
 
 VS Code allows you to leverage some of TypeScript's advanced type checking and error reporting functionality in regular JavaScript files. This is a great way to catch common programming mistakes. These type checks also enable some exciting Quick Fixes for JavaScript, including **Add missing import** and **Add missing property**.
 
@@ -297,7 +297,7 @@ JavaScript type checking requires TypeScript 2.3. If you are unsure what version
 
 ​​	JavaScript 类型检查需要 TypeScript 2.3。如果您不确定工作区中当前处于活动状态的 TypeScript 版本，请运行 TypeScript：选择 TypeScript 版本命令进行检查。您必须在编辑器中打开一个 `.js/.ts` 文件才能运行此命令。如果您打开一个 TypeScript 文件，该版本会显示在右下角。
 
-### [Global variables and type checking 全局变量和类型检查](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_global-variables-and-type-checking)
+### [Global variables and type checking 全局变量和类型检查]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_global-variables-and-type-checking" >}})
 
 Let's say that you are working in legacy JavaScript code that uses global variables or non-standard DOM APIs:
 
@@ -325,7 +325,7 @@ If you want to continue using `// @ts-check` but are confident that these are no
 
 ​​	如果您想继续使用 `// @ts-check` ，但确信这些不是应用程序的实际问题，则必须让 TypeScript 了解这些全局变量。
 
-To start, [create a `jsconfig.json`](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_javascript-projects-jsconfigjson) at the root of your project:
+To start, [create a `jsconfig.json`]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_javascript-projects-jsconfigjson" >}}) at the root of your project:
 
 ​​	首先，在项目的根目录下创建一个 `jsconfig.json` ：
 
@@ -356,9 +356,9 @@ declare var CAN_NOTIFY: number;
 
 ​​	 `d.ts` 文件是类型声明。在这种情况下， `globals.d.ts` 让 TypeScript 知道存在一个全局 `CAN_NOTIFY` ，并且在 `window` 上存在一个 `webkitNotifications` 属性。您可以在 TypeScript 文档中阅读有关编写 `d.ts` 的更多信息。 `d.ts` 文件不会改变 JavaScript 的评估方式，它们仅用于提供更好的 JavaScript 语言支持。
 
-## [Using tasks 使用任务](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_using-tasks)
+## [Using tasks 使用任务]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_using-tasks" >}})
 
-### [Using the TypeScript compiler 使用 TypeScript 编译器](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_using-the-typescript-compiler)
+### [Using the TypeScript compiler 使用 TypeScript 编译器]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_using-the-typescript-compiler" >}})
 
 One of the key features of TypeScript is the ability to use the latest JavaScript language features, and emit code that can execute in JavaScript runtimes that don't yet understand those newer features. With JavaScript using the same language service, it too can now take advantage of this same feature.
 
@@ -372,9 +372,9 @@ Read more about the compiler options for down level compilation in the [jsconfig
 
 ​​	在 jsconfig 文档中阅读有关降级编译的编译器选项的更多信息。
 
-### [Running Babel 运行 Babel](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_running-babel)
+### [Running Babel 运行 Babel]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_running-babel" >}})
 
-The [Babel](https://babeljs.io/) transpiler turns ES6 files into readable ES5 JavaScript with Source Maps. You can easily integrate **Babel** into your workflow by adding the configuration below to your `tasks.json` file (located under the workspace's `.vscode` folder). The `group` setting makes this task the default **Task: Run Build Task** gesture. `isBackground` tells VS Code to keep running this task in the background. To learn more, go to [Tasks](https://code.visualstudio.com/docs/editor/tasks).
+The [Babel](https://babeljs.io/) transpiler turns ES6 files into readable ES5 JavaScript with Source Maps. You can easily integrate **Babel** into your workflow by adding the configuration below to your `tasks.json` file (located under the workspace's `.vscode` folder). The `group` setting makes this task the default **Task: Run Build Task** gesture. `isBackground` tells VS Code to keep running this task in the background. To learn more, go to [Tasks]({{< ref "/UserGuide/Tasks" >}}).
 
 ​​	Babel 编译器将 ES6 文件转换为可读的 ES5 JavaScript，并附带源映射。您可以通过将以下配置添加到 `tasks.json` 文件（位于工作区的 `.vscode` 文件夹下）轻松地将 Babel 集成到您的工作流中。 `group` 设置使此任务成为默认任务：运行构建任务手势。 `isBackground` 告诉 VS Code 在后台持续运行此任务。要了解更多信息，请转到任务。
 
@@ -402,7 +402,7 @@ Once you have added this, you can start **Babel** with the Ctrl+Shift+B (**Run B
 >
 > ​​	提示：有关 Babel CLI 的帮助，请参阅使用 Babel 中的说明。上面的示例使用 CLI 选项。
 
-## [Disable JavaScript support 禁用 JavaScript 支持](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_disable-javascript-support)
+## [Disable JavaScript support 禁用 JavaScript 支持]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_disable-javascript-support" >}})
 
 If you prefer to use JavaScript language features supported by other JavaScript language tools such as [Flow](https://flow.org/), you can disable VS Code's built-in JavaScript support. You do this by disabling the built-in TypeScript language extension **TypeScript and JavaScript Language Features** (vscode.typescript-language-features) which also provides the JavaScript language support.
 
@@ -414,7 +414,7 @@ To disable JavaScript/TypeScript support, go to the Extensions view (Ctrl+Shift+
 
 ![TypeScript and JavaScript Language Features extension](./WorkingwithJavaScript_img/disable-TS-language.png)
 
-## [Partial IntelliSense mode 部分 IntelliSense 模式](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_partial-intellisense-mode)
+## [Partial IntelliSense mode 部分 IntelliSense 模式]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_partial-intellisense-mode" >}})
 
 VS Code tries to provide project-wide IntelliSense for JavaScript and TypeScript, which is what makes features such as auto-imports and **Go to Definition** possible. However, there are some cases where VS Code is limited to working only with your currently opened files and is unable to load the other files that make up your JavaScript or TypeScript project.
 
@@ -435,7 +435,7 @@ In these cases, VS Code's IntelliSense will operate in **partial mode**. Partial
 
 ​​	在这些情况下，VS Code 的 IntelliSense 将以部分模式运行。部分模式会尽力为已打开的任何 JavaScript 或 TypeScript 文件提供 IntelliSense，但功能有限，无法提供任何跨文件 IntelliSense 功能。
 
-### [Which features are impacted? 哪些功能会受到影响？](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_which-features-are-impacted)
+### [Which features are impacted? 哪些功能会受到影响？]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_which-features-are-impacted" >}})
 
 Here's an incomplete list of features that are either disabled or have more limited functionality in partial mode:
 
@@ -466,10 +466,10 @@ Some additional features are disabled on `vscode.dev` and `github.dev`:
 
 ​​	在 `vscode.dev` 和 `github.dev` 上禁用了一些其他功能：
 
-- [Automatic type acquisition](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition) is currently not supported.
+- [Automatic type acquisition]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_typings-and-automatic-type-acquisition" >}}) is currently not supported.
   目前不支持自动类型获取。
 
-### [Checking if you are in partial mode 检查您是否处于部分模式](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_checking-if-you-are-in-partial-mode)
+### [Checking if you are in partial mode 检查您是否处于部分模式]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_checking-if-you-are-in-partial-mode" >}})
 
 To check if the current file is using partial mode IntelliSense instead of project-wide IntelliSense, hover over the `JavaScript` or `TypeScript` language status item in the status bar:
 

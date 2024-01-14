@@ -52,7 +52,7 @@ The default terminal profile shell defaults to `$SHELL` on Linux and macOS and P
 
 ​​	默认终端配置文件 shell 在 Linux 和 macOS 上默认为 `$SHELL` ，在 Windows 上默认为 PowerShell。VS Code 会自动检测大多数标准 shell，然后可以将其配置为默认 shell。
 
-## [Configuring profiles 配置配置文件](https://code.visualstudio.com/docs/terminal/profiles#_configuring-profiles)
+## [Configuring profiles 配置配置文件]({{< ref "/Terminal/TerminalProfiles#_configuring-profiles" >}})
 
 To create a new profile, run the **Terminal: Select Default Profile** command and activate the configure button on the right side of the shell to base it on. This will add a new entry to your settings that can be tweaked manually in your `settings.json` file.
 
@@ -116,7 +116,7 @@ The **default profile** can be defined manually with the `terminal.integrated.de
 >
 > ​​	提示：集成终端 shell 正在使用 VS Code 的权限运行。如果您需要使用提升的（管理员）或不同的权限运行 shell 命令，请在终端中使用平台实用程序，例如 `runas.exe` 。
 
-## [Removing built-in profiles 删除内置配置文件](https://code.visualstudio.com/docs/terminal/profiles#_removing-builtin-profiles)
+## [Removing built-in profiles 删除内置配置文件]({{< ref "/Terminal/TerminalProfiles#_removing-builtin-profiles" >}})
 
 To remove a built-in profile and prevent it from showing up in the new terminal dropdown, set the name of the profile to `null`. For example, to remove the `Git Bash` profile on Windows, use this setting:
 
@@ -130,7 +130,7 @@ To remove a built-in profile and prevent it from showing up in the new terminal 
 }
 ```
 
-## [Configuring the task/debug profile 配置任务/调试配置文件](https://code.visualstudio.com/docs/terminal/profiles#_configuring-the-taskdebug-profile)
+## [Configuring the task/debug profile 配置任务/调试配置文件]({{< ref "/Terminal/TerminalProfiles#_configuring-the-taskdebug-profile" >}})
 
 By default, the task/debug features will use the default profile. This may not be ideal if your default has a heavy PowerShell startup script or a non-POSIX compliant shell for example. To configure a profile to be used only in the debug/tasks features, use the `terminal.integrated.automationProfile.<platform>` setting:
 
@@ -147,7 +147,7 @@ By default, the task/debug features will use the default profile. This may not b
 }
 ```
 
-## [Unsafe profile detection 不安全配置文件检测](https://code.visualstudio.com/docs/terminal/profiles#_unsafe-profile-detection)
+## [Unsafe profile detection 不安全配置文件检测]({{< ref "/Terminal/TerminalProfiles#_unsafe-profile-detection" >}})
 
 Certain shells are installed in unsafe paths by default, like a path that could be written to by another user on a Windows environment. VS Code will still detect these but not expose them as a proper profile until they have been explicitly configured via the **Terminal: Select Default Profile** command. When configuring an unsafe profile, there will be a warning before it's added:
 
@@ -155,7 +155,7 @@ Certain shells are installed in unsafe paths by default, like a path that could 
 
 ![Shells with unsafe paths like c:\msys64 will show a warning before you can use the detected profile](./TerminalProfiles_img/unsafe-profile-warning.png)
 
-## [Cmder](https://code.visualstudio.com/docs/terminal/profiles#_cmder)
+## [Cmder]({{< ref "/Terminal/TerminalProfiles#_cmder" >}})
 
 Cmder itself is a terminal, but you can use the [Cmder](https://cmder.app/) shell in VS Code with the following profile:
 
@@ -173,11 +173,11 @@ Cmder itself is a terminal, but you can use the [Cmder](https://cmder.app/) shel
 }
 ```
 
-This profile should be picked up automatically when the `CMDER_ROOT` environment variable is set. It will also be detected as an [unsafe profile](https://code.visualstudio.com/docs/terminal/profiles#_unsafe-profile-detection) if installed at `C:\cmder`. You may refer to [Cmder's wiki](https://github.com/cmderdev/cmder/wiki/Seamless-VS-Code-Integration) for more information.
+This profile should be picked up automatically when the `CMDER_ROOT` environment variable is set. It will also be detected as an [unsafe profile]({{< ref "/Terminal/TerminalProfiles#_unsafe-profile-detection" >}}) if installed at `C:\cmder`. You may refer to [Cmder's wiki](https://github.com/cmderdev/cmder/wiki/Seamless-VS-Code-Integration) for more information.
 
 ​​	当 `CMDER_ROOT` 环境变量被设置时，此配置文件应该会被自动选中。如果安装在 `C:\cmder` ，它还将被检测为不安全配置文件。你可以参考 Cmder 的 wiki 了解更多信息。
 
-## [Cygwin](https://code.visualstudio.com/docs/terminal/profiles#_cygwin)
+## [Cygwin]({{< ref "/Terminal/TerminalProfiles#_cygwin" >}})
 
 Cygwin itself is a terminal, but you can use the [Cygwin](https://www.cygwin.com/) shell in VS Code with the following profile:
 
@@ -195,11 +195,11 @@ Cygwin itself is a terminal, but you can use the [Cygwin](https://www.cygwin.com
 }
 ```
 
-This profile should be detected automatically as an [unsafe profile](https://code.visualstudio.com/docs/terminal/profiles#_unsafe-profile-detection) when installed at the default paths `C:\cygwin` or `C:\cygwin64`.
+This profile should be detected automatically as an [unsafe profile]({{< ref "/Terminal/TerminalProfiles#_unsafe-profile-detection" >}}) when installed at the default paths `C:\cygwin` or `C:\cygwin64`.
 
 ​​	当安装在默认路径 `C:\cygwin` 或 `C:\cygwin64` 时，此配置文件应该会被自动检测为不安全配置文件。
 
-## [Git Bash](https://code.visualstudio.com/docs/terminal/profiles#_git-bash)
+## [Git Bash]({{< ref "/Terminal/TerminalProfiles#_git-bash" >}})
 
 A [limitation of Git Bash](https://github.com/microsoft/vscode/issues/85831#issuecomment-943403803) when VS Code uses bash.exe (the shell) as opposed to git-bash.exe (the terminal) is that history will not be retained across shell sessions. You can work around this by adding the following to your `~/.bashrc` or `~/.bash_profile` files:
 
@@ -213,7 +213,7 @@ This will cause the shell to call `history -a` whenever the prompt is printed wh
 
 ​​	这将导致 shell 在打印提示符时调用 `history -a` ，从而将会话的当前会话命令刷新到支持历史记录的文件。
 
-## [MSYS2](https://code.visualstudio.com/docs/terminal/profiles#_msys2)
+## [MSYS2]({{< ref "/Terminal/TerminalProfiles#_msys2" >}})
 
 MSYS2's bash shell can be configured with the following profile:
 
@@ -230,17 +230,17 @@ MSYS2's bash shell can be configured with the following profile:
 }
 ```
 
-This profile should be detected automatically as an [unsafe profile](https://code.visualstudio.com/docs/terminal/profiles#_unsafe-profile-detection) when installed at the default path `C:\\msys64`.
+This profile should be detected automatically as an [unsafe profile]({{< ref "/Terminal/TerminalProfiles#_unsafe-profile-detection" >}}) when installed at the default path `C:\\msys64`.
 
 ​​	当安装在默认路径 `C:\\msys64` 时，此配置文件应自动检测为不安全配置文件。
 
-## [Windows PowerShell](https://code.visualstudio.com/docs/terminal/profiles#_windows-powershell)
+## [Windows PowerShell]({{< ref "/Terminal/TerminalProfiles#_windows-powershell" >}})
 
 When PowerShell 6+ is installed, Windows PowerShell is not included in the profiles list by default. To add Windows PowerShell as a profile, choose the **Select Default Profile** option in the new terminal dropdown and select the Windows PowerShell item. This will configure the profile and set it as your default.
 
 ​​	安装 PowerShell 6+ 时，默认情况下配置文件列表中不包含 Windows PowerShell。若要将 Windows PowerShell 添加为配置文件，请在新的终端下拉菜单中选择“选择默认配置文件”选项，然后选择 Windows PowerShell 项。这将配置配置文件并将其设置为默认值。
 
-## [WSL](https://code.visualstudio.com/docs/terminal/profiles#_wsl)
+## [WSL]({{< ref "/Terminal/TerminalProfiles#_wsl" >}})
 
 When running VS Code on your local machine, Windows Subsystem for Linux shells should be automatically detected. Depending on your setup, this may be a nuisance if you have a lot of distros installed. For finer control over the WSL profiles the automatic detection can be disabled with the `terminal.integrated.useWslProfiles` setting, then here's an example of how to manually configure a WSL shell:
 
@@ -260,9 +260,9 @@ When running VS Code on your local machine, Windows Subsystem for Linux shells s
 }
 ```
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/terminal/profiles#_common-questions)
+## [Common questions 常见问题]({{< ref "/Terminal/TerminalProfiles#_common-questions" >}})
 
-### [Why are there duplicate paths in the terminal's $PATH environment variable and/or why are they reversed on macOS? 为什么终端的 $PATH 环境变量中存在重复路径，或者为什么它们在 macOS 上被反转？](https://code.visualstudio.com/docs/terminal/profiles#_why-are-there-duplicate-paths-in-the-terminals-path-environment-variable-andor-why-are-they-reversed-on-macos)
+### [Why are there duplicate paths in the terminal's $PATH environment variable and/or why are they reversed on macOS? 为什么终端的 $PATH 环境变量中存在重复路径，或者为什么它们在 macOS 上被反转？]({{< ref "/Terminal/TerminalProfiles#_why-are-there-duplicate-paths-in-the-terminals-path-environment-variable-andor-why-are-they-reversed-on-macos" >}})
 
 This can happen on macOS because of how the terminal launches using VS Code's environment. When VS Code launches for the first time, to source your "development environment," it launches your configured shell as a **login shell**, which runs your `~/.profile`/`~/.bash_profile`/`~/.zprofile` scripts. Now when the terminal launches, it also runs as a login shell, which will put the standard paths to the front (for example, `/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`) and reinitialize your shell environment.
 

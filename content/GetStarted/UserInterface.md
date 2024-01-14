@@ -20,7 +20,7 @@ At its heart, Visual Studio Code is a code editor. Like many other code editors,
 
 ![code basics hero](./UserInterface_img/hero.png)
 
-## [Basic Layout 基本布局](https://code.visualstudio.com/docs/getstarted/userinterface#_basic-layout)
+## [Basic Layout 基本布局]({{< ref "/GetStarted/UserInterface#_basic-layout" >}})
 
 VS Code comes with a simple and intuitive layout that maximizes the space provided for the editor while leaving ample room to browse and access the full context of your folder or project. The UI is divided into five main areas:
 
@@ -45,7 +45,7 @@ Each time you start VS Code, it opens up in the same state it was in when you la
 
 ​​	每次启动 VS Code 时，它都会以上次关闭时的相同状态打开。文件夹、布局和打开的文件都将保留。
 
-Open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the [Tabs](https://code.visualstudio.com/docs/getstarted/userinterface#_tabs) section below.
+Open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the [Tabs]({{< ref "/GetStarted/UserInterface#_tabs" >}}) section below.
 
 ​​	每个编辑器中打开的文件都显示在编辑器区域顶部的选项卡标题（选项卡）中。若要详细了解选项卡标题，请参阅下面的“选项卡”部分。
 
@@ -53,7 +53,7 @@ Open files in each editor are displayed with tabbed headers (Tabs) at the top of
 >
 > ​​	提示：您可以将主侧边栏移至右侧（视图 > 切换主侧边栏位置）或切换其可见性（Ctrl+B）。
 
-## [Side by side editing 并排编辑](https://code.visualstudio.com/docs/getstarted/userinterface#_side-by-side-editing)
+## [Side by side editing 并排编辑]({{< ref "/GetStarted/UserInterface#_side-by-side-editing" >}})
 
 You can open as many editors as you like side by side vertically and horizontally. If you already have one editor open, there are multiple ways of opening another editor to the side of the existing one:
 
@@ -90,13 +90,13 @@ When you have more than one editor open you can switch between them quickly by h
 >
 > ​​	提示：您可以调整编辑器大小并重新排列它们。拖放编辑器标题区域以重新定位或调整编辑器大小。
 
-### [Split in group 在组中拆分](https://code.visualstudio.com/docs/getstarted/userinterface#_split-in-group)
+### [Split in group 在组中拆分]({{< ref "/GetStarted/UserInterface#_split-in-group" >}})
 
-You can also split the current editor without creating a new editor group with the **View: Split Editor in Group** command (Ctrl+K Ctrl+Shift+\). To learn more about this editor mode and specific commands for navigating between the two sides, you can read the section in [Custom Layout](https://code.visualstudio.com/docs/editor/custom-layout#_split-in-group) topic.
+You can also split the current editor without creating a new editor group with the **View: Split Editor in Group** command (Ctrl+K Ctrl+Shift+\). To learn more about this editor mode and specific commands for navigating between the two sides, you can read the section in [Custom Layout]({{< ref "/UserGuide/CustomLayout#_split-in-group" >}}) topic.
 
 ​​	您还可以使用“视图：在组中拆分编辑器”命令 (Ctrl+K Ctrl+Shift+\) 拆分当前编辑器，而无需创建新的编辑器组。要详细了解此编辑器模式以及在两侧之间导航的特定命令，您可以阅读自定义布局主题中的部分内容。
 
-## [Minimap 小地图](https://code.visualstudio.com/docs/getstarted/userinterface#_minimap)
+## [Minimap 小地图]({{< ref "/GetStarted/UserInterface#_minimap" >}})
 
 A Minimap (code outline) gives you a high-level overview of your source code, which is useful for quick navigation and code understanding. A file's minimap is shown on the right side of the editor. You can click or drag the shaded area to quickly jump to different sections of your file.
 
@@ -104,11 +104,11 @@ A Minimap (code outline) gives you a high-level overview of your source code, wh
 
 ![minimap](./UserInterface_img/minimap.png)
 
-> **Tip:** You can move the minimap to the left hand side or disable it completely by respectively setting `"editor.minimap.side": "left"` or `"editor.minimap.enabled": false` in your user or workspace [settings](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip:** You can move the minimap to the left hand side or disable it completely by respectively setting `"editor.minimap.side": "left"` or `"editor.minimap.enabled": false` in your user or workspace [settings]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：您可以分别在用户或工作区设置中设置 `"editor.minimap.side": "left"` 或 `"editor.minimap.enabled": false` ，将小地图移至左侧或完全禁用它。
 
-## [Sticky Scroll 粘性滚动](https://code.visualstudio.com/docs/getstarted/userinterface#_sticky-scroll)
+## [Sticky Scroll 粘性滚动]({{< ref "/GetStarted/UserInterface#_sticky-scroll" >}})
 
 Sticky Scroll shows the starting lines of currently visible nested scopes at the top of the editor. It facilitates navigation by indicating where you are in a file and lets you quickly jump back to the top of the current scope.
 
@@ -120,13 +120,13 @@ Sticky Scroll shows the starting lines of currently visible nested scopes at the
 >
 > ​​	提示：您可以使用设置 `"editor.stickyScroll.enabled"` 启用/禁用粘性滚动。
 
-### [Indent Guides 缩进参考线](https://code.visualstudio.com/docs/getstarted/userinterface#_indent-guides)
+### [Indent Guides 缩进参考线]({{< ref "/GetStarted/UserInterface#_indent-guides" >}})
 
-The image above also shows indentation guides (vertical lines) which help you quickly see matching indent levels. If you would like to disable indent guides, you can set `"editor.guides.indentation": false` in your user or workspace [settings](https://code.visualstudio.com/docs/getstarted/settings).
+The image above also shows indentation guides (vertical lines) which help you quickly see matching indent levels. If you would like to disable indent guides, you can set `"editor.guides.indentation": false` in your user or workspace [settings]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	上图还显示了缩进参考线（垂直线），可帮助您快速查看匹配的缩进级别。如果您想禁用缩进参考线，可以在用户或工作区设置中设置 `"editor.guides.indentation": false` 。
 
-## [Breadcrumbs 面包屑](https://code.visualstudio.com/docs/getstarted/userinterface#_breadcrumbs)
+## [Breadcrumbs 面包屑]({{< ref "/GetStarted/UserInterface#_breadcrumbs" >}})
 
 The editor has a navigation bar above its contents called [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumb_(navigation)). It shows the current location and allows you to quickly navigate between folders, files, and symbols.
 
@@ -134,11 +134,11 @@ The editor has a navigation bar above its contents called [Breadcrumbs](https://
 
 ![Breadcrumbs](./UserInterface_img/breadcrumbs.png)
 
-Breadcrumbs always show the file path and if the current file type has language support for symbols, the symbol path up to the cursor position. You can disable breadcrumbs with the **View** > **Show Breadcrumbs** toggle command. For more information about the breadcrumbs feature, such as how to customize their appearance, see the [Breadcrumbs](https://code.visualstudio.com/docs/editor/editingevolved#_breadcrumbs) section of the [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) article.
+Breadcrumbs always show the file path and if the current file type has language support for symbols, the symbol path up to the cursor position. You can disable breadcrumbs with the **View** > **Show Breadcrumbs** toggle command. For more information about the breadcrumbs feature, such as how to customize their appearance, see the [Breadcrumbs]({{< ref "/UserGuide/CodeNavigation#_breadcrumbs" >}}) section of the [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) article.
 
 ​​	面包屑始终显示文件路径，如果当前文件类型对符号具有语言支持，则显示到光标位置的符号路径。您可以使用“视图”>“显示面包屑”切换命令禁用面包屑。有关面包屑功能的更多信息，例如如何自定义其外观，请参阅代码导航文章的面包屑部分。
 
-## [Explorer 资源管理器](https://code.visualstudio.com/docs/getstarted/userinterface#_explorer)
+## [Explorer 资源管理器]({{< ref "/GetStarted/UserInterface#_explorer" >}})
 
 The Explorer is used to browse, open, and manage all of the files and folders in your project. VS Code is file and folder based - you can get started immediately by opening a file or folder in VS Code.
 
@@ -173,7 +173,7 @@ You can also navigate to the location of a file or folder in the native Explorer
 >
 > ​​	提示：键入 Ctrl+P（快速打开）可按名称快速搜索和打开文件。
 
-By default, VS Code excludes some folders from the Explorer (for example. `.git`). Use the `files.exclude` [setting](https://code.visualstudio.com/docs/getstarted/settings) to configure rules for hiding files and folders from the Explorer.
+By default, VS Code excludes some folders from the Explorer (for example. `.git`). Use the `files.exclude` [setting]({{< ref "/GetStarted/Settings" >}}) to configure rules for hiding files and folders from the Explorer.
 
 ​​	默认情况下，VS Code 会从资源管理器中排除一些文件夹（例如 `.git` ）。使用 `files.exclude` 设置来配置用于从资源管理器中隐藏文件和文件夹的规则。
 
@@ -181,7 +181,7 @@ By default, VS Code excludes some folders from the Explorer (for example. `.git`
 >
 > ​​	提示：这对于隐藏派生资源文件非常有用，例如 Unity 中的 `\*.meta` 或 TypeScript 项目中的 `\*.js` 。对于 Unity 排除 `\*.cs.meta` 文件，可以选择以下模式： `"**/*.cs.meta": true` 。对于 TypeScript，可以使用以下模式排除 TypeScript 文件的生成 JavaScript： `"**/*.js": {"when": "$(basename).ts"}` 。
 
-### [Multi-selection 多选](https://code.visualstudio.com/docs/getstarted/userinterface#_multiselection)
+### [Multi-selection 多选]({{< ref "/GetStarted/UserInterface#_multiselection" >}})
 
 You can select multiple files in the **File Explorer** and **OPEN EDITORS** view to run actions (Delete, Drag and Drop, Open to the Side) on multiple items. Use the `Ctrl/Cmd` key with `click` to select individual files and `Shift` + `click` to select a range. If you select two items, you can now use the context menu **Compare Selected** command to quickly diff two files.
 
@@ -195,7 +195,7 @@ You can select multiple files in the **File Explorer** and **OPEN EDITORS** view
 "workbench.list.multiSelectModifier": "alt"
 ```
 
-### [Advanced tree navigation 高级树导航](https://code.visualstudio.com/docs/getstarted/userinterface#_advanced-tree-navigation)
+### [Advanced tree navigation 高级树导航]({{< ref "/GetStarted/UserInterface#_advanced-tree-navigation" >}})
 
 You can filter the currently visible files in the **File Explorer**. With the focus on the **File Explorer**, press Ctrl/Cmd+F to open the tree Find control and type part of the file name you want to match. You will see a Find control in the top-right of the **File Explorer** showing what you have typed and matching file names will be highlighted. Pressing the **Filter** button will toggle between the two modes: highlighting and filtering. Pressing DownArrow will let you focus the first matched element and jump between matching elements.
 
@@ -207,7 +207,7 @@ This navigation feature is available for all tree views in VS Code, so feel free
 
 ![Filtering files in the File Explorer](./UserInterface_img/file-explorer-filter.png)
 
-### [Outline view 大纲视图](https://code.visualstudio.com/docs/getstarted/userinterface#_outline-view)
+### [Outline view 大纲视图]({{< ref "/GetStarted/UserInterface#_outline-view" >}})
 
 The Outline view is a separate section in the bottom of the File Explorer. When expanded, it will show the symbol tree of the currently active editor.
 
@@ -225,7 +225,7 @@ For symbols, the view relies on information computed by your installed extension
 
 ![Markdown Outline view](./UserInterface_img/markdown-outline-view.png)
 
-There are several Outline view [settings](https://code.visualstudio.com/docs/getstarted/settings) which allow you to enable/disable icons and control the errors and warnings display (all enabled by default):
+There are several Outline view [settings]({{< ref "/GetStarted/Settings" >}}) which allow you to enable/disable icons and control the errors and warnings display (all enabled by default):
 
 ​​	大纲视图设置有几个，允许您启用/禁用图标并控制错误和警告的显示（默认情况下全部启用）：
 
@@ -238,7 +238,7 @@ There are several Outline view [settings](https://code.visualstudio.com/docs/get
 - `outline.problems.colors` - Toggle using colors for errors and warnings.
   `outline.problems.colors` - 切换使用颜色显示错误和警告。
 
-## [Open Editors 打开编辑器](https://code.visualstudio.com/docs/getstarted/userinterface#_open-editors)
+## [Open Editors 打开编辑器]({{< ref "/GetStarted/UserInterface#_open-editors" >}})
 
 At the top of the Explorer is a view labeled **OPEN EDITORS**. This is a list of active files or previews. These are files you previously opened in VS Code that you were working on. For example, a file will be listed in the **OPEN EDITORS** view if you:
 
@@ -261,7 +261,7 @@ Once you are done with your task, you can remove files individually from the **O
 
 ​​	完成任务后，您可以从“打开的编辑器”视图中逐个删除文件，也可以使用“视图：关闭所有编辑器”或“视图：关闭组中的所有编辑器”操作删除所有文件。
 
-## [Views 视图](https://code.visualstudio.com/docs/getstarted/userinterface#_views)
+## [Views 视图]({{< ref "/GetStarted/UserInterface#_views" >}})
 
 The File Explorer is just one of the Views available in VS Code. There are also Views for:
 
@@ -290,7 +290,7 @@ You can show or hide views from within the main view and also reorder them by dr
 
 ![view management](./UserInterface_img/view-management.png)
 
-### [Activity Bar 活动栏](https://code.visualstudio.com/docs/getstarted/userinterface#_activity-bar)
+### [Activity Bar 活动栏]({{< ref "/GetStarted/UserInterface#_activity-bar" >}})
 
 The **Activity Bar** on the left lets you quickly switch between Views. You can also reorder Views by dragging and dropping them on the **Activity Bar** or remove a View entirely (right-click the Activity Bar and uncheck a view).
 
@@ -298,7 +298,7 @@ The **Activity Bar** on the left lets you quickly switch between Views. You can 
 
 ![activity bar context menu](./UserInterface_img/activity-bar-context-menu.png)
 
-## [Command Palette 命令面板](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)
+## [Command Palette 命令面板]({{< ref "/GetStarted/UserInterface#_command-palette" >}})
 
 VS Code is equally accessible from the keyboard. The most important key combination to know is Ctrl+Shift+P, which brings up the **Command Palette**. From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.
 
@@ -327,13 +327,13 @@ Type `?` into the input field to get a list of available commands you can execut
 
 ![Quick Open Help](./UserInterface_img/quickopenhelp.png)
 
-## [Configuring the editor 配置编辑器](https://code.visualstudio.com/docs/getstarted/userinterface#_configuring-the-editor)
+## [Configuring the editor 配置编辑器]({{< ref "/GetStarted/UserInterface#_configuring-the-editor" >}})
 
 VS Code gives you many options to configure the editor. From the **View** > **Appearance** menu, you can hide or toggle various parts of the user interface, such as the **Side Bar**, **Status Bar**, and **Activity Bar**.
 
 ​​	VS Code 为您提供了许多配置编辑器选项。在“视图”>“外观”菜单中，您可以隐藏或切换用户界面的各个部分，例如侧边栏、状态栏和活动栏。
 
-### [Hide the Menu Bar (Windows, Linux) 隐藏菜单栏（Windows、Linux）](https://code.visualstudio.com/docs/getstarted/userinterface#_hide-the-menu-bar-windows-linux)
+### [Hide the Menu Bar (Windows, Linux) 隐藏菜单栏（Windows、Linux）]({{< ref "/GetStarted/UserInterface#_hide-the-menu-bar-windows-linux" >}})
 
 You can hide the Menu Bar on Windows and Linux by changing the setting `window.menuBarVisibility` from `classic` to `toggle`. A setting of `toggle` means that a single press of the Alt key will show the Menu Bar again.
 
@@ -343,9 +343,9 @@ You can also hide the Menu Bar on Windows and Linux with the **View** > **Toggle
 
 ​​	您还可以使用“视图”>“切换菜单栏”命令在 Windows 和 Linux 上隐藏菜单栏。此命令将 `window.menuBarVisibility` 从 `classic` 设置为 `compact` ，导致菜单栏移至活动栏。要将菜单栏返回到 `classic` 位置，您可以再次执行“视图”>“切换菜单栏”命令。
 
-### [Settings 设置](https://code.visualstudio.com/docs/getstarted/userinterface#_settings)
+### [Settings 设置]({{< ref "/GetStarted/UserInterface#_settings" >}})
 
-Most editor configurations are kept in settings which can be modified directly. You can set options globally through user settings or per project/folder through workspace settings. Settings values are kept in a `settings.json` [file](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson).
+Most editor configurations are kept in settings which can be modified directly. You can set options globally through user settings or per project/folder through workspace settings. Settings values are kept in a `settings.json` [file]({{< ref "/GetStarted/Settings#_settingsjson" >}}).
 
 ​​	大多数编辑器配置都保存在可以直接修改的设置中。您可以通过用户设置全局设置选项，也可以通过工作区设置按项目/文件夹设置选项。设置值保存在 `settings.json` 文件中。
 
@@ -356,7 +356,7 @@ Most editor configurations are kept in settings which can be modified directly. 
 
 ![workspace settings](./UserInterface_img/workspace-settings.png)
 
-You will see the VS Code [Default Settings](https://code.visualstudio.com/docs/getstarted/settings#_default-settings) in the left window and your editable `settings.json` on the right. You can easily filter settings in the `Default Settings` using the search box at the top. Copy a setting over to the editable `settings.json` on the right by clicking on the edit icon to the left of the setting. Settings with a fixed set of values allow you to pick a value as part of their edit icon menu.
+You will see the VS Code [Default Settings]({{< ref "/GetStarted/Settings#_default-settings" >}}) in the left window and your editable `settings.json` on the right. You can easily filter settings in the `Default Settings` using the search box at the top. Copy a setting over to the editable `settings.json` on the right by clicking on the edit icon to the left of the setting. Settings with a fixed set of values allow you to pick a value as part of their edit icon menu.
 
 ​​	在左侧窗口中，您将看到 VS Code 默认设置，在右侧窗口中，您将看到可编辑的 `settings.json` 。您可以使用顶部的搜索框轻松地过滤 `Default Settings` 中的设置。通过单击设置左侧的编辑图标，可以将设置复制到右侧的可编辑 `settings.json` 中。具有固定值集的设置允许您从其编辑图标菜单中选择一个值。
 
@@ -368,7 +368,7 @@ After editing your settings, type Ctrl+S to save your changes. The changes will 
 >
 > ​​	注意：工作区设置将覆盖用户设置，并且对于跨团队共享特定于项目的设置非常有用。
 
-### [Zen Mode Zen 模式](https://code.visualstudio.com/docs/getstarted/userinterface#_zen-mode)
+### [Zen Mode Zen 模式]({{< ref "/GetStarted/UserInterface#_zen-mode" >}})
 
 Zen Mode lets you focus on your code by hiding all UI except the editor (no Activity Bar, Status Bar, Side Bar and Panel), going to full screen, and centering the editor layout. Zen mode can be toggled using the **View** > **Appearance** menu, **View: Toggle Zen Mode** in the **Command Palette**, or by the shortcut Ctrl+K Z. Double Esc exits Zen Mode. The transition to full screen can be disabled via `zenMode.fullScreen`.
 
@@ -390,18 +390,18 @@ Zen Mode can be further tuned by the following settings:
   `zenMode.fullScreen` - 将工作台置于全屏显示。默认 `true` 。
 - `zenMode.restore` - Restore Zen Mode on restart. Default `true`.
   `zenMode.restore` - 重启时恢复 Zen 模式。默认 `true` 。
-- `zenMode.centerLayout` - Use [Centered editor layout](https://code.visualstudio.com/docs/getstarted/userinterface#_centered-editor-layout). Default `true`.
+- `zenMode.centerLayout` - Use [Centered editor layout]({{< ref "/GetStarted/UserInterface#_centered-editor-layout" >}}). Default `true`.
   `zenMode.centerLayout` - 使用居中编辑器布局。默认 `true` .
 - `zenMode.silentNotifications` - Do not display notifications. Default `true`.
   `zenMode.silentNotifications` - 不显示通知。默认 `true` .
 
-### [Centered editor layout 居中编辑器布局](https://code.visualstudio.com/docs/getstarted/userinterface#_centered-editor-layout)
+### [Centered editor layout 居中编辑器布局]({{< ref "/GetStarted/UserInterface#_centered-editor-layout" >}})
 
 Centered editor layout allows you to center align the editor area. This is particularly useful when working with a single editor on a large monitor. You can use the sashes on the side to resize the view (hold down the `Alt` key to independently move the sashes).
 
 ​​	居中编辑器布局允许您将编辑器区域居中对齐。当在大型监视器上使用单个编辑器时，这特别有用。您可以使用侧面的窗格调整视图的大小（按住 `Alt` 键可独立移动窗格）。
 
-## [Tabs 选项卡](https://code.visualstudio.com/docs/getstarted/userinterface#_tabs)
+## [Tabs 选项卡]({{< ref "/GetStarted/UserInterface#_tabs" >}})
 
 Visual Studio Code shows open items with Tabs (tabbed headings) in the title area above the editor.
 
@@ -425,7 +425,7 @@ There is also a scroll bar between the tab and editor regions to drag editors in
 
 ​​	选项卡和编辑器区域之间还有一个滚动条，可将编辑器拖动到视图中。您可以通过将“工作台”>“编辑器：标题滚动条大小”（ `workbench.editor.titleScrollbarSizing` ）设置为 `large` 来增加滚动条的高度，以便更轻松地拖动。
 
-If you don't want to use Tabs, you can disable the feature by setting the `workbench.editor.showTabs` [setting](https://code.visualstudio.com/docs/getstarted/settings) to `single`:
+If you don't want to use Tabs, you can disable the feature by setting the `workbench.editor.showTabs` [setting]({{< ref "/GetStarted/Settings" >}}) to `single`:
 
 ​​	如果您不想使用选项卡，可以通过将 `workbench.editor.showTabs` 设置为 `single` 来禁用此功能：
 
@@ -433,11 +433,11 @@ If you don't want to use Tabs, you can disable the feature by setting the `workb
     "workbench.editor.showTabs": "single"
 ```
 
-See the section below to optimize VS Code when [working without Tabs](https://code.visualstudio.com/docs/getstarted/userinterface#_working-without-tabs).
+See the section below to optimize VS Code when [working without Tabs]({{< ref "/GetStarted/UserInterface#_working-without-tabs" >}}).
 
 ​​	请参阅以下部分，以在不使用选项卡的情况下优化 VS Code。
 
-### [Tab ordering 选项卡排序](https://code.visualstudio.com/docs/getstarted/userinterface#_tab-ordering)
+### [Tab ordering 选项卡排序]({{< ref "/GetStarted/UserInterface#_tab-ordering" >}})
 
 By default, new Tabs are added to the right of the existing Tabs but you can control where you'd like new Tabs to appear with the `workbench.editor.openPositioning` setting.
 
@@ -451,15 +451,15 @@ For example, you might like new tabbed items to appear on the left:
     "workbench.editor.openPositioning": "left"
 ```
 
-### [Wrapped tabs 换行选项卡](https://code.visualstudio.com/docs/getstarted/userinterface#_wrapped-tabs)
+### [Wrapped tabs 换行选项卡]({{< ref "/GetStarted/UserInterface#_wrapped-tabs" >}})
 
-To see more editor tabs, you can use the **wrapped tab** layout, where editor tabs wrap to fill multiple rows above the editor region. Enable wrapped tabs with the **Workbench > Editor: Wrap Tabs** (`workbench.editor.wrapTabs`) [setting](https://code.visualstudio.com/docs/getstarted/settings).
+To see more editor tabs, you can use the **wrapped tab** layout, where editor tabs wrap to fill multiple rows above the editor region. Enable wrapped tabs with the **Workbench > Editor: Wrap Tabs** (`workbench.editor.wrapTabs`) [setting]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	若要查看更多编辑器选项卡，可以使用换行选项卡布局，其中编辑器选项卡换行以填充编辑器区域上方的多行。使用工作台 > 编辑器启用换行选项卡：换行选项卡 ( `workbench.editor.wrapTabs` ) 设置。
 
 ![Wrapped editor tabs filling two rows about the editor region](./UserInterface_img/wrapped-tabs.png)
 
-## [Preview mode 预览模式](https://code.visualstudio.com/docs/getstarted/userinterface#_preview-mode)
+## [Preview mode 预览模式]({{< ref "/GetStarted/UserInterface#_preview-mode" >}})
 
 When you single-click or select a file in the Explorer, it is shown in a preview mode and reuses an existing Tab. This is useful if you are quickly browsing files and don't want every visited file to have its own Tab. When you start editing the file or use double-click to open the file from the Explorer, a new Tab is dedicated to that file.
 
@@ -480,7 +480,7 @@ If you'd prefer to not use preview mode and always create a new Tab, you can con
 - `workbench.editor.enablePreviewFromQuickOpen` to enable or disable preview editors when opened from **Quick Open**
   `workbench.editor.enablePreviewFromQuickOpen` 从快速打开
 
-## [Editor Groups 编辑器组中打开时启用或禁用预览编辑器](https://code.visualstudio.com/docs/getstarted/userinterface#_editor-groups)
+## [Editor Groups 编辑器组中打开时启用或禁用预览编辑器]({{< ref "/GetStarted/UserInterface#_editor-groups" >}})
 
 When you split an editor (using the **Split Editor** or **Open to the Side** commands), a new editor region is created which can hold a group of items. You can open as many editor regions as you like side by side vertically and horizontally.
 
@@ -500,7 +500,7 @@ You can Drag and Drop editor groups on the workbench, move individual Tabs betwe
 >
 > ​​	注意：无论是否启用了选项卡，VS Code 都使用编辑器组。如果没有选项卡，编辑器组就是打开的项的堆栈，最近选择的项在编辑器窗格中可见。
 
-## [Grid editor layout 网格编辑器布局](https://code.visualstudio.com/docs/getstarted/userinterface#_grid-editor-layout)
+## [Grid editor layout 网格编辑器布局]({{< ref "/GetStarted/UserInterface#_grid-editor-layout" >}})
 
 By default, editor groups are laid out in vertical columns (for example when you split an editor to open it to the side). You can easily arrange editor groups in any layout you like, both vertically and horizontally:
 
@@ -536,13 +536,13 @@ There are many keyboard commands for adjusting the editor layout with the keyboa
 
 ![Grid Alt Click](./UserInterface_img/grid-alt.gif)
 
-### [Keyboard shortcuts 键盘快捷键](https://code.visualstudio.com/docs/getstarted/userinterface#_keyboard-shortcuts)
+### [Keyboard shortcuts 键盘快捷键]({{< ref "/GetStarted/UserInterface#_keyboard-shortcuts" >}})
 
 Here are some handy keyboard shortcuts to quickly navigate between editors and editor groups.
 
 ​​	以下是一些在编辑器和编辑器组之间快速导航的便捷键盘快捷键。
 
-> If you'd like to modify the default keyboard shortcuts, see [Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings) for details.
+> If you'd like to modify the default keyboard shortcuts, see [Key Bindings]({{< ref "/GetStarted/KeyBindings" >}}) for details.
 >
 > ​​	如果您想修改默认键盘快捷键，请参阅按键绑定以了解详细信息。
 
@@ -565,25 +565,25 @@ Here are some handy keyboard shortcuts to quickly navigate between editors and e
 - Ctrl+K Ctrl+W close all editors.
   Ctrl+K Ctrl+W 关闭所有编辑器。
 
-## [Working without Tabs 无选项卡工作](https://code.visualstudio.com/docs/getstarted/userinterface#_working-without-tabs)
+## [Working without Tabs 无选项卡工作]({{< ref "/GetStarted/UserInterface#_working-without-tabs" >}})
 
 If you prefer not to use Tabs (tabbed headings), you can disable Tabs (tabbed headings) entirely by setting `workbench.editor.showTabs` to `single` or `none`.
 
 ​​	如果您不想使用选项卡（选项卡标题），可以通过将 `workbench.editor.showTabs` 设置为 `single` 或 `none` 来完全禁用选项卡（选项卡标题）。
 
-### [Disable Preview mode 禁用预览模式](https://code.visualstudio.com/docs/getstarted/userinterface#_disable-preview-mode)
+### [Disable Preview mode 禁用预览模式]({{< ref "/GetStarted/UserInterface#_disable-preview-mode" >}})
 
-Without Tabs, the **OPEN EDITORS** section of the File Explorer is a quick way to do file navigation. With [preview editor mode](https://code.visualstudio.com/docs/getstarted/userinterface#_preview-mode), files are not added to the **OPEN EDITOR** list nor editor group on single-click open. You can disable this feature through the `workbench.editor.enablePreview` and `workbench.editor.enablePreviewFromQuickOpen` settings.
+Without Tabs, the **OPEN EDITORS** section of the File Explorer is a quick way to do file navigation. With [preview editor mode]({{< ref "/GetStarted/UserInterface#_preview-mode" >}}), files are not added to the **OPEN EDITOR** list nor editor group on single-click open. You can disable this feature through the `workbench.editor.enablePreview` and `workbench.editor.enablePreviewFromQuickOpen` settings.
 
 ​​	在没有选项卡的情况下，文件资源管理器的“打开的编辑器”部分是执行文件导航的快速方法。使用预览编辑器模式时，在单击打开时不会将文件添加到“打开的编辑器”列表或编辑器组中。您可以通过 `workbench.editor.enablePreview` 和 `workbench.editor.enablePreviewFromQuickOpen` 设置禁用此功能。
 
-### [Ctrl+Tab to navigate in entire editor history Ctrl+Tab 在整个编辑器历史记录中导航](https://code.visualstudio.com/docs/getstarted/userinterface#_ctrltab-to-navigate-in-entire-editor-history)
+### [Ctrl+Tab to navigate in entire editor history Ctrl+Tab 在整个编辑器历史记录中导航]({{< ref "/GetStarted/UserInterface#_ctrltab-to-navigate-in-entire-editor-history" >}})
 
 You can change keybindings for Ctrl+Tab to show you a list of all opened editors from the history independent from the active editor group.
 
 ​​	您可以更改 Ctrl+Tab 的按键绑定，以显示来自历史记录的所有已打开编辑器的列表，而与活动编辑器组无关。
 
-Edit your [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) and add the following:
+Edit your [keybindings]({{< ref "/GetStarted/KeyBindings" >}}) and add the following:
 
 ​​	编辑您的按键绑定并添加以下内容：
 
@@ -592,9 +592,9 @@ Edit your [keybindings](https://code.visualstudio.com/docs/getstarted/keybinding
 { "key": "ctrl+tab", "command": "workbench.action.quickOpenNavigateNext", "when": "inQuickOpen" },
 ```
 
-### [Close an entire group instead of a single editor 关闭整个组而不是单个编辑器](https://code.visualstudio.com/docs/getstarted/userinterface#_close-an-entire-group-instead-of-a-single-editor)
+### [Close an entire group instead of a single editor 关闭整个组而不是单个编辑器]({{< ref "/GetStarted/UserInterface#_close-an-entire-group-instead-of-a-single-editor" >}})
 
-If you liked the behavior of VS Code closing an entire group when closing one editor, you can bind the following in your [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings).
+If you liked the behavior of VS Code closing an entire group when closing one editor, you can bind the following in your [keybindings]({{< ref "/GetStarted/KeyBindings" >}}).
 
 ​​	如果您喜欢 VS Code 在关闭一个编辑器时关闭整个组的行为，则可以在键绑定中绑定以下内容。
 
@@ -614,7 +614,7 @@ Windows/Linux:
 { "key": "ctrl+w", "command": "workbench.action.closeEditorsInGroup" }
 ```
 
-## [Window management 窗口管理](https://code.visualstudio.com/docs/getstarted/userinterface#_window-management)
+## [Window management 窗口管理]({{< ref "/GetStarted/UserInterface#_window-management" >}})
 
 VS Code has some options to control how windows (instances) should be opened or restored between sessions.
 
@@ -636,22 +636,22 @@ The `window.restoreWindows` setting tells VS Code how to restore the opened wind
 
 ​​	“ `window.restoreWindows` ”设置告诉 VS Code 如何还原上次会话中打开的窗口。默认情况下，VS Code 将还原上次会话中处理的所有窗口（设置： `all` ）。将此设置更改为 `none` 以从不重新打开任何窗口，并始终从一个空的 VS Code 实例启动。将其更改为 `one` 以重新打开上次处理的窗口，或 `folders` 以仅还原已打开文件夹的窗口。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/getstarted/userinterface#_next-steps)
+## [Next steps 后续步骤]({{< ref "/GetStarted/UserInterface#_next-steps" >}})
 
 Now that you know the overall layout of VS Code, start to customize the editor to how you like to work by looking at the following topics:
 
 ​​	现在您已了解 VS Code 的整体布局，请通过查看以下主题开始自定义编辑器，以符合您的工作方式：
 
-- [Changing the Theme](https://code.visualstudio.com/docs/getstarted/themes) - Set a Color and/or File Icon theme to your preference.
+- [Changing the Theme]({{< ref "/GetStarted/Themes" >}}) - Set a Color and/or File Icon theme to your preference.
   更改主题 - 根据您的喜好设置颜色和/或文件图标主题。
-- [Custom Layout](https://code.visualstudio.com/docs/editor/custom-layout) - Learn more about VS Code's workbench and editor layout customizations.
+- [Custom Layout]({{< ref "/UserGuide/CustomLayout" >}}) - Learn more about VS Code's workbench and editor layout customizations.
   自定义布局 - 详细了解 VS Code 的工作台和编辑器布局自定义。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/getstarted/userinterface#_common-questions)
+## [Common questions 常见问题]({{< ref "/GetStarted/UserInterface#_common-questions" >}})
 
-### [How can I change the color of the indent guides? 如何更改缩进参考线的颜色？](https://code.visualstudio.com/docs/getstarted/userinterface#_how-can-i-change-the-color-of-the-indent-guides)
+### [How can I change the color of the indent guides? 如何更改缩进参考线的颜色？]({{< ref "/GetStarted/UserInterface#_how-can-i-change-the-color-of-the-indent-guides" >}})
 
-The indent guide colors are customizable as are most VS Code UI elements. To [customize](https://code.visualstudio.com/api/references/theme-color) the indent guides color for your active color theme, use the `workbench.colorCustomizations` [setting](https://code.visualstudio.com/docs/getstarted/settings) and modify the `editorIndentGuide.background` value.
+The indent guide colors are customizable as are most VS Code UI elements. To [customize](https://code.visualstudio.com/api/references/theme-color) the indent guides color for your active color theme, use the `workbench.colorCustomizations` [setting]({{< ref "/GetStarted/Settings" >}}) and modify the `editorIndentGuide.background` value.
 
 ​​	缩进参考线颜色是可自定义的，就像大多数 VS Code UI 元素一样。若要自定义活动颜色主题的缩进参考线颜色，请使用 `workbench.colorCustomizations` 设置并修改 `editorIndentGuide.background` 值。
 
@@ -665,8 +665,8 @@ For example, to make the indent guides bright blue, add the following to your `s
 }
 ```
 
-### [Can I hide the OPEN EDITORS section in the Explorer? 我可以在资源管理器中隐藏“打开的编辑器”部分吗？](https://code.visualstudio.com/docs/getstarted/userinterface#_can-i-hide-the-open-editors-section-in-the-explorer)
+### [Can I hide the OPEN EDITORS section in the Explorer? 我可以在资源管理器中隐藏“打开的编辑器”部分吗？]({{< ref "/GetStarted/UserInterface#_can-i-hide-the-open-editors-section-in-the-explorer" >}})
 
-Yes, you can hide the **OPEN EDITORS** list with the `explorer.openEditors.visible` [setting](https://code.visualstudio.com/docs/getstarted/settings), which declares how many items to display before a scroll bar appears. Setting `"explorer.openEditors.visible": 0` will hide **OPEN EDITORS** when you have an open folder. The list will still be displayed if you are using VS Code to view individual loose files, since they won't be displayed in the folder pane.
+Yes, you can hide the **OPEN EDITORS** list with the `explorer.openEditors.visible` [setting]({{< ref "/GetStarted/Settings" >}}), which declares how many items to display before a scroll bar appears. Setting `"explorer.openEditors.visible": 0` will hide **OPEN EDITORS** when you have an open folder. The list will still be displayed if you are using VS Code to view individual loose files, since they won't be displayed in the folder pane.
 
 ​​	是的，您可以使用 `explorer.openEditors.visible` 设置隐藏打开的编辑器列表，该设置声明在出现滚动条之前要显示多少个项目。设置 `"explorer.openEditors.visible": 0` 将在您打开文件夹时隐藏打开的编辑器。如果您使用 VS Code 查看各个松散文件，该列表仍会显示，因为它们不会显示在文件夹窗格中。

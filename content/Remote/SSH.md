@@ -28,19 +28,19 @@ This lets VS Code provide a **local-quality development experience** - including
 
 ​​	这样，VS Code 可以提供本地质量的开发体验 - 包括完整的 IntelliSense（完成）、代码导航和调试 - 无论您的代码托管在哪里。
 
-## [Getting started 入门](https://code.visualstudio.com/docs/remote/ssh#_getting-started)
+## [Getting started 入门]({{< ref "/Remote/SSH#_getting-started" >}})
 
-**Note**: After reviewing this topic, you can get started with the introductory [SSH tutorial](https://code.visualstudio.com/docs/remote/ssh-tutorial).
+**Note**: After reviewing this topic, you can get started with the introductory [SSH tutorial]({{< ref "/Remote/SSHTutorial" >}}).
 
 ​​	注意：在阅读完本主题后，您可以开始使用 SSH 入门教程。
 
-### [System requirements 系统要求](https://code.visualstudio.com/docs/remote/ssh#_system-requirements)
+### [System requirements 系统要求]({{< ref "/Remote/SSH#_system-requirements" >}})
 
-**Local:** A supported [OpenSSH compatible SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) must also be installed.
+**Local:** A supported [OpenSSH compatible SSH client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}) must also be installed.
 
 ​​	本地：还必须安装受支持的 OpenSSH 兼容 SSH 客户端。
 
-**Remote SSH host**: A running [SSH server](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server) on:
+**Remote SSH host**: A running [SSH server]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-server" >}}) on:
 
 ​​	远程 SSH 主机：运行 SSH 服务器的：
 
@@ -65,13 +65,13 @@ While ARMv7l (AArch32) and ARMv8l (AArch64) support is available, some extension
 
 ​​	虽然支持 ARMv7l (AArch32) 和 ARMv8l (AArch64)，但由于扩展中使用了 x86 本机代码，因此在这些设备上安装的某些扩展可能无法使用。
 
-### [Installation 安装](https://code.visualstudio.com/docs/remote/ssh#_installation)
+### [Installation 安装]({{< ref "/Remote/SSH#_installation" >}})
 
 To get started, you need to:
 
 ​​	要开始，您需要：
 
-1. Install an [OpenSSH compatible SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) if one is not already present.
+1. Install an [OpenSSH compatible SSH client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}) if one is not already present.
 
    ​​	安装 OpenSSH 兼容的 SSH 客户端（如果尚未安装）。
 
@@ -83,13 +83,13 @@ To get started, you need to:
 
    ​​	安装 Remote-SSH 扩展。如果您计划在 VS Code 中使用其他远程扩展，可以选择安装远程开发扩展包。
 
-### [SSH host setup SSH 主机设置](https://code.visualstudio.com/docs/remote/ssh#_ssh-host-setup)
+### [SSH host setup SSH 主机设置]({{< ref "/Remote/SSH#_ssh-host-setup" >}})
 
-1. If you do not have an SSH host set up, follow the directions for [Linux](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server), [Windows 10 / Server (1803+)](https://learn.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse), or [macOS](https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac) SSH host or create a [VM on Azure](https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal).
+1. If you do not have an SSH host set up, follow the directions for [Linux]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-server" >}}), [Windows 10 / Server (1803+)](https://learn.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse), or [macOS](https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac) SSH host or create a [VM on Azure](https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal).
 
    ​​	如果您尚未设置 SSH 主机，请按照 Linux、Windows 10/Server (1803+) 或 macOS SSH 主机的说明进行操作，或在 Azure 上创建 VM。
 
-2. **Optional:** If your Linux or macOS SSH host will be accessed by multiple users at the same time, consider enabling **Remote.SSH: Remote Server Listen On Socket** in VS Code [User settings](https://code.visualstudio.com/docs/getstarted/settings) for improved security.
+2. **Optional:** If your Linux or macOS SSH host will be accessed by multiple users at the same time, consider enabling **Remote.SSH: Remote Server Listen On Socket** in VS Code [User settings]({{< ref "/GetStarted/Settings" >}}) for improved security.
 
    ​​	可选：如果您的 Linux 或 macOS SSH 主机将同时供多个用户访问，请考虑在 VS Code 用户设置中启用 Remote.SSH: Remote Server Listen On Socket 以提高安全性。
 
@@ -99,15 +99,15 @@ To get started, you need to:
 
    ![Listen on socket VS Code setting](./SSH_img/ssh-listen-on-socket.png)
 
-   See the [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-security-on-multi-user-servers) article for details.
+   See the [Tips and Tricks]({{< ref "/Remote/TipsandTricks#_improving-security-on-multi-user-servers" >}}) article for details.
 
    ​​	有关详细信息，请参阅提示和技巧文章。
 
-3. **Optional:** While password-based authentication is supported, we recommend setting up **key based authentication** for your host. See the [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication) article for details.
+3. **Optional:** While password-based authentication is supported, we recommend setting up **key based authentication** for your host. See the [Tips and Tricks]({{< ref "/Remote/TipsandTricks#_configuring-key-based-authentication" >}}) article for details.
 
    ​​	可选：虽然支持基于密码的身份验证，但我们建议为您的主机设置基于密钥的身份验证。有关详细信息，请参阅提示和技巧文章。
 
-### [Connect to a remote host 连接到远程主机](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host)
+### [Connect to a remote host 连接到远程主机]({{< ref "/Remote/SSH#_connect-to-a-remote-host" >}})
 
 To connect to a remote host for the first time, follow these steps:
 
@@ -135,7 +135,7 @@ To connect to a remote host for the first time, follow these steps:
 
    ![Illustration of platform selection](./SSH_img/ssh-select-platform.png)
 
-   Once you select a platform, it will be stored in [VS Code settings](https://code.visualstudio.com/docs/getstarted/settings) under the `remote.SSH.remotePlatform` property so you can change it at any time.
+   Once you select a platform, it will be stored in [VS Code settings]({{< ref "/GetStarted/Settings" >}}) under the `remote.SSH.remotePlatform` property so you can change it at any time.
 
    ​​	一旦您选择了一个平台，它将存储在 VS Code 设置中的 `remote.SSH.remotePlatform` 属性下，以便您可以随时更改它。
 
@@ -143,11 +143,11 @@ To connect to a remote host for the first time, follow these steps:
 
    ​​	片刻之后，VS Code 将连接到 SSH 服务器并进行设置。VS Code 将使用进度通知让您保持最新状态，您可以在 `Remote - SSH` 输出通道中查看详细日志。
 
-   > **Tip:** Connection hanging or failing? See [troubleshooting tips](https://code.visualstudio.com/docs/remote/troubleshooting#_troubleshooting-hanging-or-failing-connections) for information on resolving common problems.
+   > **Tip:** Connection hanging or failing? See [troubleshooting tips]({{< ref "/Remote/TipsandTricks#_troubleshooting-hanging-or-failing-connections" >}}) for information on resolving common problems.
    >
    > ​​	提示：连接挂起或失败？请参阅故障排除提示，了解有关解决常见问题的的信息。
    >
-   > If you see errors about SSH file permissions, see the section on [Fixing SSH file permission errors](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-ssh-file-permission-errors).
+   > If you see errors about SSH file permissions, see the section on [Fixing SSH file permission errors]({{< ref "/Remote/TipsandTricks#_fixing-ssh-file-permission-errors" >}}).
    >
    > ​​	如果您看到有关 SSH 文件权限的错误，请参阅修复 SSH 文件权限错误的部分。
 
@@ -167,7 +167,7 @@ To connect to a remote host for the first time, follow these steps:
 
    ![File Open on a remote SSH host](./SSH_img/ssh-open-folder.png)
 
-From here, [install any extensions](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions) you want to use when connected to the host and start editing!
+From here, [install any extensions]({{< ref "/Remote/SSH#_managing-extensions" >}}) you want to use when connected to the host and start editing!
 
 ​​	在此处，安装您在连接到主机时想要使用的任何扩展，然后开始编辑！
 
@@ -175,9 +175,9 @@ From here, [install any extensions](https://code.visualstudio.com/docs/remote/ss
 >
 > ​​	注意：在 ARMv7l/ARMv8l `glibc` SSH 主机上，某些扩展可能无法工作，因为扩展内部是 x86 编译的本机代码。
 
-### [Open a folder on a remote SSH host in a container 在容器中打开远程 SSH 主机上的文件夹](https://code.visualstudio.com/docs/remote/ssh#_open-a-folder-on-a-remote-ssh-host-in-a-container)
+### [Open a folder on a remote SSH host in a container 在容器中打开远程 SSH 主机上的文件夹]({{< ref "/Remote/SSH#_open-a-folder-on-a-remote-ssh-host-in-a-container" >}})
 
-If you are using a Linux or macOS SSH host, you can use the Remote - SSH and [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) extensions together to open a folder on your remote host inside of a container. You do not even need to have a Docker client installed locally.
+If you are using a Linux or macOS SSH host, you can use the Remote - SSH and [Dev Containers]({{< ref "/DevContainers/Overview" >}}) extensions together to open a folder on your remote host inside of a container. You do not even need to have a Docker client installed locally.
 
 ​​	如果您使用的是 Linux 或 macOS SSH 主机，您可以将 Remote - SSH 和 Dev Containers 扩展一起使用，以便在容器内打开远程主机上的文件夹。您甚至无需在本地安装 Docker 客户端。
 
@@ -185,26 +185,26 @@ To do so:
 
 ​​	要执行此操作，请执行以下操作：
 
-1. Follow the [installation](https://code.visualstudio.com/docs/devcontainers/containers#_installation) steps for installing Docker on your remote host and VS Code and the Dev Containers extension locally.
+1. Follow the [installation]({{< ref "/DevContainers/Overview#_installation" >}}) steps for installing Docker on your remote host and VS Code and the Dev Containers extension locally.
    按照安装步骤在远程主机和 VS Code 上安装 Docker，并在本地安装 Dev Containers 扩展。
-2. **Optional:** Set up SSH [key based authentication](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication) to the server so you do not need to enter your password multiple times.
+2. **Optional:** Set up SSH [key based authentication]({{< ref "/Remote/TipsandTricks#_configuring-key-based-authentication" >}}) to the server so you do not need to enter your password multiple times.
    可选：设置基于 SSH 密钥的身份验证到服务器，以便您无需多次输入密码。
-3. Follow the [quick start](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host) for the Remote - SSH extension to connect to a host and open a folder there.
+3. Follow the [quick start]({{< ref "/Remote/SSH#_connect-to-a-remote-host" >}}) for the Remote - SSH extension to connect to a host and open a folder there.
    按照 Remote - SSH 扩展的快速入门指南连接到主机并在其中打开文件夹。
 4. Use the **Dev Containers: Reopen in Container** command from the Command Palette (F1, Ctrl+Shift+P).
    从命令面板（F1、Ctrl+Shift+P）中使用 Dev Containers：在容器中重新打开命令。
 
-The rest of the [Dev Containers quick start](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) applies as-is. You can learn more about the [Dev Containers extension in its documentation](https://code.visualstudio.com/docs/devcontainers/containers). You can also see the [Develop on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) article for other options if this model does not meet your needs.
+The rest of the [Dev Containers quick start]({{< ref "/DevContainers/Overview#_quick-start-open-an-existing-folder-in-a-container" >}}) applies as-is. You can learn more about the [Dev Containers extension in its documentation]({{< ref "/DevContainers/Overview" >}}). You can also see the [Develop on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) article for other options if this model does not meet your needs.
 
 ​​	Dev Containers 快速入门指南的其余部分照常适用。您可以在其文档中了解有关 Dev Containers 扩展的更多信息。如果您不满足此模型的需求，您还可以参阅在远程 Docker 主机上进行开发一文，了解其他选项。
 
-### [Disconnect from a remote host 断开与远程主机的连接](https://code.visualstudio.com/docs/remote/ssh#_disconnect-from-a-remote-host)
+### [Disconnect from a remote host 断开与远程主机的连接]({{< ref "/Remote/SSH#_disconnect-from-a-remote-host" >}})
 
 To close the connection when you finish editing files on the remote host, choose **File > Close Remote Connection** to disconnect from the host. The default configuration does not include a keyboard shortcut for this command. You can also simply exit VS Code to close the remote connection.
 
 ​​	要关闭连接，请在您编辑远程主机上的文件后，选择文件 > 关闭远程连接以断开与主机的连接。默认配置不包含此命令的键盘快捷键。您也可以简单地退出 VS Code 来关闭远程连接。
 
-### [Remember hosts and advanced settings 记住主机和高级设置](https://code.visualstudio.com/docs/remote/ssh#_remember-hosts-and-advanced-settings)
+### [Remember hosts and advanced settings 记住主机和高级设置]({{< ref "/Remote/SSH#_remember-hosts-and-advanced-settings" >}})
 
 If you have a set of hosts you use frequently or you need to connect to a host using some additional options, you can add them to a local file that follows the [SSH config file format](https://man7.org/linux/man-pages/man5/ssh_config.5.html).
 
@@ -247,7 +247,7 @@ Host remotehost.yourcompany.com
     IdentityFile ~/.ssh/id_rsa-remote-ssh
 ```
 
-See [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-your-security-with-a-dedicated-key) for details on generating the key shown here. You can manually edit this file with anything the [SSH config file format](https://man7.org/linux/man-pages/man5/ssh_config.5.html) supports, so this is just one example.
+See [Tips and Tricks]({{< ref "/Remote/TipsandTricks#_improving-your-security-with-a-dedicated-key" >}}) for details on generating the key shown here. You can manually edit this file with anything the [SSH config file format](https://man7.org/linux/man-pages/man5/ssh_config.5.html) supports, so this is just one example.
 
 ​​	有关在此处显示密钥的生成详细信息，请参阅提示和技巧。您可以使用 SSH 配置文件格式支持的任何内容手动编辑此文件，因此这只是一个示例。
 
@@ -263,7 +263,7 @@ The **Remote Explorer** allows you to both open a new empty window on the remote
 
 ![Remote Explorer open folder](./SSH_img/ssh-explorer-open-folder.png)
 
-## [Managing extensions 管理扩展](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions)
+## [Managing extensions 管理扩展]({{< ref "/Remote/SSH#_managing-extensions" >}})
 
 VS Code runs extensions in one of two places: locally on the UI / client side, or remotely on the SSH host. While extensions that affect the VS Code UI, like themes and snippets, are installed locally, most extensions will reside on the SSH host. This ensures you have smooth experience and allows you to install any needed extensions for a given workspace on an SSH host from your local machine. This way, you can pick up exactly where you left off, from a different machine complete with your extensions.
 
@@ -299,7 +299,7 @@ You can also install all locally installed extensions on the SSH host by going t
 
 ​​	您还可以通过转到扩展视图并使用本地 - 已安装标题栏右侧的云按钮选择在 SSH 中安装本地扩展：{主机名} 来安装 SSH 主机上所有本地安装的扩展。这将显示一个下拉菜单，您可以在其中选择要在 SSH 主机上安装的本地安装扩展。
 
-### ["Always installed" extensions “始终安装”扩展](https://code.visualstudio.com/docs/remote/ssh#_always-installed-extensions)
+### ["Always installed" extensions “始终安装”扩展]({{< ref "/Remote/SSH#_always-installed-extensions" >}})
 
 If there are extensions that you would like to always have installed on any SSH host, you can specify which ones using the `remote.SSH.defaultExtensions` property in `settings.json`. For example, if you wanted to install the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) and [Resource Monitor](https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor) extensions, specify their extension IDs as follows:
 
@@ -312,7 +312,7 @@ If there are extensions that you would like to always have installed on any SSH 
 ]
 ```
 
-### [Advanced: Forcing an extension to run locally / remotely 高级：强制扩展在本地/远程运行](https://code.visualstudio.com/docs/remote/ssh#_advanced-forcing-an-extension-to-run-locally-remotely)
+### [Advanced: Forcing an extension to run locally / remotely 高级：强制扩展在本地/远程运行]({{< ref "/Remote/SSH#_advanced-forcing-an-extension-to-run-locally-remotely" >}})
 
 Extensions are typically designed and tested to either run locally or remotely, not both. However, if an extension supports it, you can force it to run in a particular location in your `settings.json` file.
 
@@ -333,13 +333,13 @@ A value of `"ui"` instead of `"workspace"` will force the extension to run on th
 
 ​​	使用 `"ui"` 值而不是 `"workspace"` 值将强制扩展在本地 UI/客户端上运行。通常，除非扩展的文档中另有说明，否则仅应将其用于测试，因为它可能会破坏扩展。有关详细信息，请参阅支持远程开发的文章。
 
-## [Forwarding a port / creating SSH tunnel 转发端口/创建 SSH 隧道](https://code.visualstudio.com/docs/remote/ssh#_forwarding-a-port-creating-ssh-tunnel)
+## [Forwarding a port / creating SSH tunnel 转发端口/创建 SSH 隧道]({{< ref "/Remote/SSH#_forwarding-a-port-creating-ssh-tunnel" >}})
 
 Sometimes when developing, you may need to access a port on a remote machine that is not publicly exposed. There are two ways to do this using an [SSH tunnel](https://www.ssh.com/ssh/tunneling/example) that "forwards" the desired remote port to your local machine.
 
 ​​	有时在开发时，您可能需要访问未公开的远程计算机上的端口。可以使用将所需远程端口“转发”到本地计算机的 SSH 隧道来完成此操作，方法有两种。
 
-### [Temporarily forwarding a port 临时转发端口](https://code.visualstudio.com/docs/remote/ssh#_temporarily-forwarding-a-port)
+### [Temporarily forwarding a port 临时转发端口]({{< ref "/Remote/SSH#_temporarily-forwarding-a-port" >}})
 
 Once you are connected to a host, if you want to **temporarily forward** a new port for the duration of the session, select **Forward a Port** from the Command Palette (F1, Ctrl+Shift+P) or select the **Add Port** button in the **Ports view**. You can see the Ports view in the bottom panel, or by running the command **Ports: Focus on Ports View**.
 
@@ -367,7 +367,7 @@ If you would like VS Code to remember any ports you have forwarded, check **Remo
 
 ![Restore forwarded ports setting](./SSH_img/restore-forwarded-ports.png)
 
-#### [Change local port on tunnel 更改隧道上的本地端口](https://code.visualstudio.com/docs/remote/ssh#_change-local-port-on-tunnel)
+#### [Change local port on tunnel 更改隧道上的本地端口]({{< ref "/Remote/SSH#_change-local-port-on-tunnel" >}})
 
 If you would like the local port of the tunnel to be different than the remote server's, you can change this via the **Forwarded Ports** panel.
 
@@ -379,9 +379,9 @@ Right-click the tunnel you want to modify, and select **Change Local Address Por
 
 ![Change Local Address Port](./SSH_img/change-local-port.png)
 
-### [Always forwarding a port 始终转发端口](https://code.visualstudio.com/docs/remote/ssh#_always-forwarding-a-port)
+### [Always forwarding a port 始终转发端口]({{< ref "/Remote/SSH#_always-forwarding-a-port" >}})
 
-If you have ports that you **always want to forward**, you can use the `LocalForward` directive in the same SSH config file you use to [remember hosts and advanced settings](https://code.visualstudio.com/docs/remote/ssh#_remember-hosts-and-advanced-settings).
+If you have ports that you **always want to forward**, you can use the `LocalForward` directive in the same SSH config file you use to [remember hosts and advanced settings]({{< ref "/Remote/SSH#_remember-hosts-and-advanced-settings" >}}).
 
 ​​	如果您始终希望转发端口，则可以在您用来记住主机和高级设置的 SSH 配置文件中使用 `LocalForward` 指令。
 
@@ -397,7 +397,7 @@ Host remote-linux-machine
     LocalForward 127.0.0.1:27017 127.0.0.1:27017
 ```
 
-## [Opening a terminal on a remote host 在远程主机上打开终端](https://code.visualstudio.com/docs/remote/ssh#_opening-a-terminal-on-a-remote-host)
+## [Opening a terminal on a remote host 在远程主机上打开终端]({{< ref "/Remote/SSH#_opening-a-terminal-on-a-remote-host" >}})
 
 Opening a terminal on the remote host from VS Code is simple. Once connected, **any terminal window** you open in VS Code (**Terminal > New Terminal**) will automatically run on the remote host rather than locally.
 
@@ -409,17 +409,17 @@ You can also use the `code` command line from this same terminal window to perfo
 
 ![Using the code CLI](./SSH_img/code-command-in-terminal.png)
 
-## [Debugging on the SSH host 在 SSH 主机上调试](https://code.visualstudio.com/docs/remote/ssh#_debugging-on-the-ssh-host)
+## [Debugging on the SSH host 在 SSH 主机上调试]({{< ref "/Remote/SSH#_debugging-on-the-ssh-host" >}})
 
 Once you are connected to a remote host, you can use VS Code's debugger in the same way you would when running the application locally. For example, if you select a launch configuration in `launch.json` and start debugging (F5), the application will start on remote host and attach the debugger to it.
 
 ​​	连接到远程主机后，您可以像在本地运行应用程序时一样使用 VS Code 的调试器。例如，如果您在 `launch.json` 中选择启动配置并开始调试 (F5)，应用程序将在远程主机上启动并将调试器附加到它。
 
-See the [debugging](https://code.visualstudio.com/docs/editor/debugging) documentation for details on configuring VS Code's debugging features in `.vscode/launch.json`.
+See the [debugging]({{< ref "/UserGuide/Debugging" >}}) documentation for details on configuring VS Code's debugging features in `.vscode/launch.json`.
 
 ​​	有关在 `.vscode/launch.json` 中配置 VS Code 的调试功能的详细信息，请参阅调试文档。
 
-## [SSH host-specific settings SSH 主机特定设置](https://code.visualstudio.com/docs/remote/ssh#_ssh-hostspecific-settings)
+## [SSH host-specific settings SSH 主机特定设置]({{< ref "/Remote/SSH#_ssh-hostspecific-settings" >}})
 
 VS Code's local User settings are also reused when you are connected to an SSH host. While this keeps your user experience consistent, you may want to vary some of these settings between your local machine and each host. Fortunately, once you have connected to a host, you can also set host-specific settings by running the **Preferences: Open Remote Settings** command from the Command Palette (F1, Ctrl+Shift+P) or by selecting on the **Remote** tab in the Settings editor. These will override any User settings you have in place whenever you connect to the host. And Workspace settings will override Remote and User settings.
 
@@ -427,26 +427,26 @@ VS Code's local User settings are also reused when you are connected to an SSH h
 
 ![Host-specific settings tab](./SSH_img/ssh-settings.png)
 
-## [Working with local tools 使用本地工具](https://code.visualstudio.com/docs/remote/ssh#_working-with-local-tools)
+## [Working with local tools 使用本地工具]({{< ref "/Remote/SSH#_working-with-local-tools" >}})
 
 The Remote - SSH extension does not provide direct support for sync'ing source code or using local tools with content on a remote host. However, there are two ways to do this using common tools that will work with most Linux hosts. Specifically, you can:
 
 ​​	Remote - SSH 扩展不提供直接支持来同步源代码或使用本地工具处理远程主机上的内容。但是，有两种方法可以使用适用于大多数 Linux 主机的一般工具来执行此操作。具体来说，你可以：
 
-1. [Mount the remote filesystem using SSHFS](https://code.visualstudio.com/docs/remote/troubleshooting#_using-sshfs-to-access-files-on-your-remote-host).
+1. [Mount the remote filesystem using SSHFS]({{< ref "/Remote/TipsandTricks#_using-sshfs-to-access-files-on-your-remote-host" >}}).
    使用 SSHFS 挂载远程文件系统。
-2. [Sync files to/from the remote host to your local machine using `rsync`](https://code.visualstudio.com/docs/remote/troubleshooting#_using-rsync-to-maintain-a-local-copy-of-your-source-code).
+2. [Sync files to/from the remote host to your local machine using `rsync`]({{< ref "/Remote/TipsandTricks#_using-rsync-to-maintain-a-local-copy-of-your-source-code" >}}).
    使用 `rsync` 将文件从远程主机同步到本地计算机或从本地计算机同步到远程主机。
 
 SSHFS is the most convenient option and does not require any file sync'ing. However, performance will be significantly slower than working through VS Code, so it is best used for single file edits and uploading/downloading content. If you need to use an application that bulk reads/write to many files at once (like a local source control tool), rsync is a better choice.
 
 ​​	SSHFS 是最方便的选择，不需要任何文件同步。但是，性能将比通过 VS Code 工作慢得多，因此最适合用于编辑单个文件和上传/下载内容。如果您需要使用一次批量读/写多个文件的应用程序（例如本地源代码管理工具），rsync 是更好的选择。
 
-## [Known limitations 已知限制](https://code.visualstudio.com/docs/remote/ssh#_known-limitations)
+## [Known limitations 已知限制]({{< ref "/Remote/SSH#_known-limitations" >}})
 
-### [Remote - SSH limitations 远程 - SSH 限制](https://code.visualstudio.com/docs/remote/ssh#_remote-ssh-limitations)
+### [Remote - SSH limitations 远程 - SSH 限制]({{< ref "/Remote/SSH#_remote-ssh-limitations" >}})
 
-- Using key based authentication is recommended. Passwords and other tokens entered for [alternate authentication methods](https://code.visualstudio.com/docs/remote/troubleshooting#_enabling-alternate-ssh-authentication-methods) are not saved.
+- Using key based authentication is recommended. Passwords and other tokens entered for [alternate authentication methods]({{< ref "/Remote/TipsandTricks#_enabling-alternate-ssh-authentication-methods" >}}) are not saved.
   建议使用基于密钥的身份验证。不会保存为备用身份验证方法输入的密码和其他令牌。
 - Alpine Linux and non-glibc based Linux SSH hosts are not supported.
   不支持 Alpine Linux 和基于非 glibc 的 Linux SSH 主机。
@@ -461,15 +461,15 @@ SSHFS is the most convenient option and does not require any file sync'ing. Howe
 - See [here for a list of active issues](https://aka.ms/vscode-remote/ssh/issues) related to SSH.
   在此处查看与 SSH 相关的活动问题列表。
 
-### [Docker Extension limitations Docker 扩展限制](https://code.visualstudio.com/docs/remote/ssh#_docker-extension-limitations)
+### [Docker Extension limitations Docker 扩展限制]({{< ref "/Remote/SSH#_docker-extension-limitations" >}})
 
 If you are using the Docker or Kubernetes extension in a Remote - SSH window, you will not be able to use the right-click **Attach VS Code to Container** option. This will only work if you are using it from your local machine.
 
 ​​	如果您在远程 - SSH 窗口中使用 Docker 或 Kubernetes 扩展，您将无法使用右键单击将 VS Code 附加到容器选项。只有在您从本地计算机使用它时，此选项才有效。
 
-### [Extension limitations 扩展限制](https://code.visualstudio.com/docs/remote/ssh#_extension-limitations)
+### [Extension limitations 扩展限制]({{< ref "/Remote/SSH#_extension-limitations" >}})
 
-Many extensions will work on remote SSH hosts without modification. However, in some cases, certain features may require changes. If you run into an extension issue, there is [a summary of common problems and solutions](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-tips) that you can mention to the extension author when reporting the issue.
+Many extensions will work on remote SSH hosts without modification. However, in some cases, certain features may require changes. If you run into an extension issue, there is [a summary of common problems and solutions]({{< ref "/Remote/TipsandTricks#_extension-tips" >}}) that you can mention to the extension author when reporting the issue.
 
 ​​	许多扩展程序将在远程 SSH 主机上工作，无需修改。但是，在某些情况下，某些功能可能需要更改。如果您遇到扩展问题，则有一份常见问题和解决方案的摘要，您可以在报告问题时向扩展作者提及。
 
@@ -477,33 +477,33 @@ In addition, some extensions installed on ARMv7l (AArch32) / ARMv8l (AArch64) de
 
 ​​	此外，由于扩展中仅支持 x86_64 的本机模块或运行时，因此在 ARMv7l (AArch32)/ARMv8l (AArch64) 设备上安装的某些扩展可能无法正常工作。在这些情况下，扩展需要选择支持这些平台，方法是编译/包含适用于 ARMv7l/ARMv8l 的二进制文件。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/remote/ssh#_common-questions)
+## [Common questions 常见问题]({{< ref "/Remote/SSH#_common-questions" >}})
 
-### [How do I set up an SSH client on ...? 如何在 ... 上设置 SSH 客户端？](https://code.visualstudio.com/docs/remote/ssh#_how-do-i-set-up-an-ssh-client-on-)
+### [How do I set up an SSH client on ...? 如何在 ... 上设置 SSH 客户端？]({{< ref "/Remote/SSH#_how-do-i-set-up-an-ssh-client-on-" >}})
 
-See [Installing a supported SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) for details.
+See [Installing a supported SSH client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}) for details.
 
 ​​	有关详细信息，请参阅安装受支持的 SSH 客户端。
 
-### [How do I set up an SSH server on ...? 如何在 ... 上设置 SSH 服务器？](https://code.visualstudio.com/docs/remote/ssh#_how-do-i-set-up-an-ssh-server-on-)
+### [How do I set up an SSH server on ...? 如何在 ... 上设置 SSH 服务器？]({{< ref "/Remote/SSH#_how-do-i-set-up-an-ssh-server-on-" >}})
 
-See [Installing a supported SSH server](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server) for details on setting up an SSH server for your host.
+See [Installing a supported SSH server]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-server" >}}) for details on setting up an SSH server for your host.
 
 ​​	有关为您的主机设置 SSH 服务器的详细信息，请参阅安装受支持的 SSH 服务器。
 
-### [Can I sign in to my SSH server with another/additional authentication mechanism like a password? 我能否使用其他/其他身份验证机制（如密码）登录我的 SSH 服务器？](https://code.visualstudio.com/docs/remote/ssh#_can-i-sign-in-to-my-ssh-server-with-anotheradditional-authentication-mechanism-like-a-password)
+### [Can I sign in to my SSH server with another/additional authentication mechanism like a password? 我能否使用其他/其他身份验证机制（如密码）登录我的 SSH 服务器？]({{< ref "/Remote/SSH#_can-i-sign-in-to-my-ssh-server-with-anotheradditional-authentication-mechanism-like-a-password" >}})
 
-Yes, you should be prompted to enter your token or password automatically. However, passwords are not saved, so using [key based authentication](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication) is typically more convenient.
+Yes, you should be prompted to enter your token or password automatically. However, passwords are not saved, so using [key based authentication]({{< ref "/Remote/TipsandTricks#_configuring-key-based-authentication" >}}) is typically more convenient.
 
 ​​	可以，系统会提示您自动输入令牌或密码。但是，密码不会保存，因此通常使用基于密钥的身份验证会更方便。
 
-### [How do I fix SSH errors about "bad permissions"? 如何修复有关“权限错误”的 SSH 错误？](https://code.visualstudio.com/docs/remote/ssh#_how-do-i-fix-ssh-errors-about-bad-permissions)
+### [How do I fix SSH errors about "bad permissions"? 如何修复有关“权限错误”的 SSH 错误？]({{< ref "/Remote/SSH#_how-do-i-fix-ssh-errors-about-bad-permissions" >}})
 
-See [Fixing SSH file permission errors](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-ssh-file-permission-errors) for details on resolving these types of errors.
+See [Fixing SSH file permission errors]({{< ref "/Remote/TipsandTricks#_fixing-ssh-file-permission-errors" >}}) for details on resolving these types of errors.
 
 ​​	有关解决这些类型错误的详细信息，请参阅修复 SSH 文件权限错误。
 
-### [What Linux packages / libraries need to be installed on remote SSH hosts? 需要在远程 SSH 主机上安装哪些 Linux 软件包/库？](https://code.visualstudio.com/docs/remote/ssh#_what-linux-packages-libraries-need-to-be-installed-on-remote-ssh-hosts)
+### [What Linux packages / libraries need to be installed on remote SSH hosts? 需要在远程 SSH 主机上安装哪些 Linux 软件包/库？]({{< ref "/Remote/SSH#_what-linux-packages-libraries-need-to-be-installed-on-remote-ssh-hosts" >}})
 
 Most Linux distributions will not require additional dependency installation steps. For SSH, Linux hosts need to have Bash (`/bin/bash`), `tar`, and either `curl` or `wget` installed and those utilities could be missing from certain stripped down distributions. Remote Development also requires kernel >= 3.10, glibc >=2.17, libstdc++ >= 3.4.18. Only glibc-based distributions are supported currently, so by extension [Alpine Linux](https://alpinelinux.org/) is not supported.
 
@@ -513,7 +513,7 @@ See [Linux Prerequisites](https://code.visualstudio.com/docs/remote/linux) for d
 
 ​​	有关详细信息，请参阅 Linux 先决条件。
 
-### [What are the connectivity requirements for the VS Code Server when it is running on a remote machine / VM? VS Code Server 在远程计算机/VM 上运行时，对连接有什么要求？](https://code.visualstudio.com/docs/remote/ssh#_what-are-the-connectivity-requirements-for-the-vs-code-server-when-it-is-running-on-a-remote-machine-vm)
+### [What are the connectivity requirements for the VS Code Server when it is running on a remote machine / VM? VS Code Server 在远程计算机/VM 上运行时，对连接有什么要求？]({{< ref "/Remote/SSH#_what-are-the-connectivity-requirements-for-the-vs-code-server-when-it-is-running-on-a-remote-machine-vm" >}})
 
 Installation of VS Code Server requires that your local machine has outbound HTTPS (port 443) connectivity to:
 
@@ -546,31 +546,31 @@ All other communication between the server and the VS Code client is accomplishe
 
 ​​	服务器和 VS Code 客户端之间的所有其他通信都是通过经过身份验证的安全 SSH 隧道完成的。
 
-### [Can I use local tools on source code sitting on the remote SSH host? 我可以在位于远程 SSH 主机上的源代码上使用本地工具吗？](https://code.visualstudio.com/docs/remote/ssh#_can-i-use-local-tools-on-source-code-sitting-on-the-remote-ssh-host)
+### [Can I use local tools on source code sitting on the remote SSH host? 我可以在位于远程 SSH 主机上的源代码上使用本地工具吗？]({{< ref "/Remote/SSH#_can-i-use-local-tools-on-source-code-sitting-on-the-remote-ssh-host" >}})
 
-Yes. Typically this is done [using SSHFS](https://code.visualstudio.com/docs/remote/troubleshooting#_using-sshfs-to-access-files-on-your-remote-host) or by [using `rsync`](https://code.visualstudio.com/docs/remote/troubleshooting#_using-rsync-to-maintain-a-local-copy-of-your-source-code) to get a copy of the files on your local machine. SSHFS mounts the remote filesystem is ideal for scenarios where you need to edit individual files or browse the source tree and requires no sync step to use. However, it is not ideal for using something like a source control tool that bulk manages files. In this case, the `rsync` approach is better since you get a complete copy of the remote source code on your local machine. See [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_using-sshfs-to-access-files-on-your-remote-host) for details.
+Yes. Typically this is done [using SSHFS]({{< ref "/Remote/TipsandTricks#_using-sshfs-to-access-files-on-your-remote-host" >}}) or by [using `rsync`]({{< ref "/Remote/TipsandTricks#_using-rsync-to-maintain-a-local-copy-of-your-source-code" >}}) to get a copy of the files on your local machine. SSHFS mounts the remote filesystem is ideal for scenarios where you need to edit individual files or browse the source tree and requires no sync step to use. However, it is not ideal for using something like a source control tool that bulk manages files. In this case, the `rsync` approach is better since you get a complete copy of the remote source code on your local machine. See [Tips and Tricks]({{< ref "/Remote/TipsandTricks#_using-sshfs-to-access-files-on-your-remote-host" >}}) for details.
 
 ​​	是。通常这是通过使用 SSHFS 或使用 `rsync` 来获取本地计算机上的文件副本来完成的。SSHFS 挂载远程文件系统非常适合需要编辑单个文件或浏览源树的场景，并且无需使用同步步骤。但是，它不适合使用批量管理文件的源代码控制工具。在这种情况下， `rsync` 方法更好，因为您可以在本地计算机上获得远程源代码的完整副本。有关详细信息，请参阅提示和技巧。
 
-### [Can I use VS Code when I only have SFTP/FTP filesystem access to my remote host (no shell access)? 如果我对远程主机只有 SFTP/FTP 文件系统访问权限（没有 shell 访问权限），是否可以使用 VS Code？](https://code.visualstudio.com/docs/remote/ssh#_can-i-use-vs-code-when-i-only-have-sftpftp-filesystem-access-to-my-remote-host-no-shell-access)
+### [Can I use VS Code when I only have SFTP/FTP filesystem access to my remote host (no shell access)? 如果我对远程主机只有 SFTP/FTP 文件系统访问权限（没有 shell 访问权限），是否可以使用 VS Code？]({{< ref "/Remote/SSH#_can-i-use-vs-code-when-i-only-have-sftpftp-filesystem-access-to-my-remote-host-no-shell-access" >}})
 
 Some cloud platforms only provide remote filesystem access for developers rather than direct shell access. VS Code Remote Development was not designed with this use case in mind since it negates the performance and user experience benefits.
 
 ​​	一些云平台只为开发人员提供远程文件系统访问权限，而不是直接的 shell 访问权限。VS Code 远程开发并非针对此用例而设计，因为它否定了性能和用户体验优势。
 
-However, this use case can typically be handled by combining extensions like [SFTP](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp) with remote debugging features for [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging), [Python](https://code.visualstudio.com/docs/python/debugging#_remote-script-debugging-with-ssh), [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp), or others.
+However, this use case can typically be handled by combining extensions like [SFTP](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp) with remote debugging features for [Node.js]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}), [Python]({{< ref "/Python/Debugging#_remote-script-debugging-with-ssh" >}}), [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp), or others.
 
 ​​	但是，此用例通常可以通过将 SFTP 等扩展与 Node.js、Python、C# 或其他语言的远程调试功能相结合来处理。
 
-### [As an extension author, what do I need to do? 作为扩展作者，我需要做什么？](https://code.visualstudio.com/docs/remote/ssh#_as-an-extension-author-what-do-i-need-to-do)
+### [As an extension author, what do I need to do? 作为扩展作者，我需要做什么？]({{< ref "/Remote/SSH#_as-an-extension-author-what-do-i-need-to-do" >}})
 
 The VS Code extension API abstracts away local/remote details so most extensions will work without modification. However, given extensions can use any node module or runtime they want, there are situations where adjustments may need to be made. We recommend you test your extension to be sure that no updates are required. See [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.
 
 ​​	VS Code 扩展 API 抽象了本地/远程详细信息，因此大多数扩展无需修改即可工作。但是，鉴于扩展可以使用任何所需的 node 模块或运行时，因此在某些情况下可能需要进行调整。我们建议您测试您的扩展以确保不需要任何更新。有关详细信息，请参阅支持远程开发。
 
-### [Questions or feedback 问题或反馈](https://code.visualstudio.com/docs/remote/ssh#_questions-or-feedback)
+### [Questions or feedback 问题或反馈]({{< ref "/Remote/SSH#_questions-or-feedback" >}})
 
-- See [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_ssh-tips) or the [FAQ](https://code.visualstudio.com/docs/remote/faq).
+- See [Tips and Tricks]({{< ref "/Remote/TipsandTricks#_ssh-tips" >}}) or the [FAQ]({{< ref "/Remote/FAQ" >}}).
   请参阅提示和技巧或常见问题解答。
 - Search on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).
   在 Stack Overflow 上搜索。

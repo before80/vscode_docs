@@ -18,7 +18,7 @@ This article includes some tips and tricks for getting the Dev Containers extens
 
 ​​	本文包含一些提示和技巧，可帮助您在不同环境中启动并运行 Dev Containers 扩展。
 
-## [Alternate ways to install Docker 安装 Docker 的其他方式](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_alternate-ways-to-install-docker)
+## [Alternate ways to install Docker 安装 Docker 的其他方式]({{< ref "/DevContainers/TipsandTricks#_alternate-ways-to-install-docker" >}})
 
 You can use Docker with the Dev Containers extension in a few ways, including:
 
@@ -35,20 +35,20 @@ You can use Docker with the Dev Containers extension in a few ways, including:
   
   其他 Docker 兼容的 CLI，本地或远程安装。
 
-  - While other CLIs may work, they are not officially supported. Note that [attaching to a Kubernetes cluster](https://code.visualstudio.com/docs/devcontainers/attach-container#_attach-to-a-container-in-a-kubernetes-cluster) only requires a properly configured [kubectl CLI](https://kubernetes.io/docs/reference/kubectl/overview/).
+  - While other CLIs may work, they are not officially supported. Note that [attaching to a Kubernetes cluster]({{< ref "/DevContainers/AttachtoContainer#_attach-to-a-container-in-a-kubernetes-cluster" >}}) only requires a properly configured [kubectl CLI](https://kubernetes.io/docs/reference/kubectl/overview/).
     虽然其他 CLI 可能有效，但它们并未得到官方支持。请注意，附加到 Kubernetes 集群只需要正确配置的 kubectl CLI。
 
-You can learn more in the [alternative Docker options doc](https://code.visualstudio.com/remote/advancedcontainers/docker-options).
+You can learn more in the [alternative Docker options doc]({{< ref "/Remote/advancedcontainers/Dockeroptions" >}}).
 
 ​​	您可以在替代 Docker 选项文档中了解更多信息。
 
-## [Docker Desktop for Windows tips Docker Desktop for Windows 提示](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_docker-desktop-for-windows-tips)
+## [Docker Desktop for Windows tips Docker Desktop for Windows 提示]({{< ref "/DevContainers/TipsandTricks#_docker-desktop-for-windows-tips" >}})
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop) for Windows works well in most setups, but there are a few "gotchas" that can cause problems. Here are some tips on avoiding them:
 
 ​​	Docker Desktop for Windows 在大多数设置中运行良好，但有一些“陷阱”可能会导致问题。以下是一些避免这些陷阱的提示：
 
-1. **Consider using the new Docker WSL 2 back-end on Windows 10 (2004+).** If you are using [Docker Desktop's WSL 2 back-end](https://aka.ms/vscode-remote/containers/docker-wsl2), you can use it to open folders inside WSL as well as locally. Containers are also shared between Windows and inside WSL and this new engine is less susceptible to file sharing issues. See the [quick start](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-wsl-2-folder-in-a-container-on-windows) for details.
+1. **Consider using the new Docker WSL 2 back-end on Windows 10 (2004+).** If you are using [Docker Desktop's WSL 2 back-end](https://aka.ms/vscode-remote/containers/docker-wsl2), you can use it to open folders inside WSL as well as locally. Containers are also shared between Windows and inside WSL and this new engine is less susceptible to file sharing issues. See the [quick start]({{< ref "/DevContainers/Overview#_open-a-wsl-2-folder-in-a-container-on-windows" >}}) for details.
 
    ​​	考虑在 Windows 10（2004+）上使用新的 Docker WSL 2 后端。如果您使用的是 Docker Desktop 的 WSL 2 后端，则可以使用它在 WSL 中打开文件夹以及在本地打开文件夹。容器也在 Windows 和 WSL 内部共享，并且此新引擎不太容易出现文件共享问题。有关详细信息，请参阅快速入门。
 
@@ -80,7 +80,7 @@ If you are still having trouble, see the [Docker Desktop for Windows troubleshoo
 
 ​​	如果您仍然遇到问题，请参阅 Docker Desktop for Windows 故障排除指南。
 
-## [Enabling file sharing in Docker Desktop 在 Docker Desktop 中启用文件共享](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_enabling-file-sharing-in-docker-desktop)
+## [Enabling file sharing in Docker Desktop 在 Docker Desktop 中启用文件共享]({{< ref "/DevContainers/TipsandTricks#_enabling-file-sharing-in-docker-desktop" >}})
 
 The VS Code [Dev Containers](https://aka.ms/vscode-remote/download/containers) extension can only automatically mount your source code into a container if your code is in a folder or drive shared with Docker. If you open a dev container from a non-shared location, the container will successfully start but the workspace will be empty.
 
@@ -112,7 +112,7 @@ macOS：**
 2. Go to **Resources > File Sharing**. Confirm that the folder containing your source code is under one of the shared folders listed.
    转到“资源”>“文件共享”。确认包含源代码的文件夹位于列出的共享文件夹之一下。
 
-## [Resolving Git line ending issues in containers (resulting in many modified files) 解决容器中的 Git 换行符问题（导致许多文件被修改）](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_resolving-git-line-ending-issues-in-containers-resulting-in-many-modified-files)
+## [Resolving Git line ending issues in containers (resulting in many modified files) 解决容器中的 Git 换行符问题（导致许多文件被修改）]({{< ref "/DevContainers/TipsandTricks#_resolving-git-line-ending-issues-in-containers-resulting-in-many-modified-files" >}})
 
 Since Windows and Linux use different default line endings, Git may report a large number of modified files that have no differences aside from their line endings. To prevent this from happening, you can disable line ending conversion using a `.gitattributes` file or globally on the Windows side.
 
@@ -152,13 +152,13 @@ Finally, you may need to clone the repository again for these settings to take e
 
 ​​	最后，您可能需要再次克隆存储库，才能使这些设置生效。
 
-## [Avoid setting up Git in a container when using Docker Compose 在使用 Docker Compose 时避免在容器中设置 Git](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_avoid-setting-up-git-in-a-container-when-using-docker-compose)
+## [Avoid setting up Git in a container when using Docker Compose 在使用 Docker Compose 时避免在容器中设置 Git]({{< ref "/DevContainers/TipsandTricks#_avoid-setting-up-git-in-a-container-when-using-docker-compose" >}})
 
-See [Sharing Git credentials with your container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials) in the main containers article for information on resolving this issue.
+See [Sharing Git credentials with your container]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials" >}}) in the main containers article for information on resolving this issue.
 
 ​​	请参阅主容器文章中的“与容器共享 Git 凭据”以了解有关解决此问题的信息。
 
-## [Resolving hangs when doing a Git push or sync from a Container 在容器中执行 Git 推送或同步时解决挂起问题](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_resolving-hangs-when-doing-a-git-push-or-sync-from-a-container)
+## [Resolving hangs when doing a Git push or sync from a Container 在容器中执行 Git 推送或同步时解决挂起问题]({{< ref "/DevContainers/TipsandTricks#_resolving-hangs-when-doing-a-git-push-or-sync-from-a-container" >}})
 
 If you clone a Git repository using SSH and your SSH key has a passphrase, VS Code's pull and sync features may hang when running remotely.
 
@@ -168,19 +168,19 @@ Either use an SSH key without a passphrase, clone using HTTPS, or run `git push`
 
 ​​	要解决此问题，可以使用没有密码的 SSH 密钥、使用 HTTPS 克隆或从命令行运行 `git push` 。
 
-## [Resolving errors about missing Linux dependencies 解决有关缺少 Linux 依赖项的错误](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_resolving-errors-about-missing-linux-dependencies)
+## [Resolving errors about missing Linux dependencies 解决有关缺少 Linux 依赖项的错误]({{< ref "/DevContainers/TipsandTricks#_resolving-errors-about-missing-linux-dependencies" >}})
 
-Some extensions rely on libraries not found in the certain Docker images. See the [Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_install-additional-software) article for a few options on resolving this issue.
+Some extensions rely on libraries not found in the certain Docker images. See the [Containers]({{< ref "/DevContainers/CreateaDevContainer#_install-additional-software" >}}) article for a few options on resolving this issue.
 
 ​​	某些扩展依赖于在特定 Docker 映像中找不到的库。请参阅容器文章，了解解决此问题的一些选项。
 
-## [Speeding up containers in Docker Desktop 加快 Docker Desktop 中的容器速度](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_speeding-up-containers-in-docker-desktop)
+## [Speeding up containers in Docker Desktop 加快 Docker Desktop 中的容器速度]({{< ref "/DevContainers/TipsandTricks#_speeding-up-containers-in-docker-desktop" >}})
 
 By default, Docker Desktop only gives containers a fraction of your machine capacity. In most cases, this is enough, but if you are doing something that requires more capacity, you can increase memory, CPU, or disk use.
 
 ​​	默认情况下，Docker Desktop 仅为容器提供机器容量的一小部分。在大多数情况下，这已经足够了，但如果您正在执行需要更多容量的操作，则可以增加内存、CPU 或磁盘使用量。
 
-First, try [stopping any running containers](https://code.visualstudio.com/docs/devcontainers/containers#_managing-containers) you are no longer using.
+First, try [stopping any running containers]({{< ref "/DevContainers/Overview#_managing-containers" >}}) you are no longer using.
 
 ​​	首先，尝试停止不再使用的任何正在运行的容器。
 
@@ -211,17 +211,17 @@ If you determine that you need to give your container more of your machine's cap
 3. On macOS, go to **Disk** to increase the amount of disk Docker is allowed to consume on your machine. On Windows, this is located under Advanced with the other settings.
    在 macOS 上，转到“磁盘”以增加 Docker 允许在您的计算机上使用的磁盘量。在 Windows 上，此设置与其他设置一起位于“高级”下。
 
-Finally, if your container is **doing disk intensive** operations or you are just looking for faster response times, see [Improving container disk performance](https://code.visualstudio.com/remote/advancedcontainers/improve-performance) for tips. VS Code's defaults optimize for convenience and universal support, but can be optimized.
+Finally, if your container is **doing disk intensive** operations or you are just looking for faster response times, see [Improving container disk performance]({{< ref "/Remote/advancedcontainers/Improveperformance" >}}) for tips. VS Code's defaults optimize for convenience and universal support, but can be optimized.
 
 ​​	最后，如果您的容器正在执行磁盘密集型操作，或者您只是在寻找更快的响应时间，请参阅改善容器磁盘性能以获取提示。VS Code 的默认设置经过优化，以实现便利性和通用支持，但可以进行优化。
 
-## [Cleaning out unused containers and images 清理未使用的容器和映像](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_cleaning-out-unused-containers-and-images)
+## [Cleaning out unused containers and images 清理未使用的容器和映像]({{< ref "/DevContainers/TipsandTricks#_cleaning-out-unused-containers-and-images" >}})
 
 If you see an error from Docker reporting that you are out of disk space, you can typically resolve this by cleaning out unused containers and images. There are a few ways to do this:
 
 ​​	如果您看到 Docker 报告的错误消息称您磁盘空间不足，通常可以通过清理未使用的容器和映像来解决此问题。有几种方法可以做到这一点：
 
-### [Option 1: Use the Remote Explorer 选项 1：使用远程资源管理器](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_option-1-use-the-remote-explorer)
+### [Option 1: Use the Remote Explorer 选项 1：使用远程资源管理器]({{< ref "/DevContainers/TipsandTricks#_option-1-use-the-remote-explorer" >}})
 
 You can delete containers by selecting the **Remote Explorer**, right-click on the container you want to remove, and select **Remove Container**.
 
@@ -233,7 +233,7 @@ However, this does not clean up any images you may have downloaded, which can cl
 
 ​​	但是，这不会清理您可能已下载的任何映像，这些映像可能会使您的系统杂乱无章。
 
-### [Option 2: Use the Docker extension 选项 2：使用 Docker 扩展](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_option-2-use-the-docker-extension)
+### [Option 2: Use the Docker extension 选项 2：使用 Docker 扩展]({{< ref "/DevContainers/TipsandTricks#_option-2-use-the-docker-extension" >}})
 
 1. Open a **local** window in VS Code (**File > New Window**).
 
@@ -249,7 +249,7 @@ However, this does not clean up any images you may have downloaded, which can cl
 
    ![Docker Explorer screenshot](./TipsandTricks_img/docker-remove.png)
 
-### [Option 3: Use the Docker CLI to pick containers to delete 选项 3：使用 Docker CLI 选择要删除的容器](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_option-3-use-the-docker-cli-to-pick-containers-to-delete)
+### [Option 3: Use the Docker CLI to pick containers to delete 选项 3：使用 Docker CLI 选择要删除的容器]({{< ref "/DevContainers/TipsandTricks#_option-3-use-the-docker-cli-to-pick-containers-to-delete" >}})
 
 1. Open a **local** terminal/command prompt (or use a local window in VS Code).
    打开本地终端/命令提示符（或在 VS Code 中使用本地窗口）。
@@ -268,7 +268,7 @@ If `docker ps` does not provide enough information to identify the container you
 docker ps -a --filter="label=vsch.quality" --format "table {{.ID}}\t{{.Status}}\t{{.Image}}\tvscode-{{.Label \"vsch.quality\"}}\t{{.Label \"vsch.local.folder\"}}"
 ```
 
-### [Option 4: Use Docker Compose 选项 4：使用 Docker Compose](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_option-4-use-docker-compose)
+### [Option 4: Use Docker Compose 选项 4：使用 Docker Compose]({{< ref "/DevContainers/TipsandTricks#_option-4-use-docker-compose" >}})
 
 1. Open a **local** terminal/command prompt (or use a local window in VS Code).
    打开本地终端/命令提示符（或在 VS Code 中使用本地窗口）。
@@ -285,7 +285,7 @@ docker ps -a --filter="label=vsch.quality" --format "table {{.ID}}\t{{.Status}}\
 2. Type `docker system prune --all`.
    键入 `docker system prune --all` 。
 
-## [Resolving Dockerfile build failures for images using Debian 8 解决使用 Debian 8 的映像的 Dockerfile 构建失败](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_resolving-dockerfile-build-failures-for-images-using-debian-8)
+## [Resolving Dockerfile build failures for images using Debian 8 解决使用 Debian 8 的映像的 Dockerfile 构建失败]({{< ref "/DevContainers/TipsandTricks#_resolving-dockerfile-build-failures-for-images-using-debian-8" >}})
 
 When building containers that use images based on Debian 8/Jessie — such as older versions of the `node:8` image — you may encounter the following error:
 
@@ -306,7 +306,7 @@ There are two ways to resolve this error:
 
 ​​	有两种方法可以解决此错误：
 
-- **Option 1**: Remove any containers that depend on the image, remove the image, and then try building again. This should download an updated image that is not affected by the problem. See [cleaning out unused containers and images](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_cleaning-out-unused-containers-and-images) for details.
+- **Option 1**: Remove any containers that depend on the image, remove the image, and then try building again. This should download an updated image that is not affected by the problem. See [cleaning out unused containers and images]({{< ref "/DevContainers/TipsandTricks#_cleaning-out-unused-containers-and-images" >}}) for details.
 
   ​​	选项 1：删除依赖于该映像的所有容器，删除该映像，然后尝试重新构建。这应该下载不受此问题影响的更新映像。有关详细信息，请参阅清理未使用的容器和映像。
 
@@ -319,7 +319,7 @@ There are two ways to resolve this error:
   RUN cat /etc/*-release | grep -q jessie && printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
   ```
 
-## [Resolving Docker Hub sign in errors when an email is used 解决使用电子邮件时 Docker Hub 登录错误](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_resolving-docker-hub-sign-in-errors-when-an-email-is-used)
+## [Resolving Docker Hub sign in errors when an email is used 解决使用电子邮件时 Docker Hub 登录错误]({{< ref "/DevContainers/TipsandTricks#_resolving-docker-hub-sign-in-errors-when-an-email-is-used" >}})
 
 The Docker CLI only supports using your Docker ID, so using your email to sign in can cause problems. See Docker [issue #935](https://github.com/docker/hub-feedback/issues/935#issuecomment-300361781) for details.
 
@@ -329,15 +329,15 @@ As a workaround, use your Docker ID to sign in to Docker rather than your email.
 
 ​​	作为解决方法，请使用您的 Docker ID 登录 Docker，而不是您的电子邮件。
 
-## [High CPU utilization of Hyperkit on macOS macOS 上 Hyperkit 的高 CPU 利用率](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_high-cpu-utilization-of-hyperkit-on-macos)
+## [High CPU utilization of Hyperkit on macOS macOS 上 Hyperkit 的高 CPU 利用率]({{< ref "/DevContainers/TipsandTricks#_high-cpu-utilization-of-hyperkit-on-macos" >}})
 
 There is [known issue with Docker for Mac](https://github.com/docker/for-mac/issues/1759) that can drive high CPU spikes. In particular, high CPU usage occurring when watching files and building. If you see high CPU usage for `com.docker.hyperkit` in Activity Monitor while very little is going on in your dev container, you are likely hitting this issue. Follow the [Docker issue](https://github.com/docker/for-mac/issues/1759) for updates and fixes.
 
 ​​	已知 Docker for Mac 存在一个问题，可能会导致高 CPU 峰值。特别是，在监视文件和构建时会发生高 CPU 使用率。如果您在活动监视器中看到 `com.docker.hyperkit` 的高 CPU 使用率，而开发容器中几乎没有发生任何事情，则很可能会遇到此问题。关注 Docker 问题以获取更新和修复。
 
-## [Using an SSH tunnel to connect to a remote Docker host 使用 SSH 隧道连接到远程 Docker 主机](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_using-an-ssh-tunnel-to-connect-to-a-remote-docker-host)
+## [Using an SSH tunnel to connect to a remote Docker host 使用 SSH 隧道连接到远程 Docker 主机]({{< ref "/DevContainers/TipsandTricks#_using-an-ssh-tunnel-to-connect-to-a-remote-docker-host" >}})
 
-The [Develop inside a container on a remote Docker Machine or SSH host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) article covers how to setup VS Code when working with a remote Docker host. This is often as simple as setting the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) `docker.environment` property in `settings.json` or the `DOCKER_HOST` environment variable to a `ssh://` or `tcp://` URI.
+The [Develop inside a container on a remote Docker Machine or SSH host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) article covers how to setup VS Code when working with a remote Docker host. This is often as simple as setting the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) `docker.environment` property in `settings.json` or the `DOCKER_HOST` environment variable to a `ssh://` or `tcp://` URI.
 
 ​​	在远程 Docker 机器或 SSH 主机上进行容器内开发一文介绍了在使用远程 Docker 主机时如何设置 VS Code。这通常只需在 `settings.json` 或 `DOCKER_HOST` 环境变量中将 Docker 扩展 `docker.environment` 属性设置为 `ssh://` 或 `tcp://` URI 即可。
 
@@ -345,7 +345,7 @@ However, you may run into situations where this does not work in your environmen
 
 ​​	但是，由于 SSH 配置复杂或其他限制，您可能会遇到在您的环境中不起作用的情况。在这种情况下，可以使用 SSH 隧道作为后备。
 
-### [Using an SSH tunnel as a fallback option 使用 SSH 隧道作为后备选项](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_using-an-ssh-tunnel-as-a-fallback-option)
+### [Using an SSH tunnel as a fallback option 使用 SSH 隧道作为后备选项]({{< ref "/DevContainers/TipsandTricks#_using-an-ssh-tunnel-as-a-fallback-option" >}})
 
 You can set up an SSH tunnel and forward the Docker socket from your remote host to your local machine.
 
@@ -355,7 +355,7 @@ Follow these steps:
 
 ​​	请按照以下步骤操作：
 
-1. Install an [OpenSSH compatible SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client).
+1. Install an [OpenSSH compatible SSH client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}).
 
    ​​	安装兼容 OpenSSH 的 SSH 客户端。
 
@@ -377,7 +377,7 @@ Follow these steps:
    ssh -NL localhost:23750:/var/run/docker.sock user@hostname
    ```
 
-VS Code will now be able to [attach to any running container](https://code.visualstudio.com/docs/devcontainers/attach-container) on the remote host. You can also [use specialized, local `devcontainer.json` files to create / connect to a remote dev container](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host#_converting-an-existing-or-predefined-devcontainerjson).
+VS Code will now be able to [attach to any running container]({{< ref "/DevContainers/AttachtoContainer" >}}) on the remote host. You can also [use specialized, local `devcontainer.json` files to create / connect to a remote dev container]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost#_converting-an-existing-or-predefined-devcontainerjson" >}}).
 
 ​​	VS Code 现在将能够连接到远程主机上正在运行的任何容器。您还可以使用专门的本地 `devcontainer.json` 文件来创建/连接到远程开发容器。
 
@@ -398,7 +398,7 @@ Once you are done, press Ctrl+C in the terminal / PowerShell to close the tunnel
 > 4. Retry.
 >    重试。
 
-## [Persisting user profile 持久化用户配置文件](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_persisting-user-profile)
+## [Persisting user profile 持久化用户配置文件]({{< ref "/DevContainers/TipsandTricks#_persisting-user-profile" >}})
 
 You can use the `mounts` property to persist the user profile (to keep things like shell history) in your dev container across rebuilds.
 
@@ -415,44 +415,44 @@ The above code first creates a named volume called `profile` mounted to `/root`,
 
 ​​	上面的代码首先创建一个名为 `profile` 的命名卷，并将其装载到 `/root` ，这将在重建后继续存在。接下来，它创建一个匿名卷，并将其装载到 `/root/.vscode-server` ，该卷在重建时被销毁，这允许 VS Code 重新安装扩展和 dotfile。
 
-## [Advanced container configuration tips 高级容器配置提示](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_advanced-container-configuration-tips)
+## [Advanced container configuration tips 高级容器配置提示]({{< ref "/DevContainers/TipsandTricks#_advanced-container-configuration-tips" >}})
 
-See the [Advanced container configuration](https://code.visualstudio.com/remote/advancedcontainers/overview) articles for information on the following topics:
+See the [Advanced container configuration]({{< ref "/Remote/advancedcontainers/Overview" >}}) articles for information on the following topics:
 
 ​​	请参阅高级容器配置文章以了解以下主题的信息：
 
 - [Adding environment variables
-  添加环境变量](https://code.visualstudio.com/remote/advancedcontainers/environment-variables)
+  添加环境变量]({{< ref "/Remote/advancedcontainers/Environmentvariables" >}})
 - [Adding another local file mount
-  添加另一个本地文件装入点](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount)
+  添加另一个本地文件装入点]({{< ref "/Remote/advancedcontainers/Addlocalfilemount" >}})
 - [Changing or removing the default source code mount
-  更改或删除默认源代码装入点](https://code.visualstudio.com/remote/advancedcontainers/change-default-source-mount)
+  更改或删除默认源代码装入点]({{< ref "/Remote/advancedcontainers/Changedefaultmount" >}})
 - [Improving container disk performance
-  提高容器磁盘性能](https://code.visualstudio.com/remote/advancedcontainers/improve-performance)
+  提高容器磁盘性能]({{< ref "/Remote/advancedcontainers/Improveperformance" >}})
 - [Adding a non-root user to your dev container
-  向您的开发容器添加非根用户](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user)
+  向您的开发容器添加非根用户]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}})
 - [Setting the project name for Docker Compose
-  为 Docker Compose 设置项目名称](https://code.visualstudio.com/remote/advancedcontainers/set-docker-compose-project-name)
+  为 Docker Compose 设置项目名称]({{< ref "/Remote/advancedcontainers/SetDockerComposeprojectname" >}})
 - [Using Docker or Kubernetes from inside a container
-  在容器内使用 Docker 或 Kubernetes](https://code.visualstudio.com/remote/advancedcontainers/use-docker-kubernetes)
+  在容器内使用 Docker 或 Kubernetes]({{< ref "/Remote/advancedcontainers/UseDockerorKubernetes" >}})
 - [Connecting to multiple containers at once
-  同时连接到多个容器](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers)
+  同时连接到多个容器]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers" >}})
 - [Developing inside a container on a remote Docker Machine or SSH host
-  在远程 Docker Machine 或 SSH 主机上的容器内进行开发](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host)
+  在远程 Docker Machine 或 SSH 主机上的容器内进行开发]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}})
 - [Reducing Dockerfile build warnings
-  减少 Dockerfile 构建警告](https://code.visualstudio.com/remote/advancedcontainers/reduce-docker-warnings)
+  减少 Dockerfile 构建警告]({{< ref "/Remote/advancedcontainers/ReduceDockerwarnings" >}})
 - [Sharing git credentials with your container
-  与容器共享 git 凭据](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials)
+  与容器共享 git 凭据]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials" >}})
 
-## [Extension tips 扩展技巧](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_extension-tips)
+## [Extension tips 扩展技巧]({{< ref "/DevContainers/TipsandTricks#_extension-tips" >}})
 
-While many extensions will work unmodified, there are a few issues that can prevent certain features from working as expected. In some cases, you can use another command to work around the issue, while in others, the extension may need to be modified. The [Remote Extensions Tips](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-tips) section provides a quick reference for common issues and tips on resolving them. You can also refer to the main extension article on [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for an in-depth guide on modifying extensions to support remote extension hosts.
+While many extensions will work unmodified, there are a few issues that can prevent certain features from working as expected. In some cases, you can use another command to work around the issue, while in others, the extension may need to be modified. The [Remote Extensions Tips]({{< ref "/Remote/TipsandTricks#_extension-tips" >}}) section provides a quick reference for common issues and tips on resolving them. You can also refer to the main extension article on [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for an in-depth guide on modifying extensions to support remote extension hosts.
 
 ​​	虽然许多扩展无需修改即可工作，但有一些问题可能会阻止某些功能按预期工作。在某些情况下，您可以使用另一个命令来解决此问题，而在其他情况下，可能需要修改扩展。远程扩展提示部分提供了常见问题和解决问题的提示的快速参考。您还可以参阅有关支持远程开发的主要扩展文章，以获取有关修改扩展以支持远程扩展主机的深入指南。
 
-## [Questions and feedback 问题和反馈](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_questions-and-feedback)
+## [Questions and feedback 问题和反馈]({{< ref "/DevContainers/TipsandTricks#_questions-and-feedback" >}})
 
-### [Reporting issues 报告问题](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_reporting-issues)
+### [Reporting issues 报告问题]({{< ref "/DevContainers/TipsandTricks#_reporting-issues" >}})
 
 If you run into an issue with the Dev Containers extension, it's important to collect the correct logs so that we'll be able to help [diagnose your issue](https://aka.ms/vscode-remote/issues/new). You can get the Dev Containers extension logs with **Dev Containers: Show Container Log**.
 
@@ -466,7 +466,7 @@ If you're experiencing issues using other extensions remotely (for example, othe
 >
 > ​​	注意：如果您只看到日志（扩展主机），则这是本地扩展主机，并且远程扩展主机未启动。这是因为日志通道仅在创建日志文件后才创建，因此，如果远程扩展主机未启动，则不会创建远程扩展主机日志文件，并且不会在输出视图中显示。这仍然是包含在您的问题中的有用信息。
 
-### [Remote question and feedback resources 远程问题和反馈资源](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_remote-question-and-feedback-resources)
+### [Remote question and feedback resources 远程问题和反馈资源]({{< ref "/DevContainers/TipsandTricks#_remote-question-and-feedback-resources" >}})
 
 We have a variety of other remote resources:
 

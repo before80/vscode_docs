@@ -18,106 +18,106 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ​​​	Visual Studio Code 为您提供了多种重构源代码的方法，以及快速修复功能，以便在您编码时生成代码并修复问题。若要访问它们，请单击出现的“灯泡”图标或使用命令快速修复命令 Ctrl+. 以显示快速修复和重构选项的列表。您还可以右键单击编辑器并选择重构 Ctrl+Shift+R，以仅显示重构选项。
 
-## [Supported refactorings and Quick Fixes 支持的重构和快速修复](https://code.visualstudio.com/docs/csharp/refactoring#_supported-refactorings-and-quick-fixes)
+## [Supported refactorings and Quick Fixes 支持的重构和快速修复]({{< ref "/C#/Refactoring#_supported-refactorings-and-quick-fixes" >}})
 
 - [Add `await`
-  添加 `await`](https://code.visualstudio.com/docs/csharp/refactoring#_add-await)
+  添加 `await`]({{< ref "/C#/Refactoring#_add-await" >}})
 - [Add constructor parameters from members
-  从成员添加构造函数参数](https://code.visualstudio.com/docs/csharp/refactoring#_add-constructor-parameters-from-members)
+  从成员添加构造函数参数]({{< ref "/C#/Refactoring#_add-constructor-parameters-from-members" >}})
 - [Add `DebuggerDisplay` attribute
-  添加 `DebuggerDisplay` 属性](https://code.visualstudio.com/docs/csharp/refactoring#_add-debuggerdisplay-attribute)
+  添加 `DebuggerDisplay` 属性]({{< ref "/C#/Refactoring#_add-debuggerdisplay-attribute" >}})
 - [Add explicit cast
-  添加显式强制转换](https://code.visualstudio.com/docs/csharp/refactoring#_add-explicit-cast)
+  添加显式强制转换]({{< ref "/C#/Refactoring#_add-explicit-cast" >}})
 - [Add file header
-  添加文件头](https://code.visualstudio.com/docs/csharp/refactoring#_add-file-header)
+  添加文件头]({{< ref "/C#/Refactoring#_add-file-header" >}})
 - [Add missing `usings` / imports
-  添加缺少的 `usings` / 导入](https://code.visualstudio.com/docs/csharp/refactoring#_add-missing-usings--imports)
+  添加缺少的 `usings` / 导入]({{< ref "/C#/Refactoring#_add-missing-usings--imports" >}})
 - [Add named argument
-  添加命名参数](https://code.visualstudio.com/docs/csharp/refactoring#_add-named-argument)
+  添加命名参数]({{< ref "/C#/Refactoring#_add-named-argument" >}})
 - [Convert anonymous type to class
-  将匿名类型转换为类](https://code.visualstudio.com/docs/csharp/refactoring#_convert-anonymous-type-to-class)
+  将匿名类型转换为类]({{< ref "/C#/Refactoring#_convert-anonymous-type-to-class" >}})
 - [Convert between auto property and full property
-  在自动属性和完整属性之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-auto-property-and-full-property)
+  在自动属性和完整属性之间转换]({{< ref "/C#/Refactoring#_convert-between-auto-property-and-full-property" >}})
 - [Convert between direct cast and `as` expression
-  在直接强制转换和 `as` 表达式之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-direct-cast-and-as-expression)
+  在直接强制转换和 `as` 表达式之间转换]({{< ref "/C#/Refactoring#_convert-between-direct-cast-and-as-expression" >}})
 - [Convert between `for` loop and `foreach` statement
-  在 `for` 循环和 `foreach` 语句之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-for-loop-and-foreach-statement)
+  在 `for` 循环和 `foreach` 语句之间转换]({{< ref "/C#/Refactoring#_convert-between-for-loop-and-foreach-statement" >}})
 - Convert between Get method and property
   在 Get 方法和属性之间转换
   - [Convert Get method to property
-    将 Get 方法转换为属性](https://code.visualstudio.com/docs/csharp/refactoring#_convert-get-method-to-property)
+    将 Get 方法转换为属性]({{< ref "/C#/Refactoring#_convert-get-method-to-property" >}})
   - [Convert property to Get method
-    将属性转换为 Get 方法](https://code.visualstudio.com/docs/csharp/refactoring#_convert-property-to-get-method)
+    将属性转换为 Get 方法]({{< ref "/C#/Refactoring#_convert-property-to-get-method" >}})
 - [Convert between `if` and `switch` statements
-  在 `if` 和 `switch` 语句之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-if-and-switch-statements)
+  在 `if` 和 `switch` 语句之间转换]({{< ref "/C#/Refactoring#_convert-between-if-and-switch-statements" >}})
 - [Convert between regular string and verbatim string
-  在常规字符串和原义字符串之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-regular-string-and-verbatim-string)
+  在常规字符串和原义字符串之间转换]({{< ref "/C#/Refactoring#_convert-between-regular-string-and-verbatim-string" >}})
 - [Convert class to record
-  将类转换为记录](https://code.visualstudio.com/docs/csharp/refactoring#_convert-class-to-record)
+  将类转换为记录]({{< ref "/C#/Refactoring#_convert-class-to-record" >}})
 - [Convert local function to method
-  将局部函数转换为方法](https://code.visualstudio.com/docs/csharp/refactoring#_convert-local-function-to-method)
+  将局部函数转换为方法]({{< ref "/C#/Refactoring#_convert-local-function-to-method" >}})
 - [Convert numeric literal to hex, decimal, or binary number
-  将数字文字转换为十六进制、十进制或二进制数字](https://code.visualstudio.com/docs/csharp/refactoring#_convert-numeric-literal-to-hex-decimal-or-binary-number)
+  将数字文字转换为十六进制、十进制或二进制数字]({{< ref "/C#/Refactoring#_convert-numeric-literal-to-hex-decimal-or-binary-number" >}})
 - [Convert placeholder to interpolated string
-  将占位符转换为插值字符串](https://code.visualstudio.com/docs/csharp/refactoring#_convert-placeholder-to-interpolated-string)
+  将占位符转换为插值字符串]({{< ref "/C#/Refactoring#_convert-placeholder-to-interpolated-string" >}})
 - [Convert regular string to interpolated string
-  将常规字符串转换为插值字符串](https://code.visualstudio.com/docs/csharp/refactoring#_convert-regular-string-to-interpolated-string)
+  将常规字符串转换为插值字符串]({{< ref "/C#/Refactoring#_convert-regular-string-to-interpolated-string" >}})
 - [Convert tuple to struct
-  将元组转换为结构](https://code.visualstudio.com/docs/csharp/refactoring#_convert-tuple-to-struct)
+  将元组转换为结构]({{< ref "/C#/Refactoring#_convert-tuple-to-struct" >}})
 - [Encapsulate field
-  封装字段](https://code.visualstudio.com/docs/csharp/refactoring#_encapsulate-field)
+  封装字段]({{< ref "/C#/Refactoring#_encapsulate-field" >}})
 - [Generate comparison operators
-  生成比较运算符](https://code.visualstudio.com/docs/csharp/refactoring#_generate-comparison-operators)
+  生成比较运算符]({{< ref "/C#/Refactoring#_generate-comparison-operators" >}})
 - [Generate default constructors
-  生成默认构造函数](https://code.visualstudio.com/docs/csharp/refactoring#_generate-default-constructors)
+  生成默认构造函数]({{< ref "/C#/Refactoring#_generate-default-constructors" >}})
 - [Generate parameter
-  生成参数](https://code.visualstudio.com/docs/csharp/refactoring#_generate-parameter)
+  生成参数]({{< ref "/C#/Refactoring#_generate-parameter" >}})
 - [Implement all members explicitly
-  显式实现所有成员](https://code.visualstudio.com/docs/csharp/refactoring#_implement-all-members-explicitly)
+  显式实现所有成员]({{< ref "/C#/Refactoring#_implement-all-members-explicitly" >}})
 - [Implement all members implicitly
-  隐式实现所有成员](https://code.visualstudio.com/docs/csharp/refactoring#_implement-all-members-implicitly)
+  隐式实现所有成员]({{< ref "/C#/Refactoring#_implement-all-members-implicitly" >}})
 - [Inline method
-  内联方法](https://code.visualstudio.com/docs/csharp/refactoring#_inline-method)
+  内联方法]({{< ref "/C#/Refactoring#_inline-method" >}})
 - [Inline temporary variable
-  内联临时变量](https://code.visualstudio.com/docs/csharp/refactoring#_inline-temporary-variable)
+  内联临时变量]({{< ref "/C#/Refactoring#_inline-temporary-variable" >}})
 - [Introduce local variable for expression
-  为表达式引入局部变量](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-local-variable-for-expression)
+  为表达式引入局部变量]({{< ref "/C#/Refactoring#_introduce-local-variable-for-expression" >}})
 - [Introduce parameter
-  引入参数](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-parameter)
+  引入参数]({{< ref "/C#/Refactoring#_introduce-parameter" >}})
 - [Introduce `using` statement
-  引入 `using` 语句](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-using-statement)
+  引入 `using` 语句]({{< ref "/C#/Refactoring#_introduce-using-statement" >}})
 - [Invert conditional expressions and logical operations
-  反转条件表达式和逻辑运算](https://code.visualstudio.com/docs/csharp/refactoring#_invert-conditional-expressions-and-logical-operations)
+  反转条件表达式和逻辑运算]({{< ref "/C#/Refactoring#_invert-conditional-expressions-and-logical-operations" >}})
 - [Invert `if`
-  反转 `if`](https://code.visualstudio.com/docs/csharp/refactoring#_invert-if)
+  反转 `if`]({{< ref "/C#/Refactoring#_invert-if" >}})
 - [Make member static
-  使成员变为静态](https://code.visualstudio.com/docs/csharp/refactoring#_make-member-static)
+  使成员变为静态]({{< ref "/C#/Refactoring#_make-member-static" >}})
 - [Move declaration near reference
-  将声明移至引用附近](https://code.visualstudio.com/docs/csharp/refactoring#_move-declaration-near-reference)
+  将声明移至引用附近]({{< ref "/C#/Refactoring#_move-declaration-near-reference" >}})
 - [Move type to matching file
-  将类型移至匹配的文件](https://code.visualstudio.com/docs/csharp/refactoring#_move-type-to-matching-file)
+  将类型移至匹配的文件]({{< ref "/C#/Refactoring#_move-type-to-matching-file" >}})
 - [Reverse `for` statement
-  反转 `for` 语句](https://code.visualstudio.com/docs/csharp/refactoring#_reverse-for-statement)
+  反转 `for` 语句]({{< ref "/C#/Refactoring#_reverse-for-statement" >}})
 - [Split or merge `if` statements
-  拆分或合并 `if` 语句](https://code.visualstudio.com/docs/csharp/refactoring#_split-or-merge-if-statements)
+  拆分或合并 `if` 语句]({{< ref "/C#/Refactoring#_split-or-merge-if-statements" >}})
 - [Use explicit type
-  使用显式类型](https://code.visualstudio.com/docs/csharp/refactoring#_use-explicit-type)
+  使用显式类型]({{< ref "/C#/Refactoring#_use-explicit-type" >}})
 - [Use implicit type
-  使用隐式类型](https://code.visualstudio.com/docs/csharp/refactoring#_use-implicit-type)
+  使用隐式类型]({{< ref "/C#/Refactoring#_use-implicit-type" >}})
 - [Use lambda expression or block body
-  使用 lambda 表达式或块主体](https://code.visualstudio.com/docs/csharp/refactoring#_use-lambda-expression-or-block-body)
+  使用 lambda 表达式或块主体]({{< ref "/C#/Refactoring#_use-lambda-expression-or-block-body" >}})
 - [Use recursive patterns
-  使用递归模式](https://code.visualstudio.com/docs/csharp/refactoring#_use-recursive-patterns)
+  使用递归模式]({{< ref "/C#/Refactoring#_use-recursive-patterns" >}})
 - Wrap, indent, and align refactorings
   换行、缩进和对齐重构
   - [Wrap and align call chains
-    换行和对齐调用链](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-and-align-call-chains)
+    换行和对齐调用链]({{< ref "/C#/Refactoring#_wrap-and-align-call-chains" >}})
   - [Wrap, indent, and align parameters or arguments
-    换行、缩进和对齐参数或参数](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-indent-and-align-parameters-or-arguments)
+    换行、缩进和对齐参数或参数]({{< ref "/C#/Refactoring#_wrap-indent-and-align-parameters-or-arguments" >}})
   - [Wrap binary expressions
-    换行二进制表达式](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-binary-expressions)
+    换行二进制表达式]({{< ref "/C#/Refactoring#_wrap-binary-expressions" >}})
 
-## [Add await 添加 await](https://code.visualstudio.com/docs/csharp/refactoring#_add-await)
+## [Add await 添加 await]({{< ref "/C#/Refactoring#_add-await" >}})
 
 **What:** Adds `await` keyword to a function call.
 
@@ -139,7 +139,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ![Add await example](./Refactoring_img/add-await.png)
 
-## [Add constructor parameters from members 从成员添加构造函数参数](https://code.visualstudio.com/docs/csharp/refactoring#_add-constructor-parameters-from-members)
+## [Add constructor parameters from members 从成员添加构造函数参数]({{< ref "/C#/Refactoring#_add-constructor-parameters-from-members" >}})
 
 **What:** Generate a new constructor with parameters based on selected class members.
 
@@ -165,7 +165,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ![Add constructor parameters from members example](./Refactoring_img/add-constructor-parameters-from-members.png)
 
-## [Add DebuggerDisplay attribute 添加 DebuggerDisplay 特性](https://code.visualstudio.com/docs/csharp/refactoring#_add-debuggerdisplay-attribute)
+## [Add DebuggerDisplay attribute 添加 DebuggerDisplay 特性]({{< ref "/C#/Refactoring#_add-debuggerdisplay-attribute" >}})
 
 **What:** The [DebuggerDisplay Attribute](https://learn.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute?view=vs-2022) controls how an object, property, or field is displayed in the debugger variable windows.
 
@@ -191,7 +191,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ![Add DebuggerDisplay attribute example](./Refactoring_img/add-debuggerdisplay-attribute.png)
 
-## [Add explicit cast 添加显式强制转换](https://code.visualstudio.com/docs/csharp/refactoring#_add-explicit-cast)
+## [Add explicit cast 添加显式强制转换]({{< ref "/C#/Refactoring#_add-explicit-cast" >}})
 
 **What:** Lets you automatically add an explicit cast to an expression, based on usage.
 
@@ -215,7 +215,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 3. Select **Add explicit cast**.
    选择“添加显式强制转换”。
 
-## [Add file header 添加文件头](https://code.visualstudio.com/docs/csharp/refactoring#_add-file-header)
+## [Add file header 添加文件头]({{< ref "/C#/Refactoring#_add-file-header" >}})
 
 **What:** Add file headers to existing files, projects, and solutions using an [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
 
@@ -245,7 +245,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 6. Select **Add file header**.
    选择“添加文件头”。
 
-## [Add missing usings / imports 添加缺少的 using/import](https://code.visualstudio.com/docs/csharp/refactoring#_add-missing-usings-imports)
+## [Add missing usings / imports 添加缺少的 using/import]({{< ref "/C#/Refactoring#_add-missing-usings-imports" >}})
 
 **What:** Lets you immediately add the necessary imports or using directives for copy-and-pasted code.
 
@@ -271,7 +271,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ![Add missing  / imports example](./Refactoring_img/add-missing-usings.png)
 
-## [Add named argument 添加命名参数](https://code.visualstudio.com/docs/csharp/refactoring#_add-named-argument)
+## [Add named argument 添加命名参数]({{< ref "/C#/Refactoring#_add-named-argument" >}})
 
 **What:** Append a named argument to the specified parameter value in a function call.
 
@@ -293,7 +293,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ![Add named argument example](./Refactoring_img/add-named-argument.png)
 
-## [Convert anonymous type to class 将匿名类型转换为类](https://code.visualstudio.com/docs/csharp/refactoring#_convert-anonymous-type-to-class)
+## [Convert anonymous type to class 将匿名类型转换为类]({{< ref "/C#/Refactoring#_convert-anonymous-type-to-class" >}})
 
 **What:** Convert an anonymous type to class.
 
@@ -319,7 +319,7 @@ Visual Studio Code gives you many ways to refactor your source code as well as Q
 
 ![Convert anonymous type to class example](./Refactoring_img/convert-anonymous-type-to-class-result.png)
 
-## [Convert between auto property and full property 在自动属性和完整属性之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-auto-property-and-full-property)
+## [Convert between auto property and full property 在自动属性和完整属性之间转换]({{< ref "/C#/Refactoring#_convert-between-auto-property-and-full-property" >}})
 
 **What:** Convert between an auto-implemented property to a full property.
 
@@ -355,7 +355,7 @@ Select **Use auto property.**
 
 ![Use auto property example](./Refactoring_img/use-auto-property.png)
 
-## [Convert between direct cast and 'as' expression 在直接强制转换和“as”表达式之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-direct-cast-and-as-expression)
+## [Convert between direct cast and 'as' expression 在直接强制转换和“as”表达式之间转换]({{< ref "/C#/Refactoring#_convert-between-direct-cast-and-as-expression" >}})
 
 **What:** Convert a variable between a regular cast and a try cast using the `as` keyword.
 
@@ -387,7 +387,7 @@ Select **Change to `as` expression.**
 
 ![Change to  expression example](./Refactoring_img/change-to-as-expression.png)
 
-## [Convert between for loop and foreach statement 在 for 循环和 foreach 语句之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-for-loop-and-foreach-statement)
+## [Convert between for loop and foreach statement 在 for 循环和 foreach 语句之间转换]({{< ref "/C#/Refactoring#_convert-between-for-loop-and-foreach-statement" >}})
 
 **What:** If you have a [for](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/for) loop in your code, you can use this refactoring to convert it to a [foreach](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/foreach-in) statement.
 
@@ -433,9 +433,9 @@ Select **Convert to `foreach`**.
 
 ![Convert to ](./Refactoring_img/convert-to-foreach.png)
 
-## [Convert between Get method and property 在 Get 方法和属性之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-get-method-and-property)
+## [Convert between Get method and property 在 Get 方法和属性之间转换]({{< ref "/C#/Refactoring#_convert-between-get-method-and-property" >}})
 
-### [Convert Get method to property 将 Get 方法转换为属性](https://code.visualstudio.com/docs/csharp/refactoring#_convert-get-method-to-property)
+### [Convert Get method to property 将 Get 方法转换为属性]({{< ref "/C#/Refactoring#_convert-get-method-to-property" >}})
 
 **What:** Lets you convert a Get method into a property (and optionally your Set method).
 
@@ -457,7 +457,7 @@ Select **Convert to `foreach`**.
 
 ![Replace Get method with property example](./Refactoring_img/replace-get-method-with-property.png)
 
-### [Convert property to Get method 将属性转换为获取方法](https://code.visualstudio.com/docs/csharp/refactoring#_convert-property-to-get-method)
+### [Convert property to Get method 将属性转换为获取方法]({{< ref "/C#/Refactoring#_convert-property-to-get-method" >}})
 
 **What:** Lets you convert a property to a Get method
 
@@ -479,7 +479,7 @@ Select **Convert to `foreach`**.
 
 ![Replace property name with method example](./Refactoring_img/replace-property-with-method.png)
 
-## [Convert between if and switch statements 在 if 和 switch 语句之间进行转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-if-and-switch-statements)
+## [Convert between if and switch statements 在 if 和 switch 语句之间进行转换]({{< ref "/C#/Refactoring#_convert-between-if-and-switch-statements" >}})
 
 **What:** Convert an `if` statement to a [switch statement](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/switch) or to the C# 8.0 [switch expression](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-8#switch-expressions).
 
@@ -521,7 +521,7 @@ Select **Convert to `if` statement**.
 
 ![Convert to  statement example](./Refactoring_img/convert-to-if-statement.png)
 
-## [Convert between regular string and verbatim string 在常规字符串和原义字符串之间转换](https://code.visualstudio.com/docs/csharp/refactoring#_convert-between-regular-string-and-verbatim-string)
+## [Convert between regular string and verbatim string 在常规字符串和原义字符串之间转换]({{< ref "/C#/Refactoring#_convert-between-regular-string-and-verbatim-string" >}})
 
 **What:** Lets you convert between regular string and verbatim string literals.
 
@@ -553,7 +553,7 @@ Select **Convert to verbatim string**.
 
 ​​​	选择转换为原义字符串。
 
-## [Convert class to record 将类转换为记录](https://code.visualstudio.com/docs/csharp/refactoring#_convert-class-to-record)
+## [Convert class to record 将类转换为记录]({{< ref "/C#/Refactoring#_convert-class-to-record" >}})
 
 **What:** Convert your class to a C# record.
 
@@ -577,7 +577,7 @@ Select **Convert to verbatim string**.
 
 ![Convert class to record after example](./Refactoring_img/convert-class-to-record-result.png)
 
-## [Convert local function to method 将局部函数转换为方法](https://code.visualstudio.com/docs/csharp/refactoring#_convert-local-function-to-method)
+## [Convert local function to method 将局部函数转换为方法]({{< ref "/C#/Refactoring#_convert-local-function-to-method" >}})
 
 **What:** Convert a local function to a method.
 
@@ -603,7 +603,7 @@ Select **Convert to verbatim string**.
 
 ![Convert local function to method example](./Refactoring_img/convert-local-function-to-method.png)
 
-## [Convert numeric literal to hex, decimal, or binary number 将数字文字转换为十六进制、十进制或二进制数字](https://code.visualstudio.com/docs/csharp/refactoring#_convert-numeric-literal-to-hex-decimal-or-binary-number)
+## [Convert numeric literal to hex, decimal, or binary number 将数字文字转换为十六进制、十进制或二进制数字]({{< ref "/C#/Refactoring#_convert-numeric-literal-to-hex-decimal-or-binary-number" >}})
 
 **What:** Convert a number between a hexadecimal, binary, or decimal number.
 
@@ -641,7 +641,7 @@ Select **Convert to binary**.
 
 ![Convert to binary example](./Refactoring_img/convert-numeric-literal-to-binary.png)
 
-## [Convert placeholder to interpolated string 将占位符转换为插值字符串](https://code.visualstudio.com/docs/csharp/refactoring#_convert-placeholder-to-interpolated-string)
+## [Convert placeholder to interpolated string 将占位符转换为插值字符串]({{< ref "/C#/Refactoring#_convert-placeholder-to-interpolated-string" >}})
 
 **What:** Convert a `String.Format` formatted result string (or placeholder) to an interpolated string.
 
@@ -667,7 +667,7 @@ Select **Convert to binary**.
 
 ![Convert placeholder to interpolated string example](./Refactoring_img/convert-to-interpolated-string.png)
 
-## [Convert regular string to interpolated string 将常规字符串转换为插值字符串](https://code.visualstudio.com/docs/csharp/refactoring#_convert-regular-string-to-interpolated-string)
+## [Convert regular string to interpolated string 将常规字符串转换为插值字符串]({{< ref "/C#/Refactoring#_convert-regular-string-to-interpolated-string" >}})
 
 **What:** Change a regular string to an interpolated string.
 
@@ -691,7 +691,7 @@ Select **Convert to binary**.
 
 ![Convert to interpolated string after example](./Refactoring_img/convert-to-interpolated-string-after.png)
 
-## [Convert tuple to struct 将元组转换为结构](https://code.visualstudio.com/docs/csharp/refactoring#_convert-tuple-to-struct)
+## [Convert tuple to struct 将元组转换为结构]({{< ref "/C#/Refactoring#_convert-tuple-to-struct" >}})
 
 **What:** Convert your tuple to a `struct`
 
@@ -729,7 +729,7 @@ Select **Convert to binary**.
 
 ![Convert tuple to  example](./Refactoring_img/convert-tuple-to-struct-result.png)
 
-## [Encapsulate field 封装字段](https://code.visualstudio.com/docs/csharp/refactoring#_encapsulate-field)
+## [Encapsulate field 封装字段]({{< ref "/C#/Refactoring#_encapsulate-field" >}})
 
 **What:** Lets you turn a field into a property, and update all usages of that field to use the newly created property.
 
@@ -765,7 +765,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 ![Encapsulate field but still use field example](./Refactoring_img/encapsulate-field-still-use-field.png)
 
-## [Generate comparison operators 生成比较运算符](https://code.visualstudio.com/docs/csharp/refactoring#_generate-comparison-operators)
+## [Generate comparison operators 生成比较运算符]({{< ref "/C#/Refactoring#_generate-comparison-operators" >}})
 
 **What:** Lets you generate Comparison operators for types that implement `IComparable`.
 
@@ -789,7 +789,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 3. Select **Generate comparison operators** from the drop-down menu.
    从下拉菜单中选择“生成比较运算符”。
 
-## [Generate default constructors 生成默认构造函数](https://code.visualstudio.com/docs/csharp/refactoring#_generate-default-constructors)
+## [Generate default constructors 生成默认构造函数]({{< ref "/C#/Refactoring#_generate-default-constructors" >}})
 
 **What:** Lets you immediately generate the code for a new default constructor on a class.
 
@@ -815,7 +815,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 ![Generate default constructor example](./Refactoring_img/generate-default-constructor.png)
 
-## [Generate parameter 生成参数](https://code.visualstudio.com/docs/csharp/refactoring#_generate-parameter)
+## [Generate parameter 生成参数]({{< ref "/C#/Refactoring#_generate-parameter" >}})
 
 **What:** Automatically generates a method parameter.
 
@@ -841,7 +841,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 ![Generate parameter example](./Refactoring_img/add-parameter-check.png)
 
-## [Implement all members explicitly 显式实现所有成员](https://code.visualstudio.com/docs/csharp/refactoring#_implement-all-members-explicitly)
+## [Implement all members explicitly 显式实现所有成员]({{< ref "/C#/Refactoring#_implement-all-members-explicitly" >}})
 
 **What:** Define your interface's methods explicitly in a class. An explicit interface implementation is a class member that is only called through the specified interface.
 
@@ -868,7 +868,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 ![Implement all members explicitly example](./Refactoring_img/implement-all-members-explicitly.png)
 
-## [Implement all members implicitly 隐式实现所有成员](https://code.visualstudio.com/docs/csharp/refactoring#_implement-all-members-implicitly)
+## [Implement all members implicitly 隐式实现所有成员]({{< ref "/C#/Refactoring#_implement-all-members-implicitly" >}})
 
 **What:** Define your interface's methods implicitly in a class. An implicit interface implementation is when an interface's methods and properties are directly added to the class as public methods.
 
@@ -886,7 +886,7 @@ Select **Encapsulate field: <fieldname> (but still use field)**.
 
 ![Implement all members implicitly](./Refactoring_img/implement-all-members-implicitly.png)
 
-## [Inline method 内联方法](https://code.visualstudio.com/docs/csharp/refactoring#_inline-method)
+## [Inline method 内联方法]({{< ref "/C#/Refactoring#_inline-method" >}})
 
 **What:** Inline method refactoring.
 
@@ -922,7 +922,7 @@ Select **Inline and keep <QualifiedMethodName>** to preserve the original method
 
 ![Inline and keep method example](./Refactoring_img/inline-method-keep.png)
 
-## [Inline temporary variable 内联临时变量](https://code.visualstudio.com/docs/csharp/refactoring#_inline-temporary-variable)
+## [Inline temporary variable 内联临时变量]({{< ref "/C#/Refactoring#_inline-temporary-variable" >}})
 
 **What:** Lets you remove a temporary variable and replace it with its value instead.
 
@@ -948,7 +948,7 @@ Select **Inline and keep <QualifiedMethodName>** to preserve the original method
 
 ![Inline temporary variable example](./Refactoring_img/inline-temporary-variable.png)
 
-## [Introduce local variable for expression 为表达式引入局部变量](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-local-variable-for-expression)
+## [Introduce local variable for expression 为表达式引入局部变量]({{< ref "/C#/Refactoring#_introduce-local-variable-for-expression" >}})
 
 **What:** Lets you immediately generate a local variable to replace an existing expression.
 
@@ -982,7 +982,7 @@ Select **Introduce local -> Introduce local for all occurrences of <expression>*
 
 ​​​	选择引入局部 -> 为 的所有出现引入局部
 
-## [Introduce parameter 引入参数](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-parameter)
+## [Introduce parameter 引入参数]({{< ref "/C#/Refactoring#_introduce-parameter" >}})
 
 **What:** Lets you immediately generate a new parameter to replace an existing expression.
 
@@ -1024,7 +1024,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Introduce parameter into new overload example](./Refactoring_img/introduce-parameter-overload.png)
 
-## [Introduce using statement 引入 using 语句](https://code.visualstudio.com/docs/csharp/refactoring#_introduce-using-statement)
+## [Introduce using statement 引入 using 语句]({{< ref "/C#/Refactoring#_introduce-using-statement" >}})
 
 **What:** Add a `using` statement / code block to your `IDisposable` instance.
 
@@ -1046,7 +1046,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Introduce  statement example](./Refactoring_img/introduce-using-statement.png)
 
-## [Invert conditional expressions and logical operations 反转条件表达式和逻辑运算](https://code.visualstudio.com/docs/csharp/refactoring#_invert-conditional-expressions-and-logical-operations)
+## [Invert conditional expressions and logical operations 反转条件表达式和逻辑运算]({{< ref "/C#/Refactoring#_invert-conditional-expressions-and-logical-operations" >}})
 
 **What:** Lets you invert a conditional expression or a conditional `and` \ `or` operator.
 
@@ -1074,7 +1074,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Replace  with  example](./Refactoring_img/replace-and-with-or.png)
 
-## [Invert if 反转 if](https://code.visualstudio.com/docs/csharp/refactoring#_invert-if)
+## [Invert if 反转 if]({{< ref "/C#/Refactoring#_invert-if" >}})
 
 **What:** Lets you invert an `if` or `if else` statement without changing the meaning of the code.
 
@@ -1100,7 +1100,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Invert  example](./Refactoring_img/invert-if.png)
 
-## [Make member static 使成员变为静态](https://code.visualstudio.com/docs/csharp/refactoring#_make-member-static)
+## [Make member static 使成员变为静态]({{< ref "/C#/Refactoring#_make-member-static" >}})
 
 **What:** Make a member static.
 
@@ -1126,7 +1126,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Make member static example](./Refactoring_img/make-member-static.png)
 
-## [Move declaration near reference 将声明移至引用附近](https://code.visualstudio.com/docs/csharp/refactoring#_move-declaration-near-reference)
+## [Move declaration near reference 将声明移至引用附近]({{< ref "/C#/Refactoring#_move-declaration-near-reference" >}})
 
 **What:** Lets you move variable declarations closer to their usage.
 
@@ -1152,7 +1152,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Move declaration near reference example](./Refactoring_img/move-declaration-near-reference.png)
 
-## [Move type to matching file 将类型移至匹配的文件](https://code.visualstudio.com/docs/csharp/refactoring#_move-type-to-matching-file)
+## [Move type to matching file 将类型移至匹配的文件]({{< ref "/C#/Refactoring#_move-type-to-matching-file" >}})
 
 **What:** Lets you move the selected type to a separate file with the same name.
 
@@ -1178,7 +1178,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Move type to matching file example](./Refactoring_img/move-type-to-matching-file.png)
 
-## [Reverse for statement 反向 for 语句](https://code.visualstudio.com/docs/csharp/refactoring#_reverse-for-statement)
+## [Reverse for statement 反向 for 语句]({{< ref "/C#/Refactoring#_reverse-for-statement" >}})
 
 **What:** Lets you invert a `for` statement.
 
@@ -1204,7 +1204,7 @@ Select **Introduce parameter for <expression> -> into new overload**
 
 ![Reverse  statements example](./Refactoring_img/reverse-for-statement.png)
 
-## [Split or merge if statements 拆分或合并 if 语句](https://code.visualstudio.com/docs/csharp/refactoring#_split-or-merge-if-statements)
+## [Split or merge if statements 拆分或合并 if 语句]({{< ref "/C#/Refactoring#_split-or-merge-if-statements" >}})
 
 **What:** Split or merge `if` statements.
 
@@ -1247,7 +1247,7 @@ If you want to merge the inner `if` statement with the outer `if` statement:
 
 ![Merge with nested  statements example](./Refactoring_img/merge-with-nested-if-statement.png)
 
-## [Use explicit type 使用显式类型](https://code.visualstudio.com/docs/csharp/refactoring#_use-explicit-type)
+## [Use explicit type 使用显式类型]({{< ref "/C#/Refactoring#_use-explicit-type" >}})
 
 **What:** Use this refactoring to replace `var` in a local variable declaration with an explicit type.
 
@@ -1273,7 +1273,7 @@ However, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keyw
 
 ![Use explicit type instead of  example](./Refactoring_img/use-explicit-type.png)
 
-## [Use implicit type 使用隐式类型](https://code.visualstudio.com/docs/csharp/refactoring#_use-implicit-type)
+## [Use implicit type 使用隐式类型]({{< ref "/C#/Refactoring#_use-implicit-type" >}})
 
 **What:** Use this refactoring to replace an explicit type in a local variable declaration with `var`.
 
@@ -1295,7 +1295,7 @@ However, [var](https://learn.microsoft.com/dotnet/csharp/language-reference/keyw
 
 ![Use implicit type example](./Refactoring_img/use-implicit-type.png)
 
-## [Use lambda expression or block body 使用 lambda 表达式或块主体](https://code.visualstudio.com/docs/csharp/refactoring#_use-lambda-expression-or-block-body)
+## [Use lambda expression or block body 使用 lambda 表达式或块主体]({{< ref "/C#/Refactoring#_use-lambda-expression-or-block-body" >}})
 
 **What:** Lets you refactor a lambda expression to use an expression body or a block body.
 
@@ -1331,7 +1331,7 @@ Select **Use expression body for lambda expressions**.
 
 ![Use expression body for lambda expressions](./Refactoring_img/use-expression-body-for-lambda-expressions.png)
 
-## [Use recursive patterns 使用递归模式](https://code.visualstudio.com/docs/csharp/refactoring#_use-recursive-patterns)
+## [Use recursive patterns 使用递归模式]({{< ref "/C#/Refactoring#_use-recursive-patterns" >}})
 
 **What:** Converts a code block to using a recursive pattern. This refactoring works with switch statements, property pattern matching, tuple pattern matching, and positional pattern matching.
 
@@ -1365,9 +1365,9 @@ Select **Use recursive patterns**.
 
 ![Use recursive patterns after example](./Refactoring_img/use-recursive-patterns-after.png)
 
-## [Wrap, indent, and align refactorings 换行、缩进和对齐重构](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-indent-and-align-refactorings)
+## [Wrap, indent, and align refactorings 换行、缩进和对齐重构]({{< ref "/C#/Refactoring#_wrap-indent-and-align-refactorings" >}})
 
-### [Wrap and align call chains 换行并对齐调用链](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-and-align-call-chains)
+### [Wrap and align call chains 换行并对齐调用链]({{< ref "/C#/Refactoring#_wrap-and-align-call-chains" >}})
 
 **What:** Lets you wrap and align chains of method calls.
 
@@ -1393,7 +1393,7 @@ Select **Use recursive patterns**.
 
 ![Wrap and align call chain example](./Refactoring_img/wrap-and-align-call-chains.png)
 
-### [Wrap, indent, and align parameters or arguments 换行、缩进并对齐参数或参数](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-indent-and-align-parameters-or-arguments)
+### [Wrap, indent, and align parameters or arguments 换行、缩进并对齐参数或参数]({{< ref "/C#/Refactoring#_wrap-indent-and-align-parameters-or-arguments" >}})
 
 **What:** Lets you wrap, indent, and align parameters or arguments.
 
@@ -1435,7 +1435,7 @@ Select **Wrap every parameter -> Indent wrapped parameters**
 
 ![Indent wrapped parameters example](./Refactoring_img/wrap-every-parameter-indent-wrapped.png)
 
-### [Wrap binary expressions 换行二元表达式](https://code.visualstudio.com/docs/csharp/refactoring#_wrap-binary-expressions)
+### [Wrap binary expressions 换行二元表达式]({{< ref "/C#/Refactoring#_wrap-binary-expressions" >}})
 
 **What:** Lets you wrap binary expressions.
 

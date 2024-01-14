@@ -22,7 +22,7 @@ Visual Studio Code lets you perform most tasks directly from the keyboard. This 
 >
 > ​​	注意：如果你在 Mac 上访问此页面，你将看到 Mac 的按键绑定。如果你使用 Windows 或 Linux 访问，你将看到该平台的按键。如果你需要其他平台的按键绑定，将鼠标悬停在你感兴趣的按键上。
 
-## [Keyboard Shortcuts editor 键盘快捷键编辑器](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor)
+## [Keyboard Shortcuts editor 键盘快捷键编辑器]({{< ref "/GetStarted/KeyBindings#_keyboard-shortcuts-editor" >}})
 
 Visual Studio Code provides a rich and easy keyboard shortcuts editing experience using **Keyboard Shortcuts** editor. It lists all available commands with and without keybindings and you can easily change / remove / reset their keybindings using the available actions. It also has a search box on the top that helps you in finding commands or keybindings. You can open this editor by going to the menu under **File** > **Preferences** > **Keyboard Shortcuts**.
 
@@ -34,11 +34,11 @@ Most importantly, you can see keybindings according to your keyboard layout. For
 
 ​​	最重要的是，您可以根据键盘布局查看按键绑定。例如，当布局更改为德语时，美国键盘布局中的按键绑定 Cmd+\ 将显示为 Ctrl+Shift+Alt+Cmd+7。输入按键绑定的对话框将根据您的键盘布局分配正确且所需的按键绑定。
 
-For doing more advanced keyboard shortcut customization, read [Advanced Customization](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization).
+For doing more advanced keyboard shortcut customization, read [Advanced Customization]({{< ref "/GetStarted/KeyBindings#_advanced-customization" >}}).
 
 ​​	要执行更高级的键盘快捷方式自定义，请阅读高级自定义。
 
-## [Keymap extensions 按键映射扩展](https://code.visualstudio.com/docs/getstarted/keybindings#_keymap-extensions)
+## [Keymap extensions 按键映射扩展]({{< ref "/GetStarted/KeyBindings#_keymap-extensions" >}})
 
 Keyboard shortcuts are vital to productivity and changing keyboarding habits can be tough. To help with this, **File** > **Preferences** > **Migrate Keyboard Shortcuts from...** shows you a list of popular keymap extensions. These extensions modify the VS Code shortcuts to match those of other editors so you don't need to learn new keyboard shortcuts. There is also a [Keymaps category](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs) of extensions in the Marketplace.
 
@@ -85,7 +85,7 @@ ms-vscode
 >
 > ​​	提示：单击上方的扩展磁贴以阅读说明和评论，以决定哪个扩展最适合您。在 Marketplace 中查看更多内容。
 
-## [Keyboard Shortcuts Reference 键盘快捷键参考](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)
+## [Keyboard Shortcuts Reference 键盘快捷键参考]({{< ref "/GetStarted/KeyBindings#_keyboard-shortcuts-reference" >}})
 
 We also have a printable version of these keyboard shortcuts. **Help** > **Keyboard Shortcut Reference** displays a condensed PDF version suitable for printing as an easy reference.
 
@@ -99,9 +99,9 @@ Below are links to the three platform-specific versions (US English keyboard):
 - [macOS](https://go.microsoft.com/fwlink/?linkid=832143)
 - [Linux](https://go.microsoft.com/fwlink/?linkid=832144)
 
-## [Detecting keybinding conflicts 检测键绑定冲突](https://code.visualstudio.com/docs/getstarted/keybindings#_detecting-keybinding-conflicts)
+## [Detecting keybinding conflicts 检测键绑定冲突]({{< ref "/GetStarted/KeyBindings#_detecting-keybinding-conflicts" >}})
 
-If you have many extensions installed or you have [customized](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization) your keyboard shortcuts, you can sometimes have keybinding conflicts where the same keyboard shortcut is mapped to several commands. This can result in confusing behavior, especially if different keybindings are going in and out of scope as you move around the editor.
+If you have many extensions installed or you have [customized]({{< ref "/GetStarted/KeyBindings#_advanced-customization" >}}) your keyboard shortcuts, you can sometimes have keybinding conflicts where the same keyboard shortcut is mapped to several commands. This can result in confusing behavior, especially if different keybindings are going in and out of scope as you move around the editor.
 
 ​​	如果您安装了许多扩展或自定义了键盘快捷键，有时可能会遇到键绑定冲突，其中相同的键盘快捷键映射到多个命令。这可能会导致令人困惑的行为，尤其是当您在编辑器中移动时，不同的键绑定进入和退出范围时。
 
@@ -117,7 +117,7 @@ Pick a command with the keybinding you think is overloaded and you can see if mu
 
 ![show keybinding conflicts result](./KeyBindings_img/show-conflicts-result.png)
 
-## [Troubleshooting keybindings 故障排除键绑定](https://code.visualstudio.com/docs/getstarted/keybindings#_troubleshooting-keybindings)
+## [Troubleshooting keybindings 故障排除键绑定]({{< ref "/GetStarted/KeyBindings#_troubleshooting-keybindings" >}})
 
 To troubleshoot keybindings problems, you can execute the command **Developer: Toggle Keyboard Shortcuts Troubleshooting**. This will activate logging of dispatched keyboard shortcuts and will open an output panel with the corresponding log file.
 
@@ -145,7 +145,7 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
 
 ​​	第一个 keydown 事件是针对 `MetaLeft` 键 ( `cmd` )，无法分派。第二个 keydown 事件是针对 `Slash` 键 ( `/` )，并分派为 `meta+[Slash]` 。有两个键绑定项从 `meta+[Slash]` 映射，匹配项是针对命令 `editor.action.commentLine` ，它具有 `when` 条件 `editorTextFocus && !editorReadonly` ，并且是内置键绑定项。
 
-## [Viewing modified keybindings 查看已修改的键绑定](https://code.visualstudio.com/docs/getstarted/keybindings#_viewing-modified-keybindings)
+## [Viewing modified keybindings 查看已修改的键绑定]({{< ref "/GetStarted/KeyBindings#_viewing-modified-keybindings" >}})
 
 You can view any user modified keyboard shortcuts in VS Code in the **Keyboard Shortcuts** editor with the **Show User Keybindings** command in the **More Actions** (**...**) menu. This applies the `@source:user` filter to the **Keyboard Shortcuts** editor (**Source** is 'User').
 
@@ -153,7 +153,7 @@ You can view any user modified keyboard shortcuts in VS Code in the **Keyboard S
 
 ![Default Keyboard Shortcuts](./KeyBindings_img/user-keyboard-shortcuts.png)
 
-## [Advanced customization 高级自定义](https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization)
+## [Advanced customization 高级自定义]({{< ref "/GetStarted/KeyBindings#_advanced-customization" >}})
 
 All keyboard shortcuts in VS Code can be customized via the `keybindings.json` file.
 
@@ -161,7 +161,7 @@ All keyboard shortcuts in VS Code can be customized via the `keybindings.json` f
 
 - To configure keyboard shortcuts through the JSON file, open **Keyboard Shortcuts** editor and select the **Open Keyboard Shortcuts (JSON)** button on the right of the editor title bar.
   要通过 JSON 文件配置键盘快捷键，请打开键盘快捷键编辑器，然后选择编辑器标题栏右侧的“打开键盘快捷键 (JSON)”按钮。
-- This will open your `keybindings.json` file where you can overwrite the [Default Keyboard Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts).
+- This will open your `keybindings.json` file where you can overwrite the [Default Keyboard Shortcuts]({{< ref "/GetStarted/KeyBindings#_default-keyboard-shortcuts" >}}).
   这将打开 `keybindings.json` 文件，您可以在其中覆盖默认键盘快捷键。
 
 ![Open Keyboard Shortcuts JSON button](./KeyBindings_img/open-keyboard-shortcuts-json.png)
@@ -170,7 +170,7 @@ You can also open the `keybindings.json` file from the Command Palette (Ctrl+Shi
 
 ​​	您还可以使用“首选项：打开键盘快捷键 (JSON)”命令从命令面板 (Ctrl+Shift+P) 中打开 `keybindings.json` 文件。
 
-## [Keyboard rules 键盘规则](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-rules)
+## [Keyboard rules 键盘规则]({{< ref "/GetStarted/KeyBindings#_keyboard-rules" >}})
 
 Each rule consists of:
 
@@ -227,7 +227,7 @@ The keyboard shortcuts dispatching is done by analyzing a list of rules that are
 { "key": "ctrl+k ctrl+w",   "command": "workbench.action.closeAllEditors" },
 ```
 
-## [Accepted keys 键盘快捷键的分派是通过分析以 JSON 表示的一系列规则来完成的。以下是一些示例：](https://code.visualstudio.com/docs/getstarted/keybindings#_accepted-keys)
+## [Accepted keys 键盘快捷键的分派是通过分析以 JSON 表示的一系列规则来完成的。以下是一些示例：]({{< ref "/GetStarted/KeyBindings#_accepted-keys" >}})
 
 The `key` is made up of modifiers and the key itself.
 
@@ -261,7 +261,7 @@ The following keys are accepted:
 - numpad_subtract, numpad_decimal, numpad_divide
   数字键盘减号、数字键盘小数点、数字键盘除号
 
-## [Command arguments 命令参数](https://code.visualstudio.com/docs/getstarted/keybindings#_command-arguments)
+## [Command arguments 命令参数]({{< ref "/GetStarted/KeyBindings#_command-arguments" >}})
 
 You can invoke a command with arguments. This is useful if you often perform the same operation on a specific file or folder. You can add a custom keyboard shortcut to do exactly what you want.
 
@@ -288,7 +288,7 @@ For more information on commands that take arguments, refer to [Built-in Command
 
 ​​	有关接受参数的命令的更多信息，请参阅内置命令。
 
-## [Running multiple commands 运行多个命令](https://code.visualstudio.com/docs/getstarted/keybindings#_running-multiple-commands)
+## [Running multiple commands 运行多个命令]({{< ref "/GetStarted/KeyBindings#_running-multiple-commands" >}})
 
 It is possible to create a keybinding that runs several other commands sequentially using the command `runCommands`.
 
@@ -367,7 +367,7 @@ To pass an array as the first argument, one needs to wrap the array in another a
 
 ​​	要将数组作为第一个参数传递，需要将数组包装在另一个数组中： `"args": [ [1, 2, 3] ]` 。
 
-## [Removing a specific key binding rule 删除特定键绑定规则](https://code.visualstudio.com/docs/getstarted/keybindings#_removing-a-specific-key-binding-rule)
+## [Removing a specific key binding rule 删除特定键绑定规则]({{< ref "/GetStarted/KeyBindings#_removing-a-specific-key-binding-rule" >}})
 
 You can write a key binding rule that targets the removal of a specific default key binding. With the `keybindings.json`, it was always possible to redefine all the key bindings of VS Code, but it can be difficult to make a small tweak, especially around overloaded keys, such as Tab or Escape. To remove a specific key binding, add a `-` to the `command` and the rule will be a removal rule.
 
@@ -398,7 +398,7 @@ To override a specific key binding rule with an empty action, you can specify an
 { "key": "tab", "command": "" }
 ```
 
-## [Keyboard layouts 键盘布局](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-layouts)
+## [Keyboard layouts 键盘布局]({{< ref "/GetStarted/KeyBindings#_keyboard-layouts" >}})
 
 > **Note:** This section relates only to key bindings, not to typing in the editor.
 >
@@ -463,7 +463,7 @@ There is also a widget that helps input the key binding rule when editing `keybi
 >
 > ​​	注意：在 Linux 上，Visual Studio Code 在启动时检测当前键盘布局，然后缓存此信息。为了获得良好的体验，我们建议在更改键盘布局时重新启动 VS Code。
 
-## [Keyboard layout-independent bindings 与键盘布局无关的绑定](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-layoutindependent-bindings)
+## [Keyboard layout-independent bindings 与键盘布局无关的绑定]({{< ref "/GetStarted/KeyBindings#_keyboard-layoutindependent-bindings" >}})
 
 Using scan codes, it is possible to define keybindings which do not change with the change of the keyboard layout. For example:
 
@@ -489,7 +489,7 @@ Accepted scan codes:
 - [NumpadSubtract], [NumpadDecimal], [NumpadDivide]
   [NumpadSubtract]、[NumpadDecimal]、[NumpadDivide]
 
-## [when clause contexts when 子句上下文](https://code.visualstudio.com/docs/getstarted/keybindings#_when-clause-contexts)
+## [when clause contexts when 子句上下文]({{< ref "/GetStarted/KeyBindings#_when-clause-contexts" >}})
 
 VS Code gives you fine control over when your key bindings are enabled through the optional `when` clause. If your key binding doesn't have a `when` clause, the key binding is globally available at all times. A `when` clause evaluates to either Boolean true or false for enabling key bindings.
 
@@ -510,7 +510,7 @@ You can also view a keybinding's when clause directly in the Default Keybindings
                    "when": "debuggersAvailable && !inDebugMode" },
 ```
 
-### [Conditional operators 条件运算符](https://code.visualstudio.com/docs/getstarted/keybindings#_conditional-operators)
+### [Conditional operators 条件运算符]({{< ref "/GetStarted/KeyBindings#_conditional-operators" >}})
 
 For when clause conditional expressions, the following conditional operators are useful for keybindings:
 
@@ -528,7 +528,7 @@ You can find the full list of when clause conditional operators in the [when cla
 
 ​​	您可以在 when 子句上下文参考中找到 when 子句条件运算符的完整列表。
 
-### [Available contexts 可用上下文](https://code.visualstudio.com/docs/getstarted/keybindings#_available-contexts)
+### [Available contexts 可用上下文]({{< ref "/GetStarted/KeyBindings#_available-contexts" >}})
 
 You can find some of the available `when` clause contexts in the [when clause context reference](https://code.visualstudio.com/api/references/when-clause-contexts).
 
@@ -538,9 +538,9 @@ The list there isn't exhaustive and you can find other `when` clause contexts by
 
 ​​	那里的列表并不详尽，您可以通过在键盘快捷键编辑器中搜索和过滤（首选项：打开键盘快捷键）或查看默认键盘快捷键 JSON 文件（首选项：打开默认键盘快捷键 (JSON)）来找到其他 `when` 子句上下文。
 
-## [Custom keybindings for refactorings 重构的自定义键盘快捷键](https://code.visualstudio.com/docs/getstarted/keybindings#_custom-keybindings-for-refactorings)
+## [Custom keybindings for refactorings 重构的自定义键盘快捷键]({{< ref "/GetStarted/KeyBindings#_custom-keybindings-for-refactorings" >}})
 
-The `editor.action.codeAction` command lets you configure keybindings for specific [Refactorings](https://code.visualstudio.com/docs/editor/refactoring) (Code Actions). For example, the keybinding below triggers the **Extract function** refactoring Code Actions:
+The `editor.action.codeAction` command lets you configure keybindings for specific [Refactorings]({{< ref "/UserGuide/Refactoring" >}}) (Code Actions). For example, the keybinding below triggers the **Extract function** refactoring Code Actions:
 
 ​​	 `editor.action.codeAction` 命令允许您为特定重构（代码操作）配置键盘快捷键。例如，下面的键盘快捷键触发提取函数重构代码操作：
 
@@ -554,11 +554,11 @@ The `editor.action.codeAction` command lets you configure keybindings for specif
 }
 ```
 
-This is covered in depth in the [Refactoring](https://code.visualstudio.com/docs/editor/refactoring#_keybindings-for-code-actions) topic where you can learn about different kinds of Code Actions and how to prioritize them in the case of multiple possible refactorings.
+This is covered in depth in the [Refactoring]({{< ref "/UserGuide/Refactoring#_keybindings-for-code-actions" >}}) topic where you can learn about different kinds of Code Actions and how to prioritize them in the case of multiple possible refactorings.
 
 ​​	这在重构主题中进行了详细介绍，您可以在其中了解不同类型的代码操作以及在多种可能的重构情况下如何对它们进行优先级排序。
 
-## [Default Keyboard Shortcuts 默认键盘快捷键](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts)
+## [Default Keyboard Shortcuts 默认键盘快捷键]({{< ref "/GetStarted/KeyBindings#_default-keyboard-shortcuts" >}})
 
 You can view all default keyboard shortcuts in VS Code in the **Keyboard Shortcuts** editor with the **Show Default Keybindings** command in the **More Actions** (**...**) menu. This applies the `@source:default` filter to the **Keyboard Shortcuts** editor (**Source** is 'Default').
 
@@ -570,7 +570,7 @@ You can view the default keyboard shortcuts as a JSON file using the command **P
 
 ​​	您可以使用命令“首选项：打开默认键盘快捷键 (JSON)”将默认键盘快捷键作为 JSON 文件查看。
 
-> **Note:** The following keys are rendered assuming a standard US keyboard layout. If you use a different keyboard layout, please [read below](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-layouts). You can view the currently active keyboard shortcuts in VS Code in the **Command Palette** (**View** -> **Command Palette**) or in the **Keyboard Shortcuts** editor (**File** > **Preferences** > **Keyboard Shortcuts**).
+> **Note:** The following keys are rendered assuming a standard US keyboard layout. If you use a different keyboard layout, please [read below]({{< ref "/GetStarted/KeyBindings#_keyboard-layouts" >}}). You can view the currently active keyboard shortcuts in VS Code in the **Command Palette** (**View** -> **Command Palette**) or in the **Keyboard Shortcuts** editor (**File** > **Preferences** > **Keyboard Shortcuts**).
 >
 > ​​	注意：以下键假定使用标准美国键盘布局。如果您使用不同的键盘布局，请阅读以下内容。您可以在命令面板（视图 -> 命令面板）或键盘快捷键编辑器（文件 > 首选项 > 键盘快捷键）中查看 VS Code 中当前处于活动状态的键盘快捷键。
 
@@ -578,7 +578,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 
 ​​	下面包含的某些命令没有默认键盘快捷键，因此显示为未分配，但您可以分配自己的键绑定。
 
-### [Basic Editing 基本编辑](https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing)
+### [Basic Editing 基本编辑]({{< ref "/GetStarted/KeyBindings#_basic-editing" >}})
 
 | Command 命令                                                 | Key                                                          | Command id 命令 ID                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------------------------- |
@@ -636,7 +636,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Toggle Render Whitespace                                     | unassigned 未分配                                            | `toggleRenderWhitespace`                            |
 | Toggle Word Wrap 切换自动换行                                | Alt+Z                                                        | `editor.action.toggleWordWrap`                      |
 
-### [Rich Languages Editing 富语言编辑](https://code.visualstudio.com/docs/getstarted/keybindings#_rich-languages-editing)
+### [Rich Languages Editing 富语言编辑]({{< ref "/GetStarted/KeyBindings#_rich-languages-editing" >}})
 
 | Command 命令                               | Key                              | Command id 命令 ID                           |
 | :----------------------------------------- | :------------------------------- | :------------------------------------------- |
@@ -658,7 +658,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Trim Trailing Whitespace 修剪尾随空格      | Ctrl+K Ctrl+X                    | `editor.action.trimTrailingWhitespace`       |
 | Change Language Mode 更改语言模式          | Ctrl+K M                         | `workbench.action.editor.changeLanguageMode` |
 
-### [Navigation 导航](https://code.visualstudio.com/docs/getstarted/keybindings#_navigation)
+### [Navigation 导航]({{< ref "/GetStarted/KeyBindings#_navigation" >}})
 
 | Command 命令                                         | Key                                   | Command id 命令 id                                           |
 | :--------------------------------------------------- | :------------------------------------ | :----------------------------------------------------------- |
@@ -677,7 +677,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Focus Breadcrumbs 焦点面包屑                         | Ctrl+Shift+;                          | `breadcrumbs.focus`                                          |
 | Focus and Select Breadcrumbs 焦点并选择面包屑        | Ctrl+Shift+.                          | `breadcrumbs.focusAndSelect`                                 |
 
-### [Editor/Window Management 编辑器/窗口管理](https://code.visualstudio.com/docs/getstarted/keybindings#_editorwindow-management)
+### [Editor/Window Management 编辑器/窗口管理]({{< ref "/GetStarted/KeyBindings#_editorwindow-management" >}})
 
 | Command 命令                                            | Key                        | Command id 命令 id                            |
 | :------------------------------------------------------ | :------------------------- | :-------------------------------------------- |
@@ -699,7 +699,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Move Editor into Next Group 将编辑器移入下一个组        | Ctrl+Alt+Right Ctrl+Alt+右 | `workbench.action.moveEditorToNextGroup`      |
 | Move Editor into Previous Group 将编辑器移入前一个组    | Ctrl+Alt+Left Ctrl+Alt+左  | `workbench.action.moveEditorToPreviousGroup`  |
 
-### [File Management 文件管理](https://code.visualstudio.com/docs/getstarted/keybindings#_file-management)
+### [File Management 文件管理]({{< ref "/GetStarted/KeyBindings#_file-management" >}})
 
 | Command 命令                                              | Key               | Command id 命令 ID                                 |
 | :-------------------------------------------------------- | :---------------- | :------------------------------------------------- |
@@ -722,7 +722,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Show Opened File in New Window 在新窗口中显示已打开的文件 | Ctrl+K O          | `workbench.action.files.showOpenedFileInNewWindow` |
 | Compare Opened File With 比较已打开的文件与               | unassigned 未分配 | `workbench.files.action.compareFileWith`           |
 
-### [Display 显示](https://code.visualstudio.com/docs/getstarted/keybindings#_display)
+### [Display 显示]({{< ref "/GetStarted/KeyBindings#_display" >}})
 
 | Command 命令                                         | Key                         | Command id 命令 ID                            |
 | :--------------------------------------------------- | :-------------------------- | :-------------------------------------------- |
@@ -745,7 +745,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Open Preview to the Side 在侧边打开预览              | Ctrl+K V                    | `markdown.showPreviewToSide`                  |
 | Toggle Integrated Terminal 切换集成终端              | Ctrl+`                      | `workbench.action.terminal.toggleTerminal`    |
 
-### [Search 搜索](https://code.visualstudio.com/docs/getstarted/keybindings#_search)
+### [Search 搜索]({{< ref "/GetStarted/KeyBindings#_search" >}})
 
 | Command 命令                                     | Key          | Command id 命令 id                           |
 | :----------------------------------------------- | :----------- | :------------------------------------------- |
@@ -760,7 +760,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Show Next Search Term 显示下一个搜索词           | Down 向下    | `history.showNext`                           |
 | Show Previous Search Term 显示上一个搜索词       | Up           | `history.showPrevious`                       |
 
-### [Search Editor 搜索编辑器](https://code.visualstudio.com/docs/getstarted/keybindings#_search-editor)
+### [Search Editor 搜索编辑器]({{< ref "/GetStarted/KeyBindings#_search-editor" >}})
 
 | Command 命令                                 | Key                  | Command id 命令 ID                             |
 | :------------------------------------------- | :------------------- | :--------------------------------------------- |
@@ -769,7 +769,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Search Again 再次搜索                        | Ctrl+Shift+R         | `rerunSearchEditorSearch`                      |
 | Delete File Results 删除文件结果             | Ctrl+Shift+Backspace | `search.searchEditor.action.deleteFileResults` |
 
-### [Preferences 首选项](https://code.visualstudio.com/docs/getstarted/keybindings#_preferences)
+### [Preferences 首选项]({{< ref "/GetStarted/KeyBindings#_preferences" >}})
 
 | Command 命令                            | Key               | Command id 命令 id                       |
 | :-------------------------------------- | :---------------- | :--------------------------------------- |
@@ -780,7 +780,7 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Select Color Theme 选择颜色主题         | Ctrl+K Ctrl+T     | `workbench.action.selectTheme`           |
 | Configure Display Language 配置显示语言 | unassigned 未分配 | `workbench.action.configureLocale`       |
 
-### [Debug 调试](https://code.visualstudio.com/docs/getstarted/keybindings#_debug)
+### [Debug 调试]({{< ref "/GetStarted/KeyBindings#_debug" >}})
 
 | Command 命令                             | Key     | Command id 命令 ID                     |
 | :--------------------------------------- | :------ | :------------------------------------- |
@@ -791,14 +791,14 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Pause 暂停                               | F6      | `workbench.action.debug.pause`         |
 | Step Into 单步进入                       | F11     | `workbench.action.debug.stepInto`      |
 
-### [Tasks 任务](https://code.visualstudio.com/docs/getstarted/keybindings#_tasks)
+### [Tasks 任务]({{< ref "/GetStarted/KeyBindings#_tasks" >}})
 
 | Command 命令                | Key               | Command id 命令 id             |
 | :-------------------------- | :---------------- | :----------------------------- |
 | Run Build Task 运行构建任务 | Ctrl+Shift+B      | `workbench.action.tasks.build` |
 | Run Test Task 运行测试任务  | unassigned 未分配 | `workbench.action.tasks.test`  |
 
-### [Extensions 扩展](https://code.visualstudio.com/docs/getstarted/keybindings#_extensions)
+### [Extensions 扩展]({{< ref "/GetStarted/KeyBindings#_extensions" >}})
 
 | Command 命令                               | Key               | Command id 命令 id                                      |
 | :----------------------------------------- | :---------------- | :------------------------------------------------------ |
@@ -809,22 +809,22 @@ Some commands included below do not have default keyboard shortcuts and so are d
 | Show Popular Extensions 显示热门扩展       | unassigned 未分配 | `workbench.extensions.action.showPopularExtensions`     |
 | Update All Extensions 更新所有扩展         | unassigned 未分配 | `workbench.extensions.action.updateAllExtensions`       |
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/getstarted/keybindings#_next-steps)
+## [Next steps 后续步骤]({{< ref "/GetStarted/KeyBindings#_next-steps" >}})
 
 Now that you know about our Key binding support, what's next...
 
 ​​	既然您已了解我们的按键绑定支持，接下来是什么...
 
-- [Language Support](https://code.visualstudio.com/docs/languages/overview) - Our Good, Better, Best language grid to see what you can expect
+- [Language Support]({{< ref "/Languages/Overview" >}}) - Our Good, Better, Best language grid to see what you can expect
   语言支持 - 我们的好、更好、最佳语言网格，看看您能期待什么
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - This is where VS Code really shines
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - This is where VS Code really shines
   调试 - 这是 VS Code 真正出彩的地方
-- [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) - End to end Node.js scenario with a sample app
+- [Node.js]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}) - End to end Node.js scenario with a sample app
   Node.js - 带有示例应用程序的端到端 Node.js 场景
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/getstarted/keybindings#_common-questions)
+## [Common questions 常见问题]({{< ref "/GetStarted/KeyBindings#_common-questions" >}})
 
-### [How can I find out what command is bound to a specific key? 如何找出绑定到特定键的命令？](https://code.visualstudio.com/docs/getstarted/keybindings#_how-can-i-find-out-what-command-is-bound-to-a-specific-key)
+### [How can I find out what command is bound to a specific key? 如何找出绑定到特定键的命令？]({{< ref "/GetStarted/KeyBindings#_how-can-i-find-out-what-command-is-bound-to-a-specific-key" >}})
 
 In the **Keyboard Shortcut** editor, you can filter on specific keystrokes to see which commands are bound to which keys. Below you can see that Ctrl+Shift+P is bound to **Show All Commands** to bring up the Command Palette.
 
@@ -832,7 +832,7 @@ In the **Keyboard Shortcut** editor, you can filter on specific keystrokes to se
 
 ![Key bindings quick outline](./KeyBindings_img/filter-on-keys.png)
 
-### [How to add a key binding to an action, for example, add Ctrl+D to Delete Lines 如何为操作添加键绑定，例如，将 Ctrl+D 添加到删除行](https://code.visualstudio.com/docs/getstarted/keybindings#_how-to-add-a-key-binding-to-an-action-for-example-add-ctrld-to-delete-lines)
+### [How to add a key binding to an action, for example, add Ctrl+D to Delete Lines 如何为操作添加键绑定，例如，将 Ctrl+D 添加到删除行]({{< ref "/GetStarted/KeyBindings#_how-to-add-a-key-binding-to-an-action-for-example-add-ctrld-to-delete-lines" >}})
 
 Find a rule that triggers the action in the **Default Keyboard Shortcuts** and write a modified version of it in your `keybindings.json` file:
 
@@ -847,7 +847,7 @@ Find a rule that triggers the action in the **Default Keyboard Shortcuts** and w
                                      "when": "editorTextFocus" },
 ```
 
-### [How can I add a key binding for only certain file types? 如何仅为某些文件类型添加键绑定？](https://code.visualstudio.com/docs/getstarted/keybindings#_how-can-i-add-a-key-binding-for-only-certain-file-types)
+### [How can I add a key binding for only certain file types? 如何仅为某些文件类型添加键绑定？]({{< ref "/GetStarted/KeyBindings#_how-can-i-add-a-key-binding-for-only-certain-file-types" >}})
 
 Use the `editorLangId` context key in your `when` clause:
 
@@ -858,7 +858,7 @@ Use the `editorLangId` context key in your `when` clause:
                                      "when": "editorTextFocus && editorLangId == csharp" },
 ```
 
-### [I have modified my key bindings in keybindings.json; why don't they work? 我已在 keybindings.json 中修改了键绑定；为什么它们不起作用？](https://code.visualstudio.com/docs/getstarted/keybindings#_i-have-modified-my-key-bindings-in-keybindingsjson-why-dont-they-work)
+### [I have modified my key bindings in keybindings.json; why don't they work? 我已在 keybindings.json 中修改了键绑定；为什么它们不起作用？]({{< ref "/GetStarted/KeyBindings#_i-have-modified-my-key-bindings-in-keybindingsjson-why-dont-they-work" >}})
 
 The most common problem is a syntax error in the file. Otherwise, try removing the `when` clause or picking a different `key`. Unfortunately, at this point, it is a trial and error process.
 

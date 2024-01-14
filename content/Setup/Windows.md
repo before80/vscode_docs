@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [Installation 安装](https://code.visualstudio.com/docs/setup/windows#_installation)
+## [Installation 安装]({{< ref "/Setup/Windows#_installation" >}})
 
 1. Download the [Visual Studio Code installer](https://go.microsoft.com/fwlink/?LinkID=534107) for Windows.
    下载适用于 Windows 的 Visual Studio Code 安装程序。
@@ -31,7 +31,7 @@ Alternatively, you can also download a [Zip archive](https://code.visualstudio.c
 >
 > ​	提示：安装程序会将 Visual Studio Code 添加到您的 `%PATH%` 中，因此您可以从控制台键入“code .” 以在该文件夹中打开 VS Code。您需要在安装后重新启动控制台，才能使对 `%PATH%` 环境变量的更改生效。
 
-## [User setup versus system setup 用户安装与系统安装](https://code.visualstudio.com/docs/setup/windows#_user-setup-versus-system-setup)
+## [User setup versus system setup 用户安装与系统安装]({{< ref "/Setup/Windows#_user-setup-versus-system-setup" >}})
 
 VS Code provides both Windows **user** and **system** level setups.
 
@@ -53,7 +53,7 @@ See the [Download Visual Studio Code](https://code.visualstudio.com/download) pa
 
 ​	请参阅下载 Visual Studio Code 页面以获取可用安装选项的完整列表。
 
-## [Updates 更新](https://code.visualstudio.com/docs/setup/windows#_updates)
+## [Updates 更新]({{< ref "/Setup/Windows#_updates" >}})
 
 VS Code ships monthly [releases](https://code.visualstudio.com/updates) and supports auto-update when a new release is available. If you're prompted by VS Code, accept the newest update and it will be installed (you won't need to do anything else to get the latest bits).
 
@@ -63,19 +63,19 @@ VS Code ships monthly [releases](https://code.visualstudio.com/updates) and supp
 >
 > ​	注意：如果您希望按照自己的时间表更新 VS Code，则可以禁用自动更新。
 
-## [Windows Subsystem for Linux 适用于 Linux 的 Windows 子系统](https://code.visualstudio.com/docs/setup/windows#_windows-subsystem-for-linux)
+## [Windows Subsystem for Linux 适用于 Linux 的 Windows 子系统]({{< ref "/Setup/Windows#_windows-subsystem-for-linux" >}})
 
 Windows is a popular operating system and it can be a great cross-platform development environment. This section describes cross-platform features such as the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) (WSL) and the new Windows Terminal.
 
 ​	Windows 是一个流行的操作系统，它可以成为一个出色的跨平台开发环境。本部分介绍跨平台功能，例如适用于 Linux 的 Windows 子系统 (WSL) 和新的 Windows 终端。
 
-### [Recent Windows build 最新的 Windows 版本](https://code.visualstudio.com/docs/setup/windows#_recent-windows-build)
+### [Recent Windows build 最新的 Windows 版本]({{< ref "/Setup/Windows#_recent-windows-build" >}})
 
 Make sure you are on a recent Windows 10 build. Check **Settings** > **Windows Update** to see if you are up-to-date.
 
 ​	确保您使用的是最新的 Windows 10 版本。检查“设置”>“Windows 更新”以查看您是否为最新版本。
 
-### [Windows as a developer machine Windows 作为开发计算机](https://code.visualstudio.com/docs/setup/windows#_windows-as-a-developer-machine)
+### [Windows as a developer machine Windows 作为开发计算机]({{< ref "/Setup/Windows#_windows-as-a-developer-machine" >}})
 
 With WSL, you can install and run Linux distributions on Windows. This enables you to develop and test your source code on Linux while still working locally on your Windows machine.
 
@@ -85,34 +85,34 @@ When coupled with the [WSL](https://marketplace.visualstudio.com/items?itemName=
 
 ​	与 WSL 扩展结合使用时，您可以在 WSL 上下文中运行时获得完整的 VS Code 编辑和调试支持。
 
-See the [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl) documentation to learn more or try the [Working in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial) introductory tutorial.
+See the [Developing in WSL]({{< ref "/Remote/WindowsSubsystemforLinux" >}}) documentation to learn more or try the [Working in WSL]({{< ref "/Remote/WSLTutorial" >}}) introductory tutorial.
 
 ​	请参阅在 WSL 中开发文档以了解更多信息或尝试在 WSL 中工作入门教程。
 
-### [New Windows Terminal 新的 Windows 终端](https://code.visualstudio.com/docs/setup/windows#_new-windows-terminal)
+### [New Windows Terminal 新的 Windows 终端]({{< ref "/Setup/Windows#_new-windows-terminal" >}})
 
 Available from the Microsoft Store, the [Windows Terminal (Preview)](https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701?SilentAuth=1&wa=wsignin1.0&activetab=pivot%3Aoverviewtab) lets you easily open PowerShell, Command Prompt, and WSL terminals in a multiple tab shell.
 
 ​	可从 Microsoft Store 获得的 Windows 终端（预览版）使您能够轻松地在多标签 shell 中打开命令提示符和 WSL 终端。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/setup/windows#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Setup/Windows#_next-steps" >}})
 
 Once you have installed VS Code, these topics will help you learn more about VS Code:
 
 ​	安装 VS Code 后，这些主题将帮助您详细了解 VS Code：
 
-- [Additional Components](https://code.visualstudio.com/docs/setup/additional-components) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
+- [Additional Components]({{< ref "/Setup/AdditionalComponents" >}}) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
   其他组件 - 了解如何安装 Git、Node.js、TypeScript 和 Yeoman 等工具。
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - A quick orientation to VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - A quick orientation to VS Code.
   用户界面 - 快速了解 VS Code。
-- [User/Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences through settings.
+- [User/Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences through settings.
   用户/工作区设置 - 了解如何通过设置将 VS Code 配置为您的首选项。
-- [Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks) - Lets you jump right in and learn how to be productive with VS Code.
+- [Tips and Tricks]({{< ref "/GetStarted/TipsandTricks" >}}) - Lets you jump right in and learn how to be productive with VS Code.
   提示和技巧 - 让您直接上手并了解如何高效使用 VS Code。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/setup/windows#_common-questions)
+## [Common questions 常见问题]({{< ref "/Setup/Windows#_common-questions" >}})
 
-### [What command-line arguments are supported by the Windows Setup? Windows 安装程序支持哪些命令行参数？](https://code.visualstudio.com/docs/setup/windows#_what-commandline-arguments-are-supported-by-the-windows-setup)
+### [What command-line arguments are supported by the Windows Setup? Windows 安装程序支持哪些命令行参数？]({{< ref "/Setup/Windows#_what-commandline-arguments-are-supported-by-the-windows-setup" >}})
 
 VS Code uses [Inno Setup](https://www.jrsoftware.org/isinfo.php) to create its setup package for Windows. Thus, all the [Inno Setup command-line switches](https://www.jrsoftware.org/ishelp/index.php?topic=setupcmdline) are available for use.
 
@@ -122,13 +122,13 @@ Additionally, you can prevent the Setup from launching VS Code after completion 
 
 ​	此外，您可以使用 `/mergetasks=!runcode` 来防止安装程序在完成之后启动 VS Code。
 
-### [Scrolling is laggy and not smooth 滚动滞后且不流畅](https://code.visualstudio.com/docs/setup/windows#_scrolling-is-laggy-and-not-smooth)
+### [Scrolling is laggy and not smooth 滚动滞后且不流畅]({{< ref "/Setup/Windows#_scrolling-is-laggy-and-not-smooth" >}})
 
 On certain devices, editor scrolling is not smooth but laggy for an unpleasant experience. If you notice this issue, make sure you install the Windows 10 October 2018 update where this issue is fixed.
 
 ​	在某些设备上，编辑器滚动不流畅，而是滞后，体验不佳。如果您注意到此问题，请确保安装 Windows 10 2018 年 10 月更新，其中已修复此问题。
 
-### [I'm having trouble with the installer 安装程序出现问题](https://code.visualstudio.com/docs/setup/windows#_im-having-trouble-with-the-installer)
+### [I'm having trouble with the installer 安装程序出现问题]({{< ref "/Setup/Windows#_im-having-trouble-with-the-installer" >}})
 
 Try using the [zip file](https://code.visualstudio.com/docs/?dv=winzip) instead of the installer. To use this, unzip VS Code in your `AppData\Local\Programs` folder.
 
@@ -138,7 +138,7 @@ Try using the [zip file](https://code.visualstudio.com/docs/?dv=winzip) instead 
 >
 > ​	注意：通过 Zip 文件安装 VS Code 时，您需要为每个版本手动更新它。
 
-### [Icons are missing 缺少图标](https://code.visualstudio.com/docs/setup/windows#_icons-are-missing)
+### [Icons are missing 缺少图标]({{< ref "/Setup/Windows#_icons-are-missing" >}})
 
 I installed Visual Studio Code on my Windows 8 machine. Why are some icons not appearing in the workbench and editor?
 
@@ -172,7 +172,7 @@ Using the Registry Editor (regedit):
 5. Exit `regedit`.
    退出 `regedit` 。
 
-### [Unable to run as admin when AppLocker is enabled 在启用 AppLocker 时无法以管理员身份运行](https://code.visualstudio.com/docs/setup/windows#_unable-to-run-as-admin-when-applocker-is-enabled)
+### [Unable to run as admin when AppLocker is enabled 在启用 AppLocker 时无法以管理员身份运行]({{< ref "/Setup/Windows#_unable-to-run-as-admin-when-applocker-is-enabled" >}})
 
 With the introduction of process sandboxing (discussed in this [blog post](https://code.visualstudio.com/blogs/2022/11/28/vscode-sandbox)) running as administrator is currently unsupported when AppLocker is configured due to a limitation of the runtime sandbox. If your work requires that you run VS Code from an elevated terminal, you can launch `code` with `--no-sandbox --disable-gpu-sandbox` as a workaround.
 
@@ -182,7 +182,7 @@ Subscribe to [issue #122951](https://github.com/microsoft/vscode/issues/122951) 
 
 ​	订阅问题 #122951 以接收更新。
 
-### [Working with UNC paths 使用 UNC 路径](https://code.visualstudio.com/docs/setup/windows#_working-with-unc-paths)
+### [Working with UNC paths 使用 UNC 路径]({{< ref "/Setup/Windows#_working-with-unc-paths" >}})
 
 Beginning with version `1.78.1`, VS Code on Windows will only allow to access UNC paths (these begin with a leading `\\`) that were either approved by the user on startup or where the host name is configured to be allowed via the new `security.allowedUNCHosts` setting.
 

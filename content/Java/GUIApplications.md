@@ -25,9 +25,9 @@ If you run into any issues when using the features below, you can contact us by 
 
 ​​​	如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
 
-## [Develop JavaFX applications 开发 JavaFX 应用程序](https://code.visualstudio.com/docs/java/java-gui#_develop-javafx-applications)
+## [Develop JavaFX applications 开发 JavaFX 应用程序]({{< ref "/Java/GUIApplications#_develop-javafx-applications" >}})
 
-### [Create a new JavaFX project 创建新的 JavaFX 项目](https://code.visualstudio.com/docs/java/java-gui#_create-a-new-javafx-project)
+### [Create a new JavaFX project 创建新的 JavaFX 项目]({{< ref "/Java/GUIApplications#_create-a-new-javafx-project" >}})
 
 You can create a new JavaFX application with just a few steps in VS Code:
 
@@ -42,7 +42,7 @@ You can create a new JavaFX application with just a few steps in VS Code:
 
 ![create JavaFX project](./GUIApplications_img/create-javafx.png)
 
-### [Run the JavaFX application 运行 JavaFX 应用程序](https://code.visualstudio.com/docs/java/java-gui#_run-the-javafx-application)
+### [Run the JavaFX application 运行 JavaFX 应用程序]({{< ref "/Java/GUIApplications#_run-the-javafx-application" >}})
 
 > Note: The following guidance only works for projects managed by Maven. The generated project requires at least JDK 11 to launch it. Please make sure you have JDK 11 installed locally and set the installation path to the setting [`java.configuration.runtimes`](https://github.com/redhat-developer/vscode-java#project-jdks).
 >
@@ -60,13 +60,13 @@ To run the JavaFX application, you can open the **Maven** Explorer, expand `hell
 
 
 
-### [More JavaFX examples 更多 JavaFX 示例](https://code.visualstudio.com/docs/java/java-gui#_more-javafx-examples)
+### [More JavaFX examples 更多 JavaFX 示例]({{< ref "/Java/GUIApplications#_more-javafx-examples" >}})
 
 More JavaFX project examples can be found in the [openjfx samples repository](https://github.com/openjfx/samples/tree/master/IDE/VSCode), which covers different project structures (such as Gradle and unmanaged folder projects). There is documentation on each sample to describe how to run the program.
 
 ​​​	可以在 openjfx 示例存储库中找到更多 JavaFX 项目示例，其中涵盖了不同的项目结构（例如 Gradle 和非托管文件夹项目）。每个示例都有文档，用于描述如何运行程序。
 
-## [Develop AWT applications 开发 AWT 应用程序](https://code.visualstudio.com/docs/java/java-gui#_develop-awt-applications)
+## [Develop AWT applications 开发 AWT 应用程序]({{< ref "/Java/GUIApplications#_develop-awt-applications" >}})
 
 By default, the types from the Abstract Window Toolkit (AWT) are hidden. You may notice that code completions are not working when you are developing an AWT application. To enable completions, you can open the Command Palette (Ctrl+Shift+P) and then select the command **Java: Help Center**. Go to the **Student** section and select **Enable AWT Development**.
 
@@ -110,7 +110,7 @@ public class AwtExample extends Frame {
 }
 ```
 
-## [Develop Swing applications 开发 Swing 应用程序](https://code.visualstudio.com/docs/java/java-gui#_develop-swing-applications)
+## [Develop Swing applications 开发 Swing 应用程序]({{< ref "/Java/GUIApplications#_develop-swing-applications" >}})
 
 Swing application development is supported by default. You can directly write your Swing application code without any setup.
 

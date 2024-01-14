@@ -18,7 +18,7 @@ You can debug C# applications in Visual Studio Code using the [Microsoft C#](htt
 
 ​​​	您可以在 Visual Studio Code 中使用 Microsoft C# 扩展调试 C# 应用程序。
 
-## [Run and Debug 运行和调试](https://code.visualstudio.com/docs/csharp/debugging#_run-and-debug)
+## [Run and Debug 运行和调试]({{< ref "/C#/RunandDebug#_run-and-debug" >}})
 
 The [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension along with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) provides multiple ways to run and debug your C# application.
 
@@ -28,19 +28,19 @@ To run and debug without C# Dev Kit, see [Microsoft C# extension's GitHub page](
 
 ​​​	若要运行和调试而不使用 C# Dev Kit，请参阅 Microsoft C# 扩展的 GitHub 页面以获取文档。
 
-### [Debug with F5 使用 F5 调试](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-f5)
+### [Debug with F5 使用 F5 调试]({{< ref "/C#/RunandDebug#_debug-with-f5" >}})
 
 With the C# Dev Kit extension installed and no debug configurations available to select in the Debug view, you can start debugging your project by having a `.cs` file opened and then pressing F5. The debugger will automatically find your project and start debugging. If you have multiple projects, it will prompt for which project you would like to start debugging.
 
 ​​​	安装了 C# Dev Kit 扩展且在“调试”视图中没有可供选择的调试配置时，您可以通过打开 `.cs` 文件然后按 F5 来开始调试项目。调试器将自动查找您的项目并开始调试。如果您有多个项目，它将提示您要开始调试哪个项目。
 
-You can also start a debugging session from the **Run and Debug** view from the side bar of VS Code. See more at [Debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging).
+You can also start a debugging session from the **Run and Debug** view from the side bar of VS Code. See more at [Debugging in VS Code]({{< ref "/UserGuide/Debugging" >}}).
 
 ​​​	您还可以从 VS Code 侧边栏的“运行和调试”视图开始调试会话。请参阅 VS Code 中的调试了解更多信息。
 
 ![Debugging using Run and Debug](https://code.visualstudio.com/assets/docs/csharp/debugging/run-and-debug.gif)
 
-### [Debug with Solution Explorer 使用解决方案资源管理器调试](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-solution-explorer)
+### [Debug with Solution Explorer 使用解决方案资源管理器调试]({{< ref "/C#/RunandDebug#_debug-with-solution-explorer" >}})
 
 With the C# Dev Kit extension installed, there is a **Debug** context menu when you right-click on your project in the Solution Explorer.
 
@@ -59,7 +59,7 @@ There are three options:
 
 ![Debugging using Solution Explorer](https://code.visualstudio.com/assets/docs/csharp/debugging/solution-explorer-debug.gif)
 
-### [Debug with Command Palette 使用命令面板进行调试](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-command-palette)
+### [Debug with Command Palette 使用命令面板进行调试]({{< ref "/C#/RunandDebug#_debug-with-command-palette" >}})
 
 With the C# Dev Kit extension installed, you can also start debugging from the Command Palette Ctrl+Shift+P by using the **Debug: Select and Start Debugging** command.
 
@@ -71,13 +71,13 @@ Note: This adds a launch configuration entry to your debug dropdown list.
 
 ![Debugging using Command Palette](https://code.visualstudio.com/assets/docs/csharp/debugging/select-and-start-debugging.gif)
 
-### [Debug with dynamic (in-memory) launch configurations 使用动态（内存中）启动配置进行调试](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-dynamic-inmemory-launch-configurations)
+### [Debug with dynamic (in-memory) launch configurations 使用动态（内存中）启动配置进行调试]({{< ref "/C#/RunandDebug#_debug-with-dynamic-inmemory-launch-configurations" >}})
 
 With the C# Dev Kit extension installed, you can create dynamic launch configurations. How you create them depends if your project has an existing `launch.json` file.
 
 ​​​	安装了 C# Dev Kit 扩展后，您可以创建动态启动配置。创建方式取决于您的项目是否有现有的 `launch.json` 文件。
 
-#### [Existing launch.json 现有的 launch.json](https://code.visualstudio.com/docs/csharp/debugging#_existing-launchjson)
+#### [Existing launch.json 现有的 launch.json]({{< ref "/C#/RunandDebug#_existing-launchjson" >}})
 
 If you have an existing `launch.json`, you can go to the Debug view, select the dropdown, and select the `C#` option. This should give you a selection of launch targets that you can add to your dropdown list. After selecting, you can hit F5 or **Start Debugging** with the newly generated configuration.
 
@@ -85,7 +85,7 @@ If you have an existing `launch.json`, you can go to the Debug view, select the 
 
 ![Add Dynamic C# Configuration](https://code.visualstudio.com/assets/docs/csharp/debugging/add-dynamic-configuration.gif)
 
-#### [No launch.json 没有 launch.json](https://code.visualstudio.com/docs/csharp/debugging#_no-launchjson)
+#### [No launch.json 没有 launch.json]({{< ref "/C#/RunandDebug#_no-launchjson" >}})
 
 If you do not have a `launch.json` in your project, you can add and access these dynamic configurations in the **Show all automatic debug configurations** in the Debug view.
 
@@ -93,7 +93,7 @@ If you do not have a `launch.json` in your project, you can add and access these
 
 ![Debug with Show all automatic debug configurations](./RunandDebug_img/show-all-automatic-debug-config.gif)
 
-#### [Removing dynamic (in-memory) launch configurations 删除动态（内存中）启动配置](https://code.visualstudio.com/docs/csharp/debugging#_removing-dynamic-inmemory-launch-configurations)
+#### [Removing dynamic (in-memory) launch configurations 删除动态（内存中）启动配置]({{< ref "/C#/RunandDebug#_removing-dynamic-inmemory-launch-configurations" >}})
 
 You can remove the generated configurations with Command Palette Ctrl+Shift+P and using the command **Debug: Select and Start Debugging**.
 
@@ -105,13 +105,13 @@ In the dropdown, it lists all your existing debug configurations. If you hover o
 
 ![Remove dynamic configuration](./RunandDebug_img/delete-dynamic-config.gif)
 
-### [Debug with launch.json 使用 launch.json 进行调试](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-launchjson)
+### [Debug with launch.json 使用 launch.json 进行调试]({{< ref "/C#/RunandDebug#_debug-with-launchjson" >}})
 
 If you are using the C# Dev Kit, we recommend not using this option. However, if you have the need to modify the debug configuration directly, see [Configuring launch.json for C# debugging](https://code.visualstudio.com/docs/csharp/debugger-settings).
 
 ​​​	如果您使用的是 C# Dev Kit，我们建议不要使用此选项。但是，如果您需要直接修改调试配置，请参阅针对 C# 调试配置 launch.json。
 
-## [Attaching to a process 附加到进程](https://code.visualstudio.com/docs/csharp/debugging#_attaching-to-a-process)
+## [Attaching to a process 附加到进程]({{< ref "/C#/RunandDebug#_attaching-to-a-process" >}})
 
 You can attach to a C# process using with the Command Palette Ctrl+Shift+P and running the **Debug: Attach to a .NET 5+ or .NET Core process** command.
 
@@ -119,15 +119,15 @@ You can attach to a C# process using with the Command Palette Ctrl+Shift+P and r
 
 ![Attach to a C# process](./RunandDebug_img/attach-to-process.png)
 
-## [Configuration options 配置选项](https://code.visualstudio.com/docs/csharp/debugging#_configuration-options)
+## [Configuration options 配置选项]({{< ref "/C#/RunandDebug#_configuration-options" >}})
 
-There are many options and settings available to configure the debugger. You can use `launchSettings.json`, VS Code [User Settings](https://code.visualstudio.com/docs/getstarted/settings) to modify your debug options, or directly modify your `launch.json`.
+There are many options and settings available to configure the debugger. You can use `launchSettings.json`, VS Code [User Settings]({{< ref "/GetStarted/Settings" >}}) to modify your debug options, or directly modify your `launch.json`.
 
 ​​​	有很多选项和设置可用于配置调试器。您可以使用 `launchSettings.json` 、VS Code 用户设置来修改您的调试选项，或直接修改您的 `launch.json` 。
 
-### [launchSettings.json](https://code.visualstudio.com/docs/csharp/debugging#_launchsettingsjson)
+### [launchSettings.json]({{< ref "/C#/RunandDebug#_launchsettingsjson" >}})
 
-If you have `launchSettings.json` from Visual Studio, you should see your profiles listed using [Run from F5](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-f5) or [Run from Command Palette](https://code.visualstudio.com/docs/csharp/debugging#_debug-with-command-palette).
+If you have `launchSettings.json` from Visual Studio, you should see your profiles listed using [Run from F5]({{< ref "/C#/RunandDebug#_debug-with-f5" >}}) or [Run from Command Palette]({{< ref "/C#/RunandDebug#_debug-with-command-palette" >}}).
 
 ​​​	如果您从 Visual Studio 中拥有 `launchSettings.json` ，您应该会看到使用 F5 运行或从命令面板运行列出的配置文件。
 
@@ -137,7 +137,7 @@ Refer to [Configuring C# debugging](https://code.visualstudio.com/docs/csharp/de
 
 ​​​	有关更多详细信息，请参阅配置 C# 调试。
 
-### [User settings 用户设置](https://code.visualstudio.com/docs/csharp/debugging#_user-settings)
+### [User settings 用户设置]({{< ref "/C#/RunandDebug#_user-settings" >}})
 
 If you have settings that you wish to change while using the C# debugger, you can find these options under **File** > **Preferences** > **Settings** (Ctrl+,) and searching for these options.
 
@@ -286,13 +286,13 @@ If you have settings that you wish to change while using the C# debugger, you ca
 - `csharp.debug.hotReloadVerbosity` - Controls the logging verbosity for the **C# Hot Reload** Output window. It can be set from `minimal` (default), `detailed` or `diagnostic`. It is recommended to increase the verbosity level if hot reload starts behaving unexpectedly.
   `csharp.debug.hotReloadVerbosity` - 控制 C# 热重载输出窗口的日志记录详细程度。可以从 `minimal` （默认值）、 `detailed` 或 `diagnostic` 中进行设置。如果热重载开始出现意外行为，建议提高详细程度级别。
 
-## [Breakpoints 断点](https://code.visualstudio.com/docs/csharp/debugging#_breakpoints)
+## [Breakpoints 断点]({{< ref "/C#/RunandDebug#_breakpoints" >}})
 
 The C# Debugger supports various breakpoints, such as source line breakpoints, conditional breakpoints, and logpoints.
 
 ​​​	C# 调试器支持各种断点，例如源代码行断点、条件断点和日志点。
 
-### [Breakpoint - conditional breakpoint 断点 - 条件断点](https://code.visualstudio.com/docs/csharp/debugging#_breakpoint-conditional-breakpoint)
+### [Breakpoint - conditional breakpoint 断点 - 条件断点]({{< ref "/C#/RunandDebug#_breakpoint-conditional-breakpoint" >}})
 
 With the help of expression evaluation, the debugger also supports conditional breakpoint. You can set your breakpoint to break when expression evaluates to true.
 
@@ -300,7 +300,7 @@ With the help of expression evaluation, the debugger also supports conditional b
 
 ![Conditional Breakpoints](https://code.visualstudio.com/assets/docs/csharp/debugging/conditional-breakpoint.gif)
 
-### [Breakpoint - Logpoints 断点 - 日志点](https://code.visualstudio.com/docs/csharp/debugging#_breakpoint-logpoints)
+### [Breakpoint - Logpoints 断点 - 日志点]({{< ref "/C#/RunandDebug#_breakpoint-logpoints" >}})
 
 Logpoints (also known as Tracepoints in Visual Studio) allow you to send output to Debug Console without editing code. They're different from breakpoints because they don't stop the execution flow of your application.
 
@@ -330,7 +330,7 @@ The following tokens are also supported in the log message:
 
 ![LogMessage Breakpoint](https://code.visualstudio.com/assets/docs/csharp/debugging/logmessage-breakpoint.gif)
 
-## [Stopping on exceptions 在异常处停止](https://code.visualstudio.com/docs/csharp/debugging#_stopping-on-exceptions)
+## [Stopping on exceptions 在异常处停止]({{< ref "/C#/RunandDebug#_stopping-on-exceptions" >}})
 
 The C# debugger supports configuration options for when the debugger stops when exceptions are thrown or caught. This is done through two different entries in the **BREAKPOINTS** section of the **Run** view:
 
@@ -350,7 +350,7 @@ Checking **User-Unhandled Exceptions** will configure the debugger to stop when 
 
 ​​​	检查用户未处理的异常将配置调试器，以便在异常在用户代码中引发后或在用户代码中传播后在非用户代码中捕获时停止。成为用户未处理的异常并不总是正在调试的进程中的错误——可能是用户代码正在实现 API，并且应该引发异常。在许多情况下存在实际问题，因此，默认情况下，当异常成为用户未处理时，调试器将停止。
 
-### [Exception Conditions 异常条件](https://code.visualstudio.com/docs/csharp/debugging#_exception-conditions)
+### [Exception Conditions 异常条件]({{< ref "/C#/RunandDebug#_exception-conditions" >}})
 
 Both checkboxes support conditions to break on only selected exception types. To edit the condition, select the pencil icon (see image above) or right-click on the entry and invoke **Edit Condition**. The condition is a comma-separated list of exception types to break on, or if the list starts with '!', a list of exception types to ignore.
 
@@ -367,13 +367,13 @@ Examples conditions:
 | !System.Threading.Tasks.TaskCanceledException                | This will break on all exceptions except for task canceled. 除了任务取消之外，这将在所有异常上中断。 |
 | !System.Threading.Tasks.TaskCanceledException, System.NotImplementedException ！System.Threading.Tasks.TaskCanceledException, System.NotImplementedException | This will break on all exceptions except for task canceled and not implemented. 除了任务已取消和未实现之外，这将在所有异常中中断。 |
 
-## [Expression evaluation 表达式评估](https://code.visualstudio.com/docs/csharp/debugging#_expression-evaluation)
+## [Expression evaluation 表达式评估]({{< ref "/C#/RunandDebug#_expression-evaluation" >}})
 
 The debugger also lets you evaluate expressions in the **WATCH** window as well as the Debug Console.
 
 ​​​	调试器还允许您在 WATCH 窗口以及调试控制台中评估表达式。
 
-## [Hot Reload 热重载](https://code.visualstudio.com/docs/csharp/debugging#_hot-reload)
+## [Hot Reload 热重载]({{< ref "/C#/RunandDebug#_hot-reload" >}})
 
 With the C# Dev Kit extension installed, the debugger allows you to apply C# code changes while debugging.
 
@@ -381,11 +381,11 @@ With the C# Dev Kit extension installed, the debugger allows you to apply C# cod
 
 ![Hot Reload displayed in the debugging toolbar](https://code.visualstudio.com/assets/docs/csharp/debugging/hotreload-toolbar.png)
 
-In order to enable Hot Reload, `csharp.experimental.debug.hotReload` must be set to true, see [User settings](https://code.visualstudio.com/docs/csharp/debugging#_user-settings) for more information. The Hot Reload session will only start if the target debugger engine supports applying code changes.
+In order to enable Hot Reload, `csharp.experimental.debug.hotReload` must be set to true, see [User settings]({{< ref "/C#/RunandDebug#_user-settings" >}}) for more information. The Hot Reload session will only start if the target debugger engine supports applying code changes.
 
 ​​​	为了启用热重载， `csharp.experimental.debug.hotReload` 必须设置为 true，有关更多信息，请参阅用户设置。仅当目标调试器引擎支持应用代码更改时，热重载会话才会启动。
 
-### [Supported projects and scenarios 支持的项目和方案](https://code.visualstudio.com/docs/csharp/debugging#_supported-projects-and-scenarios)
+### [Supported projects and scenarios 支持的项目和方案]({{< ref "/C#/RunandDebug#_supported-projects-and-scenarios" >}})
 
 C# Dev Kit supports the "classic" Hot Reload experience, also known as Edit and Continue. You can apply code changes while debugging regardless if you are stopped at a breakpoint or the program is running.
 
@@ -408,11 +408,11 @@ The runtime added support for applying changes while debugging on Linux/macOS in
 | MAUI                            | ❌* *Available soon* ❌* 即将推出                              | --                                |
 | Unity                           | ❌                                                            | --                                |
 
-See [supported projects](https://code.visualstudio.com/docs/csharp/cs-dev-kit-faq#_what-project-types-are-currently-supported) for more information on projects currently supported by C# Dev Kit. Also see the [C# Dev Kit FAQ](https://code.visualstudio.com/docs/csharp/cs-dev-kit-faq#_hot-reload) for more information on troubleshooting other unsupported scenarios.
+See [supported projects]({{< ref "/C#/FAQ#_what-project-types-are-currently-supported" >}}) for more information on projects currently supported by C# Dev Kit. Also see the [C# Dev Kit FAQ]({{< ref "/C#/FAQ#_hot-reload" >}}) for more information on troubleshooting other unsupported scenarios.
 
 ​​​	有关 C# Dev Kit 当前支持的项目，请参阅受支持的项目，了解更多信息。有关对其他不受支持的方案进行故障排除的更多信息，请参阅 C# Dev Kit 常见问题解答。
 
-### [How to apply code changes 如何应用代码更改](https://code.visualstudio.com/docs/csharp/debugging#_how-to-apply-code-changes)
+### [How to apply code changes 如何应用代码更改]({{< ref "/C#/RunandDebug#_how-to-apply-code-changes" >}})
 
 Once a Hot Reload session starts and new changes are made, you can apply these changes to your application with any of the following actions:
 
@@ -421,16 +421,16 @@ Once a Hot Reload session starts and new changes are made, you can apply these c
 | Action 操作                                                  | Explanation 说明                                             |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Hot Reload 热重载 Ctrl+Shift+Enter                           | Apply code changes, available from the **Debug Toolbar**. 应用代码更改，可从调试工具栏中获得。 |
-| Save File 保存文件 Ctrl+S                                    | Start applying code changes if `csharp.debug.hotReloadOnSave` is set to true. See [User settings](https://code.visualstudio.com/docs/csharp/debugging#_user-settings) for more information. 如果 `csharp.debug.hotReloadOnSave` 设置为 true，则开始应用代码更改。有关更多信息，请参阅用户设置。 |
+| Save File 保存文件 Ctrl+S                                    | Start applying code changes if `csharp.debug.hotReloadOnSave` is set to true. See [User settings]({{< ref "/C#/RunandDebug#_user-settings" >}}) for more information. 如果 `csharp.debug.hotReloadOnSave` 设置为 true，则开始应用代码更改。有关更多信息，请参阅用户设置。 |
 | Continue / Step Over / Step Into / Step Out 继续/单步执行/单步进入/单步退出 F5 / F10 / F11 / Shift+F11 | When changes were made while on a break state (for example, while stopped at a breakpoint), these commands will automatically apply them. 在处于中断状态时（例如，在断点处停止时）进行更改，这些命令将自动应用这些更改。 |
 
 ![Hot Reload demonstrated on ASP.NET](https://code.visualstudio.com/assets/docs/csharp/debugging/hotreload-demo.gif)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/csharp/debugging#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C#/RunandDebug#_next-steps" >}})
 
 Read on to find out about:
 
 ​​​	继续阅读以了解：
 
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Find out how to use the debugger in VS Code with your project for any language.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Find out how to use the debugger in VS Code with your project for any language.
   调试 - 了解如何将调试器与任何语言的项目一起在 VS Code 中使用。

@@ -18,13 +18,13 @@ This tutorial walks you through enabling [Windows Subsystem for Linux](https://l
 
 ​​	本教程引导您启用适用于 Linux 的 Windows 子系统 (WSL) 并使用 WSL 扩展在 WSL 中运行 Visual Studio Code。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/remote/wsl-tutorial#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Remote/WSLTutorial#_prerequisites" >}})
 
 You need [Visual Studio Code](https://code.visualstudio.com/) installed.
 
 ​​	您需要安装 Visual Studio Code。
 
-### [Install the extension 安装扩展](https://code.visualstudio.com/docs/remote/wsl-tutorial#_install-the-extension)
+### [Install the extension 安装扩展]({{< ref "/Remote/WSLTutorial#_install-the-extension" >}})
 
 The WSL extension enables you to run Visual Studio Code within the Windows Subsystem for Linux (WSL).
 
@@ -35,7 +35,7 @@ The WSL extension enables you to run Visual Studio Code within the Windows Subsy
 
 ![WSL extension](./WSLTutorial_img/remote-wsl-extension.png)
 
-### [Prerequisite check 先决条件检查](https://code.visualstudio.com/docs/remote/wsl-tutorial#_prerequisite-check)
+### [Prerequisite check 先决条件检查]({{< ref "/Remote/WSLTutorial#_prerequisite-check" >}})
 
 With the WSL extension installed, you will see a new Status bar item at the far left.
 
@@ -49,13 +49,13 @@ The Remote Status bar item can quickly show you in which context VS Code is runn
 
 ![WSL extension commands](./WSLTutorial_img/wsl-commands.png)
 
-## [Enable WSL 启用 WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial#_enable-wsl)
+## [Enable WSL 启用 WSL]({{< ref "/Remote/WSLTutorial#_enable-wsl" >}})
 
 Windows Subsystem for Linux (WSL) is an optional feature on Windows 10. You can enable it through the Windows Features dialog or PowerShell.
 
 ​​	适用于 Linux 的 Windows 子系统 (WSL) 是 Windows 10 上的一项可选功能。您可以通过“Windows 功能”对话框或 PowerShell 启用它。
 
-### [Windows Features dialog “Windows 功能”对话框](https://code.visualstudio.com/docs/remote/wsl-tutorial#_windows-features-dialog)
+### [Windows Features dialog “Windows 功能”对话框]({{< ref "/Remote/WSLTutorial#_windows-features-dialog" >}})
 
 In the Windows search bar, type 'features' to bring up the **Turn Windows Features on and off** dialog. Scroll down and check **Windows Subsystem for Linux**.
 
@@ -67,7 +67,7 @@ Select **OK** and you will be prompted to restart Windows.
 
 ​​	选择“确定”，系统将提示您重新启动 Windows。
 
-### [PowerShell](https://code.visualstudio.com/docs/remote/wsl-tutorial#_powershell)
+### [PowerShell]({{< ref "/Remote/WSLTutorial#_powershell" >}})
 
 If you prefer, you can open PowerShell as an Administrator and type:
 
@@ -83,7 +83,7 @@ After the command runs, you will be prompted to restart Windows.
 
 ![PowerShell prompt to restart](./WSLTutorial_img/powershell-output.png)
 
-### [Check WSL 检查 WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial#_check-wsl)
+### [Check WSL 检查 WSL]({{< ref "/Remote/WSLTutorial#_check-wsl" >}})
 
 After restarting Windows, you can check that you have WSL enabled by opening a Command Prompt and typing 'wsl'.
 
@@ -95,7 +95,7 @@ WSL is enabled, but you haven't installed a Linux distribution yet.
 
 ​​	已启用 WSL，但您尚未安装 Linux 发行版。
 
-## [Install a Linux distro 安装 Linux 发行版](https://code.visualstudio.com/docs/remote/wsl-tutorial#_install-a-linux-distro)
+## [Install a Linux distro 安装 Linux 发行版]({{< ref "/Remote/WSLTutorial#_install-a-linux-distro" >}})
 
 You install Linux distributions for WSL from the Microsoft Store. You can use the store app, or search for a Linux distro in the Windows search bar. Choose the Linux distribution you want to install (for example Ubuntu) and follow the prompts.
 
@@ -115,7 +115,7 @@ And when done, select **Launch** to get started. This will open a Linux terminal
 
 ![Linux terminal](./WSLTutorial_img/linux-terminal.png)
 
-## [Python development Python 开发](https://code.visualstudio.com/docs/remote/wsl-tutorial#_python-development)
+## [Python development Python 开发]({{< ref "/Remote/WSLTutorial#_python-development" >}})
 
 If you don't have Python already installed, run the following commands to install Python3 and pip, the package manager for Python, into your Linux installation.
 
@@ -160,7 +160,7 @@ Remember, Python is installed in the Linux distro, which means if you're editing
 
 ​​	记住，Python 已安装在 Linux 发行版中，这意味着如果您在 Windows 端编辑 Python 文件，则除非您在 Windows 上安装相同的 Python 开发堆栈，否则无法运行或调试它们。这样就违背了设置一个与所有 Python 工具和运行时隔离的 Linux 实例的目的！
 
-## [Run in WSL 在 WSL 中运行](https://code.visualstudio.com/docs/remote/wsl-tutorial#_run-in-wsl)
+## [Run in WSL 在 WSL 中运行]({{< ref "/Remote/WSLTutorial#_run-in-wsl" >}})
 
 In the WSL terminal, make sure you are in the helloWorld folder, and type in `'code .'` to launch Visual Studio Code. The `'.'` argument tells VS Code to open the current folder. If you use the [Insiders](https://code.visualstudio.com/insiders) version of VS Code, you will have to run `'code-insiders .'` instead.
 
@@ -188,7 +188,7 @@ Now, when you hover over `hello.py`, you get the proper Linux path.
 
 ![show hello.py Linux path](./WSLTutorial_img/show-linux-path.png)
 
-### [Integrated Terminal 集成终端](https://code.visualstudio.com/docs/remote/wsl-tutorial#_integrated-terminal)
+### [Integrated Terminal 集成终端]({{< ref "/Remote/WSLTutorial#_integrated-terminal" >}})
 
 Run **Terminal** > **New Terminal** (Ctrl+`) to open a new terminal instance.
 
@@ -206,9 +206,9 @@ You'll start a new instance of the bash shell in WSL, again from VS Code running
 
 ![WSL extension Status bar](./WSLTutorial_img/wsl-status-bar.png)
 
-## [Edit and debug 编辑和调试](https://code.visualstudio.com/docs/remote/wsl-tutorial#_edit-and-debug)
+## [Edit and debug 编辑和调试]({{< ref "/Remote/WSLTutorial#_edit-and-debug" >}})
 
-### [Installing the Python extension (and additional tools) 安装 Python 扩展（和附加工具）](https://code.visualstudio.com/docs/remote/wsl-tutorial#_installing-the-python-extension-and-additional-tools)
+### [Installing the Python extension (and additional tools) 安装 Python 扩展（和附加工具）]({{< ref "/Remote/WSLTutorial#_installing-the-python-extension-and-additional-tools" >}})
 
 Click on `hello.py` to open it for editing. You will be prompted with an extension recommendation, in this case to install the [Microsoft Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension, which will give you rich editing and debugging experiences. Go ahead and select **Install** and reload if prompted.
 
@@ -240,7 +240,7 @@ And when you save your file (Ctrl+S), you'll get linting errors and warnings on 
 
 ![pylint error](./WSLTutorial_img/pylint-error.png)
 
-### [Debugging 调试](https://code.visualstudio.com/docs/remote/wsl-tutorial#_debugging)
+### [Debugging 调试]({{< ref "/Remote/WSLTutorial#_debugging" >}})
 
 With your tools set up, let's take this one step further. Set a breakpoint on line 1 of hello.py by clicking in the gutter to the left of the line number or by putting the cursor on the line and pressing F9.
 
@@ -278,13 +278,13 @@ If you want to switch back to the Windows, select the **Show Local** option and 
 
 ​​	结束 WSL 连接
 
-### [Ending your WSL connection 您可以结束在 WSL 中的会话，并通过“文件”>“关闭远程连接”返回在本地运行 VS Code。](https://code.visualstudio.com/docs/remote/wsl-tutorial#_ending-your-wsl-connection)
+### [Ending your WSL connection 您可以结束在 WSL 中的会话，并通过“文件”>“关闭远程连接”返回在本地运行 VS Code。]({{< ref "/Remote/WSLTutorial#_ending-your-wsl-connection" >}})
 
 You can end your session in WSL and go back to running VS Code locally with **File** > **Close Remote Connection**.
 
 ​​	启用 WSL
 
-### [Congratulations 恭喜](https://code.visualstudio.com/docs/remote/wsl-tutorial#_congratulations)
+### [Congratulations 恭喜]({{< ref "/Remote/WSLTutorial#_congratulations" >}})
 
 Congratulations, you've successfully completed this tutorial!
 

@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [What are development containers? 什么是开发容器？](https://code.visualstudio.com/learn/develop-cloud/containers#_what-are-development-containers)
+## [What are development containers? 什么是开发容器？]({{< ref "/Learn/remotedevelopment/DevelopinContainers#_what-are-development-containers" >}})
 
 Containers are pieces of software that package code and all of the dependencies that code needs to run, including the runtime, tools, libraries, and settings. Development containers specifically let you code within this piece of software, providing a separate coding environment from your computer.
 
@@ -36,9 +36,9 @@ In the diagram below, you'll see an example of three dev containers: one for Pyt
 
 ![Container Architecture Diagram](./DevelopinContainers_img/container-architecture.png)
 
-## [Get started with dev containers in VS Code 在 VS Code 中开始使用开发容器](https://code.visualstudio.com/learn/develop-cloud/containers#_get-started-with-dev-containers-in-vs-code)
+## [Get started with dev containers in VS Code 在 VS Code 中开始使用开发容器]({{< ref "/Learn/remotedevelopment/DevelopinContainers#_get-started-with-dev-containers-in-vs-code" >}})
 
-### [Prerequisites 先决条件](https://code.visualstudio.com/learn/develop-cloud/containers#_prerequisites)
+### [Prerequisites 先决条件]({{< ref "/Learn/remotedevelopment/DevelopinContainers#_prerequisites" >}})
 
 To get started with using dev containers in VS Code, you'll need to download the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension from the VS Code Marketplace.
 
@@ -50,9 +50,9 @@ You'll also need to download [Docker](https://docs.docker.com/docker-for-windows
 
 ​​​	您还需要下载 Docker，它是构建和共享容器的行业标准。
 
-### [Sample dev containers 示例开发容器](https://code.visualstudio.com/learn/develop-cloud/containers#_sample-dev-containers)
+### [Sample dev containers 示例开发容器]({{< ref "/Learn/remotedevelopment/DevelopinContainers#_sample-dev-containers" >}})
 
-Rather than creating dev containers from scratch, Dev Containers has several ways to help you [create dev containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container) or access existing dev containers.
+Rather than creating dev containers from scratch, Dev Containers has several ways to help you [create dev containers]({{< ref "/DevContainers/CreateaDevContainer" >}}) or access existing dev containers.
 
 ​​​	Dev Containers 有多种方法可以帮助您创建开发容器或访问现有开发容器，而无需从头开始创建开发容器。
 
@@ -77,7 +77,7 @@ Below is a list of sample dev containers we'd recommend starting out with:
 - [Try Out Development Containers: Rust
   试用开发容器：Rust](https://github.com/microsoft/vscode-remote-try-rust)
 
-## [Learning resources 学习资源](https://code.visualstudio.com/learn/develop-cloud/containers#_learning-resources)
+## [Learning resources 学习资源]({{< ref "/Learn/remotedevelopment/DevelopinContainers#_learning-resources" >}})
 
 To learn how to get started with the Dev Containers extension, check out this 5-minute introductory video:
 
@@ -91,8 +91,8 @@ You can also read more in our [Development Containers in Education](https://code
 
 ​​​	您还可以在我们的教育博客文章中了解更多信息：开发容器。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/learn/develop-cloud/containers#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Learn/remotedevelopment/DevelopinContainers#_next-steps" >}})
 
-We also highly recommend checking out the step-by-step [Containers tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial).
+We also highly recommend checking out the step-by-step [Containers tutorial]({{< ref "/DevContainers/Tutorial" >}}).
 
 ​​​	我们还强烈建议您查看分步容器教程。

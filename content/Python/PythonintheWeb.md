@@ -18,7 +18,7 @@ We are happy to announce **experimental** support for running Python code on the
 
 ​​​	我们很高兴地宣布对在 Web 上运行 Python 代码的实验性支持。要试用它，请从 Marketplace 安装最新预发布版本的实验性 - Python for the Web 扩展。这项工作基于 Python 中的 WASM，目前正在开发中。要详细了解其工作原理和正在进行的进度，您可以阅读将 Python 编译到 WebAssembly (WASM)。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/python/python-web#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Python/PythonintheWeb#_prerequisites" >}})
 
 The following prerequisites are needed to use the extension:
 
@@ -30,14 +30,14 @@ The following prerequisites are needed to use the extension:
   您需要使用 GitHub 进行身份验证。
 - You need to use a browser that supports [cross-origin isolation](https://developer.chrome.com/docs/extensions/mv3/cross-origin-isolation/). The extension has been tested with the Microsoft Edge and Google Chrome browsers.
   您需要使用支持跨源隔离的浏览器。该扩展已通过 Microsoft Edge 和 Google Chrome 浏览器进行测试。
-- You need to use the insider version of [VS Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) (for example `https://insiders.vscode.dev/`)
+- You need to use the insider version of [VS Code for the Web]({{< ref "/UserGuide/VSCodefortheWeb" >}}) (for example `https://insiders.vscode.dev/`)
   您需要使用 VS Code for the Web 的内部版本（例如 `https://insiders.vscode.dev/` ）
 - Your source code must be hosted either on your local file system or a GitHub repository that is accessed through the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub) extension.
   您的源代码必须托管在本地文件系统或通过 GitHub 存储库扩展访问的 GitHub 存储库中。
-- When starting [VS Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web), you need to add the following query parameter to the end of the URL: `?vscode-coi=`.
+- When starting [VS Code for the Web]({{< ref "/UserGuide/VSCodefortheWeb" >}}), you need to add the following query parameter to the end of the URL: `?vscode-coi=`.
   启动 VS Code for the Web 时，您需要将以下查询参数添加到 URL 末尾： `?vscode-coi=` 。
 
-## [Run Hello World 运行 Hello World](https://code.visualstudio.com/docs/python/python-web#_run-hello-world)
+## [Run Hello World 运行 Hello World]({{< ref "/Python/PythonintheWeb#_run-hello-world" >}})
 
 The screenshot below shows the execution of a simple Python program in the browser. The program consists of two files `app.py` and `hello.py` stored on the local file system.
 
@@ -45,7 +45,7 @@ The screenshot below shows the execution of a simple Python program in the brows
 
 ![Execution of Python code stored on a local disk](./PythonintheWeb_img/execution-local-files.png)
 
-## [Start a REPL 启动 REPL](https://code.visualstudio.com/docs/python/python-web#_start-a-repl)
+## [Start a REPL 启动 REPL]({{< ref "/Python/PythonintheWeb#_start-a-repl" >}})
 
 The extension comes with an integrated Python REPL. To activate it, run the command **Python WASM: Start REPL**.
 
@@ -53,9 +53,9 @@ The extension comes with an integrated Python REPL. To activate it, run the comm
 
 ![Start Python Repl](./PythonintheWeb_img/repl.png)
 
-## [Debugging 调试](https://code.visualstudio.com/docs/python/python-web#_debugging)
+## [Debugging 调试]({{< ref "/Python/PythonintheWeb#_debugging" >}})
 
-There is support for debugging Python files on the Web and it uses the same UI as VS Code Desktop [debugging](https://code.visualstudio.com/docs/python/debugging). The features currently supported are:
+There is support for debugging Python files on the Web and it uses the same UI as VS Code Desktop [debugging]({{< ref "/Python/Debugging" >}}). The features currently supported are:
 
 ​​​	支持在 Web 上调试 Python 文件，并且它使用与 VS Code 桌面调试相同的 UI。当前支持的功能有：
 
@@ -76,7 +76,7 @@ The screenshot below shows an active debug session. The files are hosted directl
 
 ![Debugging a Python program](./PythonintheWeb_img/debug.png)
 
-## [Create your own Python environment 创建您自己的 Python 环境](https://code.visualstudio.com/docs/python/python-web#_create-your-own-python-environment)
+## [Create your own Python environment 创建您自己的 Python 环境]({{< ref "/Python/PythonintheWeb#_create-your-own-python-environment" >}})
 
 The extension uses a pre-configured Python environment based on the [CPython WebAssembly builds](https://github.com/tiran/cpython-wasm-test/releases). The build used is `Python-3.11.0-wasm32-wasi-16.zip`.
 
@@ -117,7 +117,7 @@ You can create your own Python environment, including source wheel Python packag
   }
   ```
 
-## [Limitations 局限性](https://code.visualstudio.com/docs/python/python-web#_limitations)
+## [Limitations 局限性]({{< ref "/Python/PythonintheWeb#_limitations" >}})
 
 The Python for the Web support doesn't provide all the features available when running source code on your local machine. The major limitations in the Python interpreter are:
 
@@ -132,13 +132,13 @@ The Python for the Web support doesn't provide all the features available when r
 - No support for native Python modules.
   不支持原生 Python 模块。
 
-## [Acknowledgment 致谢](https://code.visualstudio.com/docs/python/python-web#_acknowledgment)
+## [Acknowledgment 致谢]({{< ref "/Python/PythonintheWeb#_acknowledgment" >}})
 
 The work would have not been possible without the support of the Python community, who are building and maintaining the necessary WASM files of CPython.
 
 ​​​	如果没有 Python 社区构建和维护 CPython 的必要 WASM 文件，这项工作是不可能完成的。
 
-## [Feedback 反馈](https://code.visualstudio.com/docs/python/python-web#_feedback)
+## [Feedback 反馈]({{< ref "/Python/PythonintheWeb#_feedback" >}})
 
 If you run into issues while using the Python for the Web extension, you can enter issues in the [vscode-python-web-wasm](https://github.com/microsoft/vscode-python-web-wasm) repository.
 

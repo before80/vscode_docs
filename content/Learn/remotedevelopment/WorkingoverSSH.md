@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [What is SSH? SSH 是什么？](https://code.visualstudio.com/learn/develop-cloud/ssh-lab-machines#_what-is-ssh)
+## [What is SSH? SSH 是什么？]({{< ref "/Learn/remotedevelopment/WorkingoverSSH#_what-is-ssh" >}})
 
 SSH, or the secure shell protocol, lets you access a remote computer or virtual machine securely over a network connection.
 
@@ -32,7 +32,7 @@ In the classroom, you might SSH into lab machines to access computers with certa
 
 ​​​	在课堂上，您可能会通过 SSH 登录到实验室计算机，以访问完成作业所需的某些依赖项（如特定版本的 Python 或 C++ 编译器）、与您自己的不同的操作系统，或预先从您的教授那里加载的源代码或自动测试。
 
-## [Get started with SSH in VS Code 在 VS Code 中开始使用 SSH](https://code.visualstudio.com/learn/develop-cloud/ssh-lab-machines#_get-started-with-ssh-in-vs-code)
+## [Get started with SSH in VS Code 在 VS Code 中开始使用 SSH]({{< ref "/Learn/remotedevelopment/WorkingoverSSH#_get-started-with-ssh-in-vs-code" >}})
 
 To get started with using SSH in VS Code, you'll need to download the [Remote - SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) from the Extension Marketplace.
 
@@ -52,8 +52,8 @@ As demonstrated above, we can SSH into a more powerful virtual machine to greatl
 
 ​​​	如上所示，我们可以 SSH 到功能更强大的虚拟机，以极大地加快程序的执行时间。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/learn/develop-cloud/ssh-lab-machines#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Learn/remotedevelopment/WorkingoverSSH#_next-steps" >}})
 
-We also highly recommend checking out the step-by-step [SSH tutorial](https://code.visualstudio.com/docs/remote/ssh-tutorial).
+We also highly recommend checking out the step-by-step [SSH tutorial]({{< ref "/Remote/SSHTutorial" >}}).
 
 ​​​	我们还强烈建议您查看分步 SSH 教程。

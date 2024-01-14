@@ -14,15 +14,15 @@ draft = false
 
 
 
-This topic provides a quick overview of general C/C++ editor features, as well as some that are specific to C/C++. For more information about editing in Visual Studio Code, see [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) and [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
+This topic provides a quick overview of general C/C++ editor features, as well as some that are specific to C/C++. For more information about editing in Visual Studio Code, see [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) and [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}).
 
 ​​​	本主题快速概述了常规 C/C++ 编辑器功能，以及一些特定于 C/C++ 的功能。有关在 Visual Studio Code 中进行编辑的详细信息，请参阅基本编辑和代码导航。
 
-The C/C++ extension supports [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
+The C/C++ extension supports [Remote Development]({{< ref "/Remote/Overview" >}}).
 
 ​​​	C/C++ 扩展支持远程开发。
 
-## [Editing features 编辑功能](https://code.visualstudio.com/docs/cpp/cpp-ide#_editing-features)
+## [Editing features 编辑功能]({{< ref "/C/Editing#_editing-features" >}})
 
 The C/C++ extension for VS Code has many features that help you write code, understand it, and navigate around in your source files. To provide the best experience, the extension needs to know where it can find each header file referenced in your code. By default, the extension searches the current source directory, its sub-directories, and some platform-specific locations. If a referenced header file can't be found, VS Code displays a green squiggle underneath each #include directive that references it.
 
@@ -32,7 +32,7 @@ To specify additional include directories to be searched, place your cursor over
 
 ​​​	若要指定要搜索的其他包含目录，请将光标置于显示绿色波浪线的任何 #include 指令上，然后在出现灯泡操作时单击它。这会打开文件 `c_cpp_properties.json` 以便进行编辑；您可以在此处通过向“browse.path”属性添加更多目录，分别为每个平台配置指定其他包含目录。
 
-## [List members 列出成员](https://code.visualstudio.com/docs/cpp/cpp-ide#_list-members)
+## [List members 列出成员]({{< ref "/C/Editing#_list-members" >}})
 
 When you type a member access symbol (`.` or `->`) the editor will display a list of members. As you type additional letters, the list is filtered in real time:
 
@@ -40,13 +40,13 @@ When you type a member access symbol (`.` or `->`) the editor will display a lis
 
 ![List members](./Editing_img/list-members-cpp.png)
 
-### [Code formatting 代码格式化](https://code.visualstudio.com/docs/cpp/cpp-ide#_code-formatting)
+### [Code formatting 代码格式化]({{< ref "/C/Editing#_code-formatting" >}})
 
 The C/C++ extension for Visual Studio Code supports source code formatting using [clang-format](https://clang.llvm.org/docs/ClangFormat.html) which is included with the extension.
 
 ​​​	Visual Studio Code 的 C/C++ 扩展支持使用 clang-format 格式化源代码，clang-format 与该扩展一起提供。
 
-You can format an entire file with **Format Document** (Shift+Alt+F) or just the current selection with **Format Selection** (Ctrl+K Ctrl+F) in right-click context menu. You can also configure auto-formatting with the following [settings](https://code.visualstudio.com/docs/getstarted/settings):
+You can format an entire file with **Format Document** (Shift+Alt+F) or just the current selection with **Format Selection** (Ctrl+K Ctrl+F) in right-click context menu. You can also configure auto-formatting with the following [settings]({{< ref "/GetStarted/Settings" >}}):
 
 ​​​	您可以使用“格式化文档”（Shift+Alt+F）格式化整个文件，或在右键单击上下文菜单中使用“格式化选定内容”（Ctrl+K Ctrl+F）仅格式化当前选定内容。您还可以使用以下设置配置自动格式化：
 
@@ -55,7 +55,7 @@ You can format an entire file with **Format Document** (Shift+Alt+F) or just the
 - `editor.formatOnType` - to format as you type (triggered on the ; character).
   `editor.formatOnType` - 在键入时进行格式化（在 ; 字符上触发）。
 
-By default, the clang-format style is set to "file" which means it looks for a `.clang-format` file inside your workspace. If the `.clang-format` file is found, formatting is applied according to the settings specified in the file. If no `.clang-format` file is found in your workspace, formatting is applied based on a default style specified in the `C_Cpp.clang_format_fallbackStyle` [setting](https://code.visualstudio.com/docs/getstarted/settings) instead. Currently, the default formatting style is "Visual Studio" which is an approximation of the default code formatter in Visual Studio.
+By default, the clang-format style is set to "file" which means it looks for a `.clang-format` file inside your workspace. If the `.clang-format` file is found, formatting is applied according to the settings specified in the file. If no `.clang-format` file is found in your workspace, formatting is applied based on a default style specified in the `C_Cpp.clang_format_fallbackStyle` [setting]({{< ref "/GetStarted/Settings" >}}) instead. Currently, the default formatting style is "Visual Studio" which is an approximation of the default code formatter in Visual Studio.
 
 ​​​	默认情况下，clang-format 样式设置为“file”，这意味着它会在您的工作区内查找 `.clang-format` 文件。如果找到 `.clang-format` 文件，则会根据文件中指定的设置应用格式。如果在您的工作区中找不到 `.clang-format` 文件，则会根据 `C_Cpp.clang_format_fallbackStyle` 设置中指定的默认样式应用格式。目前，默认格式化样式为“Visual Studio”，它是 Visual Studio 中默认代码格式化程序的近似值。
 
@@ -72,7 +72,7 @@ IndentCaseLabels: false
 ColumnLimit: 0
 ```
 
-To use a different version of clang-format than the one that ships with the extension, change the `C_Cpp.clang_format_path` [setting](https://code.visualstudio.com/docs/getstarted/settings) to the path where the clang-format binary is installed.
+To use a different version of clang-format than the one that ships with the extension, change the `C_Cpp.clang_format_path` [setting]({{< ref "/GetStarted/Settings" >}}) to the path where the clang-format binary is installed.
 
 ​​​	若要使用扩展附带的 clang-format 的不同版本，请将 `C_Cpp.clang_format_path` 设置更改为安装 clang-format 二进制文件的路径。
 
@@ -84,13 +84,13 @@ For example, on the Windows platform:
   "C_Cpp.clang_format_path": "C:\\Program Files (x86)\\LLVM\\bin\\clang-format.exe"
 ```
 
-### [Enhanced semantic colorization 增强的语义着色](https://code.visualstudio.com/docs/cpp/cpp-ide#_enhanced-semantic-colorization)
+### [Enhanced semantic colorization 增强的语义着色]({{< ref "/C/Editing#_enhanced-semantic-colorization" >}})
 
 When IntelliSense is enabled, the Visual Studio Code C/C++ extension supports semantic colorization. See [Enhanced colorization](https://code.visualstudio.com/docs/cpp/colorization-cpp) for more details about setting colors for classes, functions, variables and so on.
 
 ​​​	启用 IntelliSense 时，Visual Studio Code C/C++ 扩展支持语义着色。有关为类、函数、变量等设置颜色的详细信息，请参阅增强的着色。
 
-### [Quick Info 快速信息](https://code.visualstudio.com/docs/cpp/cpp-ide#_quick-info)
+### [Quick Info 快速信息]({{< ref "/C/Editing#_quick-info" >}})
 
 You can hover over a symbol to see an inline view of its definition:
 
@@ -98,7 +98,7 @@ You can hover over a symbol to see an inline view of its definition:
 
 ![Quick info](./Editing_img/quickinfo.png)
 
-### [Peek Definition 查看定义](https://code.visualstudio.com/docs/cpp/cpp-ide#_peek-definition)
+### [Peek Definition 查看定义]({{< ref "/C/Editing#_peek-definition" >}})
 
 The **Peek Definition** feature displays a few lines of code near the definition inside a *peek window*, so that you don't have to navigate away from your current location.
 
@@ -118,7 +118,7 @@ With the peek window open, you browse the list of competing definitions to find 
 
 ​​​	在窥视窗口打开的情况下，您可以浏览竞争定义列表以找到您感兴趣的定义。如果您想导航到其中一个定义的位置，只需双击您感兴趣的定义，或双击窥视窗口左侧显示的源代码中的任意位置。
 
-## [Navigate source code 导航源代码](https://code.visualstudio.com/docs/cpp/cpp-ide#_navigate-source-code)
+## [Navigate source code 导航源代码]({{< ref "/C/Editing#_navigate-source-code" >}})
 
 The source code navigation features provided by the C/C++ extension are powerful tools for understanding and getting around in your codebase. These features are powered by tags stored in a local database of symbol information. With the C/C++ extension installed, this database is generated whenever a folder containing C++ source code files is loaded into VS Code. The database icon appears next to the active configuration name ("Win32" in the image below) while the tag-parser is generating this information.
 
@@ -130,7 +130,7 @@ The icon disappears when all the symbols have been tagged.
 
 ​​​	若要搜索当前文件中的符号，请按 Ctrl+Shift+O，然后输入要查找的符号的名称。将显示潜在匹配项列表；它会在您键入时进行筛选。从匹配项列表中选择以导航到其位置。
 
-### [Search for symbols 搜索符号](https://code.visualstudio.com/docs/cpp/cpp-ide#_search-for-symbols)
+### [Search for symbols 搜索符号]({{< ref "/C/Editing#_search-for-symbols" >}})
 
 You can search for symbols in the current file or workspace to navigate your code more quickly.
 
@@ -150,7 +150,7 @@ You can also search for symbols by accessing these commands through the **Comman
 
 ​​​	您还可以通过命令面板访问这些命令来搜索符号。使用快速打开（Ctrl+P），然后输入“@”命令来搜索当前文件，或输入“#”命令来搜索当前工作区。Ctrl+Shift+O 和 Ctrl+T 只是“@”和“#”命令的快捷方式，因此所有操作方式相同。
 
-### [Go to Definition 转到定义](https://code.visualstudio.com/docs/cpp/cpp-ide#_go-to-definition)
+### [Go to Definition 转到定义]({{< ref "/C/Editing#_go-to-definition" >}})
 
 You can also quickly navigate to where a symbol is defined by using the **Go to Definition** feature.
 
@@ -160,29 +160,29 @@ To go to a symbol's definition, place your cursor on the symbol anywhere it is u
 
 ​​​	要转到符号的定义，请将光标放在源代码中使用该符号的任何位置，然后按 F12。或者，从上下文菜单中选择“转到定义”（右键单击，然后选择“转到定义”）。如果符号只有一个定义，您将直接导航到其位置，否则将在预览窗口中显示竞争定义，如上一节所述，您必须选择要转到的定义。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/cpp-ide#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/Editing#_next-steps" >}})
 
 Read on to find out about:
 
 ​​​	继续阅读以了解：
 
 - [Configure VS Code for Windows Subsystem for Linux
-  为 Linux 的 Windows 子系统配置 VS Code](https://code.visualstudio.com/docs/cpp/config-wsl)
+  为 Linux 的 Windows 子系统配置 VS Code]({{< ref "/C/GCConWindowsSubsystemforLinux" >}})
 - [Configure VS Code for MSVC
-  为 MSVC 配置 VS Code](https://code.visualstudio.com/docs/cpp/config-msvc)
+  为 MSVC 配置 VS Code]({{< ref "/C/MicrosoftConWindows" >}})
 - [Configure VS Code for Mingw-w64 and GCC
-  为 Mingw-w64 和 GCC 配置 VS Code](https://code.visualstudio.com/docs/cpp/config-mingw)
+  为 Mingw-w64 和 GCC 配置 VS Code]({{< ref "/C/GCConWindows" >}})
 - [Configure VS Code for macOS
-  为 macOS 配置 VS Code](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+  为 macOS 配置 VS Code]({{< ref "/C/ClangonmacOS" >}})
 - [Configure IntelliSense for cross-compiling
-  配置用于交叉编译的 IntelliSense](https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation)
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn about the powerful VS Code editor.
+  配置用于交叉编译的 IntelliSense]({{< ref "/C/ConfigureIntelliSenseforcross-compiling" >}})
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn about the powerful VS Code editor.
   基本编辑 - 了解功能强大的 VS Code 编辑器。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - use tasks to build your project and more
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - use tasks to build your project and more
   任务 - 使用任务构建项目等
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - find out how to use the debugger with your project
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - find out how to use the debugger with your project
   调试 - 了解如何将调试器与项目配合使用
 
 If you have any other questions or run into any issues, please file an issue on [GitHub](https://github.com/microsoft/vscode-cpptools/issues). You may be asked to provide logging information from the extension to help diagnose the issue. See [C/C++ extension logging](https://code.visualstudio.com/docs/cpp/enable-logging-cpp) for help on providing extension logs.

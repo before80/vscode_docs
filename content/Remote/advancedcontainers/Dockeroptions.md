@@ -60,7 +60,7 @@ Continue reading to learn alternate ways you can install and use Docker or a Doc
 
 ​​	继续阅读以了解您可以安装和使用 Docker 或符合 Docker 标准的 CLI 的其他方式。
 
-## [Windows: Windows Subsystem for Linux (WSL) Windows：适用于 Linux 的 Windows 子系统 (WSL)](https://code.visualstudio.com/remote/advancedcontainers/docker-options#_windows-windows-subsystem-for-linux-wsl)
+## [Windows: Windows Subsystem for Linux (WSL) Windows：适用于 Linux 的 Windows 子系统 (WSL)]({{< ref "/Remote/advancedcontainers/Dockeroptions#_windows-windows-subsystem-for-linux-wsl" >}})
 
 On Windows, you can use Docker installed in WSL through the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension. You can reference the [Docker documentation](https://docs.docker.com/engine/install/) for installing Docker on Linux, with [specific information per distribution](https://docs.docker.com/engine/install/centos/).
 
@@ -70,7 +70,7 @@ One issue is that the `dockerd` daemon won't start automatically due to the lack
 
 ​​	一个问题是，由于缺少 `dockerd` 或任何其他系统守护程序， `systemd` 守护程序不会自动启动。在 WSL 版本 0.67.6 及更高版本（ `wsl --version` ）中，您可以启用对 `systemd` 的支持。对于较旧的 WSL 版本，您可以使用 Distrod 来创建或更新具有 `systemd` 的现有 WSL 发行版。
 
-## [macOS: Colima macOS：Colima](https://code.visualstudio.com/remote/advancedcontainers/docker-options#_macos-colima)
+## [macOS: Colima macOS：Colima]({{< ref "/Remote/advancedcontainers/Dockeroptions#_macos-colima" >}})
 
 [Colima](https://github.com/abiosoft/colima) provides container runtimes on macOS. It's recommended to use Colima v0.2.2 or later so that VS Code can properly see containers running through Colima.
 
@@ -84,13 +84,13 @@ Colima automatically sets up a `colima` [Docker context](https://docs.docker.com
 >
 > ​​	注意：Colima 使用 Alpine Linux，而 Remote - SSH 不支持 Alpine Linux。
 
-## [Linux](https://code.visualstudio.com/remote/advancedcontainers/docker-options#_linux)
+## [Linux]({{< ref "/Remote/advancedcontainers/Dockeroptions#_linux" >}})
 
 If you're using Linux on your local machine, or already have a remote Linux machine with SSH access, you can reference the [Docker documentation](https://docs.docker.com/engine/install/) for installing Docker on Linux, with [specific information per distribution](https://docs.docker.com/engine/install/centos/).
 
 ​​	如果您在本地计算机上使用 Linux，或者已经拥有具有 SSH 访问权限的远程 Linux 计算机，您可以参考 Docker 文档来安装适用于 Linux 的 Docker，其中包含针对每个发行版的具体信息。
 
-### [Cloud-Init VM](https://code.visualstudio.com/remote/advancedcontainers/docker-options#_cloudinit-vm)
+### [Cloud-Init VM]({{< ref "/Remote/advancedcontainers/Dockeroptions#_cloudinit-vm" >}})
 
 You can use the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension with Dev Containers. This enables you to have Docker installed on your remote machine, such as a Linux VM.
 
@@ -142,11 +142,11 @@ az vm create \
   --generate-ssh-keys
 ```
 
-You can learn more about using Remote - SSH with Dev Containers in the [develop on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host#_connect-using-docker-contexts) documentation.
+You can learn more about using Remote - SSH with Dev Containers in the [develop on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost#_connect-using-docker-contexts" >}}) documentation.
 
 ​​	Podman
 
-### [Podman Podman 1.9+ 与 Docker 的 CLI 命令基本兼容，因此如果您将 Docker 路径设置（通过设置编辑器中的“开发”>“容器”>“Docker 路径”）更新为 Linux 上的 ，它就会起作用。](https://code.visualstudio.com/remote/advancedcontainers/docker-options#_podman)
+### [Podman Podman 1.9+ 与 Docker 的 CLI 命令基本兼容，因此如果您将 Docker 路径设置（通过设置编辑器中的“开发”>“容器”>“Docker 路径”）更新为 Linux 上的 ，它就会起作用。]({{< ref "/Remote/advancedcontainers/Dockeroptions#_podman" >}})
 
 [Podman](https://podman.io/) 1.9+ is mostly compatible with Docker's CLI commands and therefore does work if you update the **Docker Path** setting (via **Dev > Containers: Docker Path** in the Settings editor) to `podman` on Linux.
 
@@ -154,7 +154,7 @@ You can learn more about using Remote - SSH with Dev Containers in the [develop 
 
 ![Docker Path setting](./Dockeroptions_img/docker-path-setting.png)
 
-However, certain tricks like [Docker-from-Docker do not work](https://github.com/containers/libpod/issues/4056#issuecomment-535511841) due to limitations in Podman. This affects the **Dev Containers: Try a Dev Container Sample...** and [Dev Containers: Clone Repository in Container Volume...](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume) commands.
+However, certain tricks like [Docker-from-Docker do not work](https://github.com/containers/libpod/issues/4056#issuecomment-535511841) due to limitations in Podman. This affects the **Dev Containers: Try a Dev Container Sample...** and [Dev Containers: Clone Repository in Container Volume...]({{< ref "/DevContainers/Overview#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume" >}}) commands.
 
 To work around issues with rootless Podman (for example, not respecting a non-root `"remoteUser"` and trying to install the server in `root`), you can set the following:
 
@@ -177,7 +177,7 @@ Podman also has its own implementation of the Compose Spec with [Podman Compose]
 
 ​​	Podman 还具有自己的 Compose Spec 实现，即 Podman Compose。
 
-## [Other container engines 其他容器引擎](https://code.visualstudio.com/remote/advancedcontainers/docker-options#_other-container-engines)
+## [Other container engines 其他容器引擎]({{< ref "/Remote/advancedcontainers/Dockeroptions#_other-container-engines" >}})
 
 You can open or review requests for support for other container engines through the [vscode-remote-release repository](https://github.com/microsoft/vscode-remote-release). There are already several feature requests you can explore:
 

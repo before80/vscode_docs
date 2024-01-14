@@ -22,16 +22,16 @@ In this video, we walk you through customizing Visual Studio Code using themes.
 
 
 
-## [Outline 大纲](https://code.visualstudio.com/learn/get-started/personalize#_outline)
+## [Outline 大纲]({{< ref "/Learn/getstarted/Customize#_outline" >}})
 
 - Change your UI Color Theme.
   更改您的 UI 颜色主题。
 - Change your File Icon Theme.
   更改您的文件图标主题。
 
-## [Learn more 了解更多信息](https://code.visualstudio.com/learn/get-started/personalize#_learn-more)
+## [Learn more 了解更多信息]({{< ref "/Learn/getstarted/Customize#_learn-more" >}})
 
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - View the documentation for VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - View the documentation for VS Code.
   用户界面 - 查看 VS Code 的文档。
-- [Setup overview](https://code.visualstudio.com/docs/setup/setup-overview) - Documentation for getting up and running with VS Code, including platform-specific setup.
+- [Setup overview]({{< ref "/Setup/Overview" >}}) - Documentation for getting up and running with VS Code, including platform-specific setup.
   设置概述 - VS Code 的启动和运行文档，包括特定于平台的设置。

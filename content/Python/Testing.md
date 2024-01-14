@@ -18,9 +18,9 @@ The [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-py
 
 ​​​	Python 扩展支持使用 Python 的内置 unittest 框架和 pytest 进行测试。
 
-## [A little background on unit testing 单元测试的背景知识](https://code.visualstudio.com/docs/python/testing#_a-little-background-on-unit-testing)
+## [A little background on unit testing 单元测试的背景知识]({{< ref "/Python/Testing#_a-little-background-on-unit-testing" >}})
 
-(If you're already familiar with unit testing, you can skip to the [walkthroughs](https://code.visualstudio.com/docs/python/testing#_example-test-walkthroughs).)
+(If you're already familiar with unit testing, you can skip to the [walkthroughs]({{< ref "/Python/Testing#_example-test-walkthroughs" >}}).)
 
 ​​​	（如果您已经熟悉单元测试，可以跳过演练。）
 
@@ -98,7 +98,7 @@ For a general background on unit testing, read [Unit testing](https://wikipedia.
 
 ​​​	有关单元测试的一般背景信息，请阅读维基百科上的单元测试。有关有用的单元测试示例，您可以查看 https://github.com/gwtw/py-sorting，这是一个包含不同排序算法测试的存储库。
 
-## [Example test walkthroughs 示例测试演练](https://code.visualstudio.com/docs/python/testing#_example-test-walkthroughs)
+## [Example test walkthroughs 示例测试演练]({{< ref "/Python/Testing#_example-test-walkthroughs" >}})
 
 Python tests are Python classes that reside in separate files from the code being tested. Each test framework specifies the structure and naming of tests and test files. Once you write tests and enable a test framework, VS Code locates those tests and provides you with various commands to run and debug them.
 
@@ -120,7 +120,7 @@ With this code, you can experience working with tests in VS Code as described in
 
 ​​​	使用此代码，你可以体验在 VS Code 中使用测试，如以下部分所述。
 
-## [Configure tests 配置测试](https://code.visualstudio.com/docs/python/testing#_configure-tests)
+## [Configure tests 配置测试]({{< ref "/Python/Testing#_configure-tests" >}})
 
 Once you have the Python extension installed and a Python file open within the editor, a test beaker icon will be displayed on the VS Code Activity bar. The beaker icon is for the **Test Explorer** view. When opening the Test Explorer, you will see a **Configure Tests** button if you don't have a test framework enabled. Once you select **Configure Tests**, you will be prompted to select a test framework and a folder containing the tests. If you're using unittest, you will also be asked to select the file glob pattern used to identify your test files.
 
@@ -132,7 +132,7 @@ Once you have the Python extension installed and a Python file open within the e
 
 ![Configure Python Tests button displayed in the Test Explorer when tests haven't been configured.](https://code.visualstudio.com/assets/docs/python/testing/test-explorer-no-tests.png)
 
-You can configure your tests anytime by using the **Python: Configure Tests** command from the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). You can also configure testing manually by setting either `python.testing.unittestEnabled` or `python.testing.pytestEnabled`, which can be done either in the Settings editor or in the `settings.json` file as described in the VS Code [Settings](https://code.visualstudio.com/docs/getstarted/settings) documentation. Each framework also has specific configuration settings as described under [Test configuration settings](https://code.visualstudio.com/docs/python/testing#_test-configuration-settings) for their folders and patterns.
+You can configure your tests anytime by using the **Python: Configure Tests** command from the [Command Palette]({{< ref "/GetStarted/UserInterface#_command-palette" >}}). You can also configure testing manually by setting either `python.testing.unittestEnabled` or `python.testing.pytestEnabled`, which can be done either in the Settings editor or in the `settings.json` file as described in the VS Code [Settings]({{< ref "/GetStarted/Settings" >}}) documentation. Each framework also has specific configuration settings as described under [Test configuration settings]({{< ref "/Python/Testing#_test-configuration-settings" >}}) for their folders and patterns.
 
 ​​​	您可以随时使用命令面板中的 Python：配置测试命令来配置测试。您还可以通过设置 `python.testing.unittestEnabled` 或 `python.testing.pytestEnabled` 来手动配置测试，这可以在设置编辑器中或 `settings.json` 文件中完成，如 VS Code 设置文档中所述。每个框架还具有特定配置设置，如其文件夹和模式的测试配置设置中所述。
 
@@ -146,13 +146,13 @@ If you enable pytest, VS Code prompts you to install the framework package if it
 
 ![VS Code prompt to install a test framework when enabled](https://code.visualstudio.com/assets/docs/python/testing/install-framework.png)
 
-## [Create tests 创建测试](https://code.visualstudio.com/docs/python/testing#_create-tests)
+## [Create tests 创建测试]({{< ref "/Python/Testing#_create-tests" >}})
 
 Each test framework has its own conventions for naming test files and structuring the tests within, as described in the following sections. Each case includes two test methods, one of which is intentionally set to fail for the purposes of demonstration.
 
 ​​​	每个测试框架都有自己的命名测试文件和构建内部测试的约定，如下文所述。每种情况包括两种测试方法，其中一种方法故意设置为失败以进行演示。
 
-### [Tests in unittest unittest 中的测试](https://code.visualstudio.com/docs/python/testing#_tests-in-unittest)
+### [Tests in unittest unittest 中的测试]({{< ref "/Python/Testing#_tests-in-unittest" >}})
 
 Create a file named `test_unittest.py` that contains a test class with two test methods:
 
@@ -174,7 +174,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-### [Tests in pytest pytest 中的测试](https://code.visualstudio.com/docs/python/testing#_tests-in-pytest)
+### [Tests in pytest pytest 中的测试]({{< ref "/Python/Testing#_tests-in-pytest" >}})
 
 Create a file named `test_pytest.py` that contains two test methods:
 
@@ -191,17 +191,17 @@ def test_decrement():
     assert inc_dec.decrement(3) == 4
 ```
 
-## [Test discovery 测试发现](https://code.visualstudio.com/docs/python/testing#_test-discovery)
+## [Test discovery 测试发现]({{< ref "/Python/Testing#_test-discovery" >}})
 
 By default, the Python extension attempts to discover tests once you enable a framework. You can also trigger test discovery at any time using the **Test: Refresh Tests** command from the Command Palette.
 
 ​​​	默认情况下，一旦启用框架，Python 扩展将尝试发现测试。您还可以随时使用命令面板中的“测试：刷新测试”命令触发测试发现。
 
-`python.testing.autoTestDiscoverOnSaveEnabled` is set to `true` by default, meaning that test discovery is also performed automatically whenever you add, delete, or update any Python file in the workspace. To disable this feature, set the value to `false`, which can be done either in the Settings editor or in the `settings.json` file as described in the VS Code [Settings](https://code.visualstudio.com/docs/getstarted/settings) documentation. You will need to reload the window for this setting to take effect.
+`python.testing.autoTestDiscoverOnSaveEnabled` is set to `true` by default, meaning that test discovery is also performed automatically whenever you add, delete, or update any Python file in the workspace. To disable this feature, set the value to `false`, which can be done either in the Settings editor or in the `settings.json` file as described in the VS Code [Settings]({{< ref "/GetStarted/Settings" >}}) documentation. You will need to reload the window for this setting to take effect.
 
 ​​​	 `python.testing.autoTestDiscoverOnSaveEnabled` 默认设置为 `true` ，这意味着每当您在工作区中添加、删除或更新任何 Python 文件时，也会自动执行测试发现。要禁用此功能，请将值设置为 `false` ，可以在“设置”编辑器中或 `settings.json` 文件中执行此操作，如 VS Code 设置文档中所述。您需要重新加载窗口才能使此设置生效。
 
-Test discovery applies the discovery patterns for the current framework (which can be customized using the [Test configuration settings](https://code.visualstudio.com/docs/python/testing#_test-configuration-settings)). The default behavior is as follows:
+Test discovery applies the discovery patterns for the current framework (which can be customized using the [Test configuration settings]({{< ref "/Python/Testing#_test-configuration-settings" >}})). The default behavior is as follows:
 
 ​​​	测试发现应用当前框架的发现模式（可以使用测试配置设置进行自定义）。默认行为如下：
 
@@ -229,11 +229,11 @@ If discovery fails (for example, the test framework isn't installed or you have 
 
 ![Discovery failure error messaged displayed in the Test Explorer](https://code.visualstudio.com/assets/docs/python/testing/test-discovery-error.png)
 
-Once VS Code recognizes tests, it provides several ways to run those tests as described in [Run tests](https://code.visualstudio.com/docs/python/testing#_run-tests).
+Once VS Code recognizes tests, it provides several ways to run those tests as described in [Run tests]({{< ref "/Python/Testing#_run-tests" >}}).
 
 ​​​	一旦 VS Code 识别出测试，它就会提供多种方法来运行这些测试，如在运行测试中所述。
 
-## [Run tests 运行测试](https://code.visualstudio.com/docs/python/testing#_run-tests)
+## [Run tests 运行测试]({{< ref "/Python/Testing#_run-tests" >}})
 
 You can run tests using any of the following actions:
 
@@ -292,7 +292,7 @@ VS Code also shows test results in the **Python Test Log** output panel.
 
 ![Test results in the Python Test Log output panel](https://code.visualstudio.com/assets/docs/python/testing/python-test-log-output.png)
 
-## [Run tests in parallel 并行运行测试](https://code.visualstudio.com/docs/python/testing#_run-tests-in-parallel)
+## [Run tests in parallel 并行运行测试]({{< ref "/Python/Testing#_run-tests-in-parallel" >}})
 
 Support for running tests in parallel with pytest is available through the `pytest-xdist` package. To enable parallel testing:
 
@@ -338,9 +338,9 @@ Support for running tests in parallel with pytest is available through the `pyte
 
    ​​​	运行测试，现在将并行运行这些测试。
 
-## [Debug tests 调试测试](https://code.visualstudio.com/docs/python/testing#_debug-tests)
+## [Debug tests 调试测试]({{< ref "/Python/Testing#_debug-tests" >}})
 
-You might occasionally need to step through and analyze tests in the debugger, either because the tests themselves have a code defect you need to track down or in order to better understand why an area of code being tested is failing. For more information on debugging or to understand how it works in VS Code, you can read the [Python debugging configurations](https://code.visualstudio.com/docs/python/debugging) and general VS Code [Debugging](https://code.visualstudio.com/docs/editor/debugging) articles.
+You might occasionally need to step through and analyze tests in the debugger, either because the tests themselves have a code defect you need to track down or in order to better understand why an area of code being tested is failing. For more information on debugging or to understand how it works in VS Code, you can read the [Python debugging configurations]({{< ref "/Python/Debugging" >}}) and general VS Code [Debugging]({{< ref "/UserGuide/Debugging" >}}) articles.
 
 ​​​	您可能偶尔需要在调试器中逐步执行并分析测试，原因可能是测试本身存在您需要跟踪的代码缺陷，或者为了更好地理解正在测试的代码区域为何失败。有关调试的更多信息或了解如何在 VS Code 中进行调试，您可以阅读 Python 调试配置和常规 VS Code 调试文章。
 
@@ -421,7 +421,7 @@ If you have more than one configuration entry with `"purpose": ["debug-test"]`, 
 
 ​​​	如果您有多个带有 `"purpose": ["debug-test"]` 的配置条目，则将使用第一个定义，因为我们目前不支持此请求类型的多个定义。
 
-## [Test commands 测试命令](https://code.visualstudio.com/docs/python/testing#_test-commands)
+## [Test commands 测试命令]({{< ref "/Python/Testing#_test-commands" >}})
 
 Below are all the supported commands for testing with the Python extension in VS Code. These are all found via the Command Palette:
 
@@ -448,13 +448,13 @@ Below are all the supported commands for testing with the Python extension in VS
 | **Testing: Focus on Test Explorer View 测试：聚焦于测试资源管理器视图** | Open the Test Explorer view. Similar to **Testing: Focus on Python View** on versions prior to 2021.9. 打开测试资源管理器视图。类似于测试：在 2021.9 之前的版本上关注 Python 视图。 |
 | **Test: Stop Refreshing Tests 测试：停止刷新测试**           | Cancel test discovery. 取消测试发现。                        |
 
-## [IntelliSense for pytest pytest 的 IntelliSense](https://code.visualstudio.com/docs/python/testing#_intellisense-for-pytest)
+## [IntelliSense for pytest pytest 的 IntelliSense]({{< ref "/Python/Testing#_intellisense-for-pytest" >}})
 
 [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) offers IntelliSense features that can help you work more efficiently with [pytest fixtures](https://docs.pytest.org/en/6.2.x/fixture.html) and [parameterized tests](https://docs.pytest.org/en/6.2.x/parametrize.html).
 
 ​​​	Pylance 提供 IntelliSense 功能，可以帮助您更有效地使用 pytest 夹具和参数化测试。
 
-As you're typing the parameters for your test function, Pylance will offer you a list of [completions](https://code.visualstudio.com/docs/python/editing#_autocomplete-and-intellisense) that includes argument names from `@pytest.mark.parametrize` decorators, as well as existing pytest fixtures defined in your tests file or in `conftest.py`. [Code navigation](https://code.visualstudio.com/docs/python/editing#_navigation) features such as **Go to Definition** and **Find All References** and [rename symbol refactoring](https://code.visualstudio.com/docs/editor/refactoring#_rename-symbol) are also supported.
+As you're typing the parameters for your test function, Pylance will offer you a list of [completions]({{< ref "/Python/EditingCode#_autocomplete-and-intellisense" >}}) that includes argument names from `@pytest.mark.parametrize` decorators, as well as existing pytest fixtures defined in your tests file or in `conftest.py`. [Code navigation]({{< ref "/Python/EditingCode#_navigation" >}}) features such as **Go to Definition** and **Find All References** and [rename symbol refactoring]({{< ref "/UserGuide/Refactoring#_rename-symbol" >}}) are also supported.
 
 ​​​	在键入测试函数的参数时，Pylance 会为您提供一个完成列表，其中包括来自 `@pytest.mark.parametrize` 装饰器的参数名称，以及在测试文件中或 `conftest.py` 中定义的现有 pytest 夹具。还支持代码导航功能，例如转到定义和查找所有引用以及重命名符号重构。
 
@@ -466,25 +466,25 @@ When hovering over a fixture reference or a parameterized argument reference, Py
 
 ![Pylance type inference based on the types of arguments passed to the parameterization decorator.](https://code.visualstudio.com/assets/docs/python/testing/pytest-inferred-parametrized-argument.png)
 
-Pylance also offers [code actions](https://code.visualstudio.com/docs/editor/refactoring#_code-actions--quick-fixes-and-refactorings) to add type annotations to test functions that have fixture parameters. Inlay hints for inferred fixture parameter types can also be enabled by setting `python.analysis.inlayHints.pytestParameters` to `true` in your User settings.
+Pylance also offers [code actions]({{< ref "/UserGuide/Refactoring#_code-actions--quick-fixes-and-refactorings" >}}) to add type annotations to test functions that have fixture parameters. Inlay hints for inferred fixture parameter types can also be enabled by setting `python.analysis.inlayHints.pytestParameters` to `true` in your User settings.
 
 ​​​	Pylance 还提供代码操作，以向具有夹具参数的测试函数添加类型注释。还可以通过在用户设置中将 `python.analysis.inlayHints.pytestParameters` 设置为 `true` 来启用推断的夹具参数类型的内联提示。
 
 ![Code action to add type annotation when hoving over a test function with a fixture parameter](https://code.visualstudio.com/assets/docs/python/testing/pytest-annotation-code-action.png)
 
-## [Test configuration settings 测试配置设置](https://code.visualstudio.com/docs/python/testing#_test-configuration-settings)
+## [Test configuration settings 测试配置设置]({{< ref "/Python/Testing#_test-configuration-settings" >}})
 
 The behavior of testing with Python is driven by general UI settings provided by VS Code, and settings that are specific to Python and to whichever framework you've enabled.
 
 ​​​	使用 Python 进行测试的行为由 VS Code 提供的常规 UI 设置以及特定于 Python 和已启用框架的设置驱动。
 
-### [General UI settings 常规 UI 设置](https://code.visualstudio.com/docs/python/testing#_general-ui-settings)
+### [General UI settings 常规 UI 设置]({{< ref "/Python/Testing#_general-ui-settings" >}})
 
-The settings that affect the UI of the testing features are provided by VS Code itself, and can be found in the [VS Code Settings editor](https://code.visualstudio.com/docs/getstarted/settings) when you search for "Testing".
+The settings that affect the UI of the testing features are provided by VS Code itself, and can be found in the [VS Code Settings editor]({{< ref "/GetStarted/Settings" >}}) when you search for "Testing".
 
 ​​​	影响测试功能 UI 的设置由 VS Code 本身提供，可以在搜索“测试”时在 VS Code 设置编辑器中找到。
 
-### [General Python settings 常规 Python 设置](https://code.visualstudio.com/docs/python/testing#_general-python-settings)
+### [General Python settings 常规 Python 设置]({{< ref "/Python/Testing#_general-python-settings" >}})
 
 | Setting 设置 (python.testing.) | Default 默认 | Description 说明                                             |
 | :----------------------------- | :----------- | :----------------------------------------------------------- |
@@ -493,7 +493,7 @@ The settings that affect the UI of the testing features are provided by VS Code 
 | debugPort                      | `3000`       | Port number used for debugging of unittest tests. 用于调试单元测试的端口号。 |
 | promptToConfigure              | `true`       | Specifies whether VS Code prompts to configure a test framework if potential tests are discovered. 指定 VS Code 是否在发现潜在测试时提示配置测试框架。 |
 
-### [unittest configuration settings unittest 配置设置](https://code.visualstudio.com/docs/python/testing#_unittest-configuration-settings)
+### [unittest configuration settings unittest 配置设置]({{< ref "/Python/Testing#_unittest-configuration-settings" >}})
 
 | Unittest setting Unittest 设置 (python.testing.) | Default 默认                           | Description 说明                                             |
 | :----------------------------------------------- | :------------------------------------- | :----------------------------------------------------------- |
@@ -519,7 +519,7 @@ See [unittest command-line interface](https://docs.python.org/3/library/unittest
 
 ​​​	有关可用选项的完整列表，请参阅 unittest 命令行界面。
 
-### [pytest configuration settings pytest 配置设置](https://code.visualstudio.com/docs/python/testing#_pytest-configuration-settings)
+### [pytest configuration settings pytest 配置设置]({{< ref "/Python/Testing#_pytest-configuration-settings" >}})
 
 | pytest setting pytest 设置 (python.testing.) | Default 默认 | Description 说明                                             |
 | :------------------------------------------- | :----------- | :----------------------------------------------------------- |
@@ -531,19 +531,19 @@ You can also configure pytest using a `pytest.ini` file as described on [pytest 
 
 ​​​	您还可以按照 pytest 配置中所述使用 `pytest.ini` 文件配置 pytest。
 
-> **Note** If you have the pytest-cov coverage module installed, VS Code doesn't stop at breakpoints while debugging because pytest-cov is using the same technique to access the source code being run. To prevent this behavior, include `--no-cov` in `pytestArgs` when debugging tests, for example by adding `"env": {"PYTEST_ADDOPTS": "--no-cov"}` to your debug configuration. (See [Debug Tests](https://code.visualstudio.com/docs/python/testing#_debug-tests) above about how to set up that launch configuration.) (For more information, see [Debuggers and PyCharm](https://pytest-cov.readthedocs.io/en/latest/debuggers.html) in the pytest-cov documentation.)
+> **Note** If you have the pytest-cov coverage module installed, VS Code doesn't stop at breakpoints while debugging because pytest-cov is using the same technique to access the source code being run. To prevent this behavior, include `--no-cov` in `pytestArgs` when debugging tests, for example by adding `"env": {"PYTEST_ADDOPTS": "--no-cov"}` to your debug configuration. (See [Debug Tests]({{< ref "/Python/Testing#_debug-tests" >}}) above about how to set up that launch configuration.) (For more information, see [Debuggers and PyCharm](https://pytest-cov.readthedocs.io/en/latest/debuggers.html) in the pytest-cov documentation.)
 >
 > ​​​	注意如果您安装了 pytest-cov 覆盖率模块，VS Code 在调试时不会在断点处停止，因为 pytest-cov 使用相同技术来访问正在运行的源代码。为防止出现此行为，请在调试测试时将 `--no-cov` 包含在 `pytestArgs` 中，例如通过将 `"env": {"PYTEST_ADDOPTS": "--no-cov"}` 添加到您的调试配置中。（请参阅上面的“调试测试”了解如何设置该启动配置。）（有关更多信息，请参阅 pytest-cov 文档中的“调试器和 PyCharm”。）
 
-### [IntelliSense settings IntelliSense 设置](https://code.visualstudio.com/docs/python/testing#_intellisense-settings)
+### [IntelliSense settings IntelliSense 设置]({{< ref "/Python/Testing#_intellisense-settings" >}})
 
 | IntelliSense setting IntelliSense 设置 (python.analysis.) | Default 默认 | Description 说明                                             |
 | :-------------------------------------------------------- | :----------- | :----------------------------------------------------------- |
 | inlayHints.pytestParameters                               | false        | Whether to display inlay hints for pytest fixture argument types. Accepted values are `true` or `false`. 是否为 pytest 固定参数类型显示内联提示。接受的值是 `true` 或 `false` 。 |
 
-## [See also 另请参阅](https://code.visualstudio.com/docs/python/testing#_see-also)
+## [See also 另请参阅]({{< ref "/Python/Testing#_see-also" >}})
 
-- [Python environments](https://code.visualstudio.com/docs/python/environments) - Control which Python interpreter is used for editing and debugging.
+- [Python environments]({{< ref "/Python/Environments" >}}) - Control which Python interpreter is used for editing and debugging.
   Python 环境 - 控制用于编辑和调试的 Python 解释器。
-- [Settings reference](https://code.visualstudio.com/docs/python/settings-reference) - Explore the full range of Python-related settings in VS Code.
+- [Settings reference]({{< ref "/Python/SettingsReference" >}}) - Explore the full range of Python-related settings in VS Code.
   设置参考 - 探索 VS Code 中与 Python 相关的全部设置。

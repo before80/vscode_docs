@@ -25,11 +25,11 @@ To get started with the GitHub in VS Code, you'll need to install [Git](https://
 
 ​​	要开始在 VS Code 中使用 GitHub，您需要安装 Git、创建一个 GitHub 帐户并安装 GitHub Pull Requests and Issues 扩展。在本主题中，我们将演示如何在不离开 VS Code 的情况下使用 GitHub 的部分您最喜欢的部分。
 
-If you're new to source control or want to learn more about VS Code's basic Git support, you can start with the [Source Control](https://code.visualstudio.com/docs/sourcecontrol/overview) topic.
+If you're new to source control or want to learn more about VS Code's basic Git support, you can start with the [Source Control]({{< ref "/SourceControl/Overview" >}}) topic.
 
 ​​	如果您不熟悉源代码管理或想详细了解 VS Code 的基本 Git 支持，可以从源代码管理主题开始。
 
-## [Getting started with GitHub Pull Requests and Issues 开始使用 GitHub Pull Requests and Issues](https://code.visualstudio.com/docs/sourcecontrol/github#_getting-started-with-github-pull-requests-and-issues)
+## [Getting started with GitHub Pull Requests and Issues 开始使用 GitHub Pull Requests and Issues]({{< ref "/SourceControl/CollaborateonGitHub#_getting-started-with-github-pull-requests-and-issues" >}})
 
 Once you've installed the [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension, you'll need to sign in. Follow the prompts to authenticate with GitHub in the browser and return to VS Code.
 
@@ -41,9 +41,9 @@ If you are not redirected to VS Code, you can add your authorization token manua
 
 ​​	如果您未重定向到 VS Code，可以手动添加授权令牌。在浏览器窗口中，您将收到授权令牌。复制令牌，然后切换回 VS Code。选择状态栏中的“正在登录到 github.com...”、粘贴令牌，然后按 Enter。
 
-## [Setting up a repository 设置存储库](https://code.visualstudio.com/docs/sourcecontrol/github#_setting-up-a-repository)
+## [Setting up a repository 设置存储库]({{< ref "/SourceControl/CollaborateonGitHub#_setting-up-a-repository" >}})
 
-### [Cloning a repository 克隆存储库](https://code.visualstudio.com/docs/sourcecontrol/github#_cloning-a-repository)
+### [Cloning a repository 克隆存储库]({{< ref "/SourceControl/CollaborateonGitHub#_cloning-a-repository" >}})
 
 You can search for and clone a repository from GitHub using the **Git: Clone** command in the Command Palette (Ctrl+Shift+P) or by using the **Clone Repository** button in the Source Control view (available when you have no folder open).
 
@@ -57,7 +57,7 @@ From the GitHub repository dropdown you can filter and pick the repository you w
 
 ![GitHub repository dropdown filtered on microsoft/vscode](./CollaborateonGitHub_img/github-repo-dropdown.png)
 
-### [Authenticating with an existing repository 使用现有存储库进行身份验证](https://code.visualstudio.com/docs/sourcecontrol/github#_authenticating-with-an-existing-repository)
+### [Authenticating with an existing repository 使用现有存储库进行身份验证]({{< ref "/SourceControl/CollaborateonGitHub#_authenticating-with-an-existing-repository" >}})
 
 Enabling authentication through GitHub happens when you run any Git action in VS Code that requires GitHub authentication, such as pushing to a repository that you're a member of or cloning a private repository. You don't need to have any special extensions installed for authentication; it is built into VS Code so that you can efficiently manage your repository.
 
@@ -77,13 +77,13 @@ Note that there are several ways to authenticate to GitHub, including using your
 
 ​​	请注意，有多种方法可以对 GitHub 进行身份验证，包括使用您的用户名和密码以及双重身份验证 (2FA)、个人访问令牌或 SSH 密钥。有关详细信息和每个选项的详情，请参阅关于 GitHub 身份验证。
 
-> **Note**: If you'd like to work on a repository without cloning the contents to your local machine, you can install the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension to browse and edit directly on GitHub. You can learn more below in the [GitHub Repositories extension](https://code.visualstudio.com/docs/sourcecontrol/github#_github-repositories-extension) section.
+> **Note**: If you'd like to work on a repository without cloning the contents to your local machine, you can install the [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension to browse and edit directly on GitHub. You can learn more below in the [GitHub Repositories extension]({{< ref "/SourceControl/CollaborateonGitHub#_github-repositories-extension" >}}) section.
 >
 > ​​	注意：如果您想处理存储库而不将内容克隆到本地计算机，可以安装 GitHub Repositories 扩展以直接在 GitHub 上浏览和编辑。您可以在下面的 GitHub Repositories 扩展部分中了解更多信息。
 
-## [Editor integration 编辑器集成](https://code.visualstudio.com/docs/sourcecontrol/github#_editor-integration)
+## [Editor integration 编辑器集成]({{< ref "/SourceControl/CollaborateonGitHub#_editor-integration" >}})
 
-### [Hovers 悬停](https://code.visualstudio.com/docs/sourcecontrol/github#_hovers)
+### [Hovers 悬停]({{< ref "/SourceControl/CollaborateonGitHub#_hovers" >}})
 
 When you have a repository open and a user is @-mentioned, you can hover over that username and see a GitHub-style hover.
 
@@ -97,7 +97,7 @@ There is a similar hover for #-mentioned issue numbers, full GitHub issue URLs, 
 
 ![Issue Hover](./CollaborateonGitHub_img/issue-hover.png)
 
-### [Suggestions 建议](https://code.visualstudio.com/docs/sourcecontrol/github#_suggestions)
+### [Suggestions 建议]({{< ref "/SourceControl/CollaborateonGitHub#_suggestions" >}})
 
 User suggestions are triggered by the "@" character and issue suggestions are triggered by the "#" character. Suggestions are available in the editor and in the **Source Control** view's input box.
 
@@ -105,7 +105,7 @@ User suggestions are triggered by the "@" character and issue suggestions are tr
 
 ![User and Issue suggestions](./CollaborateonGitHub_img/user-issue-suggest.gif)
 
-The issues that appear in the suggestion can be configured with the **GitHub Issues: Queries** (`githubIssues.queries`) [setting](https://code.visualstudio.com/docs/getstarted/settings). The queries use the [GitHub search syntax](https://docs.github.com/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax).
+The issues that appear in the suggestion can be configured with the **GitHub Issues: Queries** (`githubIssues.queries`) [setting]({{< ref "/GetStarted/Settings" >}}). The queries use the [GitHub search syntax](https://docs.github.com/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax).
 
 ​​	建议中显示的问题可以通过 GitHub Issues: Queries ( `githubIssues.queries` ) 设置进行配置。查询使用 GitHub 搜索语法。
 
@@ -120,7 +120,7 @@ You can also configure which files show these suggestions using the settings **G
 ]
 ```
 
-## [Pull requests 拉取请求](https://code.visualstudio.com/docs/sourcecontrol/github#_pull-requests)
+## [Pull requests 拉取请求]({{< ref "/SourceControl/CollaborateonGitHub#_pull-requests" >}})
 
 From the **Pull Requests** view you can view, manage, and create pull requests.
 
@@ -140,7 +140,7 @@ The queries used to display pull requests can be configured with the **GitHub Pu
     },
 ```
 
-### [Creating Pull Requests 创建拉取请求](https://code.visualstudio.com/docs/sourcecontrol/github#_creating-pull-requests)
+### [Creating Pull Requests 创建拉取请求]({{< ref "/SourceControl/CollaborateonGitHub#_creating-pull-requests" >}})
 
 Once you have committed changes to your fork or branch, you can use the **GitHub Pull Requests: Create Pull Request** command or the **Create Pull Request** button in the **Pull Requests** view to create a pull request.
 
@@ -170,7 +170,7 @@ The **Create Pull Request** view now enters **Review Mode**, where you can revie
 
 ​​	“创建请求拉取”视图现在进入审阅模式，您可以在其中审阅 PR 的详细信息、添加评论，并在准备好后合并 PR。在合并 PR 之后，您将可以选择删除远程和本地分支。
 
-### [Reviewing 审阅](https://code.visualstudio.com/docs/sourcecontrol/github#_reviewing)
+### [Reviewing 审阅]({{< ref "/SourceControl/CollaborateonGitHub#_reviewing" >}})
 
 Pull requests can be reviewed from the **Pull Requests** view. You can assign reviewers and labels, add comments, approve, close, and merge all from the pull request **Description**.
 
@@ -192,9 +192,9 @@ When you are done reviewing the pull request changes you can merge the PR or sel
 
 ​​	审阅完拉取请求更改后，您可以合并 PR 或选择“退出审阅模式”以返回您之前正在处理的分支。
 
-## [Issues 问题](https://code.visualstudio.com/docs/sourcecontrol/github#_issues)
+## [Issues 问题]({{< ref "/SourceControl/CollaborateonGitHub#_issues" >}})
 
-### [Creating issues 创建问题](https://code.visualstudio.com/docs/sourcecontrol/github#_creating-issues)
+### [Creating issues 创建问题]({{< ref "/SourceControl/CollaborateonGitHub#_creating-issues" >}})
 
 Issues can be created from the **+** button in the **Issues** view and by using the **GitHub Issues: Create Issue from Selection** and **GitHub Issues: Create Issue from Clipboard** commands. They can also be created using a Code Action for "TODO" comments. When creating issues, you can take the default description or select the **Edit Description** pencil icon in the upper right to bring up an editor for the issue body.
 
@@ -221,7 +221,7 @@ The default issue triggers are:
 ]
 ```
 
-### [Working on issues 处理问题](https://code.visualstudio.com/docs/sourcecontrol/github#_working-on-issues)
+### [Working on issues 处理问题]({{< ref "/SourceControl/CollaborateonGitHub#_working-on-issues" >}})
 
 From the **Issues** view, you can see your issues and work on them.
 
@@ -249,7 +249,7 @@ Once you are done working on the issue and want to commit a change, the commit m
 
 ​​	一旦您完成对问题的处理并希望提交更改，源代码管理视图中的提交消息输入框将填充一条消息，该消息可以通过 GitHub 问题：正在处理的问题格式 SCM ( `githubIssues.workingIssueFormatScm` ) 进行配置。
 
-## [GitHub Repositories extension GitHub 存储库扩展](https://code.visualstudio.com/docs/sourcecontrol/github#_github-repositories-extension)
+## [GitHub Repositories extension GitHub 存储库扩展]({{< ref "/SourceControl/CollaborateonGitHub#_github-repositories-extension" >}})
 
 The [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub) extension lets you quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code, without needing to clone the repository locally. This can be fast and convenient for many scenarios, where you just need to review source code or make a small change to a file or asset.
 
@@ -257,7 +257,7 @@ The [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=gi
 
 ![GitHub Repositories extension](./CollaborateonGitHub_img/github-repositories-extension.png)
 
-### [Opening a repository 打开存储库](https://code.visualstudio.com/docs/sourcecontrol/github#_opening-a-repository)
+### [Opening a repository 打开存储库]({{< ref "/SourceControl/CollaborateonGitHub#_opening-a-repository" >}})
 
 Once you have installed the GitHub Repositories extension, you can open a repository with the **GitHub Repositories: Open Repository...** command from the Command Palette (Ctrl+Shift+P) or by clicking the Remote indicator in the lower left of the Status bar.
 
@@ -295,7 +295,7 @@ The GitHub Repositories extension supports viewing and even committing LFS-track
 
 ​​	GitHub 存储库扩展支持查看甚至提交 LFS（大型文件系统）跟踪的文件，而无需在本地安装 Git LFS。将您希望使用 LFS 跟踪的文件类型添加到 `.gitattributes` 文件，然后使用源代码管理视图将您的更改直接提交到 GitHub。
 
-### [Switching branches 切换分支](https://code.visualstudio.com/docs/sourcecontrol/github#_switching-branches)
+### [Switching branches 切换分支]({{< ref "/SourceControl/CollaborateonGitHub#_switching-branches" >}})
 
 You can easily switch between branches by clicking on the branch indicator in the Status bar. One great feature of the GitHub Repositories extension is that you can switch branches without needing to stash uncommitted changes. The extension remembers your changes and reapplies them when you switch branches.
 
@@ -303,7 +303,7 @@ You can easily switch between branches by clicking on the branch indicator in th
 
 ![Branch indicator on the Status bar](./CollaborateonGitHub_img/branch-indicator-status-bar.png)
 
-### [Remote Explorer 远程资源管理器](https://code.visualstudio.com/docs/sourcecontrol/github#_remote-explorer)
+### [Remote Explorer 远程资源管理器]({{< ref "/SourceControl/CollaborateonGitHub#_remote-explorer" >}})
 
 You can quickly reopen remote repositories with the Remote Explorer available on the Activity bar. This view shows you the previously opened repositories and branches.
 
@@ -311,7 +311,7 @@ You can quickly reopen remote repositories with the Remote Explorer available on
 
 ![Remote Explorer view](./CollaborateonGitHub_img/github-remote-explorer.png)
 
-### [Create Pull Requests 创建拉取请求](https://code.visualstudio.com/docs/sourcecontrol/github#_create-pull-requests)
+### [Create Pull Requests 创建拉取请求]({{< ref "/SourceControl/CollaborateonGitHub#_create-pull-requests" >}})
 
 If your workflow uses Pull Requests, rather than direct commits to a repository, you can create a new PR from the Source Control view. You'll be prompted to provide a title and create a new branch.
 
@@ -319,11 +319,11 @@ If your workflow uses Pull Requests, rather than direct commits to a repository,
 
 ![Create a Pull Request button in the Source Control view](./CollaborateonGitHub_img/github-repositories-create-pull-request.png)
 
-Once you have created a Pull Request, you can use the [GitHub Pull Request and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension to review, edit, and merge your PR as described [earlier](https://code.visualstudio.com/docs/sourcecontrol/github#_pull-requests) in this topic.
+Once you have created a Pull Request, you can use the [GitHub Pull Request and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension to review, edit, and merge your PR as described [earlier]({{< ref "/SourceControl/CollaborateonGitHub#_pull-requests" >}}) in this topic.
 
 ​​	创建拉取请求后，您可以使用 GitHub 拉取请求和问题扩展来查看、编辑和合并您的 PR，如本主题前面所述。
 
-### [Virtual file system 虚拟文件系统](https://code.visualstudio.com/docs/sourcecontrol/github#_virtual-file-system)
+### [Virtual file system 虚拟文件系统]({{< ref "/SourceControl/CollaborateonGitHub#_virtual-file-system" >}})
 
 Without a repository's files on your local machine, the GitHub Repositories extension creates a virtual file system in memory so you can view file contents and make edits. Using a virtual file system means that some operations and extensions which assume local files are not enabled or have limited functionality. Features such as tasks, debugging, and integrated terminals are not enabled and you can learn about the level of support for the virtual file system via the **features are not available** link in the Remote indicator hover.
 
@@ -335,7 +335,7 @@ Extension authors can learn more about running in a virtual file system and work
 
 ​​	扩展作者可以在虚拟工作区扩展作者指南中了解有关在虚拟文件系统和工作区中运行的更多信息。
 
-### [Continue Working On... 继续处理...](https://code.visualstudio.com/docs/sourcecontrol/github#_continue-working-on)
+### [Continue Working On... 继续处理...]({{< ref "/SourceControl/CollaborateonGitHub#_continue-working-on" >}})
 
 Sometimes you'll want to switch to working on a repository in a development environment with support for a local file system and full language and development tooling. The GitHub Repositories extension makes it easy for you to:
 
@@ -354,7 +354,7 @@ To switch development environments, use the **Continue Working On...** command, 
 
 ![Continue Working On command in Remote dropdown](./CollaborateonGitHub_img/continue-working.png)
 
-If you are using the [browser-based editor](https://code.visualstudio.com/docs/remote/codespaces#_browserbased-editor), the **"Continue Working On..."** command has the options to open the repository locally or within a cloud-hosted environment in [GitHub Codespaces](https://github.com/features/codespaces).
+If you are using the [browser-based editor]({{< ref "/Remote/GitHubCodespaces#_browserbased-editor" >}}), the **"Continue Working On..."** command has the options to open the repository locally or within a cloud-hosted environment in [GitHub Codespaces](https://github.com/features/codespaces).
 
 ​​	如果您使用的是基于浏览器的编辑器，“继续处理...”命令具有在本地或 GitHub Codespaces 中的云托管环境中打开存储库的选项。
 
@@ -368,7 +368,7 @@ These changes are deleted from our service once they are applied to your target 
 
 ​​	这些更改在应用到目标开发环境后会从我们的服务中删除。如果您选择继续处理，而不处理待处理的更改，您始终可以通过配置设置 `"workbench.cloudChanges.continueOn": "prompt"` 来稍后更改此首选项。
 
-## [GitHub Copilot](https://code.visualstudio.com/docs/sourcecontrol/github#_github-copilot)
+## [GitHub Copilot]({{< ref "/SourceControl/CollaborateonGitHub#_github-copilot" >}})
 
 In VS Code, you can enhance your coding with artificial intelligence (AI), such as suggestions for lines of code or entire functions, fast documentation creation, and help creating code-related artifacts like tests.
 
@@ -380,6 +380,6 @@ In VS Code, you can enhance your coding with artificial intelligence (AI), such 
 
 [![GitHub Copilot extension in the VS Code Marketplace](./CollaborateonGitHub_img/copilot-extension.png)](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
-You can learn more about how to get started with Copilot in the [Copilot documentation](https://code.visualstudio.com/docs/editor/github-copilot).
+You can learn more about how to get started with Copilot in the [Copilot documentation]({{< ref "/UserGuide/GitHubCopilot" >}}).
 
 ​​	您可以在 Copilot 文档中了解有关如何开始使用 Copilot 的更多信息。

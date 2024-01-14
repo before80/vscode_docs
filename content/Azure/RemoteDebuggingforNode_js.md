@@ -18,7 +18,7 @@ Connect the Visual Studio Code debugger to your Node.js applications running on 
 
 ​​​	将 Visual Studio Code 调试器连接到在 Linux 上的 Azure 应用服务上运行的 Node.js 应用程序。调试器的工作方式与连接到本地 Node.js 进程时相同，包括使用断点和日志点。
 
-## [Install the extension 安装扩展](https://code.visualstudio.com/docs/azure/remote-debugging#_install-the-extension)
+## [Install the extension 安装扩展]({{< ref "/Azure/RemoteDebuggingforNode_js#_install-the-extension" >}})
 
 Remote debugging support for VS Code is provided by the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension for apps deployed to Azure. To install the Azure App Service extension, open the Extensions view by pressing Ctrl+Shift+X and search for 'app service' to filter the results. Select the Microsoft **Azure App Service** extension.
 
@@ -26,7 +26,7 @@ Remote debugging support for VS Code is provided by the [Azure App Service](http
 
 ![Select App Service extension](./RemoteDebuggingforNode_js_img/install-app-service.png)
 
-## [Connect to Azure 连接到 Azure](https://code.visualstudio.com/docs/azure/remote-debugging#_connect-to-azure)
+## [Connect to Azure 连接到 Azure]({{< ref "/Azure/RemoteDebuggingforNode_js#_connect-to-azure" >}})
 
 Once you've installed the Azure App Service extension, you'll notice there is a new **Azure** Activity Bar view. Select the Azure view and you'll see the Azure App Service Explorer.
 
@@ -42,7 +42,7 @@ Select **Sign in to Azure** in the App Service Explorer or **Azure: Sign In** fr
 >
 > ​​​	提示：如果您没有已部署到 Azure 应用服务的应用，请首先按照本教程部署一个应用。
 
-## [Start a remote debugging session 启动远程调试会话](https://code.visualstudio.com/docs/azure/remote-debugging#_start-a-remote-debugging-session)
+## [Start a remote debugging session 启动远程调试会话]({{< ref "/Azure/RemoteDebuggingforNode_js#_start-a-remote-debugging-session" >}})
 
 Right-click your app in the App Service explorer and select **Start Remote Debugging**. This process requires that the app be restarted with the debugger enabled - you'll be prompted to confirm the restart.
 
@@ -60,11 +60,11 @@ When you're ready to end your remote debugging session, disconnect from the debu
 
 ​​​	当您准备结束远程调试会话时，请像往常一样断开与调试器的连接，并确认要重新启动应用。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/azure/remote-debugging#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Azure/RemoteDebuggingforNode_js#_next-steps" >}})
 
-- [Logpoints](https://code.visualstudio.com/docs/editor/debugging#_logpoints) - Use Logpoints to log to the console without "breaking" in the debugger.
+- [Logpoints]({{< ref "/UserGuide/Debugging#_logpoints" >}}) - Use Logpoints to log to the console without "breaking" in the debugger.
   日志点 - 使用日志点记录到控制台，而无需在调试器中“中断”。
-- [Azure Extensions](https://code.visualstudio.com/docs/azure/extensions) - The VS Code Marketplace has hundreds of extensions for Azure and the cloud.
+- [Azure Extensions]({{< ref "/Azure/Extensions" >}}) - The VS Code Marketplace has hundreds of extensions for Azure and the cloud.
   Azure 扩展 - VS Code Marketplace 拥有数百个适用于 Azure 和云的扩展。
-- [Deploying to Azure](https://code.visualstudio.com/docs/azure/deployment) - Learn step-by-step how to deploy your application to Azure.
+- [Deploying to Azure]({{< ref "/Azure/Deployment" >}}) - Learn step-by-step how to deploy your application to Azure.
   在 Azure 中部署 - 逐步了解如何将应用程序部署到 Azure。

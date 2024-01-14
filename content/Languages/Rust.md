@@ -24,9 +24,9 @@ draft = false
 >
 > ​​	注意：VS Code Marketplace 中还有另一个流行的 Rust 扩展（扩展 ID：rust-lang.rust），但此扩展已弃用，rust-analyzer 是 rust-lang.org 推荐的 VS Code Rust 扩展。
 
-## [Installation 安装](https://code.visualstudio.com/docs/languages/rust#_installation)
+## [Installation 安装]({{< ref "/Languages/Rust#_installation" >}})
 
-### [1. Install Rust 1. 安装 Rust](https://code.visualstudio.com/docs/languages/rust#_1-install-rust)
+### [1. Install Rust 1. 安装 Rust]({{< ref "/Languages/Rust#_1-install-rust" >}})
 
 First you will need to have the Rust toolset installed on your machine. Rust is installed via the [rustup](https://rustup.rs/) installer, which supports installation on Windows, macOS, and Linux. Follow the rustup installation guidance for your platform, taking care to install any extra tools required to build and run Rust programs.
 
@@ -36,7 +36,7 @@ First you will need to have the Rust toolset installed on your machine. Rust is 
 >
 > ​​	注意：与在计算机上安装任何新工具集一样，您需要确保重新启动终端/命令提示符和 VS Code 实例，以便在平台的 PATH 变量中使用更新的工具集位置。
 
-### [2. Install the rust-analyzer extension 2. 安装 rust-analyzer 扩展](https://code.visualstudio.com/docs/languages/rust#_2-install-the-rustanalyzer-extension)
+### [2. Install the rust-analyzer extension 2. 安装 rust-analyzer 扩展]({{< ref "/Languages/Rust#_2-install-the-rustanalyzer-extension" >}})
 
 You can find and install the rust-analyzer extension from within VS Code via the Extensions view (Ctrl+Shift+X) and searching for 'rust-analyzer'. You should install the **Release Version**.
 
@@ -48,7 +48,7 @@ We'll discuss many of rust-analyzer features in this topic but you can also refe
 
 ​​	我们将在本主题中讨论 rust-analyzer 的许多功能，但您也可以参阅扩展的文档，网址为 https://rust-analyzer.github.io。
 
-### [Check your installation 检查您的安装](https://code.visualstudio.com/docs/languages/rust#_check-your-installation)
+### [Check your installation 检查您的安装]({{< ref "/Languages/Rust#_check-your-installation" >}})
 
 After installing Rust, you can check that everything is installed correctly by opening a new terminal/Command Prompt, and typing:
 
@@ -74,21 +74,21 @@ There are new stable versions of Rust published every 6 weeks so this is a good 
 
 ​​	每 6 周发布新的稳定版 Rust，因此这是一个好习惯。
 
-### [Local Rust documentation 本地 Rust 文档](https://code.visualstudio.com/docs/languages/rust#_local-rust-documentation)
+### [Local Rust documentation 本地 Rust 文档]({{< ref "/Languages/Rust#_local-rust-documentation" >}})
 
 When you install Rust, you also get the full Rust documentation set locally installed on your machine, which you can review by typing `rustup doc`. The Rust documentation, including [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html) and [The Cargo Book](https://doc.rust-lang.org/stable/cargo/), will open in your local browser so you can continue your Rust journey while offline.
 
 ​​	安装 Rust 时，您还可以在本地计算机上安装完整的 Rust 文档集，您可以通过键入 `rustup doc` 来查看。Rust 文档（包括《Rust 编程语言》和《Cargo 书籍》）将在您的本地浏览器中打开，以便您在离线时继续您的 Rust 之旅。
 
-## [Hello World](https://code.visualstudio.com/docs/languages/rust#_hello-world)
+## [Hello World]({{< ref "/Languages/Rust#_hello-world" >}})
 
-### [Cargo](https://code.visualstudio.com/docs/languages/rust#_cargo)
+### [Cargo]({{< ref "/Languages/Rust#_cargo" >}})
 
 When you install Rust with rustup, the toolset includes the rustc compiler, the rustfmt source code formatter, and the clippy Rust linter. You also get [Cargo](https://doc.rust-lang.org/cargo), the Rust package manager, to help download Rust dependencies and build and run Rust programs. You'll find that you end up using `cargo` for just about everything when working with Rust.
 
 ​​	使用 rustup 安装 Rust 时，该工具集包括 rustc 编译器、rustfmt 源代码格式化程序和 clippy Rust linter。您还将获得 Rust 包管理器 Cargo，以帮助下载 Rust 依赖项以及构建和运行 Rust 程序。您会发现，在使用 Rust 时，您最终会将 `cargo` 用于几乎所有内容。
 
-### [Cargo new](https://code.visualstudio.com/docs/languages/rust#_cargo-new)
+### [Cargo new]({{< ref "/Languages/Rust#_cargo-new" >}})
 
 A good way to create your first Rust program is to use Cargo to scaffold a new project by typing `cargo new`. This will create a simple Hello World program along with a default `Cargo.toml` dependency file. You pass `cargo new` the folder where you'd like to create the project.
 
@@ -111,7 +111,7 @@ cd hello_world
 code .
 ```
 
-> **Note**: Enable [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) for the new folder as you are the author. You can enable Workspace Trust for your entire project folder parent to avoid being prompted when you create new projects by checking the option to **Trust the authors of all the files in parent folder 'my_projects`**.
+> **Note**: Enable [Workspace Trust]({{< ref "/UserGuide/WorkspaceTrust" >}}) for the new folder as you are the author. You can enable Workspace Trust for your entire project folder parent to avoid being prompted when you create new projects by checking the option to **Trust the authors of all the files in parent folder 'my_projects`**.
 >
 > ​​	注意：启用新文件夹的工作区信任，因为您是作者。您可以为整个项目文件夹父级启用工作区信任，以避免在创建新项目时收到提示，方法是选中信任父文件夹“my_projects”中所有文件的作者的选项。
 
@@ -140,9 +140,9 @@ This simple Hello World program doesn't have any dependencies but you would add 
 
 ​​	这个简单的 Hello World 程序没有任何依赖项，但您可以在 `[dependencies]` 下添加 Rust 包（箱子）引用。
 
-### [Cargo build Cargo 构建](https://code.visualstudio.com/docs/languages/rust#_cargo-build)
+### [Cargo build Cargo 构建]({{< ref "/Languages/Rust#_cargo-build" >}})
 
-Cargo can be used to build your Rust project. Open a new VS Code [integrated terminal](https://code.visualstudio.com/docs/terminal/basics) (Ctrl+Shift+`) and type `cargo build`.
+Cargo can be used to build your Rust project. Open a new VS Code [integrated terminal]({{< ref "/Terminal/TerminalBasics" >}}) (Ctrl+Shift+`) and type `cargo build`.
 
 ​​	Cargo 可用于构建您的 Rust 项目。打开一个新的 VS Code 集成终端 (Ctrl+Shift+`) 并键入 `cargo build` 。
 
@@ -156,7 +156,7 @@ You will now have `target\debug` folder with build output include an executable 
 
 ​​	现在您将拥有 `target\debug` 文件夹，其中构建输出包括一个名为 `hello_world.exe` 的可执行文件。
 
-### [Running Hello World 运行 Hello World](https://code.visualstudio.com/docs/languages/rust#_running-hello-world)
+### [Running Hello World 运行 Hello World]({{< ref "/Languages/Rust#_running-hello-world" >}})
 
 Cargo can also be used to run your Rust project via `cargo run`.
 
@@ -172,7 +172,7 @@ You can also run `hello_world.exe` manually in the terminal by typing `.\target\
 
 ![Manually running hello_world.exe output in the integrated terminal](./Rust_img/cargo-run.png)
 
-## [IntelliSense](https://code.visualstudio.com/docs/languages/rust#_intellisense)
+## [IntelliSense]({{< ref "/Languages/Rust#_intellisense" >}})
 
 IntelliSense features are provided by the Rust language server, [rust-analyzer](https://github.com/rust-lang/rust-analyzer/releases), which provides detailed code information and smart suggestions.
 
@@ -184,9 +184,9 @@ When you first open a Rust project, you can watch rust-analyzer's progress in th
 
 ![rust-analyzer in progress status in the VS Code Status bar](./Rust_img/rust-analyzer-status-bar.png)
 
-### [Inlay hints 内联提示](https://code.visualstudio.com/docs/languages/rust#_inlay-hints)
+### [Inlay hints 内联提示]({{< ref "/Languages/Rust#_inlay-hints" >}})
 
-One of the first things you may notice is rust-analyzer providing [inlay hints](https://code.visualstudio.com/docs/editor/editingevolved#_inlay-hints) to show inferred types, return values, named parameters in light text in the editor.
+One of the first things you may notice is rust-analyzer providing [inlay hints]({{< ref "/UserGuide/CodeNavigation#_inlay-hints" >}}) to show inferred types, return values, named parameters in light text in the editor.
 
 ​​	您可能注意到的第一件事是 rust-analyzer 提供内联提示，以在编辑器中以浅色文本显示推断类型、返回值和命名参数。
 
@@ -196,7 +196,7 @@ While inlay hints can be helpful for understanding your code, you can also confi
 
 ​​	虽然内联提示有助于理解您的代码，但您也可以通过编辑器 > 内联提示：启用设置 ( `editor.inlayHints.enabled` ) 配置该功能。
 
-### [Hover information 悬停信息](https://code.visualstudio.com/docs/languages/rust#_hover-information)
+### [Hover information 悬停信息]({{< ref "/Languages/Rust#_hover-information" >}})
 
 Hovering on any variable, function, type, or keyword will give you information on that item such as documentation, signature, etc. You can also jump to the type definition in your own code or the standard Rust libraries.
 
@@ -204,7 +204,7 @@ Hovering on any variable, function, type, or keyword will give you information o
 
 ![Hover information for the Rust String type](./Rust_img/hover.png)
 
-### [Auto completions 自动完成](https://code.visualstudio.com/docs/languages/rust#_auto-completions)
+### [Auto completions 自动完成]({{< ref "/Languages/Rust#_auto-completions" >}})
 
 As you type in a Rust file, IntelliSense provides you with suggested completions and parameter hints.
 
@@ -216,7 +216,7 @@ As you type in a Rust file, IntelliSense provides you with suggested completions
 >
 > ​​	提示：使用 Ctrl+Space 手动触发建议。
 
-## [Semantic syntax highlighting 语义语法突出显示](https://code.visualstudio.com/docs/languages/rust#_semantic-syntax-highlighting)
+## [Semantic syntax highlighting 语义语法突出显示]({{< ref "/Languages/Rust#_semantic-syntax-highlighting" >}})
 
 rust-analyzer is able to use [semantic syntax highlighting](https://github.com/microsoft/vscode/wiki/Semantic-Highlighting-Overview) and styling due to its rich understanding of a project source code. For example, you may have noticed that mutable variables are underlined in the editor.
 
@@ -224,7 +224,7 @@ rust-analyzer is able to use [semantic syntax highlighting](https://github.com/m
 
 ![Mutable variable underline in the editor](./Rust_img/mutable-underline.png)
 
-Being able to quickly tell which Rust variables are mutable or not can help your understanding of source code, but you can also change the styling with VS Code `editor.semanticTokenColorCustomizations` setting in your user [settings](https://code.visualstudio.com/docs/getstarted/settings).
+Being able to quickly tell which Rust variables are mutable or not can help your understanding of source code, but you can also change the styling with VS Code `editor.semanticTokenColorCustomizations` setting in your user [settings]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	能够快速分辨哪些 Rust 变量是可变的，哪些不是，有助于您理解源代码，但您也可以通过用户设置中的 VS Code `editor.semanticTokenColorCustomizations` 设置更改样式。
 
@@ -248,7 +248,7 @@ You can learn more about rust-analyzer's semantic syntax customizations in the [
 
 ​​	您可以在 rust-analyzer 文档的编辑器功能部分中了解有关 rust-analyzer 语义语法自定义的更多信息。
 
-## [Code navigation 代码导航](https://code.visualstudio.com/docs/languages/rust#_code-navigation)
+## [Code navigation 代码导航]({{< ref "/Languages/Rust#_code-navigation" >}})
 
 Code navigation features are available in the context menu in the editor.
 
@@ -272,7 +272,7 @@ You can navigate via symbol search using the **Go to Symbol** commands from the 
 - Go to Symbol in Workspace - Ctrl+T
   转到工作区中的符号 - Ctrl+T
 
-## [Linting](https://code.visualstudio.com/docs/languages/rust#_linting)
+## [Linting]({{< ref "/Languages/Rust#_linting" >}})
 
 The Rust toolset includes linting, provided by rustc and clippy, to detect issues with your source code.
 
@@ -284,7 +284,7 @@ The rustc linter, enabled by default, detects basic Rust errors, but you can use
 
 ​​	默认启用的 rustc linter 可检测基本的 Rust 错误，但你可以使用 clippy 来获得更多 lints。要启用 rust-analyzer 中的 clippy 集成，请将 Rust-analyzer > 检查：命令 ( `rust-analyzer.check.command` ) 设置更改为 `clippy` ，而不是默认的 `check` 。现在，当你保存文件时，rust-analyzer 扩展程序将运行 `cargo clippy` ，并在编辑器和问题视图中直接显示 clippy 警告和错误。
 
-## [Quick Fixes 快速修复](https://code.visualstudio.com/docs/languages/rust#_quick-fixes)
+## [Quick Fixes 快速修复]({{< ref "/Languages/Rust#_quick-fixes" >}})
 
 When the linter finds errors and warnings in your source code, rust-analyzer can often provide suggested Quick Fixes (also called Code Actions), which are available via a light bulb hover in the editor. You can quickly open available Quick Fixes via the Ctrl+..
 
@@ -300,7 +300,7 @@ The command highlights the source code that will be refactored or fixed with Qui
 
 ![Quick Fixes for greeting unused boolean variable](./Rust_img/quick-fixes.png)
 
-## [Refactoring 重构](https://code.visualstudio.com/docs/languages/rust#_refactoring)
+## [Refactoring 重构]({{< ref "/Languages/Rust#_refactoring" >}})
 
 Due to rust-analyzer's semantic understanding of your source code, it can also provide smart renames, across your Rust files. With your cursor on a variable, select **Rename Symbol** from the context menu, Command Palette, or via F2.
 
@@ -325,7 +325,7 @@ Here are just a few of the refactorings available:
 - Add import
   添加导入
 
-## [Formatting 格式化](https://code.visualstudio.com/docs/languages/rust#_formatting)
+## [Formatting 格式化]({{< ref "/Languages/Rust#_formatting" >}})
 
 The Rust toolset includes a formatter, [rustfmt](https://github.com/rust-lang/rustfmt), which can format your source code to conform to Rust conventions. You can format your Rust file using Shift+Alt+F or by running the **Format Document** command from the **Command Palette** or the context menu in the editor.
 
@@ -335,13 +335,13 @@ You also have the option to run the formatter on each save (**Editor: Format On 
 
 ​​	rust-analyzer 扩展支持在 VS Code 中调试 Rust。
 
-## [Debugging 调试](https://code.visualstudio.com/docs/languages/rust#_debugging)
+## [Debugging 调试]({{< ref "/Languages/Rust#_debugging" >}})
 
 The rust-analyzer extension supports debugging Rust from within VS Code.
 
 ​​	安装调试支持
 
-### [Install debugging support 要开始调试，您首先需要安装两个带调试支持的语言扩展之一：](https://code.visualstudio.com/docs/languages/rust#_install-debugging-support)
+### [Install debugging support 要开始调试，您首先需要安装两个带调试支持的语言扩展之一：]({{< ref "/Languages/Rust#_install-debugging-support" >}})
 
 To start debugging, you will first need to install one of two language extension with debugging support:
 
@@ -358,7 +358,7 @@ If you forget to install one of these extensions, rust-analyzer will provide a n
 
 ![rust-analyzer notification to install a debugging extension](./Rust_img/install-debugging-extensions.png)
 
-### [Using Rust Analyzer: Debug](https://code.visualstudio.com/docs/languages/rust#_using-rust-analyzer-debug)
+### [Using Rust Analyzer: Debug]({{< ref "/Languages/Rust#_using-rust-analyzer-debug" >}})
 
 The rust-analyzer extension has basic debugging support via the **Rust Analyzer: Debug** command available in the Command Palette (Ctrl+Shift+P) and the **Run|Debug** CodeLens in the editor.
 
@@ -386,7 +386,7 @@ Let's debug the Hello World program, we created earlier. First we will set a bre
 
    ![Debug session stopped at breakpoint](./Rust_img/debug-hello-world.png)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/languages/rust#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Languages/Rust#_next-steps" >}})
 
 This has been a brief overview showing the rust-analyzer extension features within VS Code. For more information, see the details provided in the Rust Analyzer extension [User Manual](https://rust-analyzer.github.io/manual.html), including how to tune specific [VS Code editor](https://rust-analyzer.github.io/manual.html#vs-code-2) configurations.
 
@@ -404,16 +404,16 @@ If you'd like to learn more about VS Code, try these topics:
 
 ​​	如果您想详细了解 VS Code，请尝试以下主题：
 
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - A quick introduction to the basics of the VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - A quick introduction to the basics of the VS Code editor.
   基本编辑 - VS Code 编辑器的基础知识快速入门。
-- [Install an Extension](https://code.visualstudio.com/docs/editor/extension-marketplace) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).
+- [Install an Extension]({{< ref "/UserGuide/ExtensionMarketplace" >}}) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).
   安装扩展 - 了解市场中提供的其他扩展。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/languages/rust#_common-questions)
+## [Common questions 常见问题]({{< ref "/Languages/Rust#_common-questions" >}})
 
-### [Linker errors 链接器错误](https://code.visualstudio.com/docs/languages/rust#_linker-errors)
+### [Linker errors 链接器错误]({{< ref "/Languages/Rust#_linker-errors" >}})
 
 If you see linker errors such as **"error: linker `link.exe` not found"** when you try to build your Rust program, you may be missing the necessary C/C++ toolset. Depending on your platform, you will need to install a toolset with a C/C++ linker to combine the Rust compiler output.
 

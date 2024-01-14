@@ -110,9 +110,9 @@ Start your journey using Visual Studio Code with this set of introductory videos
   Duration6 min
   6 分钟minutes
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/getstarted/introvideos#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/GetStarted/IntroVideos#_troubleshooting" >}})
 
-### [Videos won't play on Linux 视频无法在 Linux 上播放](https://code.visualstudio.com/docs/getstarted/introvideos#_videos-wont-play-on-linux)
+### [Videos won't play on Linux 视频无法在 Linux 上播放]({{< ref "/GetStarted/IntroVideos#_videos-wont-play-on-linux" >}})
 
 You may not have the correct multimedia codecs installed for your Linux distribution. For example, on Ubuntu, you may need to install `ubuntu-restricted-extras` to get the necessary codecs to play the videos.
 

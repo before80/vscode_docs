@@ -18,7 +18,7 @@ Check out previous talks about using VS Code in classrooms or other education sc
 
 ​​​	了解有关在课堂或其他教育场景中使用 VS Code 的先前讨论。
 
-## [Ignite Conference 2020 Ignite 大会 2020](https://code.visualstudio.com/learn/educators/webinars#_ignite-conference-2020)
+## [Ignite Conference 2020 Ignite 大会 2020]({{< ref "/Learn/educatorresources/Webinars#_ignite-conference-2020" >}})
 
 With Visual Studio Code, you can code from anywhere - including your own browser! We'll show you how to start in any programming language you like, personalize the editor to fit your style, and even invite your peers to code with you in real time.
 

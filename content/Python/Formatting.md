@@ -18,11 +18,11 @@ Formatting makes source code easier to read by human beings. By enforcing partic
 
 ​​​	格式化使源代码更易于人类阅读。通过强制执行特定规则和约定（例如行距、缩进和运算符周围的间距），代码在视觉上变得更有条理和易于理解。您可以在 autopep8 页面上查看示例。请记住，格式化不会影响代码本身的功能。
 
-[Linting](https://code.visualstudio.com/docs/python/linting) helps to prevent errors by analyzing code for common syntactical, stylistic, and functional errors and unconventional programming practices. Although there is a little overlap between formatting and linting, the two capabilities are complementary.
+[Linting]({{< ref "/Python/Linting" >}}) helps to prevent errors by analyzing code for common syntactical, stylistic, and functional errors and unconventional programming practices. Although there is a little overlap between formatting and linting, the two capabilities are complementary.
 
 ​​​	通过分析代码中的常见语法、风格和功能错误以及非常规编程实践，Linting 有助于防止错误。尽管格式化和 linting 之间存在一些重叠，但这两个功能是互补的。
 
-## [Choose a formatter 选择格式化程序](https://code.visualstudio.com/docs/python/formatting#_choose-a-formatter)
+## [Choose a formatter 选择格式化程序]({{< ref "/Python/Formatting#_choose-a-formatter" >}})
 
 Install the formatting tool of your choice from the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode).
 
@@ -59,7 +59,7 @@ Furthermore, below are formatter extensions that support import sorting:
 >
 > ​​​	注意：如果您在上面的表格或市场中找不到您喜欢的格式化程序，您可以通过扩展来添加对它的支持。您可以使用 Python 扩展模板将新的 Python 工具集成到 VS Code 中。
 
-## [Set a default formatter 设置默认格式化程序](https://code.visualstudio.com/docs/python/formatting#_set-a-default-formatter)
+## [Set a default formatter 设置默认格式化程序]({{< ref "/Python/Formatting#_set-a-default-formatter" >}})
 
 Once you install a formatter extension, you can select it as the default formatter for Python files in VS Code by following the steps below:
 
@@ -108,7 +108,7 @@ For example, to set Ruff as your preferred import sorter, you can add the follow
 }
 ```
 
-## [Format your code 格式化您的代码](https://code.visualstudio.com/docs/python/formatting#_format-your-code)
+## [Format your code 格式化您的代码]({{< ref "/Python/Formatting#_format-your-code" >}})
 
 You can format your code by right-clicking on the editor and selecting **Format Document**, or by using the Shift+Alt+F keyboard shortcut.
 
@@ -124,7 +124,7 @@ You can also add the following setting to your User `settings.json` file to enab
   }
 ```
 
-## [General formatting settings 常规格式化设置](https://code.visualstudio.com/docs/python/formatting#_general-formatting-settings)
+## [General formatting settings 常规格式化设置]({{< ref "/Python/Formatting#_general-formatting-settings" >}})
 
 Each formatter extension may have its own settings, but the ones below are supported by both [autopep8](https://marketplace.visualstudio.com/items?itemName=ms-python.autopep8) and [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter):
 
@@ -138,7 +138,7 @@ Each formatter extension may have its own settings, but the ones below are suppo
 | interpreter 解释器         | `[]`                 | When set to a path to a Python executable, the extension will use that to launch the formatter server and its subprocesses. 当设置为 Python 可执行文件的路径时，扩展程序将使用该路径启动格式化程序服务器及其子进程。 |
 | showNotifications 显示通知 | `off`                | Controls when notifications are displayed by this extension. Supported values are `off`, `always`, `onError`, and `onWarning`. 控制此扩展程序何时显示通知。支持的值为 `off` 、 `always` 、 `onError` 和 `onWarning` 。 |
 
-## [Troubleshoot formatting 解决格式化问题](https://code.visualstudio.com/docs/python/formatting#_troubleshoot-formatting)
+## [Troubleshoot formatting 解决格式化问题]({{< ref "/Python/Formatting#_troubleshoot-formatting" >}})
 
 If formatting fails, check the following possible causes:
 
@@ -146,7 +146,7 @@ If formatting fails, check the following possible causes:
 
 | Problem 问题                                                 | Solution 解决方案                                            |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| There are multiple formatters available for Python files. Python 文件有多种可用的格式化程序。 | Set the default formatter by following the instructions in [the section above](https://code.visualstudio.com/docs/python/formatting#_set-a-default-formatter). 按照上面部分中的说明设置默认格式化程序。 |
+| There are multiple formatters available for Python files. Python 文件有多种可用的格式化程序。 | Set the default formatter by following the instructions in [the section above]({{< ref "/Python/Formatting#_set-a-default-formatter" >}}). 按照上面部分中的说明设置默认格式化程序。 |
 | Custom arguments for the formatter are incorrect. 格式化程序的自定义参数不正确。 | Check that the appropriate `<formatter>.path` setting does not contain arguments, and that `<formatter>.args` contains a list of individual top-level argument elements. 检查相应的 `<formatter>.path` 设置是否不包含参数，以及 `<formatter>.args` 是否包含单独的顶级参数元素列表。 |
 | The **Format Selection** command fails when using Black Formatter. 使用 Black 格式化程序时，格式选择命令会失败。 | `black` does not support formatting sections of code. To work around this limitation, you can disable format on paste and set `formatOnSave` to format the whole file with the following settings: `"[python]": {"editor.formatOnPaste": false, "editor.formatOnSaveMode": "file"}`. `black` 不支持格式化代码部分。要解决此限制，您可以禁用粘贴时格式化，并将 `formatOnSave` 设置为使用以下设置格式化整个文件： `"[python]": {"editor.formatOnPaste": false, "editor.formatOnSaveMode": "file"}` 。 |
 | The document isn't formatted. 文档未格式化。                 | Check the formatter extension's Output channel to understand why the formatter has failed (run the **Output: Focus on Output** command in the Command Palette and then select the formatter extension channel). 检查格式化程序扩展的输出通道以了解格式化程序失败的原因（在命令面板中运行输出：关注输出命令，然后选择格式化程序扩展通道）。 |
@@ -155,15 +155,15 @@ If formatting fails, check the following possible causes:
 >
 > ​​​	注意：如果您在上面未找到您首选的格式化程序，您可以通过扩展添加支持。Python 扩展模板可以轻松地将新的 Python 工具集成到 VS Code 中。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/formatting#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Python/Formatting#_next-steps" >}})
 
-- [Debugging](https://code.visualstudio.com/docs/python/debugging) - Learn to debug Python both locally and remotely.
+- [Debugging]({{< ref "/Python/Debugging" >}}) - Learn to debug Python both locally and remotely.
   调试 - 了解如何在本地和远程调试 Python。
-- [Testing](https://code.visualstudio.com/docs/python/testing) - Configure test environments and discover, run, and debug tests.
+- [Testing]({{< ref "/Python/Testing" >}}) - Configure test environments and discover, run, and debug tests.
   测试 - 配置测试环境并发现、运行和调试测试。
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn about the powerful VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn about the powerful VS Code editor.
   基本编辑 - 了解功能强大的 VS Code 编辑器。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。
 - [Python Extension Template](https://code.visualstudio.com/api/advanced-topics/python-extension-template) - Create an extension to integrate your favorite linter into VS Code.
   Python 扩展模板 - 创建一个扩展，将您最喜欢的 linter 集成到 VS Code 中。

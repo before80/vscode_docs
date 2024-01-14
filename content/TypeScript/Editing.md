@@ -14,11 +14,11 @@ draft = false
 
 
 
-Visual Studio Code has great editing support for [TypeScript](https://www.typescriptlang.org/). This article goes into depth on the editing and programming language features that come built-in to VS Code. If you'd like to know more about general editing features in VS Code, such as keyboard shortcuts, multi-cursors, search, and find and replace, you can read [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics).
+Visual Studio Code has great editing support for [TypeScript](https://www.typescriptlang.org/). This article goes into depth on the editing and programming language features that come built-in to VS Code. If you'd like to know more about general editing features in VS Code, such as keyboard shortcuts, multi-cursors, search, and find and replace, you can read [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}).
 
 ​​	Visual Studio Code 对 TypeScript 具有强大的编辑支持。本文深入介绍了 VS Code 中内置的编辑和编程语言功能。如果您想详细了解 VS Code 中的常规编辑功能，例如键盘快捷方式、多光标、搜索以及查找和替换，可以阅读基本编辑。
 
-## [IntelliSense](https://code.visualstudio.com/docs/typescript/typescript-editing#_intellisense)
+## [IntelliSense]({{< ref "/TypeScript/Editing#_intellisense" >}})
 
 IntelliSense shows you intelligent code completion, hover information, and signature help so that you can write code more quickly and correctly.
 
@@ -30,7 +30,7 @@ VS Code provides IntelliSense for individual TypeScript files as well as TypeScr
 
 ​​	VS Code 为单独的 TypeScript 文件以及 TypeScript `tsconfig.json` 项目提供 IntelliSense。
 
-### [Hover information 悬停信息](https://code.visualstudio.com/docs/typescript/typescript-editing#_hover-information)
+### [Hover information 悬停信息]({{< ref "/TypeScript/Editing#_hover-information" >}})
 
 Hover over a TypeScript symbol to quickly see its type information and relevant documentation:
 
@@ -42,7 +42,7 @@ You can also show the hover information at the current cursor position with the 
 
 ​​	您还可以使用 Ctrl+K Ctrl+I 键盘快捷方式在当前光标位置显示悬停信息。
 
-### [Signature help 签名帮助](https://code.visualstudio.com/docs/typescript/typescript-editing#_signature-help)
+### [Signature help 签名帮助]({{< ref "/TypeScript/Editing#_signature-help" >}})
 
 As you write a TypeScript function call, VS Code shows information about the function signature and highlights the parameter that you are currently completing:
 
@@ -54,23 +54,23 @@ Signature help is shown automatically when you type a `(` or `,` within a functi
 
 ​​	在函数调用中键入 `(` 或 `,` 时，会自动显示签名帮助。使用 Ctrl+Shift+Space 手动触发签名帮助。
 
-## [Snippets 代码片段](https://code.visualstudio.com/docs/typescript/typescript-editing#_snippets)
+## [Snippets 代码片段]({{< ref "/TypeScript/Editing#_snippets" >}})
 
-VS Code includes basic TypeScript [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) that are suggested as you type;
+VS Code includes basic TypeScript [snippets]({{< ref "/UserGuide/Snippets" >}}) that are suggested as you type;
 
 ​​	VS Code 包含基本 TypeScript 代码段，在您键入时会建议使用；
 
 ![Typescript snippets](./Editing_img/ts-snippets.png)
 
-You can install extensions to get additional snippets or define your own snippets for TypeScript. See [User Defined Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) for more information.
+You can install extensions to get additional snippets or define your own snippets for TypeScript. See [User Defined Snippets]({{< ref "/UserGuide/Snippets" >}}) for more information.
 
 ​​	您可以安装扩展以获取其他代码段或定义您自己的 TypeScript 代码段。有关更多信息，请参阅用户定义的代码段。
 
-> **Tip**: You can disable snippets by setting `editor.snippetSuggestions` to `"none"` in your [settings](https://code.visualstudio.com/docs/getstarted/settings) file. If you'd like to see snippets, you can specify the order relative to suggestions; at the top (`"top"`), at the bottom (`"bottom"`), or inlined ordered alphabetically (`"inline"`). The default is `"inline"`.
+> **Tip**: You can disable snippets by setting `editor.snippetSuggestions` to `"none"` in your [settings]({{< ref "/GetStarted/Settings" >}}) file. If you'd like to see snippets, you can specify the order relative to suggestions; at the top (`"top"`), at the bottom (`"bottom"`), or inlined ordered alphabetically (`"inline"`). The default is `"inline"`.
 >
 > ​​	提示：您可以通过在设置文件中将 `editor.snippetSuggestions` 设置为 `"none"` 来禁用代码段。如果您想查看代码段，您可以指定相对于建议的顺序；在顶部 ( `"top"` )、底部 ( `"bottom"` ) 或内联按字母顺序排列 ( `"inline"` )。默认值为 `"inline"` 。
 
-## [Inlay hints 内联提示](https://code.visualstudio.com/docs/typescript/typescript-editing#_inlay-hints)
+## [Inlay hints 内联提示]({{< ref "/TypeScript/Editing#_inlay-hints" >}})
 
 Inlay hints add additional inline information to source code to help you understand what the code does.
 
@@ -137,7 +137,7 @@ Setting: `typescript.inlayHints.functionLikeReturnTypes.enabled`
 
 ![Return type inlay hints](./Editing_img/inlay-return-type.png)
 
-## [References CodeLens 引用 CodeLens](https://code.visualstudio.com/docs/typescript/typescript-editing#_references-codelens)
+## [References CodeLens 引用 CodeLens]({{< ref "/TypeScript/Editing#_references-codelens" >}})
 
 The TypeScript references CodeLens displays an inline count of reference for classes, interfaces, methods, properties, and exported objects:
 
@@ -155,7 +155,7 @@ Click on the reference count to quickly browse a list of references:
 
 ![TypeScript references CodeLens peek](./Editing_img/ts-references-code-lens-peek.png)
 
-## [Implementations CodeLens 实现 CodeLens](https://code.visualstudio.com/docs/typescript/typescript-editing#_implementations-codelens)
+## [Implementations CodeLens 实现 CodeLens]({{< ref "/TypeScript/Editing#_implementations-codelens" >}})
 
 The TypeScript implementations CodeLens displays the number of implementors of an interface:
 
@@ -171,13 +171,13 @@ As with the references CodeLens, you can click on the implementation count to qu
 
 ​​	与引用 CodeLens 一样，您可以单击实现计数以快速浏览所有实现的列表。
 
-## [Auto imports 自动导入](https://code.visualstudio.com/docs/typescript/typescript-editing#_auto-imports)
+## [Auto imports 自动导入]({{< ref "/TypeScript/Editing#_auto-imports" >}})
 
 Automatic imports speed up coding by helping you find available symbols and automatically adding imports for them.
 
 ​​	自动导入通过帮助您查找可用符号并自动为它们添加导入来加快编码速度。
 
-Just start typing to see [suggestions](https://code.visualstudio.com/docs/typescript/typescript-editing#_intellisense) for all available TypeScript symbols in your current project.
+Just start typing to see [suggestions]({{< ref "/TypeScript/Editing#_intellisense" >}}) for all available TypeScript symbols in your current project.
 
 ​​	只需开始键入即可查看当前项目中所有可用 TypeScript 符号的建议。
 
@@ -193,7 +193,7 @@ You can disable auto imports by setting `"typescript.suggest.autoImports": false
 
 ​​	您可以通过设置 `"typescript.suggest.autoImports": false` 来禁用自动导入。
 
-## [JSX and auto closing tags JSX 和自动关闭标签](https://code.visualstudio.com/docs/typescript/typescript-editing#_jsx-and-auto-closing-tags)
+## [JSX and auto closing tags JSX 和自动关闭标签]({{< ref "/TypeScript/Editing#_jsx-and-auto-closing-tags" >}})
 
 VS Code's TypeScript features also work with [JSX](https://reactjs.org/docs/introducing-jsx.html). To use JSX in your TypeScript, use the `*.tsx` file extension instead of the normal `*.ts`:
 
@@ -213,9 +213,9 @@ Set `"typescript.autoClosingTags"` to `false` to disable JSX tag closing.
 
 ​​	将 `"typescript.autoClosingTags"` 设置为 `false` 以禁用 JSX 标签关闭。
 
-## [JSDoc support JSDoc 支持](https://code.visualstudio.com/docs/typescript/typescript-editing#_jsdoc-support)
+## [JSDoc support JSDoc 支持]({{< ref "/TypeScript/Editing#_jsdoc-support" >}})
 
-VS Code's TypeScript IntelliSense understands many standard [JSDoc](https://jsdoc.app/) annotations, and uses them to show typing information and documentation in [suggestions](https://code.visualstudio.com/docs/typescript/typescript-editing#_intellisense), [hover information](https://code.visualstudio.com/docs/typescript/typescript-editing#_hover-information), and [signature help](https://code.visualstudio.com/docs/typescript/typescript-editing#_signature-help).
+VS Code's TypeScript IntelliSense understands many standard [JSDoc](https://jsdoc.app/) annotations, and uses them to show typing information and documentation in [suggestions]({{< ref "/TypeScript/Editing#_intellisense" >}}), [hover information]({{< ref "/TypeScript/Editing#_hover-information" >}}), and [signature help]({{< ref "/TypeScript/Editing#_signature-help" >}}).
 
 ​​	VS Code 的 TypeScript IntelliSense 了解许多标准 JSDoc 注释，并使用它们在建议、悬停信息和签名帮助中显示类型信息和文档。
 
@@ -233,7 +233,7 @@ To disable JSDoc comment suggestions in TypeScript, set `"typescript.suggest.com
 
 ​​	若要禁用 TypeScript 中的 JSDoc 注释建议，请设置 `"typescript.suggest.completeJSDocs": false` 。
 
-## [Code navigation 代码导航](https://code.visualstudio.com/docs/typescript/typescript-editing#_code-navigation)
+## [Code navigation 代码导航]({{< ref "/TypeScript/Editing#_code-navigation" >}})
 
 Code navigation lets you quickly navigate TypeScript projects.
 
@@ -259,13 +259,13 @@ You can navigate via symbol search using the **Go to Symbol** commands from the 
 - **Go to Symbol in Workspace** Ctrl+T
   转到工作区中的符号 Ctrl+T
 
-## [Formatting 格式化](https://code.visualstudio.com/docs/typescript/typescript-editing#_formatting)
+## [Formatting 格式化]({{< ref "/TypeScript/Editing#_formatting" >}})
 
 VS Code includes a TypeScript formatter that provides basic code formatting with reasonable defaults.
 
 ​​	VS Code 包括一个 TypeScript 格式化程序，它提供基本代码格式化，具有合理的默认值。
 
-Use the `typescript.format.*` [settings](https://code.visualstudio.com/docs/getstarted/settings) to configure the built-in formatter, such as making braces appear on their own line. Or, if the built-in formatter is getting in the way, set `"typescript.format.enable"` to `false` to disable it.
+Use the `typescript.format.*` [settings]({{< ref "/GetStarted/Settings" >}}) to configure the built-in formatter, such as making braces appear on their own line. Or, if the built-in formatter is getting in the way, set `"typescript.format.enable"` to `false` to disable it.
 
 ​​	使用 `typescript.format.*` 设置来配置内置格式化程序，例如使大括号出现在它们自己的行上。或者，如果内置格式化程序碍事，请将 `"typescript.format.enable"` 设置为 `false` 以禁用它。
 
@@ -273,7 +273,7 @@ For more specialized code formatting styles, try installing one of the formattin
 
 ​​	对于更专业的代码格式化样式，请尝试从 VS Code 市场安装一个格式化扩展。
 
-## [Syntax highlighting and semantic highlighting 语法突出显示和语义突出显示](https://code.visualstudio.com/docs/typescript/typescript-editing#_syntax-highlighting-and-semantic-highlighting)
+## [Syntax highlighting and semantic highlighting 语法突出显示和语义突出显示]({{< ref "/TypeScript/Editing#_syntax-highlighting-and-semantic-highlighting" >}})
 
 In addition to syntax highlighting, TypeScript and JavaScript also provide semantic highlighting.
 
@@ -283,7 +283,7 @@ Syntax highlighting colors the text based on lexical rules. Semantic highlightin
 
 ​​	语法突出显示根据词法规则对文本进行着色。语义突出显示根据语言服务的已解析符号信息丰富了语法着色。
 
-Whether semantic highlighting is visible depends on the current color theme. Each theme can [configure](https://code.visualstudio.com/docs/getstarted/themes#_editor-semantic-highlighting) whether to display semantic highlighting and how it styles the semantic tokens.
+Whether semantic highlighting is visible depends on the current color theme. Each theme can [configure]({{< ref "/GetStarted/Themes#_editor-semantic-highlighting" >}}) whether to display semantic highlighting and how it styles the semantic tokens.
 
 ​​	语义突出显示是否可见取决于当前的颜色主题。每个主题都可以配置是否显示语义突出显示以及如何设置语义标记的样式。
 
@@ -302,13 +302,13 @@ Semantic highlighting can change colors based on:
 - Whether the variable/property type is callable (a function type) or not.
   变量/属性类型是否可调用（函数类型）。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/typescript/typescript-editing#_next-steps)
+## [Next steps 后续步骤]({{< ref "/TypeScript/Editing#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [Refactor TypeScript](https://code.visualstudio.com/docs/typescript/typescript-refactoring) - Learn about the useful refactorings available for TypeScript.
+- [Refactor TypeScript]({{< ref "/TypeScript/Refactoring" >}}) - Learn about the useful refactorings available for TypeScript.
   重构 TypeScript - 了解适用于 TypeScript 的有用重构。
-- [Debugging TypeScript](https://code.visualstudio.com/docs/typescript/typescript-debugging) - Configure the debugger for your TypeScript project.
+- [Debugging TypeScript]({{< ref "/TypeScript/Debugging" >}}) - Configure the debugger for your TypeScript project.
   调试 TypeScript - 为 TypeScript 项目配置调试器。

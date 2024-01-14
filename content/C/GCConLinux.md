@@ -26,7 +26,7 @@ If you have trouble, feel free to file an issue for this tutorial in the [VS Cod
 
 ​​​	如果您遇到问题，请随时在 VS Code 文档存储库中为此教程提交问题。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/cpp/config-linux#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C/GCConLinux#_prerequisites" >}})
 
 To successfully complete this tutorial, you must do the following:
 
@@ -42,7 +42,7 @@ To successfully complete this tutorial, you must do the following:
 
    ![C/C++ extension](./GCConLinux_img/cpp-extension.png)
 
-### [Ensure GCC is installed 确保已安装 GCC](https://code.visualstudio.com/docs/cpp/config-linux#_ensure-gcc-is-installed)
+### [Ensure GCC is installed 确保已安装 GCC]({{< ref "/C/GCConLinux#_ensure-gcc-is-installed" >}})
 
 Although you'll use VS Code to edit your source code, you'll compile the source code on Linux using the g++ compiler. You'll also use GDB to debug. These tools are not installed by default on Ubuntu, so you have to install them. Fortunately, that's easy.
 
@@ -72,7 +72,7 @@ Next install the GNU compiler tools and the GDB debugger with this command:
 sudo apt-get install build-essential gdb
 ```
 
-## [Create Hello World 创建 Hello World](https://code.visualstudio.com/docs/cpp/config-linux#_create-hello-world)
+## [Create Hello World 创建 Hello World]({{< ref "/C/GCConLinux#_create-hello-world" >}})
 
 From the terminal window, create an empty folder called `projects` to store your VS Code projects. Then create a subfolder called `helloworld`, navigate into it, and open VS Code in that folder by entering the following commands:
 
@@ -97,7 +97,7 @@ The `code .` command opens VS Code in the current working folder, which becomes 
 - `c_cpp_properties.json` (compiler path and IntelliSense settings)
   `c_cpp_properties.json` （编译器路径和 IntelliSense 设置）
 
-### [Add hello world source code file 添加 hello world 源代码文件](https://code.visualstudio.com/docs/cpp/config-linux#_add-hello-world-source-code-file)
+### [Add hello world source code file 添加 hello world 源代码文件]({{< ref "/C/GCConLinux#_add-hello-world-source-code-file" >}})
 
 In the File Explorer title bar, select **New File** and name the file `helloworld.cpp`.
 
@@ -134,11 +134,11 @@ Now press Ctrl+S to save the file. Notice that your files are listed in the **Fi
 
 ![File Explorer](./GCConLinux_img/file-explorer.png)
 
-You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) to automatically save your file changes, by checking **Auto Save** in the main **File** menu.
+You can also enable [Auto Save]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}}) to automatically save your file changes, by checking **Auto Save** in the main **File** menu.
 
 ​​​	您还可以通过选中主文件菜单中的“自动保存”来启用“自动保存”，以自动保存您的文件更改。
 
-The Activity Bar on the edge of Visual Studio Code lets you open different views such as **Search**, **Source Control**, and **Run**. You'll look at the **Run** view later in this tutorial. You can find out more about the other views in the VS Code [User Interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface).
+The Activity Bar on the edge of Visual Studio Code lets you open different views such as **Search**, **Source Control**, and **Run**. You'll look at the **Run** view later in this tutorial. You can find out more about the other views in the VS Code [User Interface documentation]({{< ref "/GetStarted/UserInterface" >}}).
 
 ​​​	Visual Studio Code 边缘的活动栏可让您打开不同的视图，例如“搜索”、“源代码管理”和“运行”。您将在本教程的后面部分查看“运行”视图。您可以在 VS Code 用户界面文档中了解有关其他视图的更多信息。
 
@@ -146,7 +146,7 @@ The Activity Bar on the edge of Visual Studio Code lets you open different views
 >
 > ​​​	注意：当您保存或打开 C++ 文件时，您可能会看到来自 C/C++ 扩展的通知，其中包含有关 Insider 版本可用性的信息，该版本允许您测试新功能和修复程序。您可以通过选择 `X` （清除通知）来忽略此通知。
 
-## [Explore IntelliSense 探索 IntelliSense](https://code.visualstudio.com/docs/cpp/config-linux#_explore-intellisense)
+## [Explore IntelliSense 探索 IntelliSense]({{< ref "/C/GCConLinux#_explore-intellisense" >}})
 
 In the `helloworld.cpp` file, hover over `vector` or `string` to see type information. After the declaration of the `msg` variable, start typing `msg.`as you would when calling a member function. You should immediately see a completion list that shows all the member functions, and a window that shows the type information for the `msg` object:
 
@@ -158,7 +158,7 @@ You can press the Tab key to insert the selected member. Then, when you add the 
 
 ​​​	您可以按 Tab 键插入选定的成员。然后，当您添加左括号时，您将看到有关函数所需参数的信息。
 
-## [Run helloworld.cpp 运行 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-linux#_run-helloworldcpp)
+## [Run helloworld.cpp 运行 helloworld.cpp]({{< ref "/C/GCConLinux#_run-helloworldcpp" >}})
 
 Remember, the C++ extension uses the C++ compiler you have installed on your machine to build your program. Make sure you have a C++ compiler installed before attempting to run and debug `helloworld.cpp` in VS Code.
 
@@ -258,13 +258,13 @@ with this:
     "group": "build",
 ```
 
-### [Modifying tasks.json 修改 tasks.json](https://code.visualstudio.com/docs/cpp/config-linux#_modifying-tasksjson)
+### [Modifying tasks.json 修改 tasks.json]({{< ref "/C/GCConLinux#_modifying-tasksjson" >}})
 
 You can modify your `tasks.json` to build multiple C++ files by using an argument like `"${workspaceFolder}/*.cpp"` instead of `"${file}"`.This will build all `.cpp` files in your current folder. You can also modify the output filename by replacing `"${fileDirname}/${fileBasenameNoExtension}"` with a hard-coded filename (for example 'helloworld.out').
 
 ​​​	您可以通过使用 `"${workspaceFolder}/*.cpp"` 这样的参数而不是 `"${file}"` 来修改您的 `tasks.json` 以构建多个 C++ 文件。这将构建您当前文件夹中的所有 `.cpp` 文件。您还可以通过用硬编码文件名（例如“helloworld.out”）替换 `"${fileDirname}/${fileBasenameNoExtension}"` 来修改输出文件名。
 
-## [Debug helloworld.cpp 调试 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-linux#_debug-helloworldcpp)
+## [Debug helloworld.cpp 调试 helloworld.cpp]({{< ref "/C/GCConLinux#_debug-helloworldcpp" >}})
 
 To debug your code,
 
@@ -283,7 +283,7 @@ The play button has two modes: **Run C/C++ File** and **Debug C/C++ File**. It w
 
 ​​​	播放按钮有两种模式：运行 C/C++ 文件和调试 C/C++ 文件。它将默认为上次使用的模式。如果您在播放按钮中看到调试图标，则可以选择播放按钮进行调试，而无需选择下拉菜单项。
 
-## [Explore the debugger 探索调试器](https://code.visualstudio.com/docs/cpp/config-linux#_explore-the-debugger)
+## [Explore the debugger 探索调试器]({{< ref "/C/GCConLinux#_explore-the-debugger" >}})
 
 Before you start stepping through the code, let's take a moment to notice several changes in the user interface:
 
@@ -313,7 +313,7 @@ If you already have a launch.json file in your workspace, the play button will r
 
 ​​​	如果您的工作区中已有 launch.json 文件，则播放按钮将在确定如何运行和调试 C++ 文件时从中读取。如果您没有 launch.json，则播放按钮将临时创建一个“快速调试”配置，从而完全无需 launch.json！
 
-## [Step through the code 逐步执行代码](https://code.visualstudio.com/docs/cpp/config-linux#_step-through-the-code)
+## [Step through the code 逐步执行代码]({{< ref "/C/GCConLinux#_step-through-the-code" >}})
 
 Now you're ready to start stepping through the code.
 
@@ -361,7 +361,7 @@ Now you're ready to start stepping through the code.
 
    ![Debug console display](./GCConLinux_img/debug-console-output-wsl.png)
 
-## [Set a watch 设置监视](https://code.visualstudio.com/docs/cpp/config-linux#_set-a-watch)
+## [Set a watch 设置监视]({{< ref "/C/GCConLinux#_set-a-watch" >}})
 
 To keep track of the value of a variable as your program executes, set a **watch** on the variable.
 
@@ -387,7 +387,7 @@ It's important to have `helloworld.cpp` open in the editor because the next step
 
 ​​​	在编辑器中打开 `helloworld.cpp` 非常重要，因为下一步使用编辑器中的活动文件作为上下文，以便在下一步中创建构建任务。
 
-## [Customize debugging with launch.json 使用 launch.json 自定义调试](https://code.visualstudio.com/docs/cpp/config-linux#_customize-debugging-with-launchjson)
+## [Customize debugging with launch.json 使用 launch.json 自定义调试]({{< ref "/C/GCConLinux#_customize-debugging-with-launchjson" >}})
 
 When you debug with the play button or F5, the C++ extension creates a dynamic debug configuration on the fly.
 
@@ -458,7 +458,7 @@ Change the `stopAtEntry` value to `true` to cause the debugger to stop on the `m
 >
 > ​​​	从现在开始，播放按钮和 F5 将在启动程序进行调试时从 `launch.json` 文件中读取。
 
-## [C/C++ configurations C/C++ 配置](https://code.visualstudio.com/docs/cpp/config-linux#_cc-configurations)
+## [C/C++ configurations C/C++ 配置]({{< ref "/C/GCConLinux#_cc-configurations" >}})
 
 If you want more control over the C/C++ extension, you can create a `c_cpp_properties.json` file, which will allow you to change settings such as the path to the compiler, include paths, C++ standard (default is C++17), and more.
 
@@ -501,25 +501,25 @@ Visual Studio Code places these settings in `.vscode/c_cpp_properties.json`. If 
 }
 ```
 
-## [Reusing your C++ configuration 重复使用 C++ 配置](https://code.visualstudio.com/docs/cpp/config-linux#_reusing-your-c-configuration)
+## [Reusing your C++ configuration 重复使用 C++ 配置]({{< ref "/C/GCConLinux#_reusing-your-c-configuration" >}})
 
 VS Code is now configured to use gcc on Linux. The configuration applies to the current workspace. To reuse the configuration, just copy the JSON files to a `.vscode` folder in a new project folder (workspace) and change the names of the source file(s) and executable as needed.
 
 ​​​	VS Code 现在配置为在 Linux 上使用 gcc。该配置适用于当前工作区。要重复使用该配置，只需将 JSON 文件复制到新项目文件夹（工作区）中的 `.vscode` 文件夹，并根据需要更改源文件和可执行文件的名称。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/cpp/config-linux#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/C/GCConLinux#_troubleshooting" >}})
 
-### [Compiler and linking errors 编译器和链接错误](https://code.visualstudio.com/docs/cpp/config-linux#_compiler-and-linking-errors)
+### [Compiler and linking errors 编译器和链接错误]({{< ref "/C/GCConLinux#_compiler-and-linking-errors" >}})
 
 The most common cause of errors (such as `undefined _main`, or `attempting to link with file built for unknown-unsupported file format`, and so on) occurs when `helloworld.cpp` is not the active file when you start a build or start debugging. This is because the compiler is trying to compile something that isn't source code, like your `launch.json`, `tasks.json`, or `c_cpp_properties.json` file.
 
 ​​​	最常见的错误原因（例如 `undefined _main` 或 `attempting to link with file built for unknown-unsupported file format` 等）是当您开始构建或开始调试时 `helloworld.cpp` 不是活动文件。这是因为编译器正在尝试编译不是源代码的内容，例如您的 `launch.json` 、 `tasks.json` 或 `c_cpp_properties.json` 文件。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/config-linux#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/GCConLinux#_next-steps" >}})
 
-- Explore the [VS Code User Guide](https://code.visualstudio.com/docs/editor/codebasics).
+- Explore the [VS Code User Guide]({{< ref "/UserGuide/BasicEditing" >}}).
   浏览 VS Code 用户指南。
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp).
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}}).
   查看 C++ 扩展概述。
 - Create a new workspace, copy your .json files to it, adjust the necessary settings for the new workspace path, program name, and so on, and start coding!
   创建一个新工作区，将您的 .json 文件复制到其中，调整新工作区路径、程序名称等必要的设置，然后开始编码！

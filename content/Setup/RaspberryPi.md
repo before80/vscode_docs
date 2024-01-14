@@ -24,7 +24,7 @@ By downloading and using Visual Studio Code, you agree to the [license terms](ht
 
 ​​​	通过下载和使用 Visual Studio Code，您同意许可条款和隐私声明。
 
-## [Installation 安装](https://code.visualstudio.com/docs/setup/raspberry-pi#_installation)
+## [Installation 安装]({{< ref "/Setup/RaspberryPi#_installation" >}})
 
 Visual Studio Code is officially distributed via the [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems) (previously called Raspbian) APT repository, in both 32-bit and 64-bit variants.
 
@@ -39,7 +39,7 @@ sudo apt update
 sudo apt install code
 ```
 
-### [Running VS Code 运行 VS Code](https://code.visualstudio.com/docs/setup/raspberry-pi#_running-vs-code)
+### [Running VS Code 运行 VS Code]({{< ref "/Setup/RaspberryPi#_running-vs-code" >}})
 
 After installing the VS Code package, you can run VS Code by typing `code` in a terminal or launching it via the **Programming** menu.
 
@@ -47,7 +47,7 @@ After installing the VS Code package, you can run VS Code by typing `code` in a 
 
 ![Visual Studio Code under the Programming menu on Raspberry Pi](./RaspberryPi_img/vscode-under-programming.jpg)
 
-## [Updates 更新](https://code.visualstudio.com/docs/setup/raspberry-pi#_updates)
+## [Updates 更新]({{< ref "/Setup/RaspberryPi#_updates" >}})
 
 Your Raspberry Pi should handle updating VS Code in the same way as other packages on the system:
 
@@ -62,7 +62,7 @@ You can always check when a new release is available in our [Updates](https://co
 
 ​​​	您始终可以在我们的更新页面中查看何时有新版本可用。
 
-## [System requirements 系统要求](https://code.visualstudio.com/docs/setup/raspberry-pi#_system-requirements)
+## [System requirements 系统要求]({{< ref "/Setup/RaspberryPi#_system-requirements" >}})
 
 VS Code is supported on these Raspberry Pi models running a 32-bit or 64-bit version of Raspberry Pi OS:
 
@@ -82,7 +82,7 @@ First-generation Raspberry Pi modules and Raspberry Pi Zero are not supported as
 
 ​​​	第一代 Raspberry Pi 模块和 Raspberry Pi Zero 不受支持，因为它们仅包含 ARMv6 CPU。
 
-### [Workaround for poor performance 解决性能不佳问题](https://code.visualstudio.com/docs/setup/raspberry-pi#_workaround-for-poor-performance)
+### [Workaround for poor performance 解决性能不佳问题]({{< ref "/Setup/RaspberryPi#_workaround-for-poor-performance" >}})
 
 VS Code on Raspberry Pi 4 may be slow with the default setup. A workaround is to disable hardware (GPU) acceleration in VS Code:
 
@@ -99,15 +99,15 @@ The `"disable-hardware-acceleration": true` runtime argument switch has the effe
 
 ​​​	 `"disable-hardware-acceleration": true` 运行时参数开关的作用是在 VS Code 启动时传递 `--disable-gpu` 命令行参数。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/setup/raspberry-pi#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Setup/RaspberryPi#_next-steps" >}})
 
 Once you have installed VS Code, these topics will help you learn more about it:
 
 ​​​	安装 VS Code 后，以下主题将帮助您详细了解它：
 
-- [Additional Components](https://code.visualstudio.com/docs/setup/additional-components) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
+- [Additional Components]({{< ref "/Setup/AdditionalComponents" >}}) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
   其他组件 - 了解如何安装 Git、Node.js、TypeScript 和 Yeoman 等工具。
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - A quick orientation to VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - A quick orientation to VS Code.
   用户界面 - VS Code 的快速入门。
-- [User/Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences through settings.
+- [User/Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences through settings.
   用户/工作区设置 - 了解如何通过设置将 VS Code 配置为您的首选项。

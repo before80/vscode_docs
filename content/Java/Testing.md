@@ -18,7 +18,7 @@ Testing Java in Visual Studio Code is enabled by the [Test Runner for Java](http
 
 ​​​	Visual Studio Code 中的 Java 测试由 Test Runner for Java 扩展启用。这是一个轻量级扩展，用于运行和调试 Java 测试用例。
 
-## [Overview 概述](https://code.visualstudio.com/docs/java/java-testing#_overview)
+## [Overview 概述]({{< ref "/Java/Testing#_overview" >}})
 
 The extension supports the following test frameworks:
 
@@ -41,7 +41,7 @@ The [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=v
 - View tests in Testing Explorer
   在测试资源管理器中查看测试
 
-## [Requirements 要求](https://code.visualstudio.com/docs/java/java-testing#_requirements)
+## [Requirements 要求]({{< ref "/Java/Testing#_requirements" >}})
 
 - JDK (version 1.8 or later)
   JDK（版本 1.8 或更高版本）
@@ -53,13 +53,13 @@ The [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=v
 [Install the Extension Pack for Java
 安装 Java 扩展包](vscode:extension/vscjava.vscode-java-pack)
 
-## [Project Setup 项目设置](https://code.visualstudio.com/docs/java/java-testing#_project-setup)
+## [Project Setup 项目设置]({{< ref "/Java/Testing#_project-setup" >}})
 
-> **Note**: If you have already setup your Java test framework in your project, you can skip to the [Features](https://code.visualstudio.com/docs/java/java-testing#_features) section.
+> **Note**: If you have already setup your Java test framework in your project, you can skip to the [Features]({{< ref "/Java/Testing#_features" >}}) section.
 >
 > ​​​	注意：如果您已在项目中设置了 Java 测试框架，则可以跳至功能部分。
 
-### [Enable testing and adding test framework JARs to your project 启用测试并将测试框架 JAR 添加到项目](https://code.visualstudio.com/docs/java/java-testing#_enable-testing-and-adding-test-framework-jars-to-your-project)
+### [Enable testing and adding test framework JARs to your project 启用测试并将测试框架 JAR 添加到项目]({{< ref "/Java/Testing#_enable-testing-and-adding-test-framework-jars-to-your-project" >}})
 
 Starting with Test Runner for Java version 0.34.0, you can enable a test framework for your unmanaged folder project (a project without any build tools) with just a few steps in the **Testing** Explorer:
 
@@ -73,9 +73,9 @@ Starting with Test Runner for Java version 0.34.0, you can enable a test framewo
 >
 > ​​​	注意：目前此功能仅支持不包含任何测试依赖项的非托管文件夹。
 
-### [JUnit 4](https://code.visualstudio.com/docs/java/java-testing#_junit-4)
+### [JUnit 4]({{< ref "/Java/Testing#_junit-4" >}})
 
-#### [Maven](https://code.visualstudio.com/docs/java/java-testing#_maven)
+#### [Maven]({{< ref "/Java/Testing#_maven" >}})
 
 Add following configuration into your `pom.xml`:
 
@@ -90,7 +90,7 @@ Add following configuration into your `pom.xml`:
 </dependency>
 ```
 
-#### [Gradle](https://code.visualstudio.com/docs/java/java-testing#_gradle)
+#### [Gradle]({{< ref "/Java/Testing#_gradle" >}})
 
 Make sure following lines are added in your `build.gradle`:
 
@@ -106,9 +106,9 @@ dependencies {
 }
 ```
 
-#### [Unmanaged folder Unmanaged 文件夹](https://code.visualstudio.com/docs/java/java-testing#_unmanaged-folder)
+#### [Unmanaged folder Unmanaged 文件夹]({{< ref "/Java/Testing#_unmanaged-folder" >}})
 
-If your project does not use any build tools, you can enable JUnit 4 via the [Testing Explorer](https://code.visualstudio.com/docs/java/java-testing#_enable-testing-and-adding-test-framework-jars-to-your-project) or by manually downloading the following JARs and adding them to the project classpath (via setting `java.project.referencedLibraries`, check [Dependency management](https://code.visualstudio.com/docs/java/java-project#_dependency-management) for more information):
+If your project does not use any build tools, you can enable JUnit 4 via the [Testing Explorer]({{< ref "/Java/Testing#_enable-testing-and-adding-test-framework-jars-to-your-project" >}}) or by manually downloading the following JARs and adding them to the project classpath (via setting `java.project.referencedLibraries`, check [Dependency management]({{< ref "/Java/ProjectManagement#_dependency-management" >}}) for more information):
 
 ​​​	如果您的项目不使用任何构建工具，您可以通过测试资源管理器或手动下载以下 JAR 并将它们添加到项目类路径（通过设置 `java.project.referencedLibraries` 来启用 JUnit 4，有关更多信息，请查看依赖项管理）：
 
@@ -119,21 +119,21 @@ If your project does not use any build tools, you can enable JUnit 4 via the [Te
 >
 > ​​​	您可以查看官方 JUnit Wiki，以获取有关如何设置 JUnit 4 的更多信息。
 
-### [JUnit 5](https://code.visualstudio.com/docs/java/java-testing#_junit-5)
+### [JUnit 5]({{< ref "/Java/Testing#_junit-5" >}})
 
 The JUnit 5 team provides a collection of sample projects with different build tools. Check the [junit5-sample repository](https://github.com/junit-team/junit5-samples) if your project uses Maven or Gradle as your build tool.
 
 ​​​	JUnit 5 团队提供了一系列具有不同构建工具的示例项目。如果您的项目使用 Maven 或 Gradle 作为构建工具，请查看 junit5-sample 存储库。
 
-#### [Unmanaged folder Unmanaged 文件夹](https://code.visualstudio.com/docs/java/java-testing#_unmanaged-folder)
+#### [Unmanaged folder Unmanaged 文件夹]({{< ref "/Java/Testing#_unmanaged-folder" >}})
 
-If your project does not use any build tools, you can enable JUnit 5 via the [Testing Explorer](https://code.visualstudio.com/docs/java/java-testing#_enable-testing-and-adding-test-framework-jars-to-your-project) or by manually including the [junit-platform-console-standalone](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/) JAR in the project classpath (via setting `java.project.referencedLibraries`, check [Dependency management](https://code.visualstudio.com/docs/java/java-project#_dependency-management) for more information).
+If your project does not use any build tools, you can enable JUnit 5 via the [Testing Explorer]({{< ref "/Java/Testing#_enable-testing-and-adding-test-framework-jars-to-your-project" >}}) or by manually including the [junit-platform-console-standalone](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/) JAR in the project classpath (via setting `java.project.referencedLibraries`, check [Dependency management]({{< ref "/Java/ProjectManagement#_dependency-management" >}}) for more information).
 
 ​​​	如果您的项目不使用任何构建工具，您可以通过测试资源管理器或手动将 junit-platform-console-standalone JAR 包含在项目类路径中来启用 JUnit 5（通过设置 `java.project.referencedLibraries` 来启用，有关更多信息，请查看依赖项管理）。
 
-### [TestNG](https://code.visualstudio.com/docs/java/java-testing#_testng)
+### [TestNG]({{< ref "/Java/Testing#_testng" >}})
 
-#### [Maven](https://code.visualstudio.com/docs/java/java-testing#_maven)
+#### [Maven]({{< ref "/Java/Testing#_maven" >}})
 
 Add following configuration into your `pom.xml`:
 
@@ -148,7 +148,7 @@ Add following configuration into your `pom.xml`:
 </dependency>
 ```
 
-#### [Gradle](https://code.visualstudio.com/docs/java/java-testing#_gradle)
+#### [Gradle]({{< ref "/Java/Testing#_gradle" >}})
 
 Make sure following lines are added in your `build.gradle`:
 
@@ -164,9 +164,9 @@ dependencies {
 }
 ```
 
-#### [Unmanaged folder 未管理的文件夹](https://code.visualstudio.com/docs/java/java-testing#_unmanaged-folder)
+#### [Unmanaged folder 未管理的文件夹]({{< ref "/Java/Testing#_unmanaged-folder" >}})
 
-If your project does not use any build tools, you can enable TestNG via the [Testing Explorer](https://code.visualstudio.com/docs/java/java-testing#_enable-testing-and-adding-test-framework-jars-to-your-project) or by manually downloading the following JARs and adding them to the project classpath (via setting `java.project.referencedLibraries`, check [Dependency management](https://code.visualstudio.com/docs/java/java-project#_dependency-management) for more information):
+If your project does not use any build tools, you can enable TestNG via the [Testing Explorer]({{< ref "/Java/Testing#_enable-testing-and-adding-test-framework-jars-to-your-project" >}}) or by manually downloading the following JARs and adding them to the project classpath (via setting `java.project.referencedLibraries`, check [Dependency management]({{< ref "/Java/ProjectManagement#_dependency-management" >}}) for more information):
 
 ​​​	如果您的项目不使用任何构建工具，您可以通过测试资源管理器启用 TestNG，或通过手动下载以下 JAR 并将它们添加到项目类路径（通过设置 `java.project.referencedLibraries` ，有关更多信息，请检查依赖项管理）：
 
@@ -174,9 +174,9 @@ If your project does not use any build tools, you can enable TestNG via the [Tes
 - [jcommander.jar](https://search.maven.org/search?q=g:com.beust AND a:jcommander)
 - [slf4j-api.jar](https://search.maven.org/search?q=g:org.slf4j AND a:slf4j-api)
 
-## [Features 特性](https://code.visualstudio.com/docs/java/java-testing#_features)
+## [Features 特性]({{< ref "/Java/Testing#_features" >}})
 
-### [Run/Debug test cases 运行/调试测试用例](https://code.visualstudio.com/docs/java/java-testing#_rundebug-test-cases)
+### [Run/Debug test cases 运行/调试测试用例]({{< ref "/Java/Testing#_rundebug-test-cases" >}})
 
 The Test Runner for Java extension will generate shortcuts (the green play button) on the left side of the class and method definition. To run the target test cases, select the green play button. You can also right-click on it to see more options.
 
@@ -186,7 +186,7 @@ The Test Runner for Java extension will generate shortcuts (the green play butto
 
 
 
-### [Testing Explorer 测试资源管理器](https://code.visualstudio.com/docs/java/java-testing#_testing-explorer)
+### [Testing Explorer 测试资源管理器]({{< ref "/Java/Testing#_testing-explorer" >}})
 
 The Testing Explorer is a tree view to show all the test cases in your workspace. You can select the beaker button on the left-side Activity bar of Visual Studio Code to open it. You can also run/debug your test cases and view their test results from there.
 
@@ -196,9 +196,9 @@ The Testing Explorer is a tree view to show all the test cases in your workspace
 
 
 
-### [Customize test configurations 自定义测试配置](https://code.visualstudio.com/docs/java/java-testing#_customize-test-configurations)
+### [Customize test configurations 自定义测试配置]({{< ref "/Java/Testing#_customize-test-configurations" >}})
 
-Sometimes you may want to customize the configuration to run your test cases. To achieve this, you can add the configuration into your workspace [settings](https://code.visualstudio.com/docs/getstarted/settings) under the section: `java.test.config`.
+Sometimes you may want to customize the configuration to run your test cases. To achieve this, you can add the configuration into your workspace [settings]({{< ref "/GetStarted/Settings" >}}) under the section: `java.test.config`.
 
 ​​​	有时您可能希望自定义配置以运行测试用例。要实现此目的，您可以在部分下的工作区设置中添加配置： `java.test.config` 。
 
@@ -255,7 +255,7 @@ More details can be found on the [vscode-java-test Wiki](https://github.com/Micr
 
 ​​​	可以在 vscode-java-test Wiki 上找到更多详细信息。
 
-### [View test results 查看测试结果](https://code.visualstudio.com/docs/java/java-testing#_view-test-results)
+### [View test results 查看测试结果]({{< ref "/Java/Testing#_view-test-results" >}})
 
 After running/debugging the test cases, the state of the related test items will be updated in both editor decorations and the Testing Explorer.
 
@@ -269,7 +269,7 @@ You can trigger the command **Test: Peek Output** to peek the results view. You 
 
 ​​​	您可以触发命令测试：预览输出以预览结果视图。您可以选择堆栈跟踪中的链接以导航到源位置。
 
-### [Generate tests 生成测试](https://code.visualstudio.com/docs/java/java-testing#_generate-tests)
+### [Generate tests 生成测试]({{< ref "/Java/Testing#_generate-tests" >}})
 
 The extension provides features to help you scaffold test cases. You can find the entry in the editor context menu. Select **Source Action...** and then choose **Generate Tests...**.
 
@@ -291,7 +291,7 @@ If you trigger the source action from your test source code, you will be asked w
 
 
 
-### [Test navigation 测试导航](https://code.visualstudio.com/docs/java/java-testing#_test-navigation)
+### [Test navigation 测试导航]({{< ref "/Java/Testing#_test-navigation" >}})
 
 The extension provides features to help you navigate between your tests and test subjects. If your source code is contained in `src/main/java` or `src/test/java`, you can find the entry named **Go to Test** or **Go to Test Subject** in the editor context menu:
 
@@ -305,7 +305,7 @@ You can also find the command in the Command Palette (Ctrl+Shift+P) by searching
 
 ​​​	您还可以在命令面板（Ctrl+Shift+P）中搜索 Java: 转到测试来查找该命令。
 
-### [VS Code testing commands VS Code 测试命令](https://code.visualstudio.com/docs/java/java-testing#_vs-code-testing-commands)
+### [VS Code testing commands VS Code 测试命令]({{< ref "/Java/Testing#_vs-code-testing-commands" >}})
 
 There are other testing commands (for example, **Run Tests in Current File**) that can be found by searching for 'Test:' in the Command Palette (Ctrl+Shift+P).
 
@@ -313,7 +313,7 @@ There are other testing commands (for example, **Run Tests in Current File**) th
 
 ![Testing commands in the Command Palette](./Testing_img/command_palette.png)
 
-### [VS Code testing settings VS Code 测试设置](https://code.visualstudio.com/docs/java/java-testing#_vs-code-testing-settings)
+### [VS Code testing settings VS Code 测试设置]({{< ref "/Java/Testing#_vs-code-testing-settings" >}})
 
 There are VS Code settings specific to testing that can be found by searching for 'testing' in the Settings editor (Ctrl+,).
 
@@ -321,13 +321,13 @@ There are VS Code settings specific to testing that can be found by searching fo
 
 ![Testing settings in the Settings editor](./Testing_img/settings.png)
 
-## [FAQ](https://code.visualstudio.com/docs/java/java-testing#_faq)
+## [FAQ]({{< ref "/Java/Testing#_faq" >}})
 
 If you meet any problem when using the extension, you can review the [FAQ](https://github.com/microsoft/vscode-java-test/wiki/FAQ) and our [issue list](https://github.com/microsoft/vscode-java-test/issues) to check if there is an answer to your problem.
 
 ​​​	如果您在使用扩展时遇到任何问题，可以查看常见问题解答和我们的问题列表，以检查是否有您问题的答案。
 
-## [Contributing and feedback 贡献和反馈](https://code.visualstudio.com/docs/java/java-testing#_contributing-and-feedback)
+## [Contributing and feedback 贡献和反馈]({{< ref "/Java/Testing#_contributing-and-feedback" >}})
 
 If you are interested in providing feedback or contributing directly to the code base, please read [Contributing to Test Runner for Java](https://github.com/Microsoft/vscode-java-test/blob/main/CONTRIBUTING.md), which covers the following:
 
@@ -340,13 +340,13 @@ If you are interested in providing feedback or contributing directly to the code
 - [Contributing Fixes
   贡献修复](https://github.com/Microsoft/vscode-java-test/blob/main/CONTRIBUTING.md#contributing-fixes)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/java/java-testing#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Java/Testing#_next-steps" >}})
 
 Read on to find out about:
 
 ​​​	继续阅读以了解：
 
-- [Debugging](https://code.visualstudio.com/docs/java/java-debugging) - Find out how to debug your Java project with VS Code.
+- [Debugging]({{< ref "/Java/RunandDebug" >}}) - Find out how to debug your Java project with VS Code.
   调试 - 了解如何使用 VS Code 调试 Java 项目。
-- [Extensions for Java](https://code.visualstudio.com/docs/java/extensions) - Learn about more useful Java extensions for VS Code.
+- [Extensions for Java]({{< ref "/Java/Extensions" >}}) - Learn about more useful Java extensions for VS Code.
   Java 扩展 - 了解有关 VS Code 的更多有用 Java 扩展。

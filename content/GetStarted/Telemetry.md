@@ -14,11 +14,11 @@ draft = false
 
 
 
-Visual Studio Code collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While we appreciate the insights this data provides, we also know that not everyone wants to send usage data and you can disable telemetry as described in [disable telemetry reporting](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting). You can also read our [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409) to learn more.
+Visual Studio Code collects telemetry data, which is used to help understand how to improve the product. For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features. While we appreciate the insights this data provides, we also know that not everyone wants to send usage data and you can disable telemetry as described in [disable telemetry reporting]({{< ref "/GetStarted/Telemetry#_disable-telemetry-reporting" >}}). You can also read our [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409) to learn more.
 
 ​​	Visual Studio Code 收集遥测数据，用于帮助了解如何改进产品。例如，此使用情况数据有助于调试问题，例如启动时间慢，以及确定新功能的优先级。虽然我们很感谢这些数据提供的见解，但我们也知道并非所有人都想发送使用情况数据，您可以按照禁用遥测报告中的说明禁用遥测。您还可以阅读我们的隐私声明以了解更多信息。
 
-## [Types of telemetry data 遥测数据类型](https://code.visualstudio.com/docs/getstarted/telemetry#_types-of-telemetry-data)
+## [Types of telemetry data 遥测数据类型]({{< ref "/GetStarted/Telemetry#_types-of-telemetry-data" >}})
 
 VS Code and this page refer to three different types of data with respect to telemetry.
 
@@ -36,9 +36,9 @@ VS Code and this page refer to three different types of data with respect to tel
 
 ​​	使用情况数据 - 使用情况数据收集有关 VS Code 中功能的使用方式和性能的信息，这有助于我们确定未来产品改进的优先级。
 
-## [Disable telemetry reporting 禁用遥测报告](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting)
+## [Disable telemetry reporting 禁用遥测报告]({{< ref "/GetStarted/Telemetry#_disable-telemetry-reporting" >}})
 
-With the `telemetry.telemetryLevel` user [setting](https://code.visualstudio.com/docs/getstarted/settings), you can control the different types of telemetry we send with a single setting. Here is a table of the different types of data sent with each value of `telemetry.telemetryLevel`:
+With the `telemetry.telemetryLevel` user [setting]({{< ref "/GetStarted/Settings" >}}), you can control the different types of telemetry we send with a single setting. Here is a table of the different types of data sent with each value of `telemetry.telemetryLevel`:
 
 ​​	通过 `telemetry.telemetryLevel` 用户设置，您可以使用单个设置控制我们发送的不同类型的遥测。下表列出了 `telemetry.telemetryLevel` 的每个值发送的不同类型的数据：
 
@@ -49,7 +49,7 @@ With the `telemetry.telemetryLevel` user [setting](https://code.visualstudio.com
 | crash 崩溃 |           ✓            |            -             |            -            |
 | off        |           -            |            -             |            -            |
 
-For example, if you don't want to send any telemetry data to Microsoft, you can set the `telemetry.telemetryLevel` user [setting](https://code.visualstudio.com/docs/getstarted/settings) to `off`.
+For example, if you don't want to send any telemetry data to Microsoft, you can set the `telemetry.telemetryLevel` user [setting]({{< ref "/GetStarted/Settings" >}}) to `off`.
 
 ​​	例如，如果您不想向 Microsoft 发送任何遥测数据，可以将 `telemetry.telemetryLevel` 用户设置设为 `off` 。
 
@@ -67,17 +67,17 @@ If you use the JSON editor for your settings, add the following line:
     "telemetry.telemetryLevel": "off"
 ```
 
-## [Extensions and telemetry 扩展和遥测](https://code.visualstudio.com/docs/getstarted/telemetry#_extensions-and-telemetry)
+## [Extensions and telemetry 扩展和遥测]({{< ref "/GetStarted/Telemetry#_extensions-and-telemetry" >}})
 
 VS Code lets you add features to the product by installing Microsoft and third-party extensions. These extensions may be collecting their own usage data and are not controlled by the `telemetry.telemetryLevel` setting. Consult the specific extension's documentation to learn about its telemetry reporting and whether it can be disabled.
 
 ​​	VS Code 允许您通过安装 Microsoft 和第三方扩展来向产品添加功能。这些扩展可能会收集它们自己的使用数据，并且不受 `telemetry.telemetryLevel` 设置控制。查阅特定扩展的文档以了解其遥测报告以及是否可以禁用它。
 
-Extension authors may refer to the ["For Extension Authors"](https://code.visualstudio.com/docs/getstarted/telemetry#_for-extension-authors) section for guidance on implementing telemetry best practices within their extension.
+Extension authors may refer to the ["For Extension Authors"]({{< ref "/GetStarted/Telemetry#_for-extension-authors" >}}) section for guidance on implementing telemetry best practices within their extension.
 
 ​​	扩展作者可以参考“适用于扩展作者”部分，以获取有关在其扩展中实施遥测最佳实践的指导。
 
-## [Output channel for telemetry events 遥测事件的输出通道](https://code.visualstudio.com/docs/getstarted/telemetry#_output-channel-for-telemetry-events)
+## [Output channel for telemetry events 遥测事件的输出通道]({{< ref "/GetStarted/Telemetry#_output-channel-for-telemetry-events" >}})
 
 If you'd like to review the telemetry events in VS Code as they are sent, you can enable tracing and it will record telemetry events. Using the **Developer: Set Log Level...** command and select log level **Trace**. To view the logging output, go to the Output panel (Ctrl+Shift+U) and pick **Telemetry** from the dropdown.
 
@@ -91,7 +91,7 @@ When tracing telemetry events, the events are also logged to a local file `telem
 
 ![open telemetry log file](./Telemetry_img/open-telemetry-log.png)
 
-## [Viewing all telemetry events 查看所有遥测事件](https://code.visualstudio.com/docs/getstarted/telemetry#_viewing-all-telemetry-events)
+## [Viewing all telemetry events 查看所有遥测事件]({{< ref "/GetStarted/Telemetry#_viewing-all-telemetry-events" >}})
 
 If you'd like to view all the possible telemetry events that VS Code could send, you can use the `--telemetry` flag in the CLI. This will generate a JSON report that you can then view within VS Code. These reports are generated per build and do not contain extension telemetry unless the extension author adds a `telemetry.json` file to their root build directory.
 
@@ -105,7 +105,7 @@ The sections below detail the event metadata used to classify the telemetry, des
 
 ​​	以下部分详细介绍了用于对遥测进行分类的事件元数据，描述了其用途，并指出了任何特殊处理。
 
-### [Event classification 事件分类](https://code.visualstudio.com/docs/getstarted/telemetry#_event-classification)
+### [Event classification 事件分类]({{< ref "/GetStarted/Telemetry#_event-classification" >}})
 
 The `classification` field describes the type of data.
 
@@ -120,7 +120,7 @@ The `classification` field describes the type of data.
 - `EndUserPseudonymizedInformation` - Hashes used to identify a unique user without being able to identify who that user is. For example, a hashed Mac Address.
 - `EndUserPseudonymizedInformation` - 用于识别唯一用户而无法识别该用户是谁的哈希。例如，哈希的 Mac 地址。
 
-### [Event purpose 事件目的](https://code.visualstudio.com/docs/getstarted/telemetry#_event-purpose)
+### [Event purpose 事件目的]({{< ref "/GetStarted/Telemetry#_event-purpose" >}})
 
 The `purpose` field describes why the data is collected.
 
@@ -133,7 +133,7 @@ The `purpose` field describes why the data is collected.
 - `BusinessInsight` - To make decisions related to the business of VS Code, Microsoft, and GitHub.
 - `BusinessInsight` - 就 VS Code、Microsoft 和 GitHub 的业务做出决策。
 
-### [Event endpoint 事件端点](https://code.visualstudio.com/docs/getstarted/telemetry#_event-endpoint)
+### [Event endpoint 事件端点]({{< ref "/GetStarted/Telemetry#_event-endpoint" >}})
 
 The `endpoint` field describes what data handler the data is sent to. This is normally applied to special data that requires additional scrubbing and security to protect user privacy.
 
@@ -141,12 +141,12 @@ The `endpoint` field describes what data handler the data is sent to. This is no
 
 - `GoogleAnalyticsId` - Used on our website for Google Analytics and tracking page views. These are handled in a more sensitive manner than our normal data.
 - `GoogleAnalyticsId` - 在我们的网站上用于 Google Analytics 和跟踪页面浏览量。这些数据的处理方式比我们的正常数据更敏感。
-- `MacAddressHash` - Used to identify a user of VS Code. This is hashed once on the client side and then hashed again on the pipeline side to make it impossible to identify a given user. On [VS Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web), a UUID is generated for this case.
+- `MacAddressHash` - Used to identify a user of VS Code. This is hashed once on the client side and then hashed again on the pipeline side to make it impossible to identify a given user. On [VS Code for the Web]({{< ref "/UserGuide/VSCodefortheWeb" >}}), a UUID is generated for this case.
 - `MacAddressHash` - 用于识别 VS Code 的用户。这在客户端哈希一次，然后在管道端再次哈希，以使无法识别给定用户。在 VS Code for the Web 上，为此案例生成 UUID。
 - `none` - Data does not require any special handling.
 - `none` - 数据不需要任何特殊处理。
 
-## [GDPR and VS Code GDPR 和 VS Code](https://code.visualstudio.com/docs/getstarted/telemetry#_gdpr-and-vs-code)
+## [GDPR and VS Code GDPR 和 VS Code]({{< ref "/GetStarted/Telemetry#_gdpr-and-vs-code" >}})
 
 In addition to supporting the General Data Protection Regulation (GDPR), the VS Code team takes privacy very seriously. That's both for Microsoft as a company and specifically within the VS Code team.
 
@@ -171,7 +171,7 @@ One question we expect people to ask is to see the data we collect. However, we 
 
 ​​	我们预计人们会问的一个问题是查看我们收集的数据。但是，我们没有可靠的方法来做到这一点，因为 VS Code 没有“登录”体验，无法唯一标识用户。我们确实会发送有助于我们估算单个用户的信息以进行诊断目的（这基于桌面上网络适配器 NIC 的哈希和 Web 上随机分配的 UUID），但这并不能保证是唯一的。例如，虚拟机 (VM) 通常会轮换 NIC ID 或从池中分配。这种技术足以帮助我们在解决问题时提供帮助，但对于我们“提供您的数据”来说还不够可靠。
 
-We expect our approach to evolve as we learn more about GDPR and the expectations of our users. We greatly appreciate the data users do send to us, as it is very valuable and VS Code is a better product for everyone because of it. And again, if you are worried about privacy, we offer the ability to disable sending telemetry as described in [disable telemetry reporting](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting).
+We expect our approach to evolve as we learn more about GDPR and the expectations of our users. We greatly appreciate the data users do send to us, as it is very valuable and VS Code is a better product for everyone because of it. And again, if you are worried about privacy, we offer the ability to disable sending telemetry as described in [disable telemetry reporting]({{< ref "/GetStarted/Telemetry#_disable-telemetry-reporting" >}}).
 
 ​​	我们预计随着我们更多地了解 GDPR 和我们用户的期望，我们的方法会不断发展。我们非常感谢用户发送给我们的数据，因为这些数据非常有价值，VS Code 也因此成为了一款对每个人都更好的产品。而且，如果您担心隐私问题，我们提供了禁用遥测功能的方法，如禁用遥测报告中所述。
 
@@ -179,7 +179,7 @@ You can find more information about how the Visual Studio family approaches GDPR
 
 ​​	您可以在 Visual Studio 系列数据主体请求 GDPR 中找到有关 Visual Studio 系列如何处理 GDPR 的更多信息。
 
-## [Managing online services 管理在线服务](https://code.visualstudio.com/docs/getstarted/telemetry#_managing-online-services)
+## [Managing online services 管理在线服务]({{< ref "/GetStarted/Telemetry#_managing-online-services" >}})
 
 Beyond crash reporting and telemetry, VS Code uses online services for various other purposes such as downloading product updates, finding, installing, and updating extensions, Settings Sync, or providing Natural Language Search within the Settings editor. You can choose to turn on/off features that use these services.
 
@@ -199,7 +199,7 @@ From **File** > **Preferences** > **Settings**, and type the tag `@tag:usesOnlin
 >
 > ​​	注意：VS Code 扩展也可能使用在线服务，并且可能不提供用于配置这些在线服务使用情况的设置，或者可能不会在搜索 `@tag:usesOnlineServices` 时注册其设置以显示。查阅特定扩展的文档以了解其对在线服务的使用情况。
 
-### [Non-Microsoft online services used by VS Code VS Code 使用的非 Microsoft 在线服务](https://code.visualstudio.com/docs/getstarted/telemetry#_nonmicrosoft-online-services-used-by-vs-code)
+### [Non-Microsoft online services used by VS Code VS Code 使用的非 Microsoft 在线服务]({{< ref "/GetStarted/Telemetry#_nonmicrosoft-online-services-used-by-vs-code" >}})
 
 The built-in **npm support for VS Code** extension sends requests to `https://registry.npmjs.org` and `https://registry.bower.io`.
 
@@ -213,7 +213,7 @@ When you use **Developer: Toggle Developer Tools** or **Developer: Open Webview 
 
 ​​	当您使用“开发人员：切换开发人员工具”或“开发人员：打开 Webview 开发人员工具”时，VS Code 可能会与 Google 服务器通信以获取启动开发人员工具所需的数据。
 
-## [Extension recommendations 扩展建议](https://code.visualstudio.com/docs/getstarted/telemetry#_extension-recommendations)
+## [Extension recommendations 扩展建议]({{< ref "/GetStarted/Telemetry#_extension-recommendations" >}})
 
 VS Code provides extension recommendations based on your file types, your workspace, and your environment. File type recommendations are either precomputed or dynamic. Workspace and environment recommendations are always precomputed.
 
@@ -225,7 +225,7 @@ If you want to know why an extension is being recommended, open the extension's 
 
 ![extension recommendation based on files](./Telemetry_img/extension-recommendation-based-on.png)
 
-### [Precomputed recommendations 预先计算的建议](https://code.visualstudio.com/docs/getstarted/telemetry#_precomputed-recommendations)
+### [Precomputed recommendations 预先计算的建议]({{< ref "/GetStarted/Telemetry#_precomputed-recommendations" >}})
 
 VS Code collects telemetry about which extensions are being activated for what file types and what workspaces/folders. Specific folders are identified by computing a hash of each of the folder's Git remotes.
 
@@ -239,23 +239,23 @@ Some precomputed recommendations are shipped as part of the product while additi
 
 ​​	一些预先计算的建议作为产品的一部分提供，而其他预先计算的建议则在运行时从在线 Microsoft 服务中获取。VS Code 独立评估和执行预先计算的建议，而不会将任何用户信息发送到任何在线服务。
 
-### [Dynamic recommendations 动态建议](https://code.visualstudio.com/docs/getstarted/telemetry#_dynamic-recommendations)
+### [Dynamic recommendations 动态建议]({{< ref "/GetStarted/Telemetry#_dynamic-recommendations" >}})
 
 When you open a file type for which VS Code does not have any precomputed recommendation, it asks the Extension Marketplace for extensions that declare that they support this file type. If the query returns extensions you don't have installed, VS Code will provide a notification.
 
 ​​	当您打开 VS Code 没有任何预先计算建议的文件类型时，它会向扩展市场询问声明支持此文件类型的扩展。如果查询返回您尚未安装的扩展，VS Code 将提供通知。
 
-## [For extension authors 对于扩展作者](https://code.visualstudio.com/docs/getstarted/telemetry#_for-extension-authors)
+## [For extension authors 对于扩展作者]({{< ref "/GetStarted/Telemetry#_for-extension-authors" >}})
 
 Please read the [extension guides telemetry document](https://code.visualstudio.com/api/extension-guides/telemetry).
 
 ​​	请阅读扩展指南遥测文档。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/getstarted/telemetry#_next-steps)
+## [Next steps 后续步骤]({{< ref "/GetStarted/Telemetry#_next-steps" >}})
 
 - [Visual Studio Code FAQ](https://code.visualstudio.com/docs/supporting/faq) - Consult the Frequently Asked Questions to learn more.
   Visual Studio Code 常见问题解答 - 查阅常见问题解答以了解更多信息。
-- [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Read about available options to customize VS Code.
+- [User and Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Read about available options to customize VS Code.
   用户和工作区设置 - 阅读有关自定义 VS Code 的可用选项。
-- [Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings) - You can easily modify commonly used keyboard shortcuts.
+- [Key Bindings]({{< ref "/GetStarted/KeyBindings" >}}) - You can easily modify commonly used keyboard shortcuts.
   键绑定 - 您可以轻松修改常用的键盘快捷键。

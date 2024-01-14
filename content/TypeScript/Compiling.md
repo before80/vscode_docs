@@ -18,7 +18,7 @@ draft = false
 
 ​​	TypeScript 是 JavaScript 的一个类型化超集，可转换为纯 JavaScript。它提供类、模块和接口，帮助您构建健壮的组件。
 
-## [Install the TypeScript compiler 安装 TypeScript 编译器](https://code.visualstudio.com/docs/typescript/typescript-compiling#_install-the-typescript-compiler)
+## [Install the TypeScript compiler 安装 TypeScript 编译器]({{< ref "/TypeScript/Compiling#_install-the-typescript-compiler" >}})
 
 Visual Studio Code includes TypeScript language support but does not include the TypeScript compiler, `tsc`. You will need to install the TypeScript compiler either globally or in your workspace to transpile TypeScript source code to JavaScript (`tsc HelloWorld.ts`).
 
@@ -45,7 +45,7 @@ Another option is to install the TypeScript compiler locally in your project (`n
 
 ​​	另一个选项是在您的项目中本地安装 TypeScript 编译器 ( `npm install --save-dev typescript` )，这样可以避免与您可能拥有的其他 TypeScript 项目发生可能的交互。
 
-### [Compiler versus language service 编译器与语言服务](https://code.visualstudio.com/docs/typescript/typescript-compiling#_compiler-versus-language-service)
+### [Compiler versus language service 编译器与语言服务]({{< ref "/TypeScript/Compiling#_compiler-versus-language-service" >}})
 
 It is important to keep in mind that VS Code's TypeScript language service is separate from your installed TypeScript compiler. You can see the VS Code's TypeScript version in the Status Bar when you open a TypeScript file.
 
@@ -53,11 +53,11 @@ It is important to keep in mind that VS Code's TypeScript language service is se
 
 ![TypeScript version displayed in the Status Bar](./Compiling_img/version-status-bar.png)
 
-Later in the article, we'll discuss how you can [change](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions) the version of TypeScript language service that VS Code uses.
+Later in the article, we'll discuss how you can [change]({{< ref "/TypeScript/Compiling#_using-newer-typescript-versions" >}}) the version of TypeScript language service that VS Code uses.
 
 ​​	在本文的后面部分，我们将讨论如何更改 VS Code 使用的 TypeScript 语言服务版本。
 
-## [tsconfig.json](https://code.visualstudio.com/docs/typescript/typescript-compiling#_tsconfigjson)
+## [tsconfig.json]({{< ref "/TypeScript/Compiling#_tsconfigjson" >}})
 
 Typically the first step in any new TypeScript project is to add a `tsconfig.json` file. A `tsconfig.json` file defines the TypeScript [project settings](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html), such as the compiler options and the files that should be included. To do this, open up the folder where you want to store your source and add a new file named `tsconfig.json`. Once in this file, IntelliSense (Ctrl+Space) will help you along the way.
 
@@ -83,13 +83,13 @@ Now when you create a `.ts` file as part of the project we will offer up rich ed
 
 ​​	现在，当您创建 `.ts` 文件作为项目的一部分时，我们将提供丰富的编辑体验和语法验证。
 
-## [Transpile TypeScript into JavaScript 将 TypeScript 编译成 JavaScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_transpile-typescript-into-javascript)
+## [Transpile TypeScript into JavaScript 将 TypeScript 编译成 JavaScript]({{< ref "/TypeScript/Compiling#_transpile-typescript-into-javascript" >}})
 
-VS Code integrates with `tsc` through our integrated [task runner](https://code.visualstudio.com/docs/editor/tasks). We can use this to transpile `.ts` files into `.js` files. Another benefit of using VS Code tasks is that you get integrated error and warning detection displayed in the [Problems](https://code.visualstudio.com/docs/editor/editingevolved#_errors-warnings) panel. Let's walk through transpiling a simple TypeScript Hello World program.
+VS Code integrates with `tsc` through our integrated [task runner]({{< ref "/UserGuide/Tasks" >}}). We can use this to transpile `.ts` files into `.js` files. Another benefit of using VS Code tasks is that you get integrated error and warning detection displayed in the [Problems]({{< ref "/UserGuide/CodeNavigation#_errors-warnings" >}}) panel. Let's walk through transpiling a simple TypeScript Hello World program.
 
 ​​	VS Code 通过我们的集成任务运行程序与 `tsc` 集成。我们可以使用它将 `.ts` 文件编译成 `.js` 文件。使用 VS Code 任务的另一个好处是，您可以在“问题”面板中获取集成的错误和警告检测。我们来逐步编译一个简单的 TypeScript Hello World 程序。
 
-### [Step 1: Create a simple TS file 步骤 1：创建一个简单的 TS 文件](https://code.visualstudio.com/docs/typescript/typescript-compiling#_step-1-create-a-simple-ts-file)
+### [Step 1: Create a simple TS file 步骤 1：创建一个简单的 TS 文件]({{< ref "/TypeScript/Compiling#_step-1-create-a-simple-ts-file" >}})
 
 Open VS Code on an empty folder and create a `helloworld.ts` file, place the following code in that file...
 
@@ -110,7 +110,7 @@ You should now see the transpiled `helloworld.js` JavaScript file, which you can
 
 ![build and run Hello World](./Compiling_img/build-hello-world.png)
 
-### [Step 2: Run the TypeScript build 步骤 2：运行 TypeScript 构建](https://code.visualstudio.com/docs/typescript/typescript-compiling#_step-2-run-the-typescript-build)
+### [Step 2: Run the TypeScript build 步骤 2：运行 TypeScript 构建]({{< ref "/TypeScript/Compiling#_step-2-run-the-typescript-build" >}})
 
 Execute **Run Build Task** (Ctrl+Shift+B) from the global **Terminal** menu. If you created a `tsconfig.json` file in the earlier section, this should present the following picker:
 
@@ -130,7 +130,7 @@ Under the covers, we run the TypeScript compiler as a task. The command we use i
 
 ​​	在后台，我们将 TypeScript 编译器作为任务运行。我们使用的命令是： `tsc -p .`
 
-### [Step 3: Make the TypeScript Build the default 步骤 3：使 TypeScript 构建成为默认构建](https://code.visualstudio.com/docs/typescript/typescript-compiling#_step-3-make-the-typescript-build-the-default)
+### [Step 3: Make the TypeScript Build the default 步骤 3：使 TypeScript 构建成为默认构建]({{< ref "/TypeScript/Compiling#_step-3-make-the-typescript-build-the-default" >}})
 
 You can also define the TypeScript build task as the default build task so that it is executed directly when triggering **Run Build Task** (Ctrl+Shift+B). To do so, select **Configure Default Build Task** from the global **Terminal** menu. This shows you a picker with the available build tasks. Select TypeScript **tsc: build**, which generates the following `tasks.json` file in a `.vscode` folder:
 
@@ -161,13 +161,13 @@ Notice that the task has a `group` JSON object that sets the task `kind` to `bui
 
 ​​	请注意，该任务有一个 `group` JSON 对象，它将任务 `kind` 设置为 `build` 并使其成为默认值。现在，当您选择“运行构建任务”命令或按 (Ctrl+Shift+B) 时，系统不会提示您选择任务，并且您的编译将开始。
 
-> **Tip:** You can also run the program using VS Code's Run/Debug feature. Details about running and debugging Node.js applications in VS Code can be found in the [Node.js tutorial](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_debug-your-express-app)
+> **Tip:** You can also run the program using VS Code's Run/Debug feature. Details about running and debugging Node.js applications in VS Code can be found in the [Node.js tutorial]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_debug-your-express-app" >}})
 >
 > ​​	提示：您还可以使用 VS Code 的运行/调试功能运行程序。有关在 VS Code 中运行和调试 Node.js 应用程序的详细信息，请参阅 Node.js 教程
 
-### [Step 4: Reviewing build issues 步骤 4：检查构建问题](https://code.visualstudio.com/docs/typescript/typescript-compiling#_step-4-reviewing-build-issues)
+### [Step 4: Reviewing build issues 步骤 4：检查构建问题]({{< ref "/TypeScript/Compiling#_step-4-reviewing-build-issues" >}})
 
-The VS Code task system can also detect build issues through a [problem matcher](https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher). A problem matcher parses build output based on the specific build tool and provides integrated issue display and navigation. VS Code ships with many problem matchers and `$tsc` seen above in `tasks.json` is the problem matcher for TypeScript compiler output.
+The VS Code task system can also detect build issues through a [problem matcher]({{< ref "/UserGuide/Tasks#_defining-a-problem-matcher" >}}). A problem matcher parses build output based on the specific build tool and provides integrated issue display and navigation. VS Code ships with many problem matchers and `$tsc` seen above in `tasks.json` is the problem matcher for TypeScript compiler output.
 
 ​​	VS Code 任务系统还可以通过问题匹配器检测构建问题。问题匹配器根据特定的构建工具解析构建输出，并提供集成的错误显示和导航。VS Code 附带了许多问题匹配器， `$tsc` 如上文在 `tasks.json` 中看到的，是 TypeScript 编译器输出的问题匹配器。
 
@@ -193,11 +193,11 @@ You can also use the keyboard to open the list Ctrl+Shift+M.
 
 ​​	您还可以使用键盘打开列表 Ctrl+Shift+M。
 
-> **Tip:** Tasks offer rich support for many actions. Check the [Tasks](https://code.visualstudio.com/docs/editor/tasks) topic for more information on how to configure them.
+> **Tip:** Tasks offer rich support for many actions. Check the [Tasks]({{< ref "/UserGuide/Tasks" >}}) topic for more information on how to configure them.
 >
 > ​​	提示：任务为许多操作提供丰富的支持。查看任务主题以获取有关如何配置它们的更多信息。
 
-## [JavaScript source map support JavaScript 源映射支持](https://code.visualstudio.com/docs/typescript/typescript-compiling#_javascript-source-map-support)
+## [JavaScript source map support JavaScript 源映射支持]({{< ref "/TypeScript/Compiling#_javascript-source-map-support" >}})
 
 TypeScript debugging supports JavaScript source maps. To generate source maps for your TypeScript files, compile with the `--sourcemap` option or set the `sourceMap` property in the `tsconfig.json` file to `true`.
 
@@ -207,7 +207,7 @@ In-lined source maps (a source map where the content is stored as a data URL ins
 
 ​​	内联源映射（其中内容存储为数据 URL，而不是单独的文件）也受支持，尽管尚未支持内联源。
 
-## [Output location for generated files 生成文件的输出位置](https://code.visualstudio.com/docs/typescript/typescript-compiling#_output-location-for-generated-files)
+## [Output location for generated files 生成文件的输出位置]({{< ref "/TypeScript/Compiling#_output-location-for-generated-files" >}})
 
 Having the generated JavaScript file in the same folder at the TypeScript source will quickly get cluttered on larger projects. You can specify the output directory for the compiler with the `outDir` attribute.
 
@@ -223,9 +223,9 @@ Having the generated JavaScript file in the same folder at the TypeScript source
 }
 ```
 
-## [Hiding derived JavaScript files 隐藏派生的 JavaScript 文件](https://code.visualstudio.com/docs/typescript/typescript-compiling#_hiding-derived-javascript-files)
+## [Hiding derived JavaScript files 隐藏派生的 JavaScript 文件]({{< ref "/TypeScript/Compiling#_hiding-derived-javascript-files" >}})
 
-When you are working with TypeScript, you often don't want to see generated JavaScript files in the File Explorer or in Search results. VS Code offers filtering capabilities with a `files.exclude` [workspace setting](https://code.visualstudio.com/docs/getstarted/settings) and you can easily create an expression to hide those derived files:
+When you are working with TypeScript, you often don't want to see generated JavaScript files in the File Explorer or in Search results. VS Code offers filtering capabilities with a `files.exclude` [workspace setting]({{< ref "/GetStarted/Settings" >}}) and you can easily create an expression to hide those derived files:
 
 ​​	使用 TypeScript 时，您通常不希望在文件资源管理器或搜索结果中看到生成的 JavaScript 文件。VS Code 提供了具有 `files.exclude` 工作区设置的筛选功能，您可以轻松创建表达式来隐藏这些派生文件：
 
@@ -258,7 +258,7 @@ This is a bit of a trick. The search [glob patterns](https://code.visualstudio.c
 
 ​​	使用较新的 TypeScript 版本
 
-## [Using newer TypeScript versions VS Code 附带最新稳定版本的 TypeScript 语言服务，并默认使用此服务在您的工作区中提供 IntelliSense。工作区的 TypeScript 版本独立于您用于编译 文件的 TypeScript 版本。对于大多数常见情况，您只需使用 VS Code 的内置 TypeScript 版本即可获得 IntelliSense，而无需担心，但有时您可能需要更改 VS Code 用于 IntelliSense 的 TypeScript 版本。](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions)
+## [Using newer TypeScript versions VS Code 附带最新稳定版本的 TypeScript 语言服务，并默认使用此服务在您的工作区中提供 IntelliSense。工作区的 TypeScript 版本独立于您用于编译 文件的 TypeScript 版本。对于大多数常见情况，您只需使用 VS Code 的内置 TypeScript 版本即可获得 IntelliSense，而无需担心，但有时您可能需要更改 VS Code 用于 IntelliSense 的 TypeScript 版本。]({{< ref "/TypeScript/Compiling#_using-newer-typescript-versions" >}})
 
 VS Code ships with a recent stable version of the TypeScript language service and uses this by default to provide IntelliSense in your workspace. The workspace version of TypeScript is independent of the version of TypeScript you use to compile your `*.ts` files. You can just use VS Code's built-in TypeScript version for IntelliSense without worry for most common cases, but sometimes you may need to change the version of TypeScript VS Code uses for IntelliSense.
 
@@ -281,7 +281,7 @@ You have a few options if you want to change the default version of TypeScript i
 
 ​​	如果您想更改工作区中 TypeScript 的默认版本，则有几个选项：
 
-### [Using the workspace version of TypeScript 使用工作区版本的 TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript)
+### [Using the workspace version of TypeScript 使用工作区版本的 TypeScript]({{< ref "/TypeScript/Compiling#_using-the-workspace-version-of-typescript" >}})
 
 If your workspace has a specific TypeScript version, you can switch between the workspace version of TypeScript and the version that VS Code uses by default by opening a TypeScript or JavaScript file and clicking on the TypeScript version number in the Status Bar. A message box will appear asking you which version of TypeScript VS Code should use:
 
@@ -293,7 +293,7 @@ Use this to switch between the version of TypeScript that comes with VS Code and
 
 ​​	使用此功能可在 VS Code 附带的 TypeScript 版本和工作区中的 TypeScript 版本之间切换。您还可以使用 TypeScript：选择 TypeScript 版本命令触发 TypeScript 版本选择器。
 
-VS Code will automatically detect workspace versions of TypeScript that are installed under `node_modules` in the root of your workspace. You can also explicitly tell VS Code which version of TypeScript to use by configuring the `typescript.tsdk` in your user or workspace [settings](https://code.visualstudio.com/docs/getstarted/settings). The `typescript.tsdk` setting should point to a directory containing the TypeScript `tsserver.js` file. You can find the TypeScript installation location using `npm list -g typescript`. The `tsserver.js` file is usually in the `lib` folder.
+VS Code will automatically detect workspace versions of TypeScript that are installed under `node_modules` in the root of your workspace. You can also explicitly tell VS Code which version of TypeScript to use by configuring the `typescript.tsdk` in your user or workspace [settings]({{< ref "/GetStarted/Settings" >}}). The `typescript.tsdk` setting should point to a directory containing the TypeScript `tsserver.js` file. You can find the TypeScript installation location using `npm list -g typescript`. The `tsserver.js` file is usually in the `lib` folder.
 
 ​​	VS Code 会自动检测工作区根目录 `node_modules` 下安装的 TypeScript 工作区版本。您还可以通过在用户或工作区设置中配置 `typescript.tsdk` 来明确告知 VS Code 使用哪个版本的 TypeScript。 `typescript.tsdk` 设置应指向包含 TypeScript `tsserver.js` 文件的目录。您可以使用 `npm list -g typescript` 查找 TypeScript 安装位置。 `tsserver.js` 文件通常位于 `lib` 文件夹中。
 
@@ -329,17 +329,17 @@ The `typescript.tsdk` workspace setting only tells VS Code that a workspace vers
 
 ​​	工作区设置仅告诉 VS Code 存在 TypeScript 的工作区版本。要实际开始将工作区版本用于 IntelliSense，您必须运行 TypeScript: 选择 TypeScript 版本命令并选择工作区版本。
 
-### [Using TypeScript nightly builds 使用 TypeScript nightly 版本](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-typescript-nightly-builds)
+### [Using TypeScript nightly builds 使用 TypeScript nightly 版本]({{< ref "/TypeScript/Compiling#_using-typescript-nightly-builds" >}})
 
 The simplest way to try out the latest TypeScript features in VS Code is to install the [JavaScript and TypeScript Nightly extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next).
 
 ​​	在 VS Code 中试用最新 TypeScript 功能的最简单方法是安装 JavaScript 和 TypeScript Nightly 扩展。
 
-This extension automatically replaces VS Code's built-in TypeScript version with the latest TypeScript nightly build. Just make sure you [switch back to using VS Code's TypeScript version](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript) if you've configured your TypeScript version with the **TypeScript: Select TypeScript Version** command.
+This extension automatically replaces VS Code's built-in TypeScript version with the latest TypeScript nightly build. Just make sure you [switch back to using VS Code's TypeScript version]({{< ref "/TypeScript/Compiling#_using-the-workspace-version-of-typescript" >}}) if you've configured your TypeScript version with the **TypeScript: Select TypeScript Version** command.
 
 ​​	此扩展会自动将 VS Code 的内置 TypeScript 版本替换为最新的 TypeScript nightly 版本。如果您已使用 TypeScript: 选择 TypeScript 版本命令配置了 TypeScript 版本，请务必切换回使用 VS Code 的 TypeScript 版本。
 
-## [Mixed TypeScript and JavaScript projects 混合 TypeScript 和 JavaScript 项目](https://code.visualstudio.com/docs/typescript/typescript-compiling#_mixed-typescript-and-javascript-projects)
+## [Mixed TypeScript and JavaScript projects 混合 TypeScript 和 JavaScript 项目]({{< ref "/TypeScript/Compiling#_mixed-typescript-and-javascript-projects" >}})
 
 It is possible to have mixed TypeScript and JavaScript projects. To enable JavaScript inside a TypeScript project, you can set the `allowJs` property to `true` in the `tsconfig.json`.
 
@@ -349,13 +349,13 @@ It is possible to have mixed TypeScript and JavaScript projects. To enable JavaS
 >
 > ​​	提示： `tsc` 编译器不会自动检测到 `jsconfig.json` 文件的存在。使用 `–p` 参数使 `tsc` 使用您的 `jsconfig.json` 文件，例如 `tsc -p jsconfig.json` 。
 
-## [Working with large projects 处理大型项目](https://code.visualstudio.com/docs/typescript/typescript-compiling#_working-with-large-projects)
+## [Working with large projects 处理大型项目]({{< ref "/TypeScript/Compiling#_working-with-large-projects" >}})
 
 If you are working in a codebase with hundreds or thousands of TypeScript files, here are some steps you can take to improve both the editing experience in VS Code as well as compile times on the command line.
 
 ​​	如果您正在使用包含数百或数千个 TypeScript 文件的代码库，可以采取以下步骤来改善 VS Code 中的编辑体验以及命令行上的编译时间。
 
-### [Make sure your tsconfig only includes files you care about 确保您的 tsconfig 仅包含您关心的文件](https://code.visualstudio.com/docs/typescript/typescript-compiling#_make-sure-your-tsconfig-only-includes-files-you-care-about)
+### [Make sure your tsconfig only includes files you care about 确保您的 tsconfig 仅包含您关心的文件]({{< ref "/TypeScript/Compiling#_make-sure-your-tsconfig-only-includes-files-you-care-about" >}})
 
 Use `include` or `files` in your project's `tsconfig.json` to make sure the project only includes the files that should be part of the project.
 
@@ -365,7 +365,7 @@ Use `include` or `files` in your project's `tsconfig.json` to make sure the proj
 
 ​​	有关配置项目的 `tsconfig.json` 的更多信息。
 
-### [Break up your project using project references 使用项目引用来分解项目](https://code.visualstudio.com/docs/typescript/typescript-compiling#_break-up-your-project-using-project-references)
+### [Break up your project using project references 使用项目引用来分解项目]({{< ref "/TypeScript/Compiling#_break-up-your-project-using-project-references" >}})
 
 Instead of structuring your source code as a single large project, you can improve performance by breaking it up into smaller projects using [project references](https://www.typescriptlang.org/docs/handbook/project-references.html). This allows TypeScript to load just a subset of your codebase at a time, instead of loading the entire thing.
 
@@ -375,40 +375,40 @@ See the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/
 
 ​​	请参阅 TypeScript 文档，了解有关如何使用项目引用以及使用它们的最佳实践的详细信息。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/typescript/typescript-compiling#_next-steps)
+## [Next steps 后续步骤]({{< ref "/TypeScript/Compiling#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [Editing TypeScript](https://code.visualstudio.com/docs/typescript/typescript-editing) - Specific editing features for TypeScript.
+- [Editing TypeScript]({{< ref "/TypeScript/Editing" >}}) - Specific editing features for TypeScript.
   编辑 TypeScript - 针对 TypeScript 的特定编辑功能。
-- [Refactoring TypeScript](https://code.visualstudio.com/docs/typescript/typescript-refactoring) - Useful refactorings from the TypeScript language service.
+- [Refactoring TypeScript]({{< ref "/TypeScript/Refactoring" >}}) - Useful refactorings from the TypeScript language service.
   重构 TypeScript - TypeScript 语言服务提供有用的重构。
-- [Debugging TypeScript](https://code.visualstudio.com/docs/typescript/typescript-debugging) - Configure the debugger for your TypeScript project.
+- [Debugging TypeScript]({{< ref "/TypeScript/Debugging" >}}) - Configure the debugger for your TypeScript project.
   调试 TypeScript - 为 TypeScript 项目配置调试器。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/typescript/typescript-compiling#_common-questions)
+## [Common questions 常见问题]({{< ref "/TypeScript/Compiling#_common-questions" >}})
 
-### [How do I resolve a TypeScript "Cannot compile external module" error? 如何解决 TypeScript“无法编译外部模块”错误？](https://code.visualstudio.com/docs/typescript/typescript-compiling#_how-do-i-resolve-a-typescript-cannot-compile-external-module-error)
+### [How do I resolve a TypeScript "Cannot compile external module" error? 如何解决 TypeScript“无法编译外部模块”错误？]({{< ref "/TypeScript/Compiling#_how-do-i-resolve-a-typescript-cannot-compile-external-module-error" >}})
 
 If you get that error, resolve it by creating a `tsconfig.json` file in the root folder of your project. The tsconfig.json file lets you control how Visual Studio Code compiles your TypeScript code. For more information, see the [tsconfig.json overview](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ​​	如果出现该错误，请通过在项目的根文件夹中创建一个 `tsconfig.json` 文件来解决。tsconfig.json 文件允许您控制 Visual Studio Code 如何编译 TypeScript 代码。有关详细信息，请参阅 tsconfig.json 概述。
 
-### [Why do I get different errors and warnings with VS Code than when I compile my TypeScript project? 为什么我在使用 VS Code 时收到的错误和警告与在编译 TypeScript 项目时收到的不同？](https://code.visualstudio.com/docs/typescript/typescript-compiling#_why-do-i-get-different-errors-and-warnings-with-vs-code-than-when-i-compile-my-typescript-project)
+### [Why do I get different errors and warnings with VS Code than when I compile my TypeScript project? 为什么我在使用 VS Code 时收到的错误和警告与在编译 TypeScript 项目时收到的不同？]({{< ref "/TypeScript/Compiling#_why-do-i-get-different-errors-and-warnings-with-vs-code-than-when-i-compile-my-typescript-project" >}})
 
-VS Code ships with a recent stable version of the TypeScript language service and it may not match the version of TypeScript installed globally on your computer or locally in your workspace. For that reason, you may see differences between your compiler output and errors detected by the active TypeScript language service. See [Using newer TypeScript versions](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions) for details on installing a matching TypeScript version.
+VS Code ships with a recent stable version of the TypeScript language service and it may not match the version of TypeScript installed globally on your computer or locally in your workspace. For that reason, you may see differences between your compiler output and errors detected by the active TypeScript language service. See [Using newer TypeScript versions]({{< ref "/TypeScript/Compiling#_using-newer-typescript-versions" >}}) for details on installing a matching TypeScript version.
 
 ​​	VS Code 附带最新稳定版本的 TypeScript 语言服务，它可能与您计算机上全局安装的或在工作区中本地安装的 TypeScript 版本不匹配。因此，您可能会看到编译器输出与活动 TypeScript 语言服务检测到的错误之间存在差异。有关安装匹配的 TypeScript 版本的详细信息，请参阅使用较新版本的 TypeScript。
 
-### [Can I use the version of TypeScript that ships with VS 2022? 我可以使用 VS 2022 附带的 TypeScript 版本吗？](https://code.visualstudio.com/docs/typescript/typescript-compiling#_can-i-use-the-version-of-typescript-that-ships-with-vs-2022)
+### [Can I use the version of TypeScript that ships with VS 2022? 我可以使用 VS 2022 附带的 TypeScript 版本吗？]({{< ref "/TypeScript/Compiling#_can-i-use-the-version-of-typescript-that-ships-with-vs-2022" >}})
 
 No, the TypeScript language service that ships with Visual Studio 2019 and 2022 isn't compatible with VS Code. You will need to install a separate version of TypeScript from [npm](https://www.npmjs.com/package/typescript).
 
 ​​	不可以，Visual Studio 2019 和 2022 附带的 TypeScript 语言服务与 VS Code 不兼容。您需要从 npm 安装单独的 TypeScript 版本。
 
-### [Why are some errors reported as warnings? 为什么某些错误被报告为警告？](https://code.visualstudio.com/docs/typescript/typescript-compiling#_why-are-some-errors-reported-as-warnings)
+### [Why are some errors reported as warnings? 为什么某些错误被报告为警告？]({{< ref "/TypeScript/Compiling#_why-are-some-errors-reported-as-warnings" >}})
 
 By default, VS Code TypeScript displays code style issues as warnings instead of errors. This applies to:
 
@@ -431,6 +431,6 @@ Treating these as warnings is consistent with other tools, such as TSLint. These
 
 ​​	将这些视为警告与其他工具（例如 TSLint）保持一致。当您从命令行运行 `tsc` 时，这些仍将显示为错误。
 
-You can disable this behavior by setting `"typescript.reportStyleChecksAsWarnings": false` in your User [settings](https://code.visualstudio.com/docs/getstarted/settings).
+You can disable this behavior by setting `"typescript.reportStyleChecksAsWarnings": false` in your User [settings]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	您可以在用户设置中设置 `"typescript.reportStyleChecksAsWarnings": false` 来禁用此行为。

@@ -83,6 +83,6 @@ Let's set up a container for use with all of the Python projects in the `./Repos
 
    ![Container explorer with multiple folders under python container](./Configureseparatecontainers_img/containers-explorer-python.png)
 
-> **Tip:** Instead of mounting the local filesystem, you can use a similar flow to set up a container with an isolated, more performant volume that you clone your source code into. See the Advanced Containers [Improve disk performance](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-named-volume-for-your-entire-source-tree) article for details.
+> **Tip:** Instead of mounting the local filesystem, you can use a similar flow to set up a container with an isolated, more performant volume that you clone your source code into. See the Advanced Containers [Improve disk performance]({{< ref "/Remote/advancedcontainers/Improveperformance#_use-a-named-volume-for-your-entire-source-tree" >}}) article for details.
 >
 > ​​	提示：除了装载本地文件系统，您还可以使用类似的流程设置一个容器，其中包含一个独立的、性能更高的卷，您可以将源代码克隆到该卷中。有关详细信息，请参阅高级容器改善磁盘性能一文。

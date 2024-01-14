@@ -14,11 +14,11 @@ draft = false
 
 
 
-Visual Studio Code has hundreds of [settings](https://code.visualstudio.com/docs/getstarted/settings), thousands of [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace), and innumerable ways to adjust the UI layout to customize the editor. VS Code **Profiles** let you create sets of customizations and quickly switch between them or share them with others. This topic explains how to create, modify, export, and import profiles.
+Visual Studio Code has hundreds of [settings]({{< ref "/GetStarted/Settings" >}}), thousands of [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}), and innumerable ways to adjust the UI layout to customize the editor. VS Code **Profiles** let you create sets of customizations and quickly switch between them or share them with others. This topic explains how to create, modify, export, and import profiles.
 
 ​​	Visual Studio Code 有数百个设置、数千个扩展以及无数种调整 UI 布局的方式来自定义编辑器。VS Code 配置文件允许您创建一组自定义项并在它们之间快速切换或与他人共享。本主题介绍如何创建、修改、导出和导入配置文件。
 
-## [Create a Profile 创建配置文件](https://code.visualstudio.com/docs/editor/profiles#_create-a-profile)
+## [Create a Profile 创建配置文件]({{< ref "/UserGuide/Profiles#_create-a-profile" >}})
 
 VS Code treats your current configuration as the **Default Profile**. As you modify settings, install extensions, or change UI layout by moving views, these customizations are tracked in the Default Profile.
 
@@ -50,7 +50,7 @@ You can choose to create a new profile by copying from a Profile Template or fro
 
 ![Create Profile Dialog](./Profiles_img/create-profile-dialog.png)
 
-### [Partial Profile 部分配置文件](https://code.visualstudio.com/docs/editor/profiles#_partial-profile)
+### [Partial Profile 部分配置文件]({{< ref "/UserGuide/Profiles#_partial-profile" >}})
 
 A partial profile allows you to customize only a subset of configurations (settings, keyboard shortcuts, snippets, tasks and extensions) and use the rest of the configurations from the Default Profile. For example, you can create a profile with all configurations except for keyboard shortcuts, and VS Code will apply the keyboard shortcuts from the Default Profile when this profile is active.
 
@@ -58,7 +58,7 @@ A partial profile allows you to customize only a subset of configurations (setti
 
 ![Create Partial Profile Dialog](./Profiles_img/create-partial-profile-dialog.png)
 
-### [Check the current profile 检查当前配置文件](https://code.visualstudio.com/docs/editor/profiles#_check-the-current-profile)
+### [Check the current profile 检查当前配置文件]({{< ref "/UserGuide/Profiles#_check-the-current-profile" >}})
 
 The current profile name is displayed in several places in the VS Code UI:
 
@@ -81,21 +81,21 @@ The **Manage** gear button displays a badge with the first two letters of the ac
 
 ![Manage gear displaying "DE' to indicate that the user's 'Demo' profile is active](./Profiles_img/profile-gear-two-letters.png)
 
-### [Configure a profile 配置配置文件](https://code.visualstudio.com/docs/editor/profiles#_configure-a-profile)
+### [Configure a profile 配置配置文件]({{< ref "/UserGuide/Profiles#_configure-a-profile" >}})
 
 You can configure a profile just as you would normally change any VS Code configuration. You can install/uninstall/disable extensions, change settings, and adjust the editor's UI layout (for example, moving and hiding views) like normal. These changes are stored in your currently active profile.
 
 ​​	您可以像通常更改任何 VS Code 配置一样配置配置文件。您可以像往常一样安装/卸载/禁用扩展、更改设置以及调整编辑器的 UI 布局（例如，移动和隐藏视图）。这些更改存储在您当前活动的配置文件中。
 
-### [Workspace associations 工作区关联](https://code.visualstudio.com/docs/editor/profiles#_workspace-associations)
+### [Workspace associations 工作区关联]({{< ref "/UserGuide/Profiles#_workspace-associations" >}})
 
 When you create or select an existing profile, it is associated with the current workspace and whenever you open that folder, the workspace's profile is active. If you open another folder, the profile switches to that folder's associated profile if one has been set or remains on the last used profile.
 
 ​​	当您创建或选择现有配置文件时，它会与当前工作区关联，并且无论何时打开该文件夹，工作区的配置文件都会处于活动状态。如果您打开另一个文件夹，则配置文件会切换到该文件夹的关联配置文件（如果已设置）或保留在上次使用的配置文件上。
 
-## [Managing profiles 管理配置文件](https://code.visualstudio.com/docs/editor/profiles#_managing-profiles)
+## [Managing profiles 管理配置文件]({{< ref "/UserGuide/Profiles#_managing-profiles" >}})
 
-### [Switch profiles 切换配置文件](https://code.visualstudio.com/docs/editor/profiles#_switch-profiles)
+### [Switch profiles 切换配置文件]({{< ref "/UserGuide/Profiles#_switch-profiles" >}})
 
 You can quickly switch between profiles with the **Profiles: Switch Profile** command in the Command Palette, which presents a dropdown listing your available profiles.
 
@@ -105,19 +105,19 @@ You can also switch profiles by selecting a profile from the list displayed in t
 
 ​​	您还可以通过从“配置文件”菜单中显示的列表中选择配置文件来切换配置文件，该菜单可通过“管理”齿轮按钮或“文件”>“首选项”>“配置文件”获得。
 
-### [Edit a profile 编辑配置文件](https://code.visualstudio.com/docs/editor/profiles#_edit-a-profile)
+### [Edit a profile 编辑配置文件]({{< ref "/UserGuide/Profiles#_edit-a-profile" >}})
 
 You can edit an existing profile via the **Edit** command in the Profiles menu.
 
 ​​	您可以通过“配置文件”菜单中的“编辑”命令编辑现有配置文件。
 
-### [Delete a profile 删除个人资料](https://code.visualstudio.com/docs/editor/profiles#_delete-a-profile)
+### [Delete a profile 删除个人资料]({{< ref "/UserGuide/Profiles#_delete-a-profile" >}})
 
 You can delete a profile via the **Delete Profile** command. The **Delete Profile** drop down lets you select which profile(s) to delete.
 
 ​​	您可以通过“删除配置文件”命令删除配置文件。“删除配置文件”下拉菜单允许您选择要删除的配置文件。
 
-## [Profile contents 配置文件内容](https://code.visualstudio.com/docs/editor/profiles#_profile-contents)
+## [Profile contents 配置文件内容]({{< ref "/UserGuide/Profiles#_profile-contents" >}})
 
 The **Profiles: Show Contents** command (available in the Command Palette or Profiles menus) brings up the Profiles view, where you can review the customizations for the profile.
 
@@ -150,7 +150,7 @@ When you create a new profile based on the Default Profile, the profile-specific
 >
 > ​​	注意：在“配置文件”视图中取消选中扩展程序不会从当前配置文件中删除或禁用扩展程序，但如果您导出配置文件，则会删除扩展程序。
 
-### [Applying a setting to all profiles 将设置应用于所有配置文件](https://code.visualstudio.com/docs/editor/profiles#_applying-a-setting-to-all-profiles)
+### [Applying a setting to all profiles 将设置应用于所有配置文件]({{< ref "/UserGuide/Profiles#_applying-a-setting-to-all-profiles" >}})
 
 A setting can be applied to all profiles using the **Apply Setting to all Profiles** action available in the Settings editor.
 
@@ -162,7 +162,7 @@ This will apply the value of the setting to all profiles. Any updates to this se
 
 ​​	这会将设置的值应用于所有配置文件。对该设置从任何配置文件进行的任何更新都将应用于所有配置文件。您可以随时取消选中“将设置应用于所有配置文件”操作来还原此操作。
 
-### [Applying an extension to all profiles 将扩展程序应用于所有配置文件](https://code.visualstudio.com/docs/editor/profiles#_applying-an-extension-to-all-profiles)
+### [Applying an extension to all profiles 将扩展程序应用于所有配置文件]({{< ref "/UserGuide/Profiles#_applying-an-extension-to-all-profiles" >}})
 
 An extension can be applied to all profiles by clicking on the **Apply Extension to all Profiles** action in the Extensions view.
 
@@ -174,9 +174,9 @@ This will make this extension available in all profiles. You can always revert t
 
 ​​	这会使该扩展程序在所有配置文件中可用。您可以随时取消选中“将扩展程序应用于所有配置文件”操作来还原此操作。
 
-## [Share Profiles 共享配置文件](https://code.visualstudio.com/docs/editor/profiles#_share-profiles)
+## [Share Profiles 共享配置文件]({{< ref "/UserGuide/Profiles#_share-profiles" >}})
 
-### [Export 导出](https://code.visualstudio.com/docs/editor/profiles#_export)
+### [Export 导出]({{< ref "/UserGuide/Profiles#_export" >}})
 
 You can export a profile in order to save it or share it with others. The **Export Profile** command displays the Profiles view with the contents of the active profile and an **Export** button. You can unselect various elements of the profile such as extensions or configuration files before you export the profile.
 
@@ -186,7 +186,7 @@ When you select **Export**, you are prompted for the profile name and whether yo
 
 ​​	当您选择“导出”时，系统会提示您输入配置文件名称，并询问您是要导出到 GitHub gist 还是本地文件系统。
 
-#### [Save as a GitHub gist 另存为 GitHub gist](https://code.visualstudio.com/docs/editor/profiles#_save-as-a-github-gist)
+#### [Save as a GitHub gist 另存为 GitHub gist]({{< ref "/UserGuide/Profiles#_save-as-a-github-gist" >}})
 
 After you save a profile to GitHub (you'll be prompted to log into GitHub), a dialog gives you the option to **Copy Link** so you can share your profile gist URL with others. The URL includes an autogenerated GUID and has the format `https://vscode.dev/editor/profile/github/{GUID}`. The GitHub gist is marked as **Secret**, so only those with the link can see the gist.
 
@@ -204,19 +204,19 @@ You can review your gists at `https://gist.github.com/{username}`. From your Git
 
 ​​	您可以在 `https://gist.github.com/{username}` 查看您的 gist。在您的 GitHub gist 页面中，您可以重命名、删除或复制 gist 的 GUID。
 
-#### [Save as a local file 另存为本地文件](https://code.visualstudio.com/docs/editor/profiles#_save-as-a-local-file)
+#### [Save as a local file 另存为本地文件]({{< ref "/UserGuide/Profiles#_save-as-a-local-file" >}})
 
 If you chose to save the profile as a local file, a **Save Profile** dialog lets you place the file on your local machine. A profile is persisted in a file with the extension `.code-profile`.
 
 ​​	如果您选择将配置文件另存为本地文件，则“保存配置文件”对话框允许您将文件放在本地计算机上。配置文件保存在扩展名为 `.code-profile` 的文件中。
 
-### [Import 导入](https://code.visualstudio.com/docs/editor/profiles#_import)
+### [Import 导入]({{< ref "/UserGuide/Profiles#_import" >}})
 
 To import an existing profile, run the **Import Profiles** command. You are prompted for the URL of a GitHub gist or the file location of a profile via an **Import Profile** dialog. Once you have selected the profile, the Profiles view opens and displays the profile to import. You can unselect some profile elements if you don't want to import them. Select the **Import Profile** button and you will now be using the imported profile.
 
 ​​	要导入现有配置文件，请运行“导入配置文件”命令。系统会通过“导入配置文件”对话框提示您输入 GitHub gist 的 URL 或配置文件的文件位置。选择配置文件后，“配置文件”视图随即打开并显示要导入的配置文件。如果您不想导入某些配置文件元素，可以取消选择它们。选择“导入配置文件”按钮，您现在将使用导入的配置文件。
 
-## [Uses for Profiles 配置文件的用途](https://code.visualstudio.com/docs/editor/profiles#_uses-for-profiles)
+## [Uses for Profiles 配置文件的用途]({{< ref "/UserGuide/Profiles#_uses-for-profiles" >}})
 
 Profiles are a great way to customize VS Code to better fit your needs. In this section, we look at some common use cases for profiles.
 
@@ -226,31 +226,31 @@ Since profiles are remembered per workspace, they are a great way to customize V
 
 ​​	由于配置文件会根据工作区记住，因此它们是针对特定编程语言自定义 VS Code 的好方法。例如，您可以创建一个 JavaScript 前端配置文件，其中包含您在某个工作区中用于 JavaScript 开发的扩展、设置和自定义项，并拥有一个 Python 后端配置文件，其中包含您在另一个工作区中用于 Python 开发的扩展、设置和自定义项。使用此方法，您可以轻松地在工作区之间切换，并始终以正确的方式配置 VS Code。
 
-### [Demos 演示](https://code.visualstudio.com/docs/editor/profiles#_demos)
+### [Demos 演示]({{< ref "/UserGuide/Profiles#_demos" >}})
 
 When doing a demo, you can use a profile to set up a specific configuration for your demo. For example, you can create a profile with a specific set of extensions and settings like zoom level, font size, and color theme. By doing this, a demo will not mess up your normal VS Code setup and you can customize VS Code for better visibility during your presentation.
 
 ​​	在进行演示时，您可以使用配置文件为演示设置特定配置。例如，您可以创建一个配置文件，其中包含一组特定的扩展和设置，如缩放级别、字体大小和颜色主题。通过执行此操作，演示不会搞乱您的正常 VS Code 设置，并且您可以在演示期间自定义 VS Code 以提高可见性。
 
-### [Education 教育](https://code.visualstudio.com/docs/editor/profiles#_education)
+### [Education 教育]({{< ref "/UserGuide/Profiles#_education" >}})
 
 Profiles can be used to customize VS Code for students to ease the use in a classroom setting. Profiles allow educators to quickly share a customized VS Code setup with students. For example, educators can create a profile with a specific set of extensions and settings needed for a computer science class and then share that profile with students.
 
 ​​	配置文件可用于为学生自定义 VS Code，以便在课堂环境中轻松使用。配置文件允许教育工作者快速与学生共享自定义的 VS Code 设置。例如，教育工作者可以为计算机科学课程创建包含特定扩展和设置的配置文件，然后与学生共享该配置文件。
 
-### [Report VS Code issues 报告 VS Code 问题](https://code.visualstudio.com/docs/editor/profiles#_report-vs-code-issues)
+### [Report VS Code issues 报告 VS Code 问题]({{< ref "/UserGuide/Profiles#_report-vs-code-issues" >}})
 
 One use of an Empty Profile is to reset your editor when you want to report an issue with VS Code. An Empty Profile disables all extensions and modified settings so you can quickly see if the issue is due to an extension, a setting, or is in VS Code core.
 
 ​​	空配置文件的一个用途是在您想要报告 VS Code 问题时重置编辑器。空配置文件会禁用所有扩展和已修改的设置，以便您可以快速查看问题是由于扩展、设置还是 VS Code 内核造成的。
 
-## [Profile Templates 配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_profile-templates)
+## [Profile Templates 配置文件模板]({{< ref "/UserGuide/Profiles#_profile-templates" >}})
 
 VS Code comes with a predefined set of profile templates that you can use to customize VS Code for your specific workflow. To create a new profile based on a template, select a Profile Template when going through the **Create Profile** flow.
 
 ​​	VS Code 附带一组预定义的配置文件模板，您可以使用这些模板为您的特定工作流自定义 VS Code。要基于模板创建新配置文件，请在执行“创建配置文件”流程时选择“配置文件模板”。
 
-### [Python Profile Template Python 配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_python-profile-template)
+### [Python Profile Template Python 配置文件模板]({{< ref "/UserGuide/Profiles#_python-profile-template" >}})
 
 The Python profile is a good starting point for Python development. It comes with Python specific snippets and has the following extensions:
 
@@ -283,7 +283,7 @@ This profile also sets the following settings:
     "editor.defaultFormatter": "ms-python.black-formatter"
 ```
 
-### [Data Science Profile Template 数据科学配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_data-science-profile-template)
+### [Data Science Profile Template 数据科学配置文件模板]({{< ref "/UserGuide/Profiles#_data-science-profile-template" >}})
 
 The Data Science profile is a good starting point for all data and notebook work. It comes with specific snippets and has the following extensions:
 
@@ -331,7 +331,7 @@ This profile also sets the following settings:
     }
 ```
 
-### [Doc Writer Profile Template 文档编写人员配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_doc-writer-profile-template)
+### [Doc Writer Profile Template 文档编写人员配置文件模板]({{< ref "/UserGuide/Profiles#_doc-writer-profile-template" >}})
 
 The Doc Writer profile is a good lightweight setup for writing documentation. It comes with the following extensions:
 
@@ -376,7 +376,7 @@ This profile also sets the following settings:
     "workbench.startupEditor": "none"
 ```
 
-### [Node.js Profile Template Node.js 配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_nodejs-profile-template)
+### [Node.js Profile Template Node.js 配置文件模板]({{< ref "/UserGuide/Profiles#_nodejs-profile-template" >}})
 
 The Node.js profile is a good starting point for all Node.js work. It comes with the following extensions:
 
@@ -434,7 +434,7 @@ This profile comes with the following settings:
     }
 ```
 
-### [Angular Profile Template Angular 配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_angular-profile-template)
+### [Angular Profile Template Angular 配置文件模板]({{< ref "/UserGuide/Profiles#_angular-profile-template" >}})
 
 The Angular profile is a good starting point for all Angular work. It comes with the following extensions:
 
@@ -497,7 +497,7 @@ This profile sets the following settings:
     "workbench.iconTheme": "material-icon-theme"
 ```
 
-### [Java General Profile Template Java 通用配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_java-general-profile-template)
+### [Java General Profile Template Java 通用配置文件模板]({{< ref "/UserGuide/Profiles#_java-general-profile-template" >}})
 
 The Java General profile is a good starting point for all Java work. It customizes the layout to improve the Java experience and comes with the following extensions from the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack):
 
@@ -518,7 +518,7 @@ The Java General profile is a good starting point for all Java work. It customiz
 - [Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test) - Run and debug JUnit or TestNG test cases.
   Java 的测试运行器 - 运行和调试 JUnit 或 TestNG 测试用例。
 
-### [Java Spring Profile Template Java Spring 配置文件模板](https://code.visualstudio.com/docs/editor/profiles#_java-spring-profile-template)
+### [Java Spring Profile Template Java Spring 配置文件模板]({{< ref "/UserGuide/Profiles#_java-spring-profile-template" >}})
 
 The Java Spring profile is a good starting point for all Java and Spring developers. It builds on the Java General profile and add the following extensions from the [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack):
 
@@ -542,7 +542,7 @@ This profile sets the following settings:
     "boot-java.rewrite.reconcile": true
 ```
 
-## [Command line 命令行](https://code.visualstudio.com/docs/editor/profiles#_command-line)
+## [Command line 命令行]({{< ref "/UserGuide/Profiles#_command-line" >}})
 
 You can launch VS Code with a specific profile via the `--profile` command-line interface option. You pass the name of the profile after the `--profile` argument and open a folder or a workspace using that profile. The command line below opens the `web-sample` folder with the "Web Development" profile:
 
@@ -556,9 +556,9 @@ If the profile specified does not exist, a new empty profile with the given name
 
 ​​	如果指定的配置文件不存在，则会创建一个具有给定名称的新空配置文件。
 
-## [Common Questions 常见问题](https://code.visualstudio.com/docs/editor/profiles#_common-questions)
+## [Common Questions 常见问题]({{< ref "/UserGuide/Profiles#_common-questions" >}})
 
-### [Where are profiles kept? 配置文件保存在哪里？](https://code.visualstudio.com/docs/editor/profiles#_where-are-profiles-kept)
+### [Where are profiles kept? 配置文件保存在哪里？]({{< ref "/UserGuide/Profiles#_where-are-profiles-kept" >}})
 
 Profiles are stored under your User configurations similar to your user settings and keybindings.
 
@@ -572,13 +572,13 @@ If you are using the [Insiders](https://code.visualstudio.com/insiders) version,
 
 ​​	如果您使用的是 Insiders 版本，则中间文件夹名称为 `Code - Insiders` 。
 
-### [Where is the UI State globalState.json file? UI 状态 globalState.json 文件在哪里？](https://code.visualstudio.com/docs/editor/profiles#_where-is-the-ui-state-globalstatejson-file)
+### [Where is the UI State globalState.json file? UI 状态 globalState.json 文件在哪里？]({{< ref "/UserGuide/Profiles#_where-is-the-ui-state-globalstatejson-file" >}})
 
 If you expand the **UI State** node in the Profiles view, there is a `globalState.json` entry. This is an in-memory JSON representation of your profile's UI State, describing the visibility and layout of various VS Code UI elements. The file does not actually exist on disk and is just a JSON view of the underlying global state storage.
 
 ​​	如果您在配置文件视图中展开 UI 状态节点，则会有一个 `globalState.json` 条目。这是配置文件的 UI 状态的内存中 JSON 表示形式，描述了各种 VS Code UI 元素的可见性和布局。该文件实际上并不存在于磁盘上，而只是基础全局状态存储的 JSON 视图。
 
-### [What is a Temporary Profile? 什么是临时配置文件？](https://code.visualstudio.com/docs/editor/profiles#_what-is-a-temporary-profile)
+### [What is a Temporary Profile? 什么是临时配置文件？]({{< ref "/UserGuide/Profiles#_what-is-a-temporary-profile" >}})
 
 A Temporary Profile is a profile that is not saved across VS Code sessions. You create a Temporary Profile via the **Profiles: Create a Temporary Profile** command in the Command Palette. The Temporary Profile starts as an Empty Profile and has an automatically generated name (such as **Temp 1**). You can modify the profile settings and extensions, use the profile for the lifetime of your VS Code session, but it will be deleted once you close VS Code.
 
@@ -588,21 +588,21 @@ Temporary Profiles are useful if you want to try a new configuration or test an 
 
 ​​	如果您想尝试新配置或测试扩展而无需修改默认或现有配置文件，临时配置文件非常有用。重新启动 VS Code 会为您的工作区重新启用当前配置文件。
 
-### [How can I remove the profile from my project? 如何从我的项目中删除配置文件？](https://code.visualstudio.com/docs/editor/profiles#_how-can-i-remove-the-profile-from-my-project)
+### [How can I remove the profile from my project? 如何从我的项目中删除配置文件？]({{< ref "/UserGuide/Profiles#_how-can-i-remove-the-profile-from-my-project" >}})
 
 You can set your project back to the Default Profile. If you'd like to remove all profile workspace associations, you can use the **Developer: Reset Workspace Profiles Associations**, which will set all local folders currently assigned a profile back to the Default Profile. **Reset Workspace Profiles Associations** does not delete any existing profiles.
 
 ​​	您可以将项目设置回默认配置文件。如果您想删除所有配置文件工作区关联，可以使用 Developer: Reset Workspace Profiles Associations，它会将当前分配了配置文件的所有本地文件夹设置回默认配置文件。Reset Workspace Profiles Associations 不会删除任何现有配置文件。
 
-### [Do profiles sync across machines (via Settings Sync)? 配置文件是否通过机器同步（通过设置同步）？](https://code.visualstudio.com/docs/editor/profiles#_do-profiles-sync-across-machines-via-settings-sync)
+### [Do profiles sync across machines (via Settings Sync)? 配置文件是否通过机器同步（通过设置同步）？]({{< ref "/UserGuide/Profiles#_do-profiles-sync-across-machines-via-settings-sync" >}})
 
-Yes, you can use [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) to move your profiles across various machines. With Setting Sync enabled and **Profiles** checked in the **Settings Sync: Configure** drop down, all your created profiles are available.
+Yes, you can use [Settings Sync]({{< ref "/UserGuide/SettingsSync" >}}) to move your profiles across various machines. With Setting Sync enabled and **Profiles** checked in the **Settings Sync: Configure** drop down, all your created profiles are available.
 
 ​​	是的，您可以使用设置同步功能在多台机器间移动您的配置文件。启用设置同步功能并在设置同步中选中配置文件：配置下拉菜单，您创建的所有配置文件都可用。
 
 ![Settings Sync data drop down with Profiles checked](./Profiles_img/settings-sync-profiles.png)
 
-### [Why are some settings not exported when exporting a profile? 导出配置文件时为什么某些设置不会导出？](https://code.visualstudio.com/docs/editor/profiles#_why-are-some-settings-not-exported-when-exporting-a-profile)
+### [Why are some settings not exported when exporting a profile? 导出配置文件时为什么某些设置不会导出？]({{< ref "/UserGuide/Profiles#_why-are-some-settings-not-exported-when-exporting-a-profile" >}})
 
 When exporting profiles, machine-specific settings are not included because these setting would not be applicable on another machine. For example, settings that point to local paths are not included.
 

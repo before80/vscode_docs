@@ -31,7 +31,7 @@ RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhisto
     && echo "$SNIPPET" >> "/root/.bashrc"
 ```
 
-If you have a non-root user, update your `Dockerfile` with the following. Replace `user-name-goes-here` with the name of a [non-root user](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user) in the container.
+If you have a non-root user, update your `Dockerfile` with the following. Replace `user-name-goes-here` with the name of a [non-root user]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}}) in the container.
 
 ​​	如果您有非 root 用户，请使用以下内容更新您的 `Dockerfile` 。将 `user-name-goes-here` 替换为容器中非 root 用户的名称。
 
@@ -59,7 +59,7 @@ Next, add a local volume to store the command history. This step varies dependin
     ]
   ```
 
-- **Docker Compose:** Update (or [extend](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)) your `docker-compose.yml` with the following for the appropriate service.
+- **Docker Compose:** Update (or [extend]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})) your `docker-compose.yml` with the following for the appropriate service.
 
   ​​	Docker Compose：使用以下内容为相应服务更新（或扩展）您的 `docker-compose.yml` 。
 
@@ -78,7 +78,7 @@ Finally, if you've already built the container and connected to it, run **Dev Co
 
 ​​	最后，如果您已经构建了容器并连接到它，请从命令面板（F1）运行 Dev Containers: Rebuild Container 来获取更改。否则，运行 Dev Containers: Open Folder in Container... 来连接到容器。
 
-### [Video: How to make your bash history persist in a dev container 视频：如何在开发容器中使您的 bash 历史记录保持持久性](https://code.visualstudio.com/remote/advancedcontainers/persist-bash-history#_video-how-to-make-your-bash-history-persist-in-a-dev-container)
+### [Video: How to make your bash history persist in a dev container 视频：如何在开发容器中使您的 bash 历史记录保持持久性]({{< ref "/Remote/advancedcontainers/Persistbashhistory#_video-how-to-make-your-bash-history-persist-in-a-dev-container" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/12nZz-TjoZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 

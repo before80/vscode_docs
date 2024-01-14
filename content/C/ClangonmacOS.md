@@ -26,13 +26,13 @@ If you have any trouble, feel free to file an issue for this tutorial in the [VS
 
 ​​​	如果您遇到任何问题，请随时在 VS Code 文档存储库中为此教程提交问题。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/cpp/config-clang-mac#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C/ClangonmacOS#_prerequisites" >}})
 
 To successfully complete this tutorial, you must do the following steps:
 
 ​​​	要成功完成本教程，您必须执行以下步骤：
 
-1. Install [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac).
+1. Install [Visual Studio Code on macOS]({{< ref "/Setup/macOS" >}}).
 
    ​​​	在 macOS 上安装 Visual Studio Code。
 
@@ -42,7 +42,7 @@ To successfully complete this tutorial, you must do the following steps:
 
    ![C/C++ extension](./ClangonmacOS_img/cpp-extension.png)
 
-### [Ensure Clang is installed 确保已安装 Clang](https://code.visualstudio.com/docs/cpp/config-clang-mac#_ensure-clang-is-installed)
+### [Ensure Clang is installed 确保已安装 Clang]({{< ref "/C/ClangonmacOS#_ensure-clang-is-installed" >}})
 
 Clang might already be installed on your Mac. To verify that it is, open a macOS Terminal window and enter the following command:
 
@@ -60,7 +60,7 @@ If Clang isn't installed, enter the following command to install the command lin
 xcode-select --install
 ```
 
-## [Create Hello World app 创建 Hello World 应用](https://code.visualstudio.com/docs/cpp/config-clang-mac#_create-hello-world-app)
+## [Create Hello World app 创建 Hello World 应用]({{< ref "/C/ClangonmacOS#_create-hello-world-app" >}})
 
 From the macOS Terminal, create an empty folder called `projects` where you can store all your VS Code projects, then create a subfolder called `helloworld`, navigate into it, and open VS Code in that folder by entering the following commands in the terminal window:
 
@@ -85,7 +85,7 @@ The `code .` command opens VS Code in the current working folder, which becomes 
 - `c_cpp_properties.json` (compiler path and IntelliSense settings)
   `c_cpp_properties.json` （编译器路径和 IntelliSense 设置）
 
-### [Add a hello world source code file 添加一个 hello world 源代码文件](https://code.visualstudio.com/docs/cpp/config-clang-mac#_add-a-hello-world-source-code-file)
+### [Add a hello world source code file 添加一个 hello world 源代码文件]({{< ref "/C/ClangonmacOS#_add-a-hello-world-source-code-file" >}})
 
 In the File Explorer title bar, select the **New File** button and name the file `helloworld.cpp`.
 
@@ -122,7 +122,7 @@ Now press Ctrl+S to save the file. Notice that your files are listed in the **Fi
 
 ![File Explorer](./ClangonmacOS_img/file-explorer.png)
 
-You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) to automatically save your file changes, by selecting **File** > **Auto Save**. You can find out more about the other views in the VS Code [User Interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface).
+You can also enable [Auto Save]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}}) to automatically save your file changes, by selecting **File** > **Auto Save**. You can find out more about the other views in the VS Code [User Interface documentation]({{< ref "/GetStarted/UserInterface" >}}).
 
 ​​​	您还可以通过选择“文件”>“自动保存”来启用自动保存，以自动保存文件更改。您可以在 VS Code 用户界面文档中了解有关其他视图的更多信息。
 
@@ -130,9 +130,9 @@ You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codeba
 >
 > ​​​	注意：当您保存或打开 C++ 文件时，您可能会看到来自 C/C++ 扩展的通知，其中包含有关 Insider 版本可用性的信息，该版本允许您测试新功能和修复程序。您可以通过选择 `X` （清除通知）来忽略此通知。
 
-## [Explore IntelliSense 探索 IntelliSense](https://code.visualstudio.com/docs/cpp/config-clang-mac#_explore-intellisense)
+## [Explore IntelliSense 探索 IntelliSense]({{< ref "/C/ClangonmacOS#_explore-intellisense" >}})
 
-[IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) is a tool to help you code faster and more efficiently by adding code editing features such as code completion, parameter info, quick info, and member lists.
+[IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) is a tool to help you code faster and more efficiently by adding code editing features such as code completion, parameter info, quick info, and member lists.
 
 ​​​	IntelliSense 是一种工具，可通过添加代码编辑功能（如代码补全、参数信息、快速信息和成员列表）来帮助您更快、更高效地编写代码。
 
@@ -146,11 +146,11 @@ You can press the Tab key to insert the selected member. Then, when you add the 
 
 ​​​	您可以按 Tab 键插入选定的成员。然后，当您添加左括号时，将显示有关函数所需参数的信息。
 
-If IntelliSense is not already configured, open the Command Palette (Ctrl+Shift+P) and enter **Select IntelliSense Configuration**. From the dropdown of compilers, select `Use clang++` to configure. More information can be found in the [IntelliSense configuration documentation](https://code.visualstudio.com/docs/cpp/configure-intellisense).
+If IntelliSense is not already configured, open the Command Palette (Ctrl+Shift+P) and enter **Select IntelliSense Configuration**. From the dropdown of compilers, select `Use clang++` to configure. More information can be found in the [IntelliSense configuration documentation]({{< ref "/C/ConfigureIntelliSense" >}}).
 
 ​​​	如果尚未配置 IntelliSense，请打开命令面板 (Ctrl+Shift+P) 并输入“选择 IntelliSense 配置”。从编译器下拉列表中，选择 `Use clang++` 进行配置。您可以在 IntelliSense 配置文档中找到更多信息。
 
-## [Run helloworld.cpp 运行 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-clang-mac#_run-helloworldcpp)
+## [Run helloworld.cpp 运行 helloworld.cpp]({{< ref "/C/ClangonmacOS#_run-helloworldcpp" >}})
 
 Remember, the C++ extension uses the C++ compiler you installed on your machine to build your program. Make sure you have a C++ compiler, such as Clang, installed before attempting to run and debug `helloworld.cpp` in VS Code.
 
@@ -186,7 +186,7 @@ Congratulations! You've just run your first C++ program in VS Code!
 
 ​​​	恭喜！您刚刚在 VS Code 中运行了第一个 C++ 程序！
 
-### [Understanding tasks.json 了解 tasks.json](https://code.visualstudio.com/docs/cpp/config-clang-mac#_understanding-tasksjson)
+### [Understanding tasks.json 了解 tasks.json]({{< ref "/C/ClangonmacOS#_understanding-tasksjson" >}})
 
 The first time you run your program, the C++ extension creates `tasks.json`, located in your project's `.vscode` folder. `tasks.json` stores build configurations.
 
@@ -271,13 +271,13 @@ with this:
     "group": "build",
 ```
 
-### [Modifying tasks.json 修改 tasks.json](https://code.visualstudio.com/docs/cpp/config-clang-mac#_modifying-tasksjson)
+### [Modifying tasks.json 修改 tasks.json]({{< ref "/C/ClangonmacOS#_modifying-tasksjson" >}})
 
 You can modify your `tasks.json` to build multiple C++ files by using an argument like `"${workspaceFolder}/*.cpp"` instead of `"${file}"`. This builds all `.cpp` files in your current folder. You can also modify the output filename by replacing `"${fileDirname}/${fileBasenameNoExtension}"` with a hard-coded filename (for example `"${workspaceFolder}/myProgram.out"`).
 
 ​​​	您可以通过使用 `"${workspaceFolder}/*.cpp"` 之类的参数而不是 `"${file}"` 来修改 `tasks.json` 以构建多个 C++ 文件。这将构建当前文件夹中的所有 `.cpp` 文件。您还可以通过将 `"${fileDirname}/${fileBasenameNoExtension}"` 替换为硬编码文件名（例如 `"${workspaceFolder}/myProgram.out"` ）来修改输出文件名。
 
-## [Debug helloworld.cpp 调试 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-clang-mac#_debug-helloworldcpp)
+## [Debug helloworld.cpp 调试 helloworld.cpp]({{< ref "/C/ClangonmacOS#_debug-helloworldcpp" >}})
 
 To debug your code,
 
@@ -315,7 +315,7 @@ The play button has two modes: **Run C/C++ File** and **Debug C/C++ File**. The 
 
 ​​​	播放按钮具有两种模式：运行 C/C++ 文件和调试 C/C++ 文件。默认模式是上次使用的模式。如果在播放按钮中看到调试图标，则可以选择播放按钮进行调试，而不是选择下拉菜单项。
 
-## [Explore the debugger 探索调试器](https://code.visualstudio.com/docs/cpp/config-clang-mac#_explore-the-debugger)
+## [Explore the debugger 探索调试器]({{< ref "/C/ClangonmacOS#_explore-the-debugger" >}})
 
 Before you start stepping through the code, let's take a moment to notice several changes in the user interface:
 
@@ -341,7 +341,7 @@ Before you start stepping through the code, let's take a moment to notice severa
 
   ![Debugging controls](./ClangonmacOS_img/debug-controls.png)
 
-## [Step through the code 逐步执行代码](https://code.visualstudio.com/docs/cpp/config-clang-mac#_step-through-the-code)
+## [Step through the code 逐步执行代码]({{< ref "/C/ClangonmacOS#_step-through-the-code" >}})
 
 Now you're ready to start stepping through the code.
 
@@ -369,7 +369,7 @@ Now you're ready to start stepping through the code.
 
    ​​​	如果您愿意，可以一直按“单步执行”，直到向量中的所有单词都已打印到控制台。但如果您好奇，请尝试按“单步进入”按钮以逐步执行 C++ 标准库中的源代码！
 
-## [Set a watch 设置监视](https://code.visualstudio.com/docs/cpp/config-clang-mac#_set-a-watch)
+## [Set a watch 设置监视]({{< ref "/C/ClangonmacOS#_set-a-watch" >}})
 
 You might want to keep track of the value of a variable as your program executes. You can do this by setting a **watch** on the variable.
 
@@ -391,7 +391,7 @@ You might want to keep track of the value of a variable as your program executes
 
    ![Mouse hover](./ClangonmacOS_img/mouse-hover.png)
 
-## [Customize debugging with launch.json 使用 launch.json 自定义调试](https://code.visualstudio.com/docs/cpp/config-clang-mac#_customize-debugging-with-launchjson)
+## [Customize debugging with launch.json 使用 launch.json 自定义调试]({{< ref "/C/ClangonmacOS#_customize-debugging-with-launchjson" >}})
 
 When you debug with the play button or F5, the C++ extension creates a dynamic debug configuration on the fly.
 
@@ -456,7 +456,7 @@ Ensure that the `preLaunchTask` value matches the `label` of the build task in t
 >
 > ​​​	从现在开始，播放按钮和 F5 将在启动程序进行调试时从 `launch.json` 文件中读取。
 
-## [Adding additional C/C++ settings 添加其他 C/C++ 设置](https://code.visualstudio.com/docs/cpp/config-clang-mac#_adding-additional-cc-settings)
+## [Adding additional C/C++ settings 添加其他 C/C++ 设置]({{< ref "/C/ClangonmacOS#_adding-additional-cc-settings" >}})
 
 For more control over the C/C++ extension, create a `c_cpp_properties.json` file, which allows you to change settings such as the path to the compiler, include paths, which C++ standard to compile against (such as C++17), and more.
 
@@ -502,7 +502,7 @@ You only need to modify the **Include path** setting if your program includes he
 
 ​​​	仅当程序包含不在工作区或标准库路径中的头文件时，才需要修改包含路径设置。
 
-### [Compiler path 编译器路径](https://code.visualstudio.com/docs/cpp/config-clang-mac#_compiler-path)
+### [Compiler path 编译器路径]({{< ref "/C/ClangonmacOS#_compiler-path" >}})
 
 The extension uses the `compilerPath` setting to infer the path to the C++ standard library header files. When the extension knows where to find those files, it can provide features like smart completions and **Go to Definition** navigation.
 
@@ -517,29 +517,29 @@ The C/C++ extension attempts to populate `compilerPath` with the default compile
 - Then hard-coded Xcode paths are searched, such as `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/`
   已知编译器名称的 PATH。编译器在列表中出现的顺序取决于 PATH。
 
-For more information, see the [IntelliSense configuration documentation](https://code.visualstudio.com/docs/cpp/configure-intellisense).
+For more information, see the [IntelliSense configuration documentation]({{< ref "/C/ConfigureIntelliSense" >}}).
 
 ​​​	然后搜索硬编码的 Xcode 路径，例如
 
-### [Mac framework path 有关详细信息，请参阅 IntelliSense 配置文档。](https://code.visualstudio.com/docs/cpp/config-clang-mac#_mac-framework-path)
+### [Mac framework path 有关详细信息，请参阅 IntelliSense 配置文档。]({{< ref "/C/ClangonmacOS#_mac-framework-path" >}})
 
 On the C/C++ Configuration screen, scroll down and expand **Advanced Settings** and ensure that **Mac framework path** points to the system header files. For example: `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks`
 
 ​​​	Mac 框架路径
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/cpp/config-clang-mac#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/C/ClangonmacOS#_troubleshooting" >}})
 
-### [Compiler and linking errors 编译器和链接错误](https://code.visualstudio.com/docs/cpp/config-clang-mac#_compiler-and-linking-errors)
+### [Compiler and linking errors 编译器和链接错误]({{< ref "/C/ClangonmacOS#_compiler-and-linking-errors" >}})
 
 The most common cause of errors (such as `undefined _main`, or `attempting to link with file built for unknown-unsupported file format`, and so on) occurs when `helloworld.cpp` is not the active file when you start a build or start debugging. This is because the compiler is trying to compile something that isn't source code, like your `launch.json`, `tasks.json`, or `c_cpp_properties.json` file.
 
 ​​​	最常见的错误原因（例如 `undefined _main` 或 `attempting to link with file built for unknown-unsupported file format` 等）是当您开始构建或开始调试时 `helloworld.cpp` 不是活动文件。这是因为编译器正在尝试编译不是源代码的内容，例如您的 `launch.json` 、 `tasks.json` 或 `c_cpp_properties.json` 文件。
 
-If you see build errors mentioning "C++11 extensions", you might not have updated your `tasks.json` build task to use the clang++ argument `--std=c++17`. By default, clang++ uses the C++98 standard, which doesn't support the initialization used in `helloworld.cpp`. Make sure to replace the entire contents of your `tasks.json` file with the code block provided in the [Run helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-clang-mac#_run-helloworldcpp) section.
+If you see build errors mentioning "C++11 extensions", you might not have updated your `tasks.json` build task to use the clang++ argument `--std=c++17`. By default, clang++ uses the C++98 standard, which doesn't support the initialization used in `helloworld.cpp`. Make sure to replace the entire contents of your `tasks.json` file with the code block provided in the [Run helloworld.cpp]({{< ref "/C/ClangonmacOS#_run-helloworldcpp" >}}) section.
 
 ​​​	如果看到提及“C++11 扩展”的构建错误，则可能尚未更新 `tasks.json` 构建任务以使用 clang++ 参数 `--std=c++17` 。默认情况下，clang++ 使用 C++98 标准，该标准不支持 `helloworld.cpp` 中使用的初始化。请务必使用在运行 helloworld.cpp 部分中提供的代码块替换 `tasks.json` 文件的全部内容。
 
-### [Terminal won't launch for input 无法启动终端以获取输入](https://code.visualstudio.com/docs/cpp/config-clang-mac#_terminal-wont-launch-for-input)
+### [Terminal won't launch for input 无法启动终端以获取输入]({{< ref "/C/ClangonmacOS#_terminal-wont-launch-for-input" >}})
 
 On macOS Catalina and onwards, you might have the issue where you are unable to enter input, even after setting `"externalConsole": true`. A terminal window opens, but it does not actually allow you to type any input.
 
@@ -570,11 +570,11 @@ Once you accept the permission request, then the external console should appear 
 
 ​​​	接受权限请求后，在调试时应会显示外部控制台。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/config-clang-mac#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/ClangonmacOS#_next-steps" >}})
 
-- Explore the [VS Code User Guide](https://code.visualstudio.com/docs/editor/codebasics).
+- Explore the [VS Code User Guide]({{< ref "/UserGuide/BasicEditing" >}}).
   浏览 VS Code 用户指南。
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp)
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}})
   查看 C++ 扩展概述
 - Create a new workspace, copy your .json files to it, adjust the necessary settings for the new workspace path, program name, and so on, and start coding!
   创建一个新工作区，将您的 .json 文件复制到其中，调整新工作区路径、程序名称等必要的设置，然后开始编码！

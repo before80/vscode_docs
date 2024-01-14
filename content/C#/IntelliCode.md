@@ -18,7 +18,7 @@ For users of the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemNam
 
 ​​​	对于 Visual Studio Code 中的 C# Dev Kit 扩展的用户，IntelliCode for C# Dev Kit 扩展可用于提供 IntelliCode 支持。C# Dev Kit 用户可以使用最多一行代码的预测，以及 IntelliSense 列表中的排名方法和属性。
 
-## [Whole line suggestions 整行建议](https://code.visualstudio.com/docs/csharp/intellicode#_whole-line-suggestions)
+## [Whole line suggestions 整行建议]({{< ref "/C#/IntelliCode#_whole-line-suggestions" >}})
 
 **Scenario 1**: When grey-text is shown, press Tab to accept the prediction (suggestion).
 
@@ -49,7 +49,7 @@ This model makes predictions on what you'll type next based on a rich knowledge 
 - The IntelliSense list
   IntelliSense 列表
 
-## [Starred suggestions 星标建议](https://code.visualstudio.com/docs/csharp/intellicode#_starred-suggestions)
+## [Starred suggestions 星标建议]({{< ref "/C#/IntelliCode#_starred-suggestions" >}})
 
 This extension provides AI-assisted IntelliSense by showing recommended completion items for your code context at the top of the completions list.
 
@@ -65,7 +65,7 @@ To see AI-assisted ranking in the IntelliSense list, you must first open a C# fi
 
 ​​​	若要查看 IntelliSense 列表中的 AI 辅助排名，您必须首先打开一个作为解决方案一部分的 C# 文件。不属于解决方案一部分的 C# 文件将无法使用此功能。
 
-## [Security and Privacy 安全性和隐私](https://code.visualstudio.com/docs/csharp/intellicode#_security-and-privacy)
+## [Security and Privacy 安全性和隐私]({{< ref "/C#/IntelliCode#_security-and-privacy" >}})
 
 All your code stays local – the model runs right on your computer - so there's no need to transmit code to a remote server for custom model training. This is enabled by our machine learning system design, which led to dramatically reduced memory footprint and improved inference speed.
 
@@ -75,13 +75,13 @@ Since models powering IntelliCode features run on your local machine, this allow
 
 ​​​	由于为 IntelliCode 功能提供支持的模型在您的本地计算机上运行，因此可以在离线和气隙环境中使用 IntelliCode 支持。
 
-## [Get support for other languages 获取对其他语言的支持](https://code.visualstudio.com/docs/csharp/intellicode#_get-support-for-other-languages)
+## [Get support for other languages 获取对其他语言的支持]({{< ref "/C#/IntelliCode#_get-support-for-other-languages" >}})
 
 To get IntelliCode whole-line autocompletions for Python, JavaScript, and TypeScript in VS Code, install the general [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) extension. The general extension also ranks methods and properties in the IntelliSense list with stars for Python and SQL, in addition to the languages supported for whole-line autocomplete.
 
 ​​​	要在 VS Code 中为 Python、JavaScript 和 TypeScript 获取 IntelliCode 整行自动完成功能，请安装通用 IntelliCode 扩展。通用扩展还会对 IntelliSense 列表中的方法和属性进行排名，并为 Python 和 SQL 添加星号，以及支持整行自动完成功能的语言。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/csharp/intellicode#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C#/IntelliCode#_prerequisites" >}})
 
 In order to use this extension, you must have both the C# Dev Kit and .NET 6 installed and enabled on your machine. This extension supports the following platforms and operating systems:
 
@@ -119,7 +119,7 @@ In order to use this extension, you must have both the C# Dev Kit and .NET 6 ins
   - x64 Tested on Ubuntu 22.04
     在 Ubuntu 22.04 上测试了 x64
 
-## [How do I report feedback and issues 如何报告反馈和问题](https://code.visualstudio.com/docs/csharp/intellicode#_how-do-i-report-feedback-and-issues)
+## [How do I report feedback and issues 如何报告反馈和问题]({{< ref "/C#/IntelliCode#_how-do-i-report-feedback-and-issues" >}})
 
 You can file an issue on our IntelliCode for VS Code extension [GitHub feedback repo](https://github.com/MicrosoftDocs/intellicode/issues).
 

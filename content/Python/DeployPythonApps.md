@@ -20,7 +20,7 @@ The [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.
 
 ![Azure Tools extension](./DeployPythonApps_img/azure-tools.png)
 
-## [Deployment tutorials 部署教程](https://code.visualstudio.com/docs/python/python-on-azure#_deployment-tutorials)
+## [Deployment tutorials 部署教程]({{< ref "/Python/DeployPythonApps#_deployment-tutorials" >}})
 
 The following tutorials on the [Python Azure Developer's Center](https://learn.microsoft.com/azure/developer/python) walk you though the details.
 

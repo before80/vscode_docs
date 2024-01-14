@@ -18,7 +18,7 @@ Support for [Emmet](https://emmet.io/) snippets and expansion is built right int
 
 ​​	Visual Studio Code 内置对 Emmet 代码段和扩展的支持，无需扩展。Emmet 2.0 支持大多数 Emmet 操作，包括扩展 Emmet 缩写和代码段。
 
-## [How to expand Emmet abbreviations and snippets 如何扩展 Emmet 缩写和代码段](https://code.visualstudio.com/docs/editor/emmet#_how-to-expand-emmet-abbreviations-and-snippets)
+## [How to expand Emmet abbreviations and snippets 如何扩展 Emmet 缩写和代码段]({{< ref "/UserGuide/Emmet#_how-to-expand-emmet-abbreviations-and-snippets" >}})
 
 Emmet abbreviation and snippet expansions are enabled by default in `html`, `haml`, `pug`, `slim`, `jsx`, `xml`, `xsl`, `css`, `scss`, `sass`, `less` and `stylus` files, as well as any language that inherits from any of the above like `handlebars` and `php`.
 
@@ -30,7 +30,7 @@ When you start typing an Emmet abbreviation, you will see the abbreviation displ
 
 ​​	当您开始键入 Emmet 缩写时，您将在建议列表中看到显示的缩写。如果您打开了建议文档弹出窗口，您将在键入时看到扩展的预览。如果您在样式表文件中，扩展的缩写会显示在建议列表中，并按其他 CSS 建议进行排序。
 
-### [Using Tab for Emmet expansions 使用 Tab 进行 Emmet 扩展](https://code.visualstudio.com/docs/editor/emmet#_using-tab-for-emmet-expansions)
+### [Using Tab for Emmet expansions 使用 Tab 进行 Emmet 扩展]({{< ref "/UserGuide/Emmet#_using-tab-for-emmet-expansions" >}})
 
 If you want to use the Tab key for expanding the Emmet abbreviations, add the following setting:
 
@@ -44,13 +44,13 @@ This setting allows using the Tab key for indentation when text is not an Emmet 
 
 ​​	此设置允许在文本不是 Emmet 缩写时使用 Tab 键进行缩进。
 
-### [Emmet when quickSuggestions are disabled 禁用 quickSuggestions 时使用 Emmet](https://code.visualstudio.com/docs/editor/emmet#_emmet-when-quicksuggestions-are-disabled)
+### [Emmet when quickSuggestions are disabled 禁用 quickSuggestions 时使用 Emmet]({{< ref "/UserGuide/Emmet#_emmet-when-quicksuggestions-are-disabled" >}})
 
-If you have disabled the `editor.quickSuggestions` [setting](https://code.visualstudio.com/docs/getstarted/settings), you won't see suggestions as you type. You can still trigger suggestions manually by pressing Ctrl+Space and see the preview.
+If you have disabled the `editor.quickSuggestions` [setting]({{< ref "/GetStarted/Settings" >}}), you won't see suggestions as you type. You can still trigger suggestions manually by pressing Ctrl+Space and see the preview.
 
 ​​	如果您已禁用 `editor.quickSuggestions` 设置，则在您键入时不会看到建议。您仍可以通过按 Ctrl+空格键手动触发建议并查看预览。
 
-### [Disable Emmet in suggestions 在建议中禁用 Emmet](https://code.visualstudio.com/docs/editor/emmet#_disable-emmet-in-suggestions)
+### [Disable Emmet in suggestions 在建议中禁用 Emmet]({{< ref "/UserGuide/Emmet#_disable-emmet-in-suggestions" >}})
 
 If you don't want to see Emmet abbreviations in suggestions at all, then use the following setting:
 
@@ -64,7 +64,7 @@ You can still use the command **Emmet: Expand Abbreviation** to expand your abbr
 
 ​​	您仍可以使用命令 Emmet：展开缩写来展开缩写。您还可以将任何键盘快捷键绑定到命令 ID `editor.emmet.action.expandAbbreviation` 。
 
-### [Emmet suggestion ordering Emmet 建议排序](https://code.visualstudio.com/docs/editor/emmet#_emmet-suggestion-ordering)
+### [Emmet suggestion ordering Emmet 建议排序]({{< ref "/UserGuide/Emmet#_emmet-suggestion-ordering" >}})
 
 To ensure Emmet suggestions are always on top in the suggestion list, add the following settings:
 
@@ -75,7 +75,7 @@ To ensure Emmet suggestions are always on top in the suggestion list, add the fo
 "editor.snippetSuggestions": "top"
 ```
 
-## [Emmet abbreviations in other file types 其他文件类型中的 Emmet 缩写](https://code.visualstudio.com/docs/editor/emmet#_emmet-abbreviations-in-other-file-types)
+## [Emmet abbreviations in other file types 其他文件类型中的 Emmet 缩写]({{< ref "/UserGuide/Emmet#_emmet-abbreviations-in-other-file-types" >}})
 
 To enable the Emmet abbreviation expansion in file types where it is not available by default, use the `emmet.includeLanguages` setting. Make sure to use [language identifiers](https://code.visualstudio.com/docs/languages/identifiers) for both sides of the mapping, with the right side being the language identifier of an Emmet supported language (see the list above).
 
@@ -105,7 +105,7 @@ Emmet has no knowledge of these new languages, and so there might be Emmet sugge
 >
 > ​​	注意：如果您之前使用 `emmet.syntaxProfiles` 映射新文件类型，则从 VS Code 1.15 开始，您应该使用设置 `emmet.includeLanguages` 。 `emmet.syntaxProfiles` 仅用于自定义最终输出。
 
-## [Emmet with multi-cursors Emmet 与多光标](https://code.visualstudio.com/docs/editor/emmet#_emmet-with-multicursors)
+## [Emmet with multi-cursors Emmet 与多光标]({{< ref "/UserGuide/Emmet#_emmet-with-multicursors" >}})
 
 You can use most of the Emmet actions with multi-cursors as well:
 
@@ -113,7 +113,7 @@ You can use most of the Emmet actions with multi-cursors as well:
 
 ![Emmet with multi cursors](./Emmet_img/emmet-multi-cursor.gif)
 
-## [Using filters 使用筛选器](https://code.visualstudio.com/docs/editor/emmet#_using-filters)
+## [Using filters 使用筛选器]({{< ref "/UserGuide/Emmet#_using-filters" >}})
 
 Filters are special post-processors that modify the expanded abbreviation before it is output to the editor. There are 2 ways to use filters; either globally through the `emmet.syntaxProfiles` setting or directly in the current abbreviation.
 
@@ -135,7 +135,7 @@ To provide a filter for just the current abbreviation, append the filter to your
 
 ​​	若要仅为当前缩写提供筛选器，请将筛选器追加到您的缩写。例如， `div#page|c` 将 `comment` 筛选器应用于 `div#page` 缩写。
 
-### [BEM filter (bem) BEM 筛选器 (bem)](https://code.visualstudio.com/docs/editor/emmet#_bem-filter-bem)
+### [BEM filter (bem) BEM 筛选器 (bem)]({{< ref "/UserGuide/Emmet#_bem-filter-bem" >}})
 
 If you use the [Block Element Modifier](http://getbem.com/) (BEM) way of writing HTML, then `bem` filters are very handy for you to use. To learn more about how to use `bem` filters, read [BEM filter in Emmet](https://docs.emmet.io/filters/bem/).
 
@@ -145,7 +145,7 @@ You can customize this filter by using the `bem.elementSeparator` and `bem.modif
 
 ​​	您可以使用 `bem.elementSeparator` 和 `bem.modifierSeparator` 首选项自定义此筛选器，如 Emmet 首选项中所述。
 
-### [Comment filter (c) 注释过滤器 (c)](https://code.visualstudio.com/docs/editor/emmet#_comment-filter-c)
+### [Comment filter (c) 注释过滤器 (c)]({{< ref "/UserGuide/Emmet#_comment-filter-c" >}})
 
 This filter adds comments around important tags. By default, "important tags" are those tags with id and/or class attribute.
 
@@ -194,13 +194,13 @@ in VS Code, you would use a simpler:
 }
 ```
 
-### [Trim filter (t) 此过滤器仅适用于为 Emmet 提供缩写：使用缩写包装命令的缩写。它会从包装的行中删除行标记。](https://code.visualstudio.com/docs/editor/emmet#_trim-filter-t)
+### [Trim filter (t) 此过滤器仅适用于为 Emmet 提供缩写：使用缩写包装命令的缩写。它会从包装的行中删除行标记。]({{< ref "/UserGuide/Emmet#_trim-filter-t" >}})
 
 This filter is applicable only when providing abbreviations for the **Emmet: Wrap with Abbreviation** command. It [removes line markers](https://docs.emmet.io/actions/wrap-with-abbreviation/#removing-list-markers) from wrapped lines.
 
 ​​	使用自定义 Emmet 代码段
 
-## [Using custom Emmet snippets](https://code.visualstudio.com/docs/editor/emmet#_using-custom-emmet-snippets)
+## [Using custom Emmet snippets]({{< ref "/UserGuide/Emmet#_using-custom-emmet-snippets" >}})
 
 Custom Emmet snippets need to be defined in a json file named `snippets.json`. The `emmet.extensionsPath` setting should have the path to the directory containing this file.
 
@@ -240,7 +240,7 @@ Authoring of Custom Snippets in Emmet 2.0 via the `snippets.json` file differs f
 | CSS snippet values CSS 代码段值        | Can end with `;` 可以以 `;` 结尾                             | Do not add `;` at end of snippet value. Emmet will add the trailing `;` based on the file type (css/less/scss vs sass/stylus) or the emmet preference set for `css.propertyEnd`, `sass.propertyEnd`, `stylus.propertyEnd` 不要在代码段值末尾添加 `;` 。Emmet 将根据文件类型（css/less/scss 与 sass/stylus）或为 `css.propertyEnd` 、 `sass.propertyEnd` 、 `stylus.propertyEnd` 设置的 emmet 首选项添加尾随 `;` 。 |
 | Cursor location 光标位置               | `${cursor}` or ` `${cursor}` 或 `                            | ` can be used ` 可用于                                       |
 
-### [HTML Emmet snippets HTML Emmet 代码段](https://code.visualstudio.com/docs/editor/emmet#_html-emmet-snippets)
+### [HTML Emmet snippets HTML Emmet 代码段]({{< ref "/UserGuide/Emmet#_html-emmet-snippets" >}})
 
 HTML custom snippets are applicable to all other markup flavors like `haml` or `pug`. When snippet value is an abbreviation and not actual HTML, the appropriate transformations can be applied to get the right output as per the language type.
 
@@ -254,7 +254,7 @@ If you want a snippet for plain text, then surround the text with `{}`.
 
 ​​	如果您想要一个纯文本代码段，则用 `{}` 括起文本。
 
-### [CSS Emmet snippets CSS Emmet 代码段](https://code.visualstudio.com/docs/editor/emmet#_css-emmet-snippets)
+### [CSS Emmet snippets CSS Emmet 代码段]({{< ref "/UserGuide/Emmet#_css-emmet-snippets" >}})
 
 Values for CSS Emmet snippets should be a complete property name and value pair.
 
@@ -268,7 +268,7 @@ Do not use `:` in the snippet name. `:` is used to separate property name and va
 
 ​​	不要在代码段名称中使用 `:` 。当 Emmet 尝试将缩写与其中一个代码段模糊匹配时， `:` 用于分隔属性名称和值。
 
-### [Tab stops and cursors in custom snippets 自定义代码段中的制表符停靠点和光标](https://code.visualstudio.com/docs/editor/emmet#_tab-stops-and-cursors-in-custom-snippets)
+### [Tab stops and cursors in custom snippets 自定义代码段中的制表符停靠点和光标]({{< ref "/UserGuide/Emmet#_tab-stops-and-cursors-in-custom-snippets" >}})
 
 The syntax for tab stops in custom Emmet snippets follows the [Textmate snippets syntax](https://manual.macromates.com/en/snippets).
 
@@ -279,9 +279,9 @@ The syntax for tab stops in custom Emmet snippets follows the [Textmate snippets
 - Previously, `|` or `${cursor}` was used to denote the cursor location in the custom Emmet snippet. This is no longer supported. Use `${1}` instead.
   以前， `|` 或 `${cursor}` 用于表示自定义 Emmet 代码段中的光标位置。此功能不再受支持。请改用 `${1}` 。
 
-## [Emmet configuration Emmet 配置](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration)
+## [Emmet configuration Emmet 配置]({{< ref "/UserGuide/Emmet#_emmet-configuration" >}})
 
-Below are Emmet [settings](https://code.visualstudio.com/docs/getstarted/settings) that you can use to customize your Emmet experience in VS Code.
+Below are Emmet [settings]({{< ref "/GetStarted/Settings" >}}) that you can use to customize your Emmet experience in VS Code.
 
 ​​	以下列出了可在 VS Code 中用于自定义 Emmet 体验的 Emmet 设置。
 
@@ -447,20 +447,20 @@ Below are Emmet [settings](https://code.visualstudio.com/docs/getstarted/setting
 
   ​​	如果您希望支持 Emmet 首选项中记录的任何其他首选项，请记录功能请求。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/emmet#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Emmet#_next-steps" >}})
 
 Emmet is just one of the great web developer features in VS Code. Read on to find out about:
 
 ​​	Emmet 只是 VS Code 中众多出色的 Web 开发人员功能之一。继续阅读以了解：
 
-- [HTML](https://code.visualstudio.com/docs/languages/html) - VS Code supports HTML with IntelliSense, closing tags, and formatting.
+- [HTML]({{< ref "/Languages/HTML" >}}) - VS Code supports HTML with IntelliSense, closing tags, and formatting.
   HTML - VS Code 支持具有 IntelliSense、闭合标签和格式的 HTML。
-- [CSS](https://code.visualstudio.com/docs/languages/css) - We offer rich support for CSS, SCSS and Less.
+- [CSS]({{< ref "/Languages/CSSSCSSandLess" >}}) - We offer rich support for CSS, SCSS and Less.
   CSS - 我们为 CSS、SCSS 和 Less 提供丰富的支持。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/editor/emmet#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/UserGuide/Emmet#_troubleshooting" >}})
 
-### [Custom tags do not get expanded in the suggestion list 自定义标签不会在建议列表中展开](https://code.visualstudio.com/docs/editor/emmet#_custom-tags-do-not-get-expanded-in-the-suggestion-list)
+### [Custom tags do not get expanded in the suggestion list 自定义标签不会在建议列表中展开]({{< ref "/UserGuide/Emmet#_custom-tags-do-not-get-expanded-in-the-suggestion-list" >}})
 
 Custom tags when used in an expression like `MyTag>YourTag` or `MyTag.someclass` do show up in the suggestion list. But when these are used on their own like `MyTag`, they do not appear in the suggestion list. This is designed so to avoid noise in the suggestion list as every word is a potential custom tag.
 
@@ -474,13 +474,13 @@ Add the following setting to enable expanding of Emmet abbreviations using tab w
 "emmet.triggerExpansionOnTab": true
 ```
 
-### [My HTML snippets ending with + do not work 以 + 结尾的 HTML 代码段不起作用](https://code.visualstudio.com/docs/editor/emmet#_my-html-snippets-ending-with-do-not-work)
+### [My HTML snippets ending with + do not work 以 + 结尾的 HTML 代码段不起作用]({{< ref "/UserGuide/Emmet#_my-html-snippets-ending-with-do-not-work" >}})
 
-HTML snippets ending with `+` like `select+` and `ul+` from the [Emmet cheatsheet](https://docs.emmet.io/cheat-sheet/) are not supported. This is a known issue in Emmet 2.0 [Issue: emmetio/html-matcher#1](https://github.com/emmetio/html-matcher/issues/1). A workaround is to create your own [custom Emmet snippets](https://code.visualstudio.com/docs/editor/emmet#_using-custom-emmet-snippets) for such scenarios.
+HTML snippets ending with `+` like `select+` and `ul+` from the [Emmet cheatsheet](https://docs.emmet.io/cheat-sheet/) are not supported. This is a known issue in Emmet 2.0 [Issue: emmetio/html-matcher#1](https://github.com/emmetio/html-matcher/issues/1). A workaround is to create your own [custom Emmet snippets]({{< ref "/UserGuide/Emmet#_using-custom-emmet-snippets" >}}) for such scenarios.
 
 ​​	以 `+` 结尾的 HTML 代码段，如 `select+` 和 `ul+` （来自 Emmet 速查表）不受支持。这是 Emmet 2.0 中的一个已知问题：问题：emmetio/html-matcher#1。解决方法是为这种场景创建您自己的自定义 Emmet 代码段。
 
-### [Abbreviations are failing to expand 缩写无法展开](https://code.visualstudio.com/docs/editor/emmet#_abbreviations-are-failing-to-expand)
+### [Abbreviations are failing to expand 缩写无法展开]({{< ref "/UserGuide/Emmet#_abbreviations-are-failing-to-expand" >}})
 
 First, check if you're using custom snippets (if there is a `snippets.json` file being picked up by the `emmet.extensionsPath` setting). The format of custom snippets changed in VS Code release 1.53. Instead of using `|` to indicate where the cursor position is, use tokens such as `${1}`, `${2}`, etc. instead. The [default CSS snippets file](https://github.com/emmetio/emmet/blob/master/snippets/css.json) from the `emmetio/emmet` repository shows examples of the new cursor position format.
 
@@ -490,18 +490,18 @@ If abbreviations are still failing to expand:
 
 ​​	如果缩写仍无法展开：
 
-- Check the [builtin extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_extensions-view-filters) to see if Emmet has been disabled.
+- Check the [builtin extensions]({{< ref "/UserGuide/ExtensionMarketplace#_extensions-view-filters" >}}) to see if Emmet has been disabled.
   检查内置扩展以查看 Emmet 是否已被禁用。
-- Try restarting the extension host by running the **Developer: Restart Extension Host** (`workbench.action.restartExtensionHost`) command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
+- Try restarting the extension host by running the **Developer: Restart Extension Host** (`workbench.action.restartExtensionHost`) command in the [Command Palette]({{< ref "/GetStarted/UserInterface#_command-palette" >}}).
   尝试通过在命令面板中运行“开发人员：重新启动扩展主机”（ `workbench.action.restartExtensionHost` ）命令来重新启动扩展主机。
 
-### [Where can I set all the preferences as documented in Emmet preferences? 我可以在哪里设置 Emmet 首选项文档中记录的所有首选项？](https://code.visualstudio.com/docs/editor/emmet#_where-can-i-set-all-the-preferences-as-documented-in-emmet-preferenceshttpsdocsemmetiocustomizationpreferences)
+### [Where can I set all the preferences as documented in Emmet preferences? 我可以在哪里设置 Emmet 首选项文档中记录的所有首选项？]({{< ref "/UserGuide/Emmet#_where-can-i-set-all-the-preferences-as-documented-in-emmet-preferenceshttpsdocsemmetiocustomizationpreferences" >}})
 
-You can set the preferences using the setting `emmet.preferences`. Only a subset of the preferences that are documented in [Emmet preferences](https://docs.emmet.io/customization/preferences/) can be customized. Please read the preferences section under [Emmet configuration](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
+You can set the preferences using the setting `emmet.preferences`. Only a subset of the preferences that are documented in [Emmet preferences](https://docs.emmet.io/customization/preferences/) can be customized. Please read the preferences section under [Emmet configuration]({{< ref "/UserGuide/Emmet#_emmet-configuration" >}}).
 
 ​​	您可以使用设置 `emmet.preferences` 来设置首选项。只能自定义 Emmet 首选项文档中记录的部分首选项。请阅读 Emmet 配置下的首选项部分。
 
-### [Any tips and tricks? 有什么提示和技巧吗？](https://code.visualstudio.com/docs/editor/emmet#_any-tips-and-tricks)
+### [Any tips and tricks? 有什么提示和技巧吗？]({{< ref "/UserGuide/Emmet#_any-tips-and-tricks" >}})
 
 Of course!
 
@@ -511,5 +511,5 @@ Of course!
   在 CSS 缩写中，当您使用 `:` 时，左侧部分用于与 CSS 属性名称模糊匹配，右侧部分用于与 CSS 属性值匹配。通过使用 `pos:f` 、 `trf:rx` 、 `fw:b` 等缩写充分利用这一点。
 - Explore all other Emmet features as documented in [Emmet Actions](https://docs.emmet.io/actions/).
   在 Emmet 操作中记录的其他 Emmet 功能中探索所有其他功能。
-- Don't hesitate to create your own [custom Emmet snippets](https://code.visualstudio.com/docs/editor/emmet#_using-custom-emmet-snippets).
+- Don't hesitate to create your own [custom Emmet snippets]({{< ref "/UserGuide/Emmet#_using-custom-emmet-snippets" >}}).
   不要犹豫，创建您自己的自定义 Emmet 代码段。

@@ -14,11 +14,11 @@ draft = false
 
 
 
-The Python extension supports debugging of several types of Python applications. For a short walkthrough of basic debugging, see [Tutorial - Configure and run the debugger](https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger). Also see the [Flask tutorial](https://code.visualstudio.com/docs/python/tutorial-flask). Both tutorials demonstrate core skills like setting breakpoints and stepping through code.
+The Python extension supports debugging of several types of Python applications. For a short walkthrough of basic debugging, see [Tutorial - Configure and run the debugger]({{< ref "/Python/Tutorial#_configure-and-run-the-debugger" >}}). Also see the [Flask tutorial]({{< ref "/Python/FlaskTutorial" >}}). Both tutorials demonstrate core skills like setting breakpoints and stepping through code.
 
 ​​​	Python 扩展支持调试多种类型的 Python 应用程序。有关基本调试的简短演练，请参阅教程 - 配置和运行调试器。另请参阅 Flask 教程。这两个教程都演示了设置断点和逐步执行代码等核心技能。
 
-For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging).
+For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [VS Code debugging]({{< ref "/UserGuide/Debugging" >}}).
 
 ​​​	有关检查变量、设置断点以及其他与语言无关的活动等常规调试功能，请查看 VS Code 调试。
 
@@ -26,7 +26,7 @@ This article mainly addresses Python-specific debugging *configurations*, includ
 
 ​​​	本文主要介绍特定于 Python 的调试配置，包括特定应用类型和远程调试的必要步骤。
 
-## [Initialize configurations 初始化配置](https://code.visualstudio.com/docs/python/debugging#_initialize-configurations)
+## [Initialize configurations 初始化配置]({{< ref "/Python/Debugging#_initialize-configurations" >}})
 
 A configuration drives VS Code's behavior during a debugging session. Configurations are defined in a `launch.json` file that's stored in a `.vscode` folder in your workspace.
 
@@ -70,11 +70,11 @@ To generate a `launch.json` file with Python configurations, do the following st
 
    ![Configuration json](./Debugging_img/configuration-json.png)
 
-The details of configuration properties are covered later in this article under [Standard configuration and options](https://code.visualstudio.com/docs/python/debugging#_set-configuration-options). Other configurations are also described in this article under [Debugging specific app types](https://code.visualstudio.com/docs/python/debugging#_debugging-specific-app-types).
+The details of configuration properties are covered later in this article under [Standard configuration and options]({{< ref "/Python/Debugging#_set-configuration-options" >}}). Other configurations are also described in this article under [Debugging specific app types]({{< ref "/Python/Debugging#_debugging-specific-app-types" >}}).
 
 ​​​	本文后面将在“标准配置和选项”下介绍配置属性的详细信息。本文还将在“调试特定应用类型”下介绍其他配置。
 
-## [Additional configurations 其他配置](https://code.visualstudio.com/docs/python/debugging#_additional-configurations)
+## [Additional configurations 其他配置]({{< ref "/Python/Debugging#_additional-configurations" >}})
 
 By default, VS Code shows only the most common configurations provided by the Python extension. You can select other configurations to include in `launch.json` by using the **Add Configuration** command shown in the list and the `launch.json` editor. When you use the command, VS Code prompts you with a list of all available configurations (be sure to select the **Python** option):
 
@@ -86,7 +86,7 @@ Selecting the **Attach using Process ID** one yields the following result:
 
 ​​​	选择“使用进程 ID 附加”会产生以下结果：![Added a configuration](./Debugging_img/added-configuration.png)
 
-See [Debugging specific app types](https://code.visualstudio.com/docs/python/debugging#_debugging-specific-app-types) for details on all of these configurations.
+See [Debugging specific app types]({{< ref "/Python/Debugging#_debugging-specific-app-types" >}}) for details on all of these configurations.
 
 ​​​	有关所有这些配置的详细信息，请参阅调试特定应用类型。
 
@@ -100,7 +100,7 @@ By default, the debugger uses the same interpreter selected for your workspace, 
 
 ​​​	默认情况下，调试器使用与工作区选择的解释器相同的解释器，就像 VS Code 的 Python 扩展的其他功能一样。要专门针对调试使用不同的解释器，请在 `launch.json` 中为适用的调试器配置设置 `python` 的值。或者，选择状态栏上的命名解释器以选择不同的解释器。
 
-## [Basic debugging 基本调试](https://code.visualstudio.com/docs/python/debugging#_basic-debugging)
+## [Basic debugging 基本调试]({{< ref "/Python/Debugging#_basic-debugging" >}})
 
 If you're only interested in debugging a Python script, the simplest way is to select the down-arrow next to the run button on the editor and select **Debug Python File in Terminal**.
 
@@ -128,13 +128,13 @@ Two common options are to use the **Python File** configuration to run the curre
 
 ​​​	两个常见的选项是使用 Python 文件配置来运行当前打开的 Python 文件，或使用使用进程 ID 附加配置将调试器附加到已在运行的进程上。
 
-For information about creating and using debugging configurations, see the [Initialize configurations](https://code.visualstudio.com/docs/python/debugging#_initialize-configurations) and [Additional configurations](https://code.visualstudio.com/docs/python/debugging#_additional-configurations) sections. Once a configuration is added, it can be selected from the dropdown list and started using the **Start Debugging** button.
+For information about creating and using debugging configurations, see the [Initialize configurations]({{< ref "/Python/Debugging#_initialize-configurations" >}}) and [Additional configurations]({{< ref "/Python/Debugging#_additional-configurations" >}}) sections. Once a configuration is added, it can be selected from the dropdown list and started using the **Start Debugging** button.
 
 ​​​	有关创建和使用调试配置的信息，请参阅初始化配置和其他配置部分。添加配置后，可以从下拉列表中选择它，并使用“开始调试”按钮启动它。
 
 ![Start debugging](./Debugging_img/debug-start-button.png)
 
-## [Command line debugging 命令行调试](https://code.visualstudio.com/docs/python/debugging#_command-line-debugging)
+## [Command line debugging 命令行调试]({{< ref "/Python/Debugging#_command-line-debugging" >}})
 
 The debugger can also be run from the command line. The debugger command line syntax is as follows:
 
@@ -220,9 +220,9 @@ The associated configuration file would then look as follows.
 >
 > ​​​	注意： `[<arg>]` 可用于将命令行参数传递给正在启动的应用。
 
-## [Debugging by attaching over a network connection 通过网络连接附加调试](https://code.visualstudio.com/docs/python/debugging#_debugging-by-attaching-over-a-network-connection)
+## [Debugging by attaching over a network connection 通过网络连接附加调试]({{< ref "/Python/Debugging#_debugging-by-attaching-over-a-network-connection" >}})
 
-### [Local script debugging 本地脚本调试](https://code.visualstudio.com/docs/python/debugging#_local-script-debugging)
+### [Local script debugging 本地脚本调试]({{< ref "/Python/Debugging#_local-script-debugging" >}})
 
 There may be instances where you need to debug a Python script that's invoked locally by another process. For example, you may be debugging a web server that runs different Python scripts for specific processing jobs. In such cases, you need to attach the VS Code debugger to the script once it's been launched:
 
@@ -267,7 +267,7 @@ There may be instances where you need to debug a Python script that's invoked lo
 
    ​​​	调试器应在 `debugpy.breakpoint()` 调用处停止，从该点开始，您可以正常使用调试器。您还可以选择使用 UI 而非 `debugpy.breakpoint()` 在脚本代码中设置其他断点。
 
-### [Remote script debugging with SSH 使用 SSH 进行远程脚本调试](https://code.visualstudio.com/docs/python/debugging#_remote-script-debugging-with-ssh)
+### [Remote script debugging with SSH 使用 SSH 进行远程脚本调试]({{< ref "/Python/Debugging#_remote-script-debugging-with-ssh" >}})
 
 Remote debugging allows you to step through a program locally within VS Code while it runs on a remote computer. It is not necessary to install VS Code on the remote computer. For added security, you may want or need to use a secure connection, such as SSH, to the remote computer when debugging.
 
@@ -420,7 +420,7 @@ Now that an SSH tunnel has been set up to the remote computer, you can begin you
 
    ​​​	在此工具栏上，断开连接按钮（Shift+F5）会停止调试器并允许远程程序运行至完成。重新启动按钮（Ctrl+Shift+F5）会在本地计算机上重新启动调试器，但不会重新启动远程程序。仅当您已重新启动远程程序并需要重新附加调试器时，才使用重新启动按钮。
 
-## [Set configuration options 设置配置选项](https://code.visualstudio.com/docs/python/debugging#_set-configuration-options)
+## [Set configuration options 设置配置选项]({{< ref "/Python/Debugging#_set-configuration-options" >}})
 
 When you first create `launch.json`, there are two standard configurations that run the active file in the editor in either the integrated terminal (inside VS Code) or the external terminal (outside of VS Code):
 
@@ -465,19 +465,19 @@ The specific settings are described in the following sections. You can also add 
  },
 ```
 
-### [name](https://code.visualstudio.com/docs/python/debugging#_name)
+### [name]({{< ref "/Python/Debugging#_name" >}})
 
 Provides the name for the debug configuration that appears in the VS Code dropdown list.
 
 ​​​	提供 VS Code 下拉列表中显示的调试配置的名称。
 
-### [type](https://code.visualstudio.com/docs/python/debugging#_type)
+### [type]({{< ref "/Python/Debugging#_type" >}})
 
 Identifies the type of debugger to use; leave this set to `python` for Python code.
 
 ​​​	标识要使用的调试器类型；对于 Python 代码，请将其保留为 `python` 。
 
-### [request](https://code.visualstudio.com/docs/python/debugging#_request)
+### [request]({{< ref "/Python/Debugging#_request" >}})
 
 Specifies the mode in which to start debugging:
 
@@ -485,10 +485,10 @@ Specifies the mode in which to start debugging:
 
 - `launch`: start the debugger on the file specified in `program`
   `launch` ：在 `program` 中指定的文件上启动调试器
-- `attach`: attach the debugger to an already running process. See [Remote debugging](https://code.visualstudio.com/docs/python/debugging#_remote-script-debugging-with-ssh) for an example.
+- `attach`: attach the debugger to an already running process. See [Remote debugging]({{< ref "/Python/Debugging#_remote-script-debugging-with-ssh" >}}) for an example.
   `attach` ：将调试器附加到已运行的进程。有关示例，请参阅远程调试。
 
-### [program](https://code.visualstudio.com/docs/python/debugging#_program)
+### [program]({{< ref "/Python/Debugging#_program" >}})
 
 Provides the fully qualified path to the python program's entry module (startup file). The value `${file}`, often used in default configurations, uses the currently active file in the editor. By specifying a specific startup file, you can always be sure of launching your program with the same entry point regardless of which files are open. For example:
 
@@ -506,13 +506,13 @@ You can also rely on a relative path from the workspace root. For example, if th
 "program": "${workspaceFolder}/src/event_handlers/__init__.py",
 ```
 
-### [module 模块](https://code.visualstudio.com/docs/python/debugging#_module)
+### [module 模块]({{< ref "/Python/Debugging#_module" >}})
 
 Provides the ability to specify the name of a module to be debugged, similarly to the `-m` argument when run at the command line. For more information, see [Python.org](https://docs.python.org/3/using/cmdline.html#cmdoption-m)
 
 ​​​	提供指定要调试的模块名称的功能，类似于在命令行中运行时的 `-m` 参数。有关更多信息，请参阅 Python.org
 
-### [python](https://code.visualstudio.com/docs/python/debugging#_python)
+### [python]({{< ref "/Python/Debugging#_python" >}})
 
 The full path that points to the Python interpreter to be used for debugging.
 
@@ -530,13 +530,13 @@ If you need to pass arguments to the Python interpreter, you can use the `python
 
 ​​​	如果需要向 Python 解释器传递参数，可以使用 `pythonArgs` 属性。
 
-### [pythonArgs](https://code.visualstudio.com/docs/python/debugging#_pythonargs)
+### [pythonArgs]({{< ref "/Python/Debugging#_pythonargs" >}})
 
 Specifies arguments to pass to the Python interpreter using the syntax `"pythonArgs": ["<arg 1>", "<arg 2>",...]`.
 
 ​​​	指定使用语法 `"pythonArgs": ["<arg 1>", "<arg 2>",...]` 传递给 Python 解释器的参数。
 
-### [args](https://code.visualstudio.com/docs/python/debugging#_args)
+### [args]({{< ref "/Python/Debugging#_args" >}})
 
 Specifies arguments to pass to the Python program. Each element of the argument string that's separated by a space should be contained within quotes, for example:
 
@@ -546,13 +546,13 @@ Specifies arguments to pass to the Python program. Each element of the argument 
 "args": ["--quiet", "--norepeat", "--port", "1593"],
 ```
 
-### [stopOnEntry](https://code.visualstudio.com/docs/python/debugging#_stoponentry)
+### [stopOnEntry]({{< ref "/Python/Debugging#_stoponentry" >}})
 
 When set to `true`, breaks the debugger at the first line of the program being debugged. If omitted (the default) or set to `false`, the debugger runs the program to the first breakpoint.
 
 ​​​	设置为 `true` 时，会在要调试的程序的第一行中断调试器。如果省略（默认值）或设置为 `false` ，调试器会运行程序到第一个断点。
 
-### [console](https://code.visualstudio.com/docs/python/debugging#_console)
+### [console]({{< ref "/Python/Debugging#_console" >}})
 
 Specifies how program output is displayed as long as the defaults for `redirectOutput` aren't modified.
 
@@ -561,16 +561,16 @@ Specifies how program output is displayed as long as the defaults for `redirectO
 | Value 值                                                     | Where output is displayed 输出显示位置                       |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | `"internalConsole"`                                          | **VS Code debug console.** If `redirectOutput` is set to False, no output is displayed. VS Code 调试控制台。如果 `redirectOutput` 设置为 False，则不显示任何输出。 |
-| `"integratedTerminal"` (default) `"integratedTerminal"` （默认值） | [VS Code Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics). If `redirectOutput` is set to True, output is also displayed in the debug console. VS Code 集成终端。如果将 `redirectOutput` 设置为 True，输出也会显示在调试控制台中。 |
+| `"integratedTerminal"` (default) `"integratedTerminal"` （默认值） | [VS Code Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}). If `redirectOutput` is set to True, output is also displayed in the debug console. VS Code 集成终端。如果将 `redirectOutput` 设置为 True，输出也会显示在调试控制台中。 |
 | `"externalTerminal"`                                         | **Separate console window**. If `redirectOutput` is set to True, output is also displayed in the debug console. 单独的控制台窗口。如果将 `redirectOutput` 设置为 True，输出也会显示在调试控制台中。 |
 
-### [purpose 目的](https://code.visualstudio.com/docs/python/debugging#_purpose)
+### [purpose 目的]({{< ref "/Python/Debugging#_purpose" >}})
 
 There is more than one way to configure the **Run** button, using the `purpose` option. Setting the option to `debug-test`, defines that the configuration should be used when debugging tests in VS Code. However, setting the option to `debug-in-terminal`, defines that the configuration should only be used when accessing the **Run Python File** button on the top-right of the editor (regardless of whether the **Run Python File** or **Debug Python File** options the button provides is used). **Note**: The `purpose` option can't be used to start the debugger through F5 or **Run > Start Debugging**.
 
 ​​​	有多种方法可以使用 `purpose` 选项来配置“运行”按钮。将该选项设置为 `debug-test` 时，定义了在 VS Code 中调试测试时应使用该配置。但是，将该选项设置为 `debug-in-terminal` 时，定义了仅在访问编辑器右上角的“运行 Python 文件”按钮时才应使用该配置（无论使用该按钮提供的“运行 Python 文件”还是“调试 Python 文件”选项）。注意： `purpose` 选项不能用于通过 F5 或“运行”>“开始调试”来启动调试器。
 
-### [autoReload](https://code.visualstudio.com/docs/python/debugging#_autoreload)
+### [autoReload]({{< ref "/Python/Debugging#_autoreload" >}})
 
 Allows for the automatic reload of the debugger when changes are made to code after the debugger execution has hit a breakpoint. To enable this feature set `{"enable": true}` as shown in the following code.
 
@@ -593,13 +593,13 @@ Allows for the automatic reload of the debugger when changes are made to code af
 >
 > ​​​	*注意：当调试器执行重新加载时，导入时运行的代码可能会再次执行。为避免这种情况，请尝试仅在模块中使用导入、常量和定义，将所有代码放入函数中。或者，您还可以使用 `if __name__=="__main__"` 检查。
 
-### [subProcess](https://code.visualstudio.com/docs/python/debugging#_subprocess)
+### [subProcess]({{< ref "/Python/Debugging#_subprocess" >}})
 
-Specifies whether to enable subprocess debugging. Defaults to `false`, set to `true` to enable. For more information, see [multi-target debugging](https://code.visualstudio.com/docs/editor/debugging#_multitarget-debugging).
+Specifies whether to enable subprocess debugging. Defaults to `false`, set to `true` to enable. For more information, see [multi-target debugging]({{< ref "/UserGuide/Debugging#_multitarget-debugging" >}}).
 
 ​​​	指定是否启用子进程调试。默认为 `false` ，设置为 `true` 以启用。有关更多信息，请参阅多目标调试。
 
-### [cwd](https://code.visualstudio.com/docs/python/debugging#_cwd)
+### [cwd]({{< ref "/Python/Debugging#_cwd" >}})
 
 Specifies the current working directory for the debugger, which is the base folder for any relative paths used in code. If omitted, defaults to `${workspaceFolder}` (the folder open in VS Code).
 
@@ -615,7 +615,7 @@ As an example, say `${workspaceFolder}` contains a `py_code` folder containing `
 | `${workspaceFolder}/py_code`                                | `../data/salaries.csv`                        |
 | `${workspaceFolder}/data`                                   | `salaries.csv`                                |
 
-### [redirectOutput](https://code.visualstudio.com/docs/python/debugging#_redirectoutput)
+### [redirectOutput]({{< ref "/Python/Debugging#_redirectoutput" >}})
 
 When set to `true` (the default for internalConsole), causes the debugger to print all output from the program into the VS Code debug output window. If set to `false` (the default for integratedTerminal and externalTerminal), program output is not displayed in the debugger output window.
 
@@ -625,79 +625,79 @@ This option is typically disabled when using `"console": "integratedTerminal"` o
 
 ​​​	通常在使用 `"console": "integratedTerminal"` 或 `"console": "externalTerminal"` 时禁用此选项，因为无需在调试控制台中重复输出。
 
-### [justMyCode](https://code.visualstudio.com/docs/python/debugging#_justmycode)
+### [justMyCode]({{< ref "/Python/Debugging#_justmycode" >}})
 
 When omitted or set to `true` (the default), restricts debugging to user-written code only. Set to `false` to also enable debugging of standard library functions.
 
 ​​​	省略或设置为 `true` （默认值）时，仅将调试限制为用户编写的代码。设置为 `false` 以启用标准库函数的调试。
 
-### [django](https://code.visualstudio.com/docs/python/debugging#_django)
+### [django]({{< ref "/Python/Debugging#_django" >}})
 
 When set to `true`, activates debugging features specific to the Django web framework.
 
 ​​​	设置为 `true` 时，激活特定于 Django Web 框架的调试功能。
 
-### [sudo](https://code.visualstudio.com/docs/python/debugging#_sudo)
+### [sudo]({{< ref "/Python/Debugging#_sudo" >}})
 
 When set to `true` and used with `"console": "externalTerminal"`, allows for debugging apps that require elevation. Using an external console is necessary to capture the password.
 
 ​​​	设置为 `true` 并与 `"console": "externalTerminal"` 一起使用时，允许调试需要提升权限的应用。使用外部控制台对于捕获密码是必要的。
 
-### [pyramid](https://code.visualstudio.com/docs/python/debugging#_pyramid)
+### [pyramid]({{< ref "/Python/Debugging#_pyramid" >}})
 
 When set to `true`, ensures that a Pyramid app is launched with [the necessary `pserve` command](https://docs.pylonsproject.org/projects/pyramid/en/latest/narr/startup.html?highlight=pserve).
 
 ​​​	设置为 `true` 时，确保使用必要的 `pserve` 命令启动 Pyramid 应用。
 
-### [env](https://code.visualstudio.com/docs/python/debugging#_env)
+### [env]({{< ref "/Python/Debugging#_env" >}})
 
 Sets optional environment variables for the debugger process beyond system environment variables, which the debugger always inherits. The values for these variables must be entered as strings.
 
 ​​​	除了调试器始终继承的系统环境变量之外，还为调试器进程设置可选的环境变量。这些变量的值必须作为字符串输入。
 
-### [envFile](https://code.visualstudio.com/docs/python/debugging#_envfile)
+### [envFile]({{< ref "/Python/Debugging#_envfile" >}})
 
-Optional path to a file that contains environment variable definitions. See [Configuring Python environments - environment variable definitions file](https://code.visualstudio.com/docs/python/environments#_environment-variable-definitions-file).
+Optional path to a file that contains environment variable definitions. See [Configuring Python environments - environment variable definitions file]({{< ref "/Python/Environments#_environment-variable-definitions-file" >}}).
 
 ​​​	包含环境变量定义的文件的可选路径。请参阅配置 Python 环境 - 环境变量定义文件。
 
-### [gevent](https://code.visualstudio.com/docs/python/debugging#_gevent)
+### [gevent]({{< ref "/Python/Debugging#_gevent" >}})
 
 If set to `true`, enables debugging of [gevent monkey-patched code](https://www.gevent.org/intro.html).
 
 ​​​	如果设置为 `true` ，则启用对 gevent monkey 补丁代码的调试。
 
-### [jinja](https://code.visualstudio.com/docs/python/debugging#_jinja)
+### [jinja]({{< ref "/Python/Debugging#_jinja" >}})
 
 When set to `true`, activates debugging features specific to the [Jinja](https://jinja.palletsprojects.com/) templating framework.
 
 ​​​	当设置为 `true` 时，激活特定于 Jinja 模板框架的调试功能。
 
-## [Breakpoints and logpoints 断点和日志点](https://code.visualstudio.com/docs/python/debugging#_breakpoints-and-logpoints)
+## [Breakpoints and logpoints 断点和日志点]({{< ref "/Python/Debugging#_breakpoints-and-logpoints" >}})
 
-The Python extension supports [breakpoints](https://code.visualstudio.com/docs/editor/debugging#_breakpoints) and [logpoints](https://code.visualstudio.com/docs/editor/debugging#_logpoints) for debugging code. For a short walkthrough of basic debugging and using breakpoints, see [Tutorial - Configure and run the debugger](https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger).
+The Python extension supports [breakpoints]({{< ref "/UserGuide/Debugging#_breakpoints" >}}) and [logpoints]({{< ref "/UserGuide/Debugging#_logpoints" >}}) for debugging code. For a short walkthrough of basic debugging and using breakpoints, see [Tutorial - Configure and run the debugger]({{< ref "/Python/Tutorial#_configure-and-run-the-debugger" >}}).
 
 ​​​	Python 扩展支持断点和日志点来调试代码。有关基本调试和使用断点的简短演练，请参阅教程 - 配置和运行调试器。
 
-### [Conditional breakpoints 条件断点](https://code.visualstudio.com/docs/python/debugging#_conditional-breakpoints)
+### [Conditional breakpoints 条件断点]({{< ref "/Python/Debugging#_conditional-breakpoints" >}})
 
-Breakpoints can also be set to trigger based on expressions, hit counts, or a combination of both. The Python extension supports hit counts that are integers, in addition to integers preceded by the ==, >, >=, <, <=, and % operators. For example, you could set a breakpoint to trigger after five occurrences by setting a hit count of `>5` For more information, see [conditional breakpoints](https://code.visualstudio.com/docs/editor/debugging#_conditional-breakpoints) in the main VS Code debugging article.
+Breakpoints can also be set to trigger based on expressions, hit counts, or a combination of both. The Python extension supports hit counts that are integers, in addition to integers preceded by the ==, >, >=, <, <=, and % operators. For example, you could set a breakpoint to trigger after five occurrences by setting a hit count of `>5` For more information, see [conditional breakpoints]({{< ref "/UserGuide/Debugging#_conditional-breakpoints" >}}) in the main VS Code debugging article.
 
 ​​​	还可以根据表达式、命中计数或两者的组合来设置断点。Python 扩展支持整数命中计数，以及带有 ==、>、>=、<、<= 和 % 运算符的整数。例如，您可以通过将命中计数设置为 `>5` 来设置断点，以便在出现五次后触发。有关更多信息，请参阅主 VS Code 调试文章中的条件断点。
 
-### [Invoking a breakpoint in code 在代码中调用断点](https://code.visualstudio.com/docs/python/debugging#_invoking-a-breakpoint-in-code)
+### [Invoking a breakpoint in code 在代码中调用断点]({{< ref "/Python/Debugging#_invoking-a-breakpoint-in-code" >}})
 
 In your Python code, you can call `debugpy.breakpoint()` at any point where you want to pause the debugger during a debugging session.
 
 ​​​	在 Python 代码中，您可以在希望在调试会话期间暂停调试器的任何位置调用 `debugpy.breakpoint()` 。
 
-### [Breakpoint validation 断点验证](https://code.visualstudio.com/docs/python/debugging#_breakpoint-validation)
+### [Breakpoint validation 断点验证]({{< ref "/Python/Debugging#_breakpoint-validation" >}})
 
 The Python extension automatically detects breakpoints that are set on non-executable lines, such as `pass` statements or the middle of a multiline statement. In such cases, running the debugger moves the breakpoint to the nearest valid line to ensure that code execution stops at that point.
 
 ​​​	Python 扩展会自动检测设置在不可执行行上的断点，例如 `pass` 语句或多行语句的中间。在这种情况下，运行调试器会将断点移至最近的有效行，以确保代码执行在该位置停止。
 
-## [Debugging specific app types 调试特定应用类型](https://code.visualstudio.com/docs/python/debugging#_debugging-specific-app-types)
+## [Debugging specific app types 调试特定应用类型]({{< ref "/Python/Debugging#_debugging-specific-app-types" >}})
 
 The configuration dropdown provides various different options for general app types:
 
@@ -705,13 +705,13 @@ The configuration dropdown provides various different options for general app ty
 
 | Configuration 配置 | Description 说明                                             |
 | :----------------- | :----------------------------------------------------------- |
-| Attach 附加        | See [Remote debugging](https://code.visualstudio.com/docs/python/debugging#_debugging-by-attaching-over-a-network-connection) in the previous section. 请参阅上一部分中的远程调试。 |
+| Attach 附加        | See [Remote debugging]({{< ref "/Python/Debugging#_debugging-by-attaching-over-a-network-connection" >}}) in the previous section. 请参阅上一部分中的远程调试。 |
 | Django             | Specifies `"program": "${workspaceFolder}/manage.py"`, `"args": ["runserver"]`. Also adds `"django": true` to enable debugging of Django HTML templates. 指定 `"program": "${workspaceFolder}/manage.py"` 、 `"args": ["runserver"]` 。还会添加 `"django": true` 以启用 Django HTML 模板的调试。 |
-| Flask              | See [Flask debugging](https://code.visualstudio.com/docs/python/debugging#_flask-debugging) below. 请参阅下面的 Flask 调试。 |
+| Flask              | See [Flask debugging]({{< ref "/Python/Debugging#_flask-debugging" >}}) below. 请参阅下面的 Flask 调试。 |
 | Gevent             | Adds `"gevent": true` to the standard integrated terminal configuration. 向标准集成终端配置添加 `"gevent": true` 。 |
 | Pyramid            | Removes `program`, adds `"args": ["${workspaceFolder}/development.ini"]`, adds `"jinja": true` for enabling template debugging, and adds `"pyramid": true` to ensure that the program is launched with [the necessary `pserve` command](https://docs.pylonsproject.org/projects/pyramid/en/latest/narr/startup.html?highlight=pserve). 删除 `program` ，添加 `"args": ["${workspaceFolder}/development.ini"]` ，添加 `"jinja": true` 以启用模板调试，并添加 `"pyramid": true` 以确保程序使用必要的 `pserve` 命令启动。 |
 
-Specific steps are also needed for remote debugging and Google App Engine. For details on debugging tests, see [Testing](https://code.visualstudio.com/docs/python/testing).
+Specific steps are also needed for remote debugging and Google App Engine. For details on debugging tests, see [Testing]({{< ref "/Python/Testing" >}}).
 
 ​​​	远程调试和 Google App Engine 也需要特定步骤。有关调试测试的详细信息，请参阅测试。
 
@@ -719,7 +719,7 @@ To debug an app that requires administrator privileges, use `"console": "externa
 
 ​​​	要调试需要管理员权限的应用，请使用 `"console": "externalTerminal"` 和 `"sudo": "True"` 。
 
-### [Flask debugging Flask 调试](https://code.visualstudio.com/docs/python/debugging#_flask-debugging)
+### [Flask debugging Flask 调试]({{< ref "/Python/Debugging#_flask-debugging" >}})
 
 ```
 {
@@ -769,7 +769,7 @@ If you want to run Flask's development server in development mode, use the follo
 
 
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/python/debugging#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/Python/Debugging#_troubleshooting" >}})
 
 There are many reasons why the debugger may not work. Sometimes the debug console reveals specific causes, but the main reasons are as follows:
 
@@ -802,13 +802,13 @@ There are many reasons why the debugger may not work. Sometimes the debug consol
   echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
   ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/debugging#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Python/Debugging#_next-steps" >}})
 
-- [Python environments](https://code.visualstudio.com/docs/python/environments) - Control which Python interpreter is used for editing and debugging.
+- [Python environments]({{< ref "/Python/Environments" >}}) - Control which Python interpreter is used for editing and debugging.
   Python 环境 - 控制用于编辑和调试的 Python 解释器。
-- [Testing](https://code.visualstudio.com/docs/python/testing) - Configure test environments and discover, run, and debug tests.
+- [Testing]({{< ref "/Python/Testing" >}}) - Configure test environments and discover, run, and debug tests.
   测试 - 配置测试环境并发现、运行和调试测试。
-- [Settings reference](https://code.visualstudio.com/docs/python/settings-reference) - Explore the full range of Python-related settings in VS Code.
+- [Settings reference]({{< ref "/Python/SettingsReference" >}}) - Explore the full range of Python-related settings in VS Code.
   设置参考 - 探索 VS Code 中与 Python 相关的全部设置。
-- [General debugging](https://code.visualstudio.com/docs/editor/debugging) - Learn about the debugging features of VS Code.
+- [General debugging]({{< ref "/UserGuide/Debugging" >}}) - Learn about the debugging features of VS Code.
   常规调试 - 了解 VS Code 的调试功能。

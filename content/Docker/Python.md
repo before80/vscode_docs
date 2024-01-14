@@ -25,7 +25,7 @@ In this tutorial, you will learn how to:
 - Debug the app running in a container.
   调试在容器中运行的应用程序。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/containers/quickstart-python#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Docker/Python#_prerequisites" >}})
 
 - [Install Docker](https://docs.docker.com/install/) on your machine and add it to the system path.
 
@@ -41,9 +41,9 @@ In this tutorial, you will learn how to:
 
   ![Select Docker extension](./Python_img/installation-extension-search.png)
 
-### [Create a Python project 创建 Python 项目](https://code.visualstudio.com/docs/containers/quickstart-python#_create-a-python-project)
+### [Create a Python project 创建 Python 项目]({{< ref "/Docker/Python#_create-a-python-project" >}})
 
-If you don't have a Python project already, follow the tutorial [Getting started with Python](https://code.visualstudio.com/docs/python/python-tutorial).
+If you don't have a Python project already, follow the tutorial [Getting started with Python]({{< ref "/Python/Tutorial" >}}).
 
 ​​	如果您还没有 Python 项目，请按照 Python 入门教程进行操作。
 
@@ -51,11 +51,11 @@ If you don't have a Python project already, follow the tutorial [Getting started
 >
 > ​​	注意：如果您想将完整的 Django 或 Flask Web 应用程序容器化，可以从以下示例之一开始：
 >
-> - [python-sample-vscode-django-tutorial](https://github.com/microsoft/python-sample-vscode-django-tutorial/), which is the result of following the [Django Tutorial](https://code.visualstudio.com/docs/python/tutorial-django)
+> - [python-sample-vscode-django-tutorial](https://github.com/microsoft/python-sample-vscode-django-tutorial/), which is the result of following the [Django Tutorial]({{< ref "/Python/DjangoTutorial" >}})
 >
 >   ​​	python-sample-vscode-django-tutorial，这是按照 Django 教程进行操作的结果
 >
-> - [python-sample-vscode-flask-tutorial](https://github.com/microsoft/python-sample-vscode-flask-tutorial/), which is the result of following the [Flask Tutorial](https://code.visualstudio.com/docs/python/tutorial-flask)
+> - [python-sample-vscode-flask-tutorial](https://github.com/microsoft/python-sample-vscode-flask-tutorial/), which is the result of following the [Flask Tutorial]({{< ref "/Python/FlaskTutorial" >}})
 >
 >   ​​	python-sample-vscode-flask-tutorial，这是按照 Flask 教程进行操作的结果
 
@@ -67,7 +67,7 @@ After verifying your app runs properly, you can now containerize your applicatio
 
 ​​	在验证您的应用正常运行后，您现在可以将您的应用容器化。
 
-## [Add Docker files to the project 将 Docker 文件添加到项目](https://code.visualstudio.com/docs/containers/quickstart-python#_add-docker-files-to-the-project)
+## [Add Docker files to the project 将 Docker 文件添加到项目]({{< ref "/Docker/Python#_add-docker-files-to-the-project" >}})
 
 1. Open the project folder in VS Code.
 
@@ -83,7 +83,7 @@ After verifying your app runs properly, you can now containerize your applicatio
 
    ​​	在提示您输入应用类型时，选择 Python: Django、Python: Flask 或 Python: General 作为应用类型。对于本教程，我们将重点关注 Python: General 案例，但也会包含有关 Django 和 Flask 的说明。
 
-4. Enter the relative path to the app's entry point. This excludes the workspace folder you start from. If you created a python app with `hello.py` according to the [Getting Started with Python](https://code.visualstudio.com/docs/python/python-tutorial) tutorial, choose that.
+4. Enter the relative path to the app's entry point. This excludes the workspace folder you start from. If you created a python app with `hello.py` according to the [Getting Started with Python]({{< ref "/Python/Tutorial" >}}) tutorial, choose that.
 
    ​​	输入应用入口点的相对路径。这会排除您开始使用的工作区文件夹。如果您按照 Python 入门教程使用 `hello.py` 创建了 Python 应用，请选择该应用。
 
@@ -99,7 +99,7 @@ After verifying your app runs properly, you can now containerize your applicatio
    >
    > ​​	提示：只要此文件夹包含 `__main__.py` 文件，您也可以输入文件夹名称的路径。
 
-5. Select the port number. We recommend selecting port 1024 or above to mitigate security concerns from [running as a root user](https://code.visualstudio.com/docs/containers/troubleshooting#_running-as-a-non-root-user). Any unused will port, but Django and Flask use standard default ports.
+5. Select the port number. We recommend selecting port 1024 or above to mitigate security concerns from [running as a root user]({{< ref "/Docker/TipsandTricks#_running-as-a-non-root-user" >}}). Any unused will port, but Django and Flask use standard default ports.
 
    ​​	选择端口号。我们建议选择 1024 或更高的端口，以减轻以 root 用户身份运行的安全问题。任何未使用的端口都可以，但 Django 和 Flask 使用标准默认端口。
 
@@ -119,7 +119,7 @@ After verifying your app runs properly, you can now containerize your applicatio
 
    ​​	有了所有这些信息，Docker 扩展将创建以下文件：
 
-   - A `Dockerfile`. To learn more about IntelliSense in this file, refer to the [overview](https://code.visualstudio.com/docs/containers/overview).
+   - A `Dockerfile`. To learn more about IntelliSense in this file, refer to the [overview]({{< ref "/Docker/Overview" >}}).
 
      ​​	一个 `Dockerfile` 。若要详细了解此文件中的 IntelliSense，请参阅概述。
 
@@ -139,13 +139,13 @@ After verifying your app runs properly, you can now containerize your applicatio
    >
    > ​​	重要说明：若要使用我们的设置，Python 框架（Django/Flask）和 Gunicorn 必须包含在 `requirements.txt` 文件中。如果虚拟环境/主机已安装这些先决条件，并且应该与容器环境相同，请确保通过在终端中运行 `pip freeze > requirements.txt` 来移植应用依赖项。这将覆盖您当前的 `requirements.txt` 文件。
 
-### [(Optional) Add an environment variable to the image （可选）向映像添加环境变量](https://code.visualstudio.com/docs/containers/quickstart-python#_optional-add-an-environment-variable-to-the-image)
+### [(Optional) Add an environment variable to the image （可选）向映像添加环境变量]({{< ref "/Docker/Python#_optional-add-an-environment-variable-to-the-image" >}})
 
 This step is not required, but it is included to help you understand how to add environment variables that need to be set in the container's environment.
 
 ​​	此步骤不是必需的，但包含此步骤是为了帮助您了解如何添加需要在容器环境中设置的环境变量。
 
-The Docker Extension helps you author Dockerfiles by using [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) to provide auto-completions and contextual help. To see this feature in action:
+The Docker Extension helps you author Dockerfiles by using [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) to provide auto-completions and contextual help. To see this feature in action:
 
 ​​	Docker 扩展通过使用 IntelliSense 提供自动完成和上下文帮助，帮助您编写 Dockerfile。若要查看此功能的操作：
 
@@ -167,7 +167,7 @@ For more information about setting and using environment variables in the Docker
 
 ​​	有关在 Dockerfile 中设置和使用环境变量的详细信息，请参阅 Docker 文档中的 ENV 指令和环境替换部分。
 
-## [Gunicorn modifications for Django and Flask apps 针对 Django 和 Flask 应用的 Gunicorn 修改](https://code.visualstudio.com/docs/containers/quickstart-python#_gunicorn-modifications-for-django-and-flask-apps)
+## [Gunicorn modifications for Django and Flask apps 针对 Django 和 Flask 应用的 Gunicorn 修改]({{< ref "/Docker/Python#_gunicorn-modifications-for-django-and-flask-apps" >}})
 
 To give Python web developers a great starting point, we chose to use [Gunicorn](https://gunicorn.org/#docs) as the default web server. Since it is referenced in the default Dockerfile, it is included as a dependency in the `requirements.txt` file. If you don't see it in `requirements.txt`, run `pip install gunicorn` and then run `pip freeze > requirements.txt` to regenerate the `requirements.txt` file.
 
@@ -214,7 +214,7 @@ To give Python web developers a great starting point, we chose to use [Gunicorn]
 
   ​​	如果您的主模块位于根文件夹中，作为名为 `main.py` 的文件，并且 Flask 实例变量名为 `myapp` ，则上述命令中的最终参数将为 `"main:myapp"` 。在子文件夹中，参数将为 `"subfolder1_name.subfolder2_name.main:myapp"` 。
 
-## [Build, run, and debug the container 构建、运行和调试容器](https://code.visualstudio.com/docs/containers/quickstart-python#_build-run-and-debug-the-container)
+## [Build, run, and debug the container 构建、运行和调试容器]({{< ref "/Docker/Python#_build-run-and-debug-the-container" >}})
 
 The **Docker: Add Docker Files to Workspace...** command automatically creates a Docker launch configuration to build and run your container in debug mode. To debug your Python app container:
 
@@ -259,7 +259,7 @@ The Docker extension will launch your browser to a randomly mapped port:
 >
 > ​​	提示：若要修改 Docker 构建设置，例如更改映像标记，请导航到 `docker-build` 任务中 `dockerBuild` 属性下的 `.vscode -> tasks.json` 。在文件中使用 IntelliSense（Ctrl+空格）以显示所有其他有效指令。
 
-## [Use the Docker Explorer 使用 Docker Explorer](https://code.visualstudio.com/docs/containers/quickstart-python#_use-the-docker-explorer)
+## [Use the Docker Explorer 使用 Docker Explorer]({{< ref "/Docker/Python#_use-the-docker-explorer" >}})
 
 The Docker Explorer provides an interactive experience to examine and manage Docker assets such as containers, images, and so on. To see an example:
 
@@ -279,7 +279,7 @@ The Docker Explorer provides an interactive experience to examine and manage Doc
 
    ​​	输出将显示在终端中。
 
-## [Build the image in Azure 在 Azure 中构建映像](https://code.visualstudio.com/docs/containers/quickstart-python#_build-the-image-in-azure)
+## [Build the image in Azure 在 Azure 中构建映像]({{< ref "/Docker/Python#_build-the-image-in-azure" >}})
 
 You can use the command **Azure Container Registry: Build Image in Azure** to build an image that you can then deploy to Azure App Service or Azure Container Apps.
 
@@ -319,7 +319,7 @@ The process of building the image might take a few minutes. You can track progre
 
 ​​	构建映像的过程可能需要几分钟。您可以在终端中跟踪进度。如果您遇到错误 ( `Error: failed to download context.` )，请尝试在容器注册表中使用“刷新”选项，然后请求重新构建。在重新构建之前，请手动删除旧映像。
 
-## [Deploy to Azure App Service or Azure Container Apps 部署到 Azure 应用服务或 Azure 容器应用](https://code.visualstudio.com/docs/containers/quickstart-python#_deploy-to-azure-app-service-or-azure-container-apps)
+## [Deploy to Azure App Service or Azure Container Apps 部署到 Azure 应用服务或 Azure 容器应用]({{< ref "/Docker/Python#_deploy-to-azure-app-service-or-azure-container-apps" >}})
 
 Once the container image is built, it should appear in the Container Registry with the tag you specified. Now that it's built, you can deploy it to Azure App Service or Azure Container Apps. The [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension is recommended for deployments to Azure App Service, and the [Azure Container Apps](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurecontainerapps) extension is required for deployments to Azure Container Apps. You can obtain both if you install the [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), which includes a package of tools for a wide range of Azure development scenarios.
 
@@ -375,26 +375,26 @@ Congratulations, you've used Python in VS Code to create an deploy a web site th
 
 ​​	恭喜您，您已在 VS Code 中使用 Python 创建并部署了一个托管在云中并在互联网上运行的网站！
 
-## [Free up resources 释放资源](https://code.visualstudio.com/docs/containers/quickstart-python#_free-up-resources)
+## [Free up resources 释放资源]({{< ref "/Docker/Python#_free-up-resources" >}})
 
 In the [Azure portal](https://portal.azure.com/), delete the Resource Group to free up all resources that you created during this exercise.
 
 ​​	在 Azure 门户中，删除资源组以释放您在此练习中创建的所有资源。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/quickstart-python#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/Python#_next-steps" >}})
 
 You're done! Now that your container is ready, you may want to:
 
 ​​	您已完成！现在您的容器已准备就绪，您可能需要：
 
 - [Learn about using Docker Compose
-  了解如何使用 Docker Compose](https://code.visualstudio.com/docs/containers/docker-compose)
+  了解如何使用 Docker Compose]({{< ref "/Docker/DockerCompose" >}})
 - [Debug with Docker Compose
-  使用 Docker Compose 调试](https://code.visualstudio.com/docs/containers/docker-compose#_python)
+  使用 Docker Compose 调试]({{< ref "/Docker/DockerCompose#_python" >}})
 - [Customize how you debug Python apps in a container
   自定义在容器中调试 Python 应用的方式](https://code.visualstudio.com/docs/containers/debug-python)
 - [Customize your Docker build and run tasks
-  自定义 Docker 构建并运行任务](https://code.visualstudio.com/docs/containers/reference)
+  自定义 Docker 构建并运行任务]({{< ref "/Docker/Customize" >}})
 - [Push your Django image to an Azure Container Registry
   将 Django 映像推送到 Azure 容器注册表](https://code.visualstudio.com/docs/containers/tutorial-django-push-to-registry)
 - [Deploy to Azure Container Apps

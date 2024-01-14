@@ -26,13 +26,13 @@ Read below for recommendations for extensions, settings, and links to free lesso
 
 ​​​	请阅读以下内容，了解您可以在课堂中使用的扩展、设置和免费课程链接的建议。
 
-## [Intro to CS at Harvey Mudd College 哈维穆德学院计算机科学入门](https://code.visualstudio.com/learn/educators/python#_intro-to-cs-at-harvey-mudd-college)
+## [Intro to CS at Harvey Mudd College 哈维穆德学院计算机科学入门]({{< ref "/Learn/educatorresources/Python#_intro-to-cs-at-harvey-mudd-college" >}})
 
 Professor [Zachary Dodds](https://www.hmc.edu/about-hmc/hmc-experts/dodds-zachary/) is a Computer Science professor at [Harvey Mudd College](https://www.hmc.edu/) who teaches several introductory classes both for students new to Computer Science and students from a non-Computer Science background. He co-created the popular introduction to Computer Science class [CS5](https://www.cs.hmc.edu/twiki/bin/view/CS5), which attracts students from all backgrounds to develop programming and problem-solving skills and to build "a coherent, intellectually compelling picture of Computer Science". The class is taught with Python and uses VS Code as the recommended editor.
 
 ​​​	扎卡里·多兹教授是哈维穆德学院的计算机科学教授，他为计算机科学新手和非计算机科学背景的学生教授多门入门课程。他共同创建了广受欢迎的计算机科学入门课程 CS5，吸引了来自各个背景的学生来发展编程和解决问题的能力，并构建“连贯且在智力上引人入胜的计算机科学图景”。该课程使用 Python 授课，并使用 VS Code 作为推荐的编辑器。
 
-### [Why Visual Studio Code? 为什么选择 Visual Studio Code？](https://code.visualstudio.com/learn/educators/python#_why-visual-studio-code)
+### [Why Visual Studio Code? 为什么选择 Visual Studio Code？]({{< ref "/Learn/educatorresources/Python#_why-visual-studio-code" >}})
 
 Professor Dodds has been recommending and using Visual Studio Code in his classes since it debuted in 2015.
 
@@ -46,13 +46,13 @@ VS Code runs on Windows, macOS, Linux, and even [Chromebooks](https://code.visua
 
 ​​​	VS Code 可在 Windows、macOS、Linux 甚至 Chromebook 上运行。
 
-### [Classroom settings 课堂设置](https://code.visualstudio.com/learn/educators/python#_classroom-settings)
+### [Classroom settings 课堂设置]({{< ref "/Learn/educatorresources/Python#_classroom-settings" >}})
 
-Since VS Code is easy to customize, Professor Dodds is able to tailor the editor for his students, preferring to hide [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense), or code completion suggestions, so they can learn from what they type and reinforce the conceptual models being built.
+Since VS Code is easy to customize, Professor Dodds is able to tailor the editor for his students, preferring to hide [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}), or code completion suggestions, so they can learn from what they type and reinforce the conceptual models being built.
 
 ​​​	由于 VS Code 易于自定义，多兹教授能够为他的学生量身定制编辑器，他更喜欢隐藏 IntelliSense 或代码完成建议，以便他们能够从自己键入的内容中学习并强化正在构建的概念模型。
 
-Here are the [settings](https://code.visualstudio.com/docs/getstarted/settings) his students use:
+Here are the [settings]({{< ref "/GetStarted/Settings" >}}) his students use:
 
 ​​​	以下是他的学生使用的设置：
 
@@ -78,7 +78,7 @@ You can find the most up-to-date settings on his course website: [CS5 - Python T
 
 ​​​	您可以在他的课程网站上找到最新的设置：CS5 - Python 提示。
 
-### [Integrated Terminal 集成终端](https://code.visualstudio.com/learn/educators/python#_integrated-terminal)
+### [Integrated Terminal 集成终端]({{< ref "/Learn/educatorresources/Python#_integrated-terminal" >}})
 
 Professor Dodds also utilizes the built-in terminal heavily in his class as an introduction to running programs from the command line and navigating around their machine all within Visual Studio Code. He appreciates how "the built-in terminal panel does not try to automate too much (which, if it did, would deprive newcomers of the experience of the information-flow that's going on)."
 
@@ -94,7 +94,7 @@ Thank you, Professor Dodds, for sharing your story! If you’re interested in us
 
 ​​​	多兹教授，感谢您分享您的故事！如果您有兴趣在课堂上使用 VS Code 来教授 Python，您可以从下面的 Python 教育扩展包开始！
 
-## [Python Extension Pack Python 扩展包](https://code.visualstudio.com/learn/educators/python#_python-extension-pack)
+## [Python Extension Pack Python 扩展包]({{< ref "/Learn/educatorresources/Python#_python-extension-pack" >}})
 
 Unsure which extensions to recommend to your students? You can point your students to the [Python Education Extension Pack](https://marketplace.visualstudio.com/items?itemName=tanhakabir.python-education-extension-pack) that contains essential and helpful extensions for the classroom. You can download the extension pack from the VS Code Marketplace:
 
@@ -119,33 +119,33 @@ The extension pack contains:
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) to run snippets (selected code) and single files of any code with a single click.
   Code Runner，用于通过单击运行片段（选定代码）和任何代码的单个文件。
 
-## [Free Python and Data Science lessons 免费的 Python 和数据科学课程](https://code.visualstudio.com/learn/educators/python#_free-python-and-data-science-lessons)
+## [Free Python and Data Science lessons 免费的 Python 和数据科学课程]({{< ref "/Learn/educatorresources/Python#_free-python-and-data-science-lessons" >}})
 
-### [NASA-inspired lessons 受 NASA 启发的课程](https://code.visualstudio.com/learn/educators/python#_nasainspired-lessons)
+### [NASA-inspired lessons 受 NASA 启发的课程]({{< ref "/Learn/educatorresources/Python#_nasainspired-lessons" >}})
 
-This learning path enables students to use Python to explore doing analyses and projects inspired from real-world problems faced by National Aeronautics and Space Administration (NASA) scientists. View full details of the lessons under [NASA-inspired Lessons](https://code.visualstudio.com/learn/students/nasa-python).
+This learning path enables students to use Python to explore doing analyses and projects inspired from real-world problems faced by National Aeronautics and Space Administration (NASA) scientists. View full details of the lessons under [NASA-inspired Lessons]({{< ref "/Learn/studentlessons/NASALessons" >}}).
 
 ​​​	此学习路径使学生能够使用 Python 来探索受美国国家航空航天局 (NASA) 科学家面临的现实世界问题启发的分析和项目。在受 NASA 启发的课程下查看课程的完整详细信息。
 
 ![NASA-inspired Python lessons](./Python_img/nasa-learning-path.png)
 
-### [Learn Python with Over The Moon 通过 Over The Moon 学习 Python](https://code.visualstudio.com/learn/educators/python#_learn-python-with-over-the-moon)
+### [Learn Python with Over The Moon 通过 Over The Moon 学习 Python]({{< ref "/Learn/educatorresources/Python#_learn-python-with-over-the-moon" >}})
 
-These space-themed lessons were inspired by the Netflix film, [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw), and will introduce students to data science, machine learning, and artificial intelligence using Python and Azure. View full details on [Learn Python with Over The Moon](https://code.visualstudio.com/learn/students/over-the-moon-python).
+These space-themed lessons were inspired by the Netflix film, [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw), and will introduce students to data science, machine learning, and artificial intelligence using Python and Azure. View full details on [Learn Python with Over The Moon]({{< ref "/Learn/studentlessons/OvertheMoonLessons" >}}).
 
 ​​​	这些以太空为主题的课程灵感来自 Netflix 电影《飞奔去月球》，将使用 Python 和 Azure 向学生介绍数据科学、机器学习和人工智能。查看 Over The Moon 中学习 Python 的完整详细信息。
 
 ![Learn Python with Over The Moon](./Python_img/over-the-moon-learning-path.png)
 
-### [Wonder Woman-inspired lessons 神奇女侠启发的课程](https://code.visualstudio.com/learn/educators/python#_wonder-womaninspired-lessons)
+### [Wonder Woman-inspired lessons 神奇女侠启发的课程]({{< ref "/Learn/educatorresources/Python#_wonder-womaninspired-lessons" >}})
 
-Give an introduction to Python with "Wonder Woman 1984"-inspired lessons that help students learn about the basics like conditionals and variables. Get full lesson details under [Learn Python with Wonder Woman](https://code.visualstudio.com/learn/students/wonder-woman-python).
+Give an introduction to Python with "Wonder Woman 1984"-inspired lessons that help students learn about the basics like conditionals and variables. Get full lesson details under [Learn Python with Wonder Woman]({{< ref "/Learn/studentlessons/WonderWomanLessons" >}}).
 
 ​​​	通过“神奇女侠 1984”启发的课程介绍 Python，帮助学生学习条件和变量等基础知识。在通过神奇女侠学习 Python 下获取完整的课程详细信息。
 
 ![Wonder Woman-inspired Python lessons](./Python_img/wonder-woman-learning-path.png)
 
-### [Python in Notebooks Python 在笔记本中](https://code.visualstudio.com/learn/educators/python#_python-in-notebooks)
+### [Python in Notebooks Python 在笔记本中]({{< ref "/Learn/educatorresources/Python#_python-in-notebooks" >}})
 
 Learn the basics of Python. View the full lesson at [Write basic Python in Notebooks in Visual Studio Code](https://learn.microsoft.com/training/modules/basic-python-nasa/).
 
@@ -153,7 +153,7 @@ Learn the basics of Python. View the full lesson at [Write basic Python in Noteb
 
 ![Basics of Python lesson](./Python_img/basic-python-lesson.png)
 
-### [Set up your Python beginner development environment 设置 Python 初学者开发环境](https://code.visualstudio.com/learn/educators/python#_set-up-your-python-beginner-development-environment)
+### [Set up your Python beginner development environment 设置 Python 初学者开发环境]({{< ref "/Learn/educatorresources/Python#_set-up-your-python-beginner-development-environment" >}})
 
 A step-by-step guide to installing and setting up your Python and VS Code environment. View the full lesson at [Set up your Python beginner development environment with Visual Studio Code](https://learn.microsoft.com/training/modules/python-install-vscode/).
 

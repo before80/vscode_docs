@@ -32,7 +32,7 @@ Extensions can also contribute tasks using a [Task Provider](https://code.visual
 >
 > ​​	注意：仅在处理工作区文件夹时才提供任务支持。编辑单个文件时不提供此支持。
 
-## [TypeScript Hello World](https://code.visualstudio.com/docs/editor/tasks#_typescript-hello-world)
+## [TypeScript Hello World]({{< ref "/UserGuide/Tasks#_typescript-hello-world" >}})
 
 Let's start with a simple "Hello World" TypeScript program that we want to compile to JavaScript.
 
@@ -98,7 +98,7 @@ The `tasks.json` example above does not define a new task. It annotates the **ts
 
 ​​	上面的 `tasks.json` 示例未定义新任务。它注释了 VS Code 的 TypeScript 扩展提供的 tsc: build 任务，使其成为默认构建任务。您现在可以通过按 Ctrl+Shift+B 来执行 TypeScript 编译器。
 
-## [Task auto-detection 任务自动检测](https://code.visualstudio.com/docs/editor/tasks#_task-autodetection)
+## [Task auto-detection 任务自动检测]({{< ref "/UserGuide/Tasks#_task-autodetection" >}})
 
 VS Code currently auto-detects tasks for the following systems: Gulp, Grunt, Jake, and npm. We are working with the corresponding extension authors to add support for Maven and the C# `dotnet` command as well. If you develop a JavaScript application using Node.js as the runtime, you usually have a `package.json` file describing your dependencies and the scripts to run. If you have cloned the [eslint-starter](https://github.com/spicydonuts/eslint-starter) example, then executing **Run Tasks** from the global menu shows the following list:
 
@@ -165,7 +165,7 @@ Task auto detection can be disabled using the following settings:
 }
 ```
 
-## [Custom tasks 自定义任务](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks)
+## [Custom tasks 自定义任务]({{< ref "/UserGuide/Tasks#_custom-tasks" >}})
 
 Not all tasks or scripts can be auto-detected in your workspace. Sometimes it is necessary to define your own custom tasks. Assume you have a script to run your tests in order to set up some environment correctly. The script is stored in a script folder inside your workspace and named `test.sh` for Linux and macOS and `test.cmd` for Windows. Run **Configure Tasks** from the global **Terminal** menu and select the **Create tasks.json file from template** entry. This opens the following picker:
 
@@ -304,7 +304,7 @@ In addition to the global menu bar, task commands can be accessed using the **Co
 
 ![Tasks in Command Palette](./Tasks_img/command-palette.png)
 
-### [Compound tasks 复合任务](https://code.visualstudio.com/docs/editor/tasks#_compound-tasks)
+### [Compound tasks 复合任务]({{< ref "/UserGuide/Tasks#_compound-tasks" >}})
 
 You can also compose tasks out of simpler tasks with the `dependsOn` property. For example, if you have a workspace with a client and server folder and both contain a build script, you can create a task that starts both build scripts in separate terminals. If you list more than one task in the `dependsOn` property, they are executed in parallel by default.
 
@@ -356,13 +356,13 @@ If you specify `"dependsOrder": "sequence"`, then your task dependencies are exe
 }
 ```
 
-### [User level tasks 用户级任务](https://code.visualstudio.com/docs/editor/tasks#_user-level-tasks)
+### [User level tasks 用户级任务]({{< ref "/UserGuide/Tasks#_user-level-tasks" >}})
 
 You can create user level tasks that are not tied to a specific workspace or folder using the **Tasks: Open User Tasks** command. Only `shell` and `process` tasks can be used here since other task types require workspace information.
 
 ​​	您可以使用“任务：打开用户任务”命令创建不与特定工作区或文件夹绑定的用户级任务。此处只能使用 `shell` 和 `process` 任务，因为其他任务类型需要工作区信息。
 
-## [Output behavior 输出行为](https://code.visualstudio.com/docs/editor/tasks#_output-behavior)
+## [Output behavior 输出行为]({{< ref "/UserGuide/Tasks#_output-behavior" >}})
 
 Sometimes you want to control how the Integrated Terminal panel behaves when running tasks. For instance, you may want to maximize editor space and only look at task output if you think there is a problem. The behavior of the terminal can be controlled using the `presentation` property of a task. It offers the following properties:
 
@@ -501,7 +501,7 @@ You can also mix custom tasks with configurations for detected tasks. A `tasks.j
 }
 ```
 
-## [Run behavior 运行行为](https://code.visualstudio.com/docs/editor/tasks#_run-behavior)
+## [Run behavior 运行行为]({{< ref "/UserGuide/Tasks#_run-behavior" >}})
 
 You can specify a task's run behaviors using the `runOptions` property:
 
@@ -522,7 +522,7 @@ You can specify a task's run behaviors using the `runOptions` property:
   - `folderOpen` - The task will be run when the containing folder is opened. The first time you open a folder that contains a task with `folderOpen`, you will be asked if you want to allow tasks to run automatically in that folder. You can change your decision later using the **Manage Automatic Tasks** command and selecting between **Allow Automatic Tasks** and **Disallow Automatic Tasks**.
     `folderOpen` - 打开包含文件夹时将运行任务。首次打开包含具有 `folderOpen` 的任务的文件夹时，系统会询问您是否允许在该文件夹中自动运行任务。您可以稍后使用“管理自动任务”命令更改您的决定，并在“允许自动任务”和“禁止自动任务”之间进行选择。
 
-## [Customizing auto-detected tasks 自定义自动检测到的任务](https://code.visualstudio.com/docs/editor/tasks#_customizing-autodetected-tasks)
+## [Customizing auto-detected tasks 自定义自动检测到的任务]({{< ref "/UserGuide/Tasks#_customizing-autodetected-tasks" >}})
 
 As mentioned above, you can customize auto-detected tasks in the `tasks.json` file. You usually do so to modify presentation properties or to attach a problem matcher to scan the task's output for errors and warnings. You can customize a task directly from the **Run Task** list by pressing the gear icon to the right to insert the corresponding task reference into the `tasks.json` file. Assume you have the following Gulp file to lint JavaScript files using ESLint (the file is taken from https://github.com/adametry/gulp-eslint):
 
@@ -586,7 +586,7 @@ Usually you would now add a problem matcher (in this case `$eslint-stylish`) or 
 
 ​​	通常，您现在会添加问题匹配器（在本例中为 `$eslint-stylish` ）或修改演示设置。
 
-## [Processing task output with problem matchers 使用问题匹配器处理任务输出](https://code.visualstudio.com/docs/editor/tasks#_processing-task-output-with-problem-matchers)
+## [Processing task output with problem matchers 使用问题匹配器处理任务输出]({{< ref "/UserGuide/Tasks#_processing-task-output-with-problem-matchers" >}})
 
 VS Code can process the output from a task with a problem matcher. Problem matchers scan the task output text for known warning or error strings, and report these inline in the editor and in the Problems panel. VS Code ships with several problem matchers 'in-the-box':
 
@@ -613,11 +613,11 @@ VS Code can process the output from a task with a problem matcher. Problem match
 - **Node Sass compiler**: `$node-sass` assumes that file names are reported as an absolute path.
   Node Sass 编译器： `$node-sass` 假设文件名报告为绝对路径。
 
-You can also create your own problem matcher, which we'll discuss [in a later section](https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher).
+You can also create your own problem matcher, which we'll discuss [in a later section]({{< ref "/UserGuide/Tasks#_defining-a-problem-matcher" >}}).
 
 ​​	您还可以创建自己的问题匹配器，我们将在后面的章节中讨论。
 
-## [Binding keyboard shortcuts to tasks 将键盘快捷键绑定到任务](https://code.visualstudio.com/docs/editor/tasks#_binding-keyboard-shortcuts-to-tasks)
+## [Binding keyboard shortcuts to tasks 将键盘快捷键绑定到任务]({{< ref "/UserGuide/Tasks#_binding-keyboard-shortcuts-to-tasks" >}})
 
 If you need to run a task frequently, you can define a keyboard shortcut for the task.
 
@@ -635,7 +635,7 @@ For example, to bind `Ctrl+H` to the **Run tests** task from above, add the foll
 }
 ```
 
-## [Variable substitution 变量替换](https://code.visualstudio.com/docs/editor/tasks#_variable-substitution)
+## [Variable substitution 变量替换]({{< ref "/UserGuide/Tasks#_variable-substitution" >}})
 
 When authoring tasks configurations, it is useful to have a set of predefined common variables such as the active file (`${file}`) or workspace root folder (`${workspaceFolder}`). VS Code supports variable substitution inside strings in the `tasks.json` file and you can see a full list of predefined variables in the [Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference).
 
@@ -689,7 +689,7 @@ For more information about `inputs`, see the [Variables Reference](https://code.
 
 ​​	有关 `inputs` 的更多信息，请参阅变量参考。
 
-## [Operating system specific properties 操作系统特定属性](https://code.visualstudio.com/docs/editor/tasks#_operating-system-specific-properties)
+## [Operating system specific properties 操作系统特定属性]({{< ref "/UserGuide/Tasks#_operating-system-specific-properties" >}})
 
 The task system supports defining values (for example, the command to be executed) specific to an operating system. To do so, put an operating system specific literal into the `tasks.json` file and specify the corresponding properties inside that literal.
 
@@ -716,7 +716,7 @@ Valid operating properties are `windows` for Windows, `linux` for Linux, and `os
 
 ​​	有效的操作系统属性是 Windows 的 `windows` 、Linux 的 `linux` 和 macOS 的 `osx` 。在操作系统特定范围内定义的属性会覆盖在任务或全局范围内定义的属性。
 
-## [Global tasks 全局任务](https://code.visualstudio.com/docs/editor/tasks#_global-tasks)
+## [Global tasks 全局任务]({{< ref "/UserGuide/Tasks#_global-tasks" >}})
 
 Task properties can also be defined in the global scope. If present, they will be used for specific tasks unless they define the same property with a different value. In the example below, there is a global `presentation` property, which defines that all tasks should be executed in a new panel:
 
@@ -745,7 +745,7 @@ Task properties can also be defined in the global scope. If present, they will b
 >
 > ​​	提示：要访问全局范围 `tasks.json` 文件，请打开命令面板 (Ctrl+Shift+P) 并运行任务：打开用户任务命令。
 
-### [Character escaping in PowerShell PowerShell 中的字符转义](https://code.visualstudio.com/docs/editor/tasks#_character-escaping-in-powershell)
+### [Character escaping in PowerShell PowerShell 中的字符转义]({{< ref "/UserGuide/Tasks#_character-escaping-in-powershell" >}})
 
 When the default shell is PowerShell, or when a task is configured to use PowerShell, you might see unexpected space and quote escaping. The unexpected escaping only occurs with cmdlets because VS Code doesn't know if your command contains cmdlets. Example 1 below shows a case where you'll get escaping that doesn't work with PowerShell. Example 2 shows the best, cross-platform, way to get good escaping. In some cases, you might not be able to follow example 2 and you'll need to do the manual escaping shown in example 3.
 
@@ -772,7 +772,7 @@ When the default shell is PowerShell, or when a task is configured to use PowerS
 ]
 ```
 
-## [Changing the encoding for a task output 更改任务输出的编码](https://code.visualstudio.com/docs/editor/tasks#_changing-the-encoding-for-a-task-output)
+## [Changing the encoding for a task output 更改任务输出的编码]({{< ref "/UserGuide/Tasks#_changing-the-encoding-for-a-task-output" >}})
 
 Tasks frequently act with files on disk. If these files are stored on disk with an encoding different than the system encoding, you need to let the command executed as a task know which encoding to use. Since this depends on the operating system and the shell used, there is no general solution to control this. Below are advice and examples on how to make it work.
 
@@ -806,30 +806,30 @@ If the task is executed in `PowerShell`, the command needs to read like this `ch
 
 ​​	如果在 `PowerShell` 中执行任务，则命令需要像这样读取 `chcp 866; more russian.txt` 。在 Linux 和 macOS 上，可以使用 `locale` 命令检查区域设置并调整必要的环境变量。
 
-## [Examples of tasks in action 任务操作示例](https://code.visualstudio.com/docs/editor/tasks#_examples-of-tasks-in-action)
+## [Examples of tasks in action 任务操作示例]({{< ref "/UserGuide/Tasks#_examples-of-tasks-in-action" >}})
 
 To highlight the power of tasks, here are a few examples of how VS Code can use tasks to integrate external tools like linters and compilers.
 
 ​​	为了突出任务的功能，这里有一些 VS Code 如何使用任务集成诸如 linter 和编译器之类的外部工具的示例。
 
-### [Transpiling TypeScript to JavaScript 将 TypeScript 转换为 JavaScript](https://code.visualstudio.com/docs/editor/tasks#_transpiling-typescript-to-javascript)
+### [Transpiling TypeScript to JavaScript 将 TypeScript 转换为 JavaScript]({{< ref "/UserGuide/Tasks#_transpiling-typescript-to-javascript" >}})
 
-The [TypeScript topic](https://code.visualstudio.com/docs/typescript/typescript-compiling) includes an example that creates a task to transpile TypeScript to JavaScript and observe any related errors from within VS Code.
+The [TypeScript topic]({{< ref "/TypeScript/Compiling" >}}) includes an example that creates a task to transpile TypeScript to JavaScript and observe any related errors from within VS Code.
 
 ​​	TypeScript 主题包括一个示例，该示例创建一个任务以将 TypeScript 转换为 JavaScript 并观察 VS Code 中的任何相关错误。
 
-### [Transpiling Less and SCSS into CSS 将 Less 和 SCSS 转换为 CSS](https://code.visualstudio.com/docs/editor/tasks#_transpiling-less-and-scss-into-css)
+### [Transpiling Less and SCSS into CSS 将 Less 和 SCSS 转换为 CSS]({{< ref "/UserGuide/Tasks#_transpiling-less-and-scss-into-css" >}})
 
 The CSS topic provides examples of how to use Tasks to generate CSS files.
 
 ​​	CSS 主题提供了有关如何使用任务生成 CSS 文件的示例。
 
 1. [Manually transpiling with a Build task
-   使用构建任务手动转换](https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css)
+   使用构建任务手动转换]({{< ref "/Languages/CSSSCSSandLess#_transpiling-sass-and-less-into-css" >}})
 2. [Automation of the compile step with a file watcher
-   使用文件观察器自动执行编译步骤](https://code.visualstudio.com/docs/languages/css#_automating-sassless-compilation)
+   使用文件观察器自动执行编译步骤]({{< ref "/Languages/CSSSCSSandLess#_automating-sassless-compilation" >}})
 
-## [Defining a problem matcher 定义问题匹配器](https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher)
+## [Defining a problem matcher 定义问题匹配器]({{< ref "/UserGuide/Tasks#_defining-a-problem-matcher" >}})
 
 VS Code ships some of the most common problem matchers 'in-the-box'. However, there are lots of compilers and linting tools out there, all of which produce their own style of errors and warnings so you may want to create your own problem matcher.
 
@@ -947,7 +947,7 @@ You can also define a problem matcher that captures only a file. To do so, defin
 >
 > ​​	注意：错误匹配器仅解析给定命令的输出。如果您想解析写入单独文件（例如日志文件）的输出，请在命令运行完毕之前让其打印出单独文件中的行。
 
-## [Defining a multiline problem matcher 定义多行错误匹配器](https://code.visualstudio.com/docs/editor/tasks#_defining-a-multiline-problem-matcher)
+## [Defining a multiline problem matcher 定义多行错误匹配器]({{< ref "/UserGuide/Tasks#_defining-a-multiline-problem-matcher" >}})
 
 Some tools spread problems found in a source file over several lines, especially if stylish reporters are used. An example is [ESLint](https://eslint.org/); in stylish mode it produces output like this:
 
@@ -1049,7 +1049,7 @@ Here is a problem matcher to fully capture ESLint stylish problems:
 >
 > ​​	注意：如果您在同一资源上有多个问题发生在完全相同的行和列上，那么只显示一个问题。这适用于所有问题匹配器，而不仅仅是多行问题匹配器。
 
-## [Modifying an existing problem matcher 修改现有问题匹配器](https://code.visualstudio.com/docs/editor/tasks#_modifying-an-existing-problem-matcher)
+## [Modifying an existing problem matcher 修改现有问题匹配器]({{< ref "/UserGuide/Tasks#_modifying-an-existing-problem-matcher" >}})
 
 If an existing problem matcher is close to what you need, you can modify it in your `tasks.json` task. For example, the `$tsc-watch` problem matcher only applies to closed documents. If you want to have it apply to all documents you can modify it:
 
@@ -1071,7 +1071,7 @@ Other modifiable problem matcher properties include `background`, `fileLocation`
 
 ​​	其他可修改的问题匹配器属性包括 `background` 、 `fileLocation` 、 `owner` 、 `pattern` 、 `severity` 和 `source` 。
 
-## [Background / watching tasks 后台/监视任务](https://code.visualstudio.com/docs/editor/tasks#_background-watching-tasks)
+## [Background / watching tasks 后台/监视任务]({{< ref "/UserGuide/Tasks#_background-watching-tasks" >}})
 
 Some tools support running in the background while watching the file system for changes and then triggering an action when a file changes on disk. With `Gulp` such functionality is provided through the npm module [gulp-watch](https://www.npmjs.com/package/gulp-watch). The TypeScript compiler `tsc` has built in support for this via the `--watch` command line option.
 
@@ -1164,7 +1164,7 @@ A full handcrafted `tasks.json` for a `tsc` task running in watch mode looks lik
 }
 ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/tasks#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Tasks#_next-steps" >}})
 
 That was tasks - let's keep going...
 
@@ -1172,18 +1172,18 @@ That was tasks - let's keep going...
 
 - [tasks.json Schema](https://code.visualstudio.com/docs/editor/tasks-appendix) - You can review the full `tasks.json` schema and descriptions.
   tasks.json 架构 - 您可以查看完整的 `tasks.json` 架构和说明。
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn about the powerful VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn about the powerful VS Code editor.
   基本编辑 - 了解功能强大的 VS Code 编辑器。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。
-- [Language Support](https://code.visualstudio.com/docs/languages/overview) - Learn about our supported programming languages, both shipped with VS Code and through community extensions.
+- [Language Support]({{< ref "/Languages/Overview" >}}) - Learn about our supported programming languages, both shipped with VS Code and through community extensions.
   语言支持 - 了解我们支持的编程语言，包括随 VS Code 一起提供的语言和通过社区扩展提供的语言。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Debug your source code directly in the VS Code editor.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Debug your source code directly in the VS Code editor.
   调试 - 直接在 VS Code 编辑器中调试源代码。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/tasks#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/Tasks#_common-questions" >}})
 
-### [Can a task use a different shell than the one specified for the Integrated Terminal? 任务可以使用与为集成终端指定的不同的 shell 吗？](https://code.visualstudio.com/docs/editor/tasks#_can-a-task-use-a-different-shell-than-the-one-specified-for-the-integrated-terminal)
+### [Can a task use a different shell than the one specified for the Integrated Terminal? 任务可以使用与为集成终端指定的不同的 shell 吗？]({{< ref "/UserGuide/Tasks#_can-a-task-use-a-different-shell-than-the-one-specified-for-the-integrated-terminal" >}})
 
 Yes. You can use the `"terminal.integrated.automationProfile.*"` setting to set the shell that will be used for all automation in VS Code, which includes Tasks.
 
@@ -1215,7 +1215,7 @@ Alternatively, you can override a task's shell with the `options.shell` property
     ...
 ```
 
-### [Can a background task be used as a prelaunchTask in launch.json? 背景任务是否可以用作 launch.json 中的 prelaunchTask？](https://code.visualstudio.com/docs/editor/tasks#_can-a-background-task-be-used-as-a-prelaunchtask-in-launchjson)
+### [Can a background task be used as a prelaunchTask in launch.json? 背景任务是否可以用作 launch.json 中的 prelaunchTask？]({{< ref "/UserGuide/Tasks#_can-a-background-task-be-used-as-a-prelaunchtask-in-launchjson" >}})
 
 Yes. Since a background task will run until killed, a background task on its own has no signal that it has "completed". To use a background task as a `prelaunchTask`, you must add an appropriate background `problemMatcher` to the background task so that there is a way for the task system and debug system to know that the task "finished".
 
@@ -1256,11 +1256,11 @@ You can then use the task as a `prelaunchTask` in your `launch.json` file:
 }
 ```
 
-For more on background tasks, go to [Background / watching tasks](https://code.visualstudio.com/docs/editor/tasks#_background-watching-tasks).
+For more on background tasks, go to [Background / watching tasks]({{< ref "/UserGuide/Tasks#_background-watching-tasks" >}}).
 
 ​​	有关后台任务的更多信息，请转到后台/监视任务。
 
-### [Why do I get "command not found" when running a task? 运行任务时，为什么我收到“命令未找到”？](https://code.visualstudio.com/docs/editor/tasks#_why-do-i-get-command-not-found-when-running-a-task)
+### [Why do I get "command not found" when running a task? 运行任务时，为什么我收到“命令未找到”？]({{< ref "/UserGuide/Tasks#_why-do-i-get-command-not-found-when-running-a-task" >}})
 
 The message "command not found" happens when the task command you're trying to run is not recognized by your terminal as something runnable. Most often, this occurs because the command is configured as part of your shell's startup scripts. Tasks are run as non-login and non-interactive, which means that the startup scripts for your shell won't be run. `nvm` in particular is known to use startup scripts as part of its configuration.
 

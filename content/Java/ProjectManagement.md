@@ -21,11 +21,11 @@ The [Project Manager for Java](https://marketplace.visualstudio.com/items?itemNa
 [Install the Extension Pack for Java
 安装 Java 扩展包](vscode:extension/vscjava.vscode-java-pack)
 
-> For details on how to get started with the extension pack, you can review the [Getting Started with Java](https://code.visualstudio.com/docs/java/java-tutorial) tutorial.
+> For details on how to get started with the extension pack, you can review the [Getting Started with Java]({{< ref "/Java/GettingStarted" >}}) tutorial.
 >
 > ​​​	有关如何开始使用扩展包的详细信息，您可以查看 Java 入门教程。
 
-## [Projects view 项目视图](https://code.visualstudio.com/docs/java/java-project#_projects-view)
+## [Projects view 项目视图]({{< ref "/Java/ProjectManagement#_projects-view" >}})
 
 The **Java Projects** view helps you view your Java projects and their dependencies, and provides entry points for project management tasks.
 
@@ -55,7 +55,7 @@ There are also many useful features in each node's context menu, you can right-c
 
 ![context menu](./ProjectManagement_img/context-menu.png)
 
-### [Create a new Java project 创建新的 Java 项目](https://code.visualstudio.com/docs/java/java-project#_create-a-new-java-project)
+### [Create a new Java project 创建新的 Java 项目]({{< ref "/Java/ProjectManagement#_create-a-new-java-project" >}})
 
 You can create a new Java project by clicking the **+** button in the navigation bar, or through the command: **Java: Create Java Project...** in Command Palette (Ctrl+Shift+P). During creation, VS Code will facilitate installing required extension(s) per your project type, if the extension(s) weren't already installed.
 
@@ -63,7 +63,7 @@ You can create a new Java project by clicking the **+** button in the navigation
 
 ![create project](./ProjectManagement_img/projectmanager-createproject.png)
 
-### [Import Java projects 导入 Java 项目](https://code.visualstudio.com/docs/java/java-project#_import-java-projects)
+### [Import Java projects 导入 Java 项目]({{< ref "/Java/ProjectManagement#_import-java-projects" >}})
 
 You can directly import existing Java projects and modules to your workspace through **File** > **Open Folder...** (Make sure the opened folder contains your build tool scripts, for example, `pom.xml` or `build.gradle`). VS Code for Java will detect your projects and import them automatically.
 
@@ -73,7 +73,7 @@ When you add a new module into your projects, you can trigger the command **Java
 
 ​​​	将新模块添加到项目中时，您可以触发命令 Java: 导入工作区中的 Java 项目以将它们导入到您的工作区中。此命令有助于将新项目导入到工作区中，而无需重新加载 VS Code 窗口。
 
-### [Export to JAR 导出到 JAR](https://code.visualstudio.com/docs/java/java-project#_export-to-jar)
+### [Export to JAR 导出到 JAR]({{< ref "/Java/ProjectManagement#_export-to-jar" >}})
 
 You can export your build to JAR from the projects view or by running the command **Java: Export Jar...**.
 
@@ -81,7 +81,7 @@ You can export your build to JAR from the projects view or by running the comman
 
 ![Export jar from the project view](./ProjectManagement_img/exportjar.gif)
 
-## [Configure Runtime for Projects 为项目配置运行时](https://code.visualstudio.com/docs/java/java-project#_configure-runtime-for-projects)
+## [Configure Runtime for Projects 为项目配置运行时]({{< ref "/Java/ProjectManagement#_configure-runtime-for-projects" >}})
 
 As Java evolves, it's common that developers work with multiple versions of JDK. You can map them to your local installation paths via the setting: `java.configuration.runtimes`. The setting has following format:
 
@@ -121,19 +121,19 @@ To see which JDKs are used for your projects, you can trigger the command **Java
 
 ![Project runtime](./ProjectManagement_img/configure-project-runtime.png)
 
-### [Change JDK for Maven and Gradle projects 更改 Maven 和 Gradle 项目的 JDK](https://code.visualstudio.com/docs/java/java-project#_change-jdk-for-maven-and-gradle-projects)
+### [Change JDK for Maven and Gradle projects 更改 Maven 和 Gradle 项目的 JDK]({{< ref "/Java/ProjectManagement#_change-jdk-for-maven-and-gradle-projects" >}})
 
 If you want to change the JDK version for your Maven or Gradle projects, you need to update it in your build scripts (`pom.xml` or `build.gradle`). You can click to see how to make such changes. Click will navigate to the build script file of the project.
 
 ​​​	如果您想更改 Maven 或 Gradle 项目的 JDK 版本，您需要在构建脚本（ `pom.xml` 或 `build.gradle` ）中更新它。您可以单击以了解如何进行此类更改。单击将导航到项目的构建脚本文件。
 
-### [Change JDK for unmanaged folders 更改非托管文件夹的 JDK](https://code.visualstudio.com/docs/java/java-project#_change-jdk-for-unmanaged-folders)
+### [Change JDK for unmanaged folders 更改非托管文件夹的 JDK]({{< ref "/Java/ProjectManagement#_change-jdk-for-unmanaged-folders" >}})
 
 To change the JDK for unmanaged folders (with out any build tools), you can click the button. It will list all the JDKs and you can select one for your unmanaged folders.
 
 ​​​	要更改非托管文件夹（不带任何构建工具）的 JDK，您可以单击该按钮。它将列出所有 JDK，您可以为您的非托管文件夹选择一个。
 
-### [Download JDKs 下载 JDK](https://code.visualstudio.com/docs/java/java-project#_download-jdks)
+### [Download JDKs 下载 JDK]({{< ref "/Java/ProjectManagement#_download-jdks" >}})
 
 If you want to download a new JDK, you can click the `download` link, or trigger the command **Java: Install New JDK** in **Command Palette** (Ctrl+Shift+P). It will open a new view guiding you to download JDKs.
 
@@ -141,11 +141,11 @@ If you want to download a new JDK, you can click the `download` link, or trigger
 
 ![Download-jdk](./ProjectManagement_img/download-jdk.png)
 
-> **Note**: To enable Java preview features, see [How can I use VS Code with new Java versions](https://code.visualstudio.com/docs/java/java-faq#_how-can-i-use-visual-studio-code-with-new-java-versions).
+> **Note**: To enable Java preview features, see [How can I use VS Code with new Java versions]({{< ref "/Java/FAQ#_how-can-i-use-visual-studio-code-with-new-java-versions" >}}).
 >
 > ​​​	注意：若要启用 Java 预览功能，请参阅如何将 VS Code 与新版 Java 配合使用。
 
-## [Configure classpath for unmanaged folders 为非托管文件夹配置类路径](https://code.visualstudio.com/docs/java/java-project#_configure-classpath-for-unmanaged-folders)
+## [Configure classpath for unmanaged folders 为非托管文件夹配置类路径]({{< ref "/Java/ProjectManagement#_configure-classpath-for-unmanaged-folders" >}})
 
 The Project Management for Java extension provides a user interface to configure the classpath for unmanaged folders. The classpath can be set manually in the classpath configuration page. You can open it by executing the **Java: Configure Classpath** command from the Command Palette (Ctrl+Shift+P).
 
@@ -157,9 +157,9 @@ In some rare cases, you may need to clean the Java workspace by executing the **
 
 ​​​	在某些罕见情况下，您可能需要通过从命令面板 (Ctrl+Shift+P) 执行 Java: 清理 Java 语言服务器工作区命令来清理 Java 工作区，以让语言服务器重新生成您的依赖项。
 
-## [Dependency management 依赖项管理](https://code.visualstudio.com/docs/java/java-project#_dependency-management)
+## [Dependency management 依赖项管理]({{< ref "/Java/ProjectManagement#_dependency-management" >}})
 
-### [Add a Maven dependency 添加 Maven 依赖项](https://code.visualstudio.com/docs/java/java-project#_add-a-maven-dependency)
+### [Add a Maven dependency 添加 Maven 依赖项]({{< ref "/Java/ProjectManagement#_add-a-maven-dependency" >}})
 
 For Maven project, you can add a dependency by clicking the **+** icon next to **Maven Dependencies** node in project view.
 
@@ -167,7 +167,7 @@ For Maven project, you can add a dependency by clicking the **+** icon next to *
 
 ![add maven dependency](./ProjectManagement_img/add-maven-dependency.png)
 
-### [Manage dependencies for unmanaged folder 管理非托管文件夹的依赖项](https://code.visualstudio.com/docs/java/java-project#_manage-dependencies-for-unmanaged-folder)
+### [Manage dependencies for unmanaged folder 管理非托管文件夹的依赖项]({{< ref "/Java/ProjectManagement#_manage-dependencies-for-unmanaged-folder" >}})
 
 If your project is an unmanaged folder without any build tools. You can manage the dependencies by clicking the **+** icon or the **-** icon on the **Referenced Libraries** node or the items under it, or you can just directly drag your jar libraries to the node `Referenced Libraries`
 
@@ -175,7 +175,7 @@ If your project is an unmanaged folder without any build tools. You can manage t
 
 ![manage referenced librares](./ProjectManagement_img/manage-referenced-libraries.png)
 
-> You can also manage the dependencies in the classpath configuration page. See: [Configure classpath for unmanaged folder](https://code.visualstudio.com/docs/java/java-project#_configure-classpath-for-unmanaged-folders)
+> You can also manage the dependencies in the classpath configuration page. See: [Configure classpath for unmanaged folder]({{< ref "/Java/ProjectManagement#_configure-classpath-for-unmanaged-folders" >}})
 >
 > ​​​	您还可以在类路径配置页面中管理依赖项。请参阅：为非托管文件夹配置类路径
 
@@ -266,7 +266,7 @@ In this way, `bar-src.jar` is attached to bar.jar as its source.
 
 ​​​	这样， `bar-src.jar` 就作为其源附加到 bar.jar。
 
-## [Lightweight Mode 轻量级模式](https://code.visualstudio.com/docs/java/java-project#_lightweight-mode)
+## [Lightweight Mode 轻量级模式]({{< ref "/Java/ProjectManagement#_lightweight-mode" >}})
 
 VS Code for Java supports two modes, lightweight and standard. With lightweight mode, only source files and JDK are resolved by the language server; with standard mode, imported dependencies are resolved and the project is built by the language server. Lightweight mode works best when you need a quick-start and lightweight environment to work with your source files, for example, reading source code, navigating among source code and JDK, viewing outline and Javadoc, and detecting and fixing syntax errors. Also, code completion is supported within the scope of source files and JDK.
 
@@ -304,7 +304,7 @@ Clicking the language status item switches to standard mode.
 
 ![Switch to Standard](./ProjectManagement_img/switch-to-standard.gif)
 
-## [Build Status 生成状态](https://code.visualstudio.com/docs/java/java-project#_build-status)
+## [Build Status 生成状态]({{< ref "/Java/ProjectManagement#_build-status" >}})
 
 When you edit Java source code in Visual Studio Code, the Java language server is building your workspace to provide you with the necessary language features. You can see the detailed build task status and watch what is happening behind the scene by clicking the language status item in the Status bar. You can also select the **check details** link when a notification shows the language server is opening Java projects to see the build task status.
 
@@ -314,7 +314,7 @@ When you edit Java source code in Visual Studio Code, the Java language server i
 
 
 
-### [Additional resources 其他资源](https://code.visualstudio.com/docs/java/java-project#_additional-resources)
+### [Additional resources 其他资源]({{< ref "/Java/ProjectManagement#_additional-resources" >}})
 
 There are several Visual Studio Code extensions to support different build systems for Java. Below are extensions for several popular build systems.
 
@@ -330,17 +330,17 @@ If you run into any problems when using the features above, you can contact us b
 
 ​​​	如果您在使用上述功能时遇到任何问题，可以通过提交问题与我们联系。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/java/java-project#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Java/ProjectManagement#_next-steps" >}})
 
 Read on to find out more about:
 
 ​​​	继续阅读以详细了解：
 
-- [Java editing](https://code.visualstudio.com/docs/java/java-editing) - Explore the editing features for Java in VS Code.
+- [Java editing]({{< ref "/Java/NavigateandEdit" >}}) - Explore the editing features for Java in VS Code.
   Java 编辑 - 探索 VS Code 中的 Java 编辑功能。
-- [Java debugging](https://code.visualstudio.com/docs/java/java-debugging) - Find out how to debug your Java project with VS Code.
+- [Java debugging]({{< ref "/Java/RunandDebug" >}}) - Find out how to debug your Java project with VS Code.
   Java 调试 - 了解如何使用 VS Code 调试 Java 项目。
-- [Java testing](https://code.visualstudio.com/docs/java/java-testing) - Use VS Code for your JUnit and TestNG cases.
+- [Java testing]({{< ref "/Java/Testing" >}}) - Use VS Code for your JUnit and TestNG cases.
   Java 测试 - 将 VS Code 用于您的 JUnit 和 TestNG 案例。
-- [Java extensions](https://code.visualstudio.com/docs/java/extensions) - Learn about more useful Java extensions for VS Code.
+- [Java extensions]({{< ref "/Java/Extensions" >}}) - Learn about more useful Java extensions for VS Code.
   Java 扩展 - 了解 VS Code 的更多有用 Java 扩展。

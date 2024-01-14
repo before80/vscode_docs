@@ -28,13 +28,13 @@ This lets VS Code provide a **local-quality development experience** — includi
 
 ​​	这使得 VS Code 能够提供本地质量的开发体验——包括完整的 IntelliSense（完成）、代码导航和调试——无论你的代码托管在何处。
 
-## [Getting started 入门](https://code.visualstudio.com/docs/remote/wsl#_getting-started)
+## [Getting started 入门]({{< ref "/Remote/WindowsSubsystemforLinux#_getting-started" >}})
 
-**Note**: After reviewing this topic, you can get started with the introductory [WSL tutorial](https://code.visualstudio.com/docs/remote/wsl-tutorial).
+**Note**: After reviewing this topic, you can get started with the introductory [WSL tutorial]({{< ref "/Remote/WSLTutorial" >}}).
 
 ​​	注意：在阅读完本主题后，你可以开始使用 WSL 入门教程。
 
-### [Installation 安装](https://code.visualstudio.com/docs/remote/wsl#_installation)
+### [Installation 安装]({{< ref "/Remote/WindowsSubsystemforLinux#_installation" >}})
 
 To get started, you need to:
 
@@ -44,7 +44,7 @@ To get started, you need to:
 
    ​​	安装 Windows 子系统用于 Linux 以及你首选的 Linux 发行版。
 
-   > **Note:** WSL 1 does have some [known limitations](https://code.visualstudio.com/docs/remote/wsl#_known-limitations) for certain types of development. Also, extensions installed in Alpine Linux may not work due to `glibc` dependencies in native source code inside the extension. See the [Remote Development and Linux](https://aka.ms/vscode-remote/linux) article for details.
+   > **Note:** WSL 1 does have some [known limitations]({{< ref "/Remote/WindowsSubsystemforLinux#_known-limitations" >}}) for certain types of development. Also, extensions installed in Alpine Linux may not work due to `glibc` dependencies in native source code inside the extension. See the [Remote Development and Linux](https://aka.ms/vscode-remote/linux) article for details.
    >
    > ​​	注意：WSL 1 确实有一些已知的限制，适用于某些类型的开发。此外，由于扩展程序内部的本机源代码中的 `glibc` 依赖项，在 Alpine Linux 中安装的扩展程序可能无法工作。有关详细信息，请参阅远程开发和 Linux 文章。
 
@@ -60,9 +60,9 @@ To get started, you need to:
 
    ​​	安装 WSL 扩展。如果您计划在 VS Code 中使用其他远程扩展，可以选择安装远程开发扩展包。
 
-### [Open a remote folder or workspace 打开远程文件夹或工作区](https://code.visualstudio.com/docs/remote/wsl#_open-a-remote-folder-or-workspace)
+### [Open a remote folder or workspace 打开远程文件夹或工作区]({{< ref "/Remote/WindowsSubsystemforLinux#_open-a-remote-folder-or-workspace" >}})
 
-#### [From the WSL terminal 从 WSL 终端](https://code.visualstudio.com/docs/remote/wsl#_from-the-wsl-terminal)
+#### [From the WSL terminal 从 WSL 终端]({{< ref "/Remote/WindowsSubsystemforLinux#_from-the-wsl-terminal" >}})
 
 Opening a folder inside the Windows Subsystem for Linux in VS Code is very similar to opening up a Windows folder from the command prompt or PowerShell.
 
@@ -104,7 +104,7 @@ That's it! Any VS Code operations you perform in this window will be executed in
 
 ​​	就是这样！您在此窗口中执行的任何 VS Code 操作都将在 WSL 环境中执行，从编辑和文件操作到调试、使用终端等，所有操作均可执行。
 
-#### [From VS Code 从 VS Code](https://code.visualstudio.com/docs/remote/wsl#_from-vs-code)
+#### [From VS Code 从 VS Code]({{< ref "/Remote/WindowsSubsystemforLinux#_from-vs-code" >}})
 
 Alternatively, you can open a WSL window directly from VS Code:
 
@@ -125,7 +125,7 @@ If you are in a WSL window and want to open the current input in a local window,
 
 ​​	如果您在 WSL 窗口中，并且想要在本地窗口中打开当前输入，请使用 WSL：在 Windows 中重新打开。
 
-#### [From the Windows command prompt 从 Windows 命令提示符](https://code.visualstudio.com/docs/remote/wsl#_from-the-windows-command-prompt)
+#### [From the Windows command prompt 从 Windows 命令提示符]({{< ref "/Remote/WindowsSubsystemforLinux#_from-the-windows-command-prompt" >}})
 
 To open a WSL window directly from a Windows prompt use the `--remote` command line parameter:
 
@@ -159,17 +159,17 @@ To force that a file is opened add `--goto` or use:
 code --file-uri vscode-remote://wsl+Ubuntu/home/ubuntu/fileWithoutExtension
 ```
 
-## [Working with Git 使用 Git](https://code.visualstudio.com/docs/remote/wsl#_working-with-git)
+## [Working with Git 使用 Git]({{< ref "/Remote/WindowsSubsystemforLinux#_working-with-git" >}})
 
-If you are working with the same repository in WSL and Windows, be sure to set up consistent line endings. See [tips and tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files) for details.
+If you are working with the same repository in WSL and Windows, be sure to set up consistent line endings. See [tips and tricks]({{< ref "/Remote/TipsandTricks#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files" >}}) for details.
 
 ​​	如果您在 WSL 和 Windows 中使用同一个存储库，请务必设置一致的行尾。有关详细信息，请参阅提示和技巧。
 
-You can also avoid passwords by configuring WSL to use the Windows Git credential manager. See [tips and tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_sharing-git-credentials-between-windows-and-wsl) for details.
+You can also avoid passwords by configuring WSL to use the Windows Git credential manager. See [tips and tricks]({{< ref "/Remote/TipsandTricks#_sharing-git-credentials-between-windows-and-wsl" >}}) for details.
 
 ​​	您还可以通过将 WSL 配置为使用 Windows Git 凭据管理器来避免使用密码。有关详细信息，请参阅提示和技巧。
 
-## [Managing extensions 管理扩展](https://code.visualstudio.com/docs/remote/wsl#_managing-extensions)
+## [Managing extensions 管理扩展]({{< ref "/Remote/WindowsSubsystemforLinux#_managing-extensions" >}})
 
 VS Code runs extensions in one of two places: locally on the UI / client side, or in WSL. While extensions that affect the VS Code UI, like themes and snippets, are installed locally, most extensions will reside inside WSL.
 
@@ -199,7 +199,7 @@ You can also install all locally installed extensions inside WSL by going to the
 
 ![Install all extensions](./WindowsSubsystemforLinux_img/install-all-extn-wsl.png)
 
-## [Opening a terminal in WSL 在 WSL 中打开终端](https://code.visualstudio.com/docs/remote/wsl#_opening-a-terminal-in-wsl)
+## [Opening a terminal in WSL 在 WSL 中打开终端]({{< ref "/Remote/WindowsSubsystemforLinux#_opening-a-terminal-in-wsl" >}})
 
 Opening a terminal in WSL from VS Code is simple. Once folder is opened in WSL, **any terminal window** you open in VS Code (**Terminal > New Terminal**) will automatically run in WSL rather than locally.
 
@@ -211,23 +211,23 @@ You can also use the `code` command line from this same terminal window to perfo
 
 ![Using the code CLI](./WindowsSubsystemforLinux_img/code-command-in-terminal.png)
 
-## [Debugging in WSL 在 WSL 中调试](https://code.visualstudio.com/docs/remote/wsl#_debugging-in-wsl)
+## [Debugging in WSL 在 WSL 中调试]({{< ref "/Remote/WindowsSubsystemforLinux#_debugging-in-wsl" >}})
 
 Once you've opened a folder in WSL, you can use VS Code's debugger in the same way you would when running the application locally. For example, if you select a launch configuration in `launch.json` and start debugging (F5), the application will start on remote host and attach the debugger to it.
 
 ​​	在 WSL 中打开文件夹后，您可以像在本地运行应用程序时一样使用 VS Code 的调试器。例如，如果您在 `launch.json` 中选择启动配置并开始调试 (F5)，应用程序将在远程主机上启动并将调试器附加到它。
 
-See the [debugging](https://code.visualstudio.com/docs/editor/debugging) documentation for details on configuring VS Code's debugging features in `.vscode/launch.json`.
+See the [debugging]({{< ref "/UserGuide/Debugging" >}}) documentation for details on configuring VS Code's debugging features in `.vscode/launch.json`.
 
 ​​	有关在 `.vscode/launch.json` 中配置 VS Code 的调试功能的详细信息，请参阅调试文档。
 
-## [WSL specific settings WSL 特定设置](https://code.visualstudio.com/docs/remote/wsl#_wsl-specific-settings)
+## [WSL specific settings WSL 特定设置]({{< ref "/Remote/WindowsSubsystemforLinux#_wsl-specific-settings" >}})
 
 VS Code's local user settings are also reused when you have opened a folder in WSL. While this keeps your user experience consistent, you may want to vary some of these settings between your local machine and WSL. Fortunately, once you have connected to WSL, you can also set WSL specific settings by running the **Preferences: Open Remote Settings** command from the Command Palette (F1) or by selecting the **Remote** tab in the Settings editor. These will override any local settings you have in place whenever you open a folder in WSL.
 
 ​​	在 WSL 中打开文件夹时，VS Code 的本地用户设置也会被重新使用。虽然这保持了用户体验的一致性，但您可能希望在本地计算机和 WSL 之间改变其中一些设置。幸运的是，一旦连接到 WSL，您还可以通过从命令面板 (F1) 运行首选项：打开远程设置命令或在设置编辑器中选择远程选项卡来设置 WSL 特定设置。无论何时在 WSL 中打开文件夹，这些设置都会覆盖您设置的任何本地设置。
 
-## [Advanced: Environment setup script 高级：环境设置脚本](https://code.visualstudio.com/docs/remote/wsl#_advanced-environment-setup-script)
+## [Advanced: Environment setup script 高级：环境设置脚本]({{< ref "/Remote/WindowsSubsystemforLinux#_advanced-environment-setup-script" >}})
 
 When VS Code Remote is started in WSL, no shell startup scripts are run. This was done to avoid issues with startup scripts that are tuned for shells. If you want to run additional commands or modify the environment this can be done in a setup script `~/.vscode-server/server-env-setup` (Insiders: `~/.vscode-server-insiders/server-env-setup`). If present, the script is processed before the server is started.
 
@@ -241,9 +241,9 @@ Check the WSL log (**WSL: Show Log**) for output and errors.
 
 ​​	检查 WSL 日志（WSL：显示日志）以获取输出和错误。
 
-## [Advanced: Opening a WSL 2 folder in a container 高级：在容器中打开 WSL 2 文件夹](https://code.visualstudio.com/docs/remote/wsl#_advanced-opening-a-wsl-2-folder-in-a-container)
+## [Advanced: Opening a WSL 2 folder in a container 高级：在容器中打开 WSL 2 文件夹]({{< ref "/Remote/WindowsSubsystemforLinux#_advanced-opening-a-wsl-2-folder-in-a-container" >}})
 
-If you are using WSL 2 and [Docker Desktop's WSL 2 back-end](https://docs.docker.com/docker-for-windows/wsl-tech-preview/), you can use the [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) extension to work with source code stored inside WSL! Just follow these steps:
+If you are using WSL 2 and [Docker Desktop's WSL 2 back-end](https://docs.docker.com/docker-for-windows/wsl-tech-preview/), you can use the [Dev Containers]({{< ref "/DevContainers/Overview" >}}) extension to work with source code stored inside WSL! Just follow these steps:
 
 ​​	如果您使用的是 WSL 2 和 Docker Desktop 的 WSL 2 后端，则可以使用 Dev Containers 扩展来处理存储在 WSL 中的源代码！只需按照以下步骤操作：
 
@@ -259,7 +259,7 @@ If you are using WSL 2 and [Docker Desktop's WSL 2 back-end](https://docs.docker
 
    ​​	如果您尚未安装，请安装 Dev Containers 扩展和 WSL 扩展。
 
-3. Next, [open your source code folder in WSL](https://code.visualstudio.com/docs/remote/wsl#_open-a-remote-folder-or-workspace) as you would normally.
+3. Next, [open your source code folder in WSL]({{< ref "/Remote/WindowsSubsystemforLinux#_open-a-remote-folder-or-workspace" >}}) as you would normally.
 
    ​​	接下来，像往常一样在 WSL 中打开源代码文件夹。
 
@@ -283,11 +283,11 @@ If you are using WSL 2 and [Docker Desktop's WSL 2 back-end](https://docs.docker
 
    ​​	构建完成后，VS Code 将自动连接到容器。您现在可以从容器内部处理源代码。
 
-See the [Dev Containers documentation](https://code.visualstudio.com/docs/devcontainers/containers) for more information.
+See the [Dev Containers documentation]({{< ref "/DevContainers/Overview" >}}) for more information.
 
 ​​	有关详细信息，请参阅开发容器文档。
 
-## [Known limitations 已知限制](https://code.visualstudio.com/docs/remote/wsl#_known-limitations)
+## [Known limitations 已知限制]({{< ref "/Remote/WindowsSubsystemforLinux#_known-limitations" >}})
 
 This section contains a list of common know issues with WSL. The intent is not to provide a complete list of issues but to highlight some of the common problems seen with WSL.
 
@@ -297,7 +297,7 @@ See [here for a list of active issues](https://aka.ms/vscode-remote/wsl/issues) 
 
 ​​	在此处查看与 WSL 相关的活动问题列表。
 
-### [I see EACCES: permission denied error trying to rename a folder in the open workspace in WSL 1 我看到 EACCES：尝试在 WSL 1 中重命名打开的工作区中的文件夹时出现权限被拒绝错误](https://code.visualstudio.com/docs/remote/wsl#_i-see-eacces-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace-in-wsl-1)
+### [I see EACCES: permission denied error trying to rename a folder in the open workspace in WSL 1 我看到 EACCES：尝试在 WSL 1 中重命名打开的工作区中的文件夹时出现权限被拒绝错误]({{< ref "/Remote/WindowsSubsystemforLinux#_i-see-eacces-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace-in-wsl-1" >}})
 
 That's a known problem with the WSL file system implementation ([Microsoft/WSL#3395](https://github.com/microsoft/WSL/issues/3395), [Microsoft/WSL#1956](https://github.com/microsoft/WSL/issues/1956)) caused by the file watcher active by VSCode. The issue will only be fixed in WSL 2.
 
@@ -315,13 +315,13 @@ For large workspace you want to increase the polling interval: `remote.WSL.fileW
 
 ​​	WSL 2 没有该文件监视器问题，也不会受到新设置的影响。
 
-### [Golang in WSL 1 WSL 1 中的 Golang](https://code.visualstudio.com/docs/remote/wsl#_golang-in-wsl-1)
+### [Golang in WSL 1 WSL 1 中的 Golang]({{< ref "/Remote/WindowsSubsystemforLinux#_golang-in-wsl-1" >}})
 
 | Issue 问题                                                   | Existing issues 现有问题                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | Delve debugger doesn't work under WSL Delve 调试器在 WSL 下不起作用 | [go-delve/delve#810](https://github.com/go-delve/delve/issues/810), [Microsoft/vscode-go#926](https://github.com/microsoft/vscode-go/issues/926) go-delve/delve#810、Microsoft/vscode-go#926 |
 
-### [Node.js in WSL 1 WSL 1 中的 Node.js](https://code.visualstudio.com/docs/remote/wsl#_nodejs-in-wsl-1)
+### [Node.js in WSL 1 WSL 1 中的 Node.js]({{< ref "/Remote/WindowsSubsystemforLinux#_nodejs-in-wsl-1" >}})
 
 | Issue 问题                                                   | Existing issues 现有问题                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -329,21 +329,21 @@ For large workspace you want to increase the polling interval: `remote.WSL.fileW
 | Webpack HMR not working Webpack HMR 不起作用                 | [Microsoft/WSL#2709](https://github.com/microsoft/WSL/issues/2709) |
 | Firebase via node unusably slow only on WSL 仅在 WSL 上通过节点的 Firebase 慢得无法使用 | [Microsoft/WSL#2657](https://github.com/microsoft/WSL/issues/2657) |
 
-### [Git limitations Git 限制](https://code.visualstudio.com/docs/remote/wsl#_git-limitations)
+### [Git limitations Git 限制]({{< ref "/Remote/WindowsSubsystemforLinux#_git-limitations" >}})
 
 If you clone a Git repository using SSH and your SSH key has a passphrase, VS Code's pull and sync features may hang when running remotely. Either use an SSH key without a passphrase, clone using HTTPS, or run `git push` from the command line to work around the issue.
 
 ​​	如果您使用 SSH 克隆 Git 存储库，并且您的 SSH 密钥有密码，则在远程运行时 VS Code 的拉取和同步功能可能会挂起。使用没有密码的 SSH 密钥，使用 HTTPS 克隆，或从命令行运行 `git push` 来解决此问题。
 
-### [Docker Extension limitations Docker 扩展限制](https://code.visualstudio.com/docs/remote/wsl#_docker-extension-limitations)
+### [Docker Extension limitations Docker 扩展限制]({{< ref "/Remote/WindowsSubsystemforLinux#_docker-extension-limitations" >}})
 
 While the Docker extension can run both remotely and locally, if it is already installed locally, you will be unable to install on a remote SSH host without first uninstalling it locally. We will address this problem in a future VS Code release.
 
 ​​	虽然 Docker 扩展可以在远程和本地运行，但如果已在本地安装，则在不先在本地卸载的情况下，您将无法在远程 SSH 主机上安装。我们将在未来的 VS Code 版本中解决此问题。
 
-### [Extension limitations 扩展限制](https://code.visualstudio.com/docs/remote/wsl#_extension-limitations)
+### [Extension limitations 扩展限制]({{< ref "/Remote/WindowsSubsystemforLinux#_extension-limitations" >}})
 
-Many extensions will work in WSL without modification. However, in some cases, certain features may require changes. If you run into an extension issue, see [here for a summary of common problems and solutions](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-tips) that you can mention to the extension author when reporting the issue.
+Many extensions will work in WSL without modification. However, in some cases, certain features may require changes. If you run into an extension issue, see [here for a summary of common problems and solutions]({{< ref "/Remote/TipsandTricks#_extension-tips" >}}) that you can mention to the extension author when reporting the issue.
 
 ​​	许多扩展将在 WSL 中运行而无需修改。但是，在某些情况下，某些功能可能需要更改。如果您遇到扩展问题，请参阅此处以了解常见问题和解决方案的摘要，您可以在报告问题时向扩展作者提及这些摘要。
 
@@ -351,9 +351,9 @@ In addition, some extensions installed in an WSL when using an Alpine Linux-base
 
 ​​	此外，由于扩展中本机代码中的 `glibc` 依赖项，在使用基于 Alpine Linux 的发行版时，在 WSL 中安装的某些扩展可能无法工作。有关详细信息，请参阅使用 Linux 进行远程开发一文。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/remote/wsl#_common-questions)
+## [Common questions 常见问题]({{< ref "/Remote/WindowsSubsystemforLinux#_common-questions" >}})
 
-### [Why am I asked to change the default distro? 为什么要求我更改默认发行版？](https://code.visualstudio.com/docs/remote/wsl#_why-am-i-asked-to-change-the-default-distro)
+### [Why am I asked to change the default distro? 为什么要求我更改默认发行版？]({{< ref "/Remote/WindowsSubsystemforLinux#_why-am-i-asked-to-change-the-default-distro" >}})
 
 When using **WSL: Connect to WSL using Distro** and running on WSL older than Windows 10, May 2019 Update (version 1903) you will be asked to switch the **default distribution** as the WSL command can only work on the default distro as it does not support the `-d` option yet.
 
@@ -379,13 +379,13 @@ You can see which distributions you have installed using:
 wslconfig /l
 ```
 
-### [I'm seeing an error about a missing library or dependency 我看到有关缺少库或依赖项的错误](https://code.visualstudio.com/docs/remote/wsl#_im-seeing-an-error-about-a-missing-library-or-dependency)
+### [I'm seeing an error about a missing library or dependency 我看到有关缺少库或依赖项的错误]({{< ref "/Remote/WindowsSubsystemforLinux#_im-seeing-an-error-about-a-missing-library-or-dependency" >}})
 
 Some extensions rely on libraries not found in the vanilla install of certain WSL Linux distributions. You can add additional libraries into your Linux distribution by using its package manager. For Ubuntu and Debian based distributions, run `sudo apt-get install <package>` to install the needed libraries. Check the documentation for your extension or the runtime that is mentioned for additional installation details.
 
 ​​	某些扩展依赖于在某些 WSL Linux 发行版的原始安装中找不到的库。您可以使用其软件包管理器向 Linux 发行版中添加其他库。对于基于 Ubuntu 和 Debian 的发行版，运行 `sudo apt-get install <package>` 以安装所需的库。查看扩展的文档或提到的运行时以获取其他安装详细信息。
 
-### [What are the connectivity requirements for the WSL extension? WSL 扩展的连接要求是什么？](https://code.visualstudio.com/docs/remote/wsl#_what-are-the-connectivity-requirements-for-the-wsl-extension)
+### [What are the connectivity requirements for the WSL extension? WSL 扩展的连接要求是什么？]({{< ref "/Remote/WindowsSubsystemforLinux#_what-are-the-connectivity-requirements-for-the-wsl-extension" >}})
 
 The WSL extension and VS Code Server require outbound HTTPS (port 443) connectivity to:
 
@@ -403,11 +403,11 @@ Some extensions (like C#) download secondary dependencies from `download.microso
 
 ​​	某些扩展（如 C#）从 `download.microsoft.com` 或 `download.visualstudio.microsoft.com` 下载辅助依赖项。其他扩展（如 Visual Studio Live Share）可能具有其他连接要求。如果您遇到问题，请参阅扩展的文档以了解详细信息。
 
-All other communication between the server and the VS Code client is accomplished through an random local TCP port. You can find a list of locations VS Code itself needs access to in the [network connections article](https://code.visualstudio.com/docs/setup/network#_common-hostnames).
+All other communication between the server and the VS Code client is accomplished through an random local TCP port. You can find a list of locations VS Code itself needs access to in the [network connections article]({{< ref "/Setup/Network#_common-hostnames" >}}).
 
 ​​	服务器与 VS Code 客户端之间的所有其他通信都是通过随机本地 TCP 端口完成的。您可以在网络连接一文中找到 VS Code 本身需要访问的位置列表。
 
-### [I'm behind a proxy and have connectivity issues 我处于代理后面并且存在连接问题](https://code.visualstudio.com/docs/remote/wsl#_im-behind-a-proxy-and-have-connectivity-issues)
+### [I'm behind a proxy and have connectivity issues 我处于代理后面并且存在连接问题]({{< ref "/Remote/WindowsSubsystemforLinux#_im-behind-a-proxy-and-have-connectivity-issues" >}})
 
 Proxy settings might be missing on either the Windows or the WSL side.
 
@@ -419,7 +419,7 @@ When a remote window is opened out of VSCode, the WSL extension tries to downloa
 
 - inherited from the OS settings
   继承自操作系统设置
-- as described in [Network Connections in Visual Studio Code](https://code.visualstudio.com/docs/setup/network)
+- as described in [Network Connections in Visual Studio Code]({{< ref "/Setup/Network" >}})
   如 Visual Studio Code 中的网络连接所述
 
 When the remote VSCode is started from a WSL terminal, the download is done using `wget` in the WSL distro. Proxy settings can be configured in:
@@ -428,14 +428,14 @@ When the remote VSCode is started from a WSL terminal, the download is done usin
 
 - wget proxy settings: https://stackoverflow.com/questions/11211705/how-to-set-proxy-for-wget
   wget 代理设置：https://stackoverflow.com/questions/11211705/how-to-set-proxy-for-wget
-- manually in the [server setup script](https://code.visualstudio.com/docs/remote/wsl#_advanced-environment-setup-script)
+- manually in the [server setup script]({{< ref "/Remote/WindowsSubsystemforLinux#_advanced-environment-setup-script" >}})
   在服务器设置脚本中手动
 
 Once the server is up and running the proxy settings on the *Remote* tab are used.
 
 ​​	服务器启动并运行后，将使用“远程”选项卡上的代理设置。
 
-### [Can I force an extension to run locally / remotely ? 我可以强制扩展在本地/远程运行吗？](https://code.visualstudio.com/docs/remote/wsl#_can-i-force-an-extension-to-run-locally-remotely-)
+### [Can I force an extension to run locally / remotely ? 我可以强制扩展在本地/远程运行吗？]({{< ref "/Remote/WindowsSubsystemforLinux#_can-i-force-an-extension-to-run-locally-remotely-" >}})
 
 Extensions are typically designed and tested to either run locally or remotely, not both. However, if an extension supports it, you can force it to run in a particular location in your `settings.json` file.
 
@@ -456,15 +456,15 @@ A value of `"ui"` instead of `"workspace"` will force the extension to run on th
 
 ​​	使用 `"ui"` 值而不是 `"workspace"` 值将强制扩展在本地 UI/客户端上运行。通常，除非扩展的文档中另有说明，否则仅应将其用于测试，因为它可能会破坏扩展。有关详细信息，请参阅支持远程开发的文章。
 
-### [As an extension author, what do I need to do? 作为扩展作者，我需要做什么？](https://code.visualstudio.com/docs/remote/wsl#_as-an-extension-author-what-do-i-need-to-do)
+### [As an extension author, what do I need to do? 作为扩展作者，我需要做什么？]({{< ref "/Remote/WindowsSubsystemforLinux#_as-an-extension-author-what-do-i-need-to-do" >}})
 
 The VS Code extension API abstracts away local/remote details so most extensions will work without modification. However, given extensions can use any node module or runtime they want, there are situations where adjustments may need to be made. We recommend you test your extension to be sure that no updates are required. See [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.
 
 ​​	VS Code 扩展 API 抽象了本地/远程详细信息，因此大多数扩展无需修改即可工作。但是，鉴于扩展可以使用任何所需的 node 模块或运行时，因此在某些情况下可能需要进行调整。我们建议您测试您的扩展以确保不需要任何更新。有关详细信息，请参阅支持远程开发。
 
-## [Questions or feedback 问题或反馈](https://code.visualstudio.com/docs/remote/wsl#_questions-or-feedback)
+## [Questions or feedback 问题或反馈]({{< ref "/Remote/WindowsSubsystemforLinux#_questions-or-feedback" >}})
 
-- See [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_wsl-tips) or the [FAQ](https://code.visualstudio.com/docs/remote/faq).
+- See [Tips and Tricks]({{< ref "/Remote/TipsandTricks#_wsl-tips" >}}) or the [FAQ]({{< ref "/Remote/FAQ" >}}).
   请参阅提示和技巧或常见问题解答。
 - Search on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).
   在 Stack Overflow 上搜索。

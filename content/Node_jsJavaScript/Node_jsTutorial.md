@@ -34,11 +34,11 @@ To test that you have Node.js installed correctly on your computer, open a new t
 >
 > ​​	Linux：针对各种 Linux 版本提供了特定的 Node.js 软件包。请参阅通过包管理器安装 Node.js 以查找针对您版本的 Linux 量身定制的 Node.js 软件包和安装说明。
 
-> **Windows Subsystem for Linux**: If you are on Windows, WSL is a great way to do Node.js development. You can run Linux distributions on Windows and install Node.js into the Linux environment. When coupled with the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension, you get full VS Code editing and debugging support while running in the context of WSL. To learn more, go to [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl) or try the [Working in WSL](https://code.visualstudio.com/docs/remote/wsl-tutorial) tutorial.
+> **Windows Subsystem for Linux**: If you are on Windows, WSL is a great way to do Node.js development. You can run Linux distributions on Windows and install Node.js into the Linux environment. When coupled with the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension, you get full VS Code editing and debugging support while running in the context of WSL. To learn more, go to [Developing in WSL]({{< ref "/Remote/WindowsSubsystemforLinux" >}}) or try the [Working in WSL]({{< ref "/Remote/WSLTutorial" >}}) tutorial.
 >
 > ​​	Windows 子系统适用于 Linux：如果您使用的是 Windows，WSL 是进行 Node.js 开发的绝佳方式。您可以在 Windows 上运行 Linux 发行版，并将 Node.js 安装到 Linux 环境中。与 WSL 扩展结合使用时，您可以在 WSL 上下文中运行时获得完整的 VS Code 编辑和调试支持。若要了解详细信息，请转到在 WSL 中开发或尝试在 WSL 中工作教程。
 
-## [Hello World](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_hello-world)
+## [Hello World]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_hello-world" >}})
 
 Let's get started by creating the simplest Node.js application, "Hello World".
 
@@ -70,7 +70,7 @@ and name the file `app.js`:
 
 ![File Explorer app.js](./Node_jsTutorial_img/app-js-file-created.png)
 
-By using the `.js` file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service. Refer to the VS Code [JavaScript language](https://code.visualstudio.com/docs/languages/javascript) topic to learn more about JavaScript support.
+By using the `.js` file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service. Refer to the VS Code [JavaScript language]({{< ref "/Languages/JavaScript" >}}) topic to learn more about JavaScript support.
 
 ​​	通过使用 `.js` 文件扩展名，VS Code 将此文件解释为 JavaScript，并将使用 JavaScript 语言服务评估内容。请参阅 VS Code JavaScript 语言主题以了解有关 JavaScript 支持的详细信息。
 
@@ -83,7 +83,7 @@ var msg = 'Hello World';
 console.log(msg);
 ```
 
-Note that when you typed `console.` [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) on the `console` object was automatically presented to you.
+Note that when you typed `console.` [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) on the `console` object was automatically presented to you.
 
 ​​	请注意，当您键入 `console.` 时， `console` 对象上的 IntelliSense 会自动显示给您。
 
@@ -99,7 +99,7 @@ After experimenting with IntelliSense, revert any extra changes from the source 
 
 ​​	在对 IntelliSense 进行试验后，还原上述源代码示例中的任何额外更改并保存文件 (Ctrl+S)。
 
-### [Running Hello World 运行 Hello World](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_running-hello-world)
+### [Running Hello World 运行 Hello World]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_running-hello-world" >}})
 
 It's simple to run `app.js` with Node.js. From a terminal, just type:
 
@@ -113,9 +113,9 @@ You should see "Hello World" output to the terminal and then Node.js returns.
 
 ​​	您应该会看到“Hello World”输出到终端，然后 Node.js 返回。
 
-### [Integrated Terminal 集成终端](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_integrated-terminal)
+### [Integrated Terminal 集成终端]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_integrated-terminal" >}})
 
-VS Code has an [integrated terminal](https://code.visualstudio.com/docs/terminal/basics) which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command-line tools.
+VS Code has an [integrated terminal]({{< ref "/Terminal/TerminalBasics" >}}) which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command-line tools.
 
 ​​	VS Code 有一个集成终端，您可以使用它来运行 shell 命令。您可以直接从那里运行 Node.js，避免在运行命令行工具时退出 VS Code。
 
@@ -129,7 +129,7 @@ For this walkthrough, you can use either an external terminal or the VS Code int
 
 ​​	对于本演练，您可以使用外部终端或 VS Code 集成终端来运行命令行工具。
 
-### [Debugging Hello World 调试 Hello World](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_debugging-hello-world)
+### [Debugging Hello World 调试 Hello World]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_debugging-hello-world" >}})
 
 As mentioned in the introduction, VS Code ships with a debugger for Node.js applications. Let's try debugging our simple Hello World application.
 
@@ -161,7 +161,7 @@ Now that you've seen VS Code in action with "Hello World", the next section show
 >
 > ​​	注意：我们已经完成了“Hello World”示例，因此在创建 Express 应用程序之前，请导航出该文件夹。如果您愿意，可以删除“Hello”文件夹，因为在演练的其余部分中不需要它。
 
-## [An Express application Express 应用程序](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_an-express-application)
+## [An Express application Express 应用程序]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_an-express-application" >}})
 
 [Express](https://expressjs.com/) is a very popular application framework for building and running Node.js applications. You can scaffold (create) a new Express application using the Express Generator tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool `npm`.
 
@@ -222,7 +222,7 @@ The Node.js web server will start and you can browse to [http://localhost:3000](
 
 ![Your first Node Express App](./Node_jsTutorial_img/express.png)
 
-## [Great code editing 出色的代码编辑](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_great-code-editing)
+## [Great code editing 出色的代码编辑]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_great-code-editing" >}})
 
 Close the browser and from a terminal in the `myExpressApp` folder, stop the Node.js server by pressing CTRL+C.
 
@@ -260,7 +260,7 @@ You can also write code that references modules in other files. For example, in 
 
 ![Express.Router IntelliSense](./Node_jsTutorial_img/moduleintellisense.png)
 
-## [Debug your Express app 调试您的 Express 应用程序](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_debug-your-express-app)
+## [Debug your Express app 调试您的 Express 应用程序]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_debug-your-express-app" >}})
 
 You will need to create a debugger configuration file `launch.json` for your Express application. Click on **Run and Debug** in the **Activity Bar** (Ctrl+Shift+D) and then select the **create a launch.json file** link to create a default `launch.json` file. Select the **Node.js** environment by ensuring that the `type` property in `configurations` is set to `"node"`. When the file is first created, VS Code will look in `package.json` for a `start` script and will use that value as the `program` (which in this case is `"${workspaceFolder}\\bin\\www`) for the **Launch Program** configuration.
 
@@ -286,31 +286,31 @@ Save the new file and make sure **Launch Program** is selected in the configurat
 
 ![Debug session](./Node_jsTutorial_img/debugsession.png)
 
-## [Deploy your application 部署您的应用程序](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_deploy-your-application)
+## [Deploy your application 部署您的应用程序]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_deploy-your-application" >}})
 
-If you'd like to learn how to deploy your web application, check out the [Deploying Applications to Azure](https://code.visualstudio.com/docs/azure/deployment) tutorials where we show how to run your website in Azure.
+If you'd like to learn how to deploy your web application, check out the [Deploying Applications to Azure]({{< ref "/Azure/Deployment" >}}) tutorials where we show how to run your website in Azure.
 
 ​​	如果您想了解如何部署您的 Web 应用程序，请查看将应用程序部署到 Azure 教程，其中演示了如何在 Azure 中运行您的网站。
 
 ------
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_next-steps" >}})
 
 There is much more to explore with Visual Studio Code, please try the following topics:
 
 ​​	Visual Studio Code 中还有更多内容可供探索，请尝试以下主题：
 
-- [Node.js profile template](https://code.visualstudio.com/docs/editor/profiles#_nodejs-profile-template) - Create a new [profile](https://code.visualstudio.com/docs/editor/profiles) with a curated set of extensions, settings, and snippets.
+- [Node.js profile template]({{< ref "/UserGuide/Profiles#_nodejs-profile-template" >}}) - Create a new [profile]({{< ref "/UserGuide/Profiles" >}}) with a curated set of extensions, settings, and snippets.
   Node.js 配置文件模板 - 使用精选的扩展、设置和代码段创建新的配置文件。
-- [Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to customize VS Code for how you like to work.
+- [Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to customize VS Code for how you like to work.
   设置 - 了解如何自定义 VS Code 以适应您的工作方式。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - This is where VS Code really shines.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - This is where VS Code really shines.
   调试 - 这是 VS Code 真正出彩的地方。
 - [Video: Getting started with Node.js debugging](https://www.youtube.com/watch?v=2oFKNL7vYV8) - Learn how to attach to a running Node.js process.
   视频：开始使用 Node.js 调试 - 了解如何附加到正在运行的 Node.js 进程。
-- [Node.js debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) - Learn more about VS Code's built-in Node.js debugging.
+- [Node.js debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging" >}}) - Learn more about VS Code's built-in Node.js debugging.
   Node.js 调试 - 详细了解 VS Code 内置的 Node.js 调试。
-- [Debugging recipes](https://code.visualstudio.com/docs/nodejs/debugging-recipes) - Examples for scenarios like client-side and container debugging.
+- [Debugging recipes]({{< ref "/Node_jsJavaScript/DebuggingRecipes" >}}) - Examples for scenarios like client-side and container debugging.
   调试食谱 - 客户端和容器调试等场景的示例。
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - Running tasks with Gulp, Grunt and Jake. Showing Errors and Warnings.
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - Running tasks with Gulp, Grunt and Jake. Showing Errors and Warnings.
   任务 - 使用 Gulp、Grunt 和 Jake 运行任务。显示错误和警告。

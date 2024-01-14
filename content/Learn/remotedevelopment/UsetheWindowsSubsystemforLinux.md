@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [What is WSL? WSL 是什么？](https://code.visualstudio.com/learn/develop-cloud/wsl#_what-is-wsl)
+## [What is WSL? WSL 是什么？]({{< ref "/Learn/remotedevelopment/UsetheWindowsSubsystemforLinux#_what-is-wsl" >}})
 
 The [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/about) (WSL) lets you run a Linux environment, including command-line tools and applications, directly on Windows, without the overhead of a traditional virtual machine or dual boot setup.
 
@@ -24,7 +24,7 @@ WSL especially helps web developers and those working with Bash and Linux-first 
 
 ​​​	WSL 特别有助于 Web 开发人员和使用 Bash 和 Linux 优先工具（例如 Ruby 和 Python）的人员在 Windows 上使用他们的工具，并确保开发和生产环境之间的一致性。
 
-## [Get started with WSL in VS Code 在 VS Code 中开始使用 WSL](https://code.visualstudio.com/learn/develop-cloud/wsl#_get-started-with-wsl-in-vs-code)
+## [Get started with WSL in VS Code 在 VS Code 中开始使用 WSL]({{< ref "/Learn/remotedevelopment/UsetheWindowsSubsystemforLinux#_get-started-with-wsl-in-vs-code" >}})
 
 To get started with using WSL in VS Code, you'll need to download the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) from the Extension Marketplace.
 
@@ -50,8 +50,8 @@ The typical flow is you'll open a Linux command prompt, navigate to a folder of 
 
 
 
-## [Next steps 后续步骤](https://code.visualstudio.com/learn/develop-cloud/wsl#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Learn/remotedevelopment/UsetheWindowsSubsystemforLinux#_next-steps" >}})
 
-We highly recommend checking out the step-by-step [WSL tutorial](https://code.visualstudio.com/docs/remote/wsl-tutorial) to learn more.
+We highly recommend checking out the step-by-step [WSL tutorial]({{< ref "/Remote/WSLTutorial" >}}) to learn more.
 
 ​​​	我们强烈建议您查看分步 WSL 教程以了解更多信息。

@@ -18,7 +18,7 @@ The **Visual Studio Code Dev Containers** extension lets you use a [Docker conta
 
 ​​	Visual Studio Code Dev Containers 扩展允许您将 Docker 容器用作功能齐全的开发环境。它允许您在容器内打开任何文件夹或存储库，并利用 Visual Studio Code 的全套功能。项目中的 `devcontainer.json` 文件告诉 VS Code 如何访问（或创建）具有明确定义的工具和运行时堆栈的开发容器。此容器可用于运行应用程序或提供处理代码库所需的单独工具、库或运行时。
 
-## [Path to creating a dev container 创建开发容器的路径](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_path-to-creating-a-dev-container)
+## [Path to creating a dev container 创建开发容器的路径]({{< ref "/DevContainers/CreateaDevContainer#_path-to-creating-a-dev-container" >}})
 
 In this document, we'll go through the steps for creating a development (dev) container in VS Code:
 
@@ -37,11 +37,11 @@ After any of the steps above, you'll have a fully functioning dev container, and
 
 ​​	在完成上述任何步骤后，您将拥有一个功能齐全的开发容器，您可以继续执行本教程的下一步以添加更多功能，或停止并开始在您当前拥有的开发环境中工作。
 
-> Note: The Dev Containers extension has a **Dev Containers: Add Dev Container Configuration Files...** command that lets you pick a pre-defined container configuration from a list. If you'd prefer to have a complete dev container immediately rather than building up the `devcontainer.json` and Dockerfile step-by-step, you can skip ahead to [Automate dev container creation](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_automate-dev-container-creation).
+> Note: The Dev Containers extension has a **Dev Containers: Add Dev Container Configuration Files...** command that lets you pick a pre-defined container configuration from a list. If you'd prefer to have a complete dev container immediately rather than building up the `devcontainer.json` and Dockerfile step-by-step, you can skip ahead to [Automate dev container creation]({{< ref "/DevContainers/CreateaDevContainer#_automate-dev-container-creation" >}}).
 >
 > ​​	注意：Dev Containers 扩展程序有一个 Dev Containers：添加 Dev Container 配置文件... 命令，可让您从列表中选择预定义的容器配置。如果您希望立即拥有一个完整的开发容器，而不是逐步构建 `devcontainer.json` 和 Dockerfile，则可以跳到自动执行开发容器创建。
 
-## [Create a devcontainer.json file 创建 devcontainer.json 文件](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_create-a-devcontainerjson-file)
+## [Create a devcontainer.json file 创建 devcontainer.json 文件]({{< ref "/DevContainers/CreateaDevContainer#_create-a-devcontainerjson-file" >}})
 
 VS Code's container configuration is stored in a [devcontainer.json](https://containers.dev/implementors/json_reference) file. This file is similar to the `launch.json` file for debugging configurations, but is used for launching (or attaching to) your development container instead. The dev container configuration is either located under `.devcontainer/devcontainer.json` or stored as a `.devcontainer.json` file (note the dot-prefix) in the root of your project.
 
@@ -71,7 +71,7 @@ You can alter your configuration to do things such as:
   设置运行时参数。
 - Reuse or [extend your existing Docker Compose setup](https://aka.ms/vscode-remote/containers/docker-compose/extend).
   重复使用或扩展现有的 Docker Compose 设置。
-- Add more [Advanced container configuration](https://code.visualstudio.com/remote/advancedcontainers/overview).
+- Add more [Advanced container configuration]({{< ref "/Remote/advancedcontainers/Overview" >}}).
   添加更高级的容器配置。
 
 For this example, if you'd like to install the [Code Spell Checker extension](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) into your container and automatically forward port 3000, your `devcontainer.json` would look like:
@@ -91,7 +91,7 @@ For this example, if you'd like to install the [Code Spell Checker extension](ht
 }
 ```
 
-> **Note:** Additional configuration will already be added to the container based on what's in the base image. For example, we add the `streetsidesoftware.code-spell-checker` extension above, and the container will also include `"dbaeumer.vscode-eslint"` as [that's part of `mcr.microsoft.com/devcontainers/typescript-node`](https://github.com/devcontainers/images/blob/main/src/javascript-node/.devcontainer/devcontainer.json#L27). This happens automatically when pre-building using devcontainer.json, which you may read more about in the [pre-build section](https://code.visualstudio.com/docs/devcontainers/containers#_prebuilding-dev-container-images).
+> **Note:** Additional configuration will already be added to the container based on what's in the base image. For example, we add the `streetsidesoftware.code-spell-checker` extension above, and the container will also include `"dbaeumer.vscode-eslint"` as [that's part of `mcr.microsoft.com/devcontainers/typescript-node`](https://github.com/devcontainers/images/blob/main/src/javascript-node/.devcontainer/devcontainer.json#L27). This happens automatically when pre-building using devcontainer.json, which you may read more about in the [pre-build section]({{< ref "/DevContainers/Overview#_prebuilding-dev-container-images" >}}).
 >
 > ​​	注意：其他配置将根据基本映像中的内容添加到容器中。例如，我们在上面添加了 `streetsidesoftware.code-spell-checker` 扩展，容器还将包含 `"dbaeumer.vscode-eslint"` ，因为它是 `mcr.microsoft.com/devcontainers/typescript-node` 的一部分。使用 devcontainer.json 预构建时会自动发生这种情况，您可以在预构建部分中阅读更多相关信息。
 
@@ -107,7 +107,7 @@ After running this command, when VS Code restarts, you're now within a Node.js a
 
 ![VS Code instance connected to dev container](./CreateaDevContainer_img/connected-to-dev-container.png)
 
-### [Additional dev container scenarios 其他开发容器方案](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_additional-dev-container-scenarios)
+### [Additional dev container scenarios 其他开发容器方案]({{< ref "/DevContainers/CreateaDevContainer#_additional-dev-container-scenarios" >}})
 
 Through a `devcontainer.json` file, you can:
 
@@ -115,20 +115,20 @@ Through a `devcontainer.json` file, you can:
 
 - Spin up a stand-alone container to isolate your toolchain or speed up setup.
   启动一个独立容器来隔离您的工具链或加快设置速度。
-- Work with a container deployed application defined by an image, [Dockerfile](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile), or [Docker Compose](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_use-docker-compose).
+- Work with a container deployed application defined by an image, [Dockerfile]({{< ref "/DevContainers/CreateaDevContainer#_dockerfile" >}}), or [Docker Compose]({{< ref "/DevContainers/CreateaDevContainer#_use-docker-compose" >}}).
   使用由映像、Dockerfile 或 Docker Compose 定义的容器部署的应用程序。
-- [Use Docker or Kubernetes](https://code.visualstudio.com/remote/advancedcontainers/use-docker-kubernetes) from inside a dev container to build and deploy your app.
+- [Use Docker or Kubernetes]({{< ref "/Remote/advancedcontainers/UseDockerorKubernetes" >}}) from inside a dev container to build and deploy your app.
   从开发容器内部使用 Docker 或 Kubernetes 来构建和部署您的应用。
 
-If `devcontainer.json`'s supported workflows do not meet your needs, you can also [attach to an already running container instead](https://code.visualstudio.com/docs/devcontainers/attach-container).
+If `devcontainer.json`'s supported workflows do not meet your needs, you can also [attach to an already running container instead]({{< ref "/DevContainers/AttachtoContainer" >}}).
 
 ​​	如果 `devcontainer.json` 支持的工作流无法满足您的需求，您还可以附加到已运行的容器。
 
-> **Tip:** Want to use a remote Docker host? See the [Develop on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) article for details on setup.
+> **Tip:** Want to use a remote Docker host? See the [Develop on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) article for details on setup.
 >
 > ​​	提示：想要使用远程 Docker 主机？请参阅在远程 Docker 主机上进行开发一文，了解有关设置的详细信息。
 
-## [Install additional software 安装其他软件](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_install-additional-software)
+## [Install additional software 安装其他软件]({{< ref "/DevContainers/CreateaDevContainer#_install-additional-software" >}})
 
 You may want to install additional software in your dev container. Once VS Code is connected to the container, you can open a VS Code terminal and execute any command against the OS inside the container. This allows you to install new command-line utilities and spin up databases or application services from inside the Linux container.
 
@@ -152,7 +152,7 @@ apt-get update
 apt-get install <package>
 ```
 
-If you are running as root, you can install software as long as `sudo` is configured in your container. All predefined containers have `sudo` set up, but the [Add a non-root user to a container](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user) article can help you set this up for your own containers. Regardless, if you install and configure `sudo`, you'll be able to use it when running as any user including root.
+If you are running as root, you can install software as long as `sudo` is configured in your container. All predefined containers have `sudo` set up, but the [Add a non-root user to a container]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}}) article can help you set this up for your own containers. Regardless, if you install and configure `sudo`, you'll be able to use it when running as any user including root.
 
 ​​	如果以 root 身份运行，只要在容器中配置了 `sudo` ，就可以安装软件。所有预定义容器都设置了 `sudo` ，但向容器添加非 root 用户一文可以帮助您为自己的容器设置此项。无论如何，如果您安装并配置了 `sudo` ，您就可以在以包括 root 在内的任何用户身份运行时使用它。
 
@@ -193,7 +193,7 @@ See the [Dev Container Features specification](https://containers.dev/implemento
 
 ​​	有关更多详细信息，请参阅 Dev Container 功能规范。
 
-### [Rebuild 重新生成](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_rebuild)
+### [Rebuild 重新生成]({{< ref "/DevContainers/CreateaDevContainer#_rebuild" >}})
 
 When editing the contents of the `.devcontainer` folder, you'll need to rebuild for changes to take effect. Use the **Dev Containers: Rebuild Container** command for your container to update.
 
@@ -243,7 +243,7 @@ Rather than referencing an image directly in `devcontainer.json` or installing s
 
 ​​	与其直接在 `devcontainer.json` 中引用图像或通过 `postCreateCommand` 或 `postStartCommand` 安装软件，更有效的方法是使用 Dockerfile。
 
-## [Dockerfile](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile)
+## [Dockerfile]({{< ref "/DevContainers/CreateaDevContainer#_dockerfile" >}})
 
 A Dockerfile will also live in the `.devcontainer` folder. You can replace the `image` property in `devcontainer.json` with `dockerfile`:
 
@@ -281,7 +281,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 >
 > ​​	注意：当您继续使用容器时， `DEBIAN_FRONTEND` 导出可避免出现警告。
 
-### [Automate dev container creation 自动化开发容器创建](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_automate-dev-container-creation)
+### [Automate dev container creation 自动化开发容器创建]({{< ref "/DevContainers/CreateaDevContainer#_automate-dev-container-creation" >}})
 
 Rather than creating a `.devcontainer` by hand, selecting the **Dev Containers: Add Dev Container Configuration Files...** command from the Command Palette (F1) will add the needed files to your project as a starting point, which you can further customize for your needs.
 
@@ -313,7 +313,7 @@ Now that you have a `devcontainer.json` and Dockerfile, let's see the general pr
 
 ​​	现在您已经有了 `devcontainer.json` 和 Dockerfile，让我们看看编辑容器配置文件的一般过程。
 
-### [Full configuration edit loop 完整的配置编辑循环](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_full-configuration-edit-loop)
+### [Full configuration edit loop 完整的配置编辑循环]({{< ref "/DevContainers/CreateaDevContainer#_full-configuration-edit-loop" >}})
 
 Editing your container configuration is easy. Since rebuilding a container will "reset" the container to its starting contents (with the exception of your local source code), VS Code does not automatically rebuild if you edit a container configuration file (`devcontainer.json`, `Dockerfile`, and `docker-compose.yml`). Instead, there are several commands that can be used to make editing your configuration easier.
 
@@ -359,7 +359,7 @@ You can also iterate on your container when using the **Dev Containers: Clone Re
 6. Use **Dev Containers: Reopen in Container** and jump to step 4 if you still hit problems.
    如果仍遇到问题，请使用“开发容器：在容器中重新打开”并跳转到步骤 4。
 
-## [Use Docker Compose 使用 Docker Compose](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_use-docker-compose)
+## [Use Docker Compose 使用 Docker Compose]({{< ref "/DevContainers/CreateaDevContainer#_use-docker-compose" >}})
 
 In some cases, a single container environment isn't sufficient. Let's say you'd like to add another complex component to your configuration, like a database. You could attempt to add it to the Dockerfile directly, or you could add it through an additional container. Fortunately, Dev Containers supports [Docker Compose](https://docs.docker.com/compose/) managed multi-container configurations.
 
@@ -373,9 +373,9 @@ You can either:
    使用现有未修改的 `docker-compose.yml` 中定义的服务。
 2. Create a new `docker-compose.yml` (or make a copy of an existing one) that you use to develop a service.
    创建一个新的 `docker-compose.yml` （或复制现有 `docker-compose.yml` ），用于开发服务。
-3. [Extend your existing Docker Compose configuration](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development) to develop the service.
+3. [Extend your existing Docker Compose configuration]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}}) to develop the service.
    扩展现有的 Docker Compose 配置以开发服务。
-4. Use separate VS Code windows to [work with multiple Docker Compose-defined services](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers) at once.
+4. Use separate VS Code windows to [work with multiple Docker Compose-defined services]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers" >}}) at once.
    使用单独的 VS Code 窗口同时处理多个 Docker Compose 定义的服务。
 
 > **Note:** When using Alpine Linux containers, some extensions may not work due to `glibc` dependencies in native code inside the extension.
@@ -445,7 +445,7 @@ You can also create a development copy of your Docker Compose file. For example,
 "dockerComposeFile": "docker-compose.devcontainer.yml"
 ```
 
-However, a better approach is often to avoid making a copy of your Docker Compose file by **extending it with another one**. We'll cover [extend a Docker Compose file](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development) in the next section.
+However, a better approach is often to avoid making a copy of your Docker Compose file by **extending it with another one**. We'll cover [extend a Docker Compose file]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}}) in the next section.
 
 ​​	但是，更好的方法通常是通过使用另一个文件扩展 Docker Compose 文件来避免复制它。我们将在下一部分介绍如何扩展 Docker Compose 文件。
 
@@ -475,7 +475,7 @@ volumes:
   - ..:/workspace:cached
 ```
 
-However, on Linux you may need to set up and **specify a non-root user** when using a bind mount or any files you create will be root. See [Adding a non-root user to your dev container](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user) for details. To have VS Code run as a different user, add this to `devcontainer.json`:
+However, on Linux you may need to set up and **specify a non-root user** when using a bind mount or any files you create will be root. See [Adding a non-root user to your dev container]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}}) for details. To have VS Code run as a different user, add this to `devcontainer.json`:
 
 ​​	但是，在 Linux 上，您可能需要在使用绑定挂载时设置并指定非 root 用户，否则您创建的任何文件都将是 root。有关详细信息，请参阅将非 root 用户添加到您的 dev 容器。要让 VS Code 作为其他用户运行，请将此内容添加到 `devcontainer.json` ：
 
@@ -495,7 +495,7 @@ If you aren't creating a custom Dockerfile for development, you may want to inst
 
 ​​	如果您没有为开发创建自定义 Dockerfile，您可能希望在服务容器中安装其他开发人员工具，例如 `curl` 。虽然不如将这些工具添加到容器映像中有效，但您也可以为此目的使用 `postCreateCommand` 属性。
 
-See [install additional software](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_install-additional-software) for more information on installing software and the [devcontainer.json reference](https://containers.dev/implementors/json_reference) for more information about the `postCreateCommand` property.
+See [install additional software]({{< ref "/DevContainers/CreateaDevContainer#_install-additional-software" >}}) for more information on installing software and the [devcontainer.json reference](https://containers.dev/implementors/json_reference) for more information about the `postCreateCommand` property.
 
 ​​	请参阅安装其他软件以获取有关安装软件的更多信息，并参阅 devcontainer.json 参考以获取有关 `postCreateCommand` 属性的更多信息。
 
@@ -515,7 +515,7 @@ After you create your container for the first time, you will need to run the **D
 
 ​​	首次创建容器后，您需要运行 Dev Containers：重建容器命令，以便对 `devcontainer.json` 、Docker Compose 文件或相关的 Dockerfile 进行的更新生效。
 
-### [Using localhost in Docker Compose 在 Docker Compose 中使用 localhost](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_using-localhost-in-docker-compose)
+### [Using localhost in Docker Compose 在 Docker Compose 中使用 localhost]({{< ref "/DevContainers/CreateaDevContainer#_using-localhost-in-docker-compose" >}})
 
 You can add other services to your `docker-compose.yml` file as described in [Docker's documentation](https://docs.docker.com/compose/compose-file/#service-configuration-reference). However, if you want anything running in this service to be available in the container on localhost, or want to forward the service locally, be sure to add this line to the service config:
 
@@ -530,7 +530,7 @@ You can see an example of `network_mode: service:db` in the [Node.js and MongoDB
 
 ​​	您可以在 Node.js 和 MongoDB 示例开发容器中看到 `network_mode: service:db` 的示例。
 
-### [Extend your Docker Compose file for development 扩展 Docker Compose 文件以进行开发](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)
+### [Extend your Docker Compose file for development 扩展 Docker Compose 文件以进行开发]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})
 
 Referencing an existing deployment / non-development focused `docker-compose.yml` has some potential downsides.
 
@@ -544,7 +544,7 @@ For example:
   如果容器的入口点关闭，Docker Compose 将关闭该容器。对于您正在调试并且需要反复重新启动应用程序的情况，这是个问题。
 - You also may not be mapping the local filesystem into the container or exposing ports to other resources like databases you want to access.
   您可能也没有将本地文件系统映射到容器中，或者没有将端口公开给您想要访问的其他资源（如数据库）。
-- You may want to copy the contents of your local `.ssh` folder into the container or set the ptrace options described above in [Use Docker Compose](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_use-docker-compose).
+- You may want to copy the contents of your local `.ssh` folder into the container or set the ptrace options described above in [Use Docker Compose]({{< ref "/DevContainers/CreateaDevContainer#_use-docker-compose" >}}).
   您可能需要将本地 `.ssh` 文件夹的内容复制到容器中，或在“使用 Docker Compose”中设置上面描述的 ptrace 选项。
 
 You can solve these and other issues like them by extending your entire Docker Compose configuration with [multiple `docker-compose.yml` files](https://docs.docker.com/compose/extends/#multiple-compose-files) that override or supplement your primary one.
@@ -622,7 +622,7 @@ Congratulations! You've now configured a dev container in Visual Studio Code. Co
 
 ​​	恭喜！您现在已在 Visual Studio Code 中配置了一个开发容器。继续阅读以了解如何与队友和各种项目共享容器配置。
 
-## [Add configuration files to a repository 将配置文件添加到存储库](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_add-configuration-files-to-a-repository)
+## [Add configuration files to a repository 将配置文件添加到存储库]({{< ref "/DevContainers/CreateaDevContainer#_add-configuration-files-to-a-repository" >}})
 
 You can easily share a customized Dev Container Template for your project by adding `devcontainer.json` files to source control. By including these files in your repository, anyone that opens a local copy of your repo in VS Code will be automatically prompted to reopen the folder in a container, provided they have the Dev Containers extension installed.
 
@@ -634,9 +634,9 @@ Beyond the advantages of having your team use a consistent environment and tool-
 
 ​​	除了让您的团队使用一致的环境和工具链的优势之外，这也让新贡献者或团队成员能够快速提高工作效率。首次贡献者将需要更少的指导，并且会遇到更少与环境设置相关的问题。
 
-### [Add an open in dev container badge 添加“在开发容器中打开”徽章](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_add-an-open-in-dev-container-badge)
+### [Add an open in dev container badge 添加“在开发容器中打开”徽章]({{< ref "/DevContainers/CreateaDevContainer#_add-an-open-in-dev-container-badge" >}})
 
-You may also add a badge or link in your repository so that users can easily open your project in Dev Containers. It will install the Dev Containers extension if necessary, clone the repo into a container [volume](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-clone-repository-in-container-volume), and start up the dev container.
+You may also add a badge or link in your repository so that users can easily open your project in Dev Containers. It will install the Dev Containers extension if necessary, clone the repo into a container [volume]({{< ref "/Remote/advancedcontainers/Improveperformance#_use-clone-repository-in-container-volume" >}}), and start up the dev container.
 
 ​​	您还可以在存储库中添加徽章或链接，以便用户可以轻松地在开发容器中打开您的项目。它将在必要时安装开发容器扩展，将存储库克隆到容器卷，并启动开发容器。
 
@@ -656,13 +656,13 @@ You can also include an `open in dev container` link directly:
 If you already have VS Code and Docker installed, you can click the badge above or [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java) to get started. Clicking these links will cause VS Code to automatically install the Dev Containers extension if needed, clone the source code into a container volume, and spin up a dev container for use.
 ```
 
-### [Alternative: Repository configuration folders 备选方案：存储库配置文件夹](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_alternative-repository-configuration-folders)
+### [Alternative: Repository configuration folders 备选方案：存储库配置文件夹]({{< ref "/DevContainers/CreateaDevContainer#_alternative-repository-configuration-folders" >}})
 
 In some cases, you may want to create a configuration for a repository that you do not control or that you would prefer didn't have a configuration included in the repository itself. To handle this situation, you can configure a location on your local filesystem to store configuration files that will be picked up automatically based on the repository.
 
 ​​	在某些情况下，您可能希望为不受您控制或您希望其在存储库本身中不包含配置的存储库创建配置。要处理这种情况，您可以配置本地文件系统上的一个位置来存储配置，这些配置将根据存储库自动选取。
 
-First, update the **Dev > Containers: Repository Configuration Paths** [User setting](https://code.visualstudio.com/docs/getstarted/settings) with the local folder you want to use to store your repository container configuration files.
+First, update the **Dev > Containers: Repository Configuration Paths** [User setting]({{< ref "/GetStarted/Settings" >}}) with the local folder you want to use to store your repository container configuration files.
 
 ​​	首先，使用您想要用来存储您的存储库容器配置文件的本地文件夹更新 Dev > 容器：存储库配置路径用户设置。在设置编辑器中，您可以搜索“dev containers repo”以查找该设置：
 
@@ -691,11 +691,11 @@ The path used for looking up the configuration is derived from the output of `gi
 
 ​​	创建 dev 容器的路径
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_next-steps)
+## [Next steps 后续步骤]({{< ref "/DevContainers/CreateaDevContainer#_next-steps" >}})
 
-- [Attach to a Running Container](https://code.visualstudio.com/docs/devcontainers/attach-container) - Attach to an already running Docker container.
+- [Attach to a Running Container]({{< ref "/DevContainers/AttachtoContainer" >}}) - Attach to an already running Docker container.
   附加到正在运行的容器 - 附加到已在运行的 Docker 容器。
-- [Advanced Containers](https://code.visualstudio.com/remote/advancedcontainers/overview) - Find solutions to advanced container scenarios.
+- [Advanced Containers]({{< ref "/Remote/advancedcontainers/Overview" >}}) - Find solutions to advanced container scenarios.
   高级容器 - 查找高级容器方案的解决方案。
 - [devcontainer.json reference](https://containers.dev/implementors/json_reference) - Review the `devcontainer.json` schema.
   devcontainer.json 参考 - 查看 `devcontainer.json` 架构。

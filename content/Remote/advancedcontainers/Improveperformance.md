@@ -18,29 +18,29 @@ The Dev Containers extension uses "bind mounts" to source code in your local fil
 
 ​​	默认情况下，Dev Containers 扩展使用“绑定挂载”来获取本地文件系统中的源代码。虽然这是最简单的选项，但在 macOS 和 Windows 上，您在容器内运行命令（如 `yarn install` ）时可能会遇到较慢的磁盘性能。您可以采取一些措施来解决此类问题。
 
-## [Store your source code in the WSL 2 filesystem on Windows 将源代码存储在 Windows 上的 WSL 2 文件系统中](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_store-your-source-code-in-the-wsl-2-filesystem-on-windows)
+## [Store your source code in the WSL 2 filesystem on Windows 将源代码存储在 Windows 上的 WSL 2 文件系统中]({{< ref "/Remote/advancedcontainers/Improveperformance#_store-your-source-code-in-the-wsl-2-filesystem-on-windows" >}})
 
 Windows 10 2004 and up includes an improved version of the Windows Subsystem for Linux (WSL 2) that provides a full Linux kernel and has significantly improved performance over WSL 1. Docker Desktop 2.3+ includes a new WSL 2 Engine that runs Docker in WSL rather than in a VM. Therefore, if you store your source code in the WSL 2 filesystem, you will see improved performance along with better compatibility for things like setting permissions.
 
 ​​	Windows 10 2004 及更高版本包含改进版的适用于 Linux 的 Windows 子系统 (WSL 2)，它提供了一个完整的 Linux 内核，并且性能比 WSL 1 有了显著提升。Docker Desktop 2.3+ 包含一个新的 WSL 2 引擎，它在 WSL 中而不是在 VM 中运行 Docker。因此，如果您将源代码存储在 WSL 2 文件系统中，您将看到性能提升，并且在设置权限等方面具有更好的兼容性。
 
-See [Open a WSL 2 folder in a container on Windows](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-wsl-2-folder-in-a-container-on-windows) for details on using this new engine from VS Code.
+See [Open a WSL 2 folder in a container on Windows]({{< ref "/DevContainers/Overview#_open-a-wsl-2-folder-in-a-container-on-windows" >}}) for details on using this new engine from VS Code.
 
 ​​	有关从 VS Code 使用此新引擎的详细信息，请参阅在 Windows 上的容器中打开 WSL 2 文件夹。
 
-### [Video: Speed up Dev Containers on Windows 视频：加快 Windows 上的 Dev Containers 速度](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_video-speed-up-dev-containers-on-windows)
+### [Video: Speed up Dev Containers on Windows 视频：加快 Windows 上的 Dev Containers 速度]({{< ref "/Remote/advancedcontainers/Improveperformance#_video-speed-up-dev-containers-on-windows" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MUsROtVmPJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
 
 
-## [Use Clone Repository in Container Volume 在容器卷中使用克隆存储库](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-clone-repository-in-container-volume)
+## [Use Clone Repository in Container Volume 在容器卷中使用克隆存储库]({{< ref "/Remote/advancedcontainers/Improveperformance#_use-clone-repository-in-container-volume" >}})
 
 The **Dev Containers: Clone Repository in Container Volume...** command uses an isolated, local Docker named volume instead of binding to the local filesystem. In addition to not polluting your file tree, local volumes have the added benefit of improved performance on Windows and macOS.
 
 ​​	Dev Containers: 在容器卷中克隆存储库... 命令使用一个隔离的本地 Docker 命名卷，而不是绑定到本地文件系统。除了不会污染您的文件树之外，本地卷还具有在 Windows 和 macOS 上提高性能的额外好处。
 
-See [Open a Git repository or GitHub PR in an isolated container volume](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume) for details on using this approach.
+See [Open a Git repository or GitHub PR in an isolated container volume]({{< ref "/DevContainers/Overview#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume" >}}) for details on using this approach.
 
 ​​	有关使用此方法的详细信息，请参阅在隔离的容器卷中打开 Git 存储库或 GitHub PR。
 
@@ -48,7 +48,7 @@ The next two sections will outline how to use a named volume in other scenarios.
 
 ​​	接下来的两个部分将概述如何在其他场景中使用命名卷。
 
-## [Use a targeted named volume 使用目标命名卷](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-targeted-named-volume)
+## [Use a targeted named volume 使用目标命名卷]({{< ref "/Remote/advancedcontainers/Improveperformance#_use-a-targeted-named-volume" >}})
 
 Since macOS and Windows run containers in a VM, "bind" mounts are not as fast as using the container's filesystem directly. Fortunately, Docker has the concept of a local "named volume" that can act like the container's filesystem but survives container rebuilds. This makes it ideal for storing package folders like `node_modules`, data folders, or output folders like `build` where write performance is critical. Follow the appropriate steps below based on what you reference in `devcontainer.json`.
 
@@ -80,7 +80,7 @@ Follow these steps:
    >
    > ​​	注意：您可以在 `source` 中使用 `${localWorkspaceFolderBasename}` 、 `${devcontainerId}` 或硬编码名称。
 
-2. Since this repository [runs VS Code as the non-root "node" user](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user), we need to add a `postCreateCommand` to be sure the user can access the folder.
+2. Since this repository [runs VS Code as the non-root "node" user]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}}), we need to add a `postCreateCommand` to be sure the user can access the folder.
 
    ​​	由于此存储库将 VS Code 作为非根“node”用户运行，因此我们需要添加 `postCreateCommand` 以确保用户可以访问该文件夹。
 
@@ -120,7 +120,7 @@ While vscode-remote-try-node does not use Docker Compose, the steps are similar,
 
 ​​	虽然 vscode-remote-try-node 不使用 Docker Compose，但步骤类似，但卷装入配置位于不同的文件中。
 
-1. In your Docker Compose file (or an [extended one](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)), add a named local volume mount to the `node_modules` sub-folder for the appropriate service(s). For example:
+1. In your Docker Compose file (or an [extended one]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})), add a named local volume mount to the `node_modules` sub-folder for the appropriate service(s). For example:
 
    ​​	在您的 Docker Compose 文件（或扩展文件）中，为适当的服务添加一个命名本地卷挂载到 `node_modules` 子文件夹。例如：
 
@@ -146,7 +146,7 @@ While vscode-remote-try-node does not use Docker Compose, the steps are similar,
    "workspaceFolder": "/workspace"
    ```
 
-3. If you're running in the container with a [user other than root](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user), add a `postCreateCommand` to update the owner of the folder you mount since it may have been mounted as root. Replace `user-name-goes-here` with the appropriate user.
+3. If you're running in the container with a [user other than root]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}}), add a `postCreateCommand` to update the owner of the folder you mount since it may have been mounted as root. Replace `user-name-goes-here` with the appropriate user.
 
    ​​	如果您在容器中以非 root 用户身份运行，请添加 `postCreateCommand` 来更新您挂载的文件夹的所有者，因为它可能已作为 root 挂载。用适当的用户替换 `user-name-goes-here` 。
 
@@ -160,13 +160,13 @@ If you've already built the container and connected to it, run **Dev Containers:
 
 ​​	如果您已经构建了容器并连接到它，请从命令面板（F1）运行 Dev Containers：重新构建容器以获取更改。否则，运行 Dev Containers：在容器中打开文件夹... 以连接到容器。
 
-### [Video: Speed up npm install in a dev container 视频：在开发容器中加速 npm 安装](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_video-speed-up-npm-install-in-a-dev-container)
+### [Video: Speed up npm install in a dev container 视频：在开发容器中加速 npm 安装]({{< ref "/Remote/advancedcontainers/Improveperformance#_video-speed-up-npm-install-in-a-dev-container" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iDdJWIPRUx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
 
 
-## [Use a named volume for your entire source tree 为您的整个源树使用命名卷](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-named-volume-for-your-entire-source-tree)
+## [Use a named volume for your entire source tree 为您的整个源树使用命名卷]({{< ref "/Remote/advancedcontainers/Improveperformance#_use-a-named-volume-for-your-entire-source-tree" >}})
 
 Finally, if none of the above options meet your needs, you can go one step further and **clone your entire source tree inside of a named volume** rather than locally. You can set up a named volume by taking an existing `devcontainer.json` configuration and modifying it as follows (updating `your-volume-name-here` with whatever you want to call the volume).
 
@@ -185,7 +185,7 @@ Depending on what you reference in `devcontainer.json`:
   "workspaceFolder": "/workspace",
   ```
 
-- **Docker Compose**: Update (or [extend](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)) your `docker-compose.yml` with the following for the appropriate service(s):
+- **Docker Compose**: Update (or [extend]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})) your `docker-compose.yml` with the following for the appropriate service(s):
 
   ​​	Docker Compose：使用以下内容更新（或扩展）您的 `docker-compose.yml` 以获取适当的服务：
 

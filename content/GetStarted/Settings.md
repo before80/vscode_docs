@@ -27,11 +27,11 @@ VS Code provides several different scopes for settings. When you open a workspac
 - **Workspace Settings** - Settings stored inside your workspace and only apply when the workspace is opened.
   工作区设置 - 存储在工作区内且仅在打开工作区时适用的设置。
 
-In this article, we'll first describe user settings as these are your personal settings for customizing VS Code. Later we'll cover [Workspace settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings), which will be specific to the project you're working on.
+In this article, we'll first describe user settings as these are your personal settings for customizing VS Code. Later we'll cover [Workspace settings]({{< ref "/GetStarted/Settings#_workspace-settings" >}}), which will be specific to the project you're working on.
 
 ​​	在本文中，我们将首先介绍用户设置，因为这些是您用于自定义 VS Code 的个人设置。稍后我们将介绍工作区设置，这些设置特定于您正在处理的项目。
 
-## [Settings editor 设置编辑器](https://code.visualstudio.com/docs/getstarted/settings#_settings-editor)
+## [Settings editor 设置编辑器]({{< ref "/GetStarted/Settings#_settings-editor" >}})
 
 To modify user settings, you'll use the Settings editor to review and change VS Code settings.
 
@@ -67,7 +67,7 @@ The gear icon (**More Actions...** Shift+F9) opens a context menu with options t
 
 ![Settings edit gear context menu](./Settings_img/more-actions-context-menu.png)
 
-### [Edit settings 编辑设置](https://code.visualstudio.com/docs/getstarted/settings#_edit-settings)
+### [Edit settings 编辑设置]({{< ref "/GetStarted/Settings#_edit-settings" >}})
 
 Each setting can be edited by either a **checkbox**, an **input** or a **dropdown**. Edit the text or select the option you want to change to the desired settings.
 
@@ -75,7 +75,7 @@ Each setting can be edited by either a **checkbox**, an **input** or a **dropdow
 
 ![An example setting with a dropdown](./Settings_img/settings-edit.png)
 
-### [Settings groups 设置组](https://code.visualstudio.com/docs/getstarted/settings#_settings-groups)
+### [Settings groups 设置组]({{< ref "/GetStarted/Settings#_settings-groups" >}})
 
 Settings are represented in groups so that you can navigate them easily. There is a **Commonly Used** group at the top, which shows popular customizations.
 
@@ -91,7 +91,7 @@ Below, the Source Control settings are focused by selecting **Source Control** i
 
 ​​	注意：VS Code 扩展还可以添加其自己的自定义设置，这些设置将在扩展部分下可见。
 
-## [Changing a setting 更改设置](https://code.visualstudio.com/docs/getstarted/settings#_changing-a-setting)
+## [Changing a setting 更改设置]({{< ref "/GetStarted/Settings#_changing-a-setting" >}})
 
 As an example, let's hide the Activity Bar from VS Code. The Activity Bar is the wide border on the left with various icons for different views such as the File Explorer, Search, Source Control, and Extensions. You might want to hide the Activity Bar to give the editor a little more room, or if you prefer to open views via the **View** menu or Command Palette.
 
@@ -119,13 +119,13 @@ You can always reset a setting to the default value by hovering over a setting t
 
 ​​	您可以将设置重置为默认值，方法是将鼠标悬停在设置上以显示齿轮图标，单击齿轮图标，然后选择“重置设置”操作。
 
-## [Settings editor filters 设置编辑器筛选器](https://code.visualstudio.com/docs/getstarted/settings#_settings-editor-filters)
+## [Settings editor filters 设置编辑器筛选器]({{< ref "/GetStarted/Settings#_settings-editor-filters" >}})
 
 The Settings editor Search bar has several filters to make it easier to manage your settings. To the right of the Search bar is a filter button with a funnel icon that provides some options to easily add a filter to the Search bar.
 
 ​​	设置编辑器搜索栏有几个筛选器，可以更轻松地管理您的设置。在搜索栏的右侧是一个带有漏斗图标的筛选器按钮，它提供了一些选项，可以轻松地将筛选器添加到搜索栏中。
 
-### [Modified settings 已修改的设置](https://code.visualstudio.com/docs/getstarted/settings#_modified-settings)
+### [Modified settings 已修改的设置]({{< ref "/GetStarted/Settings#_modified-settings" >}})
 
 To check which settings you have configured, there is a `@modified` filter in the Search bar. A setting shows up under this filter if its value differs from the default value, or if its value is explicitly set in the respective settings JSON file. This filter can be useful if you have forgotten whether you configured a setting, or if the editor is not behaving as you expect because you accidentally configured a setting.
 
@@ -133,7 +133,7 @@ To check which settings you have configured, there is a `@modified` filter in th
 
 ![Settings editor with @modified filter showing changed settings](https://code.visualstudio.com/assets/docs/getstarted/settings/modified-filter-settings.png)
 
-### [Other filters 其他筛选器](https://code.visualstudio.com/docs/getstarted/settings#_other-filters)
+### [Other filters 其他筛选器]({{< ref "/GetStarted/Settings#_other-filters" >}})
 
 There are several other handy filters to help with searching through settings.
 
@@ -151,9 +151,9 @@ Here are some of the filters available:
   `@feature` - 特定功能子组的设置。例如， `@feature:explorer` 显示文件资源管理器的设置。
 - `@id` - Find a setting based on the setting ID. For example, `@id:workbench.activityBar.visible`.
   `@id` - 根据设置 ID 查找设置。例如， `@id:workbench.activityBar.visible` 。
-- `@lang` - Apply a language filter based on a language ID. For example, `@lang:typescript`. See [Language-specific editor settings](https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings) for more details.
+- `@lang` - Apply a language filter based on a language ID. For example, `@lang:typescript`. See [Language-specific editor settings]({{< ref "/GetStarted/Settings#_language-specific-editor-settings" >}}) for more details.
   `@lang` - 根据语言 ID 应用语言筛选器。例如， `@lang:typescript` 。有关更多详细信息，请参阅特定于语言的编辑器设置。
-- `@tag` - Settings specific to a system of VS Code. For example, `@tag:workspaceTrust` for settings related to [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust), or `@tag:accessibility` for settings related to accessibility.
+- `@tag` - Settings specific to a system of VS Code. For example, `@tag:workspaceTrust` for settings related to [Workspace Trust]({{< ref "/UserGuide/WorkspaceTrust" >}}), or `@tag:accessibility` for settings related to accessibility.
   `@tag` - 特定于 VS Code 系统的设置。例如， `@tag:workspaceTrust` 用于与工作区信任相关的设置，或 `@tag:accessibility` 用于与辅助功能相关的设置。
 
 The Search bar remembers your settings search queries and supports Undo/Redo (Ctrl+Z/Ctrl+Y). You can quickly clear a search term or filter with the **Clear Settings Search Input** button at the right of the Search bar.
@@ -162,7 +162,7 @@ The Search bar remembers your settings search queries and supports Undo/Redo (Ct
 
 ![Clear Settings Search Input button in the right of the Settings editor](./Settings_img/clear-search-input-button.png)
 
-## [Extension settings 扩展设置](https://code.visualstudio.com/docs/getstarted/settings#_extension-settings)
+## [Extension settings 扩展设置]({{< ref "/GetStarted/Settings#_extension-settings" >}})
 
 Installed VS Code extensions can also contribute their own settings, which you can review under the **Extensions** section of the Settings editor.
 
@@ -180,7 +180,7 @@ Extension authors can learn more about adding custom settings in the [configurat
 
 ​​	扩展作者可以详细了解如何在配置贡献点文档中添加自定义设置。
 
-## [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson)
+## [settings.json]({{< ref "/GetStarted/Settings#_settingsjson" >}})
 
 The Settings editor is the UI that lets you review and modify setting values that are stored in a `settings.json` file. You can review and edit this file directly by opening it in the editor with the **Preferences: Open User Settings (JSON)** command. Settings are written as JSON by specifying the setting ID and value.
 
@@ -196,7 +196,7 @@ Some settings can only be edited in `settings.json` such as **Workbench: Color C
 
 ![Workbench: Color Customizations setting with Edit in settings.json link](./Settings_img/edit-in-settings-json-link.png)
 
-### [Changing settings.json](https://code.visualstudio.com/docs/getstarted/settings#_changing-settingsjson)
+### [Changing settings.json]({{< ref "/GetStarted/Settings#_changing-settingsjson" >}})
 
 As an example, lets change the editor line number color. Click the **Edit in settings.json** link and add the following JSON:
 
@@ -212,13 +212,13 @@ Here the line numbers in the editor for the `settings.json` file are now green.
 
 Remove the `workbench.colorCustomizations` setting code block to return the line number color to the default.
 
-> **Note**: The example above changes the editor line number for all [Color Themes](https://code.visualstudio.com/docs/getstarted/themes), but you can tune colors per [specific Color Theme](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme) or even [create your own Color Theme](https://code.visualstudio.com/api/extension-guides/color-theme#_create-a-new-color-theme) extension.
+> **Note**: The example above changes the editor line number for all [Color Themes]({{< ref "/GetStarted/Themes" >}}), but you can tune colors per [specific Color Theme]({{< ref "/GetStarted/Themes#_customizing-a-color-theme" >}}) or even [create your own Color Theme](https://code.visualstudio.com/api/extension-guides/color-theme#_create-a-new-color-theme) extension.
 
 If you prefer to always work directly with `settings.json`, you can set `"workbench.settings.editor": "json"` so that **File** > **Preferences** > **Settings** and the keybinding Ctrl+, always opens the `settings.json` file and not the Setting editor UI.
 
 ​​	如果您更喜欢始终直接使用 `settings.json` ，您可以设置 `"workbench.settings.editor": "json"` ，以便文件 > 首选项 > 设置和键盘绑定 Ctrl+, 始终打开 `settings.json` 文件，而不是设置编辑器 UI。
 
-### [Settings file locations 设置文件位置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
+### [Settings file locations 设置文件位置]({{< ref "/GetStarted/Settings#_settings-file-locations" >}})
 
 Depending on your platform, the user settings file is located here:
 
@@ -228,19 +228,19 @@ Depending on your platform, the user settings file is located here:
 - **macOS** `$HOME/Library/Application\ Support/Code/User/settings.json`
 - **Linux** `$HOME/.config/Code/User/settings.json`
 
-### [Reset all settings 重置所有设置](https://code.visualstudio.com/docs/getstarted/settings#_reset-all-settings)
+### [Reset all settings 重置所有设置]({{< ref "/GetStarted/Settings#_reset-all-settings" >}})
 
 While you can reset settings individually via the Settings editor **Reset Setting** command, you can reset all changed settings by opening `settings.json` and deleting the entries between the braces `{}`. Be careful since there will be no way to recover your previous setting values.
 
 ​​	虽然您可以通过设置编辑器重置设置命令逐个重置设置，但您可以通过打开 `settings.json` 并删除大括号 `{}` 之间的条目来重置所有已更改的设置。请小心，因为无法恢复您之前的设置值。
 
-## [Workspace settings 工作区设置](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
+## [Workspace settings 工作区设置]({{< ref "/GetStarted/Settings#_workspace-settings" >}})
 
 Workspace settings are specific to a project and can be shared across developers on a project. Workspace settings override user settings.
 
 ​​	工作区设置特定于项目，可以在项目上的开发人员之间共享。工作区设置会覆盖用户设置。
 
-> **Note**: A VS Code "workspace" is usually just your project root folder. Workspace settings as well as [debugging](https://code.visualstudio.com/docs/editor/debugging) and [task](https://code.visualstudio.com/docs/editor/tasks) configurations are stored at the root in a `.vscode` folder. You can also have more than one root folder in a VS Code workspace through a feature called [Multi-root workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces). You can learn more in the [What is a VS Code "workspace"?](https://code.visualstudio.com/docs/editor/workspaces) article.
+> **Note**: A VS Code "workspace" is usually just your project root folder. Workspace settings as well as [debugging]({{< ref "/UserGuide/Debugging" >}}) and [task]({{< ref "/UserGuide/Tasks" >}}) configurations are stored at the root in a `.vscode` folder. You can also have more than one root folder in a VS Code workspace through a feature called [Multi-root workspaces]({{< ref "/UserGuide/Multi-rootWorkspaces" >}}). You can learn more in the [What is a VS Code "workspace"?](https://code.visualstudio.com/docs/editor/workspaces) article.
 >
 > ​​	注意：VS Code “工作区”通常只是您的项目根文件夹。工作区设置以及调试和任务配置存储在根目录的 `.vscode` 文件夹中。您还可以在 VS Code 工作区中通过名为多根工作区的功能拥有多个根文件夹。您可以在什么是 VS Code “工作区”？一文中了解更多信息。
 
@@ -254,7 +254,7 @@ All features of the Settings editor such as settings groups, search, and filteri
 
 ​​	“设置”编辑器的所有功能，例如设置组、搜索和筛选，对工作区设置的行为相同。并非所有用户设置都可用作工作区设置。例如，与更新和安全相关的应用程序范围设置不能被工作区设置覆盖。
 
-### [Workspace settings.json location 工作区 settings.json 位置](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settingsjson-location)
+### [Workspace settings.json location 工作区 settings.json 位置]({{< ref "/GetStarted/Settings#_workspace-settingsjson-location" >}})
 
 Similar to User Settings, Workspace Settings are also stored in a `settings.json` file, which you can edit directly via the **Preferences: Open Workspace Settings (JSON)** command.
 
@@ -266,7 +266,7 @@ The workspace settings file is located under the `.vscode` folder in your root f
 
 ![The File Explorer displaying settings.json under the .vscode folder](./Settings_img/settings-json-under-vscode.png)
 
-> **Note:** For a [Multi-root Workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_settings), workspace settings are located inside the workspace configuration file.
+> **Note:** For a [Multi-root Workspace]({{< ref "/UserGuide/Multi-rootWorkspaces#_settings" >}}), workspace settings are located inside the workspace configuration file.
 >
 > ​​	注意：对于多根工作区，工作区设置位于工作区配置文件中。
 
@@ -274,7 +274,7 @@ When you add a Workspace Settings `settings.json` file to your project or source
 
 ​​	将 Workspace Settings `settings.json` 文件添加到项目或源代码管理后，该项目的设置将由该项目的全体用户共享。
 
-## [Language specific editor settings 特定于语言的编辑器设置](https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings)
+## [Language specific editor settings 特定于语言的编辑器设置]({{< ref "/GetStarted/Settings#_language-specific-editor-settings" >}})
 
 One way to customize language-specific settings is by opening the Settings editor, pressing on the filter button, and selecting the language option to add a language filter. Alternatively, one can directly type a language filter of the form `@lang:languageId` into the search widget. The settings that show up will be configurable for that specific language, and will show the setting value specific to that language, if applicable.
 
@@ -349,7 +349,7 @@ You can use IntelliSense in `settings.json` to help you find language-specific s
 
 ​​	您可以在 `settings.json` 中使用 IntelliSense 来帮助您查找特定于语言的设置。支持所有编辑器设置和一些非编辑器设置。某些语言已设置默认的特定于语言的设置，您可以在 `defaultSettings.json` 中通过运行“首选项：打开默认设置”命令来查看这些设置。
 
-### [Multiple language-specific editor settings 多个特定于语言的编辑器设置](https://code.visualstudio.com/docs/getstarted/settings#_multiple-languagespecific-editor-settings)
+### [Multiple language-specific editor settings 多个特定于语言的编辑器设置]({{< ref "/GetStarted/Settings#_multiple-languagespecific-editor-settings" >}})
 
 You can configure language specific editor settings for multiple languages at once. The following example shows how you can customize settings for `javascript` and `typescript` languages together in your `settings.json` file:
 
@@ -361,7 +361,7 @@ You can configure language specific editor settings for multiple languages at on
 }
 ```
 
-## [Settings precedence 设置优先级](https://code.visualstudio.com/docs/getstarted/settings#_settings-precedence)
+## [Settings precedence 设置优先级]({{< ref "/GetStarted/Settings#_settings-precedence" >}})
 
 Configurations can be overridden at multiple levels by the different setting scopes. In the following list, **later scopes override earlier scopes**:
 
@@ -375,7 +375,7 @@ Configurations can be overridden at multiple levels by the different setting sco
   远程设置 - 应用于用户打开的远程计算机。
 - Workspace settings - Apply to the open folder or workspace.
   工作区设置 - 应用于打开的文件夹或工作区。
-- Workspace Folder settings - Apply to a specific folder of a [multi-root workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
+- Workspace Folder settings - Apply to a specific folder of a [multi-root workspace]({{< ref "/UserGuide/Multi-rootWorkspaces" >}}).
   工作区文件夹设置 - 应用于多根工作区的特定文件夹。
 - Language-specific default settings - These are language-specific default values that can be contributed by extensions.
   特定于语言的默认设置 - 这些是特定于语言的默认值，可由扩展提供。
@@ -447,13 +447,13 @@ If there are conflicting values, such as `editor.selectionBackground` in the exa
 
 ​​	如果存在冲突的值，例如上述示例中的 `editor.selectionBackground` ，则会发生通常的覆盖行为，其中工作区值优先于用户值，而特定于语言的值优先于非特定于语言的值。
 
-### [Note about multiple language specific settings 有关多个特定于语言的设置的说明](https://code.visualstudio.com/docs/getstarted/settings#_note-about-multiple-language-specific-settings)
+### [Note about multiple language specific settings 有关多个特定于语言的设置的说明]({{< ref "/GetStarted/Settings#_note-about-multiple-language-specific-settings" >}})
 
-If you are using [multiple language-specific settings](https://code.visualstudio.com/docs/getstarted/settings#_multiple-languagespecific-editor-settings), be aware that language-specific settings are merged and precedence is set based on the full language string (for example `"[typescript][javascript]"`) and not the individual language IDs (`typescript` and `javascript`). This means that for example, a `"[typescript][javascript]"` workspace setting will not override a `"[javascript]"` user setting.
+If you are using [multiple language-specific settings]({{< ref "/GetStarted/Settings#_multiple-languagespecific-editor-settings" >}}), be aware that language-specific settings are merged and precedence is set based on the full language string (for example `"[typescript][javascript]"`) and not the individual language IDs (`typescript` and `javascript`). This means that for example, a `"[typescript][javascript]"` workspace setting will not override a `"[javascript]"` user setting.
 
 ​​	如果您使用多种特定于语言的设置，请注意，特定于语言的设置会合并，并且优先级基于完整的语言字符串（例如 `"[typescript][javascript]"` ）而不是各个语言 ID（ `typescript` 和 `javascript` ）来设置。这意味着例如， `"[typescript][javascript]"` 工作区设置不会覆盖 `"[javascript]"` 用户设置。
 
-## [Settings and security 设置和安全性](https://code.visualstudio.com/docs/getstarted/settings#_settings-and-security)
+## [Settings and security 设置和安全性]({{< ref "/GetStarted/Settings#_settings-and-security" >}})
 
 Some settings allow you to specify an executable that VS Code will run to perform certain operations. For example, you can choose which shell the Integrated Terminal should use. For enhanced security, such settings can only be defined in user settings and not at workspace scope.
 
@@ -472,45 +472,45 @@ The first time you open a workspace that defines any of these settings, VS Code 
 
 ​​	首次打开定义了其中任何设置的工作区时，VS Code 会向您发出警告，然后始终忽略这些值。
 
-## [Settings Sync 设置同步](https://code.visualstudio.com/docs/getstarted/settings#_settings-sync)
+## [Settings Sync 设置同步]({{< ref "/GetStarted/Settings#_settings-sync" >}})
 
-You can share your user settings across your VS Code instances with the [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) feature. This feature lets you share settings, keyboard shortcuts, and installed extensions across your VS Code installs on various machines. You can enable Settings Sync via the **Turn on Settings Sync** command on the right of the Settings editor or on the **Accounts** Activity Bar context menu.
+You can share your user settings across your VS Code instances with the [Settings Sync]({{< ref "/UserGuide/SettingsSync" >}}) feature. This feature lets you share settings, keyboard shortcuts, and installed extensions across your VS Code installs on various machines. You can enable Settings Sync via the **Turn on Settings Sync** command on the right of the Settings editor or on the **Accounts** Activity Bar context menu.
 
 ​​	您可以通过“设置同步”功能在 VS Code 实例之间共享用户设置。此功能允许您在各种计算机上安装的 VS Code 中共享设置、键盘快捷方式和已安装的扩展。您可以通过“设置”编辑器右侧的“启用设置同步”命令或“帐户”活动栏上下文菜单启用“设置同步”。
 
 ![Turn on Settings Sync command in the Accounts Activity Bar menu](./Settings_img/accounts-context-menu.png)
 
-You can learn more about turning on and configuring Settings Sync in the [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) user guide.
+You can learn more about turning on and configuring Settings Sync in the [Settings Sync]({{< ref "/UserGuide/SettingsSync" >}}) user guide.
 
 ​​	您可以在“设置同步”用户指南中了解有关启用和配置“设置同步”的更多信息。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/getstarted/settings#_common-questions)
+## [Common questions 常见问题]({{< ref "/GetStarted/Settings#_common-questions" >}})
 
-### [VS Code says "Unable to write settings." VS Code 显示“无法写入设置”。](https://code.visualstudio.com/docs/getstarted/settings#_vs-code-says-unable-to-write-settings)
+### [VS Code says "Unable to write settings." VS Code 显示“无法写入设置”。]({{< ref "/GetStarted/Settings#_vs-code-says-unable-to-write-settings" >}})
 
 If you try to change a setting (for example turning on Auto Save or selecting a new Color Theme) and you see "Unable to write into user settings. Please open user settings to correct errors/warnings in it and try again.", it means your `settings.json` file is ill-formed or has errors. The error can be as simple as a missing comma or incorrect setting value. Open the `settings.json` file with the **Preferences: Open User Settings (JSON)** command and you should see the error highlighted with red squiggles.
 
 ​​	如果您尝试更改设置（例如启用自动保存或选择新的颜色主题），并且看到“无法写入用户设置。请打开用户设置以更正其中的错误/警告，然后重试。”，则表示您的 `settings.json` 文件格式不正确或有错误。错误可能只是缺少逗号或设置值不正确。使用“首选项：打开用户设置 (JSON)”命令打开 `settings.json` 文件，您应该会看到错误以红色波浪线突出显示。
 
-### [How can I reset my user settings? 如何重置我的用户设置？](https://code.visualstudio.com/docs/getstarted/settings#_how-can-i-reset-my-user-settings)
+### [How can I reset my user settings? 如何重置我的用户设置？]({{< ref "/GetStarted/Settings#_how-can-i-reset-my-user-settings" >}})
 
 The easiest way to reset VS Code back to the default settings is to clear your user `settings.json` file. You can open the `settings.json` file with the **Preferences: Open User Settings (JSON)** command in the Command Palette (Ctrl+Shift+P). Once the file is open in an editor, delete everything between the two curly braces `{}`, save the file, and VS Code will go back to using the default values.
 
 ​​	重置 VS Code 回到默认设置的最简单方法是清除您的用户 `settings.json` 文件。您可以使用命令面板（Ctrl+Shift+P）中的首选项：打开用户设置 (JSON) 命令打开 `settings.json` 文件。在编辑器中打开文件后，删除两个花括号 `{}` 之间的所有内容，保存文件，VS Code 将恢复使用默认值。
 
-### [When does it make sense to use workspace settings? 在什么情况下使用工作区设置是有意义的？](https://code.visualstudio.com/docs/getstarted/settings#_when-does-it-make-sense-to-use-workspace-settings)
+### [When does it make sense to use workspace settings? 在什么情况下使用工作区设置是有意义的？]({{< ref "/GetStarted/Settings#_when-does-it-make-sense-to-use-workspace-settings" >}})
 
 If you're using a workspace that needs custom settings but you don't want to apply them to your other VS Code projects. A good example is language-specific linting rules.
 
 ​​	如果您正在使用需要自定义设置的工作区，但您不想将它们应用到其他 VS Code 项目。一个很好的例子是特定于语言的 linting 规则。
 
-### [Where can I find extension settings? 我可以在哪里找到扩展设置？](https://code.visualstudio.com/docs/getstarted/settings#_where-can-i-find-extension-settings)
+### [Where can I find extension settings? 我可以在哪里找到扩展设置？]({{< ref "/GetStarted/Settings#_where-can-i-find-extension-settings" >}})
 
 In general, VS Code extensions store their settings in your user or workspaces settings files and they are available through the Settings editor UI (**Preferences: Open Settings (UI)**) or via IntelliSense in your `settings.json` file (**Preferences: Open User Settings (JSON)**). Searching by the extension name (for example `gitlens` or `python`) can help filter down settings to just those contributed by an extension.
 
 ​​	通常，VS Code 扩展会将它们的设置存储在您的用户或工作区设置文件中，并且它们可以通过设置编辑器 UI（首选项：打开设置 (UI)）或通过 `settings.json` 文件（首选项：打开用户设置 (JSON)）中的 IntelliSense 获得。按扩展名搜索（例如 `gitlens` 或 `python` ）可以帮助将设置筛选为仅由扩展贡献的那些设置。
 
-## [Default settings 默认设置](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)
+## [Default settings 默认设置]({{< ref "/GetStarted/Settings#_default-settings" >}})
 
 Below are the Visual Studio Code default settings and their values. You can also view the default values in the Settings editor or see a read-only version of the `defaultSettings.json` via **Preferences: Open Default Settings (JSON)**.
 

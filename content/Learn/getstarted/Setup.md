@@ -22,11 +22,11 @@ In this video, we walk you through setting up Visual Studio Code and give an ove
 
 
 
-Next video: [Extensions for Visual Studio Code](https://code.visualstudio.com/learn/get-started/extensions)
+Next video: [Extensions for Visual Studio Code]({{< ref "/Learn/getstarted/Extensions" >}})
 
 ​​​	下一视频：Visual Studio Code 的扩展
 
-## [Outline 大纲](https://code.visualstudio.com/learn/get-started/basics#_outline)
+## [Outline 大纲]({{< ref "/Learn/getstarted/Setup#_outline" >}})
 
 - Download and install VS Code.
   下载并安装 VS Code。
@@ -43,14 +43,14 @@ Next video: [Extensions for Visual Studio Code](https://code.visualstudio.com/le
 - Explore VS Code features in the **Interactive Editor Playground**.
   在交互式编辑器游乐场中探索 VS Code 功能。
 
-## [Next video 下一个视频](https://code.visualstudio.com/learn/get-started/basics#_next-video)
+## [Next video 下一个视频]({{< ref "/Learn/getstarted/Setup#_next-video" >}})
 
-- [Extensions for Visual Studio Code](https://code.visualstudio.com/learn/get-started/extensions) - Add features to VS Code through extensions.
+- [Extensions for Visual Studio Code]({{< ref "/Learn/getstarted/Extensions" >}}) - Add features to VS Code through extensions.
   Visual Studio Code 扩展 - 通过扩展向 VS Code 添加功能。
 
-## [Learn more 了解更多信息](https://code.visualstudio.com/learn/get-started/basics#_learn-more)
+## [Learn more 了解更多信息]({{< ref "/Learn/getstarted/Setup#_learn-more" >}})
 
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - View the documentation for VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - View the documentation for VS Code.
   用户界面 - 查看 VS Code 的文档。
-- [Setup overview](https://code.visualstudio.com/docs/setup/setup-overview) - Documentation for getting up and running with VS Code, including platform-specific setup.
+- [Setup overview]({{< ref "/Setup/Overview" >}}) - Documentation for getting up and running with VS Code, including platform-specific setup.
   设置概述 - VS Code 的启动和运行文档，包括特定于平台的设置。

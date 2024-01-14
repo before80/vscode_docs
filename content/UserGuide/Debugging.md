@@ -20,13 +20,13 @@ One of the key features of Visual Studio Code is its great debugging support. VS
 
 ![Debugging diagram](./Debugging_img/debugging_hero.png)
 
-## [Debugger extensions 调试器扩展](https://code.visualstudio.com/docs/editor/debugging#_debugger-extensions)
+## [Debugger extensions 调试器扩展]({{< ref "/UserGuide/Debugging#_debugger-extensions" >}})
 
 VS Code has built-in debugging support for the [Node.js](https://nodejs.org/) runtime and can debug JavaScript, TypeScript, or any other language that gets transpiled to JavaScript.
 
 ​​	VS Code 对 Node.js 运行时具有内置调试支持，并且可以调试 JavaScript、TypeScript 或任何其他转译为 JavaScript 的语言。
 
-For debugging other languages and runtimes (including [PHP](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug), [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby), [Go](https://marketplace.visualstudio.com/items?itemName=golang.go), [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp), [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) and [many others](https://marketplace.visualstudio.com/search?term=debug&target=VSCode&category=Debuggers&sortBy=Relevance)), look for `Debuggers` [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) in the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode/Debuggers) or select **Install Additional Debuggers** in the top-level Run menu.
+For debugging other languages and runtimes (including [PHP](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug), [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby), [Go](https://marketplace.visualstudio.com/items?itemName=golang.go), [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp), [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) and [many others](https://marketplace.visualstudio.com/search?term=debug&target=VSCode&category=Debuggers&sortBy=Relevance)), look for `Debuggers` [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) in the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode/Debuggers) or select **Install Additional Debuggers** in the top-level Run menu.
 
 ​​	要调试其他语言和运行时（包括 PHP、Ruby、Go、C#、Python、C++、PowerShell 和许多其他语言），请在 VS Code Marketplace 中查找 `Debuggers` 扩展，或在顶级“运行”菜单中选择“安装其他调试器”。
 
@@ -74,17 +74,17 @@ ms-vscode
 >
 > ​​	提示：上面显示的扩展是动态查询的。选择上面的扩展磁贴以阅读描述和评论，以决定哪个扩展最适合您。
 
-## [Start debugging 开始调试](https://code.visualstudio.com/docs/editor/debugging#_start-debugging)
+## [Start debugging 开始调试]({{< ref "/UserGuide/Debugging#_start-debugging" >}})
 
 The following documentation is based on the built-in [Node.js](https://nodejs.org/) debugger, but most of the concepts and features are applicable to other debuggers as well.
 
 ​​	以下文档基于内置的 Node.js 调试器，但大多数概念和功能也适用于其他调试器。
 
-It is helpful to first create a sample Node.js application before reading about debugging. You can follow the [Node.js walkthrough](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) to install Node.js and create a simple "Hello World" JavaScript application (`app.js`). Once you have a simple application set up, this page will take you through VS Code debugging features.
+It is helpful to first create a sample Node.js application before reading about debugging. You can follow the [Node.js walkthrough]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}) to install Node.js and create a simple "Hello World" JavaScript application (`app.js`). Once you have a simple application set up, this page will take you through VS Code debugging features.
 
 ​​	在阅读有关调试的信息之前，先创建一个 Node.js 示例应用程序会有所帮助。您可以按照 Node.js 演练安装 Node.js 并创建一个简单的“Hello World”JavaScript 应用程序 ( `app.js` )。一旦您设置好一个简单的应用程序，此页面将引导您完成 VS Code 调试功能。
 
-## [Run and Debug view 运行和调试视图](https://code.visualstudio.com/docs/editor/debugging#_run-and-debug-view)
+## [Run and Debug view 运行和调试视图]({{< ref "/UserGuide/Debugging#_run-and-debug-view" >}})
 
 To bring up the **Run and Debug** view, select the **Run and Debug** icon in the **Activity Bar** on the side of VS Code. You can also use the keyboard shortcut Ctrl+Shift+D.
 
@@ -102,7 +102,7 @@ If running and debugging is not yet configured (no `launch.json` has been create
 
 ![Simplified initial Run and Debug view](./Debugging_img/debug-start.png)
 
-## [Run menu 运行菜单](https://code.visualstudio.com/docs/editor/debugging#_run-menu)
+## [Run menu 运行菜单]({{< ref "/UserGuide/Debugging#_run-menu" >}})
 
 The top-level **Run** menu has the most common run and debug commands:
 
@@ -110,13 +110,13 @@ The top-level **Run** menu has the most common run and debug commands:
 
 ![Run menu](./Debugging_img/debug-menu.png)
 
-## [Launch configurations 启动配置](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations)
+## [Launch configurations 启动配置]({{< ref "/UserGuide/Debugging#_launch-configurations" >}})
 
 To run or debug a simple app in VS Code, select **Run and Debug** on the Debug start view or press F5 and VS Code will try to run your currently active file.
 
 ​​	要在 VS Code 中运行或调试一个简单的应用，请选择“调试”开始视图中的“运行并调试”，或按 F5，VS Code 将尝试运行你当前活动的文件。
 
-However, for most debugging scenarios, creating a launch configuration file is beneficial because it allows you to configure and save debugging setup details. VS Code keeps debugging configuration information in a `launch.json` file located in a `.vscode` folder in your workspace (project root folder) or in your [user settings](https://code.visualstudio.com/docs/editor/debugging#_global-launch-configuration) or [workspace settings](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_workspace-launch-configurations).
+However, for most debugging scenarios, creating a launch configuration file is beneficial because it allows you to configure and save debugging setup details. VS Code keeps debugging configuration information in a `launch.json` file located in a `.vscode` folder in your workspace (project root folder) or in your [user settings]({{< ref "/UserGuide/Debugging#_global-launch-configuration" >}}) or [workspace settings]({{< ref "/UserGuide/Multi-rootWorkspaces#_workspace-launch-configurations" >}}).
 
 ​​	但是，对于大多数调试场景，创建启动配置文件很有用，因为它允许你配置和保存调试设置详细信息。VS Code 将调试配置信息保存在工作区（项目根文件夹）或用户设置或工作区设置中的 `launch.json` 文件夹中的 `.vscode` 文件中。
 
@@ -175,7 +175,7 @@ Review all automatically generated values and make sure that they make sense for
 
 ​​	查看所有自动生成的值，并确保它们对您的项目和调试环境有意义。
 
-### [Launch versus attach configurations 启动与附加配置](https://code.visualstudio.com/docs/editor/debugging#_launch-versus-attach-configurations)
+### [Launch versus attach configurations 启动与附加配置]({{< ref "/UserGuide/Debugging#_launch-versus-attach-configurations" >}})
 
 In VS Code, there are two core debugging modes, **Launch** and **Attach**, which handle two different workflows and segments of developers. Depending on your workflow, it can be confusing to know what type of configuration is appropriate for your project.
 
@@ -193,7 +193,7 @@ VS Code debuggers typically support launching a program in debug mode or attachi
 
 ​​	VS Code 调试器通常支持以调试模式启动程序或附加到已经以调试模式运行的程序。根据请求（ `attach` 或 `launch` ），需要不同的属性，而 VS Code 的 `launch.json` 验证和建议应该对此有所帮助。
 
-### [Add a new configuration 添加新配置](https://code.visualstudio.com/docs/editor/debugging#_add-a-new-configuration)
+### [Add a new configuration 添加新配置]({{< ref "/UserGuide/Debugging#_add-a-new-configuration" >}})
 
 To add a new configuration to an existing `launch.json`, use one of the following techniques:
 
@@ -208,7 +208,7 @@ To add a new configuration to an existing `launch.json`, use one of the followin
 
 ![launch json suggestions](./Debugging_img/add-config.gif)
 
-VS Code also supports compound launch configurations for starting multiple configurations at the same time; for more details, please read this [section](https://code.visualstudio.com/docs/editor/debugging#_compound-launch-configurations).
+VS Code also supports compound launch configurations for starting multiple configurations at the same time; for more details, please read this [section]({{< ref "/UserGuide/Debugging#_compound-launch-configurations" >}}).
 
 ​​	VS Code 还支持复合启动配置，以便同时启动多个配置；有关更多详细信息，请阅读本部分。
 
@@ -232,7 +232,7 @@ In addition, the **debug status** appears in the Status Bar showing the active d
 
 ![Debug status](./Debugging_img/debug-status.png)
 
-## [Debug actions 调试操作](https://code.visualstudio.com/docs/editor/debugging#_debug-actions)
+## [Debug actions 调试操作]({{< ref "/UserGuide/Debugging#_debug-actions" >}})
 
 Once a debug session starts, the **Debug toolbar** will appear on the top of the editor.
 
@@ -253,7 +253,7 @@ Once a debug session starts, the **Debug toolbar** will appear on the top of the
 >
 > ​​	提示：使用设置 `debug.toolBarLocation` 来控制调试工具栏的位置。它可以是默认的 `floating` 、 `docked` 到运行和调试视图，或 `hidden` 。 `floating` 调试工具栏可以水平拖动，也可以向下拖动到编辑器区域。
 
-### [Run mode 运行模式](https://code.visualstudio.com/docs/editor/debugging#_run-mode)
+### [Run mode 运行模式]({{< ref "/UserGuide/Debugging#_run-mode" >}})
 
 In addition to debugging a program, VS Code supports **running** the program. The **Debug: Run (Start Without Debugging)** action is triggered with Ctrl+F5 and uses the currently selected launch configuration. Many of the launch configuration attributes are supported in 'Run' mode. VS Code maintains a debug session while the program is running, and pressing the **Stop** button terminates the program.
 
@@ -263,7 +263,7 @@ In addition to debugging a program, VS Code supports **running** the program. Th
 >
 > ​​	提示：运行操作始终可用，但并非所有调试器扩展都支持“运行”。在这种情况下，“运行”将与“调试”相同。
 
-## [Breakpoints 断点](https://code.visualstudio.com/docs/editor/debugging#_breakpoints)
+## [Breakpoints 断点]({{< ref "/UserGuide/Debugging#_breakpoints" >}})
 
 Breakpoints can be toggled by clicking on the **editor margin** or using F9 on the current line. Finer breakpoint control (enable/disable/reapply) can be done in the **Run and Debug** view's **BREAKPOINTS** section.
 
@@ -292,7 +292,7 @@ Optionally, breakpoints can be shown in the editor's overview ruler by enabling 
 
 ![breakpoints in overview ruler](./Debugging_img/bpts-in-overview.png)
 
-## [Logpoints 日志点](https://code.visualstudio.com/docs/editor/debugging#_logpoints)
+## [Logpoints 日志点]({{< ref "/UserGuide/Debugging#_logpoints" >}})
 
 A Logpoint is a variant of a breakpoint that does not "break" into the debugger but instead logs a message to the console. Logpoints are especially useful for injecting logging while debugging production servers that cannot be paused or stopped.
 
@@ -308,11 +308,11 @@ Just like regular breakpoints, Logpoints can be enabled or disabled and can also
 
 ​​	与常规断点一样，Logpoint 可以启用或禁用，还可以通过条件和/或命中计数进行控制。
 
-**Note**: Logpoints are supported by VS Code's built-in Node.js debugger, but can be implemented by other debug extensions. The [Python](https://code.visualstudio.com/docs/python/python-tutorial) and [Java](https://code.visualstudio.com/docs/java/java-tutorial) extensions, for example, support Logpoints.
+**Note**: Logpoints are supported by VS Code's built-in Node.js debugger, but can be implemented by other debug extensions. The [Python]({{< ref "/Python/Tutorial" >}}) and [Java]({{< ref "/Java/GettingStarted" >}}) extensions, for example, support Logpoints.
 
 ​​	注意：Logpoint 受 VS Code 的内置 Node.js 调试器支持，但可以由其他调试扩展实现。例如，Python 和 Java 扩展支持 Logpoint。
 
-## [Data inspection 数据检查](https://code.visualstudio.com/docs/editor/debugging#_data-inspection)
+## [Data inspection 数据检查]({{< ref "/UserGuide/Debugging#_data-inspection" >}})
 
 Variables can be inspected in the **VARIABLES** section of the **Run and Debug** view or by hovering over their source in the editor. Variable values and expression evaluation are relative to the selected stack frame in the **CALL STACK** section.
 
@@ -336,7 +336,7 @@ Variable names and values can be filtered by typing while the focus is on the **
 
 ![Filtering in the Variables section](./Debugging_img/filtering-variables.png)
 
-## [Launch.json attributes Launch.json 属性](https://code.visualstudio.com/docs/editor/debugging#_launchjson-attributes)
+## [Launch.json attributes Launch.json 属性]({{< ref "/UserGuide/Debugging#_launchjson-attributes" >}})
 
 There are many `launch.json` attributes to help support different debuggers and debugging scenarios. As mentioned above, you can use IntelliSense (Ctrl+Space) to see the list of available attributes once you have specified a value for the `type` attribute.
 
@@ -361,15 +361,15 @@ Here are some optional attributes available to all launch configurations:
 
 - `presentation` - using the `order`, `group`, and `hidden` attributes in the `presentation` object, you can sort, group, and hide configurations and compounds in the Debug configuration dropdown and in the Debug quick pick.
   `presentation` - 使用 `presentation` 对象中的 `order` 、 `group` 和 `hidden` 属性，您可以在“调试配置”下拉列表和“调试快速选取”中对配置和复合项进行排序、分组和隐藏。
-- `preLaunchTask` - to launch a task before the start of a debug session, set this attribute to the label of a task specified in [tasks.json](https://code.visualstudio.com/docs/editor/tasks) (in the workspace's `.vscode` folder). Or, this can be set to `${defaultBuildTask}` to use your default build task.
+- `preLaunchTask` - to launch a task before the start of a debug session, set this attribute to the label of a task specified in [tasks.json]({{< ref "/UserGuide/Tasks" >}}) (in the workspace's `.vscode` folder). Or, this can be set to `${defaultBuildTask}` to use your default build task.
   `preLaunchTask` - 要在调试会话开始前启动任务，请将此属性设置为 tasks.json（在工作区的 `.vscode` 文件夹中）中指定的任务的标签。或者，可以将其设置为 `${defaultBuildTask}` 以使用默认的生成任务。
-- `postDebugTask` - to launch a task at the very end of a debug session, set this attribute to the name of a task specified in [tasks.json](https://code.visualstudio.com/docs/editor/tasks) (in the workspace's `.vscode` folder).
+- `postDebugTask` - to launch a task at the very end of a debug session, set this attribute to the name of a task specified in [tasks.json]({{< ref "/UserGuide/Tasks" >}}) (in the workspace's `.vscode` folder).
   `postDebugTask` - 要在调试会话的最后启动任务，请将此属性设置为 tasks.json（在工作区的 `.vscode` 文件夹中）中指定的任务的名称。
 - `internalConsoleOptions` - this attribute controls the visibility of the Debug Console panel during a debugging session.
   `internalConsoleOptions` - 此属性控制调试会话期间调试控制台面板的可见性。
 - `debugServer` - **for debug extension authors only**: this attribute allows you to connect to a specified port instead of launching the debug adapter.
   `debugServer` - 仅适用于调试扩展作者：此属性允许您连接到指定端口，而不是启动调试适配器。
-- `serverReadyAction` - if you want to open a URL in a web browser whenever the program under debugging outputs a specific message to the debug console or integrated terminal. For details see section [Automatically open a URI when debugging a server program](https://code.visualstudio.com/docs/editor/debugging#_automatically-open-a-uri-when-debugging-a-server-program) below.
+- `serverReadyAction` - if you want to open a URL in a web browser whenever the program under debugging outputs a specific message to the debug console or integrated terminal. For details see section [Automatically open a URI when debugging a server program]({{< ref "/UserGuide/Debugging#_automatically-open-a-uri-when-debugging-a-server-program" >}}) below.
   `serverReadyAction` - 只要正在调试的程序向调试控制台或集成终端输出特定消息，您就可以在 Web 浏览器中打开一个 URL。有关详细信息，请参阅下面的“在调试服务器程序时自动打开 URI”部分。
 
 Many debuggers support some of the following attributes:
@@ -393,7 +393,7 @@ Many debuggers support some of the following attributes:
 - `console` - what kind of console to use, for example, `internalConsole`, `integratedTerminal`, or `externalTerminal`
   `console` - 使用哪种控制台，例如 `internalConsole` 、 `integratedTerminal` 或 `externalTerminal`
 
-## [Variable substitution 变量替换](https://code.visualstudio.com/docs/editor/debugging#_variable-substitution)
+## [Variable substitution 变量替换]({{< ref "/UserGuide/Debugging#_variable-substitution" >}})
 
 VS Code makes commonly used paths and other values available as variables and supports variable substitution inside strings in `launch.json`. This means that you do not have to use absolute paths in debug configurations. For example, `${workspaceFolder}` gives the root path of a workspace folder, `${file}` the file open in the active editor, and `${env:Name}` the environment variable 'Name'. You can see a full list of predefined variables in the [Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference) or by invoking IntelliSense inside the `launch.json` string attributes.
 
@@ -410,7 +410,7 @@ VS Code makes commonly used paths and other values available as variables and su
 }
 ```
 
-## [Platform-specific properties 特定于平台的属性](https://code.visualstudio.com/docs/editor/debugging#_platformspecific-properties)
+## [Platform-specific properties 特定于平台的属性]({{< ref "/UserGuide/Debugging#_platformspecific-properties" >}})
 
 `Launch.json` supports defining values (for example, arguments to be passed to the program) that depend on the operating system where the debugger is running. To do so, put a platform-specific literal into the `launch.json` file and specify the corresponding properties inside that literal.
 
@@ -468,9 +468,9 @@ In the example below, debugging the program always **stops on entry** except on 
 }
 ```
 
-## [Global launch configuration 全局启动配置](https://code.visualstudio.com/docs/editor/debugging#_global-launch-configuration)
+## [Global launch configuration 全局启动配置]({{< ref "/UserGuide/Debugging#_global-launch-configuration" >}})
 
-VS Code supports adding a `"launch"` object inside your User [settings](https://code.visualstudio.com/docs/getstarted/settings). This `"launch"` configuration will then be shared across your workspaces. For example:
+VS Code supports adding a `"launch"` object inside your User [settings]({{< ref "/GetStarted/Settings" >}}). This `"launch"` configuration will then be shared across your workspaces. For example:
 
 ​​	VS Code 支持在用户设置中添加 `"launch"` 对象。然后，此 `"launch"` 配置将在您的工作区之间共享。例如：
 
@@ -486,9 +486,9 @@ VS Code supports adding a `"launch"` object inside your User [settings](https://
 }
 ```
 
-## [Advanced breakpoint topics 高级断点主题](https://code.visualstudio.com/docs/editor/debugging#_advanced-breakpoint-topics)
+## [Advanced breakpoint topics 高级断点主题]({{< ref "/UserGuide/Debugging#_advanced-breakpoint-topics" >}})
 
-### [Conditional breakpoints 条件断点](https://code.visualstudio.com/docs/editor/debugging#_conditional-breakpoints)
+### [Conditional breakpoints 条件断点]({{< ref "/UserGuide/Debugging#_conditional-breakpoints" >}})
 
 A powerful VS Code debugging feature is the ability to set conditions based on expressions, hit counts, or a combination of both.
 
@@ -517,7 +517,7 @@ If a debugger does not support conditional breakpoints, the **Add Conditional Br
 
 ​​	如果调试器不支持条件断点，则“添加条件断点”和“编辑条件”操作将缺失。
 
-### [Inline breakpoints 内联断点](https://code.visualstudio.com/docs/editor/debugging#_inline-breakpoints)
+### [Inline breakpoints 内联断点]({{< ref "/UserGuide/Debugging#_inline-breakpoints" >}})
 
 Inline breakpoints will only be hit when the execution reaches the column associated with the inline breakpoint. This is particularly useful when debugging minified code which contains multiple statements in a single line.
 
@@ -531,7 +531,7 @@ Inline breakpoints can also have conditions. Editing multiple breakpoints on a l
 
 ​​	内联断点也可以有条件。可以通过编辑器左边缘的上下文菜单来编辑一行上的多个断点。
 
-### [Function breakpoints 函数断点](https://code.visualstudio.com/docs/editor/debugging#_function-breakpoints)
+### [Function breakpoints 函数断点]({{< ref "/UserGuide/Debugging#_function-breakpoints" >}})
 
 Instead of placing breakpoints directly in source code, a debugger can support creating breakpoints by specifying a function name. This is useful in situations where source is not available but a function name is known.
 
@@ -541,13 +541,13 @@ A function breakpoint is created by pressing the **+** button in the **BREAKPOIN
 
 ​​	通过按 BREAKPOINTS 部分标题中的 + 按钮并输入函数名称来创建函数断点。函数断点在 BREAKPOINTS 部分中显示为红色三角形。
 
-### [Data breakpoints 数据断点](https://code.visualstudio.com/docs/editor/debugging#_data-breakpoints)
+### [Data breakpoints 数据断点]({{< ref "/UserGuide/Debugging#_data-breakpoints" >}})
 
 If a debugger supports data breakpoints, they can be set from the context menu in the **VARIABLES** view. The **Break on Value Change/Read/Access** commands will add a data breakpoint that is hit when the value of the underlying variable changes/is read/is accessed. Data breakpoints are shown with a red hexagon in the **BREAKPOINTS** section.
 
 ​​	如果调试器支持数据断点，则可以从 VARIABLES 视图中的上下文菜单中设置它们。Break on Value Change/Read/Access 命令将添加一个数据断点，当底层变量的值发生更改/被读取/被访问时，该断点将被命中。数据断点在 BREAKPOINTS 部分中显示为红色六边形。
 
-## [Debug Console REPL 调试控制台 REPL](https://code.visualstudio.com/docs/editor/debugging#_debug-console-repl)
+## [Debug Console REPL 调试控制台 REPL]({{< ref "/UserGuide/Debugging#_debug-console-repl" >}})
 
 Expressions can be evaluated with the **Debug Console** REPL ([Read-Eval-Print Loop](https://en.wikipedia.org/wiki/Read–eval–print_loop)) feature. To open the Debug Console, use the **Debug Console** action at the top of the Debug pane or use the **View: Debug Console** command (Ctrl+Shift+Y). Expressions are evaluated after you press Enter and the Debug Console REPL shows suggestions as you type. If you need to enter multiple lines, use Shift+Enter between the lines and then send all lines for evaluation with Enter. Debug Console input uses the mode of the active editor, which means that the Debug Console input supports syntax coloring, indentation, auto closing of quotes, and other language features.
 
@@ -559,7 +559,7 @@ Expressions can be evaluated with the **Debug Console** REPL ([Read-Eval-Print L
 
 ​​	注意：您必须处于正在运行的调试会话中才能使用 Debug 控制台 REPL。
 
-## [Redirect input/output to/from the debug target 将输入/输出重定向到/从调试目标](https://code.visualstudio.com/docs/editor/debugging#_redirect-inputoutput-tofrom-the-debug-target)
+## [Redirect input/output to/from the debug target 将输入/输出重定向到/从调试目标]({{< ref "/UserGuide/Debugging#_redirect-inputoutput-tofrom-the-debug-target" >}})
 
 Redirecting input/output is debugger/runtime specific, so VS Code does not have a built-in solution that works for all debuggers.
 
@@ -596,7 +596,7 @@ This approach requires that the "<" syntax is passed through the debugger extens
 
 ​​	此方法要求将 “<” 语法通过调试器扩展传递，并在集成终端中保持不变。
 
-## [Multi-target debugging 多目标调试](https://code.visualstudio.com/docs/editor/debugging#_multitarget-debugging)
+## [Multi-target debugging 多目标调试]({{< ref "/UserGuide/Debugging#_multitarget-debugging" >}})
 
 For complex scenarios involving more than one process (for example, a client and a server), VS Code supports multi-target debugging.
 
@@ -615,7 +615,7 @@ Using multi-target debugging is simple: after you've started a first debug sessi
 - Debug actions (for example, all actions in the debug toolbar) are performed on the active session. The active session can be changed either by using the dropdown menu in the debug toolbar or by selecting a different element in the **CALL STACK** view.
   调试操作（例如，调试工具栏中的所有操作）在活动会话上执行。可以通过使用调试工具栏中的下拉菜单或在调用堆栈视图中选择不同的元素来更改活动会话。
 
-### [Compound launch configurations 复合启动配置](https://code.visualstudio.com/docs/editor/debugging#_compound-launch-configurations)
+### [Compound launch configurations 复合启动配置]({{< ref "/UserGuide/Debugging#_compound-launch-configurations" >}})
 
 An alternative way to start multiple debug sessions is by using a **compound** launch configuration. A compound launch configuration lists the names of two or more launch configurations that should be launched in parallel. Optionally a `preLaunchTask` can be specified that is run before the individual debug sessions are started. The boolean flag `stopAll` controls whether manually terminating one session will stop all of the compound sessions.
 
@@ -653,17 +653,17 @@ Compound launch configurations are displayed in the launch configuration dropdow
 
 ​​	复合启动配置显示在启动配置下拉菜单中。
 
-## [Remote debugging 远程调试](https://code.visualstudio.com/docs/editor/debugging#_remote-debugging)
+## [Remote debugging 远程调试]({{< ref "/UserGuide/Debugging#_remote-debugging" >}})
 
 VS Code does not itself support remote debugging: this is a feature of the debug extension you are using, and you should consult the extension's page in the [Marketplace](https://marketplace.visualstudio.com/search?target=VSCode&category=Debuggers&sortBy=Installs) for support and details.
 
 ​​	VS Code 本身不支持远程调试：这是您正在使用的调试扩展的功能，您应该查阅市场中的扩展页面以获取支持和详细信息。
 
-There is, however, one exception: the Node.js debugger included in VS Code supports remote debugging. See the [Node.js Debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging) topic to learn how to configure this.
+There is, however, one exception: the Node.js debugger included in VS Code supports remote debugging. See the [Node.js Debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}) topic to learn how to configure this.
 
 ​​	但是，有一个例外：VS Code 中包含的 Node.js 调试器支持远程调试。请参阅 Node.js 调试主题以了解如何配置此功能。
 
-## [Automatically open a URI when debugging a server program 调试服务器程序时自动打开 URI](https://code.visualstudio.com/docs/editor/debugging#_automatically-open-a-uri-when-debugging-a-server-program)
+## [Automatically open a URI when debugging a server program 调试服务器程序时自动打开 URI]({{< ref "/UserGuide/Debugging#_automatically-open-a-uri-when-debugging-a-server-program" >}})
 
 Developing a web program typically requires opening a specific URL in a web browser in order to hit the server code in the debugger. VS Code has a built-in feature "**serverReadyAction**" to automate this task.
 
@@ -721,7 +721,7 @@ The resulting URI is then opened outside of VS Code ("externally") with the stan
 
 ​​	生成的 URI 随后在 VS Code 外部（“外部”）使用为 URI 方案配置的标准应用程序打开。
 
-### [Trigger Debugging via Edge or Chrome 通过 Edge 或 Chrome 触发调试](https://code.visualstudio.com/docs/editor/debugging#_trigger-debugging-via-edge-or-chrome)
+### [Trigger Debugging via Edge or Chrome 通过 Edge 或 Chrome 触发调试]({{< ref "/UserGuide/Debugging#_trigger-debugging-via-edge-or-chrome" >}})
 
 Alternatively, the `action` can be set to `debugWithEdge` or `debugWithChrome`. In this mode, a `webRoot` property can be added that is passed to the Chrome or Edge debug session.
 
@@ -736,7 +736,7 @@ To simplify things a bit, most properties are optional and we use the following 
 - **uriFormat**: `"http://localhost:%s"`
 - **webRoot**: `"${workspaceFolder}"`
 
-### [Triggering an Arbitrary Launch Config 触发任意启动配置](https://code.visualstudio.com/docs/editor/debugging#_triggering-an-arbitrary-launch-config)
+### [Triggering an Arbitrary Launch Config 触发任意启动配置]({{< ref "/UserGuide/Debugging#_triggering-an-arbitrary-launch-config" >}})
 
 In some cases, you may need to configure additional options for the browser debug session--or use a different debugger entirely. You can do this by setting `action` to `startDebugging` with a `name` property set to the name of the launch configuration to start when the `pattern` is matched.
 
@@ -752,15 +752,15 @@ Here the **serverReadyAction** feature in action:
 
 ![Server ready feature in action](./Debugging_img/server-ready.gif)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/debugging#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Debugging#_next-steps" >}})
 
 To learn about VS Code's Node.js debugging support, take a look at:
 
 ​​	若要了解 VS Code 的 Node.js 调试支持，请参阅：
 
-- [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) - Describes the Node.js debugger, which is included in VS Code.
+- [Node.js]({{< ref "/Node_jsJavaScript/Node_jsDebugging" >}}) - Describes the Node.js debugger, which is included in VS Code.
   Node.js - 介绍了 VS Code 中包含的 Node.js 调试器。
-- [TypeScript](https://code.visualstudio.com/docs/typescript/typescript-debugging) - The Node.js debugger also supports TypeScript debugging.
+- [TypeScript]({{< ref "/TypeScript/Debugging" >}}) - The Node.js debugger also supports TypeScript debugging.
   TypeScript - Node.js 调试器还支持 TypeScript 调试。
 
 To see tutorials on the basics of Node.js debugging, check out these videos:
@@ -776,15 +776,15 @@ To learn about debugging support for other programming languages via VS Code ext
 
 ​​	若要了解通过 VS Code 扩展对其他编程语言的调试支持：
 
-- [C++](https://code.visualstudio.com/docs/cpp/cpp-debug)
-- [Python](https://code.visualstudio.com/docs/python/debugging)
-- [Java](https://code.visualstudio.com/docs/java/java-debugging)
+- [C++]({{< ref "/C/Debugging" >}})
+- [Python]({{< ref "/Python/Debugging" >}})
+- [Java]({{< ref "/Java/RunandDebug" >}})
 
 To learn about VS Code's task running support, go to:
 
 ​​	要了解 VS Code 的任务运行支持，请转到：
 
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - Describes how to run tasks with Gulp, Grunt, and Jake and how to show errors and warnings.
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - Describes how to run tasks with Gulp, Grunt, and Jake and how to show errors and warnings.
   任务 - 介绍如何使用 Gulp、Grunt 和 Jake 运行任务，以及如何显示错误和警告。
 
 To write your own debugger extension, visit:
@@ -794,15 +794,15 @@ To write your own debugger extension, visit:
 - [Debugger Extension](https://code.visualstudio.com/api/extension-guides/debugger-extension) - Uses a mock sample to illustrate the steps required to create a VS Code debug extension.
   调试器扩展 - 使用模拟示例来说明创建 VS Code 调试扩展所需的步骤。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/debugging#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/Debugging#_common-questions" >}})
 
-### [What are the supported debugging scenarios? 支持哪些调试方案？](https://code.visualstudio.com/docs/editor/debugging#_what-are-the-supported-debugging-scenarios)
+### [What are the supported debugging scenarios? 支持哪些调试方案？]({{< ref "/UserGuide/Debugging#_what-are-the-supported-debugging-scenarios" >}})
 
 Debugging of Node.js-based applications is supported on Linux, macOS, and Windows out of the box with VS Code. Many other scenarios are supported by [VS Code extensions](https://marketplace.visualstudio.com/vscode/Debuggers?sortBy=Installs) available in the Marketplace.
 
 ​​	VS Code 开箱即用地支持在 Linux、macOS 和 Windows 上调试基于 Node.js 的应用程序。市场中提供的 VS Code 扩展支持许多其他方案。
 
-### [I do not see any launch configurations in the Run and Debug view dropdown. What is wrong? 我在运行和调试视图下拉列表中看不到任何启动配置。哪里出错了？](https://code.visualstudio.com/docs/editor/debugging#_i-do-not-see-any-launch-configurations-in-the-run-and-debug-view-dropdown-what-is-wrong)
+### [I do not see any launch configurations in the Run and Debug view dropdown. What is wrong? 我在运行和调试视图下拉列表中看不到任何启动配置。哪里出错了？]({{< ref "/UserGuide/Debugging#_i-do-not-see-any-launch-configurations-in-the-run-and-debug-view-dropdown-what-is-wrong" >}})
 
 The most common problem is that you did not set up `launch.json` or there is a syntax error in that file. Alternatively, you might need to open a folder, since no-folder debugging does not support launch configurations.
 

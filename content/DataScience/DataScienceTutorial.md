@@ -18,7 +18,7 @@ This tutorial demonstrates using Visual Studio Code and the Microsoft Python ext
 
 ​​	本教程演示如何使用 Visual Studio Code 和 Microsoft Python 扩展以及常见数据科学库来探索基本数据科学场景。具体来说，使用泰坦尼克号的乘客数据，您将学习如何设置数据科学环境、导入和清理数据、创建机器学习模型来预测泰坦尼克号上的生存情况，以及评估生成模型的准确性。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/datascience/data-science-tutorial#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/DataScience/DataScienceTutorial#_prerequisites" >}})
 
 The following installations are required for the completion of this tutorial. Make sure to install them if you haven't already.
 
@@ -26,7 +26,7 @@ The following installations are required for the completion of this tutorial. Ma
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-- The [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) from the Visual Studio Marketplace. For more details on installing extensions, see [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace). Both extensions are published by Microsoft.
+- The [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) from the Visual Studio Marketplace. For more details on installing extensions, see [Extension Marketplace]({{< ref "/UserGuide/ExtensionMarketplace" >}}). Both extensions are published by Microsoft.
 
   ​​	Visual Studio Marketplace 中的 VS Code 的 Python 扩展和 VS Code 的 Jupyter 扩展。有关安装扩展的更多详细信息，请参阅扩展市场。这两个扩展均由 Microsoft 发布。
 
@@ -37,7 +37,7 @@ The following installations are required for the completion of this tutorial. Ma
   >
   > ​​	注意：如果您已经安装了完整的 Anaconda 发行版，则无需安装 Miniconda。或者，如果您不想使用 Anaconda 或 Miniconda，则可以创建一个 Python 虚拟环境，并使用 pip 安装本教程所需的软件包。如果您选择此途径，则需要安装以下软件包：pandas、jupyter、seaborn、scikit-learn、keras 和 tensorflow。
 
-## [Set up a data science environment 设置数据科学环境](https://code.visualstudio.com/docs/datascience/data-science-tutorial#_set-up-a-data-science-environment)
+## [Set up a data science environment 设置数据科学环境]({{< ref "/DataScience/DataScienceTutorial#_set-up-a-data-science-environment" >}})
 
 Visual Studio Code and the Python extension provide a great editor for data science scenarios. With native support for Jupyter notebooks combined with Anaconda, it's easy to get started. In this section, you will create a workspace for the tutorial, create an Anaconda environment with the data science modules needed for the tutorial, and create a Jupyter notebook that you'll use for creating a machine learning model.
 
@@ -69,7 +69,7 @@ Visual Studio Code and the Python extension provide a great editor for data scie
 
    ​​	使用“文件”>“另存为...”将文件另存为 `hello.ipynb` 。
 
-6. After your file is created, you should see the open [Jupyter notebook](https://jupyter.org/) in the notebook editor. For additional information about native Jupyter notebook support, you can read the [Jupyter Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) topic.
+6. After your file is created, you should see the open [Jupyter notebook](https://jupyter.org/) in the notebook editor. For additional information about native Jupyter notebook support, you can read the [Jupyter Notebooks]({{< ref "/DataScience/JupyterNotebooks" >}}) topic.
 
    ​​	创建文件后，您应该在笔记本编辑器中看到打开的 Jupyter 笔记本。有关本机 Jupyter 笔记本支持的更多信息，您可以阅读 Jupyter 笔记本主题。
 
@@ -91,7 +91,7 @@ Visual Studio Code and the Python extension provide a great editor for data scie
 
    ​​	要从 VS Code 的集成终端管理您的环境，请使用 (Ctrl+`) 打开它。如果您的环境未激活，您可以像在终端中一样激活它 ( `conda activate myenv` )。
 
-## [Prepare the data 准备数据](https://code.visualstudio.com/docs/datascience/data-science-tutorial#_prepare-the-data)
+## [Prepare the data 准备数据]({{< ref "/DataScience/DataScienceTutorial#_prepare-the-data" >}})
 
 This tutorial uses the [Titanic dataset](https://hbiostat.org/data/repo/titanic.html) available on [OpenML.org](https://www.openml.org/d/40945), which is obtained from Vanderbilt University's Department of Biostatistics at https://hbiostat.org/data. The Titanic data provides information about the survival of passengers on the Titanic and characteristics about the passengers such as age and ticket class. Using this data, the tutorial will establish a model for predicting whether a given passenger would have survived the sinking of the Titanic. This section shows how to load and manipulate data in your Jupyter notebook.
 
@@ -105,7 +105,7 @@ This tutorial uses the [Titanic dataset](https://hbiostat.org/data/repo/titanic.
 
    ​​	如果您尚未在 VS Code 中打开该文件，请通过转到文件 > 打开文件夹来打开 `hello_ds` 文件夹和 Jupyter 笔记本 ( `hello.ipynb` )。
 
-3. Within your Jupyter notebook, begin by importing the [pandas](https://pandas.pydata.org/) and [numpy](https://numpy.org/) libraries, two common libraries used for manipulating data, and loading the Titanic data into a pandas [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html). To do so, copy the code below into the first cell of the notebook. For more guidance about working with Jupyter notebooks in VS Code, see the [Working with Jupyter Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) documentation.
+3. Within your Jupyter notebook, begin by importing the [pandas](https://pandas.pydata.org/) and [numpy](https://numpy.org/) libraries, two common libraries used for manipulating data, and loading the Titanic data into a pandas [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html). To do so, copy the code below into the first cell of the notebook. For more guidance about working with Jupyter notebooks in VS Code, see the [Working with Jupyter Notebooks]({{< ref "/DataScience/JupyterNotebooks" >}}) documentation.
 
    ​​	在 Jupyter 笔记本中，首先导入 pandas 和 numpy 库，这两个库通常用于处理数据，并将泰坦尼克号数据加载到 pandas DataFrame 中。为此，将以下代码复制到笔记本的第一个单元格中。有关在 VS Code 中使用 Jupyter 笔记本的更多指导，请参阅使用 Jupyter 笔记本文档。
 
@@ -243,7 +243,7 @@ This tutorial uses the [Titanic dataset](https://hbiostat.org/data/repo/titanic.
     >
     > ​​	注意：虽然年龄具有较低的直接相关性，但保留它是因为它似乎可能与其他输入结合使用时仍具有相关性。
 
-## [Train and evaluate a model 训练并评估模型](https://code.visualstudio.com/docs/datascience/data-science-tutorial#_train-and-evaluate-a-model)
+## [Train and evaluate a model 训练并评估模型]({{< ref "/DataScience/DataScienceTutorial#_train-and-evaluate-a-model" >}})
 
 With the dataset ready, you can now begin creating a model. For this section, you'll use the [scikit-learn](https://scikit-learn.org/stable/) library (as it offers some useful helper functions) to do pre-processing of the dataset, train a classification model to determine survivability on the Titanic, and then use that model with test data to determine its accuracy.
 
@@ -299,7 +299,7 @@ With the dataset ready, you can now begin creating a model. For this section, yo
 
    ​​	查看测试数据的结果，您会看到训练好的算法在估计生存率方面的成功率约为 75%。
 
-## [(Optional) Use a neural network （可选）使用神经网络](https://code.visualstudio.com/docs/datascience/data-science-tutorial#_optional-use-a-neural-network)
+## [(Optional) Use a neural network （可选）使用神经网络]({{< ref "/DataScience/DataScienceTutorial#_optional-use-a-neural-network" >}})
 
 A neural network is a model that uses weights and activation functions, modeling aspects of human neurons, to determine an outcome based on provided inputs. Unlike the machine learning algorithm you looked at previously, neural networks are a form of deep learning wherein you don't need to know an ideal algorithm for your problem set ahead of time. It can be used for many different scenarios and classification is one of them. For this section, you'll use the [Keras](https://keras.io/) library with [TensorFlow](https://www.tensorflow.org/) to construct the neural network, and explore how it handles the Titanic dataset.
 
@@ -377,13 +377,13 @@ A neural network is a model that uses weights and activation functions, modeling
 
    ​​	与训练类似，您会注意到您现在在预测乘客生存率方面具有 79% 的准确率。使用这个简单的神经网络，结果比之前尝试的朴素贝叶斯分类器的 75% 准确率更好。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/datascience/data-science-tutorial#_next-steps)
+## [Next steps 后续步骤]({{< ref "/DataScience/DataScienceTutorial#_next-steps" >}})
 
 Now that you're familiar with the basics of performing machine learning within Visual Studio Code, here are some other Microsoft resources and tutorials to check out.
 
 ​​	现在您已经熟悉了在 Visual Studio Code 中执行机器学习的基础知识，这里有一些其他 Microsoft 资源和教程供您查看。
 
-- [Data Science profile template](https://code.visualstudio.com/docs/editor/profiles#_data-science-profile-template) - Create a new [profile](https://code.visualstudio.com/docs/editor/profiles) with a curated set of extensions, settings, and snippets.
+- [Data Science profile template]({{< ref "/UserGuide/Profiles#_data-science-profile-template" >}}) - Create a new [profile]({{< ref "/UserGuide/Profiles" >}}) with a curated set of extensions, settings, and snippets.
   数据科学配置文件模板 - 使用精选的扩展、设置和代码段创建新配置文件。
 - Learn more about working with [Jupyter Notebooks in Visual Studio Code](https://youtu.be/FSdIoJdSnig) (video).
   详细了解在 Visual Studio Code 中使用 Jupyter Notebooks（视频）。

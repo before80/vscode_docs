@@ -20,7 +20,7 @@ Color themes let you modify the colors in Visual Studio Code's user interface to
 
 ![Preview themes from the Command Palette](./Themes_img/themes_hero.gif)
 
-## [Selecting the Color Theme 选择颜色主题](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme)
+## [Selecting the Color Theme 选择颜色主题]({{< ref "/GetStarted/Themes#_selecting-the-color-theme" >}})
 
 1. In VS Code, open the Color Theme picker with **File** > **Preferences** > **Theme** > **Color Theme**.
    在 VS Code 中，使用“文件”>“首选项”>“主题”>“颜色主题”打开“颜色主题”选取器。
@@ -33,7 +33,7 @@ Color themes let you modify the colors in Visual Studio Code's user interface to
 
 ![Themes in the Command Palette](./Themes_img/colorthemes.png)
 
-The active color theme is stored in your user [settings](https://code.visualstudio.com/docs/getstarted/settings) (keyboard shortcut Ctrl+,).
+The active color theme is stored in your user [settings]({{< ref "/GetStarted/Settings" >}}) (keyboard shortcut Ctrl+,).
 
 ​​	活动颜色主题存储在您的用户设置中（键盘快捷键 Ctrl+,）。
 
@@ -42,17 +42,17 @@ The active color theme is stored in your user [settings](https://code.visualstud
   "workbench.colorTheme": "Solarized Dark"
 ```
 
-> **Tip:** By default, the theme is stored in your user settings and applies globally to all workspaces. You can also configure a workspace specific theme. To do so, set a theme in the Workspace [settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings).
+> **Tip:** By default, the theme is stored in your user settings and applies globally to all workspaces. You can also configure a workspace specific theme. To do so, set a theme in the Workspace [settings]({{< ref "/GetStarted/Settings#_workspace-settings" >}}).
 >
 > ​​	提示：默认情况下，主题存储在您的用户设置中，并全局应用于所有工作区。您还可以配置特定于工作区主题。为此，请在“工作区”设置中设置主题。
 
-## [Color Themes from the Marketplace 来自 Marketplace 的颜色主题](https://code.visualstudio.com/docs/getstarted/themes#_color-themes-from-the-marketplace)
+## [Color Themes from the Marketplace 来自 Marketplace 的颜色主题]({{< ref "/GetStarted/Themes#_color-themes-from-the-marketplace" >}})
 
 There are several out-of-the-box color themes in VS Code for you to try.
 
 ​​	VS Code 中有几个开箱即用的颜色主题供您尝试。
 
-Many more themes have been uploaded to the VS Code [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace) by the community. If you find one you want to use, install it and restart VS Code and the new theme will be available.
+Many more themes have been uploaded to the VS Code [Extension Marketplace]({{< ref "/UserGuide/ExtensionMarketplace" >}}) by the community. If you find one you want to use, install it and restart VS Code and the new theme will be available.
 
 ​​	社区已将更多主题上传到 VS Code 扩展市场。如果您找到想要使用的主题，请安装它并重新启动 VS Code，新主题即可用。
 
@@ -62,7 +62,7 @@ You can search for themes in the Extensions view (Ctrl+Shift+X) search box using
 
 ![Searching for themes in the Extensions view](./Themes_img/category-themes.png)
 
-## [Auto switch based on OS color scheme 根据操作系统配色方案自动切换](https://code.visualstudio.com/docs/getstarted/themes#_auto-switch-based-on-os-color-scheme)
+## [Auto switch based on OS color scheme 根据操作系统配色方案自动切换]({{< ref "/GetStarted/Themes#_auto-switch-based-on-os-color-scheme" >}})
 
 Windows and macOS support light and dark color schemes. There is a setting, `window.autoDetectColorScheme`, that instructs VS Code to listen to changes to the OS's color scheme and switch to a matching theme accordingly.
 
@@ -83,11 +83,11 @@ To customize the themes that are used when a color scheme changes, you can set t
 
 ![Settings editor filtered on the preferred color themes settings](./Themes_img/preferred-color-themes.png)
 
-## [Customizing a Color Theme 自定义配色方案](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme)
+## [Customizing a Color Theme 自定义配色方案]({{< ref "/GetStarted/Themes#_customizing-a-color-theme" >}})
 
-### [Workbench colors 工作台颜色](https://code.visualstudio.com/docs/getstarted/themes#_workbench-colors)
+### [Workbench colors 工作台颜色]({{< ref "/GetStarted/Themes#_workbench-colors" >}})
 
-You can customize your active color theme with the `workbench.colorCustomizations` and `editor.tokenColorCustomizations` user [settings](https://code.visualstudio.com/docs/getstarted/settings).
+You can customize your active color theme with the `workbench.colorCustomizations` and `editor.tokenColorCustomizations` user [settings]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	您可以使用 `workbench.colorCustomizations` 和 `editor.tokenColorCustomizations` 用户设置自定义活动颜色主题。
 
@@ -128,9 +128,9 @@ If a customization applies to more than one themes, you can name multiple themes
 }
 ```
 
-### [Editor syntax highlighting 编辑器语法突出显示](https://code.visualstudio.com/docs/getstarted/themes#_editor-syntax-highlighting)
+### [Editor syntax highlighting 编辑器语法突出显示]({{< ref "/GetStarted/Themes#_editor-syntax-highlighting" >}})
 
-To tune the editor's syntax highlighting colors, use `editor.tokenColorCustomizations` in your user [settings](https://code.visualstudio.com/docs/getstarted/settings) `settings.json` file:
+To tune the editor's syntax highlighting colors, use `editor.tokenColorCustomizations` in your user [settings]({{< ref "/GetStarted/Settings" >}}) `settings.json` file:
 
 ​​	若要调整编辑器的语法突出显示颜色，请在用户设置 `settings.json` 文件中使用 `editor.tokenColorCustomizations` ：
 
@@ -164,7 +164,7 @@ Again, to customize specific themes, you can do this in one of the following way
 }
 ```
 
-### [Editor semantic highlighting 编辑器语义突出显示](https://code.visualstudio.com/docs/getstarted/themes#_editor-semantic-highlighting)
+### [Editor semantic highlighting 编辑器语义突出显示]({{< ref "/GetStarted/Themes#_editor-semantic-highlighting" >}})
 
 Some languages (currently: TypeScript, JavaScript, Java) provide semantic tokens. Semantic tokens are based on the language service's symbol understanding and are more accurate than the syntax tokens coming from the TextMate grammars that are driven by regular expressions. The semantic highlighting that is computed from the semantic tokens goes on top of syntax highlighting and can correct and enrich the highlighting as seen in the following example:
 
@@ -247,7 +247,7 @@ More information on semantic tokens and styling rule syntax can be found in the 
 
 ​​	有关语义标记和样式规则语法的更多信息，请参阅语义突出显示指南。
 
-## [Creating your own Color Theme 创建您自己的配色方案](https://code.visualstudio.com/docs/getstarted/themes#_creating-your-own-color-theme)
+## [Creating your own Color Theme 创建您自己的配色方案]({{< ref "/GetStarted/Themes#_creating-your-own-color-theme" >}})
 
 Creating and publishing a theme extension is easy. Customize your colors in your user settings then generate a theme definition file with the **Developer: Generate Color Theme From Current Settings** command.
 
@@ -261,7 +261,7 @@ See the [Create a new Color Theme](https://code.visualstudio.com/api/extension-g
 
 ​​	请参阅扩展 API 部分中的“创建新颜色主题”主题以了解更多信息。
 
-## [Remove default Color Themes 删除默认配色方案](https://code.visualstudio.com/docs/getstarted/themes#_remove-default-color-themes)
+## [Remove default Color Themes 删除默认配色方案]({{< ref "/GetStarted/Themes#_remove-default-color-themes" >}})
 
 If you'd like to remove some of the default themes shipped with VS Code from the Color Theme picker, you can disable them from the Extensions view (Ctrl+Shift+X). Click the **Filter Extensions** button from the top of the Extensions view, select the **Built-in** option, and you'll see a **THEMES** section listing the default themes.
 
@@ -269,19 +269,19 @@ If you'd like to remove some of the default themes shipped with VS Code from the
 
 ![built-in themes](./Themes_img/built-in-themes.png)
 
-You can disable a built-in theme extension as you would any other VS Code [extension](https://code.visualstudio.com/docs/editor/extension-marketplace) with the **Disable** command on the gear context menu.
+You can disable a built-in theme extension as you would any other VS Code [extension]({{< ref "/UserGuide/ExtensionMarketplace" >}}) with the **Disable** command on the gear context menu.
 
 ​​	您可以使用齿轮上下文菜单上的“禁用”命令禁用内置主题扩展，就像禁用任何其他 VS Code 扩展一样。
 
 ![disable theme](./Themes_img/disable-theme.png)
 
-## [File Icon Themes 文件图标主题](https://code.visualstudio.com/docs/getstarted/themes#_file-icon-themes)
+## [File Icon Themes 文件图标主题]({{< ref "/GetStarted/Themes#_file-icon-themes" >}})
 
 File icon themes can be contributed by extensions and selected by users as their favorite set of file icons. File icons are shown in the File Explorer and tabbed headings.
 
 ​​	文件图标主题可以由扩展提供，并由用户选择作为他们最喜欢的一组文件图标。文件图标显示在文件资源管理器和选项卡标题中。
 
-### [Selecting the File Icon Theme 选择文件图标主题](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-file-icon-theme)
+### [Selecting the File Icon Theme 选择文件图标主题]({{< ref "/GetStarted/Themes#_selecting-the-file-icon-theme" >}})
 
 1. In VS Code, open the File Icon Theme picker with **File** > **Preferences** > **Theme** > **File Icon Theme**.
    在 VS Code 中，通过文件 > 首选项 > 主题 > 文件图标主题打开文件图标主题选择器。
@@ -306,7 +306,7 @@ You can also browse the [VS Code Marketplace](https://marketplace.visualstudio.c
 
 ​​	您还可以直接浏览 VS Code Marketplace 网站以查找可用主题。
 
-The active File Icon theme is persisted in your user [settings](https://code.visualstudio.com/docs/getstarted/settings) (keyboard shortcut Ctrl+,).
+The active File Icon theme is persisted in your user [settings]({{< ref "/GetStarted/Settings" >}}) (keyboard shortcut Ctrl+,).
 
 ​​	活动的文件图标主题保存在您的用户设置中（键盘快捷键 Ctrl+,）。
 
@@ -315,13 +315,13 @@ The active File Icon theme is persisted in your user [settings](https://code.vis
   "workbench.iconTheme": "vs-seti"
 ```
 
-## [Creating your own File Icon Theme 创建您自己的文件图标主题](https://code.visualstudio.com/docs/getstarted/themes#_creating-your-own-file-icon-theme)
+## [Creating your own File Icon Theme 创建您自己的文件图标主题]({{< ref "/GetStarted/Themes#_creating-your-own-file-icon-theme" >}})
 
 You can create your own File Icon Theme from icons (preferably SVG), see the [File Icon Theme](https://code.visualstudio.com/api/extension-guides/file-icon-theme) topic in our Extension API section for details.
 
 ​​	您可以使用图标（最好是 SVG）创建自己的文件图标主题，有关详细信息，请参阅扩展 API 部分中的文件图标主题主题。
 
-## [VS Code for the Web](https://code.visualstudio.com/docs/getstarted/themes#_vs-code-for-the-web)
+## [VS Code for the Web]({{< ref "/GetStarted/Themes#_vs-code-for-the-web" >}})
 
 VS Code for the Web provides a free, zero-install VS Code experience running entirely in your browser at [https://vscode.dev](https://vscode.dev/).
 
@@ -335,19 +335,19 @@ For instance, you can go to https://vscode.dev/editor/theme/sdras.night-owl to e
 
 ​​	例如，您可以访问 https://vscode.dev/editor/theme/sdras.night-owl 来体验 Night Owl 主题，而无需经历下载和安装过程。
 
-You can learn more about previewing and sharing themes with VS Code for the Web in its [documentation](https://code.visualstudio.com/docs/editor/vscode-web#_themes).
+You can learn more about previewing and sharing themes with VS Code for the Web in its [documentation]({{< ref "/UserGuide/VSCodefortheWeb#_themes" >}}).
 
 ​​	您可以在其文档中了解有关在 VS Code for the Web 中预览和共享主题的更多信息。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/getstarted/themes#_next-steps)
+## [Next steps 后续步骤]({{< ref "/GetStarted/Themes#_next-steps" >}})
 
 Themes are just one way to customize VS Code. If you'd like to learn more about VS Code customization and extensibility, try these topics:
 
 ​​	主题只是自定义 VS Code 的一种方式。如果您想了解有关 VS Code 自定义和可扩展性的更多信息，请尝试以下主题：
 
-- [Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences through user and workspace settings.
+- [Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences through user and workspace settings.
   设置 - 了解如何通过用户和工作区设置将 VS Code 配置为您的首选项。
-- [Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) - Add additional snippets to your favorite language.
+- [Snippets]({{< ref "/UserGuide/Snippets" >}}) - Add additional snippets to your favorite language.
   代码片段 - 向您喜欢的语言添加其他代码片段。
 - [Extension API](https://code.visualstudio.com/api) - Learn about other ways to extend VS Code.
   扩展 API - 了解扩展 VS Code 的其他方法。

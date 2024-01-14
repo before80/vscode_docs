@@ -18,7 +18,7 @@ Get started with C++ in Visual Studio Code by watching these introductory videos
 
 ​​​	观看这些入门视频，开始在 Visual Studio Code 中使用 C++！这些视频旨在帮助您设置 C++ IntelliSense，并在 VS Code 中构建和调试 C++ 项目。观看这些快速教程后，您将能够享受 VS Code 丰富的 C++ 功能集。
 
-## [Getting started with C++ in 5 minutes 5 分钟开始使用 C++](https://code.visualstudio.com/docs/cpp/introvideos-cpp#_getting-started-with-c-in-5-minutes)
+## [Getting started with C++ in 5 minutes 5 分钟开始使用 C++]({{< ref "/C/IntroVideos#_getting-started-with-c-in-5-minutes" >}})
 
 This video shows you how to install the C/C++ extension and a C++ compiler. You then learn how to run and debug your code by using the run or debug play button.
 
@@ -28,7 +28,7 @@ This video shows you how to install the C/C++ extension and a C++ compiler. You 
 
 
 
-## [Configure C++ IntelliSense 配置 C++ IntelliSense](https://code.visualstudio.com/docs/cpp/introvideos-cpp#_configure-c-intellisense)
+## [Configure C++ IntelliSense 配置 C++ IntelliSense]({{< ref "/C/IntroVideos#_configure-c-intellisense" >}})
 
 This video walks you through the steps to configure C++ IntelliSense for your project.
 
@@ -38,7 +38,7 @@ This video walks you through the steps to configure C++ IntelliSense for your pr
 
 
 
-## [Build a C++ project 构建 C++ 项目](https://code.visualstudio.com/docs/cpp/introvideos-cpp#_build-a-c-project)
+## [Build a C++ project 构建 C++ 项目]({{< ref "/C/IntroVideos#_build-a-c-project" >}})
 
 Learn how to build C++ projects in VS Code by customizing your C++ build tasks.
 
@@ -48,7 +48,7 @@ Learn how to build C++ projects in VS Code by customizing your C++ build tasks.
 
 
 
-## [Debug a C++ project 调试 C++ 项目](https://code.visualstudio.com/docs/cpp/introvideos-cpp#_debug-a-c-project)
+## [Debug a C++ project 调试 C++ 项目]({{< ref "/C/IntroVideos#_debug-a-c-project" >}})
 
 This video shows you how to customize debug configurations for your C++ project and start a C++ debugging session in VS Code.
 
@@ -58,9 +58,9 @@ This video shows you how to customize debug configurations for your C++ project 
 
 
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/introvideos-cpp#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/IntroVideos#_next-steps" >}})
 
-- Learn about all the [C++ editing features](https://code.visualstudio.com/docs/cpp/cpp-ide) available in VS Code.
+- Learn about all the [C++ editing features]({{< ref "/C/Editing" >}}) available in VS Code.
   了解 VS Code 中提供的所有 C++ 编辑功能。
 
 - Check out the Hello World tutorials for getting started with C++ for your toolset and platform:
@@ -69,12 +69,12 @@ This video shows you how to customize debug configurations for your C++ project 
   查看 Hello World 教程，开始使用适用于您的工具集和平台的 C++：
 
   - [GCC on Windows
-    Windows 上的 GCC](https://code.visualstudio.com/docs/cpp/config-mingw)
+    Windows 上的 GCC]({{< ref "/C/GCConWindows" >}})
   - [Microsoft C++ on Windows
-    Windows 上的 Microsoft C++](https://code.visualstudio.com/docs/cpp/config-msvc)
+    Windows 上的 Microsoft C++]({{< ref "/C/MicrosoftConWindows" >}})
   - [GCC on Linux
-    Linux 上的 GCC](https://code.visualstudio.com/docs/cpp/config-linux)
+    Linux 上的 GCC]({{< ref "/C/GCConLinux" >}})
   - [GCC on Windows Subsystem For Linux
-    Linux 子系统上的 GCC for Windows](https://code.visualstudio.com/docs/cpp/config-wsl)
+    Linux 子系统上的 GCC for Windows]({{< ref "/C/GCConWindowsSubsystemforLinux" >}})
   - [Clang/LLVM on macOS
-    macOS 上的 Clang/LLVM](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+    macOS 上的 Clang/LLVM]({{< ref "/C/ClangonmacOS" >}})

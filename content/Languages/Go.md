@@ -32,7 +32,7 @@ This article describes only a subset of the features the Go extension provides. 
 
 ​​	本文仅介绍 Go 扩展提供的一部分功能。有关受支持功能的完整最新列表，请参阅扩展的文档。
 
-## [IntelliSense](https://code.visualstudio.com/docs/languages/go#_intellisense)
+## [IntelliSense]({{< ref "/Languages/Go#_intellisense" >}})
 
 ![IntelliSense](./Go_img/completion-signature-help.gif)
 
@@ -40,7 +40,7 @@ IntelliSense features are provided by the Go language server, [gopls](https://go
 
 ​​	IntelliSense 功能由 Go 团队维护的 Go 语言服务器 gopls 提供。您可以使用 `gopls` 设置配置 `gopls` 的行为。
 
-### [Semantic syntax highlighting 语义语法突出显示](https://code.visualstudio.com/docs/languages/go#_semantic-syntax-highlighting)
+### [Semantic syntax highlighting 语义语法突出显示]({{< ref "/Languages/Go#_semantic-syntax-highlighting" >}})
 
 For better syntax highlighting than the default TextMate-based syntax highlighting, we recommend enabling [semantic highlighting](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide) by turning on Gopls' `ui.semanticTokens` setting.
 
@@ -50,7 +50,7 @@ For better syntax highlighting than the default TextMate-based syntax highlighti
 "gopls": { "ui.semanticTokens": true }
 ```
 
-### [Auto completions 自动完成](https://code.visualstudio.com/docs/languages/go#_auto-completions)
+### [Auto completions 自动完成]({{< ref "/Languages/Go#_auto-completions" >}})
 
 As you type in a Go file, you can see IntelliSense providing you with suggested completions. This even works for members in current, imported, and not yet imported packages. Just type any package name followed by `.`, and you will get suggestions for the corresponding package members.
 
@@ -60,13 +60,13 @@ As you type in a Go file, you can see IntelliSense providing you with suggested 
 >
 > ​​	提示：使用 Ctrl+Space 手动触发建议。
 
-### [Hover information 悬停信息](https://code.visualstudio.com/docs/languages/go#_hover-information)
+### [Hover information 悬停信息]({{< ref "/Languages/Go#_hover-information" >}})
 
 Hovering on any variable, function, or struct will give you information on that item such as documentation, signature, etc.
 
 ​​	将鼠标悬停在任何变量、函数或结构上，都会为您提供有关该项的信息，例如文档、签名等。
 
-### [Signature help 签名帮助](https://code.visualstudio.com/docs/languages/go#_signature-help)
+### [Signature help 签名帮助]({{< ref "/Languages/Go#_signature-help" >}})
 
 When you open the `(` while calling a function, a pop-up provides signature help for the function. As you keep typing the parameters, the hint (underline) moves to the next parameter.
 
@@ -76,7 +76,7 @@ When you open the `(` while calling a function, a pop-up provides signature help
 >
 > ​​	提示：当光标位于函数调用中的 `()` 内时，使用 Ctrl+Shift+Space 手动触发签名帮助。
 
-## [Code navigation 代码导航](https://code.visualstudio.com/docs/languages/go#_code-navigation)
+## [Code navigation 代码导航]({{< ref "/Languages/Go#_code-navigation" >}})
 
 Code Navigation features are available in the context menu in the editor.
 
@@ -110,7 +110,7 @@ You can also navigate back and forth between a Go file and its test implementati
 
 ​​	您还可以使用 Go: 切换测试文件命令在 Go 文件及其测试实现之间来回导航。
 
-## [Build and diagnose 构建和诊断](https://code.visualstudio.com/docs/languages/go#_build-and-diagnose)
+## [Build and diagnose 构建和诊断]({{< ref "/Languages/Go#_build-and-diagnose" >}})
 
 The Go language server (`gopls`) detects build and vet errors found on the workspace. The errors and warnings from running any/all of the above will be shown red/green squiggly lines in the editor. These diagnostics also show up in the **Problems** panel (**View** > **Problems**).
 
@@ -120,7 +120,7 @@ You can add additional lint checks using the `go.lintOnSave` setting and configu
 
 ​​	您可以使用 `go.lintOnSave` 设置添加其他 lint 检查，并使用 `go.lintTool` 设置配置您选择的 linting 工具（ `staticcheck` 、 `golangci-lint` 或 `revive` ）。
 
-## [Formatting 格式化](https://code.visualstudio.com/docs/languages/go#_formatting)
+## [Formatting 格式化]({{< ref "/Languages/Go#_formatting" >}})
 
 You can format your Go file using Shift+Alt+F or by running the **Format Document** command from the Command Palette or the context menu in the editor.
 
@@ -156,7 +156,7 @@ Formatting is provided by `gopls`. If you want `gofumpt`-style formatting, you c
 }
 ```
 
-## [Test 测试](https://code.visualstudio.com/docs/languages/go#_test)
+## [Test 测试]({{< ref "/Languages/Go#_test" >}})
 
 The VS Code [Test UI](https://code.visualstudio.com/api/extension-guides/testing) and editor [CodeLens](https://code.visualstudio.com/blogs/2017/02/12/code-lens-roundup) elements allow users to easily run tests, benchmarks, profiles for a given function, file, package, or workspace.
 
@@ -193,7 +193,7 @@ You can configure the extension to run tests and compute test coverage using:
 - `go.coverOnSave`
 - `go.testFlags`
 
-## [Import packages 导入包](https://code.visualstudio.com/docs/languages/go#_import-packages)
+## [Import packages 导入包]({{< ref "/Languages/Go#_import-packages" >}})
 
 The extension organizes imports, and removes unused imports by default. For different behavior, you can override per-language default settings following [these instructions](https://github.com/golang/vscode-go/wiki/advanced#formatting-code-and-organizing-imports).
 
@@ -203,19 +203,19 @@ Run the command **Go: Add Import** to get a list of packages that can be importe
 
 ​​	运行命令 Go: Add Import 以获取可导入到 Go 文件的包列表。选择一个，它将添加到 Go 文件的导入块中。
 
-## [Refactoring 重构](https://code.visualstudio.com/docs/languages/go#_refactoring)
+## [Refactoring 重构]({{< ref "/Languages/Go#_refactoring" >}})
 
 Select the area for refactoring (for example variable, function body, etc.). Click on the Code Action light bulb icon that appears in the selected area, or select **Refactoring...** or **Rename Symbol** (F2) from the VS Code context menu.
 
 ​​	选择要重构的区域（例如变量、函数体等）。单击选定区域中显示的代码操作灯泡图标，或从 VS Code 上下文菜单中选择重构...或重命名符号 (F2)。
 
-## [Debugging 调试](https://code.visualstudio.com/docs/languages/go#_debugging)
+## [Debugging 调试]({{< ref "/Languages/Go#_debugging" >}})
 
 The Go extension lets you debug Go code by utilizing the [Delve](https://github.com/go-delve/delve) debugger.
 
 ​​	Go 扩展允许您通过利用 Delve 调试器来调试 Go 代码。
 
-Read [Debug Go programs in VS Code](https://github.com/golang/vscode-go/wiki/debugging) for setup steps, supported features, configurations, information on remote debugging and a troubleshooting guide. For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging).
+Read [Debug Go programs in VS Code](https://github.com/golang/vscode-go/wiki/debugging) for setup steps, supported features, configurations, information on remote debugging and a troubleshooting guide. For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [VS Code debugging]({{< ref "/UserGuide/Debugging" >}}).
 
 ​​	阅读 VS Code 中的调试 Go 程序以了解设置步骤、支持的功能、配置、有关远程调试的信息和故障排除指南。有关检查变量、设置断点和其他不依赖于语言的活动等常规调试功能，请查看 VS Code 调试。
 
@@ -236,7 +236,7 @@ Some features unique to Go are:
 - Experimental function call, core inspection, Mozilla `rr` support
   实验性函数调用、核心检查、Mozilla `rr` 支持
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/languages/go#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Languages/Go#_next-steps" >}})
 
 This has been a brief overview showing the Go extension features within VS Code. For more information, see the details provided in the Go extension [README](https://github.com/golang/vscode-go/blob/master/README.md).
 
@@ -254,9 +254,9 @@ If you'd like to learn more about VS Code, try these topics:
 
 ​​	如果您想详细了解 VS Code，请尝试以下主题：
 
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - A quick introduction to the basics of the VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - A quick introduction to the basics of the VS Code editor.
   基本编辑 - VS Code 编辑器的基础知识快速入门。
-- [Install an Extension](https://code.visualstudio.com/docs/editor/extension-marketplace) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).
+- [Install an Extension]({{< ref "/UserGuide/ExtensionMarketplace" >}}) - Learn about other extensions are available in the [Marketplace](https://marketplace.visualstudio.com/vscode).
   安装扩展 - 了解市场中提供的其他扩展。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。

@@ -18,7 +18,7 @@ You can choose whether to develop a container-based service in the **local envir
 
 ​​	您可以选择在本地环境或远程环境中开发基于容器的服务。本地环境是您的开发人员工作站的操作系统；使用本地环境意味着您使用安装在工作站上的 Docker 构建和运行服务容器。Docker 支持 Windows、macOS 和各种 Linux 发行版；有关系统和硬件要求，请参阅 Docker 安装页面。
 
-[A remote development environment](https://code.visualstudio.com/docs/remote/remote-overview) is different from your developer workstation. It can be a remote machine accessible via SSH, a virtual machine running on your developer workstation, or a development container. A remote environment can have advantages over the local environment, the main one being the ability to use the same operating system during development, and when your service is running in production. To use a remote environment, you need to ensure that `docker` command (Docker CLI) [is available and functional within that environment](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_enabling-docker-cli-inside-a-remote-development-environment).
+[A remote development environment]({{< ref "/Remote/Overview" >}}) is different from your developer workstation. It can be a remote machine accessible via SSH, a virtual machine running on your developer workstation, or a development container. A remote environment can have advantages over the local environment, the main one being the ability to use the same operating system during development, and when your service is running in production. To use a remote environment, you need to ensure that `docker` command (Docker CLI) [is available and functional within that environment]({{< ref "/Docker/Chooseadevenvironment#_enabling-docker-cli-inside-a-remote-development-environment" >}}).
 
 ​​	远程开发环境不同于您的开发人员工作站。它可以是通过 SSH 访问的远程计算机、在您的开发人员工作站上运行的虚拟机或开发容器。远程环境可能优于本地环境，主要优点是能够在开发期间和服务在生产中运行时使用相同的操作系统。要使用远程环境，您需要确保 `docker` 命令（Docker CLI）在该环境中可用且可运行。
 
@@ -26,7 +26,7 @@ The second important choice is whether to debug your service running as an ordin
 
 ​​	第二个重要选择是调试作为普通进程运行的服务，还是调试在容器中运行的服务。
 
-## [Guidelines for choosing a development environment 选择开发环境的准则](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_guidelines-for-choosing-a-development-environment)
+## [Guidelines for choosing a development environment 选择开发环境的准则]({{< ref "/Docker/Chooseadevenvironment#_guidelines-for-choosing-a-development-environment" >}})
 
 1. Use the local environment when you are not concerned about:
 
@@ -37,11 +37,11 @@ The second important choice is whether to debug your service running as an ordin
    - Installing necessary tools and dependencies on top of your local environment.
      在本地环境之上安装必要的工具和依赖项。
 
-2. Consider using a [development container](https://code.visualstudio.com/docs/devcontainers/containers) first, if you need a remote environment.
+2. Consider using a [development container]({{< ref "/DevContainers/Overview" >}}) first, if you need a remote environment.
 
    ​​	如果您需要远程环境，请考虑首先使用开发容器。
 
-   - On Windows, using [Windows Subsystem for Linux (WSL)](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_windows-subsystem-for-linux) is good option.
+   - On Windows, using [Windows Subsystem for Linux (WSL)]({{< ref "/Docker/Chooseadevenvironment#_windows-subsystem-for-linux" >}}) is good option.
      在 Windows 上，使用适用于 Linux 的 Windows 子系统 (WSL) 是一个不错的选择。
 
 3. Debugging your service running in a container is possible, but brings additional complexity. Use normal debugging by default, and debugging in the container when you need it.
@@ -52,13 +52,13 @@ The second important choice is whether to debug your service running as an ordin
 >
 > ​​	Docker 扩展本机支持基于 .NET、Node.js 和 Python 的服务的容器调试。
 
-## [Enabling Docker CLI inside a remote development environment 在远程开发环境中启用 Docker CLI](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_enabling-docker-cli-inside-a-remote-development-environment)
+## [Enabling Docker CLI inside a remote development environment 在远程开发环境中启用 Docker CLI]({{< ref "/Docker/Chooseadevenvironment#_enabling-docker-cli-inside-a-remote-development-environment" >}})
 
 The way to enable Docker CLI inside a remote development environment varies depending on the type of remote environment you choose.
 
 ​​	在远程开发环境中启用 Docker CLI 的方法取决于您选择的远程环境类型。
 
-### [Development container 开发容器](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_development-container)
+### [Development container 开发容器]({{< ref "/Docker/Chooseadevenvironment#_development-container" >}})
 
 For a development container, you should redirect the Docker CLI inside the container to the Docker daemon running on the local machine.
 
@@ -94,7 +94,7 @@ Next, ensure that Docker socket is mapped into the development container (in `.d
     ...
 ```
 
-### [Windows Subsystem for Linux 适用于 Linux 的 Windows 子系统](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_windows-subsystem-for-linux)
+### [Windows Subsystem for Linux 适用于 Linux 的 Windows 子系统]({{< ref "/Docker/Chooseadevenvironment#_windows-subsystem-for-linux" >}})
 
 Windows Subsystem for Linux represents a great choice for container-based service development on Windows. [Windows Subsystem for Linux version 2 (WSL 2)](https://learn.microsoft.com/windows/wsl/compare-versions#whats-new-in-wsl-2) is strongly recommended. Docker Desktop for Windows has been updated to work with WSL 2 and has a graphical setting to enable Docker CLI inside WSL 2 distribution(s):
 
@@ -110,7 +110,7 @@ Windows Subsystem for Linux represents a great choice for container-based servic
 >
 > ​​	旧版本的 WSL（WSL 1）不提供一种简单的方法来连接到主机上的 Docker 守护程序。
 
-### [Remote machine 远程计算机](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_remote-machine)
+### [Remote machine 远程计算机]({{< ref "/Docker/Chooseadevenvironment#_remote-machine" >}})
 
 The recommended way to enable container development with a remote machine is to do [a full Docker installation](https://docs.docker.com/install/) on the machine, including Docker daemon.
 
@@ -146,17 +146,17 @@ After Docker is installed and working on the remote machine, you can use VS Code
 >
 > ​​	注意：如果您使用 Docker 扩展来构建 Docker 映像并具有源代码，则上述方法可能意味着您的源征用在远程主机上，而不是在您的开发人员工作站上。如果您仅将 Docker 扩展用于 Docker Explorer 功能，则可以忽略此内容。
 
-### [Local Linux VM 本地 Linux VM](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_local-linux-vm)
+### [Local Linux VM 本地 Linux VM]({{< ref "/Docker/Chooseadevenvironment#_local-linux-vm" >}})
 
 To use a Linux virtual machine running on your developer workstation, you should [install Docker](https://docs.docker.com/install/) on the VM in the same way as you would install it on a remote machine, and use the [VS Code Remote-SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension to connect to the VM.
 
 ​​	若要使用在开发人员工作站上运行的 Linux 虚拟机，您应在 VM 上安装 Docker，安装方式与在远程计算机上安装相同，并使用 VS Code Remote-SSH 扩展连接到 VM。
 
-Alternatively, you can install just the Docker CLI inside your development environment and point the CLI to the Docker host (engine) running on the developer workstation using the [Docker context mechanism](https://docs.docker.com/engine/context/working-with-contexts/). The main concern with this approach is to ensure network connectivity from the VM to the Docker engine on the host, and to do so in a secure way. One option is to use [SSH tunneling](https://code.visualstudio.com/docs/containers/ssh) or [Remote - Tunnels](https://code.visualstudio.com/docs/remote/tunnels) to the developer workstation. Another option is to [have the Docker engine listen on an HTTPS port](https://docs.docker.com/engine/security/https/). You need to be proficient with SSH and public-key infrastructure (PKI) to use the host Docker engine from the Docker CLI running inside the VM. For most users, we recommend full Docker installation inside the virtual machine.
+Alternatively, you can install just the Docker CLI inside your development environment and point the CLI to the Docker host (engine) running on the developer workstation using the [Docker context mechanism](https://docs.docker.com/engine/context/working-with-contexts/). The main concern with this approach is to ensure network connectivity from the VM to the Docker engine on the host, and to do so in a secure way. One option is to use [SSH tunneling](https://code.visualstudio.com/docs/containers/ssh) or [Remote - Tunnels]({{< ref "/Remote/Tunnels" >}}) to the developer workstation. Another option is to [have the Docker engine listen on an HTTPS port](https://docs.docker.com/engine/security/https/). You need to be proficient with SSH and public-key infrastructure (PKI) to use the host Docker engine from the Docker CLI running inside the VM. For most users, we recommend full Docker installation inside the virtual machine.
 
 ​​	或者，您可以在开发环境中仅安装 Docker CLI，并使用 Docker 上下文机制将 CLI 指向在开发人员工作站上运行的 Docker 主机（引擎）。这种方法的主要问题是确保从 VM 到主机上的 Docker 引擎的网络连接，并以安全的方式进行。一种选择是使用 SSH 隧道或远程隧道到开发人员工作站。另一种选择是让 Docker 引擎侦听 HTTPS 端口。您需要精通 SSH 和公钥基础设施 (PKI) 才能从在 VM 中运行的 Docker CLI 使用主机 Docker 引擎。对于大多数用户，我们建议在虚拟机中进行完全的 Docker 安装。
 
-## [Debugging in a container 在容器中调试](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_debugging-in-a-container)
+## [Debugging in a container 在容器中调试]({{< ref "/Docker/Chooseadevenvironment#_debugging-in-a-container" >}})
 
 The Docker extension supports debugging .NET and Node.js-based services running inside a container. Other programming languages are not supported at this time.
 
@@ -175,17 +175,17 @@ Because of the concerns above, it is generally recommended to use regular debugg
 
 ​​	由于上述问题，通常建议使用常规调试，并在必要时在容器中使用调试。
 
-For more information about how to set up debugging inside a container see [ASP.NET Core quickstart](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core), [Node.js quickstart](https://code.visualstudio.com/docs/containers/quickstart-node), and [Docker extension task properties](https://code.visualstudio.com/docs/containers/reference) (`docker-build` and `docker-run` tasks).
+For more information about how to set up debugging inside a container see [ASP.NET Core quickstart]({{< ref "/Docker/ASP_NETCore" >}}), [Node.js quickstart]({{< ref "/Docker/Node_js" >}}), and [Docker extension task properties]({{< ref "/Docker/Customize" >}}) (`docker-build` and `docker-run` tasks).
 
 ​​	有关如何在容器中设置调试的详细信息，请参阅 ASP.NET Core 快速入门、Node.js 快速入门和 Docker 扩展任务属性（ `docker-build` 和 `docker-run` 任务）。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/choosing-dev-environment#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/Chooseadevenvironment#_next-steps" >}})
 
 Read on to learn more about
 
 ​​	继续阅读以详细了解
 
 - [Build and run a Node.js app in a container
-  在容器中构建并运行 Node.js 应用](https://code.visualstudio.com/docs/containers/quickstart-node)
+  在容器中构建并运行 Node.js 应用]({{< ref "/Docker/Node_js" >}})
 - [Build and run a ASP.NET Core app in a container
-  在容器中生成并运行 ASP.NET Core 应用](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)
+  在容器中生成并运行 ASP.NET Core 应用]({{< ref "/Docker/ASP_NETCore" >}})

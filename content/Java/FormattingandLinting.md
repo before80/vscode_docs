@@ -22,7 +22,7 @@ In addition, there are also the [Checkstyle for Java](https://marketplace.visual
 
 ​​​	此外，还有 Checkstyle for Java 和 SonarLint 扩展，它们提供实时 linting 和代码分析功能。
 
-## [Formatter 格式化程序](https://code.visualstudio.com/docs/java/java-linting#_formatter)
+## [Formatter 格式化程序]({{< ref "/Java/FormattingandLinting#_formatter" >}})
 
 You can use **Format Document** command to format a Java file. If you didn't specify a formatter profile before, the Java file will be formatted using default settings.
 
@@ -32,7 +32,7 @@ You can use **Format Document** command to format a Java file. If you didn't spe
 
 
 
-### [Applying formatter settings 应用格式化程序设置](https://code.visualstudio.com/docs/java/java-linting#_applying-formatter-settings)
+### [Applying formatter settings 应用格式化程序设置]({{< ref "/Java/FormattingandLinting#_applying-formatter-settings" >}})
 
 You can easily apply formatter settings from an existing formatter profile in Eclipse scheme. For example, if you want to apply [Google Style](https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml) for your Java project, then you can set the following property in `settings.json`:
 
@@ -54,7 +54,7 @@ After setting the formatter profile, the **Format Document** command will use th
 
 ​​​	设置格式化程序配置文件后，“格式化文档”命令将使用特定配置文件来格式化您的 Java 文件。
 
-### [Editing formatter settings 编辑格式化程序设置](https://code.visualstudio.com/docs/java/java-linting#_editing-formatter-settings)
+### [Editing formatter settings 编辑格式化程序设置]({{< ref "/Java/FormattingandLinting#_editing-formatter-settings" >}})
 
 The [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) provides an editor to help users edit an existing formatter profile. You can open the editor with the command **Java: Open Java Formatter Settings with Preview**. In the editor, you can change the formatter settings and preview the effects. After saving the current editor, the changes will be saved to the formatter profile.
 
@@ -84,13 +84,13 @@ You can also undo and redo changes.
 
 
 
-## [SonarLint](https://code.visualstudio.com/docs/java/java-linting#_sonarlint)
+## [SonarLint]({{< ref "/Java/FormattingandLinting#_sonarlint" >}})
 
 [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode) is an easy-to-use extension that helps you find and fix bugs and security issues as you code. The extension runs in the background and, just like a spell checker, highlights source code issues that pose a quality or security concern. The extension not only tells you what the issue is but also provides in-context guidance on why it's harmful and how to fix it, with examples. The extension supports over [500+ Java rules](https://rules.sonarsource.com/java) and includes several [Quick Fixes](https://rules.sonarsource.com/java/quickfix) to automatically fix certain quality issues.
 
 ​​​	SonarLint 是一个易于使用的扩展，可帮助您在编码时查找并修复错误和安全问题。该扩展在后台运行，就像拼写检查器一样，突出显示会对质量或安全性造成影响的源代码问题。该扩展不仅会告诉您问题是什么，还会提供有关为什么它有害以及如何修复它的上下文指导，并提供示例。该扩展支持 500 多条 Java 规则，并包含多个快速修复程序，可自动修复某些质量问题。
 
-### [Code analysis on the fly 即时代码分析](https://code.visualstudio.com/docs/java/java-linting#_code-analysis-on-the-fly)
+### [Code analysis on the fly 即时代码分析]({{< ref "/Java/FormattingandLinting#_code-analysis-on-the-fly" >}})
 
 Issues are highlighted directly in the editor with hovers to provide detailed explanations.
 
@@ -104,7 +104,7 @@ Issues found in the opened file can also be reviewed through the Problems panel 
 
 ​​​	在打开的文件中发现的问题也可以通过 VS Code 的“问题”面板进行查看。在适用时，会提及次要代码位置，以便您可以了解问题源自何处（例如，导致错误的代码路径）。
 
-### [Rule documentation and remediation guidance 规则文档和补救指南](https://code.visualstudio.com/docs/java/java-linting#_rule-documentation-and-remediation-guidance)
+### [Rule documentation and remediation guidance 规则文档和补救指南]({{< ref "/Java/FormattingandLinting#_rule-documentation-and-remediation-guidance" >}})
 
 For any issues detected, SonarLint provides full documentation about the rule that was violated, and the best coding practice it relates to. This allows you to understand why an issue is raised, and how to fix it.
 
@@ -114,7 +114,7 @@ For any issues detected, SonarLint provides full documentation about the rule th
 
 
 
-### [Enabling more quality and security rules 启用更多质量和安全规则](https://code.visualstudio.com/docs/java/java-linting#_enabling-more-quality-and-security-rules)
+### [Enabling more quality and security rules 启用更多质量和安全规则]({{< ref "/Java/FormattingandLinting#_enabling-more-quality-and-security-rules" >}})
 
 By default, SonarLint provides a wide array of rules to detect bugs and vulnerabilities. More checks can be enabled through the **SonarLint Rules** view.
 
@@ -128,7 +128,7 @@ For more details about the [SonarLint for VS Code extension](https://marketplace
 
 ​​​	有关 SonarLint for VS Code 扩展的更多详细信息，请访问 SonarLint 网站。
 
-## [Checkstyle](https://code.visualstudio.com/docs/java/java-linting#_checkstyle)
+## [Checkstyle]({{< ref "/Java/FormattingandLinting#_checkstyle" >}})
 
 With the [Checkstyle for Java](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-checkstyle) extension, you can use either existing `checkstyle` configurations (Google's or Sun's Check) or your own customized files for your project. When editing a Java file, the extension will check the file format and provide Quick Fixes if possible on the fly.
 
@@ -162,7 +162,7 @@ The Problems panel will open when you click the Checkstyle status icon in the St
 
 ​​​	设置 Checkstyle 配置文件
 
-### [Set Checkstyle configuration file 要设置配置文件，请右键单击 文件，然后选择设置 Checkstyle 配置文件。](https://code.visualstudio.com/docs/java/java-linting#_set-checkstyle-configuration-file)
+### [Set Checkstyle configuration file 要设置配置文件，请右键单击 文件，然后选择设置 Checkstyle 配置文件。]({{< ref "/Java/FormattingandLinting#_set-checkstyle-configuration-file" >}})
 
 To set the configuration file, right-click the `.xml` file and select **Set the Checkstyle Configuration File**.
 
@@ -210,7 +210,7 @@ In addition, you can also bring any 3rd-party modules for Checkstyle by configur
 "java.checkstyle.modules": [ "${workspaceFolder}/src/main/resources/sevntu-checks-1.35.0.jar" ]
 ```
 
-### [Check the style and fix the violations 检查样式并修复违规行为](https://code.visualstudio.com/docs/java/java-linting#_check-the-style-and-fix-the-violations)
+### [Check the style and fix the violations 检查样式并修复违规行为]({{< ref "/Java/FormattingandLinting#_check-the-style-and-fix-the-violations" >}})
 
 When editing a Java file, the extension will check the file format and provide Quick Fixes if possible. You can click the lightbulb button in the editor to show the available Quick Fixes.
 

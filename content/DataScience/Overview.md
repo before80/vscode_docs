@@ -14,13 +14,13 @@ draft = false
 
 
 
-You can do all of your data science work within VS Code. Use Jupyter Notebooks and the [Interactive Window](https://code.visualstudio.com/docs/python/jupyter-support-py) to start analyzing and visualizing your data in minutes! Power your Python coding experience with IntelliSense support and build, train, and deploy machine learning models to the cloud or the edge with Azure Machine Learning service.
+You can do all of your data science work within VS Code. Use Jupyter Notebooks and the [Interactive Window]({{< ref "/Python/PythonInteractive" >}}) to start analyzing and visualizing your data in minutes! Power your Python coding experience with IntelliSense support and build, train, and deploy machine learning models to the cloud or the edge with Azure Machine Learning service.
 
 ​​	您可以在 VS Code 中完成所有数据科学工作。使用 Jupyter Notebooks 和交互式窗口，即可在数分钟内开始分析和可视化数据！利用 IntelliSense 支持增强您的 Python 编码体验，并使用 Azure 机器学习服务构建、训练和部署机器学习模型到云或边缘。
 
 ![Preview of Jupyter Notebooks in VS Code](./Overview_img/jupyter-notebook-preview.png)
 
-## [Extensions 扩展](https://code.visualstudio.com/docs/datascience/overview#_extensions)
+## [Extensions 扩展]({{< ref "/DataScience/Overview#_extensions" >}})
 
 The VS Code Marketplace offers a family of extensions that provide a first-class data science experience for Python data science. In order to get started with Python, Microsoft recommends the following extensions:
 
@@ -61,7 +61,7 @@ Azure Machine Learning
 
 ms-toolsai
 
-### [Build an extension for notebooks 为笔记本构建扩展](https://code.visualstudio.com/docs/datascience/overview#_build-an-extension-for-notebooks)
+### [Build an extension for notebooks 为笔记本构建扩展]({{< ref "/DataScience/Overview#_build-an-extension-for-notebooks" >}})
 
 We welcome (and encourage you to!) build Visual Studio Code extensions for your favorite notebooks tools. After going through [Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension) tutorial, check out some of the extensions that augment the notebooks development experience in VS Code:
 
@@ -109,9 +109,9 @@ You can also contribute directly to the [Jupyter extension](https://github.com/m
 
 ​​	您还可以直接为 Jupyter 扩展做出贡献。
 
-## [Data Science profile template 数据科学配置文件模板](https://code.visualstudio.com/docs/datascience/overview#_data-science-profile-template)
+## [Data Science profile template 数据科学配置文件模板]({{< ref "/DataScience/Overview#_data-science-profile-template" >}})
 
-[Profiles](https://code.visualstudio.com/docs/editor/profiles) let you quickly switch your extensions, settings, and UI layout depending on your current project or task. To help you get started with Data Science in VS Code, you can use the [Data Science profile template](https://code.visualstudio.com/docs/editor/profiles#_data-science-profile-template), which is a curated profile with useful extensions, settings, and snippets. You can use a profile template as is or use it as a starting point to customize further for your own workflows.
+[Profiles]({{< ref "/UserGuide/Profiles" >}}) let you quickly switch your extensions, settings, and UI layout depending on your current project or task. To help you get started with Data Science in VS Code, you can use the [Data Science profile template]({{< ref "/UserGuide/Profiles#_data-science-profile-template" >}}), which is a curated profile with useful extensions, settings, and snippets. You can use a profile template as is or use it as a starting point to customize further for your own workflows.
 
 ​​	配置文件允许您根据当前项目或任务快速切换扩展、设置和 UI 布局。为了帮助您开始在 VS Code 中使用数据科学，您可以使用数据科学配置文件模板，这是一个经过策划的配置文件，其中包含有用的扩展、设置和代码段。您可以按原样使用配置文件模板，或将其用作起点，以便进一步自定义以适应您自己的工作流。
 
@@ -125,7 +125,7 @@ Once you select a profile template, you can review the settings and extensions, 
 
 ​​	选择配置文件模板后，您可以查看设置和扩展，并删除不想包含在新配置文件中的各个项目。根据模板创建新配置文件后，对设置、扩展或 UI 所做的更改将保留在您的配置文件中。
 
-## [What else can you use notebooks for? 您还可以将笔记本用于什么？](https://code.visualstudio.com/docs/datascience/overview#_what-else-can-you-use-notebooks-for)
+## [What else can you use notebooks for? 您还可以将笔记本用于什么？]({{< ref "/DataScience/Overview#_what-else-can-you-use-notebooks-for" >}})
 
 The support for mixing executable code, equations, visualizations, and rich Markdown makes notebooks useful for breaking down new concepts in a storytelling form. This makes notebooks an exceptional tool for educators and students!
 

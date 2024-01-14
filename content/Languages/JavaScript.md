@@ -20,11 +20,11 @@ Visual Studio Code includes built-in JavaScript IntelliSense, debugging, formatt
 
 ![Working with JavaScript in Visual Studio Code](./JavaScript_img/overview.png)
 
-Most of these features just work out of the box, while some may require basic configuration to get the best experience. This page summarizes the JavaScript features that VS Code ships with. Extensions from the [VS Code Marketplace](https://marketplace.visualstudio.com/) can augment or change most of these built-in features. For a more in-depth guide on how these features work and can be configured, see [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript).
+Most of these features just work out of the box, while some may require basic configuration to get the best experience. This page summarizes the JavaScript features that VS Code ships with. Extensions from the [VS Code Marketplace](https://marketplace.visualstudio.com/) can augment or change most of these built-in features. For a more in-depth guide on how these features work and can be configured, see [Working with JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript" >}}).
 
 ​​	这些功能大多数开箱即用，而有些可能需要基本配置才能获得最佳体验。此页面概述了 VS Code 附带的 JavaScript 功能。VS Code Marketplace 中的扩展可以增强或更改这些内置功能中的大多数。有关这些功能如何工作以及如何配置的更深入指南，请参阅使用 JavaScript。
 
-## [IntelliSense](https://code.visualstudio.com/docs/languages/javascript#_intellisense)
+## [IntelliSense]({{< ref "/Languages/JavaScript#_intellisense" >}})
 
 IntelliSense shows you intelligent code completion, hover information, and signature information so that you can write code more quickly and correctly.
 
@@ -38,11 +38,11 @@ VS Code provides IntelliSense within your JavaScript projects; for many npm libr
 
 ​​	VS Code 在您的 JavaScript 项目中提供 IntelliSense；适用于许多 npm 库，例如 `React` 、 `lodash` 和 `express` ；以及适用于其他平台，例如 `node` 、无服务器或物联网。
 
-See [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) for information about VS Code's JavaScript IntelliSense, how to configure it, and help troubleshooting common IntelliSense problems.
+See [Working with JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript" >}}) for information about VS Code's JavaScript IntelliSense, how to configure it, and help troubleshooting common IntelliSense problems.
 
 ​​	有关 VS Code 的 JavaScript IntelliSense、如何配置它以及帮助解决常见 IntelliSense 问题的详细信息，请参阅使用 JavaScript。
 
-## [JavaScript projects (jsconfig.json) JavaScript 项目 (jsconfig.json)](https://code.visualstudio.com/docs/languages/javascript#_javascript-projects-jsconfigjson)
+## [JavaScript projects (jsconfig.json) JavaScript 项目 (jsconfig.json)]({{< ref "/Languages/JavaScript#_javascript-projects-jsconfigjson" >}})
 
 A [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig) file defines a JavaScript project in VS Code. While `jsconfig.json` files are not required, you will want to create one in cases such as:
 
@@ -71,7 +71,7 @@ To define a basic JavaScript project, add a `jsconfig.json` at the root of your 
 }
 ```
 
-See [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) for more advanced `jsconfig.json` configuration.
+See [Working with JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript" >}}) for more advanced `jsconfig.json` configuration.
 
 ​​	有关更高级的 `jsconfig.json` 配置，请参阅使用 JavaScript。
 
@@ -79,9 +79,9 @@ See [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-
 >
 > ​​	提示：要检查 JavaScript 文件是否属于 JavaScript 项目，只需在 VS Code 中打开该文件并运行 JavaScript：转到项目配置命令。此命令将打开引用 JavaScript 文件的 `jsconfig.json` 。如果该文件不属于任何 `jsconfig.json` 项目，则会显示一条通知。
 
-## [Snippets 代码片段](https://code.visualstudio.com/docs/languages/javascript#_snippets)
+## [Snippets 代码片段]({{< ref "/Languages/JavaScript#_snippets" >}})
 
-VS Code includes basic JavaScript [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) that are suggested as you type;
+VS Code includes basic JavaScript [snippets]({{< ref "/UserGuide/Snippets" >}}) that are suggested as you type;
 
 ​​	VS Code 包括在您键入时建议的基本 JavaScript 代码段；
 
@@ -89,17 +89,17 @@ VS Code includes basic JavaScript [snippets](https://code.visualstudio.com/docs/
 
 
 
-There are many extensions that provide additional snippets, including snippets for popular frameworks such as Redux or Angular. You can even [define your own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
+There are many extensions that provide additional snippets, including snippets for popular frameworks such as Redux or Angular. You can even [define your own snippets]({{< ref "/UserGuide/Snippets" >}}).
 
 ​​	有许多扩展提供其他代码段，包括 Redux 或 Angular 等流行框架的代码段。您甚至可以定义自己的代码段。
 
-> **Tip**: To disable snippets suggestions, set `editor.snippetSuggestions` to `"none"` in your [settings](https://code.visualstudio.com/docs/getstarted/settings) file. The `editor.snippetSuggestions` setting also lets you change where snippets appear in the suggestions: at the top (`"top"`), at the bottom (`"bottom"`), or inlined ordered alphabetically (`"inline"`). The default is `"inline"`.
+> **Tip**: To disable snippets suggestions, set `editor.snippetSuggestions` to `"none"` in your [settings]({{< ref "/GetStarted/Settings" >}}) file. The `editor.snippetSuggestions` setting also lets you change where snippets appear in the suggestions: at the top (`"top"`), at the bottom (`"bottom"`), or inlined ordered alphabetically (`"inline"`). The default is `"inline"`.
 >
 > ​​	提示：要禁用代码段建议，请在您的设置文件中将 `editor.snippetSuggestions` 设置为 `"none"` 。 `editor.snippetSuggestions` 设置还允许您更改代码段在建议中的显示位置：顶部 ( `"top"` )、底部 ( `"bottom"` ) 或内联按字母顺序排列 ( `"inline"` )。默认值为 `"inline"` 。
 
-## [JSDoc support JSDoc 支持](https://code.visualstudio.com/docs/languages/javascript#_jsdoc-support)
+## [JSDoc support JSDoc 支持]({{< ref "/Languages/JavaScript#_jsdoc-support" >}})
 
-VS Code understands many standard [JSDoc](https://jsdoc.app/) annotations, and uses these annotations to provide rich [IntelliSense](https://code.visualstudio.com/docs/languages/javascript#_intellisense). You can optionally even use the type information from JSDoc comments to [type check your JavaScript](https://code.visualstudio.com/docs/languages/javascript#_type-checking).
+VS Code understands many standard [JSDoc](https://jsdoc.app/) annotations, and uses these annotations to provide rich [IntelliSense]({{< ref "/Languages/JavaScript#_intellisense" >}}). You can optionally even use the type information from JSDoc comments to [type check your JavaScript]({{< ref "/Languages/JavaScript#_type-checking" >}}).
 
 ​​	VS Code 了解许多标准 JSDoc 注释，并使用这些注释来提供丰富的 IntelliSense。您甚至可以选择使用 JSDoc 注释中的类型信息来检查 JavaScript 的类型。
 
@@ -119,7 +119,7 @@ To disable JSDoc comment suggestions, set `"javascript.suggest.completeJSDocs": 
 
 ​​	要禁用 JSDoc 注释建议，请设置 `"javascript.suggest.completeJSDocs": false` 。
 
-## [Hover Information 悬停信息](https://code.visualstudio.com/docs/languages/javascript#_hover-information)
+## [Hover Information 悬停信息]({{< ref "/Languages/JavaScript#_hover-information" >}})
 
 Hover over a JavaScript symbol to quickly see its type information and relevant documentation.
 
@@ -131,7 +131,7 @@ The Ctrl+K Ctrl+I keyboard shortcut shows this hover information at the current 
 
 ​​	Ctrl+K Ctrl+I 键盘快捷键可在当前光标位置显示此悬停信息。
 
-## [Signature Help 签名帮助](https://code.visualstudio.com/docs/languages/javascript#_signature-help)
+## [Signature Help 签名帮助]({{< ref "/Languages/JavaScript#_signature-help" >}})
 
 As you write JavaScript function calls, VS Code shows information about the function signature and highlights the parameter that you are currently completing:
 
@@ -143,13 +143,13 @@ Signature help is shown automatically when you type a `(` or `,` within a functi
 
 ​​	在函数调用中键入 `(` 或 `,` 时，会自动显示签名帮助。按 Ctrl+Shift+Space 手动触发签名帮助。
 
-## [Auto imports 自动导入](https://code.visualstudio.com/docs/languages/javascript#_auto-imports)
+## [Auto imports 自动导入]({{< ref "/Languages/JavaScript#_auto-imports" >}})
 
 Automatic imports speed up coding by suggesting available variables throughout your project and its dependencies. When you select one of these suggestions, VS Code automatically adds an import for it to the top of the file.
 
 ​​	自动导入通过建议项目及其依赖项中可用的变量来加快编码速度。当您选择其中一个建议时，VS Code 会自动将导入添加到文件顶部。
 
-Just start typing to see [suggestions](https://code.visualstudio.com/docs/languages/javascript#_intellisense) for all available JavaScript symbols in your current project. Auto import suggestions show where they will be imported from:
+Just start typing to see [suggestions]({{< ref "/Languages/JavaScript#_intellisense" >}}) for all available JavaScript symbols in your current project. Auto import suggestions show where they will be imported from:
 
 ​​	只需开始键入即可查看当前项目中所有可用 JavaScript 符号的建议。自动导入建议显示它们将从何处导入：
 
@@ -173,13 +173,13 @@ To disable auto imports, set `"javascript.suggest.autoImports"` to `false`.
 >
 > ​​	提示：VS Code 尝试推断要使用的最佳导入样式。您可以使用 `javascript.preferences.quoteStyle` 和 `javascript.preferences.importModuleSpecifier` 设置明确配置添加到代码中的导入的首选引号样式和路径样式。
 
-## [Formatting 格式化](https://code.visualstudio.com/docs/languages/javascript#_formatting)
+## [Formatting 格式化]({{< ref "/Languages/JavaScript#_formatting" >}})
 
 VS Code's built-in JavaScript formatter provides basic code formatting with reasonable defaults.
 
 ​​	VS Code 的内置 JavaScript 格式化程序提供具有合理默认值的代码基本格式化。
 
-The `javascript.format.*` [settings](https://code.visualstudio.com/docs/getstarted/settings) configure the built-in formatter. Or, if the built-in formatter is getting in the way, set `"javascript.format.enable"` to `false` to disable it.
+The `javascript.format.*` [settings]({{< ref "/GetStarted/Settings" >}}) configure the built-in formatter. Or, if the built-in formatter is getting in the way, set `"javascript.format.enable"` to `false` to disable it.
 
 ​​	<b>b0</b> 设置配置内置格式化程序。或者，如果内置格式化程序碍事，将 <b>b1</b> 设置为 <b>b2</b> 以禁用它。
 
@@ -187,7 +187,7 @@ For more specialized code formatting styles, try installing one of the JavaScrip
 
 ​​	对于更专业的代码格式化样式，请尝试从 Marketplace 安装一个 JavaScript 格式化扩展。
 
-## [JSX and auto closing tags JSX 和自动闭合标签](https://code.visualstudio.com/docs/languages/javascript#_jsx-and-auto-closing-tags)
+## [JSX and auto closing tags JSX 和自动闭合标签]({{< ref "/Languages/JavaScript#_jsx-and-auto-closing-tags" >}})
 
 All of VS Code's JavaScript features also work with [JSX](https://reactjs.org/docs/introducing-jsx.html):
 
@@ -211,7 +211,7 @@ Set `"javascript.autoClosingTags"` to `false` to disable JSX tag closing.
 
 ​​	将 `"javascript.autoClosingTags"` 设置为 `false` 以禁用 JSX 标签闭合。
 
-## [Code navigation 代码导航](https://code.visualstudio.com/docs/languages/javascript#_code-navigation)
+## [Code navigation 代码导航]({{< ref "/Languages/JavaScript#_code-navigation" >}})
 
 Code navigation lets you quickly navigate JavaScript projects.
 
@@ -235,7 +235,7 @@ You can navigate via symbol search using the **Go to Symbol** commands from the 
 - **Go to Symbol in Workspace** Ctrl+T
   转到工作区中的符号 Ctrl+T
 
-## [Rename 重命名](https://code.visualstudio.com/docs/languages/javascript#_rename)
+## [Rename 重命名]({{< ref "/Languages/JavaScript#_rename" >}})
 
 Press F2 to rename the symbol under the cursor across your JavaScript project:
 
@@ -243,7 +243,7 @@ Press F2 to rename the symbol under the cursor across your JavaScript project:
 
 ![Renaming a variable](./JavaScript_img/rename.png)
 
-## [Refactoring 重构](https://code.visualstudio.com/docs/languages/javascript#_refactoring)
+## [Refactoring 重构]({{< ref "/Languages/JavaScript#_refactoring" >}})
 
 VS Code includes some handy refactorings for JavaScript such as **Extract function** and **Extract constant**. Just select the source code you'd like to extract and then click on the lightbulb in the gutter or press (Ctrl+.) to see available refactorings.
 
@@ -264,7 +264,7 @@ Available refactorings include:
 - Move to new file.
   移至新文件。
 
-See [Refactorings](https://code.visualstudio.com/docs/editor/refactoring) for more information about refactorings and how you can configure keyboard shortcuts for individual refactorings.
+See [Refactorings]({{< ref "/UserGuide/Refactoring" >}}) for more information about refactorings and how you can configure keyboard shortcuts for individual refactorings.
 
 ​​	有关重构的更多信息以及如何为各个重构配置键盘快捷键，请参阅重构。此外，代码操作小部件：包括附近的快速修复（）是一项默认启用的设置，它将激活 Ctrl+.（命令 ID ）所在行中最近的快速修复，无论光标在该行中的什么位置。该命令突出显示将使用快速修复重构或修复的源代码。仍然可以在光标位置激活常规代码操作和非修复重构。
 
@@ -276,7 +276,7 @@ The command highlights the source code that will be refactored or fixed with Qui
 
 ​​	未使用的 JavaScript 代码（例如始终为 true 的语句的 else 块或未引用的导入）在编辑器中会显示为淡出：
 
-## [Unused variables and unreachable code 您可以将光标放在未使用的代码上并触发快速修复命令（Ctrl+。）或单击灯泡，从而快速删除此代码。](https://code.visualstudio.com/docs/languages/javascript#_unused-variables-and-unreachable-code)
+## [Unused variables and unreachable code 您可以将光标放在未使用的代码上并触发快速修复命令（Ctrl+。）或单击灯泡，从而快速删除此代码。]({{< ref "/Languages/JavaScript#_unused-variables-and-unreachable-code" >}})
 
 Unused JavaScript code, such the else block of an `if` statement that is always true or an unreferenced import, is faded out in the editor:
 
@@ -299,7 +299,7 @@ To disable fading out of unused code, set `"editor.showUnused"` to `false`. You 
 },
 ```
 
-## [Organize Imports](https://code.visualstudio.com/docs/languages/javascript#_organize-imports)
+## [Organize Imports]({{< ref "/Languages/JavaScript#_organize-imports" >}})
 
 The **Organize Imports** Source Action sorts the imports in a JavaScript file and removes any unused imports:
 
@@ -323,7 +323,7 @@ Organize imports can also be done automatically when you save a JavaScript file 
 }
 ```
 
-## [Code Actions on Save 保存时执行代码操作](https://code.visualstudio.com/docs/languages/javascript#_code-actions-on-save)
+## [Code Actions on Save 保存时执行代码操作]({{< ref "/Languages/JavaScript#_code-actions-on-save" >}})
 
 The `editor.codeActionsOnSave` setting lets you configure a set of Code Actions that are run when a file is saved. For example, you can enable organize imports on save by setting:
 
@@ -365,11 +365,11 @@ Here are some source actions:
 - `"addMissingImports"` - Adds all missing imports on save.
   `"addMissingImports"` - 保存时添加所有缺失的导入。
 
-See [Node.js/JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) for more information.
+See [Node.js/JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript" >}}) for more information.
 
 ​​	有关更多信息，请参阅 Node.js/JavaScript。
 
-## [Code suggestions 代码建议](https://code.visualstudio.com/docs/languages/javascript#_code-suggestions)
+## [Code suggestions 代码建议]({{< ref "/Languages/JavaScript#_code-suggestions" >}})
 
 VS Code automatically suggests some common code simplifications such as converting a chain of `.then` calls on a promise to use `async` and `await`
 
@@ -383,7 +383,7 @@ Set `"javascript.suggestionActions.enabled"` to `false` to disable suggestions.
 
 ​​	将 `"javascript.suggestionActions.enabled"` 设置为 `false` 以禁用建议。
 
-## [Enhance completions with AI 使用 AI 增强完成](https://code.visualstudio.com/docs/languages/javascript#_enhance-completions-with-ai)
+## [Enhance completions with AI 使用 AI 增强完成]({{< ref "/Languages/JavaScript#_enhance-completions-with-ai" >}})
 
 [GitHub Copilot](https://copilot.github.com/) is an AI-powered code completion tool that helps you write code faster and smarter. You can use the [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) in VS Code to generate code, or to learn from the code it generates.
 
@@ -395,7 +395,7 @@ GitHub Copilot provides suggestions for numerous languages and a wide variety of
 
 ​​	GitHub Copilot 为多种语言和各种框架提供建议，并且它特别适用于 Python、JavaScript、TypeScript、Ruby、Go、C# 和 C++。
 
-You can learn more about how to get started with Copilot in the [Copilot documentation](https://code.visualstudio.com/docs/editor/github-copilot).
+You can learn more about how to get started with Copilot in the [Copilot documentation]({{< ref "/UserGuide/GitHubCopilot" >}}).
 
 ​​	您可以在 Copilot 文档中了解有关如何开始使用 Copilot 的更多信息。
 
@@ -421,7 +421,7 @@ Copilot will provide a suggestion like the following - use Tab to accept the sug
 
 ![Copilot JavaScript ghost text suggestion](./JavaScript_img/js-suggest.png)
 
-## [Inlay hints 内联提示](https://code.visualstudio.com/docs/languages/javascript#_inlay-hints)
+## [Inlay hints 内联提示]({{< ref "/Languages/JavaScript#_inlay-hints" >}})
 
 Inlay hints add additional inline information to source code to help you understand what the code does.
 
@@ -488,7 +488,7 @@ Setting: `javascript.inlayHints.functionLikeReturnTypes.enabled`
 
 ![Return type inlay hints](./JavaScript_img/inlay-return-type.png)
 
-## [References CodeLens 引用 CodeLens](https://code.visualstudio.com/docs/languages/javascript#_references-codelens)
+## [References CodeLens 引用 CodeLens]({{< ref "/Languages/JavaScript#_references-codelens" >}})
 
 The JavaScript references CodeLens displays an inline count of reference for classes, methods, properties, and exported objects:
 
@@ -506,7 +506,7 @@ Click on the reference count to quickly browse a list of references:
 
 ![JavaScript references CodeLens peek](./JavaScript_img/references-codelens-peek.png)
 
-## [Update imports on file move 在文件移动时更新导入](https://code.visualstudio.com/docs/languages/javascript#_update-imports-on-file-move)
+## [Update imports on file move 在文件移动时更新导入]({{< ref "/Languages/JavaScript#_update-imports-on-file-move" >}})
 
 When you move or rename a file that is imported by other files in your JavaScript project, VS Code can automatically update all import paths that reference the moved file:
 
@@ -527,9 +527,9 @@ The `javascript.updateImportsOnFileMove.enabled` setting controls this behavior.
 - `"never"` - Do not update paths automatically and do not prompt.
   `"never"` - 不要自动更新路径，也不要提示。
 
-## [Linters Linter](https://code.visualstudio.com/docs/languages/javascript#_linters)
+## [Linters Linter]({{< ref "/Languages/JavaScript#_linters" >}})
 
-[Linters](https://en.wikipedia.org/wiki/Lint_(software)) provides warnings for suspicious looking code. While VS Code does not include a built-in JavaScript linter, many JavaScript linter [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) available in the marketplace.
+[Linters](https://en.wikipedia.org/wiki/Lint_(software)) provides warnings for suspicious looking code. While VS Code does not include a built-in JavaScript linter, many JavaScript linter [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) available in the marketplace.
 
 ​​	Linter 为可疑代码提供警告。虽然 VS Code 不包含内置 JavaScript linter，但市场上提供了许多 JavaScript linter 扩展。
 
@@ -571,7 +571,7 @@ chenxsan
 >
 > ​​	提示：此列表是从 VS Code Marketplace 动态查询的。阅读说明和评论以决定扩展是否适合您。
 
-## [Type checking 类型检查](https://code.visualstudio.com/docs/languages/javascript#_type-checking)
+## [Type checking 类型检查]({{< ref "/Languages/JavaScript#_type-checking" >}})
 
 You can leverage some of TypeScript's advanced type checking and error reporting functionality in regular JavaScript files too. This is a great way to catch common programming mistakes. These type checks also enable some exciting Quick Fixes for JavaScript, including **Add missing import** and **Add missing property**.
 
@@ -579,7 +579,7 @@ You can leverage some of TypeScript's advanced type checking and error reporting
 
 ![Using type checking and Quick Fixes in a JavaScript file](./JavaScript_img/checkjs-example.gif)
 
-TypeScript tried to infer types in `.js` files the same way it does in `.ts` files. When types cannot be inferred, they can be specified explicitly with JSDoc comments. You can read more about how TypeScript uses JSDoc for JavaScript type checking in [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript).
+TypeScript tried to infer types in `.js` files the same way it does in `.ts` files. When types cannot be inferred, they can be specified explicitly with JSDoc comments. You can read more about how TypeScript uses JSDoc for JavaScript type checking in [Working with JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript" >}}).
 
 ​​	TypeScript 尝试以与在 `.ts` 文件中相同的方式推断 `.js` 文件中的类型。如果无法推断类型，则可以使用 JSDoc 注释显式指定它们。您可以在使用 JavaScript 进行类型检查中阅读有关 TypeScript 如何将 JSDoc 用于 JavaScript 类型检查的更多信息。
 
@@ -587,29 +587,29 @@ Type checking of JavaScript is optional and opt-in. Existing JavaScript validati
 
 ​​	JavaScript 的类型检查是可选的且需要选择加入。现有的 JavaScript 验证工具（例如 ESLint）可以与内置类型检查功能一起使用。
 
-## [Debugging 调试](https://code.visualstudio.com/docs/languages/javascript#_debugging)
+## [Debugging 调试]({{< ref "/Languages/JavaScript#_debugging" >}})
 
-VS Code comes with great debugging support for JavaScript. Set breakpoints, inspect objects, navigate the call stack, and execute code in the Debug Console. See the [Debugging topic](https://code.visualstudio.com/docs/editor/debugging) to learn more.
+VS Code comes with great debugging support for JavaScript. Set breakpoints, inspect objects, navigate the call stack, and execute code in the Debug Console. See the [Debugging topic]({{< ref "/UserGuide/Debugging" >}}) to learn more.
 
 ​​	VS Code 为 JavaScript 提供了出色的调试支持。设置断点、检查对象、导航调用堆栈并在调试控制台中执行代码。请参阅调试主题以了解更多信息。
 
-### [Debug client side 调试客户端](https://code.visualstudio.com/docs/languages/javascript#_debug-client-side)
+### [Debug client side 调试客户端]({{< ref "/Languages/JavaScript#_debug-client-side" >}})
 
 You can debug your client-side code using a browser debugger such as our built-in debugger for Edge and Chrome, or the [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-firefox-debug).
 
 ​​	您可以使用浏览器调试器（例如我们为 Edge 和 Chrome 内置的调试器或 Firefox 的调试器）来调试您的客户端代码。
 
-### [Debug server side 调试服务器端](https://code.visualstudio.com/docs/languages/javascript#_debug-server-side)
+### [Debug server side 调试服务器端]({{< ref "/Languages/JavaScript#_debug-server-side" >}})
 
-Debug Node.js in VS Code using the built-in debugger. Setup is easy and there is a [Node.js debugging tutorial](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial#_debug-your-express-app) to help you.
+Debug Node.js in VS Code using the built-in debugger. Setup is easy and there is a [Node.js debugging tutorial]({{< ref "/Node_jsJavaScript/Node_jsTutorial#_debug-your-express-app" >}}) to help you.
 
 ​​	使用内置调试器在 VS Code 中调试 Node.js。设置很简单，并且有一个 Node.js 调试教程来帮助您。
 
 ![debug data inspection](./JavaScript_img/debug_data_inspection.gif)
 
-## [Popular extensions 常用扩展](https://code.visualstudio.com/docs/languages/javascript#_popular-extensions)
+## [Popular extensions 常用扩展]({{< ref "/Languages/JavaScript#_popular-extensions" >}})
 
-VS Code ships with excellent support for JavaScript but you can additionally install debuggers, snippets, linters, and other JavaScript tools through [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace).
+VS Code ships with excellent support for JavaScript but you can additionally install debuggers, snippets, linters, and other JavaScript tools through [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}).
 
 ​​	VS Code 附带了对 JavaScript 的出色支持，但您还可以通过扩展安装调试器、代码段、linter 和其他 JavaScript 工具。
 
@@ -653,28 +653,28 @@ mgmcdermott
 >
 > ​​	提示：上面显示的扩展名是动态查询的。单击上面的扩展磁贴以阅读描述和评论，以决定哪个扩展最适合您。在 Marketplace 中查看更多信息。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/languages/javascript#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Languages/JavaScript#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript) - More detailed information about VS Code's JavaScript support and how to troubleshoot common issues.
+- [Working with JavaScript]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript" >}}) - More detailed information about VS Code's JavaScript support and how to troubleshoot common issues.
   使用 JavaScript - 有关 VS Code 的 JavaScript 支持的更详细信息以及如何解决常见问题。
 - [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig) - Detailed description of the `jsconfig.json` project file.
   jsconfig.json - `jsconfig.json` 项目文件的详细说明。
-- [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) - Learn more about IntelliSense and how to use it effectively for your language.
+- [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) - Learn more about IntelliSense and how to use it effectively for your language.
   IntelliSense - 详细了解 IntelliSense 以及如何有效地将其用于您的语言。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Learn how to set up debugging for your application.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Learn how to set up debugging for your application.
   调试 - 了解如何为您的应用程序设置调试。
-- [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) - A walkthrough to create an Express Node.js application.
+- [Node.js]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}) - A walkthrough to create an Express Node.js application.
   Node.js - 创建 Express Node.js 应用程序的演练。
-- [TypeScript](https://code.visualstudio.com/docs/languages/typescript) - VS Code has great support for TypeScript, which brings structure and strong typing to your JavaScript code.
+- [TypeScript]({{< ref "/Languages/TypeScript" >}}) - VS Code has great support for TypeScript, which brings structure and strong typing to your JavaScript code.
   TypeScript - VS Code 对 TypeScript 提供了极好的支持，它为 JavaScript 代码带来了结构和强类型。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/languages/javascript#_common-questions)
+## [Common questions 常见问题]({{< ref "/Languages/JavaScript#_common-questions" >}})
 
-### [Does VS Code support JSX and React Native? VS Code 是否支持 JSX 和 React Native？](https://code.visualstudio.com/docs/languages/javascript#_does-vs-code-support-jsx-and-react-native)
+### [Does VS Code support JSX and React Native? VS Code 是否支持 JSX 和 React Native？]({{< ref "/Languages/JavaScript#_does-vs-code-support-jsx-and-react-native" >}})
 
 VS Code supports **JSX** and **React Native**. You will get IntelliSense for **React/JSX** and **React Native** from automatically downloaded type declaration (typings) files from the [npmjs](https://www.npmjs.com/) type declaration file repository. Additionally, you can install the popular [React Native extension](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native) from the Marketplace.
 
@@ -684,13 +684,13 @@ To enable ES6 import statements for **React Native**, you need to set the `allow
 
 ​​	要为 React Native 启用 ES6 import 语句，您需要将 `allowSyntheticDefaultImports` 编译器选项设置为 `true` 。这会告知编译器创建合成默认成员，您将获得 IntelliSense。React Native 在后台使用 Babel 来创建具有默认成员的适当运行时代码。如果您还想调试 React Native 代码，可以安装 React Native 扩展。
 
-### [Does VS Code support the Dart programming language and the Flutter framework? VS Code 是否支持 Dart 编程语言和 Flutter 框架？](https://code.visualstudio.com/docs/languages/javascript#_does-vs-code-support-the-dart-programming-language-and-the-flutter-framework)
+### [Does VS Code support the Dart programming language and the Flutter framework? VS Code 是否支持 Dart 编程语言和 Flutter 框架？]({{< ref "/Languages/JavaScript#_does-vs-code-support-the-dart-programming-language-and-the-flutter-framework" >}})
 
 Yes, there are VS Code extensions for both [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) and [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) development. You can learn more at the [Flutter.dev](https://flutter.dev/docs/development/tools/vs-code) documentation.
 
 ​​	是的，VS Code 同时提供 Dart 和 Flutter 开发的扩展。您可以在 Flutter.dev 文档中了解更多信息。
 
-### [IntelliSense is not working for external libraries IntelliSense 对外部库不起作用](https://code.visualstudio.com/docs/languages/javascript#_intellisense-is-not-working-for-external-libraries)
+### [IntelliSense is not working for external libraries IntelliSense 对外部库不起作用]({{< ref "/Languages/JavaScript#_intellisense-is-not-working-for-external-libraries" >}})
 
 `Automatic Type Acquisition` works for dependencies downloaded by npm (specified in `package.json`), Bower (specified in `bower.json`), and for many of the most common libraries listed in your folder structure (for example `jquery-3.1.1.min.js`).
 
@@ -715,15 +715,15 @@ When you want to use ES6 style imports but some type declaration (typings) files
 }
 ```
 
-### [Can I debug minified/uglified JavaScript? 我能否调试缩小/丑化的 JavaScript？](https://code.visualstudio.com/docs/languages/javascript#_can-i-debug-minifieduglified-javascript)
+### [Can I debug minified/uglified JavaScript? 我能否调试缩小/丑化的 JavaScript？]({{< ref "/Languages/JavaScript#_can-i-debug-minifieduglified-javascript" >}})
 
-Yes, you can. You can see this working using JavaScript source maps in the [Node.js Debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) topic.
+Yes, you can. You can see this working using JavaScript source maps in the [Node.js Debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging" >}}) topic.
 
 ​​	可以。您可以在 Node.js 调试主题中使用 JavaScript 源映射看到此操作。
 
-### [How do I disable Syntax Validation when using non-ES6 constructs? 在使用非 ES6 结构时，我如何禁用语法验证？](https://code.visualstudio.com/docs/languages/javascript#_how-do-i-disable-syntax-validation-when-using-nones6-constructs)
+### [How do I disable Syntax Validation when using non-ES6 constructs? 在使用非 ES6 结构时，我如何禁用语法验证？]({{< ref "/Languages/JavaScript#_how-do-i-disable-syntax-validation-when-using-nones6-constructs" >}})
 
-Some users want to use syntax constructs like the proposed pipeline (`|>`) operator. However, these are currently not supported by VS Code's JavaScript language service and are flagged as errors. For users who still want to use these future features, we provide the `javascript.validate.enable` [setting](https://code.visualstudio.com/docs/getstarted/settings).
+Some users want to use syntax constructs like the proposed pipeline (`|>`) operator. However, these are currently not supported by VS Code's JavaScript language service and are flagged as errors. For users who still want to use these future features, we provide the `javascript.validate.enable` [setting]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	一些用户想使用语法结构，如提议的管道（ `|>` ）运算符。但是，VS Code 的 JavaScript 语言服务目前不支持这些结构，并将其标记为错误。对于仍想使用这些未来特性的用户，我们提供了 `javascript.validate.enable` 设置。
 
@@ -731,8 +731,8 @@ With `javascript.validate.enable: false`, you disable all built-in syntax checki
 
 ​​	使用 `javascript.validate.enable: false` ，您可以禁用所有内置语法检查。如果您这样做，我们建议您使用 ESLint 等 linter 来验证您的源代码。
 
-### [Can I use other JavaScript tools like Flow? 我能否使用其他 JavaScript 工具，如 Flow？](https://code.visualstudio.com/docs/languages/javascript#_can-i-use-other-javascript-tools-like-flow)
+### [Can I use other JavaScript tools like Flow? 我能否使用其他 JavaScript 工具，如 Flow？]({{< ref "/Languages/JavaScript#_can-i-use-other-javascript-tools-like-flow" >}})
 
-Yes, but some of [Flow's](https://flow.org/) language features such as type and error checking may interfere with VS Code's built-in JavaScript support. To learn how to disable VS Code's built-in JavaScript support, see [Disable JavaScript support](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_disable-javascript-support).
+Yes, but some of [Flow's](https://flow.org/) language features such as type and error checking may interfere with VS Code's built-in JavaScript support. To learn how to disable VS Code's built-in JavaScript support, see [Disable JavaScript support]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_disable-javascript-support" >}}).
 
 ​​	是的，但 Flow 的某些语言特性（例如类型和错误检查）可能会干扰 VS Code 内置的 JavaScript 支持。若要了解如何禁用 VS Code 内置的 JavaScript 支持，请参阅禁用 JavaScript 支持。

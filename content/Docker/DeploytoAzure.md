@@ -25,20 +25,20 @@ In this guide you will learn how to:
 - Deploy the image to Azure App Service or Azure Container Apps.
   将映像部署到 Azure App Service 或 Azure Container Apps。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/containers/app-service#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Docker/DeploytoAzure#_prerequisites" >}})
 
 - An Azure subscription.
   Azure 订阅。
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extensions must be installed.
   必须安装 Docker 和 Azure App Service 扩展。
-- A [**web** application](https://learn.microsoft.com/azure/app-service/tutorial-custom-container) that produces a docker image. You could also follow [Create a sample ASP .NET Core application](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core) to create such application.
+- A [**web** application](https://learn.microsoft.com/azure/app-service/tutorial-custom-container) that produces a docker image. You could also follow [Create a sample ASP .NET Core application]({{< ref "/Docker/ASP_NETCore" >}}) to create such application.
   生成 docker 映像的 Web 应用程序。您还可以按照创建 ASP .NET Core 示例应用程序来创建此类应用程序。
 - You need a [Docker Hub](https://hub.docker.com/) account or an instance of [Azure Container Registry (ACR)](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-portal).
   您需要一个 Docker Hub 帐户或 Azure 容器注册表 (ACR) 实例。
 
-## [Create the application image 创建应用程序映像](https://code.visualstudio.com/docs/containers/app-service#_create-the-application-image)
+## [Create the application image 创建应用程序映像]({{< ref "/Docker/DeploytoAzure#_create-the-application-image" >}})
 
-If you already have an image, skip this step and proceed to [Push the image to a container registry](https://code.visualstudio.com/docs/containers/app-service#_push-the-image-to-a-container-registry) step.
+If you already have an image, skip this step and proceed to [Push the image to a container registry]({{< ref "/Docker/DeploytoAzure#_push-the-image-to-a-container-registry" >}}) step.
 
 ​​	如果您已有映像，请跳过此步骤并继续执行将映像推送到容器注册表步骤。
 
@@ -58,7 +58,7 @@ If you already have an image, skip this step and proceed to [Push the image to a
 
    ![Build image output](./DeploytoAzure_img/terminal-output-build-image.png)
 
-## [Push the image to a container registry 将映像推送到容器注册表](https://code.visualstudio.com/docs/containers/app-service#_push-the-image-to-a-container-registry)
+## [Push the image to a container registry 将映像推送到容器注册表]({{< ref "/Docker/DeploytoAzure#_push-the-image-to-a-container-registry" >}})
 
 Before deploying the image to an App Service or a Container App, the image must be uploaded to a container registry. The image can be uploaded to either [Azure Container Registry (ACR)](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [Docker Hub](https://hub.docker.com/).
 
@@ -106,7 +106,7 @@ Before deploying the image to an App Service or a Container App, the image must 
 
    ![Refresh registry](./DeploytoAzure_img/explorer-refresh-registry.png)
 
-## [Deploy the image to Azure 将映像部署到 Azure](https://code.visualstudio.com/docs/containers/app-service#_deploy-the-image-to-azure)
+## [Deploy the image to Azure 将映像部署到 Azure]({{< ref "/Docker/DeploytoAzure#_deploy-the-image-to-azure" >}})
 
 In the previous section, the image is pushed to a remote container registry. Now deploy this image to Azure App Service or Azure Container Apps.
 
@@ -147,15 +147,15 @@ In the previous section, the image is pushed to a remote container registry. Now
 
    ![Web Application](./DeploytoAzure_img/webapp-homepage.png)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/app-service#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/DeploytoAzure#_next-steps" >}})
 
 Read on to learn more about
 
 ​​	继续阅读以详细了解
 
-- [Azure Extensions](https://code.visualstudio.com/docs/azure/extensions) - The VS Code Marketplace has hundreds of extensions for Azure and the cloud.
+- [Azure Extensions]({{< ref "/Azure/Extensions" >}}) - The VS Code Marketplace has hundreds of extensions for Azure and the cloud.
   Azure 扩展 - VS Code Marketplace 拥有数百个适用于 Azure 和云的扩展。
-- [Deploying to Azure](https://code.visualstudio.com/docs/azure/deployment) - Learn step-by-step how to deploy your application to Azure.
+- [Deploying to Azure]({{< ref "/Azure/Deployment" >}}) - Learn step-by-step how to deploy your application to Azure.
   在 Azure 中部署 - 逐步了解如何将应用程序部署到 Azure。
-- [Working with MongoDB](https://code.visualstudio.com/docs/azure/mongodb) - Create, manage, and query MongoDB databases from within VS Code.
+- [Working with MongoDB]({{< ref "/Azure/MongoDB" >}}) - Create, manage, and query MongoDB databases from within VS Code.
   使用 MongoDB - 在 VS Code 中创建、管理和查询 MongoDB 数据库。

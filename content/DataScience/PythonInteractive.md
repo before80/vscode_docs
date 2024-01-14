@@ -14,7 +14,7 @@ draft = false
 
 
 
-[Jupyter](https://jupyter-notebook.readthedocs.io/en/latest/) (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. Visual Studio Code supports working with [Jupyter Notebooks natively](https://code.visualstudio.com/docs/datascience/jupyter-notebooks), as well as through Python code files. This topic covers the support offered through Python code files and demonstrates how to:
+[Jupyter](https://jupyter-notebook.readthedocs.io/en/latest/) (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. Visual Studio Code supports working with [Jupyter Notebooks natively]({{< ref "/DataScience/JupyterNotebooks" >}}), as well as through Python code files. This topic covers the support offered through Python code files and demonstrates how to:
 
 ​​	Jupyter（以前称为 IPython Notebook）是一个开源项目，可让您轻松地在一个名为笔记本的画布上组合 Markdown 文本和可执行 Python 源代码。Visual Studio Code 原生支持使用 Jupyter Notebooks，还支持通过 Python 代码文件使用。本主题介绍通过 Python 代码文件提供的支持，并演示如何执行以下操作：
 
@@ -39,7 +39,7 @@ Once the appropriate environment is activated, you can create and run Jupyter-li
 
 ​​	激活相应环境后，您可以创建和运行类似 Jupyter 的代码单元，连接到远程 Jupyter 服务器以运行代码单元，并将 Python 文件导出为 Jupyter 笔记本。
 
-## [Jupyter code cells Jupyter 代码单元](https://code.visualstudio.com/docs/python/jupyter-support-py#_jupyter-code-cells)
+## [Jupyter code cells Jupyter 代码单元]({{< ref "/Python/PythonInteractive#_jupyter-code-cells" >}})
 
 You define Jupyter-like code cells within Python code using a `# %%` comment:
 
@@ -83,11 +83,11 @@ You can also run code cells using (Ctrl+Enter) or the **Python: Run Selection/Li
 
 ​​	您还可以使用 (Ctrl+Enter) 或 Python: 在 Python 终端中运行选定内容/行命令 (Shift+Enter) 来运行代码单元格。使用此命令后，Python 扩展会自动将光标移至下一个单元格。如果您位于文件中的最后一个单元格中，该扩展会自动插入另一个 `# %%` 分隔符以用于新单元格，模仿 Jupyter 笔记本的行为。
 
-You can also click in the margin to the left of line numbers to set breakpoints. Then you can use **Debug Cell** to start a debugging session for that code cell. The debugger stops execution at breakpoints and allows you to step through code one line at a time and inspect variables (see [Debugging](https://code.visualstudio.com/docs/editor/debugging) for details).
+You can also click in the margin to the left of line numbers to set breakpoints. Then you can use **Debug Cell** to start a debugging session for that code cell. The debugger stops execution at breakpoints and allows you to step through code one line at a time and inspect variables (see [Debugging]({{< ref "/UserGuide/Debugging" >}}) for details).
 
 ​​	您还可以单击行号左侧的边距来设置断点。然后，您可以使用“调试单元格”来针对该代码单元格启动调试会话。调试器会在断点处停止执行，并允许您逐行逐步执行代码并检查变量（有关详细信息，请参阅调试）。
 
-### [Additional commands and keyboard shortcuts 其他命令和键盘快捷键](https://code.visualstudio.com/docs/python/jupyter-support-py#_additional-commands-and-keyboard-shortcuts)
+### [Additional commands and keyboard shortcuts 其他命令和键盘快捷键]({{< ref "/Python/PythonInteractive#_additional-commands-and-keyboard-shortcuts" >}})
 
 The following table lists additional commands and keyboard shortcuts supported when working with code cells.
 
@@ -108,7 +108,7 @@ The following table lists additional commands and keyboard shortcuts supported w
 | Python: Change Cell to Code Python：将单元格更改为代码       | Ctrl+; C                     |
 | Python: Change Cell to Markdown Python：将单元格更改为 Markdown | Ctrl+; M                     |
 
-## [Using the Python Interactive window 使用 Python 交互式窗口](https://code.visualstudio.com/docs/python/jupyter-support-py#_using-the-python-interactive-window)
+## [Using the Python Interactive window 使用 Python 交互式窗口]({{< ref "/Python/PythonInteractive#_using-the-python-interactive-window" >}})
 
 The **Python Interactive** window, mentioned in the previous section, can be used as a standalone console with arbitrary code (with or without code cells). To use the window as a console, open it with the **Jupyter: Create Interactive Window** command from the Command Palette. You can then type in code, using Enter to go to a new line and Shift+Enter to run the code.
 
@@ -118,7 +118,7 @@ To use the window with a file, use the **Jupyter: Run Current File in Python Int
 
 ​​	要将窗口与文件一起使用，请使用命令面板中的 Jupyter：在 Python 交互式窗口中运行当前文件命令。
 
-### [IntelliSense](https://code.visualstudio.com/docs/python/jupyter-support-py#_intellisense)
+### [IntelliSense]({{< ref "/Python/PythonInteractive#_intellisense" >}})
 
 The Python Interactive window has full IntelliSense – code completions, member lists, quick info for methods, and parameter hints. You can be just as productive typing in the Python Interactive window as you are in the code editor.
 
@@ -126,7 +126,7 @@ The Python Interactive window has full IntelliSense – code completions, member
 
 ![IntelliSense in the Python Interactive window](./PythonInteractive_img/interactive-window-intellisense.gif)
 
-### [Plot Viewer 绘图查看器](https://code.visualstudio.com/docs/python/jupyter-support-py#_plot-viewer)
+### [Plot Viewer 绘图查看器]({{< ref "/Python/PythonInteractive#_plot-viewer" >}})
 
 The Plot Viewer gives you the ability to work more deeply with your plots. In the viewer you can pan, zoom, and navigate plots in the current session. You can also export plots to PDF, SVG, and PNG formats.
 
@@ -142,7 +142,7 @@ Within the Python Interactive window, double-click any plot to open it in the vi
 >
 > ​​	注意：Python 交互式窗口支持使用 matplotlib 和 Altair 创建的渲染图。
 
-## [Variables Explorer and Data Viewer 变量资源管理器和数据查看器](https://code.visualstudio.com/docs/python/jupyter-support-py#_variables-explorer-and-data-viewer)
+## [Variables Explorer and Data Viewer 变量资源管理器和数据查看器]({{< ref "/Python/PythonInteractive#_variables-explorer-and-data-viewer" >}})
 
 Within the Python Interactive window, it's possible to view, inspect, and filter the variables within your current Jupyter session. Select the **Variables** button in the interactive window toolbar to open the Variables explorer after running code and cells, you'll see a list of the current variables, which will automatically update as variables are used in code.
 
@@ -156,7 +156,7 @@ For additional information about your variables, you can also double-click on a 
 
 ![Data Viewer](./PythonInteractive_img/jupyter-data-viewer.png)
 
-## [Connect to a remote Jupyter server 连接到远程 Jupyter 服务器](https://code.visualstudio.com/docs/python/jupyter-support-py#_connect-to-a-remote-jupyter-server)
+## [Connect to a remote Jupyter server 连接到远程 Jupyter 服务器]({{< ref "/Python/PythonInteractive#_connect-to-a-remote-jupyter-server" >}})
 
 You can offload intensive computation in a Jupyter notebook to other computers by connecting to a remote Jupyter server. Once connected, code cells run on the remote server rather than the local computer.
 
@@ -190,7 +190,7 @@ To connect to a remote Jupyter server:
 >
 > ​​	注意：为了增加安全性，Microsoft 建议您使用 SSL 和令牌支持等安全预防措施来配置 Jupyter 服务器。这有助于确保发送到 Jupyter 服务器的请求经过身份验证，并且与远程服务器的连接已加密。有关保护笔记本服务器安全的指南，请参阅 Jupyter 文档。
 
-## [Convert Jupyter notebooks to Python code file 将 Jupyter 笔记本转换为 Python 代码文件](https://code.visualstudio.com/docs/python/jupyter-support-py#_convert-jupyter-notebooks-to-python-code-file)
+## [Convert Jupyter notebooks to Python code file 将 Jupyter 笔记本转换为 Python 代码文件]({{< ref "/Python/PythonInteractive#_convert-jupyter-notebooks-to-python-code-file" >}})
 
 When you've activated an environment with Jupyter installed, you can open a Jupyter notebook file (`.ipynb`) in VS Code and then convert it to Python code. Once you've converted the file, you can run the code as you would with any other Python file and also use the VS Code debugger. Opening and debugging notebooks in VS Code is a convenient way to find and resolve code bugs, which is difficult to do directly in a Jupyter notebook.
 
@@ -212,7 +212,7 @@ Select the convert icon followed by "Python Script", wait a few seconds, and the
 >
 > ​​	注意：首次在 Python 文件中运行代码单元格时，Python 扩展程序会启动 Jupyter 服务器。服务器可能需要一些时间才能启动，并且 Python 交互式窗口才能显示代码的结果。
 
-## [Debug a Jupyter notebook 调试 Jupyter 笔记本](https://code.visualstudio.com/docs/python/jupyter-support-py#_debug-a-jupyter-notebook)
+## [Debug a Jupyter notebook 调试 Jupyter 笔记本]({{< ref "/Python/PythonInteractive#_debug-a-jupyter-notebook" >}})
 
 The Visual Studio Code debugger lets you step through your code, set breakpoints, examine state, and analyze problems. Using the debugger is a helpful way to find and correct issues in notebook code.
 
@@ -235,7 +235,7 @@ The Visual Studio Code debugger lets you step through your code, set breakpoints
    - For an individual cell, use the **Debug Cell** adornment that appears above the cell. The debugger specifically starts on the code in that cell. By default, **Debug Cell** just steps into user code. If you want to step into non-user code, you need to uncheck **Debug Just My Code** in the Jupyter extension settings (Ctrl+,).
      对于单个单元格，请使用显示在单元格上方的“调试单元格”修饰。调试器专门从该单元格中的代码开始。默认情况下，“调试单元格”仅逐步进入用户代码。如果您想逐步进入非用户代码，则需要取消选中 Jupyter 扩展设置（Ctrl+,）中的“仅调试我的代码”。
 
-4. To familiarize yourself with the general debugging features of VS Code, such as inspecting variables, setting breakpoints, and other activities, review [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging).
+4. To familiarize yourself with the general debugging features of VS Code, such as inspecting variables, setting breakpoints, and other activities, review [VS Code debugging]({{< ref "/UserGuide/Debugging" >}}).
 
    ​​	要熟悉 VS Code 的常规调试功能，例如检查变量、设置断点和其他活动，请查看 VS Code 调试。
 
@@ -247,7 +247,7 @@ The Visual Studio Code debugger lets you step through your code, set breakpoints
 
    ​​	当您对所有代码都满意时，保存文件，然后按以下部分所述导出笔记本。然后，您可以将笔记本上传到您的正常 Jupyter 环境。
 
-## [Export a Jupyter notebook 导出 Jupyter 笔记本](https://code.visualstudio.com/docs/python/jupyter-support-py#_export-a-jupyter-notebook)
+## [Export a Jupyter notebook 导出 Jupyter 笔记本]({{< ref "/Python/PythonInteractive#_export-a-jupyter-notebook" >}})
 
 In addition to opening a Jupyter notebook, you can also use one of the following commands from the Command Palette (Ctrl+Shift+P) to export content from a Python file in VS Code to a Jupyter notebook (with the `.ipynb` extension).
 

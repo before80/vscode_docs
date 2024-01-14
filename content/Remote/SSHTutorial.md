@@ -22,20 +22,20 @@ This tutorial walks you through creating and connecting to a virtual machine (VM
 >
 > ​​	注意：您的 Linux VM 可以托管在任何地方 - 本地主机、本地、Azure 或任何其他云中，只要所选的 Linux 发行版满足这些先决条件即可。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/remote/ssh-tutorial#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Remote/SSHTutorial#_prerequisites" >}})
 
 To get started, you need to have done the following steps:
 
 ​​	要开始，您需要完成以下步骤：
 
-1. Install an [OpenSSH compatible SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) (PuTTY is not supported).
+1. Install an [OpenSSH compatible SSH client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}) (PuTTY is not supported).
    安装兼容 OpenSSH 的 SSH 客户端（不支持 PuTTY）。
 2. Install [Visual Studio Code](https://code.visualstudio.com/).
    安装 Visual Studio Code。
 3. Have an Azure subscription (If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin).
    拥有 Azure 订阅（如果您没有 Azure 订阅，请在开始前创建一个免费帐户）。
 
-### [Install the extension 安装扩展](https://code.visualstudio.com/docs/remote/ssh-tutorial#_install-the-extension)
+### [Install the extension 安装扩展]({{< ref "/Remote/SSHTutorial#_install-the-extension" >}})
 
 The Remote - SSH extension is used to connect to SSH hosts.
 
@@ -46,7 +46,7 @@ The Remote - SSH extension is used to connect to SSH hosts.
 
 ![Remote - SSH extension](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-extension.png)
 
-### [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh-tutorial#_remote-ssh)
+### [Remote - SSH]({{< ref "/Remote/SSHTutorial#_remote-ssh" >}})
 
 With the Remote - SSH extension installed, you will see a new Status bar item at the far left.
 
@@ -60,7 +60,7 @@ The Remote Status bar item can quickly show you in which context VS Code is runn
 
 ![Remote - SSH commands](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-ssh-commands.png)
 
-## [Create a virtual machine 创建虚拟机](https://code.visualstudio.com/docs/remote/ssh-tutorial#_create-a-virtual-machine)
+## [Create a virtual machine 创建虚拟机]({{< ref "/Remote/SSHTutorial#_create-a-virtual-machine" >}})
 
 If you don't have an existing Linux virtual machine, you can create a new VM through the [Azure portal](https://portal.azure.com/). In the Azure portal, search for "Virtual Machines", and choose **Add**. From there, you can select your Azure subscription and create a new resource group, if you don't already have one.
 
@@ -72,19 +72,19 @@ If you don't have an existing Linux virtual machine, you can create a new VM thr
 
 ![Create a virtual machine](./SSHTutorial_img/create-vm.png)
 
-Now you can specify details of your VM, such as the name, the size, and the base image. Choose Ubuntu Server 18.04 LTS for this example, but you can choose recent versions of other Linux distros and look at VS Code's [supported SSH servers](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server).
+Now you can specify details of your VM, such as the name, the size, and the base image. Choose Ubuntu Server 18.04 LTS for this example, but you can choose recent versions of other Linux distros and look at VS Code's [supported SSH servers]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-server" >}}).
 
 ​​	现在，您可以指定 VM 的详细信息，例如名称、大小和基础映像。为此示例选择 Ubuntu Server 18.04 LTS，但您可以选择其他 Linux 发行版的最新版本，并查看 VS Code 支持的 SSH 服务器。
 
 ![Virtual machine instance details](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/vm-instance-details.png)
 
-## [Set up SSH 设置 SSH](https://code.visualstudio.com/docs/remote/ssh-tutorial#_set-up-ssh)
+## [Set up SSH 设置 SSH]({{< ref "/Remote/SSHTutorial#_set-up-ssh" >}})
 
-There are several authentication methods into a VM, including an SSH public/private key pair or a username and password. We recommend using key-based authentication (if you use a username/password, you'll be prompted to enter your credentials more than once by the extension). If you're on Windows and have already created keys using PuttyGen, you can [reuse them](https://code.visualstudio.com/docs/remote/troubleshooting#_reusing-a-key-generated-in-puttygen).
+There are several authentication methods into a VM, including an SSH public/private key pair or a username and password. We recommend using key-based authentication (if you use a username/password, you'll be prompted to enter your credentials more than once by the extension). If you're on Windows and have already created keys using PuttyGen, you can [reuse them]({{< ref "/Remote/TipsandTricks#_reusing-a-key-generated-in-puttygen" >}}).
 
 ​​	进入 VM 的身份验证方法有多种，包括 SSH 公钥/私钥对或用户名和密码。我们建议使用基于密钥的身份验证（如果您使用用户名/密码，扩展程序会提示您多次输入凭据）。如果您使用的是 Windows 并且已使用 PuttyGen 创建了密钥，则可以重复使用它们。
 
-### [Create an SSH key 创建 SSH 密钥](https://code.visualstudio.com/docs/remote/ssh-tutorial#_create-an-ssh-key)
+### [Create an SSH key 创建 SSH 密钥]({{< ref "/Remote/SSHTutorial#_create-an-ssh-key" >}})
 
 If you don't have an SSH key pair, open a bash shell or the command line and type in:
 
@@ -108,7 +108,7 @@ You will then be prompted to enter a secure passphrase, but you can leave that b
 >
 > ​​	注意：如果您使用的是不支持 Ed25519 算法的旧系统，则可以使用 rsa： `ssh-keygen -t rsa -b 4096` 。
 
-## [Add SSH key to your VM 将 SSH 密钥添加到您的 VM](https://code.visualstudio.com/docs/remote/ssh-tutorial#_add-ssh-key-to-your-vm)
+## [Add SSH key to your VM 将 SSH 密钥添加到您的 VM]({{< ref "/Remote/SSHTutorial#_add-ssh-key-to-your-vm" >}})
 
 In the previous step, you generated an SSH key pair. Select **Use existing public key** in the dropdown for **SSH public key source** so that you can use the public key you just generated. Take the public key and paste it into your VM setup, by copying the entire contents of the `id_ed25519.pub` in the **SSH public key**. You also want to allow your VM to accept inbound SSH traffic by selecting **Allow selected ports** and choosing **SSH (22)** from the **Select inbound ports** dropdown list.
 
@@ -116,7 +116,7 @@ In the previous step, you generated an SSH key pair. Select **Use existing publi
 
 ![Add SSH public key to VM](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/add-ssh-public-key.png)
 
-### [Auto shutdown 自动关机](https://code.visualstudio.com/docs/remote/ssh-tutorial#_auto-shutdown)
+### [Auto shutdown 自动关机]({{< ref "/Remote/SSHTutorial#_auto-shutdown" >}})
 
 A cool feature of using Azure VMs is the ability to enable auto shutdown (because let's face it, we all forget to turn off our VMs…). If you go to the **Management** tab, you can set the time you want to shut down the VM daily.
 
@@ -132,7 +132,7 @@ Once the deployment is finished (it may take several minutes), go to the new res
 
 ​​	部署完成后（可能需要几分钟），转到虚拟机的全新资源视图。
 
-## [Connect using SSH 使用 SSH 连接](https://code.visualstudio.com/docs/remote/ssh-tutorial#_connect-using-ssh)
+## [Connect using SSH 使用 SSH 连接]({{< ref "/Remote/SSHTutorial#_connect-using-ssh" >}})
 
 Now that you've created an SSH host, let's connect to it!
 
@@ -200,13 +200,13 @@ You can use the bash shell to browse the file system on the VM. You can also bro
 
 ![Remote open folder](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/remote-open-folder.png)
 
-## [Create your Node.js application 创建您的 Node.js 应用程序](https://code.visualstudio.com/docs/remote/ssh-tutorial#_create-your-nodejs-application)
+## [Create your Node.js application 创建您的 Node.js 应用程序]({{< ref "/Remote/SSHTutorial#_create-your-nodejs-application" >}})
 
 In this step, you will create a simple Node.js application. You will use an application generator to quickly scaffold out the application from a terminal.
 
 ​​	在此步骤中，您将创建一个简单的 Node.js 应用程序。您将使用应用程序生成器从终端快速构建应用程序脚手架。
 
-### [Install Node.js and npm 安装 Node.js 和 npm](https://code.visualstudio.com/docs/remote/ssh-tutorial#_install-nodejs-and-npm)
+### [Install Node.js and npm 安装 Node.js 和 npm]({{< ref "/Remote/SSHTutorial#_install-nodejs-and-npm" >}})
 
 From the integrated terminal (Ctrl+`), update the packages in your Linux VM, then install Node.js, which includes npm, the Node.js package manager.
 
@@ -227,7 +227,7 @@ node --version
 npm --version
 ```
 
-### [Install the Express generator 安装 Express 生成器](https://code.visualstudio.com/docs/remote/ssh-tutorial#_install-the-express-generator)
+### [Install the Express generator 安装 Express 生成器]({{< ref "/Remote/SSHTutorial#_install-the-express-generator" >}})
 
 [Express](https://www.expressjs.com/) is a popular framework for building and running Node.js applications. You can scaffold (create) a new Express application using the [Express Generator](https://expressjs.com/en/starter/generator.html) tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool `npm`.
 
@@ -241,7 +241,7 @@ The `-g` switch installs the Express Generator globally on your machine so that 
 
 ​​	 `-g` 开关在您的机器上全局安装 Express Generator，以便您可以从任何地方运行它。
 
-### [Create a new application 创建新应用程序](https://code.visualstudio.com/docs/remote/ssh-tutorial#_create-a-new-application)
+### [Create a new application 创建新应用程序]({{< ref "/Remote/SSHTutorial#_create-a-new-application" >}})
 
 You can now create a new Express application called `myExpressApp` by running:
 
@@ -264,7 +264,7 @@ cd myExpressApp
 npm install
 ```
 
-### [Run the application 运行应用程序](https://code.visualstudio.com/docs/remote/ssh-tutorial#_run-the-application)
+### [Run the application 运行应用程序]({{< ref "/Remote/SSHTutorial#_run-the-application" >}})
 
 Last, let's ensure that the application runs. From the terminal, start the application using the `npm start` command to start the server.
 
@@ -278,9 +278,9 @@ The Express app by default runs on [http://localhost:3000](http://localhost:3000
 
 ​​	默认情况下，Express 应用在 http://localhost:3000 上运行。您不会在 localhost:3000 上的本地浏览器中看到任何内容，因为 Web 应用在您的虚拟机上运行。
 
-### [Port forwarding 端口转发](https://code.visualstudio.com/docs/remote/ssh-tutorial#_port-forwarding)
+### [Port forwarding 端口转发]({{< ref "/Remote/SSHTutorial#_port-forwarding" >}})
 
-To be able to browse to the web app on your local machine, you can leverage another feature called [Port forwarding](https://code.visualstudio.com/docs/remote/ssh#_temporarily-forwarding-a-port).
+To be able to browse to the web app on your local machine, you can leverage another feature called [Port forwarding]({{< ref "/Remote/SSH#_temporarily-forwarding-a-port" >}}).
 
 ​​	为了能够在本地计算机上浏览 Web 应用，您可以利用另一项称为端口转发
 
@@ -302,13 +302,13 @@ The server will now forward traffic on port 3000 to your local machine. When you
 
 ![Running Express Application](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/express.png)
 
-## [Edit and debug 编辑和调试](https://code.visualstudio.com/docs/remote/ssh-tutorial#_edit-and-debug)
+## [Edit and debug 编辑和调试]({{< ref "/Remote/SSHTutorial#_edit-and-debug" >}})
 
 From the Visual Studio Code File Explorer (Ctrl+Shift+E), navigate to your new `myExpressApp` folder and double-click the `app.js` file to open it in the editor.
 
 ​​	从 Visual Studio Code 文件资源管理器 (Ctrl+Shift+E) 中，导航到您的新 `myExpressApp` 文件夹，然后双击 `app.js` 文件以在编辑器中将其打开。
 
-### [IntelliSense](https://code.visualstudio.com/docs/remote/ssh-tutorial#_intellisense)
+### [IntelliSense]({{< ref "/Remote/SSHTutorial#_intellisense" >}})
 
 You have syntax highlighting for the JavaScript file as well as IntelliSense with hovers, just like you would see if the source code was on your local machine.
 
@@ -322,7 +322,7 @@ When you start typing, you'll get smart completions for the object methods and p
 
 ![Express app.js smart completions](https://code.visualstudio.com/assets/docs/remote/ssh-tutorial/express-completions.png)
 
-### [Debugging 调试](https://code.visualstudio.com/docs/remote/ssh-tutorial#_debugging)
+### [Debugging 调试]({{< ref "/Remote/SSHTutorial#_debugging" >}})
 
 Set a breakpoint on line 10 of `app.js` by clicking in the gutter to the left of the line number or by putting the cursor on the line and pressing F9. The breakpoint will be displayed as a red circle.
 
@@ -348,13 +348,13 @@ You get the full development experience of Visual Studio Code connected over SSH
 
 ​​	您将获得通过 SSH 连接的 Visual Studio Code 的完整开发体验。
 
-### [Ending your SSH connection 结束您的 SSH 连接](https://code.visualstudio.com/docs/remote/ssh-tutorial#_ending-your-ssh-connection)
+### [Ending your SSH connection 结束您的 SSH 连接]({{< ref "/Remote/SSHTutorial#_ending-your-ssh-connection" >}})
 
 You can end your session over SSH and go back to running VS Code locally with **File** > **Close Remote Connection**.
 
 ​​	您可以通过 SSH 结束会话，并通过“文件”>“关闭远程连接”返回在本地运行 VS Code。
 
-### [Congratulations 恭喜](https://code.visualstudio.com/docs/remote/ssh-tutorial#_congratulations)
+### [Congratulations 恭喜]({{< ref "/Remote/SSHTutorial#_congratulations" >}})
 
 Congratulations, you've successfully completed this tutorial!
 

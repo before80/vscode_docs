@@ -20,7 +20,7 @@ IntelliSense is a general term for various code editing features including: code
 
 ![IntelliSense demo](./IntelliSense_img/intellisense.gif)
 
-## [IntelliSense for your programming language 适用于您编程语言的 IntelliSense](https://code.visualstudio.com/docs/editor/intellisense#_intellisense-for-your-programming-language)
+## [IntelliSense for your programming language 适用于您编程语言的 IntelliSense]({{< ref "/UserGuide/IntelliSense#_intellisense-for-your-programming-language" >}})
 
 Visual Studio Code IntelliSense is provided for JavaScript, TypeScript, JSON, HTML, CSS, SCSS, and Less out of the box. VS Code supports word based completions for any programming language but can also be configured to have richer IntelliSense by installing a language extension.
 
@@ -99,7 +99,7 @@ Ruby LSP
 
 Shopify
 
-## [IntelliSense features IntelliSense 功能](https://code.visualstudio.com/docs/editor/intellisense#_intellisense-features)
+## [IntelliSense features IntelliSense 功能]({{< ref "/UserGuide/IntelliSense#_intellisense-features" >}})
 
 VS Code IntelliSense features are powered by a language service. A language service provides intelligent code completions based on language semantics and an analysis of your source code. If a language service knows possible completions, the IntelliSense suggestions will pop up as you type. If you continue typing characters, the list of members (variables, methods, etc.) is filtered to only include members containing your typed characters. Pressing Tab or Enter will insert the selected member.
 
@@ -115,7 +115,7 @@ You can trigger IntelliSense in any editor window by typing Ctrl+Space or by typ
 >
 > ​​	提示：建议小部件支持 CamelCase 筛选，这意味着您可以键入方法名中大写的字母来限制建议。例如，“cra”将快速显示“createApplication”。
 
-If you prefer, you can turn off IntelliSense while you type. See [Customizing IntelliSense](https://code.visualstudio.com/docs/editor/intellisense#_customizing-intellisense) below to learn how to disable or customize VS Code's IntelliSense features.
+If you prefer, you can turn off IntelliSense while you type. See [Customizing IntelliSense]({{< ref "/UserGuide/IntelliSense#_customizing-intellisense" >}}) below to learn how to disable or customize VS Code's IntelliSense features.
 
 ​​	如果您愿意，可以在键入时关闭 IntelliSense。请参阅下方的“自定义 IntelliSense”以了解如何禁用或自定义 VS Code 的 IntelliSense 功能。
 
@@ -135,7 +135,7 @@ When applicable, a language service will surface the underlying types in the qui
 
 ​​	在适用的情况下，语言服务将在快速信息和方法签名中显示基础类型。在上面的图像中，您可以看到几个 `any` 类型。由于 JavaScript 是动态的，不需要或强制使用类型，因此 `any` 建议变量可以是任何类型。
 
-## [Types of completions 完成类型](https://code.visualstudio.com/docs/editor/intellisense#_types-of-completions)
+## [Types of completions 完成类型]({{< ref "/UserGuide/IntelliSense#_types-of-completions" >}})
 
 The JavaScript code below illustrates IntelliSense completions. IntelliSense gives both inferred proposals and the global identifiers of the project. The inferred symbols are presented first, followed by the global identifiers (shown by the Word icon).
 
@@ -171,15 +171,15 @@ VS Code IntelliSense offers different types of completions, including language s
 | ![a square with ellipses forming the bottom show snippet prefix](./IntelliSense_img/Snippet_16x.svg+xml) | Snippet prefixes 代码段前缀          | `snippet`                           |
 | ![a square with letters abc word completion](./IntelliSense_img/String_16x.svg+xml) | Words 单词                           | `text`                              |
 
-## [Customizing IntelliSense 自定义 IntelliSense](https://code.visualstudio.com/docs/editor/intellisense#_customizing-intellisense)
+## [Customizing IntelliSense 自定义 IntelliSense]({{< ref "/UserGuide/IntelliSense#_customizing-intellisense" >}})
 
 You can customize your IntelliSense experience in settings and key bindings.
 
 ​​	您可以在设置和键绑定中自定义您的 IntelliSense 体验。
 
-### [Settings 设置](https://code.visualstudio.com/docs/editor/intellisense#_settings)
+### [Settings 设置]({{< ref "/UserGuide/IntelliSense#_settings" >}})
 
-The settings shown below are the default settings. You can change these settings in your `settings.json` file as described in [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+The settings shown below are the default settings. You can change these settings in your `settings.json` file as described in [User and Workspace Settings]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	下面显示的设置是默认设置。您可以按照用户和工作区设置中所述在 `settings.json` 文件中更改这些设置。
 
@@ -221,7 +221,7 @@ The settings shown below are the default settings. You can change these settings
 }
 ```
 
-### [Tab Completion 制表符补全](https://code.visualstudio.com/docs/editor/intellisense#_tab-completion)
+### [Tab Completion 制表符补全]({{< ref "/UserGuide/IntelliSense#_tab-completion" >}})
 
 The editor supports "tab completion" which inserts the best matching completion when pressing Tab. This works regardless of the suggest widget showing or not. Also, pressing Tab after inserting a suggestions will insert the next best suggestion.
 
@@ -240,7 +240,7 @@ By default, tab completion is disabled. Use the `editor.tabCompletion` setting t
 - `onlySnippets` - Tab completion only inserts static snippets which prefix match the current line prefix.
   `onlySnippets` - 制表符补全仅插入与当前行前缀匹配的前缀静态代码段。
 
-### [Locality Bonus 局部奖励](https://code.visualstudio.com/docs/editor/intellisense#_locality-bonus)
+### [Locality Bonus 局部奖励]({{< ref "/UserGuide/IntelliSense#_locality-bonus" >}})
 
 Sorting of suggestions depends on extension information and on how well they match the current word you are typing. In addition, you can ask the editor to boost suggestions that appear closer to the cursor position, using the `editor.suggest.localityBonus` setting.
 
@@ -252,7 +252,7 @@ In above images you can see that `count`, `context`, and `colocated` are sorted 
 
 ​​	在上面的图像中，您可以看到 `count` 、 `context` 和 `colocated` 是根据它们出现的范围（循环、函数、文件）进行排序的。
 
-### [Suggestion selection 建议选择](https://code.visualstudio.com/docs/editor/intellisense#_suggestion-selection)
+### [Suggestion selection 建议选择]({{< ref "/UserGuide/IntelliSense#_suggestion-selection" >}})
 
 By default, VS Code pre-selects the first suggestion in the suggestion list. If you'd like different behavior, for example, to always select the most recently used item in the suggestion list, you can use the `editor.suggestSelection` setting.
 
@@ -281,15 +281,15 @@ When using the last option, `recentlyUsedByPrefix`, VS Code remembers which item
 
 ​​	使用最后一个选项 `recentlyUsedByPrefix` 时，VS Code 会记住为特定前缀（部分文本）选择的项目。例如，如果您键入 `co` 然后选择 `console` ，那么下次您键入 `co` 时，建议 `console` 将被预先选择。这使您可以快速将各种前缀映射到不同的建议，例如 `co` -> `console` 和 `con` -> `const` 。
 
-### [Snippets in suggestions 建议中的代码片段](https://code.visualstudio.com/docs/editor/intellisense#_snippets-in-suggestions)
+### [Snippets in suggestions 建议中的代码片段]({{< ref "/UserGuide/IntelliSense#_snippets-in-suggestions" >}})
 
 By default, VS Code shows snippets and completion proposals in one widget. You can control the behavior with the `editor.snippetSuggestions` setting. To remove snippets from the suggestions widget, set the value to `"none"`. If you'd like to see snippets, you can specify the order relative to suggestions; at the top (`"top"`), at the bottom (`"bottom"`), or inline ordered alphabetically (`"inline"`). The default is `"inline"`.
 
 ​​	默认情况下，VS Code 在一个小部件中显示代码片段和完成建议。您可以使用 `editor.snippetSuggestions` 设置控制行为。若要从建议小部件中删除代码片段，请将值设置为 `"none"` 。如果您想查看代码片段，则可以指定相对于建议的顺序；在顶部 ( `"top"` )、在底部 ( `"bottom"` ) 或按字母顺序内联排序 ( `"inline"` )。默认值为 `"inline"` 。
 
-### [Key bindings 按键绑定](https://code.visualstudio.com/docs/editor/intellisense#_key-bindings)
+### [Key bindings 按键绑定]({{< ref "/UserGuide/IntelliSense#_key-bindings" >}})
 
-The key bindings shown below are the default key bindings. You can change these in your `keybindings.json` file as described in [Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings).
+The key bindings shown below are the default key bindings. You can change these in your `keybindings.json` file as described in [Key Bindings]({{< ref "/GetStarted/KeyBindings" >}}).
 
 ​​	下面显示的键绑定是默认键绑定。您可以在 `keybindings.json` 文件中更改这些键绑定，如键绑定中所述。
 
@@ -317,7 +317,7 @@ The key bindings shown below are the default key bindings. You can change these 
 ]
 ```
 
-## [Enhance completions with AI 使用 AI 增强完成](https://code.visualstudio.com/docs/editor/intellisense#_enhance-completions-with-ai)
+## [Enhance completions with AI 使用 AI 增强完成]({{< ref "/UserGuide/IntelliSense#_enhance-completions-with-ai" >}})
 
 In VS Code, you can enhance your coding with artificial intelligence (AI), such as suggestions for lines of code or entire functions, fast documentation creation, and help creating code-related artifacts like tests.
 
@@ -329,17 +329,17 @@ In VS Code, you can enhance your coding with artificial intelligence (AI), such 
 
 [![GitHub Copilot extension in the VS Code Marketplace](./IntelliSense_img/copilot-extension.png)](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
-You can learn more about how to get started with Copilot in the [Copilot documentation](https://code.visualstudio.com/docs/editor/github-copilot).
+You can learn more about how to get started with Copilot in the [Copilot documentation]({{< ref "/UserGuide/GitHubCopilot" >}}).
 
 ​​	您可以在 Copilot 文档中了解有关如何开始使用 Copilot 的更多信息。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/editor/intellisense#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/UserGuide/IntelliSense#_troubleshooting" >}})
 
 If you find IntelliSense has stopped working, the language service may not be running. Try restarting VS Code and this should solve the issue. If you are still missing IntelliSense features after installing a language extension, open an issue in the repository of the language extension.
 
 ​​	如果您发现 IntelliSense 已停止工作，则语言服务可能未在运行。尝试重新启动 VS Code，这应该可以解决问题。如果在安装语言扩展后仍然缺少 IntelliSense 功能，请在语言扩展的存储库中打开一个问题。
 
-> **Tip:** For configuring and troubleshooting JavaScript IntelliSense, see the [JavaScript documentation](https://code.visualstudio.com/docs/languages/javascript#_intellisense).
+> **Tip:** For configuring and troubleshooting JavaScript IntelliSense, see the [JavaScript documentation]({{< ref "/Languages/JavaScript#_intellisense" >}}).
 >
 > ​​	提示：有关配置和故障排除 JavaScript IntelliSense 的信息，请参阅 JavaScript 文档。
 
@@ -347,37 +347,37 @@ A particular language extension may not support all the VS Code IntelliSense fea
 
 ​​	特定语言扩展可能不支持所有 VS Code IntelliSense 功能。查看扩展的 README 以了解支持哪些功能。如果您认为语言扩展存在问题，通常可以通过 VS Code Marketplace 找到扩展的问题存储库。导航到扩展的详细信息页面并选择支持链接。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/intellisense#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/IntelliSense#_next-steps" >}})
 
 IntelliSense is just one of VS Code's powerful features. Read on to learn more:
 
 ​​	IntelliSense 只是 VS Code 的众多强大功能之一。继续阅读以了解更多信息：
 
-- [JavaScript](https://code.visualstudio.com/docs/languages/javascript) - Get the most out of your JavaScript development, including configuring IntelliSense.
+- [JavaScript]({{< ref "/Languages/JavaScript" >}}) - Get the most out of your JavaScript development, including configuring IntelliSense.
   JavaScript - 充分利用 JavaScript 开发，包括配置 IntelliSense。
-- [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) - See an example of IntelliSense in action in the Node.js walkthrough.
+- [Node.js]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}) - See an example of IntelliSense in action in the Node.js walkthrough.
   Node.js - 在 Node.js 演练中查看 IntelliSense 的实际示例。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Learn how to set up debugging for your application.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Learn how to set up debugging for your application.
   调试 - 了解如何为应用程序设置调试。
 - [Creating Language extensions](https://code.visualstudio.com/api/language-extensions/programmatic-language-features) - Learn how to create extensions that add IntelliSense for new programming languages.
   创建语言扩展 - 了解如何创建为新编程语言添加 IntelliSense 的扩展。
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/editor/github-copilot) - Learn how to use AI with GitHub Copilot to enhance your coding.
+- [GitHub Copilot in VS Code]({{< ref "/UserGuide/GitHubCopilot" >}}) - Learn how to use AI with GitHub Copilot to enhance your coding.
   VS Code 中的 GitHub Copilot - 了解如何将 AI 与 GitHub Copilot 配合使用以增强编码。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/intellisense#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/IntelliSense#_common-questions" >}})
 
-### [Why am I not getting any suggestions? 为什么我没有收到任何建议？](https://code.visualstudio.com/docs/editor/intellisense#_why-am-i-not-getting-any-suggestions)
+### [Why am I not getting any suggestions? 为什么我没有收到任何建议？]({{< ref "/UserGuide/IntelliSense#_why-am-i-not-getting-any-suggestions" >}})
 
 ![image of IntelliSense not working](./IntelliSense_img/intellisense_error.png)
 
-This can be caused by a variety of reasons. First, try restarting VS Code. If the problem persists, consult the language extension's documentation. For JavaScript specific troubleshooting, please see the [JavaScript language topic](https://code.visualstudio.com/docs/languages/javascript#_intellisense).
+This can be caused by a variety of reasons. First, try restarting VS Code. If the problem persists, consult the language extension's documentation. For JavaScript specific troubleshooting, please see the [JavaScript language topic]({{< ref "/Languages/JavaScript#_intellisense" >}}).
 
 ​​	这可能是由多种原因造成的。首先，尝试重新启动 VS Code。如果问题仍然存在，请查阅语言扩展的文档。有关 JavaScript 特定的故障排除，请参阅 JavaScript 语言主题。
 
-### [Why am I not seeing method and variable suggestions? 为什么我看不到方法和变量建议？](https://code.visualstudio.com/docs/editor/intellisense#_why-am-i-not-seeing-method-and-variable-suggestions)
+### [Why am I not seeing method and variable suggestions? 为什么我看不到方法和变量建议？]({{< ref "/UserGuide/IntelliSense#_why-am-i-not-seeing-method-and-variable-suggestions" >}})
 
 ![image of IntelliSense showing no useful suggestions](./IntelliSense_img/missing_typings.png)
 
-This issue is caused by missing type declaration (typings) files in JavaScript. You can check if a type declaration file package is available for a specific library by using the [TypeSearch](https://microsoft.github.io/TypeSearch) site. There is more information about this issue in the [JavaScript language topic](https://code.visualstudio.com/docs/languages/javascript#_intellisense). For other languages, please consult the extension's documentation.
+This issue is caused by missing type declaration (typings) files in JavaScript. You can check if a type declaration file package is available for a specific library by using the [TypeSearch](https://microsoft.github.io/TypeSearch) site. There is more information about this issue in the [JavaScript language topic]({{< ref "/Languages/JavaScript#_intellisense" >}}). For other languages, please consult the extension's documentation.
 
 ​​	此问题是由 JavaScript 中缺少类型声明（类型化）文件引起的。您可以使用 TypeSearch 网站检查特定库是否提供了类型声明文件包。JavaScript 语言主题中提供了有关此问题的更多信息。对于其他语言，请查阅扩展的文档。

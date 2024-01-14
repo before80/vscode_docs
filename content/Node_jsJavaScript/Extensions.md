@@ -22,11 +22,11 @@ In addition, to these core features, you can install a large number of quality e
 
 ​​	此外，除了这些核心功能，您还可以安装大量优质扩展，为 VS Code 添加 JavaScript 开发功能。
 
-> **Tip:** To see how to install and manage your extensions, please refer to the [extension documentation](https://code.visualstudio.com/docs/editor/extension-marketplace).
+> **Tip:** To see how to install and manage your extensions, please refer to the [extension documentation]({{< ref "/UserGuide/ExtensionMarketplace" >}}).
 >
 > ​​	提示：若要了解如何安装和管理扩展，请参阅扩展文档。
 
-## [Finding extensions 查找扩展](https://code.visualstudio.com/docs/nodejs/extensions#_finding-extensions)
+## [Finding extensions 查找扩展]({{< ref "/Node_jsJavaScript/Extensions#_finding-extensions" >}})
 
 You can find JavaScript extensions by typing `JavaScript` in the Extension view search bar. Alternatively, you can find JavaScript extensions using tags: "tag:javascript". Search for more extensions in VS Code or in the [Marketplace](https://marketplace.visualstudio.com/vscode).
 
@@ -109,13 +109,13 @@ jaymorrow
 >
 > ​​	提示：上面显示的扩展名是动态查询的。单击上面的扩展磁贴以阅读描述和评论，以决定哪个扩展最适合您。在 Marketplace 中查看更多内容。
 
-## [Recommended extensions 推荐的扩展](https://code.visualstudio.com/docs/nodejs/extensions#_recommended-extensions)
+## [Recommended extensions 推荐的扩展]({{< ref "/Node_jsJavaScript/Extensions#_recommended-extensions" >}})
 
 If you are just getting started, here are the extensions we recommend trying out.
 
 ​​	如果您刚开始使用，这里是我们建议您尝试的扩展。
 
-### [ESLint](https://code.visualstudio.com/docs/nodejs/extensions#_eslint)
+### [ESLint]({{< ref "/Node_jsJavaScript/Extensions#_eslint" >}})
 
 Marketplace - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
@@ -127,13 +127,13 @@ Easily integrate [ESLint](https://eslint.org/) into your project. If ESLint isn'
 
 ​​	轻松将 ESLint 集成到您的项目中。如果 ESLint 不是您最喜欢的 linter，可以选择各种其他 linter 扩展，包括 JSHint、JSCS 和 JS Standard。
 
-Read more about setting up JavaScript linters in the VS Code [documentation](https://code.visualstudio.com/docs/languages/javascript#_linters).
+Read more about setting up JavaScript linters in the VS Code [documentation]({{< ref "/Languages/JavaScript#_linters" >}}).
 
 ​​	在 VS Code 文档中阅读有关设置 JavaScript linter 的更多信息。
 
 ![ESLint animation](./Extensions_img/eslint.gif)
 
-### [SonarLint](https://code.visualstudio.com/docs/nodejs/extensions#_sonarlint)
+### [SonarLint]({{< ref "/Node_jsJavaScript/Extensions#_sonarlint" >}})
 
 Marketplace - [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
 
@@ -151,7 +151,7 @@ Search for 'SonarLint' in the VS Code Marketplace and install. No configuration 
 
 ![SonarLint animation](./Extensions_img/sonarlint.gif)
 
-### [JavaScript (ES6) code snippets JavaScript (ES6) 代码片段](https://code.visualstudio.com/docs/nodejs/extensions#_javascript-es6-code-snippets)
+### [JavaScript (ES6) code snippets JavaScript (ES6) 代码片段]({{< ref "/Node_jsJavaScript/Extensions#_javascript-es6-code-snippets" >}})
 
 Marketplace - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 
@@ -167,11 +167,11 @@ VS Code comes with many built-in code snippets. The **JavaScript (ES6) code snip
 
 ![javascript snippets](./Extensions_img/javascript_snippets.png)
 
-You can read more about JavaScript snippets in the VS Code [documentation](https://code.visualstudio.com/docs/languages/javascript#_snippets). For additional snippet packs, including [Angular 1](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular1), [Angular 2](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2), [Bootstrap 3](https://marketplace.visualstudio.com/items?itemName=wcwhitehead.bootstrap-3-snippets), [ReactJs](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets), and [jQuery](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets), check out the Marketplace's [Snippets category](https://marketplace.visualstudio.com/vscode/Snippets?sortBy=Installs).
+You can read more about JavaScript snippets in the VS Code [documentation]({{< ref "/Languages/JavaScript#_snippets" >}}). For additional snippet packs, including [Angular 1](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular1), [Angular 2](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2), [Bootstrap 3](https://marketplace.visualstudio.com/items?itemName=wcwhitehead.bootstrap-3-snippets), [ReactJs](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets), and [jQuery](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets), check out the Marketplace's [Snippets category](https://marketplace.visualstudio.com/vscode/Snippets?sortBy=Installs).
 
 ​​	您可以在 VS Code 文档中阅读有关 JavaScript 代码段的更多信息。有关其他代码段包（包括 Angular 1、Angular 2、Bootstrap 3、ReactJs 和 jQuery），请查看 Marketplace 的代码段类别。
 
-### [npm IntelliSense](https://code.visualstudio.com/docs/nodejs/extensions#_npm-intellisense)
+### [npm IntelliSense]({{< ref "/Node_jsJavaScript/Extensions#_npm-intellisense" >}})
 
 Marketplace - [npm IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 

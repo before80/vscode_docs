@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [Installation 安装](https://code.visualstudio.com/docs/setup/mac#_installation)
+## [Installation 安装]({{< ref "/Setup/macOS#_installation" >}})
 
 1. [Download Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534106) for macOS.
    下载适用于 macOS 的 Visual Studio Code。
@@ -29,7 +29,7 @@ draft = false
 6. Add VS Code to your Dock by right-clicking on the icon, located in the Dock, to bring up the context menu and choosing **Options**, **Keep in Dock**.
    右键单击 Dock 中的图标，调出上下文菜单并选择“选项”和“保留在 Dock 中”，将 VS Code 添加到 Dock 中。
 
-## [Launching from the command line 从命令行启动](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+## [Launching from the command line 从命令行启动]({{< ref "/Setup/macOS#_launching-from-the-command-line" >}})
 
 You can also run VS Code from the terminal by typing 'code' after adding it to the path:
 
@@ -49,7 +49,7 @@ You can also run VS Code from the terminal by typing 'code' after adding it to t
 >
 > ​​​	注意：如果您在早期版本的 VS Code 中的 `.bash_profile` （或等效版本）中仍然有旧的 `code` 别名，请将其删除并通过执行 Shell 命令：在 PATH 命令中安装“code”命令来替换它。
 
-### [Alternative manual instructions 备选的手动说明](https://code.visualstudio.com/docs/setup/mac#_alternative-manual-instructions)
+### [Alternative manual instructions 备选的手动说明]({{< ref "/Setup/macOS#_alternative-manual-instructions" >}})
 
 Instead of running the command above, you can manually add VS Code to your path, to do so run the following commands:
 
@@ -81,7 +81,7 @@ export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/
 EOF
 ```
 
-## [Touch Bar support 触控栏支持](https://code.visualstudio.com/docs/setup/mac#_touch-bar-support)
+## [Touch Bar support 触控栏支持]({{< ref "/Setup/macOS#_touch-bar-support" >}})
 
 Out of the box VS Code adds actions to navigate in editor history as well as the full Debug tool bar to control the debugger on your Touch Bar:
 
@@ -89,13 +89,13 @@ Out of the box VS Code adds actions to navigate in editor history as well as the
 
 ![macOS Touch Bar](./macOS_img/touchbar.gif)
 
-## [Mojave privacy protections Mojave 隐私保护](https://code.visualstudio.com/docs/setup/mac#_mojave-privacy-protections)
+## [Mojave privacy protections Mojave 隐私保护]({{< ref "/Setup/macOS#_mojave-privacy-protections" >}})
 
 After upgrading to macOS Mojave version, you may see dialogs saying "Visual Studio Code would like to access your {calendar/contacts/photos}." This is due to the new privacy protections in Mojave and is not specific to VS Code. The same dialogs may be displayed when running other applications as well. The dialog is shown once for each type of personal data and it is fine to choose **Don't Allow** since VS Code does not need access to those folders.
 
 ​​​	升级到 macOS Mojave 版本后，您可能会看到提示“Visual Studio Code 想要访问您的 {日历/联系人/照片}”的对话框。这是由于 Mojave 中的新隐私保护措施所致，并非 VS Code 特有。运行其他应用程序时也可能会显示相同的对话框。此对话框针对每种类型的个人数据显示一次，选择“不允许”是可以的，因为 VS Code 无需访问这些文件夹。
 
-## [Updates 更新](https://code.visualstudio.com/docs/setup/mac#_updates)
+## [Updates 更新]({{< ref "/Setup/macOS#_updates" >}})
 
 VS Code ships monthly [releases](https://code.visualstudio.com/updates) and supports auto-update when a new release is available. If you're prompted by VS Code, accept the newest update and it will get installed (you won't need to do anything else to get the latest bits).
 
@@ -105,40 +105,40 @@ VS Code ships monthly [releases](https://code.visualstudio.com/updates) and supp
 >
 > ​​​	注意：如果您希望按照自己的计划更新 VS Code，则可以禁用自动更新。
 
-## [Preferences menu 首选项菜单](https://code.visualstudio.com/docs/setup/mac#_preferences-menu)
+## [Preferences menu 首选项菜单]({{< ref "/Setup/macOS#_preferences-menu" >}})
 
-You can configure VS Code through [settings](https://code.visualstudio.com/docs/getstarted/settings), [color themes](https://code.visualstudio.com/docs/getstarted/themes), and [custom keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) available through the **File** > **Preferences** menu group.
+You can configure VS Code through [settings]({{< ref "/GetStarted/Settings" >}}), [color themes]({{< ref "/GetStarted/Themes" >}}), and [custom keybindings]({{< ref "/GetStarted/KeyBindings" >}}) available through the **File** > **Preferences** menu group.
 
 ​​​	您可以通过“文件”>“首选项”菜单组中提供的设置、颜色主题和自定义键绑定来配置 VS Code。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/setup/mac#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Setup/macOS#_next-steps" >}})
 
 Once you have installed VS Code, these topics will help you learn more about VS Code:
 
 ​​​	安装 VS Code 后，这些主题将帮助您详细了解 VS Code：
 
-- [Additional Components](https://code.visualstudio.com/docs/setup/additional-components) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
+- [Additional Components]({{< ref "/Setup/AdditionalComponents" >}}) - Learn how to install Git, Node.js, TypeScript, and tools like Yeoman.
   其他组件 - 了解如何安装 Git、Node.js、TypeScript 和 Yeoman 等工具。
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - A quick orientation around VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - A quick orientation around VS Code.
   用户界面 - VS Code 的快速入门。
-- [User/Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences settings.
+- [User/Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences settings.
   用户/工作区设置 - 了解如何将 VS Code 配置为您的首选项设置。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/setup/mac#_common-questions)
+## [Common questions 常见问题]({{< ref "/Setup/macOS#_common-questions" >}})
 
-### [Why do I see "Visual Studio Code would like access to your calendar." 为什么我看到“Visual Studio Code 想要访问您的日历”。](https://code.visualstudio.com/docs/setup/mac#_why-do-i-see-visual-studio-code-would-like-access-to-your-calendar)
+### [Why do I see "Visual Studio Code would like access to your calendar." 为什么我看到“Visual Studio Code 想要访问您的日历”。]({{< ref "/Setup/macOS#_why-do-i-see-visual-studio-code-would-like-access-to-your-calendar" >}})
 
-If you are running macOS Mojave version, you may see dialogs saying "Visual Studio Code would like to access your {calendar/contacts/photos}." This is due to the new privacy protections in Mojave [discussed above](https://code.visualstudio.com/docs/setup/mac#_mojave-privacy-protections). It is fine to choose **Don't Allow** since VS Code does not need access to those folders.
+If you are running macOS Mojave version, you may see dialogs saying "Visual Studio Code would like to access your {calendar/contacts/photos}." This is due to the new privacy protections in Mojave [discussed above]({{< ref "/Setup/macOS#_mojave-privacy-protections" >}}). It is fine to choose **Don't Allow** since VS Code does not need access to those folders.
 
 ​​​	如果您运行的是 macOS Mojave 版本，您可能会看到对话框，提示“Visual Studio Code 想要访问您的 {日历/联系人/照片}”。这是由于 Mojave 中讨论的新隐私保护。选择“不允许”是可以的，因为 VS Code 不需要访问这些文件夹。
 
-### [VS Code fails to update VS Code 无法更新](https://code.visualstudio.com/docs/setup/mac#_vs-code-fails-to-update)
+### [VS Code fails to update VS Code 无法更新]({{< ref "/Setup/macOS#_vs-code-fails-to-update" >}})
 
 If VS Code doesn't update once it restarts, it might be set under quarantine by macOS. Follow the steps in this [issue](https://github.com/microsoft/vscode/issues/7426#issuecomment-425093469) for resolution.
 
 ​​​	如果 VS Code 在重新启动后无法更新，它可能被 macOS 隔离了。按照此问题中的步骤进行解决。
 
-### [Does VS Code run on Apple silicon machines? VS Code 是否可以在 Apple 芯片电脑上运行？](https://code.visualstudio.com/docs/setup/mac#_does-vs-code-run-on-apple-silicon-machines)
+### [Does VS Code run on Apple silicon machines? VS Code 是否可以在 Apple 芯片电脑上运行？]({{< ref "/Setup/macOS#_does-vs-code-run-on-apple-silicon-machines" >}})
 
 Yes, VS Code supports macOS Arm64 builds that can run on Macs with the Apple silicon chipsets. You can install the Universal build, which includes both Intel and Apple silicon builds, or one of the platform specific builds.
 

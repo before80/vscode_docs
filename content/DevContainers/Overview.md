@@ -14,7 +14,7 @@ draft = false
 
 
 
-The **Visual Studio Code Dev Containers** extension lets you use a container as a full-featured development environment. It allows you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set. A [devcontainer.json file](https://code.visualstudio.com/docs/devcontainers/containers#_create-a-devcontainerjson-file) in your project tells VS Code how to access (or create) a **development container** with a well-defined tool and runtime stack. This container can be used to run an application or to separate tools, libraries, or runtimes needed for working with a codebase.
+The **Visual Studio Code Dev Containers** extension lets you use a container as a full-featured development environment. It allows you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set. A [devcontainer.json file]({{< ref "/DevContainers/Overview#_create-a-devcontainerjson-file" >}}) in your project tells VS Code how to access (or create) a **development container** with a well-defined tool and runtime stack. This container can be used to run an application or to separate tools, libraries, or runtimes needed for working with a codebase.
 
 ​​	Visual Studio Code Dev Containers 扩展允许您将容器用作全功能开发环境。它允许您在容器内（或挂载到容器内）打开任何文件夹，并利用 Visual Studio Code 的全套功能。项目中的 devcontainer.json 文件告诉 VS Code 如何访问（或创建）具有明确定义的工具和运行时堆栈的开发容器。此容器可用于运行应用程序或分离处理代码库所需工具、库或运行时。
 
@@ -34,20 +34,20 @@ The Dev Containers extension supports two primary operating models:
 
 - You can use a container as your full-time development environment
   您可以将容器用作全职开发环境
-- You can [attach to a running container](https://code.visualstudio.com/docs/devcontainers/attach-container) to inspect it.
+- You can [attach to a running container]({{< ref "/DevContainers/AttachtoContainer" >}}) to inspect it.
   您可以附加到正在运行的容器以检查它。
 
-> **Note**: The Dev Containers extension supports the open Dev Containers Specification, which empowers anyone in any tool to configure a consistent dev environment. You can learn more in our [dev container FAQ](https://code.visualstudio.com/docs/devcontainers/faq#_can-i-use-dev-containers-outside-of-vs-code) and on the specification's site [containers.dev](https://containers.dev/).
+> **Note**: The Dev Containers extension supports the open Dev Containers Specification, which empowers anyone in any tool to configure a consistent dev environment. You can learn more in our [dev container FAQ]({{< ref "/DevContainers/FAQ#_can-i-use-dev-containers-outside-of-vs-code" >}}) and on the specification's site [containers.dev](https://containers.dev/).
 >
 > ​​	注意：Dev Containers 扩展支持开放的 Dev Containers 规范，该规范使任何工具中的任何人都能够配置一致的开发环境。您可以在我们的 dev 容器常见问题解答和规范网站 containers.dev 中了解更多信息。
 
-## [Getting started 入门](https://code.visualstudio.com/docs/devcontainers/containers#_getting-started)
+## [Getting started 入门]({{< ref "/DevContainers/Overview#_getting-started" >}})
 
-> **Note**: You can learn how to get up-and-running quickly with dev containers in the introductory [Dev Containers tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial).
+> **Note**: You can learn how to get up-and-running quickly with dev containers in the introductory [Dev Containers tutorial]({{< ref "/DevContainers/Tutorial" >}}).
 >
 > ​​	注意：您可以在入门 Dev Containers 教程中了解如何快速启动并运行 dev 容器。
 
-### [System requirements 系统要求](https://code.visualstudio.com/docs/devcontainers/containers#_system-requirements)
+### [System requirements 系统要求]({{< ref "/DevContainers/Overview#_system-requirements" >}})
 
 **Local / Remote Host:
 本地/远程主机：**
@@ -67,10 +67,10 @@ You can use Docker with the Dev Containers extension in a few ways, including:
   
   其他 Docker 兼容的 CLI，本地或远程安装。
 
-  - While other CLIs may work, they are not officially supported. Note that [attaching to a Kubernetes cluster](https://code.visualstudio.com/docs/devcontainers/attach-container#_attach-to-a-container-in-a-kubernetes-cluster) only requires a properly configured [kubectl CLI](https://kubernetes.io/docs/reference/kubectl/overview/).
+  - While other CLIs may work, they are not officially supported. Note that [attaching to a Kubernetes cluster]({{< ref "/DevContainers/AttachtoContainer#_attach-to-a-container-in-a-kubernetes-cluster" >}}) only requires a properly configured [kubectl CLI](https://kubernetes.io/docs/reference/kubectl/overview/).
     虽然其他 CLI 可能有效，但它们并未得到官方支持。请注意，附加到 Kubernetes 集群只需要正确配置的 kubectl CLI。
 
-You can learn more in the [alternative Docker options doc](https://code.visualstudio.com/remote/advancedcontainers/docker-options).
+You can learn more in the [alternative Docker options doc]({{< ref "/Remote/advancedcontainers/Dockeroptions" >}}).
 
 ​​	您可以在替代 Docker 选项文档中了解更多信息。
 
@@ -98,13 +98,13 @@ Other `glibc` based Linux containers may work if they have [needed Linux prerequ
 
 ​​	其他 `glibc` 基于 Linux 的容器可能有效，前提是它们具有所需的 Linux 先决条件。
 
-### [Installation 安装](https://code.visualstudio.com/docs/devcontainers/containers#_installation)
+### [Installation 安装]({{< ref "/DevContainers/Overview#_installation" >}})
 
 To get started, follow these steps:
 
 ​​	要开始，请按照以下步骤操作：
 
-1. Install and configure [Docker](https://www.docker.com/get-started) for your operating system, using one of the paths below or an [alternative Docker option](https://code.visualstudio.com/remote/advancedcontainers/docker-options), like Docker on a remote host or Docker compliant CLI.
+1. Install and configure [Docker](https://www.docker.com/get-started) for your operating system, using one of the paths below or an [alternative Docker option]({{< ref "/Remote/advancedcontainers/Dockeroptions" >}}), like Docker on a remote host or Docker compliant CLI.
 
    ​​	使用以下路径之一或备用 Docker 选项（如远程主机上的 Docker 或兼容 Docker 的 CLI）为您的操作系统安装并配置 Docker。
 
@@ -120,7 +120,7 @@ To get started, follow these steps:
 
       ​​	如果您在 Windows 上使用 WSL 2，请执行以下操作以确保启用 WSL 2 后端：右键单击 Docker 任务栏项并选择“设置”。选中“使用基于 WSL 2 的引擎”，并在“资源”>“WSL 集成”下验证您的发行版是否已启用。
 
-   3. When not using the WSL 2 back-end, right-click on the Docker task bar item, select **Settings** and update **Resources > File Sharing** with any locations your source code is kept. See [tips and tricks](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks) for troubleshooting.
+   3. When not using the WSL 2 back-end, right-click on the Docker task bar item, select **Settings** and update **Resources > File Sharing** with any locations your source code is kept. See [tips and tricks]({{< ref "/DevContainers/TipsandTricks" >}}) for troubleshooting.
 
       ​​	不使用 WSL 2 后端时，右键单击 Docker 任务栏项，选择“设置”，然后使用源代码所在的任何位置更新“资源”>“文件共享”。请参阅疑难解答技巧和窍门。
 
@@ -148,43 +148,43 @@ To get started, follow these steps:
 
    ​​	安装 Dev Containers 扩展。如果您计划在 VS Code 中使用其他远程扩展，可以选择安装远程开发扩展包。
 
-### [Working with Git? 使用 Git？](https://code.visualstudio.com/docs/devcontainers/containers#_working-with-git)
+### [Working with Git? 使用 Git？]({{< ref "/DevContainers/Overview#_working-with-git" >}})
 
 Here are two tips to consider:
 
 ​​	这里有两个提示供您考虑：
 
-- If you are working with the same repository both locally in Windows and inside a container, be sure to set up consistent line endings. See [tips and tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files) for details.
+- If you are working with the same repository both locally in Windows and inside a container, be sure to set up consistent line endings. See [tips and tricks]({{< ref "/Remote/TipsandTricks#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files" >}}) for details.
   如果您在 Windows 本地和容器内使用同一个存储库，请务必设置一致的行尾。有关详细信息，请参阅提示和技巧。
-- If you clone using a Git credential manager, your container should already have access to your credentials! If you use SSH keys, you can also opt in to sharing them. See [Sharing Git credentials with your container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials) for details.
+- If you clone using a Git credential manager, your container should already have access to your credentials! If you use SSH keys, you can also opt in to sharing them. See [Sharing Git credentials with your container]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials" >}}) for details.
   如果您使用 Git 凭据管理器进行克隆，您的容器应该已经可以访问您的凭据！如果您使用 SSH 密钥，您还可以选择共享它们。有关详细信息，请参阅与容器共享 Git 凭据。
 
-## [Picking your quick start 选择快速入门](https://code.visualstudio.com/docs/devcontainers/containers#_picking-your-quick-start)
+## [Picking your quick start 选择快速入门]({{< ref "/DevContainers/Overview#_picking-your-quick-start" >}})
 
 This document includes 3 quick starts - we recommend starting with the one that fits your workflow and interests the best:
 
 ​​	本文档包含 3 个快速入门 - 我们建议您从最适合您的工作流且最能引起您兴趣的那个开始：
 
-1. Want to try out a dev container in a quick sample repo? Check out [Quick start 1: Try a development container](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-try-a-development-container).
+1. Want to try out a dev container in a quick sample repo? Check out [Quick start 1: Try a development container]({{< ref "/DevContainers/Overview#_quick-start-try-a-development-container" >}}).
    想在快速示例存储库中试用开发容器？请查看快速入门 1：试用开发容器。
-2. Want to add a dev container to one of your existing locally cloned projects? Check out [Quick start 2: Open an existing folder in a container](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container).
+2. Want to add a dev container to one of your existing locally cloned projects? Check out [Quick start 2: Open an existing folder in a container]({{< ref "/DevContainers/Overview#_quick-start-open-an-existing-folder-in-a-container" >}}).
    想为现有本地克隆项目之一添加开发容器？查看快速入门 2：在容器中打开现有文件夹。
-3. Want to work with an isolated copy of a repo, i.e. to review a PR or investigate a branch without impacting your local work? Check out [Quick start 3: Open a git repo or PR in an isolated container volume](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume).
+3. Want to work with an isolated copy of a repo, i.e. to review a PR or investigate a branch without impacting your local work? Check out [Quick start 3: Open a git repo or PR in an isolated container volume]({{< ref "/DevContainers/Overview#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume" >}}).
    想使用存储库的隔离副本，即查看 PR 或调查分支而不影响本地工作？查看快速入门 3：在隔离容器卷中打开 git 存储库或 PR。
 
-## [Quick start: Try a development container 快速入门：试用开发容器](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-try-a-development-container)
+## [Quick start: Try a development container 快速入门：试用开发容器]({{< ref "/DevContainers/Overview#_quick-start-try-a-development-container" >}})
 
-The easiest way to get started is to try one of the sample development containers. The [Containers tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial) will walk you through setting up Docker and the Dev Containers extension and let you select a sample:
+The easiest way to get started is to try one of the sample development containers. The [Containers tutorial]({{< ref "/DevContainers/Tutorial" >}}) will walk you through setting up Docker and the Dev Containers extension and let you select a sample:
 
 ​​	最简单的入门方法是试用其中一个示例开发容器。容器教程将指导您设置 Docker 和 Dev Containers 扩展，并让您选择一个示例：
 
 ![Select a sample from the list](./Overview_img/select-a-sample.png)
 
-> Note: If you already have VS Code and Docker installed, then you may use [open in dev container](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-python). You can learn more about this and how to add it to your repos in the [create a dev container guide](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_add-configuration-files-to-a-repository).
+> Note: If you already have VS Code and Docker installed, then you may use [open in dev container](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-python). You can learn more about this and how to add it to your repos in the [create a dev container guide]({{< ref "/DevContainers/CreateaDevContainer#_add-configuration-files-to-a-repository" >}}).
 >
 > ​​	注意：如果您已安装 VS Code 和 Docker，则可以使用在开发容器中打开。您可以在创建开发容器指南中了解有关此功能的更多信息以及如何将其添加到您的存储库。
 
-## [Quick start: Open an existing folder in a container 快速入门：在容器中打开现有文件夹](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container)
+## [Quick start: Open an existing folder in a container 快速入门：在容器中打开现有文件夹]({{< ref "/DevContainers/Overview#_quick-start-open-an-existing-folder-in-a-container" >}})
 
 This quick start covers how to set up a dev container for an existing project to use as your full-time development environment using existing source code on your filesystem. Follow these steps:
 
@@ -214,7 +214,7 @@ This quick start covers how to set up a dev container for an existing project to
 
    ​​	列表将根据你打开的文件夹的内容自动排序。
 
-   You may be able to customize your dev container with additional Features, which [you can read more about below](https://code.visualstudio.com/docs/devcontainers/containers#_dev-container-features).
+   You may be able to customize your dev container with additional Features, which [you can read more about below]({{< ref "/DevContainers/Overview#_dev-container-features" >}}).
 
    ​​	你可以使用其他功能来自定义你的 dev 容器，你可以在下面阅读更多相关信息。
 
@@ -244,15 +244,15 @@ You can now interact with your project in VS Code just as you could when opening
 
 ​​	您现在可以在 VS Code 中与您的项目进行交互，就像在本地打开项目时一样。从现在开始，当您打开项目文件夹时，VS Code 将自动获取并重新使用您的 dev container 配置。
 
-> **Tip:** Want to use a remote Docker host? See the section on [opening a folder on a remote SSH host in a container](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-folder-on-a-remote-ssh-host-in-a-container) for information.
+> **Tip:** Want to use a remote Docker host? See the section on [opening a folder on a remote SSH host in a container]({{< ref "/DevContainers/Overview#_open-a-folder-on-a-remote-ssh-host-in-a-container" >}}) for information.
 >
 > ​​	提示：想要使用远程 Docker 主机？请参阅有关在容器中打开远程 SSH 主机上的文件夹的部分以获取信息。
 
-While using this approach to [bind mount](https://docs.docker.com/storage/bind-mounts/) the local filesystem into a container is convenient, it does have some performance overhead on Windows and macOS. There are [some techniques](https://code.visualstudio.com/remote/advancedcontainers/improve-performance) that you can apply to improve disk performance, or you can [open a repository in a container using an isolated container volume](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume) instead.
+While using this approach to [bind mount](https://docs.docker.com/storage/bind-mounts/) the local filesystem into a container is convenient, it does have some performance overhead on Windows and macOS. There are [some techniques]({{< ref "/Remote/advancedcontainers/Improveperformance" >}}) that you can apply to improve disk performance, or you can [open a repository in a container using an isolated container volume]({{< ref "/DevContainers/Overview#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume" >}}) instead.
 
 ​​	虽然使用这种方法将本地文件系统绑定挂载到容器中很方便，但它确实会在 Windows 和 macOS 上产生一些性能开销。有一些技术可以应用于提高磁盘性能，或者您可以使用隔离容器卷在容器中打开存储库。
 
-### [Open a WSL 2 folder in a container on Windows 在 Windows 上的容器中打开 WSL 2 文件夹](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-wsl-2-folder-in-a-container-on-windows)
+### [Open a WSL 2 folder in a container on Windows 在 Windows 上的容器中打开 WSL 2 文件夹]({{< ref "/DevContainers/Overview#_open-a-wsl-2-folder-in-a-container-on-windows" >}})
 
 If you are using [Windows Subsystem for Linux v2 (WSL 2)](https://learn.microsoft.com/windows/wsl/wsl2-about) and have enabled [Docker Desktop's WSL 2 back-end](https://aka.ms/vscode-remote/containers/docker-wsl2), you can work with source code stored inside WSL!
 
@@ -267,13 +267,13 @@ Once the WSL 2 engine is enabled, you can either:
 - Select **Dev Containers: Open Folder in Container...** from the Command Palette (F1) and choose a WSL folder using the local `\\wsl$` share (from the Windows side).
   从命令面板 (F1) 中选择“开发容器：在容器中打开文件夹...”并使用本地 `\\wsl$` 共享（从 Windows 端）选择 WSL 文件夹。
 
-The rest of the quick start applies as-is! You can learn more about the [WSL extension in its documentation](https://code.visualstudio.com/docs/remote/wsl).
+The rest of the quick start applies as-is! You can learn more about the [WSL extension in its documentation]({{< ref "/Remote/WindowsSubsystemforLinux" >}}).
 
 ​​	其余的快速入门照常适用！您可以在其文档中了解有关 WSL 扩展的更多信息。
 
-### [Open a folder on a remote SSH host in a container 在容器中打开远程 SSH 主机上的文件夹](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-folder-on-a-remote-ssh-host-in-a-container)
+### [Open a folder on a remote SSH host in a container 在容器中打开远程 SSH 主机上的文件夹]({{< ref "/DevContainers/Overview#_open-a-folder-on-a-remote-ssh-host-in-a-container" >}})
 
-If you are using a Linux or macOS SSH host, you can use the [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) and Dev Containers extensions together. You do not even need to have a Docker client installed locally.
+If you are using a Linux or macOS SSH host, you can use the [Remote - SSH]({{< ref "/Remote/SSH" >}}) and Dev Containers extensions together. You do not even need to have a Docker client installed locally.
 
 ​​	如果您使用的是 Linux 或 macOS SSH 主机，则可以同时使用 Remote - SSH 和 Dev Containers 扩展。您甚至无需在本地安装 Docker 客户端。
 
@@ -281,24 +281,24 @@ To do so:
 
 ​​	要执行此操作，请执行以下操作：
 
-1. Follow the [installation](https://code.visualstudio.com/docs/remote/ssh#_installation) and SSH [host setup](https://code.visualstudio.com/docs/remote/ssh#_ssh-host-setup) steps for the Remote - SSH extension.
+1. Follow the [installation]({{< ref "/Remote/SSH#_installation" >}}) and SSH [host setup]({{< ref "/Remote/SSH#_ssh-host-setup" >}}) steps for the Remote - SSH extension.
    按照 Remote - SSH 扩展的安装和 SSH 主机设置步骤操作。
-2. **Optional:** Set up SSH [key based authentication](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication) to the server so you do not need to enter your password multiple times.
+2. **Optional:** Set up SSH [key based authentication]({{< ref "/Remote/TipsandTricks#_configuring-key-based-authentication" >}}) to the server so you do not need to enter your password multiple times.
    可选：设置基于 SSH 密钥的身份验证到服务器，以便您无需多次输入密码。
-3. [Install Docker](https://code.visualstudio.com/docs/devcontainers/containers#_installation) on your SSH host. You do not need to install Docker locally.
+3. [Install Docker]({{< ref "/DevContainers/Overview#_installation" >}}) on your SSH host. You do not need to install Docker locally.
    在您的 SSH 主机上安装 Docker。您无需在本地安装 Docker。
-4. Follow the [quick start](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host) for the Remote - SSH extension to connect to a host and open a folder there.
+4. Follow the [quick start]({{< ref "/Remote/SSH#_connect-to-a-remote-host" >}}) for the Remote - SSH extension to connect to a host and open a folder there.
    按照 Remote - SSH 扩展的快速入门指南连接到主机并在其中打开文件夹。
 5. Use the **Dev Containers: Reopen in Container** command from the Command Palette (F1, Ctrl+Shift+P).
    从命令面板（F1、Ctrl+Shift+P）中使用 Dev Containers：在容器中重新打开命令。
 
-The rest of the Dev Containers quick start applies as-is. You can learn more about the [Remote - SSH extension in its documentation](https://code.visualstudio.com/docs/remote/ssh). You can also see the [Develop on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) article for other options if this model does not meet your needs.
+The rest of the Dev Containers quick start applies as-is. You can learn more about the [Remote - SSH extension in its documentation]({{< ref "/Remote/SSH" >}}). You can also see the [Develop on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) article for other options if this model does not meet your needs.
 
 ​​	Dev Containers 快速入门指南的其余部分照常适用。您可以在其文档中了解有关 Remote - SSH 扩展的更多信息。如果您不满足此模型的需求，还可以参阅在远程 Docker 主机上进行开发一文，了解其他选项。
 
-### [Open a folder on a remote Tunnel host in a container 在容器中打开远程 Tunnel 主机上的文件夹](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-folder-on-a-remote-tunnel-host-in-a-container)
+### [Open a folder on a remote Tunnel host in a container 在容器中打开远程 Tunnel 主机上的文件夹]({{< ref "/DevContainers/Overview#_open-a-folder-on-a-remote-tunnel-host-in-a-container" >}})
 
-You can use the [Remote - Tunnels](https://code.visualstudio.com/docs/remote/tunnels) and Dev Containers extensions together to open a folder on your remote host inside of a container. You do not even need to have a Docker client installed locally. This is similar to the SSH host scenario above, but uses Remote - Tunnels instead.
+You can use the [Remote - Tunnels]({{< ref "/Remote/Tunnels" >}}) and Dev Containers extensions together to open a folder on your remote host inside of a container. You do not even need to have a Docker client installed locally. This is similar to the SSH host scenario above, but uses Remote - Tunnels instead.
 
 ​​	您可以同时使用 Remote - Tunnels 和 Dev Containers 扩展，以便在容器中打开远程主机上的文件夹。您甚至无需在本地安装 Docker 客户端。这类似于上述 SSH 主机方案，但使用的是 Remote - Tunnels。
 
@@ -306,22 +306,22 @@ To do so:
 
 ​​	要执行此操作，请执行以下操作：
 
-1. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/tunnels#_getting-started) instructions for the Remote - Tunnels extension.
+1. Follow the [Getting Started]({{< ref "/Remote/Tunnels#_getting-started" >}}) instructions for the Remote - Tunnels extension.
    按照 Remote - Tunnels 扩展的入门说明进行操作。
-2. [Install Docker](https://code.visualstudio.com/docs/devcontainers/containers#_installation) on your tunnel host. You do not need to install Docker locally.
+2. [Install Docker]({{< ref "/DevContainers/Overview#_installation" >}}) on your tunnel host. You do not need to install Docker locally.
    在您的隧道主机上安装 Docker。您无需在本地安装 Docker。
-3. Follow the [steps](https://code.visualstudio.com/docs/remote/tunnels#_remote-tunnels-extension) for the Remote - Tunnels extension to connect to a tunnel host and open a folder there.
+3. Follow the [steps]({{< ref "/Remote/Tunnels#_remote-tunnels-extension" >}}) for the Remote - Tunnels extension to connect to a tunnel host and open a folder there.
    按照 Remote - Tunnels 扩展的步骤操作，以连接到隧道主机并在其中打开文件夹。
 4. Use the **Dev Containers: Reopen in Container** command from the Command Palette (F1, Ctrl+Shift+P).
    从命令面板（F1、Ctrl+Shift+P）中使用 Dev Containers：在容器中重新打开命令。
 
-The rest of the Dev Containers quick start applies as-is. You can learn more about the [Remote - Tunnels extension in its documentation](https://code.visualstudio.com/docs/remote/tunnels). You can also see the [Develop on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) article for other options if this model does not meet your needs.
+The rest of the Dev Containers quick start applies as-is. You can learn more about the [Remote - Tunnels extension in its documentation]({{< ref "/Remote/Tunnels" >}}). You can also see the [Develop on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) article for other options if this model does not meet your needs.
 
 ​​	Dev Containers 快速入门其余部分照常适用。您可以在其文档中了解有关 Remote - Tunnels 扩展的更多信息。如果您需要其他选项，也可以参阅在远程 Docker 主机上进行开发一文，以了解其他选项。
 
-### [Open an existing workspace in a container 在容器中打开现有工作区](https://code.visualstudio.com/docs/devcontainers/containers#_open-an-existing-workspace-in-a-container)
+### [Open an existing workspace in a container 在容器中打开现有工作区]({{< ref "/DevContainers/Overview#_open-an-existing-workspace-in-a-container" >}})
 
-You can also follow a similar process to open a [VS Code multi-root workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) in a **single container** if the workspace only **references relative paths to sub-folders of the folder the `.code-workspace` file is in (or the folder itself).**
+You can also follow a similar process to open a [VS Code multi-root workspace]({{< ref "/UserGuide/Multi-rootWorkspaces" >}}) in a **single container** if the workspace only **references relative paths to sub-folders of the folder the `.code-workspace` file is in (or the folder itself).**
 
 ​​	如果工作区仅引用 `.code-workspace` 文件所在文件夹的子文件夹的相对路径（或文件夹本身），您还可以按照类似的过程在单个容器中打开 VS Code 多根工作区。
 
@@ -338,17 +338,17 @@ Once connected, you may want to **add the `.devcontainer` folder** to the worksp
 
 ​​	连接后，您可能希望将 `.devcontainer` 文件夹添加到工作区，以便在尚未显示该文件夹的情况下轻松编辑其内容。
 
-Also note that, while you cannot use multiple containers for the same workspace in the same VS Code window, you can use [multiple Docker Compose managed containers at once](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers) from separate windows.
+Also note that, while you cannot use multiple containers for the same workspace in the same VS Code window, you can use [multiple Docker Compose managed containers at once]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers" >}}) from separate windows.
 
 ​​	另请注意，虽然您无法在同一个 VS Code 窗口中为同一个工作区使用多个容器，但您可以从不同的窗口同时使用多个 Docker Compose 管理的容器。
 
-## [Quick start: Open a Git repository or GitHub PR in an isolated container volume 快速入门：在隔离的容器卷中打开 Git 存储库或 GitHub PR](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume)
+## [Quick start: Open a Git repository or GitHub PR in an isolated container volume 快速入门：在隔离的容器卷中打开 Git 存储库或 GitHub PR]({{< ref "/DevContainers/Overview#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume" >}})
 
-While you can [open a locally cloned repository in a container](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container), you may want to work with an isolated copy of a repository for a PR review or to investigate another branch without impacting your work.
+While you can [open a locally cloned repository in a container]({{< ref "/DevContainers/Overview#_quick-start-open-an-existing-folder-in-a-container" >}}), you may want to work with an isolated copy of a repository for a PR review or to investigate another branch without impacting your work.
 
 ​​	虽然您可以在容器中打开本地克隆的存储库，但您可能希望使用存储库的隔离副本进行公关审查或调查另一个分支，而不会影响您的工作。
 
-Repository Containers use isolated, local Docker volumes instead of binding to the local filesystem. In addition to not polluting your file tree, local volumes have the added benefit of improved performance on Windows and macOS. (See Advanced Configuration [Improve disk performance](https://code.visualstudio.com/remote/advancedcontainers/improve-performance) article for information on how to use these types of volumes in other scenarios.)
+Repository Containers use isolated, local Docker volumes instead of binding to the local filesystem. In addition to not polluting your file tree, local volumes have the added benefit of improved performance on Windows and macOS. (See Advanced Configuration [Improve disk performance]({{< ref "/Remote/advancedcontainers/Improveperformance" >}}) article for information on how to use these types of volumes in other scenarios.)
 
 ​​	存储库容器使用隔离的本地 Docker 卷，而不是绑定到本地文件系统。除了不会污染您的文件树之外，本地卷还具有在 Windows 和 macOS 上提高性能的额外好处。（请参阅高级配置改进磁盘性能文章，了解如何在其他场景中使用这些类型的卷。）
 
@@ -366,7 +366,7 @@ For example, follow these steps to open one of the "try" repositories in a Repos
 
    ![Input box with a repository name in it](./Overview_img/vscode-remote-try-node.png)
 
-   > **Tip:** If you choose a private repository, you may want to setup a credential manager or add your SSH keys to your SSH agent. See [Sharing Git credentials with your container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials).
+   > **Tip:** If you choose a private repository, you may want to setup a credential manager or add your SSH keys to your SSH agent. See [Sharing Git credentials with your container]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials" >}}).
    >
    > ​​	提示：如果您选择私有存储库，您可能希望设置凭据管理器或将 SSH 密钥添加到 SSH 代理。请参阅与容器共享 Git 凭据。
 
@@ -404,13 +404,13 @@ Note that if the container fails to come up due to something like a Docker build
 
 ​​	请注意，如果由于 Docker 构建错误等原因导致容器无法启动，则可以选择在出现的对话框中选择“在恢复容器中重新打开”，以进入“恢复容器”，以便您编辑 Dockerfile 或其他内容。这将在极简容器中打开克隆存储库的 docker 卷，并向您显示创建日志。修复完成后，使用“在容器中重新打开”重试。
 
-> **Tip:** Want to use a remote Docker host? See the section on [opening a folder on a remote SSH host in a container](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-folder-on-a-remote-ssh-host-in-a-container) for information.
+> **Tip:** Want to use a remote Docker host? See the section on [opening a folder on a remote SSH host in a container]({{< ref "/DevContainers/Overview#_open-a-folder-on-a-remote-ssh-host-in-a-container" >}}) for information.
 >
 > ​​	提示：想要使用远程 Docker 主机？请参阅有关在容器中打开远程 SSH 主机上的文件夹的部分以获取信息。
 
-## [Trusting your Workspace 信任您的工作区](https://code.visualstudio.com/docs/devcontainers/containers#_trusting-your-workspace)
+## [Trusting your Workspace 信任您的工作区]({{< ref "/DevContainers/Overview#_trusting-your-workspace" >}})
 
-Visual Studio Code takes security seriously and wants to help you safely browse and edit code no matter the source or original authors. The [Workspace Trust feature](https://code.visualstudio.com/docs/editor/workspace-trust) lets you decide whether your project folders should allow or restrict automatic code execution.
+Visual Studio Code takes security seriously and wants to help you safely browse and edit code no matter the source or original authors. The [Workspace Trust feature]({{< ref "/UserGuide/WorkspaceTrust" >}}) lets you decide whether your project folders should allow or restrict automatic code execution.
 
 ​​	Visual Studio Code 非常重视安全性，并希望帮助您安全地浏览和编辑代码，无论其来源或原始作者是谁。工作区信任功能可让您决定项目文件夹是否应允许或限制自动代码执行。
 
@@ -418,9 +418,9 @@ The Dev Containers extension has adopted Workspace Trust. Depending on how you o
 
 ​​	Dev Containers 扩展已采用工作区信任。根据您打开和与源代码交互的方式，系统会提示您决定是否信任您在不同时间点编辑或执行的代码。
 
-### [Reopen folder in container 在容器中重新打开文件夹](https://code.visualstudio.com/docs/devcontainers/containers#_reopen-folder-in-container)
+### [Reopen folder in container 在容器中重新打开文件夹]({{< ref "/DevContainers/Overview#_reopen-folder-in-container" >}})
 
-[Setting up a dev container for an existing project](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) requires trusting the local (or WSL) folder. You will be asked to trust the local (or WSL) folder before the window reloads.
+[Setting up a dev container for an existing project]({{< ref "/DevContainers/Overview#_quick-start-open-an-existing-folder-in-a-container" >}}) requires trusting the local (or WSL) folder. You will be asked to trust the local (or WSL) folder before the window reloads.
 
 ​​	为现有项目设置开发容器需要信任本地（或 WSL）文件夹。在窗口重新加载之前，系统会要求您信任本地（或 WSL）文件夹。
 
@@ -433,35 +433,35 @@ There are a couple of exceptions to this flow:
 2. Using the **Open Folder in Container** command will ask for trust after the window reloads, if trust is not already given.
    使用“在容器中打开文件夹”命令将在窗口重新加载后询问信任，如果尚未给予信任。
 
-### [Attach to existing container 附加到现有容器](https://code.visualstudio.com/docs/devcontainers/containers#_attach-to-existing-container)
+### [Attach to existing container 附加到现有容器]({{< ref "/DevContainers/Overview#_attach-to-existing-container" >}})
 
-When [attaching to an existing container](https://code.visualstudio.com/docs/devcontainers/attach-container), you will be asked to confirm that attaching means you trust the container. This is only confirmed once.
+When [attaching to an existing container]({{< ref "/DevContainers/AttachtoContainer" >}}), you will be asked to confirm that attaching means you trust the container. This is only confirmed once.
 
 ​​	附加到现有容器时，系统会要求您确认附加意味着您信任该容器。仅确认一次。
 
 ![Workspace trust prompt when attaching to container](./Overview_img/attach-containers-trust.png)
 
-### [Clone repository in a volume 在卷中克隆存储库](https://code.visualstudio.com/docs/devcontainers/containers#_clone-repository-in-a-volume)
+### [Clone repository in a volume 在卷中克隆存储库]({{< ref "/DevContainers/Overview#_clone-repository-in-a-volume" >}})
 
-When [cloning a repository in a container volume](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume), you are asked to confirm that cloning a repository means you trust the repository. This is only confirmed once.
+When [cloning a repository in a container volume]({{< ref "/DevContainers/Overview#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume" >}}), you are asked to confirm that cloning a repository means you trust the repository. This is only confirmed once.
 
 ​​	在容器卷中克隆存储库时，系统会要求您确认克隆存储库意味着您信任该存储库。仅确认一次。
 
 ![Workspace trust prompt when cloning in container volume](./Overview_img/clone-containers-trust.png)
 
-### [Inspect volume 检查卷](https://code.visualstudio.com/docs/devcontainers/containers#_inspect-volume)
+### [Inspect volume 检查卷]({{< ref "/DevContainers/Overview#_inspect-volume" >}})
 
-[Inspecting a volume](https://code.visualstudio.com/docs/devcontainers/containers#_inspecting-volumes) starts in [Restricted Mode](https://code.visualstudio.com/docs/editor/workspace-trust#_restricted-mode), and you can trust the folder inside the container.
+[Inspecting a volume]({{< ref "/DevContainers/Overview#_inspecting-volumes" >}}) starts in [Restricted Mode]({{< ref "/UserGuide/WorkspaceTrust#_restricted-mode" >}}), and you can trust the folder inside the container.
 
 ​​	检查卷时会以受限模式启动，您可信任容器内的文件夹。
 
-### [Docker daemon running remotely Docker 守护程序远程运行](https://code.visualstudio.com/docs/devcontainers/containers#_docker-daemon-running-remotely)
+### [Docker daemon running remotely Docker 守护程序远程运行]({{< ref "/DevContainers/Overview#_docker-daemon-running-remotely" >}})
 
-This implies trusting [the machine the Docker daemon runs on](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host). There are no additional prompts to confirm (only those listed for the local/WSL case above).
+This implies trusting [the machine the Docker daemon runs on]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}). There are no additional prompts to confirm (only those listed for the local/WSL case above).
 
 ​​	这意味着信任运行 Docker 守护程序的计算机。没有其他确认提示（仅有上面列出的适用于本地/WSL 的提示）。
 
-## [Create a devcontainer.json file 创建 devcontainer.json 文件](https://code.visualstudio.com/docs/devcontainers/containers#_create-a-devcontainerjson-file)
+## [Create a devcontainer.json file 创建 devcontainer.json 文件]({{< ref "/DevContainers/Overview#_create-a-devcontainerjson-file" >}})
 
 VS Code's container configuration is stored in a [devcontainer.json](https://containers.dev/implementors/json_reference) file. This file is similar to the `launch.json` file for debugging configurations, but is used for launching (or attaching to) your development container instead. You can also specify any extensions to install once the container is running or post-create commands to prepare the environment. The dev container configuration is either located under `.devcontainer/devcontainer.json` or stored as a `.devcontainer.json` file (note the dot-prefix) in the root of your project.
 
@@ -491,15 +491,15 @@ You can also create a devcontainer.json by hand and use any image, Dockerfile, o
 }
 ```
 
-> **Note:** Additional configuration will already be added to the container based on what's in the base image. For example, we add the `streetsidesoftware.code-spell-checker` extension above, and the container will also include `"dbaeumer.vscode-eslint"` as [that's part of `mcr.microsoft.com/devcontainers/typescript-node`](https://github.com/devcontainers/images/blob/main/src/javascript-node/.devcontainer/devcontainer.json#L27). This happens automatically when pre-building using `devcontainer.json`, which you may read more about in the [pre-build section](https://code.visualstudio.com/docs/devcontainers/containers#_prebuilding-dev-container-images).
+> **Note:** Additional configuration will already be added to the container based on what's in the base image. For example, we add the `streetsidesoftware.code-spell-checker` extension above, and the container will also include `"dbaeumer.vscode-eslint"` as [that's part of `mcr.microsoft.com/devcontainers/typescript-node`](https://github.com/devcontainers/images/blob/main/src/javascript-node/.devcontainer/devcontainer.json#L27). This happens automatically when pre-building using `devcontainer.json`, which you may read more about in the [pre-build section]({{< ref "/DevContainers/Overview#_prebuilding-dev-container-images" >}}).
 >
 > ​​	注意：将根据基本映像中的内容向容器添加其他配置。例如，我们在上面添加了 `streetsidesoftware.code-spell-checker` 扩展，并且容器还将包含 `"dbaeumer.vscode-eslint"` ，因为它是 `mcr.microsoft.com/devcontainers/typescript-node` 的一部分。在使用 `devcontainer.json` 预构建时会自动发生这种情况，您可以在预构建部分中阅读更多相关信息。
 
-To learn more about creating `devcontainer.json` files, see [Create a Development Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container).
+To learn more about creating `devcontainer.json` files, see [Create a Development Container]({{< ref "/DevContainers/CreateaDevContainer" >}}).
 
 ​​	要了解有关创建 `devcontainer.json` 文件的更多信息，请参阅创建开发容器。
 
-## [Dev Container Features 开发容器功能](https://code.visualstudio.com/docs/devcontainers/containers#_dev-container-features)
+## [Dev Container Features 开发容器功能]({{< ref "/DevContainers/Overview#_dev-container-features" >}})
 
 Development container "Features" are self-contained, shareable units of installation code and dev container configuration. The name comes from the idea that referencing one of them allows you to quickly and easily add more tooling, runtime, or library "Features" into your development container for use by you or your collaborators.
 
@@ -537,9 +537,9 @@ The Features sourced in VS Code UI now come from a central index, which you can 
 
 ​​	VS Code UI 中获取的功能现在来自一个中心索引，您也可以对此索引做出贡献。请参阅“开发容器”规范网站以获取当前列表，并了解如何发布和分发功能。
 
-### ["Always installed" Features “始终安装”的功能](https://code.visualstudio.com/docs/devcontainers/containers#_always-installed-features)
+### ["Always installed" Features “始终安装”的功能]({{< ref "/DevContainers/Overview#_always-installed-features" >}})
 
-Similar to how you can [set extensions to always be installed](https://code.visualstudio.com/docs/devcontainers/containers#_always-installed-extensions) in your dev container, you can use the `dev.containers.defaultFeatures` User [setting](https://code.visualstudio.com/docs/getstarted/settings) to set Features you'd always like installed:
+Similar to how you can [set extensions to always be installed]({{< ref "/DevContainers/Overview#_always-installed-extensions" >}}) in your dev container, you can use the `dev.containers.defaultFeatures` User [setting]({{< ref "/GetStarted/Settings" >}}) to set Features you'd always like installed:
 
 ​​	与您可以设置扩展以始终安装在您的开发容器中类似，您可以使用 `dev.containers.defaultFeatures` 用户设置来设置您始终希望安装的功能：
 
@@ -549,7 +549,7 @@ Similar to how you can [set extensions to always be installed](https://code.visu
 },
 ```
 
-### [Creating your own Feature 创建您自己的功能](https://code.visualstudio.com/docs/devcontainers/containers#_creating-your-own-feature)
+### [Creating your own Feature 创建您自己的功能]({{< ref "/DevContainers/Overview#_creating-your-own-feature" >}})
 
 It's also easy to create and publish your own Dev Container Features. Published Features can be stored and shared as [OCI Artifacts](https://github.com/opencontainers/artifacts) from any supporting public or private container registry. You can see the list of current published Features on [containers.dev](https://containers.dev/features).
 
@@ -570,13 +570,13 @@ Check out the [feature/starter](https://github.com/devcontainers/feature-starter
 
 ​​	查看 feature/starter 存储库，了解有关使用开发容器 CLI 发布您自己的公共或私有功能的说明。
 
-### [Features specification and distribution 功能规范和分发](https://code.visualstudio.com/docs/devcontainers/containers#_features-specification-and-distribution)
+### [Features specification and distribution 功能规范和分发]({{< ref "/DevContainers/Overview#_features-specification-and-distribution" >}})
 
 Features are a key part of the open-source [Development Containers Specification](https://containers.dev/). You can review [more information about how Features work](https://containers.dev/implementors/features) and their [distribution](https://containers.dev/implementors/features-distribution).
 
 ​​	功能是开源开发容器规范的关键部分。您可以查看有关功能的工作方式及其分发的更多信息。
 
-## [Pre-building dev container images 预构建开发容器映像](https://code.visualstudio.com/docs/devcontainers/containers#_prebuilding-dev-container-images)
+## [Pre-building dev container images 预构建开发容器映像]({{< ref "/DevContainers/Overview#_prebuilding-dev-container-images" >}})
 
 We recommend pre-building images with the tools you need rather than creating and building a container image each time you open your project in a dev container. Using pre-built images will result in a faster container startup, simpler configuration, and allows you to pin to a specific version of tools to improve supply-chain security and avoid potential breaks. You can automate pre-building your image by scheduling the build using a DevOps or continuous integration (CI) service like GitHub Actions.
 
@@ -586,7 +586,7 @@ Even better - pre-built images can contain Dev Container metadata so when you re
 
 ​​	更好的是 - 预构建的映像可以包含开发容器元数据，因此当您引用映像时，设置将自动提取。
 
-We recommend using the [Dev Container CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli) (or other [specification](https://containers.dev/) supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci)) to pre-build your images since it is kept in sync with the Dev Containers extension's latest capabilities - including [dev container Features](https://code.visualstudio.com/docs/devcontainers/containers#_dev-container-features). Once you've built your image, you can push it to a container registry (like the [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli), [GitHub Container Registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#pushing-container-images), or [Docker Hub](https://docs.docker.com/engine/reference/commandline/push)) and reference it directly.
+We recommend using the [Dev Container CLI]({{< ref "/DevContainers/DevContainerCLI" >}}) (or other [specification](https://containers.dev/) supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci)) to pre-build your images since it is kept in sync with the Dev Containers extension's latest capabilities - including [dev container Features]({{< ref "/DevContainers/Overview#_dev-container-features" >}}). Once you've built your image, you can push it to a container registry (like the [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli), [GitHub Container Registry](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry#pushing-container-images), or [Docker Hub](https://docs.docker.com/engine/reference/commandline/push)) and reference it directly.
 
 ​​	我们建议使用开发容器 CLI（或其他支持规范的实用程序，如 GitHub Action）来预构建映像，因为它与开发容器扩展的最新功能（包括开发容器功能）保持同步。构建映像后，您可以将其推送到容器注册表（如 Azure 容器注册表、GitHub 容器注册表或 Docker Hub）并直接引用它。
 
@@ -594,17 +594,17 @@ You can use the GitHub Action in the [devcontainers/ci](https://github.com/devco
 
 ​​	您可以在 devcontainers/ci 存储库中使用 GitHub Action 来帮助您在工作流中重复使用开发容器。
 
-Go to the [dev container CLI article on pre-building images](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_prebuilding) for more information.
+Go to the [dev container CLI article on pre-building images]({{< ref "/DevContainers/DevContainerCLI#_prebuilding" >}}) for more information.
 
 ​​	有关更多信息，请参阅 dev 容器 CLI 文章，了解如何预构建映像。
 
-### [Inheriting metadata 继承元数据](https://code.visualstudio.com/docs/devcontainers/containers#_inheriting-metadata)
+### [Inheriting metadata 继承元数据]({{< ref "/DevContainers/Overview#_inheriting-metadata" >}})
 
 You can include Dev Container configuration and Feature metadata in prebuilt images via [image labels](https://docs.docker.com/config/labels-custom-metadata/). This makes the image self-contained since these settings are automatically picked up when the image is referenced - whether directly, in a `FROM` in a referenced Dockerfile, or in a Docker Compose file. This helps prevent your Dev Container config and image contents from getting out of sync, and allows you to push updates of the same configuration to multiple repositories through a simple image reference.
 
 ​​	您可以通过映像标签在预构建映像中包含 Dev 容器配置和功能元数据。这使得映像自包含，因为在引用映像时会自动选取这些设置 - 无论是直接引用、在引用的 Dockerfile 中的 `FROM` 中引用，还是在 Docker Compose 文件中引用。这有助于防止您的 Dev 容器配置和映像内容不同步，并允许您通过简单的映像引用将同一配置的更新推送到多个存储库。
 
-This metadata label is **automatically added** when you pre-build using the [Dev Container CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli) (or other [specification](https://containers.dev/) supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci) or [Azure DevOps task](https://marketplace.visualstudio.com/items?itemName=devcontainers.ci)) and includes settings from `devcontainer.json` and any referenced Dev Container Features.
+This metadata label is **automatically added** when you pre-build using the [Dev Container CLI]({{< ref "/DevContainers/DevContainerCLI" >}}) (or other [specification](https://containers.dev/) supporting utilities like the [GitHub Action](https://github.com/marketplace/actions/devcontainers-ci) or [Azure DevOps task](https://marketplace.visualstudio.com/items?itemName=devcontainers.ci)) and includes settings from `devcontainer.json` and any referenced Dev Container Features.
 
 ​​	当您使用 Dev 容器 CLI（或其他支持规范的实用程序，如 GitHub Action 或 Azure DevOps 任务）进行预构建时，会自动添加此元数据标签，其中包括 `devcontainer.json` 和任何引用的 Dev 容器功能的设置。
 
@@ -630,7 +630,7 @@ LABEL devcontainer.metadata='[{ \
 }]'
 ```
 
-## [Inspecting volumes 检查卷](https://code.visualstudio.com/docs/devcontainers/containers#_inspecting-volumes)
+## [Inspecting volumes 检查卷]({{< ref "/DevContainers/Overview#_inspecting-volumes" >}})
 
 Occasionally you may run into a situation where you are using a Docker named volume that you want to inspect or make changes in. You can use VS Code to work with these contents without creating or modifying `devcontainer.json` file by selecting the **Dev Containers: Explore a Volume in a Dev Container...** from the Command Palette (F1).
 
@@ -648,7 +648,7 @@ If you have the [Docker extension](https://marketplace.visualstudio.com/items?it
 
 ![Explore in dev container in Docker context menu](./Overview_img/docker-explore-dev-container.png)
 
-## [Managing extensions 管理扩展](https://code.visualstudio.com/docs/devcontainers/containers#_managing-extensions)
+## [Managing extensions 管理扩展]({{< ref "/DevContainers/Overview#_managing-extensions" >}})
 
 VS Code runs extensions in one of two places: locally on the UI / client side, or in the container. While extensions that affect the VS Code UI, like themes and snippets, are installed locally, most extensions will reside inside a particular container. This allows you to install only the extensions you need for a given task in a container and seamlessly switch your entire tool-chain just by connecting to a new container.
 
@@ -678,21 +678,21 @@ You can also install all locally installed extensions inside the Dev Container b
 
 ![Install all extensions](./Overview_img/install-all-extn-containers.png)
 
-However, some extensions may require you to [install additional software](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_install-additional-software) in the container. Consult extension documentation for details if you encounter issues.
+However, some extensions may require you to [install additional software]({{< ref "/DevContainers/CreateaDevContainer#_install-additional-software" >}}) in the container. Consult extension documentation for details if you encounter issues.
 
 ​​	但是，某些扩展可能要求您在容器中安装其他软件。如果您遇到问题，请查阅扩展文档以了解详细信息。
 
-### [Adding an extension to devcontainer.json 将扩展添加到 devcontainer.json](https://code.visualstudio.com/docs/devcontainers/containers#_adding-an-extension-to-devcontainerjson)
+### [Adding an extension to devcontainer.json 将扩展添加到 devcontainer.json]({{< ref "/DevContainers/Overview#_adding-an-extension-to-devcontainerjson" >}})
 
-While you can edit your [devcontainer.json](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_create-a-devcontainerjson-file) file by hand to add a list of extension IDs, you can also right-click on any extension in the Extensions view and select **Add to devcontainer.json**.
+While you can edit your [devcontainer.json]({{< ref "/DevContainers/CreateaDevContainer#_create-a-devcontainerjson-file" >}}) file by hand to add a list of extension IDs, you can also right-click on any extension in the Extensions view and select **Add to devcontainer.json**.
 
 ​​	虽然您可以手动编辑 devcontainer.json 文件以添加扩展 ID 列表，但您也可以在“扩展”视图中右键单击任何扩展，然后选择“添加到 devcontainer.json”。
 
 ![Add to devcontainer.json menu](./Overview_img/containers-addto-devcontainer.png)
 
-### ["Always installed" extensions “始终安装”扩展](https://code.visualstudio.com/docs/devcontainers/containers#_always-installed-extensions)
+### ["Always installed" extensions “始终安装”扩展]({{< ref "/DevContainers/Overview#_always-installed-extensions" >}})
 
-If there are extensions that you would like always installed in any container, you can update the `dev.containers.defaultExtensions` User [setting](https://code.visualstudio.com/docs/getstarted/settings). For example, if you wanted to install the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) and [Resource Monitor](https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor) extensions, you would specify their extension IDs as follows:
+If there are extensions that you would like always installed in any container, you can update the `dev.containers.defaultExtensions` User [setting]({{< ref "/GetStarted/Settings" >}}). For example, if you wanted to install the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) and [Resource Monitor](https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor) extensions, you would specify their extension IDs as follows:
 
 ​​	如果您希望始终在任何容器中安装扩展，则可以更新 `dev.containers.defaultExtensions` 用户设置。例如，如果您想安装 GitLens 和资源监视器扩展，则可以按如下方式指定它们的扩展 ID：
 
@@ -703,7 +703,7 @@ If there are extensions that you would like always installed in any container, y
 ]
 ```
 
-### [Advanced: Forcing an extension to run locally or remotely 高级：强制扩展在本地或远程运行](https://code.visualstudio.com/docs/devcontainers/containers#_advanced-forcing-an-extension-to-run-locally-or-remotely)
+### [Advanced: Forcing an extension to run locally or remotely 高级：强制扩展在本地或远程运行]({{< ref "/DevContainers/Overview#_advanced-forcing-an-extension-to-run-locally-or-remotely" >}})
 
 Extensions are typically designed and tested to either run locally or remotely, not both. However, if an extension supports it, you can force it to run in a particular location in your `settings.json` file.
 
@@ -724,13 +724,13 @@ A value of `"ui"` instead of `"workspace"` will force the extension to run on th
 
 ​​	值 `"ui"` 而不是 `"workspace"` 将强制扩展在本地 UI/客户端端运行。通常，除非扩展的文档中另有说明，否则仅应将其用于测试，因为它可能会破坏扩展。有关详细信息，请参阅首选扩展位置部分。
 
-## [Forwarding or publishing a port 转发或发布端口](https://code.visualstudio.com/docs/devcontainers/containers#_forwarding-or-publishing-a-port)
+## [Forwarding or publishing a port 转发或发布端口]({{< ref "/DevContainers/Overview#_forwarding-or-publishing-a-port" >}})
 
 Containers are separate environments, so if you want to access a server, service, or other resource inside your container, you will need to either "forward" or "[publish](https://stackoverflow.com/a/22150099)" the port to your host. You can either configure your container to always expose these ports or just forward them temporarily.
 
 ​​	容器是独立的环境，因此，如果您想访问容器内的服务器、服务或其他资源，则需要将端口“转发”或“发布”到您的主机。您可以将容器配置为始终公开这些端口，也可以暂时转发这些端口。
 
-### [Always forwarding a port 始终转发端口](https://code.visualstudio.com/docs/devcontainers/containers#_always-forwarding-a-port)
+### [Always forwarding a port 始终转发端口]({{< ref "/DevContainers/Overview#_always-forwarding-a-port" >}})
 
 You can specify a list of ports you **always** want to forward when attaching or opening a folder in container by using the `forwardPorts` property in `devcontainer.json`.
 
@@ -744,7 +744,7 @@ Simply reload / reopen the window and the setting will be applied when VS Code c
 
 ​​	只需重新加载/重新打开窗口，当 VS Code 连接到容器时，该设置将被应用。
 
-### [Temporarily forwarding a port 临时转发端口](https://code.visualstudio.com/docs/devcontainers/containers#_temporarily-forwarding-a-port)
+### [Temporarily forwarding a port 临时转发端口]({{< ref "/DevContainers/Overview#_temporarily-forwarding-a-port" >}})
 
 If you need to access a port that you didn't add to `devcontainer.json` or publish in your Docker Compose file, you can **temporarily forward** a new port for the duration of the session by running the **Forward a Port** command from the Command Palette (F1).
 
@@ -766,7 +766,7 @@ If you would like VS Code to remember any ports you have forwarded, check **Remo
 
 ![Restore forwarded ports setting](./Overview_img/restore-forwarded-ports.png)
 
-### [Publishing a port 发布端口](https://code.visualstudio.com/docs/devcontainers/containers#_publishing-a-port)
+### [Publishing a port 发布端口]({{< ref "/DevContainers/Overview#_publishing-a-port" >}})
 
 Docker has the concept of "publishing" ports when the container is created. Published ports behave very much like ports you make available to your local network. If your application only accepts calls from `localhost`, it will reject connections from published ports just as your local machine would for network calls. Forwarded ports, on the other hand, actually look like `localhost` to the application. Each can be useful in different situations.
 
@@ -798,7 +798,7 @@ In each case, you'll need to rebuild your container for the setting to take effe
 
 ​​	在每种情况下，您都需要重新构建容器才能使设置生效。当您连接到容器时，可以通过在命令面板 (F1) 中运行“开发容器：重新构建容器”命令来执行此操作。
 
-## [Opening a terminal 打开终端](https://code.visualstudio.com/docs/devcontainers/containers#_opening-a-terminal)
+## [Opening a terminal 打开终端]({{< ref "/DevContainers/Overview#_opening-a-terminal" >}})
 
 Opening a terminal in a container from VS Code is simple. Once you've opened a folder in a container, **any terminal window** you open in VS Code (**Terminal > New Terminal**) will automatically run in the container rather than locally.
 
@@ -810,17 +810,17 @@ You can also use the `code` command line from this same terminal window to perfo
 
 ![Using the code CLI](./Overview_img/code-command-in-terminal.png)
 
-## [Debugging in a container 在容器中调试](https://code.visualstudio.com/docs/devcontainers/containers#_debugging-in-a-container)
+## [Debugging in a container 在容器中调试]({{< ref "/DevContainers/Overview#_debugging-in-a-container" >}})
 
 Once you've opened a folder in a container, you can use VS Code's debugger in the same way you would when running the application locally. For example, if you select a launch configuration in `launch.json` and start debugging (F5), the application will start on the remote host and attach the debugger to it.
 
 ​​	在容器中打开文件夹后，您可以像在本地运行应用程序时一样使用 VS Code 的调试器。例如，如果您在 `launch.json` 中选择启动配置并开始调试（F5），应用程序将在远程主机上启动并将调试器附加到它。
 
-See the [debugging](https://code.visualstudio.com/docs/editor/debugging) documentation for details on configuring VS Code's debugging features in `.vscode/launch.json`.
+See the [debugging]({{< ref "/UserGuide/Debugging" >}}) documentation for details on configuring VS Code's debugging features in `.vscode/launch.json`.
 
 ​​	有关在 `.vscode/launch.json` 中配置 VS Code 的调试功能的详细信息，请参阅调试文档。
 
-## [Container specific settings 容器特定设置](https://code.visualstudio.com/docs/devcontainers/containers#_container-specific-settings)
+## [Container specific settings 容器特定设置]({{< ref "/DevContainers/Overview#_container-specific-settings" >}})
 
 VS Code's local user settings are also reused when you are connected to a dev container. While this keeps your user experience consistent, you may want to vary some of these settings between your local machine and each container. Fortunately, once you have connected to a container, you can also set container-specific settings by running the **Preferences: Open Remote Settings** command from the Command Palette (F1) or by selecting the **Remote** tab in the Settings editor. These will override any local settings you have in place whenever you connect to the container.
 
@@ -828,7 +828,7 @@ VS Code's local user settings are also reused when you are connected to a dev co
 
 ![Container specific settings tab](./Overview_img/container-settings.png)
 
-### [Default container specific settings 默认容器特定设置](https://code.visualstudio.com/docs/devcontainers/containers#_default-container-specific-settings)
+### [Default container specific settings 默认容器特定设置]({{< ref "/DevContainers/Overview#_default-container-specific-settings" >}})
 
 You can include defaults for container specific settings in `devcontainer.json` using the `settings` property. These values will be automatically placed in the container specific settings file inside the container once it is created.
 
@@ -854,7 +854,7 @@ Since this just establishes the default, you are still able to change the settin
 
 ​​	由于这只是建立默认值，因此您仍然可以在创建容器后根据需要更改设置。
 
-## [Managing containers 管理容器](https://code.visualstudio.com/docs/devcontainers/containers#_managing-containers)
+## [Managing containers 管理容器]({{< ref "/DevContainers/Overview#_managing-containers" >}})
 
 By default, the Dev Containers extension automatically starts the containers mentioned in the `devcontainer.json` when you open the folder. When you close VS Code, the extension automatically shuts down the containers you've connected to. You can change this behavior by adding `"shutdownAction": "none"` to `devcontainer.json`.
 
@@ -866,11 +866,11 @@ While you can use the command line to manage your containers, you can also use t
 
 ![Containers Explorer screenshot](./Overview_img/containers-explorer.png)
 
-If you want to clean out images or mass-delete containers, see [Cleaning out unused containers and images](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks#_cleaning-out-unused-containers-and-images) for different options.
+If you want to clean out images or mass-delete containers, see [Cleaning out unused containers and images]({{< ref "/DevContainers/TipsandTricks#_cleaning-out-unused-containers-and-images" >}}) for different options.
 
 ​​	如果您想清理映像或批量删除容器，请参阅清理未使用的容器和映像以了解不同的选项。
 
-## [Personalizing with dotfile repositories 使用 dotfile 存储库进行个性化](https://code.visualstudio.com/docs/devcontainers/containers#_personalizing-with-dotfile-repositories)
+## [Personalizing with dotfile repositories 使用 dotfile 存储库进行个性化]({{< ref "/DevContainers/Overview#_personalizing-with-dotfile-repositories" >}})
 
 Dotfiles are files whose filename begins with a dot (`.`) and typically contain configuration information for various applications. Since development containers can cover a wide range of application types, it can be useful to store these files somewhere so that you can easily copy them into a container once it is up and running.
 
@@ -902,9 +902,9 @@ From this point forward, the dotfiles repository will be used whenever a contain
 
 ​​	从现在开始，每当创建容器时，都将使用点文件存储库。
 
-## [Known limitations 已知限制](https://code.visualstudio.com/docs/devcontainers/containers#_known-limitations)
+## [Known limitations 已知限制]({{< ref "/DevContainers/Overview#_known-limitations" >}})
 
-### [Dev Containers limitations Dev Containers 限制](https://code.visualstudio.com/docs/devcontainers/containers#_dev-containers-limitations)
+### [Dev Containers limitations Dev Containers 限制]({{< ref "/DevContainers/Overview#_dev-containers-limitations" >}})
 
 - Windows container images are **not** supported.
   不支持 Windows 容器映像。
@@ -925,21 +925,21 @@ See [here for a list of active issues](https://aka.ms/vscode-remote/containers/i
 
 ​​	请参阅此处以获取与容器相关的活动问题列表。
 
-### [Docker limitations Docker 限制](https://code.visualstudio.com/docs/devcontainers/containers#_docker-limitations)
+### [Docker limitations Docker 限制]({{< ref "/DevContainers/Overview#_docker-limitations" >}})
 
 See the Docker troubleshooting guide for [Windows](https://docs.docker.com/docker-for-windows/troubleshoot) or [Mac](https://docs.docker.com/docker-for-mac/troubleshoot), consult [Docker Support Resources](https://success.docker.com/article/best-support-resources) for more information.
 
 ​​	请参阅适用于 Windows 或 Mac 的 Docker 故障排除指南，查阅 Docker 支持资源以获取更多信息。
 
-### [Docker Extension limitations Docker 扩展限制](https://code.visualstudio.com/docs/devcontainers/containers#_docker-extension-limitations)
+### [Docker Extension limitations Docker 扩展限制]({{< ref "/DevContainers/Overview#_docker-extension-limitations" >}})
 
 If you are using the Docker or Kubernetes extension from a WSL or Remote - SSH window, you will not be able to use the right-click **Attach to Container** option. This will only work if you are using it from your local machine.
 
 ​​	如果您从 WSL 或远程 - SSH 窗口使用 Docker 或 Kubernetes 扩展，您将无法使用右键单击“附加到容器”选项。这仅在您从本地计算机使用时有效。
 
-### [Extension limitations 扩展限制](https://code.visualstudio.com/docs/devcontainers/containers#_extension-limitations)
+### [Extension limitations 扩展限制]({{< ref "/DevContainers/Overview#_extension-limitations" >}})
 
-At this point, most extensions will work inside Dev Containers without modification. However, in some cases, certain features may require changes. If you run into an extension issue, see [here for a summary of common problems and solutions](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-tips) that you can mention to the extension author when reporting the issue.
+At this point, most extensions will work inside Dev Containers without modification. However, in some cases, certain features may require changes. If you run into an extension issue, see [here for a summary of common problems and solutions]({{< ref "/Remote/TipsandTricks#_extension-tips" >}}) that you can mention to the extension author when reporting the issue.
 
 ​​	此时，大多数扩展将在 Dev Containers 中无需修改即可工作。但是，在某些情况下，某些功能可能需要更改。如果您遇到扩展问题，请参阅此处以了解常见问题和解决方案的摘要，您可以在报告问题时向扩展作者提及这些摘要。
 
@@ -947,44 +947,44 @@ In addition, while Alpine support is available, some extensions installed in the
 
 ​​	此外，虽然支持 Alpine，但由于扩展中本机代码中的 `glibc` 依赖项，容器中安装的某些扩展可能无法工作。有关详细信息，请参阅使用 Linux 进行远程开发一文。
 
-## [Advanced container configuration 高级容器配置](https://code.visualstudio.com/docs/devcontainers/containers#_advanced-container-configuration)
+## [Advanced container configuration 高级容器配置]({{< ref "/DevContainers/Overview#_advanced-container-configuration" >}})
 
-See the [Advanced container configuration](https://code.visualstudio.com/remote/advancedcontainers/overview) articles for information on the following topics:
+See the [Advanced container configuration]({{< ref "/Remote/advancedcontainers/Overview" >}}) articles for information on the following topics:
 
 ​​	请参阅高级容器配置文章以了解以下主题的信息：
 
 - [Adding environment variables
-  添加环境变量](https://code.visualstudio.com/remote/advancedcontainers/environment-variables)
+  添加环境变量]({{< ref "/Remote/advancedcontainers/Environmentvariables" >}})
 - [Adding another local file mount
-  添加另一个本地文件装入点](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount)
+  添加另一个本地文件装入点]({{< ref "/Remote/advancedcontainers/Addlocalfilemount" >}})
 - [Changing or removing the default source code mount
-  更改或删除默认源代码装入点](https://code.visualstudio.com/remote/advancedcontainers/change-default-source-mount)
+  更改或删除默认源代码装入点]({{< ref "/Remote/advancedcontainers/Changedefaultmount" >}})
 - [Improving container disk performance
-  提高容器磁盘性能](https://code.visualstudio.com/remote/advancedcontainers/improve-performance)
+  提高容器磁盘性能]({{< ref "/Remote/advancedcontainers/Improveperformance" >}})
 - [Adding a non-root user to your dev container
-  向您的开发容器添加非根用户](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user)
+  向您的开发容器添加非根用户]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}})
 - [Setting the project name for Docker Compose
-  为 Docker Compose 设置项目名称](https://code.visualstudio.com/remote/advancedcontainers/set-docker-compose-project-name)
+  为 Docker Compose 设置项目名称]({{< ref "/Remote/advancedcontainers/SetDockerComposeprojectname" >}})
 - [Using Docker or Kubernetes from inside a container
-  在容器内使用 Docker 或 Kubernetes](https://code.visualstudio.com/remote/advancedcontainers/use-docker-kubernetes)
+  在容器内使用 Docker 或 Kubernetes]({{< ref "/Remote/advancedcontainers/UseDockerorKubernetes" >}})
 - [Connecting to multiple containers at once
-  同时连接到多个容器](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers)
+  同时连接到多个容器]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers" >}})
 - [Developing inside a container on a remote Docker Machine or SSH host
-  在远程 Docker Machine 或 SSH 主机上的容器内进行开发](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host)
+  在远程 Docker Machine 或 SSH 主机上的容器内进行开发]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}})
 - [Reducing Dockerfile build warnings
-  减少 Dockerfile 构建警告](https://code.visualstudio.com/remote/advancedcontainers/reduce-docker-warnings)
+  减少 Dockerfile 构建警告]({{< ref "/Remote/advancedcontainers/ReduceDockerwarnings" >}})
 - [Sharing git credentials with your container
-  与容器共享 git 凭据](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials)
+  与容器共享 git 凭据]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials" >}})
 
-## [devcontainer.json reference devcontainer.json 参考](https://code.visualstudio.com/docs/devcontainers/containers#_devcontainerjson-reference)
+## [devcontainer.json reference devcontainer.json 参考]({{< ref "/DevContainers/Overview#_devcontainerjson-reference" >}})
 
 There is a full [devcontainer.json reference](https://containers.dev/implementors/json_reference), where you can review the file schema to help you customize your development containers and control how you attach to running containers.
 
 ​​	有一个完整的 devcontainer.json 参考，您可以在其中查看文件架构，以帮助您自定义开发容器并控制如何连接到正在运行的容器。
 
-## [Questions or feedback 问题或反馈](https://code.visualstudio.com/docs/devcontainers/containers#_questions-or-feedback)
+## [Questions or feedback 问题或反馈]({{< ref "/DevContainers/Overview#_questions-or-feedback" >}})
 
-- See [Tips and Tricks](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks) or the [FAQ](https://code.visualstudio.com/docs/devcontainers/faq).
+- See [Tips and Tricks]({{< ref "/DevContainers/TipsandTricks" >}}) or the [FAQ]({{< ref "/DevContainers/FAQ" >}}).
   请参阅提示和技巧或常见问题解答。
 - Search on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).
   在 Stack Overflow 上搜索。
@@ -999,13 +999,13 @@ There is a full [devcontainer.json reference](https://containers.dev/implementor
 - See our [CONTRIBUTING](https://aka.ms/vscode-remote/contributing) guide for details.
   有关详细信息，请参阅我们的 CONTRIBUTING 指南。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/devcontainers/containers#_next-steps)
+## [Next steps 后续步骤]({{< ref "/DevContainers/Overview#_next-steps" >}})
 
-- [Attach to a Running Container](https://code.visualstudio.com/docs/devcontainers/attach-container) - Attach to an already running Docker container.
+- [Attach to a Running Container]({{< ref "/DevContainers/AttachtoContainer" >}}) - Attach to an already running Docker container.
   附加到正在运行的容器 - 附加到已在运行的 Docker 容器。
-- [Create a Development Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container) - Create a custom container for your work environment.
+- [Create a Development Container]({{< ref "/DevContainers/CreateaDevContainer" >}}) - Create a custom container for your work environment.
   创建开发容器 - 为您的工作环境创建一个自定义容器。
-- [Advanced Containers](https://code.visualstudio.com/remote/advancedcontainers/overview) - Find solutions to advanced container scenarios.
+- [Advanced Containers]({{< ref "/Remote/advancedcontainers/Overview" >}}) - Find solutions to advanced container scenarios.
   高级容器 - 查找高级容器方案的解决方案。
 - [devcontainer.json reference](https://containers.dev/implementors/json_reference) - Review the `devcontainer.json` schema.
   devcontainer.json 参考 - 查看 `devcontainer.json` 架构。

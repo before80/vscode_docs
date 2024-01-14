@@ -18,7 +18,7 @@ draft = false
 
 ​​	TypeScript 是 JavaScript 的一个类型化超集，可编译成普通的 JavaScript。它提供类、模块和接口来帮助您构建健壮的组件。
 
-## [Install the TypeScript compiler 安装 TypeScript 编译器](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_install-the-typescript-compiler)
+## [Install the TypeScript compiler 安装 TypeScript 编译器]({{< ref "/TypeScript/Tutorial#_install-the-typescript-compiler" >}})
 
 Visual Studio Code includes TypeScript language support but does not include the TypeScript compiler, `tsc`. You will need to install the TypeScript compiler either globally or in your workspace to transpile TypeScript source code to JavaScript (`tsc HelloWorld.ts`).
 
@@ -40,7 +40,7 @@ You can test your install by checking the version.
 tsc --version
 ```
 
-## [Hello World](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_hello-world)
+## [Hello World]({{< ref "/TypeScript/Tutorial#_hello-world" >}})
 
 Let's start with a simple Hello World Node.js example. Create a new folder `HelloWorld` and launch VS Code.
 
@@ -67,7 +67,7 @@ let message: string = 'Hello World';
 console.log(message);
 ```
 
-To compile your TypeScript code, you can open the [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics) (Ctrl+`) and type `tsc helloworld.ts`. This will compile and create a new `helloworld.js` JavaScript file.
+To compile your TypeScript code, you can open the [Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}) (Ctrl+`) and type `tsc helloworld.ts`. This will compile and create a new `helloworld.js` JavaScript file.
 
 ​​	要编译 TypeScript 代码，您可以打开集成终端 (Ctrl+`) 并键入 `tsc helloworld.ts` 。这将编译并创建一个新的 `helloworld.js` JavaScript 文件。
 
@@ -88,7 +88,7 @@ var message = 'Hello World';
 console.log(message);
 ```
 
-## [IntelliSense](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_intellisense)
+## [IntelliSense]({{< ref "/TypeScript/Tutorial#_intellisense" >}})
 
 In VS Code, you can see that you get language features such as syntax highlighting and bracket matching. When you were typing in the editor, you may have noticed IntelliSense, the smart code completions and suggestions provided by VS Code and the TypeScript language server. Below you can see the methods of `console`
 
@@ -102,7 +102,7 @@ When you select a method, you then get parameter help and can always get hover i
 
 ![parameter help](./Tutorial_img/parameter-help.png)
 
-## [tsconfig.json](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_tsconfigjson)
+## [tsconfig.json]({{< ref "/TypeScript/Tutorial#_tsconfigjson" >}})
 
 So far in this tutorial, you have been relying on the TypeScript compiler's default behavior to compile your TypeScript source code. You can modify the TypeScript compiler options by adding a `tsconfig.json` file that defines the TypeScript [project settings](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) such as the [compiler options](https://www.typescriptlang.org/docs/handbook/compiler-options.html) and the files that should be included.
 
@@ -135,7 +135,7 @@ By default, TypeScript includes all the `.ts` files in the current folder and su
 
 ​​	默认情况下，如果未包含 `files` 属性，TypeScript 会包含当前文件夹和子文件夹中的所有 `.ts` 文件，因此我们无需显式列出 `helloworld.ts` 。
 
-### [Change the build output 更改生成输出](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_change-the-build-output)
+### [Change the build output 更改生成输出]({{< ref "/TypeScript/Tutorial#_change-the-build-output" >}})
 
 Having the generated JavaScript file in the same folder as the TypeScript source will quickly get cluttered on larger projects, so you can specify the output directory for the compiler with the `outDir` attribute.
 
@@ -155,11 +155,11 @@ Delete `helloworld.js` and run the command `tsc` with no options. You will see t
 
 ​​	删除 `helloworld.js` 并运行没有任何选项的命令 `tsc` 。您将看到 `helloworld.js` 现在位于 `out` 目录中。
 
-See [Compiling TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling) to learn about other features of the TypeScript language service and how to use tasks to run your builds directly from VS Code.
+See [Compiling TypeScript]({{< ref "/TypeScript/Compiling" >}}) to learn about other features of the TypeScript language service and how to use tasks to run your builds directly from VS Code.
 
 ​​	请参阅编译 TypeScript 以了解 TypeScript 语言服务的其他功能以及如何使用任务直接从 VS Code 运行生成。
 
-## [Error checking 错误检查](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_error-checking)
+## [Error checking 错误检查]({{< ref "/TypeScript/Tutorial#_error-checking" >}})
 
 TypeScript helps you avoid common programming mistakes through strong type checking. For example, if you assign a number to `message`, the TypeScript compiler will complain with **'error TS2322: Type '2' is not assignable to type 'string'**. You can see type checking errors in VS Code both in the editor (red squiggles with hover information) and the Problems panel (Ctrl+Shift+M). The `[ts]` prefix lets you know this error is coming from the TypeScript language service.
 
@@ -167,7 +167,7 @@ TypeScript helps you avoid common programming mistakes through strong type check
 
 ![incorrect type error](./Tutorial_img/incorrect-type-error.png)
 
-## [Quick Fixes 快速修复](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_quick-fixes)
+## [Quick Fixes 快速修复]({{< ref "/TypeScript/Tutorial#_quick-fixes" >}})
 
 The TypeScript language service has a powerful set of diagnostics to find common coding issues. For example, it can analyze your source code and detect unreachable code which is displayed as dimmed in the editor. If you hover over the line of source code, you'll see a hover explaining and if you place your cursor on the line, you'll get a Quick Fix light bulb.
 
@@ -187,7 +187,7 @@ The command highlights the source code that will be refactored or fixed with Qui
 
 ​​	该命令突出显示将通过快速修复重构或修复的源代码。仍然可以在光标位置激活常规代码操作和非修复重构。
 
-## [Debugging 调试](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_debugging)
+## [Debugging 调试]({{< ref "/TypeScript/Tutorial#_debugging" >}})
 
 VS Code has built-in support for TypeScript debugging. To support debugging TypeScript in combination with the executing JavaScript code, VS Code relies on [source maps](https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/use_a_source_map/index.html) for the debugger to map between the original TypeScript source code and the running JavaScript. You can create source maps during the build by setting `"sourceMap": true` in your `tsconfig.json`.
 
@@ -224,28 +224,28 @@ In `helloworld.ts`, set a breakpoint by clicking on the left gutter of the edito
 
 ![debug breakpoint](./Tutorial_img/debug-breakpoint.png)
 
-See [Debugging TypeScript](https://code.visualstudio.com/docs/typescript/typescript-debugging) to learn more about VS Code's built-in debugging support for TypeScript and how you can configure the debugger for your project scenarios.
+See [Debugging TypeScript]({{< ref "/TypeScript/Debugging" >}}) to learn more about VS Code's built-in debugging support for TypeScript and how you can configure the debugger for your project scenarios.
 
 ​​	请参阅调试 TypeScript 以详细了解 VS Code 对 TypeScript 的内置调试支持以及如何为项目方案配置调试器。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_next-steps)
+## [Next steps 后续步骤]({{< ref "/TypeScript/Tutorial#_next-steps" >}})
 
 This tutorial was a quick introduction to using VS Code for TypeScript development. Read on to learn more about using VS Code's compiling and debugging support for TypeScript:
 
 ​​	本教程快速介绍了如何将 VS Code 用于 TypeScript 开发。继续阅读以详细了解如何使用 VS Code 的编译和调试支持来处理 TypeScript：
 
-- [Compiling TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling) - Use VS Code's powerful task system for compiling TypeScript.
+- [Compiling TypeScript]({{< ref "/TypeScript/Compiling" >}}) - Use VS Code's powerful task system for compiling TypeScript.
   编译 TypeScript - 使用 VS Code 功能强大的任务系统来编译 TypeScript。
-- [Editing TypeScript](https://code.visualstudio.com/docs/typescript/typescript-editing) - Specific editing features for TypeScript.
+- [Editing TypeScript]({{< ref "/TypeScript/Editing" >}}) - Specific editing features for TypeScript.
   编辑 TypeScript - 针对 TypeScript 的特定编辑功能。
-- [Refactoring TypeScript](https://code.visualstudio.com/docs/typescript/typescript-refactoring) - Useful refactorings from the TypeScript language service.
+- [Refactoring TypeScript]({{< ref "/TypeScript/Refactoring" >}}) - Useful refactorings from the TypeScript language service.
   重构 TypeScript - TypeScript 语言服务提供有用的重构。
-- [Debugging TypeScript](https://code.visualstudio.com/docs/typescript/typescript-debugging) - Configure the debugger for your TypeScript project.
+- [Debugging TypeScript]({{< ref "/TypeScript/Debugging" >}}) - Configure the debugger for your TypeScript project.
   调试 TypeScript - 为 TypeScript 项目配置调试器。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_common-questions)
+## [Common questions 常见问题]({{< ref "/TypeScript/Tutorial#_common-questions" >}})
 
-### [Cannot launch program because corresponding JavaScript cannot be found 无法启动程序，因为找不到相应的 JavaScript](https://code.visualstudio.com/docs/typescript/typescript-tutorial#_cannot-launch-program-because-corresponding-javascript-cannot-be-found)
+### [Cannot launch program because corresponding JavaScript cannot be found 无法启动程序，因为找不到相应的 JavaScript]({{< ref "/TypeScript/Tutorial#_cannot-launch-program-because-corresponding-javascript-cannot-be-found" >}})
 
 You've likely not set `"sourceMap": true` in your `tsconfig.json` and the VS Code Node.js debugger can't map your TypeScript source code to the running JavaScript. Turn on source maps and rebuild your project.
 

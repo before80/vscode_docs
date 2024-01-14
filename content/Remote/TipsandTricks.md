@@ -14,7 +14,7 @@ draft = false
 
 
 
-This article covers troubleshooting tips and tricks for each of the Visual Studio Code [Remote Development](https://aka.ms/vscode-remote/download/extension) extensions. See the [SSH](https://code.visualstudio.com/docs/remote/ssh), [Containers](https://code.visualstudio.com/docs/devcontainers/containers), and [WSL](https://code.visualstudio.com/docs/remote/wsl) articles for details on setting up and working with each specific extension. Or try the introductory [Tutorials](https://code.visualstudio.com/docs/remote/ssh-tutorial) to help get you running quickly in a remote environment.
+This article covers troubleshooting tips and tricks for each of the Visual Studio Code [Remote Development](https://aka.ms/vscode-remote/download/extension) extensions. See the [SSH]({{< ref "/Remote/SSH" >}}), [Containers]({{< ref "/DevContainers/Overview" >}}), and [WSL]({{< ref "/Remote/WindowsSubsystemforLinux" >}}) articles for details on setting up and working with each specific extension. Or try the introductory [Tutorials]({{< ref "/Remote/SSHTutorial" >}}) to help get you running quickly in a remote environment.
 
 ​​	本文介绍了适用于每个 Visual Studio Code 远程开发扩展的故障排除提示和技巧。有关设置和使用每个特定扩展的详细信息，请参阅 SSH、容器和 WSL 文章。或者尝试使用入门教程，帮助您快速在远程环境中运行。
 
@@ -22,23 +22,23 @@ For tips and questions about [GitHub Codespaces](https://github.com/features/cod
 
 ​​	有关 GitHub Codespaces 的提示和问题，请参阅 GitHub Codespaces 文档。
 
-## [SSH tips SSH 提示](https://code.visualstudio.com/docs/remote/troubleshooting#_ssh-tips)
+## [SSH tips SSH 提示]({{< ref "/Remote/TipsandTricks#_ssh-tips" >}})
 
 SSH is powerful and flexible, but this also adds some setup complexity. This section includes some tips and tricks for getting the Remote - SSH extension up and running in different environments.
 
 ​​	SSH 功能强大且灵活，但也增加了一些设置复杂性。本部分包括一些提示和技巧，用于在不同环境中启动并运行 Remote - SSH 扩展。
 
-### [Configuring key based authentication 配置基于密钥的身份验证](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication)
+### [Configuring key based authentication 配置基于密钥的身份验证]({{< ref "/Remote/TipsandTricks#_configuring-key-based-authentication" >}})
 
 [SSH public key authentication](https://www.ssh.com/ssh/public-key-authentication) is a convenient, high security authentication method that combines a local "private" key with a "public" key that you associate with your user account on an SSH host. This section will walk you through how to generate these keys and add them to a host.
 
 ​​	SSH 公钥身份验证是一种方便、高安全性的身份验证方法，它将本地“私钥”与您在 SSH 主机上与您的用户帐户关联的“公钥”结合起来。本部分将指导您如何生成这些密钥并将它们添加到主机。
 
-> **Tip:** PuTTY for Windows is not a [supported client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client), but you can [convert your PuTTYGen keys](https://code.visualstudio.com/docs/remote/troubleshooting#_reusing-a-key-generated-in-puttygen).
+> **Tip:** PuTTY for Windows is not a [supported client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}), but you can [convert your PuTTYGen keys]({{< ref "/Remote/TipsandTricks#_reusing-a-key-generated-in-puttygen" >}}).
 >
 > ​​	提示：Windows 版 PuTTY 不是受支持的客户端，但您可以转换您的 PuTTYGen 密钥。
 
-### [Quick start: Using SSH keys 快速入门：使用 SSH 密钥](https://code.visualstudio.com/docs/remote/troubleshooting#_quick-start-using-ssh-keys)
+### [Quick start: Using SSH keys 快速入门：使用 SSH 密钥]({{< ref "/Remote/TipsandTricks#_quick-start-using-ssh-keys" >}})
 
 To set up SSH key based authentication for your remote host. First we'll create a key pair and then copy the public key to the host.
 
@@ -59,7 +59,7 @@ If you do not have a key, run the following command in a **local** terminal / Po
 ssh-keygen -t ed25519 -b 4096
 ```
 
-> **Tip:** Don't have `ssh-keygen`? Install [a supported SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client).
+> **Tip:** Don't have `ssh-keygen`? Install [a supported SSH client]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}}).
 >
 > ​​	提示：没有 `ssh-keygen` ？安装受支持的 SSH 客户端。
 
@@ -152,7 +152,7 @@ Run one of the following commands, in a **local PowerShell** window replacing us
 
   ​​	验证 SSH 主机上远程用户的 `authorized_keys` 文件夹中的 `.ssh` 文件归您所有，并且没有其他用户有权访问它。有关详细信息，请参阅 OpenSSH Wiki。
 
-### [Improving your security with a dedicated key 使用专用密钥提高安全性](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-your-security-with-a-dedicated-key)
+### [Improving your security with a dedicated key 使用专用密钥提高安全性]({{< ref "/Remote/TipsandTricks#_improving-your-security-with-a-dedicated-key" >}})
 
 While using a single SSH key across all your SSH hosts can be convenient, if anyone gains access to your private key, they will have access to all of your hosts as well. You can prevent this by creating a separate SSH key for your development hosts. Just follow these steps:
 
@@ -178,7 +178,7 @@ While using a single SSH key across all your SSH hosts can be convenient, if any
    ssh-keygen -t ed25519 -f "$HOME\.ssh\id_ed25519-remote-ssh"
    ```
 
-2. Follow the same steps in the [quick start](https://code.visualstudio.com/docs/remote/troubleshooting#_quick-start-using-ssh-keys) to authorize the key on the SSH host, but set the `PUBKEYPATH` to the `id_ed25519-remote-ssh.pub` file instead.
+2. Follow the same steps in the [quick start]({{< ref "/Remote/TipsandTricks#_quick-start-using-ssh-keys" >}}) to authorize the key on the SSH host, but set the `PUBKEYPATH` to the `id_ed25519-remote-ssh.pub` file instead.
 
    ​​	按照快速入门中的相同步骤在 SSH 主机上授权密钥，但将 `PUBKEYPATH` 设置为 `id_ed25519-remote-ssh.pub` 文件。
 
@@ -197,7 +197,7 @@ While using a single SSH key across all your SSH hosts can be convenient, if any
    >
    > ​​	提示：您也可以将 `/` 用于 Windows 路径。如果您使用 `\` ，则需要使用两个斜杠。例如， `C:\\path\\to\\my\\id_ed25519` 。
 
-### [Reusing a key generated in PuTTYGen 重新使用在 PuTTYGen 中生成的密钥](https://code.visualstudio.com/docs/remote/troubleshooting#_reusing-a-key-generated-in-puttygen)
+### [Reusing a key generated in PuTTYGen 重新使用在 PuTTYGen 中生成的密钥]({{< ref "/Remote/TipsandTricks#_reusing-a-key-generated-in-puttygen" >}})
 
 If you used PuTTYGen to set up SSH public key authentication for the host you are connecting to, you need to convert your private key so that other SSH clients can use it. To do this:
 
@@ -226,7 +226,7 @@ If you used PuTTYGen to set up SSH public key authentication for the host you ar
        IdentityFile ~/.ssh/exported-keyfile-from-putty
    ```
 
-### [Improving security on multi-user servers 提高多用户服务器上的安全性](https://code.visualstudio.com/docs/remote/troubleshooting#_improving-security-on-multiuser-servers)
+### [Improving security on multi-user servers 提高多用户服务器上的安全性]({{< ref "/Remote/TipsandTricks#_improving-security-on-multiuser-servers" >}})
 
 The Remote - SSH extension installs and maintains the "VS Code Server". The server is started with a randomly generated key, and any new connection to the server needs to provide the key. The key is stored on the remote's disk, readable only by the current user. There is one HTTP path that is available without authentication at `/version`.
 
@@ -236,7 +236,7 @@ By default, the server listens to `localhost` on a random TCP port that is then 
 
 ​​	默认情况下，服务器在随机 TCP 端口上侦听 `localhost` ，然后将其转发到您的本地计算机。如果您正在连接到 Linux 或 macOS 主机，则可以切换为使用锁定到特定用户的 Unix 套接字。然后转发此套接字，而不是端口。
 
-> **Note:** This setting **disables connection multiplexing** so configuring [public key authentication](https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication) is recommended.
+> **Note:** This setting **disables connection multiplexing** so configuring [public key authentication]({{< ref "/Remote/TipsandTricks#_configuring-key-based-authentication" >}}) is recommended.
 >
 > ​​	注意：此设置禁用连接多路复用，因此建议配置公钥身份验证。
 
@@ -248,7 +248,7 @@ To configure it:
 
    ​​	确保您在 Windows、macOS 或 Linux 上拥有本地 OpenSSH 6.7+ SSH 客户端，以及 OpenSSH 6.7+ Linux 或 macOS 主机（Windows 不支持此模式）。
 
-2. Switch Remote - SSH into socket mode by enabling **Remote.SSH: Remote Server Listen On Socket** in your **local** VS Code [User settings](https://code.visualstudio.com/docs/getstarted/settings).
+2. Switch Remote - SSH into socket mode by enabling **Remote.SSH: Remote Server Listen On Socket** in your **local** VS Code [User settings]({{< ref "/GetStarted/Settings" >}}).
 
    ​​	切换远程 - 通过在本地 VS Code 用户设置中启用 Remote.SSH: Remote Server Listen On Socket，将 SSH 切换到套接字模式。
 
@@ -271,7 +271,7 @@ If you encounter an error when connecting, you may need to enable socket forward
 4. Retry.
    重试。
 
-### [Troubleshooting hanging or failing connections 故障排除挂起或连接失败](https://code.visualstudio.com/docs/remote/troubleshooting#_troubleshooting-hanging-or-failing-connections)
+### [Troubleshooting hanging or failing connections 故障排除挂起或连接失败]({{< ref "/Remote/TipsandTricks#_troubleshooting-hanging-or-failing-connections" >}})
 
 If you are running into problems with VS Code hanging while trying to connect (and potentially timing out), there are a few things you can do to try to resolve the issue.
 
@@ -287,7 +287,7 @@ One command helpful to troubleshoot a variety of Remote-SSH issues is **Remote-S
 **See if VS Code is waiting on a prompt
 查看 VS Code 是否正在等待提示**
 
-Enable the `remote.SSH.showLoginTerminal` [setting](https://code.visualstudio.com/docs/getstarted/settings) in VS Code and retry. If you are prompted to input a password or token, see [Enabling alternate SSH authentication methods](https://code.visualstudio.com/docs/remote/troubleshooting#_enabling-alternate-ssh-authentication-methods) for details on reducing the frequency of prompts.
+Enable the `remote.SSH.showLoginTerminal` [setting]({{< ref "/GetStarted/Settings" >}}) in VS Code and retry. If you are prompted to input a password or token, see [Enabling alternate SSH authentication methods]({{< ref "/Remote/TipsandTricks#_enabling-alternate-ssh-authentication-methods" >}}) for details on reducing the frequency of prompts.
 
 ​​	在 VS Code 中启用 `remote.SSH.showLoginTerminal` 设置并重试。如果您收到输入密码或令牌的提示，请参阅启用备用 SSH 身份验证方法，了解有关减少提示频率的详细信息。
 
@@ -363,7 +363,7 @@ If you are behind a proxy and are unable to connect to your SSH host, you may ne
 **Ensure the remote machine has internet access
 确保远程计算机具有 Internet 访问权限**
 
-The remote machine must have internet access to be able to download the VS Code Server and extensions from the Marketplace. See the [FAQ for details](https://code.visualstudio.com/docs/remote/faq#_what-are-the-connectivity-requirements-for-vs-code-server) on connectivity requirements.
+The remote machine must have internet access to be able to download the VS Code Server and extensions from the Marketplace. See the [FAQ for details]({{< ref "/Remote/FAQ#_what-are-the-connectivity-requirements-for-vs-code-server" >}}) on connectivity requirements.
 
 ​​	远程计算机必须具有 Internet 访问权限，才能从 Marketplace 下载 VS Code Server 和扩展。有关连接要求的详细信息，请参阅常见问题解答。
 
@@ -404,7 +404,7 @@ Some systems will dynamically route an SSH connection to one node from a cluster
 
 ​​	每次建立 SSH 连接时，某些系统会将 SSH 连接动态路由到群集中的一个节点。这对 VS Code 来说是一个问题，因为它会创建两个连接以打开一个远程窗口：第一个连接用于安装或启动 VS Code Server（或查找已运行的实例），第二个连接用于创建 VS Code 用于与服务器通信的 SSH 端口隧道。如果在创建第二个连接时将 VS Code 路由到不同的计算机，它将无法与 VS Code 服务器通信。
 
-One workaround for this is to use the `ControlMaster` option in OpenSSH (macOS/Linux clients only), described in [Enabling alternate SSH authentication methods](https://code.visualstudio.com/docs/remote/troubleshooting#_enabling-alternate-ssh-authentication-methods), so that VS Code's two connections will be multiplexed through a single SSH connection to the same node.
+One workaround for this is to use the `ControlMaster` option in OpenSSH (macOS/Linux clients only), described in [Enabling alternate SSH authentication methods]({{< ref "/Remote/TipsandTricks#_enabling-alternate-ssh-authentication-methods" >}}), so that VS Code's two connections will be multiplexed through a single SSH connection to the same node.
 
 ​​	一种解决方法是在 OpenSSH（仅限 macOS/Linux 客户端）中使用 `ControlMaster` 选项，如启用备用 SSH 身份验证方法中所述，以便 VS Code 的两个连接将通过到同一节点的单个 SSH 连接进行多路复用。
 
@@ -423,7 +423,7 @@ To access your config file, run **Remote-SSH: Open Configuration File...** in th
 
 ​​	若要访问配置文件，请在命令面板 (F1) 中运行远程 SSH：打开配置文件...。然后，您可以与管理员合作添加必要的设置。
 
-### [Enabling alternate SSH authentication methods 启用备用 SSH 身份验证方法](https://code.visualstudio.com/docs/remote/troubleshooting#_enabling-alternate-ssh-authentication-methods)
+### [Enabling alternate SSH authentication methods 启用备用 SSH 身份验证方法]({{< ref "/Remote/TipsandTricks#_enabling-alternate-ssh-authentication-methods" >}})
 
 If you are connecting to an SSH remote host and are either:
 
@@ -433,10 +433,10 @@ If you are connecting to an SSH remote host and are either:
   使用双重身份验证进行连接
 - Using password authentication
   使用密码身份验证
-- Using an SSH key with a passphrase when the [SSH Agent](https://code.visualstudio.com/docs/remote/troubleshooting#_setting-up-the-ssh-agent) is not running or accessible
+- Using an SSH key with a passphrase when the [SSH Agent]({{< ref "/Remote/TipsandTricks#_setting-up-the-ssh-agent" >}}) is not running or accessible
   在 SSH 代理程序未运行或无法访问时使用带有密码的 SSH 密钥
 
-then VS Code should automatically prompt you to enter needed information. If you do not see the prompt, enable the `remote.SSH.showLoginTerminal` [setting](https://code.visualstudio.com/docs/getstarted/settings) in VS Code. This setting displays the terminal whenever VS Code runs an SSH command. You can then enter your authentication code, password, or passphrase when the terminal appears.
+then VS Code should automatically prompt you to enter needed information. If you do not see the prompt, enable the `remote.SSH.showLoginTerminal` [setting]({{< ref "/GetStarted/Settings" >}}) in VS Code. This setting displays the terminal whenever VS Code runs an SSH command. You can then enter your authentication code, password, or passphrase when the terminal appears.
 
 ​​	那么 VS Code 应自动提示您输入所需信息。如果您没有看到提示，请在 VS Code 中启用 `remote.SSH.showLoginTerminal` 设置。此设置会在 VS Code 运行 SSH 命令时显示终端。然后，您可以在终端出现时输入身份验证代码、密码或密码短语。
 
@@ -472,7 +472,7 @@ To enable `ControlMaster`:
 
    ​​	然后运行 `mkdir -p ~/.ssh/sockets` 以创建套接字文件夹。
 
-### [Setting up the SSH Agent 设置 SSH 代理](https://code.visualstudio.com/docs/remote/troubleshooting#_setting-up-the-ssh-agent)
+### [Setting up the SSH Agent 设置 SSH 代理]({{< ref "/Remote/TipsandTricks#_setting-up-the-ssh-agent" >}})
 
 If you are connecting to an SSH host using a key with a passphrase, you should ensure that the [SSH Agent](https://www.ssh.com/ssh/agent) is running **locally**. VS Code will automatically add your key to the agent so you don't have to enter your passphrase every time you open a remote VS Code window.
 
@@ -534,7 +534,7 @@ The agent should be running by default on macOS.
 
 ​​	代理应在 macOS 上默认运行。
 
-### [Making local SSH Agent available on the remote 使本地 SSH 代理在远程可用](https://code.visualstudio.com/docs/remote/troubleshooting#_making-local-ssh-agent-available-on-the-remote)
+### [Making local SSH Agent available on the remote 使本地 SSH 代理在远程可用]({{< ref "/Remote/TipsandTricks#_making-local-ssh-agent-available-on-the-remote" >}})
 
 An SSH Agent on your local machine allows the Remote - SSH extension to connect to your chosen remote system without repeatedly prompting for a passphrase, but tools like Git that run on the remote, don't have access to your locally-unlocked private keys.
 
@@ -557,13 +557,13 @@ Note that you might want to be more restrictive and only set the option for part
 
 ​​	请注意，您可能希望更加严格，并且仅为特定命名主机设置选项。
 
-### [Fixing SSH file permission errors 修复 SSH 文件权限错误](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-ssh-file-permission-errors)
+### [Fixing SSH file permission errors 修复 SSH 文件权限错误]({{< ref "/Remote/TipsandTricks#_fixing-ssh-file-permission-errors" >}})
 
 SSH can be strict about file permissions and if they are set incorrectly, you may see errors such as "WARNING: UNPROTECTED PRIVATE KEY FILE!". There are several ways to update file permissions in order to fix this, which are described in the sections below.
 
 ​​	SSH 对文件权限非常严格，如果设置不正确，您可能会看到“警告：未受保护的私钥文件！”等错误。有几种方法可以更新文件权限以修复此问题，这些方法在以下部分中进行了描述。
 
-### [Local SSH file and folder permissions 本地 SSH 文件和文件夹权限](https://code.visualstudio.com/docs/remote/troubleshooting#_local-ssh-file-and-folder-permissions)
+### [Local SSH file and folder permissions 本地 SSH 文件和文件夹权限]({{< ref "/Remote/TipsandTricks#_local-ssh-file-and-folder-permissions" >}})
 
 **macOS / Linux:
 macOS/Linux：**
@@ -594,7 +594,7 @@ For all other clients, consult your client's documentation for what the implemen
 
 ​​	对于所有其他客户端，请查阅客户端文档以了解实现预期。
 
-### [Server SSH file and folder permissions 服务器 SSH 文件和文件夹权限](https://code.visualstudio.com/docs/remote/troubleshooting#_server-ssh-file-and-folder-permissions)
+### [Server SSH file and folder permissions 服务器 SSH 文件和文件夹权限]({{< ref "/Remote/TipsandTricks#_server-ssh-file-and-folder-permissions" >}})
 
 **macOS / Linux:
 macOS / Linux：**
@@ -619,7 +619,7 @@ See the [Windows OpenSSH wiki](https://github.com/PowerShell/Win32-OpenSSH/wiki/
 
 ​​	有关为 Windows OpenSSH 服务器设置适当文件权限的详细信息，请参阅 Windows OpenSSH wiki。
 
-### [Installing a supported SSH client 安装受支持的 SSH 客户端](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client)
+### [Installing a supported SSH client 安装受支持的 SSH 客户端]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-client" >}})
 
 | OS                                        | Instructions 说明                                            |
 | :---------------------------------------- | :----------------------------------------------------------- |
@@ -633,7 +633,7 @@ VS Code will look for the `ssh` command in the PATH. Failing that, on Windows it
 
 ​​	VS Code 将在 PATH 中查找 `ssh` 命令。如果失败，它将在 Windows 上尝试在默认的适用于 Windows 的 Git 安装路径中查找 `ssh.exe` 。您还可以通过将 `remote.SSH.path` 属性添加到 `settings.json` 中来明确告诉 VS Code 在哪里查找 SSH 客户端。
 
-### [Installing a supported SSH server 安装受支持的 SSH 服务器](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-server)
+### [Installing a supported SSH server 安装受支持的 SSH 服务器]({{< ref "/Remote/TipsandTricks#_installing-a-supported-ssh-server" >}})
 
 | OS                                        | Instructions 说明                                            | Details 详细信息                                             |
 | :---------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -643,7 +643,7 @@ VS Code will look for the `ssh` command in the PATH. Failing that, on Windows it
 | Windows 10 1803+ / Server 2016/2019 1803+ | Install the [Windows OpenSSH Server](https://learn.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse). 安装 Windows OpenSSH 服务器。 |                                                              |
 | macOS 10.14+ (Mojave)                     | Enable [Remote Login](https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac). 启用远程登录。 |                                                              |
 
-### [Resolving hangs when doing a Git push or sync on an SSH host 在 SSH 主机上执行 Git 推送或同步时解决挂起问题](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-hangs-when-doing-a-git-push-or-sync-on-an-ssh-host)
+### [Resolving hangs when doing a Git push or sync on an SSH host 在 SSH 主机上执行 Git 推送或同步时解决挂起问题]({{< ref "/Remote/TipsandTricks#_resolving-hangs-when-doing-a-git-push-or-sync-on-an-ssh-host" >}})
 
 If you clone a Git repository using SSH and your SSH key has a passphrase, VS Code's pull and sync features may hang when running remotely.
 
@@ -653,13 +653,13 @@ Either use an SSH key without a passphrase, clone using HTTPS, or run `git push`
 
 ​​	可以使用没有密码的 SSH 密钥，使用 HTTPS 克隆，或从命令行运行 `git push` 来解决此问题。
 
-### [Using SSHFS to access files on your remote host 使用 SSHFS 访问远程主机上的文件](https://code.visualstudio.com/docs/remote/troubleshooting#_using-sshfs-to-access-files-on-your-remote-host)
+### [Using SSHFS to access files on your remote host 使用 SSHFS 访问远程主机上的文件]({{< ref "/Remote/TipsandTricks#_using-sshfs-to-access-files-on-your-remote-host" >}})
 
 [SSHFS](https://en.wikipedia.org/wiki/SSHFS) is a secure remote filesystem access protocol that builds up from SFTP. It provides advantages over something like a CIFS / Samba share in that all that is required is SSH access to the machine.
 
 ​​	SSHFS 是一个安全的远程文件系统访问协议，由 SFTP 构建而成。与 CIFS / Samba 共享相比，它的优势在于只需要对计算机进行 SSH 访问。
 
-> **Note:** For performance reasons, SSHFS is best used for single file edits and uploading/downloading content. If you need to use an application that bulk reads/write to many files at once (like a local source control tool), [rsync](https://code.visualstudio.com/docs/remote/troubleshooting#_using-rsync-to-maintain-a-local-copy-of-your-source-code) is a better choice.
+> **Note:** For performance reasons, SSHFS is best used for single file edits and uploading/downloading content. If you need to use an application that bulk reads/write to many files at once (like a local source control tool), [rsync]({{< ref "/Remote/TipsandTricks#_using-rsync-to-maintain-a-local-copy-of-your-source-code" >}}) is a better choice.
 >
 > ​​	注意：出于性能原因，SSHFS 最适合用于编辑单个文件和上传/下载内容。如果您需要使用一次性批量读/写多个文件的应用程序（如本地源代码管理工具），rsync 是更好的选择。
 
@@ -717,7 +717,7 @@ Follow these steps:
 
 ​​	请按照以下步骤操作：
 
-1. On Linux, add `.gitattributes` file to your project to **force consistent line endings** between Linux and Windows to avoid unexpected issues due to CRLF/LF differences between the two operating systems. See [Resolving Git line ending issues](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files) for details.
+1. On Linux, add `.gitattributes` file to your project to **force consistent line endings** between Linux and Windows to avoid unexpected issues due to CRLF/LF differences between the two operating systems. See [Resolving Git line ending issues]({{< ref "/Remote/TipsandTricks#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files" >}}) for details.
 
    ​​	在 Linux 上，将 `.gitattributes` 文件添加到您的项目中，以强制在 Linux 和 Windows 之间使用一致的行尾，以避免由于这两个操作系统之间的 CRLF/LF 差异而导致意外问题。有关详细信息，请参阅解决 Git 换行符问题。
 
@@ -733,7 +733,7 @@ Follow these steps:
 
    ​​	完成后，右键单击文件资源管理器中的驱动器并选择“断开连接”以断开连接。
 
-### [Connect to a remote host from the terminal 从终端连接到远程主机](https://code.visualstudio.com/docs/remote/troubleshooting#_connect-to-a-remote-host-from-the-terminal)
+### [Connect to a remote host from the terminal 从终端连接到远程主机]({{< ref "/Remote/TipsandTricks#_connect-to-a-remote-host-from-the-terminal" >}})
 
 Once a host has been configured, you can connect to it directly from the terminal by passing a remote URI.
 
@@ -767,9 +767,9 @@ To force that a file is opened, add `--goto` or use:
 code --file-uri vscode-remote://ssh-remote+remote_server/code/fileWithoutExtension
 ```
 
-### [Using rsync to maintain a local copy of your source code 使用 rsync 维护源代码的本地副本](https://code.visualstudio.com/docs/remote/troubleshooting#_using-rsync-to-maintain-a-local-copy-of-your-source-code)
+### [Using rsync to maintain a local copy of your source code 使用 rsync 维护源代码的本地副本]({{< ref "/Remote/TipsandTricks#_using-rsync-to-maintain-a-local-copy-of-your-source-code" >}})
 
-An alternative to [using SSHFS to access remote files](https://code.visualstudio.com/docs/remote/troubleshooting#_using-sshfs-to-access-files-on-your-remote-host) is to [use `rsync`](https://rsync.samba.org/) to copy the entire contents of a folder on remote host to your local machine. The `rsync` command will determine which files need to be updated each time it is run, which is far more efficient and convenient than using something like `scp` or `sftp`. This is primarily something to consider if you really need to use multi-file or performance intensive local tools.
+An alternative to [using SSHFS to access remote files]({{< ref "/Remote/TipsandTricks#_using-sshfs-to-access-files-on-your-remote-host" >}}) is to [use `rsync`](https://rsync.samba.org/) to copy the entire contents of a folder on remote host to your local machine. The `rsync` command will determine which files need to be updated each time it is run, which is far more efficient and convenient than using something like `scp` or `sftp`. This is primarily something to consider if you really need to use multi-file or performance intensive local tools.
 
 ​​	除了使用 SSHFS 访问远程文件外，还可以使用 `rsync` 将远程主机上文件夹的全部内容复制到本地计算机。每次运行 `rsync` 命令时，它都会确定哪些文件需要更新，这比使用 `scp` 或 `sftp` 之类的东西要高效和方便得多。如果您确实需要使用多文件或性能密集型本地工具，则主要需要考虑这一点。
 
@@ -801,7 +801,7 @@ You can rerun this command each time you want to get the latest copy of your fil
 
 ​​	每次想要获取文件的最新副本时，都可以重新运行此命令，并且只会传输更新。出于性能原因，有意排除了 `.git` 文件夹，这样您就可以使用本地 Git 工具，而不用担心远程主机上的状态。
 
-To push content, reverse the source and target parameters in the command. However, **on Windows** you should add a `.gitattributes` file to your project to **force consistent line endings** before doing so. See [Resolving Git line ending issues](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files) for details.
+To push content, reverse the source and target parameters in the command. However, **on Windows** you should add a `.gitattributes` file to your project to **force consistent line endings** before doing so. See [Resolving Git line ending issues]({{< ref "/Remote/TipsandTricks#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files" >}}) for details.
 
 ​​	要推送内容，请在命令中反转源和目标参数。但是，在 Windows 上，您应该在执行此操作之前向项目添加 `.gitattributes` 文件，以强制使用一致的行尾。有关详细信息，请参阅解决 Git 行尾问题。
 
@@ -809,7 +809,7 @@ To push content, reverse the source and target parameters in the command. Howeve
 rsync -rlptzv --progress --delete --exclude=.git . "user@hostname:/remote/source/code/path"
 ```
 
-### [Cleaning up the VS Code Server on the remote 清理远程上的 VS Code Server](https://code.visualstudio.com/docs/remote/troubleshooting#_cleaning-up-the-vs-code-server-on-the-remote)
+### [Cleaning up the VS Code Server on the remote 清理远程上的 VS Code Server]({{< ref "/Remote/TipsandTricks#_cleaning-up-the-vs-code-server-on-the-remote" >}})
 
 The SSH extension provides a command for cleaning up the VS Code Server from the remote machine, **Remote-SSH: Uninstall VS Code Server from Host...**. The command does two things: it kills any running VS Code Server processes and it deletes the folder where the server was installed.
 
@@ -830,27 +830,27 @@ The VS Code Server was previously installed under `~/.vscode-remote` so you can 
 
 ​​	VS Code Server 之前安装在 `~/.vscode-remote` 下，因此您也可以检查该位置。
 
-### [SSH into a remote WSL 2 host SSH 登录到远程 WSL 2 主机](https://code.visualstudio.com/docs/remote/troubleshooting#_ssh-into-a-remote-wsl-2-host)
+### [SSH into a remote WSL 2 host SSH 登录到远程 WSL 2 主机]({{< ref "/Remote/TipsandTricks#_ssh-into-a-remote-wsl-2-host" >}})
 
 You may want to use SSH to connect to a WSL distro running on your remote machine. Check out [this guide](https://www.hanselman.com/blog/the-easy-way-how-to-ssh-into-bash-and-wsl2-on-windows-10-from-an-external-machine) to learn how to SSH into Bash and WSL 2 on Windows 10 from an external machine.
 
 ​​	您可能希望使用 SSH 连接到远程计算机上运行的 WSL 发行版。查看本指南，了解如何在外部计算机上通过 SSH 登录到 Windows 10 上的 Bash 和 WSL 2。
 
-## [Dev Containers tips Dev Containers 提示](https://code.visualstudio.com/docs/remote/troubleshooting#_dev-containers-tips)
+## [Dev Containers tips Dev Containers 提示]({{< ref "/Remote/TipsandTricks#_dev-containers-tips" >}})
 
-If you'd like to read about tips for using Dev Containers, you can go to Dev Containers [Tips and Tricks](https://code.visualstudio.com/docs/devcontainers/tips-and-tricks).
+If you'd like to read about tips for using Dev Containers, you can go to Dev Containers [Tips and Tricks]({{< ref "/DevContainers/TipsandTricks" >}}).
 
 ​​	如果您想阅读有关使用 Dev Containers 的提示，可以转到 Dev Containers 提示和技巧。
 
-## [WSL tips WSL 提示](https://code.visualstudio.com/docs/remote/troubleshooting#_wsl-tips)
+## [WSL tips WSL 提示]({{< ref "/Remote/TipsandTricks#_wsl-tips" >}})
 
-### [First time start: VS Code Server prerequisites 首次启动：VS Code Server 先决条件](https://code.visualstudio.com/docs/remote/troubleshooting#_first-time-start-vs-code-server-prerequisites)
+### [First time start: VS Code Server prerequisites 首次启动：VS Code Server 先决条件]({{< ref "/Remote/TipsandTricks#_first-time-start-vs-code-server-prerequisites" >}})
 
 Some WSL Linux distributions are lacking libraries that are required by the VS Code server to start up. You can add additional libraries into your Linux distribution by using its package manager.
 
 ​​	某些 WSL Linux 发行版缺少 VS Code 服务器启动所需的库。您可以使用其软件包管理器向 Linux 发行版中添加其他库。
 
-#### [Debian and Ubuntu Debian 和 Ubuntu](https://code.visualstudio.com/docs/remote/troubleshooting#_debian-and-ubuntu)
+#### [Debian and Ubuntu Debian 和 Ubuntu]({{< ref "/Remote/TipsandTricks#_debian-and-ubuntu" >}})
 
 Open the Debian or Ubuntu WSL shell to add `wget` and `ca-certificates`:
 
@@ -860,7 +860,7 @@ Open the Debian or Ubuntu WSL shell to add `wget` and `ca-certificates`:
 sudo apt-get update && sudo apt-get install wget ca-certificates
 ```
 
-#### [Alpine](https://code.visualstudio.com/docs/remote/troubleshooting#_alpine)
+#### [Alpine]({{< ref "/Remote/TipsandTricks#_alpine" >}})
 
 Open the Alpine WSL shell as root (`wsl -d Alpine -u root`) to add `libstdc++`:
 
@@ -878,7 +878,7 @@ On Windows 10 April 2018 Update (build 1803) and older, `/bin/bash` is required:
 apk update && apk add bash
 ```
 
-### [Selecting the distribution used by the WSL extension 选择 WSL 扩展程序使用的发行版](https://code.visualstudio.com/docs/remote/troubleshooting#_selecting-the-distribution-used-by-the-wsl-extension)
+### [Selecting the distribution used by the WSL extension 选择 WSL 扩展程序使用的发行版]({{< ref "/Remote/TipsandTricks#_selecting-the-distribution-used-by-the-wsl-extension" >}})
 
 **WSL: New Window** will open the WSL distro registered as default.
 
@@ -912,17 +912,17 @@ You can see which distributions you have installed by running:
 wslconfig /l
 ```
 
-### [Configure the environment for the server startup 为服务器启动配置环境](https://code.visualstudio.com/docs/remote/troubleshooting#_configure-the-environment-for-the-server-startup)
+### [Configure the environment for the server startup 为服务器启动配置环境]({{< ref "/Remote/TipsandTricks#_configure-the-environment-for-the-server-startup" >}})
 
 When the WSL extension starts the VS Code server in WSL, it does not run any shell configuration scripts. This was done to avoid that custom configuration scripts can prevent the startup.
 
 ​​	当 WSL 扩展在 WSL 中启动 VS Code 服务器时，它不会运行任何 shell 配置脚本。这样做是为了避免自定义配置脚本阻止启动。
 
-If you need to configure the startup environment, you can use the environment setup script as described [here](https://code.visualstudio.com/docs/remote/wsl#_advanced-environment-setup-script).
+If you need to configure the startup environment, you can use the environment setup script as described [here]({{< ref "/Remote/WindowsSubsystemforLinux#_advanced-environment-setup-script" >}}).
 
 ​​	如果您需要配置启动环境，可以使用此处描述的环境设置脚本。
 
-### [Configure the environment for the remote extension host 为远程扩展主机配置环境](https://code.visualstudio.com/docs/remote/troubleshooting#_configure-the-environment-for-the-remote-extension-host)
+### [Configure the environment for the remote extension host 为远程扩展主机配置环境]({{< ref "/Remote/TipsandTricks#_configure-the-environment-for-the-remote-extension-host" >}})
 
 The environment for the remote extension host and terminal are based on the default shell's configuration scripts. To evaluate the environment variables for the remote extension host process, the server creates an instance of the default shell as an **interactive login shell**. It probes the environment variables from it and uses them as the initial environment for the remote extension host process. The values of environment variables therefore depend on what shell is configured as the default and the content of the configuration scripts for that shell.
 
@@ -936,7 +936,7 @@ To change the default shell of a WSL distro, follow the instructions of [this bl
 
 ​​	要更改 WSL 发行版的默认 shell，请按照此博客文章中的说明进行操作。
 
-### [Fixing problems with the code command not working 修复 code 命令无法正常工作的相关问题](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-problems-with-the-code-command-not-working)
+### [Fixing problems with the code command not working 修复 code 命令无法正常工作的相关问题]({{< ref "/Remote/TipsandTricks#_fixing-problems-with-the-code-command-not-working" >}})
 
 If typing `code` from a WSL terminal on Window does not work because `code` cannot be found, you may be missing some key locations from your PATH in WSL.
 
@@ -988,7 +988,7 @@ export PATH="$PATH:/mnt/c/Windows/System32:/mnt/c/Users/${WINDOWS_USERNAME}/AppD
 >
 > ​​	注意：务必对目录名称中的空格字符加上引号或转义符。
 
-### [Finding problems with the 'code' command 查找“代码”命令的问题](https://code.visualstudio.com/docs/remote/troubleshooting#_finding-problems-with-the-code-command)
+### [Finding problems with the 'code' command 查找“代码”命令的问题]({{< ref "/Remote/TipsandTricks#_finding-problems-with-the-code-command" >}})
 
 If typing `code` from a Windows command prompt does not launch VS Code, you can help us diagnose the problem by running `VSCODE_WSL_DEBUG_INFO=true code .`.
 
@@ -998,7 +998,7 @@ Please file an issue and attach the full output.
 
 ​​	请提交一个问题并附上完整输出。
 
-### [Finding problems starting or connected to the server 查找启动或连接到服务器时的问题](https://code.visualstudio.com/docs/remote/troubleshooting#_finding-problems-starting-or-connected-to-the-server)
+### [Finding problems starting or connected to the server 查找启动或连接到服务器时的问题]({{< ref "/Remote/TipsandTricks#_finding-problems-starting-or-connected-to-the-server" >}})
 
 When the WSL window fails to connect to the remote server, you can get more information in the WSL log. When filing an issue, it is important to always send the full content of the WSL log.
 
@@ -1014,7 +1014,7 @@ To get even more verbose logging, enable the setting `remote.WSL.debug` in the u
 
 ​​	要获取更详细的日志记录，请在用户设置中启用设置 `remote.WSL.debug` 。
 
-### [The server fails to start with a segmentation fault 服务器因段错误而无法启动](https://code.visualstudio.com/docs/remote/troubleshooting#_the-server-fails-to-start-with-a-segmentation-fault)
+### [The server fails to start with a segmentation fault 服务器因段错误而无法启动]({{< ref "/Remote/TipsandTricks#_the-server-fails-to-start-with-a-segmentation-fault" >}})
 
 You can help us investigate this problem by sending us the core dump file. To get the core dump file, follow these steps:
 
@@ -1039,7 +1039,7 @@ The core file will be in the WSL extension folder from above.
 
 ​​	核心文件将位于上述 WSL 扩展文件夹中。
 
-### [I see EACCES: permission denied error trying to rename a folder in the open workspace 我看到 EACCES：尝试重命名打开工作区中的文件夹时出现权限被拒绝错误](https://code.visualstudio.com/docs/remote/troubleshooting#_i-see-eacces-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace)
+### [I see EACCES: permission denied error trying to rename a folder in the open workspace 我看到 EACCES：尝试重命名打开工作区中的文件夹时出现权限被拒绝错误]({{< ref "/Remote/TipsandTricks#_i-see-eacces-permission-denied-error-trying-to-rename-a-folder-in-the-open-workspace" >}})
 
 This is a known problem with the WSL file system implementation ([Microsoft/WSL#3395](https://github.com/microsoft/WSL/issues/3395), [Microsoft/WSL#1956](https://github.com/microsoft/WSL/issues/1956)) caused by the file watcher active by VS Code. The issue will only be fixed in WSL 2.
 
@@ -1057,7 +1057,7 @@ For large workspace you may want to increase the polling interval, `remote.WSL.f
 
 ​​	WSL 2 没有该文件观察程序问题，不受新设置的影响。
 
-### [Resolving Git line ending issues in WSL (resulting in many modified files) 解决 WSL 中的 Git 换行符问题（导致许多文件被修改）](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files)
+### [Resolving Git line ending issues in WSL (resulting in many modified files) 解决 WSL 中的 Git 换行符问题（导致许多文件被修改）]({{< ref "/Remote/TipsandTricks#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files" >}})
 
 Since Windows and Linux use different default line endings, Git may report a large number of modified files that have no differences aside from their line endings. To prevent this from happening, you can disable line-ending conversion using a `.gitattributes` file or globally on the Windows side.
 
@@ -1097,7 +1097,7 @@ Finally, you may need to clone the repository again for these settings to take e
 
 ​​	最后，您可能需要再次克隆存储库，才能使这些设置生效。
 
-### [Sharing Git credentials between Windows and WSL 在 Windows 和 WSL 之间共享 Git 凭据](https://code.visualstudio.com/docs/remote/troubleshooting#_sharing-git-credentials-between-windows-and-wsl)
+### [Sharing Git credentials between Windows and WSL 在 Windows 和 WSL 之间共享 Git 凭据]({{< ref "/Remote/TipsandTricks#_sharing-git-credentials-between-windows-and-wsl" >}})
 
 If you use HTTPS to clone your repositories and **have a [credential helper configured](https://docs.github.com/get-started/getting-started-with-git/caching-your-github-credentials-in-git) in Windows**, you can share this with WSL so that passwords you enter are persisted on both sides. (Note that this does not apply to using SSH keys.)
 
@@ -1127,7 +1127,7 @@ Any password you enter when working with Git on the Windows side will now be ava
 
 ​​	现在，您在 Windows 端使用 Git 时输入的任何密码都可供 WSL 使用，反之亦然。
 
-### [Resolving hangs when doing a Git push or sync from WSL 在从 WSL 执行 Git 推送或同步时解决挂起问题](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-hangs-when-doing-a-git-push-or-sync-from-wsl)
+### [Resolving hangs when doing a Git push or sync from WSL 在从 WSL 执行 Git 推送或同步时解决挂起问题]({{< ref "/Remote/TipsandTricks#_resolving-hangs-when-doing-a-git-push-or-sync-from-wsl" >}})
 
 If you clone a Git repository using SSH and your SSH key has a passphrase, VS Code's pull and sync features may hang when running remotely.
 
@@ -1137,25 +1137,25 @@ Either use an SSH key without a passphrase, clone using HTTPS, or run `git push`
 
 ​​	要解决此问题，可以使用没有密码的 SSH 密钥、使用 HTTPS 克隆或从命令行运行 `git push` 。
 
-## [GitHub Codespaces tips GitHub Codespaces 提示](https://code.visualstudio.com/docs/remote/troubleshooting#_github-codespaces-tips)
+## [GitHub Codespaces tips GitHub Codespaces 提示]({{< ref "/Remote/TipsandTricks#_github-codespaces-tips" >}})
 
-For tips and questions about [GitHub Codespaces](https://github.com/features/codespaces), see the [GitHub Codespaces documentation](https://docs.github.com/github/developing-online-with-codespaces). You can also check out the [known web limitations and adaptations](https://code.visualstudio.com/docs/remote/codespaces#_known-limitations-and-adaptations) that may impact your Codespaces.
+For tips and questions about [GitHub Codespaces](https://github.com/features/codespaces), see the [GitHub Codespaces documentation](https://docs.github.com/github/developing-online-with-codespaces). You can also check out the [known web limitations and adaptations]({{< ref "/Remote/GitHubCodespaces#_known-limitations-and-adaptations" >}}) that may impact your Codespaces.
 
 ​​	有关 GitHub Codespaces 的提示和问题，请参阅 GitHub Codespaces 文档。您还可以查看可能影响您的 Codespaces 的已知 Web 限制和改编。
 
-## [Extension tips 扩展提示](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-tips)
+## [Extension tips 扩展提示]({{< ref "/Remote/TipsandTricks#_extension-tips" >}})
 
 While many extensions will work unmodified, there are a few issues that can prevent certain features from working as expected. In some cases, you can use another command to work around the issue, while in others, the extension may need to be modified. This section provides a quick reference for common issues and tips on resolving them. You can also refer to the main extension article on [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for an in-depth guide on modifying extensions to support remote extension hosts.
 
 ​​	虽然许多扩展将按原样工作，但有一些问题可能会阻止某些功能按预期工作。在某些情况下，您可以使用另一个命令来解决此问题，而在其他情况下，可能需要修改扩展。本部分提供了常见问题和解决问题的提示的快速参考。您还可以参考关于支持远程开发的主要扩展文章，以获取有关修改扩展以支持远程扩展主机的深入指南。
 
-### [Resolving errors about missing dependencies 解决有关缺少依赖项的错误](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-errors-about-missing-dependencies)
+### [Resolving errors about missing dependencies 解决有关缺少依赖项的错误]({{< ref "/Remote/TipsandTricks#_resolving-errors-about-missing-dependencies" >}})
 
 Some extensions rely on libraries not found in the basic install of certain WSL Linux distributions. You can add additional libraries into your Linux distribution by using its package manager. For Ubuntu and Debian based distributions, run `sudo apt-get install <package>` to install the needed libraries. Check the documentation for your extension or the runtime that is mentioned in the error message for additional installation details.
 
 ​​	某些扩展依赖于某些 WSL Linux 发行版的基本安装中找不到的库。您可以使用其软件包管理器向 Linux 发行版中添加其他库。对于基于 Ubuntu 和 Debian 的发行版，运行 `sudo apt-get install <package>` 以安装所需的库。查看扩展的文档或错误消息中提到的运行时以获取其他安装详细信息。
 
-### [Local absolute path settings fail when applied remotely 应用时本地绝对路径设置失败](https://code.visualstudio.com/docs/remote/troubleshooting#_local-absolute-path-settings-fail-when-applied-remotely)
+### [Local absolute path settings fail when applied remotely 应用时本地绝对路径设置失败]({{< ref "/Remote/TipsandTricks#_local-absolute-path-settings-fail-when-applied-remotely" >}})
 
 VS Code's local user settings are reused when you connect to a remote endpoint. While this keeps your user experience consistent, you may need to vary absolute path settings between your local machine and each host / container / WSL since the target locations are different.
 
@@ -1165,7 +1165,7 @@ VS Code's local user settings are reused when you connect to a remote endpoint. 
 
 ​​	解决方法：连接到远程端点后，您可以通过从命令面板 (F1) 运行“首选项：打开远程设置”命令或在“设置”编辑器中选择“远程”选项卡来设置特定于端点的设置。无论何时连接，这些设置都会覆盖您已设置的任何本地设置。
 
-### [Need to install local VSIX on remote endpoint 需要在远程端点上安装本地 VSIX](https://code.visualstudio.com/docs/remote/troubleshooting#_need-to-install-local-vsix-on-remote-endpoint)
+### [Need to install local VSIX on remote endpoint 需要在远程端点上安装本地 VSIX]({{< ref "/Remote/TipsandTricks#_need-to-install-local-vsix-on-remote-endpoint" >}})
 
 Sometimes you want to install a local VSIX on a remote machine, either during development or when an extension author asks you to try out a fix.
 
@@ -1175,7 +1175,7 @@ Sometimes you want to install a local VSIX on a remote machine, either during de
 
 ​​	解决方案：连接到 SSH 主机、容器或 WSL 后，您可以像在本地一样安装 VSIX。从命令面板 (F1) 运行扩展：从 VSIX 安装... 命令。您可能还希望将 `"extensions.autoUpdate": false` 添加到 `settings.json` 以防止自动更新到最新的 Marketplace 版本。有关在远程环境中开发和测试扩展的详细信息，请参阅支持远程开发。
 
-### [Browser does not open locally 浏览器未在本地打开](https://code.visualstudio.com/docs/remote/troubleshooting#_browser-does-not-open-locally)
+### [Browser does not open locally 浏览器未在本地打开]({{< ref "/Remote/TipsandTricks#_browser-does-not-open-locally" >}})
 
 Some extensions use external node modules or custom code to launch a browser window. Unfortunately, this may cause the extension to launch the browser remotely instead of locally.
 
@@ -1185,7 +1185,7 @@ Some extensions use external node modules or custom code to launch a browser win
 
 ​​	解决方案：扩展可以使用 `vscode.env.openExternal` API 来解决此问题。有关详细信息，请参阅扩展作者指南。
 
-### [Clipboard does not work 剪贴板不起作用](https://code.visualstudio.com/docs/remote/troubleshooting#_clipboard-does-not-work)
+### [Clipboard does not work 剪贴板不起作用]({{< ref "/Remote/TipsandTricks#_clipboard-does-not-work" >}})
 
 Some extensions use node modules like `clipboardy` to integrate with the clipboard. Unfortunately, this may cause the extension to incorrectly integrate with the clipboard on the remote side.
 
@@ -1195,7 +1195,7 @@ Some extensions use node modules like `clipboardy` to integrate with the clipboa
 
 ​​	解决方案：扩展程序可以切换到 VS Code 剪贴板 API 来解决此问题。有关详细信息，请参阅扩展程序作者指南。
 
-### [Cannot access local web server from browser or application 无法从浏览器或应用程序访问本地 Web 服务器](https://code.visualstudio.com/docs/remote/troubleshooting#_cannot-access-local-web-server-from-browser-or-application)
+### [Cannot access local web server from browser or application 无法从浏览器或应用程序访问本地 Web 服务器]({{< ref "/Remote/TipsandTricks#_cannot-access-local-web-server-from-browser-or-application" >}})
 
 When working inside a container, SSH host, or through GitHub Codespaces, the port the browser is connecting to may be blocked.
 
@@ -1205,7 +1205,7 @@ When working inside a container, SSH host, or through GitHub Codespaces, the por
 
 ​​	解决方案：扩展程序可以使用 `vscode.env.openExternal` 或 `vscode.env.asExternalUri` API（自动转发 localhost 端口）来解决此问题。有关详细信息，请参阅扩展程序作者指南。作为一种解决方法，使用“转发端口”命令手动执行此操作。
 
-### [Webview contents do not appear Webview 内容未显示](https://code.visualstudio.com/docs/remote/troubleshooting#_webview-contents-do-not-appear)
+### [Webview contents do not appear Webview 内容未显示]({{< ref "/Remote/TipsandTricks#_webview-contents-do-not-appear" >}})
 
 If the extension's webview content uses an `iframe` to connect to a local web server, the port the webview is connecting to may be blocked. In addition, if the extension hard codes `vscode-resource://` URIs instead of using `asWebviewUri`, content may not appear in the Codespaces browser editor.
 
@@ -1219,7 +1219,7 @@ If ports are being blocked, the best approach is to instead use the [webview mes
 
 ​​	如果端口被阻止，最好的方法是改用 webview 消息传递 API。作为一种解决方法， `vscode.env.asExternalUri` 可用于允许 webview 从 VS Code 连接到生成的 localhost Web 服务器。但是，目前仅 MicrosoftDocs/vscodespaces#11 阻止了基于浏览器的 Codespaces 编辑器。有关解决方法的详细信息，请参阅扩展作者指南。
 
-### [Blocked localhost ports 阻止的 localhost 端口](https://code.visualstudio.com/docs/remote/troubleshooting#_blocked-localhost-ports)
+### [Blocked localhost ports 阻止的 localhost 端口]({{< ref "/Remote/TipsandTricks#_blocked-localhost-ports" >}})
 
 If you are trying to connect to a localhost port from an external application, the port may be blocked.
 
@@ -1229,7 +1229,7 @@ If you are trying to connect to a localhost port from an external application, t
 
 ​​	解决方案：VS Code 1.40 为扩展引入了一个新的 `vscode.env.asExternalUri` API，用于以编程方式转发任意端口。有关详细信息，请参阅扩展作者指南。作为一种解决方法，您可以使用“转发端口”命令手动执行此操作。
 
-### [Errors storing extension data 存储扩展数据时出错](https://code.visualstudio.com/docs/remote/troubleshooting#_errors-storing-extension-data)
+### [Errors storing extension data 存储扩展数据时出错]({{< ref "/Remote/TipsandTricks#_errors-storing-extension-data" >}})
 
 Extensions may try to persist global data by looking for the `~/.config/Code` folder on Linux. This folder may not exist, which can cause the extension to throw errors like `ENOENT: no such file or directory, open '/root/.config/Code/User/filename-goes-here`.
 
@@ -1239,7 +1239,7 @@ Extensions may try to persist global data by looking for the `~/.config/Code` fo
 
 ​​	解决方案：扩展可以使用 `context.globalStorageUri` 或 `context.storageUri` 属性来解决此问题。有关详细信息，请参阅扩展作者指南。
 
-### [Cannot sign in / have to sign in each time I connect to a new endpoint 无法登录/每次连接到新端点时都必须登录](https://code.visualstudio.com/docs/remote/troubleshooting#_cannot-sign-in-have-to-sign-in-each-time-i-connect-to-a-new-endpoint)
+### [Cannot sign in / have to sign in each time I connect to a new endpoint 无法登录/每次连接到新端点时都必须登录]({{< ref "/Remote/TipsandTricks#_cannot-sign-in-have-to-sign-in-each-time-i-connect-to-a-new-endpoint" >}})
 
 Extensions that require sign in may persist secrets using their own code. This code can fail due to missing dependencies. Even if it succeeds, the secrets will be stored remotely, which means you have to sign in for every new endpoint.
 
@@ -1249,7 +1249,7 @@ Extensions that require sign in may persist secrets using their own code. This c
 
 ​​	解决方案：扩展程序可以使用 SecretStorage API 来解决此问题。有关详细信息，请参阅扩展程序作者指南。
 
-### [An incompatible extension prevents VS Code from connecting 不兼容的扩展程序阻止 VS Code 连接](https://code.visualstudio.com/docs/remote/troubleshooting#_an-incompatible-extension-prevents-vs-code-from-connecting)
+### [An incompatible extension prevents VS Code from connecting 不兼容的扩展程序阻止 VS Code 连接]({{< ref "/Remote/TipsandTricks#_an-incompatible-extension-prevents-vs-code-from-connecting" >}})
 
 If an incompatible extension has been installed on a remote host, container, or in WSL, we have seen instances where the VS Code Server hangs or crashes due to the incompatibility. If the extension activates right away, this can prevent you from connecting and being able to uninstall the extension.
 
@@ -1276,7 +1276,7 @@ If an incompatible extension has been installed on a remote host, container, or 
 
    ​​	连接后，运行 `rm -rf ~/.vscode-server/extensions` 以获取 VS Code 稳定版和/或 `rm -rf ~/.vscode-server-insiders/extensions` 以获取 VS Code Insiders 以删除所有扩展。
 
-### [Extensions that ship or acquire pre-built native modules fail 预先构建的本机模块随附或获取的扩展失败](https://code.visualstudio.com/docs/remote/troubleshooting#_extensions-that-ship-or-acquire-prebuilt-native-modules-fail)
+### [Extensions that ship or acquire pre-built native modules fail 预先构建的本机模块随附或获取的扩展失败]({{< ref "/Remote/TipsandTricks#_extensions-that-ship-or-acquire-prebuilt-native-modules-fail" >}})
 
 Native modules bundled with (or dynamically acquired for) a VS Code extension must be recompiled [using Electron's `electron-rebuild`](https://electronjs.org/docs/tutorial/using-native-node-modules). However, VS Code Server runs a standard (non-Electron) version of Node.js, which can cause binaries to fail when used remotely.
 
@@ -1286,7 +1286,7 @@ Native modules bundled with (or dynamically acquired for) a VS Code extension mu
 
 ​​	解决方案：需要修改扩展来解决此问题。它们需要为 VS Code 预先构建的 Node.js 中的“模块”版本包含（或动态获取）两组二进制文件（Electron 和标准 Node.js），然后检查 `context.executionContext === vscode.ExtensionExecutionContext.Remote` 是否在它们的激活函数中设置正确的二进制文件。有关详细信息，请参阅扩展作者指南。
 
-### [Extension only fails on non-x86_64 hosts or Alpine Linux 扩展仅在非 x86_64 主机或 Alpine Linux 上失败](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-only-fails-on-nonx8664-hosts-or-alpine-linux)
+### [Extension only fails on non-x86_64 hosts or Alpine Linux 扩展仅在非 x86_64 主机或 Alpine Linux 上失败]({{< ref "/Remote/TipsandTricks#_extension-only-fails-on-nonx8664-hosts-or-alpine-linux" >}})
 
 If an extension works on Debian 9+, Ubuntu 16.04+, or RHEL / CentOS 7+ remote SSH hosts, containers, or WSL, but fails on supported non-x86_64 hosts (for example, ARMv7l) or Alpine Linux containers, the extension may only include native code or runtimes that do not support these platforms. For example, the extensions may only include x86_64 compiled versions of native modules or runtimes. For Alpine Linux, the included native code or runtimes may not work due to [fundamental differences](https://wiki.musl-libc.org/functional-differences-from-glibc.html) between how `libc` is implemented in Alpine Linux (`musl`) and other distributions (`glibc`).
 
@@ -1296,7 +1296,7 @@ If an extension works on Debian 9+, Ubuntu 16.04+, or RHEL / CentOS 7+ remote SS
 
 ​​	解决方案：扩展需要选择支持这些平台，方法是为这些其他目标编译/包含二进制文件。需要注意的是，某些第三方 npm 模块也可能包含可能导致此问题的本机代码。因此，在某些情况下，您可能需要与 npm 模块作者合作以添加其他编译目标。有关详细信息，请参阅扩展作者指南。
 
-### [Extensions fail due to missing modules 由于缺少模块导致扩展失败](https://code.visualstudio.com/docs/remote/troubleshooting#_extensions-fail-due-to-missing-modules)
+### [Extensions fail due to missing modules 由于缺少模块导致扩展失败]({{< ref "/Remote/TipsandTricks#_extensions-fail-due-to-missing-modules" >}})
 
 Extensions that rely on Electron or VS Code base modules (not exposed by the extension API) without providing a fallback can fail when running remotely. You may see errors in the Developer Tools console like `original-fs` not being found.
 
@@ -1306,7 +1306,7 @@ Extensions that rely on Electron or VS Code base modules (not exposed by the ext
 
 ​​	解决方案：删除对 Electron 模块的依赖项或提供后备。有关详细信息，请参阅扩展作者指南。
 
-### [Cannot access / transfer remote workspace files to local machines 无法访问/将远程工作区文件传输到本地计算机](https://code.visualstudio.com/docs/remote/troubleshooting#_cannot-access-transfer-remote-workspace-files-to-local-machines)
+### [Cannot access / transfer remote workspace files to local machines 无法访问/将远程工作区文件传输到本地计算机]({{< ref "/Remote/TipsandTricks#_cannot-access-transfer-remote-workspace-files-to-local-machines" >}})
 
 Extensions that open workspace files in external applications may encounter errors because the external application cannot directly access the remote files.
 
@@ -1316,7 +1316,7 @@ Extensions that open workspace files in external applications may encounter erro
 
 ​​	解决方案：如果您创建了旨在本地运行的“UI”扩展，则可以使用 `vscode.workspace.fs` API 与远程工作区文件系统进行交互。然后，您可以将其作为“工作区”扩展的依赖项，并根据需要使用命令调用它。有关不同类型的扩展以及如何使用命令在它们之间进行通信的详细信息，请参阅扩展作者指南。
 
-### [Cannot access attached device from extension 无法从扩展访问已连接的设备](https://code.visualstudio.com/docs/remote/troubleshooting#_cannot-access-attached-device-from-extension)
+### [Cannot access attached device from extension 无法从扩展访问已连接的设备]({{< ref "/Remote/TipsandTricks#_cannot-access-attached-device-from-extension" >}})
 
 Extensions that access locally attached devices will be unable to connect to them when running remotely.
 
@@ -1326,9 +1326,9 @@ Extensions that access locally attached devices will be unable to connect to the
 
 ​​	解决方案：目前没有。我们正在研究解决此问题的最佳方法。
 
-## [Questions and feedback 问题和反馈](https://code.visualstudio.com/docs/remote/troubleshooting#_questions-and-feedback)
+## [Questions and feedback 问题和反馈]({{< ref "/Remote/TipsandTricks#_questions-and-feedback" >}})
 
-### [Reporting issues 报告问题](https://code.visualstudio.com/docs/remote/troubleshooting#_reporting-issues)
+### [Reporting issues 报告问题]({{< ref "/Remote/TipsandTricks#_reporting-issues" >}})
 
 If you run into an issue with one of the remote development extensions, it's important to collect the correct logs so that we'll be able to help [diagnose your issue](https://aka.ms/vscode-remote/issues/new).
 
@@ -1358,13 +1358,13 @@ If you're experiencing issues using other extensions remotely (for example, othe
 >
 > ​​	注意：如果您只看到日志（扩展主机），则这是本地扩展主机，并且远程扩展主机未启动。这是因为日志通道仅在创建日志文件后才创建，因此，如果远程扩展主机未启动，则不会创建远程扩展主机日志文件，并且不会在输出视图中显示。这仍然是包含在您的问题中的有用信息。
 
-### [Remote question and feedback resources 远程问题和反馈资源](https://code.visualstudio.com/docs/remote/troubleshooting#_remote-question-and-feedback-resources)
+### [Remote question and feedback resources 远程问题和反馈资源]({{< ref "/Remote/TipsandTricks#_remote-question-and-feedback-resources" >}})
 
 We have a variety of other remote resources:
 
 ​​	我们还有各种其他远程资源：
 
-- See [Remote Development FAQ](https://code.visualstudio.com/docs/remote/faq).
+- See [Remote Development FAQ]({{< ref "/Remote/FAQ" >}}).
   请参阅远程开发常见问题解答。
 - Search on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).
   在 Stack Overflow 上搜索。

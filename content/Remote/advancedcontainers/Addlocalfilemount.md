@@ -14,7 +14,7 @@ draft = false
 
 
 
-> **Note:** Mounting the local file system is not supported in GitHub Codespaces. See [developing inside a container on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) for information on mounting remote folders in this scenario.
+> **Note:** Mounting the local file system is not supported in GitHub Codespaces. See [developing inside a container on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) for information on mounting remote folders in this scenario.
 >
 > ​​	注意：在 GitHub Codespaces 中不支持挂载本地文件系统。有关在此方案中挂载远程文件夹的信息，请参阅在远程 Docker 主机上的容器内进行开发。
 
@@ -43,7 +43,7 @@ You can add a volume bound to any local folder by using the following appropriat
   ]
   ```
 
-### [Video: Add additional folders from your local machine to a dev container 视频：将本地计算机中的其他文件夹添加到开发容器](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount#_video-add-additional-folders-from-your-local-machine-to-a-dev-container)
+### [Video: Add additional folders from your local machine to a dev container 视频：将本地计算机中的其他文件夹添加到开发容器]({{< ref "/Remote/advancedcontainers/Addlocalfilemount#_video-add-additional-folders-from-your-local-machine-to-a-dev-container" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/L1-dx-ZD0Ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
@@ -53,7 +53,7 @@ You can add a volume bound to any local folder by using the following appropriat
 
 
 
-- **Docker Compose:** Update (or [extend](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)) your `docker-compose.yml` with the following for the appropriate service:
+- **Docker Compose:** Update (or [extend]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})) your `docker-compose.yml` with the following for the appropriate service:
 
   ​​	Docker Compose：使用以下内容更新（或扩展）您的 `docker-compose.yml` 以适用于相应服务：
 

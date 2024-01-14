@@ -22,11 +22,11 @@ The Docker extension provides a `docker` debug configuration provider that manag
 
 ​​	Docker 扩展提供了一个 `docker` 调试配置提供程序，该提供程序管理 VS Code 将如何启动应用程序和/或将调试器附加到正在运行的 Docker 容器中的应用程序。此提供程序通过 `launch.json` 中的条目进行配置，配置特定于提供程序支持的每个应用程序平台。
 
-The Docker extension currently supports debugging [Node.js](https://code.visualstudio.com/docs/containers/debug-common#_nodejs), [Python](https://code.visualstudio.com/docs/containers/debug-common#_python), and [.NET](https://code.visualstudio.com/docs/containers/debug-common#_net) applications within Docker containers.
+The Docker extension currently supports debugging [Node.js]({{< ref "/Docker/Debug#_nodejs" >}}), [Python]({{< ref "/Docker/Debug#_python" >}}), and [.NET]({{< ref "/Docker/Debug#_net" >}}) applications within Docker containers.
 
 ​​	Docker 扩展目前支持在 Docker 容器中调试 Node.js、Python 和 .NET 应用程序。
 
-## [Requirements 要求](https://code.visualstudio.com/docs/containers/debug-common#_requirements)
+## [Requirements 要求]({{< ref "/Docker/Debug#_requirements" >}})
 
 Scaffolding or pasting a launch configuration into `launch.json` is **not sufficient** to build and debug a Docker container. To successfully run a Docker launch configuration, you must have:
 
@@ -43,7 +43,7 @@ We recommend using the **Docker: Add Docker Files to Workspace...** command to c
 
 ​​	如果这些资产尚不存在，我们建议使用 Docker：将 Docker 文件添加到工作区... 命令来创建这些项目。如果您已经拥有一个可用的 Dockerfile，我们建议使用 Docker：初始化 Docker 调试命令来构建启动配置和与 Docker 相关的任务。
 
-## [Node.js](https://code.visualstudio.com/docs/containers/debug-common#_nodejs)
+## [Node.js]({{< ref "/Docker/Debug#_nodejs" >}})
 
 More information about debugging Node.js applications within Docker containers can be found at [Debug Node.js within a container](https://code.visualstudio.com/docs/containers/debug-node).
 
@@ -67,7 +67,7 @@ Example `launch.json` configuration for debugging a Node.js application:
 }
 ```
 
-## [Python](https://code.visualstudio.com/docs/containers/debug-common#_python)
+## [Python]({{< ref "/Docker/Debug#_python" >}})
 
 More information about debugging Python applications within Docker containers can be found at [Debug Python within a container](https://code.visualstudio.com/docs/containers/debug-python).
 
@@ -99,7 +99,7 @@ Example `launch.json` configuration for debugging a Python application:
 }
 ```
 
-## [.NET](https://code.visualstudio.com/docs/containers/debug-common#_net)
+## [.NET]({{< ref "/Docker/Debug#_net" >}})
 
 You can choose between two ways of building and debugging your project within Docker containers:
 
@@ -142,7 +142,7 @@ Example `launch.json` configuration for debugging a .NET application using `Dock
 }
 ```
 
-## [Configuration reference 配置参考](https://code.visualstudio.com/docs/containers/debug-common#_configuration-reference)
+## [Configuration reference 配置参考]({{< ref "/Docker/Debug#_configuration-reference" >}})
 
 | Property 属性               | Description 说明                                             |
 | :-------------------------- | :----------------------------------------------------------- |
@@ -154,7 +154,7 @@ Example `launch.json` configuration for debugging a .NET application using `Dock
 | `node`                      | Options for debugging Node.js projects in Docker. 在 Docker 中调试 Node.js 项目的选项。 |
 | `python`                    | Options for debugging Python projects in Docker. 在 Docker 中调试 Python 项目的选项。 |
 
-### [dockerServerReadyAction object properties dockerServerReadyAction 对象属性](https://code.visualstudio.com/docs/containers/debug-common#_dockerserverreadyaction-object-properties)
+### [dockerServerReadyAction object properties dockerServerReadyAction 对象属性]({{< ref "/Docker/Debug#_dockerserverreadyaction-object-properties" >}})
 
 | Property 属性   | Description 说明                                             |
 | :-------------- | :----------------------------------------------------------- |
@@ -164,9 +164,9 @@ Example `launch.json` configuration for debugging a .NET application using `Dock
 | `uriFormat`     | The URI format to launch. 要启动的 URI 格式。                |
 | `webRoot`       | The root folder from which web pages are served. Used only when `action` is set to `debugWithChrome`. 提供网页的根文件夹。仅在将 `action` 设置为 `debugWithChrome` 时使用。 |
 
-### [node object properties node 对象属性](https://code.visualstudio.com/docs/containers/debug-common#_node-object-properties)
+### [node object properties node 对象属性]({{< ref "/Docker/Debug#_node-object-properties" >}})
 
-> These properties are the same as those described in the [VS Code documentation](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration-attributes) for attaching a debugger to Node.js applications. All properties passed in the `node` object will be passed on to the Node.js debug adaptor, even if not specifically listed below.
+> These properties are the same as those described in the [VS Code documentation]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration-attributes" >}}) for attaching a debugger to Node.js applications. All properties passed in the `node` object will be passed on to the Node.js debug adaptor, even if not specifically listed below.
 >
 > ​​	这些属性与 VS Code 文档中用于将调试器附加到 Node.js 应用程序的属性相同。在 `node` 对象中传递的所有属性都将传递给 Node.js 调试适配器，即使下面没有专门列出。
 
@@ -185,7 +185,7 @@ Example `launch.json` configuration for debugging a .NET application using `Dock
 | `skipFiles`                | Optional. Automatically skip files covered by these glob patterns. 可选。自动跳过这些 glob 模式涵盖的文件。 |                                             |
 | `trace`                    | Optional. Enable diagnostic output. 可选。启用诊断输出。     |                                             |
 
-### [python object properties python 对象属性](https://code.visualstudio.com/docs/containers/debug-common#_python-object-properties)
+### [python object properties python 对象属性]({{< ref "/Docker/Debug#_python-object-properties" >}})
 
 | Property 属性  | Description 说明                                             | Default 默认 |
 | :------------- | :----------------------------------------------------------- | :----------- |
@@ -197,7 +197,7 @@ Example `launch.json` configuration for debugging a .NET application using `Dock
 | `django`       | Django debugging. Django 调试。                              | `false`      |
 | `jinja`        | Jinja template debugging (such as Flask). Jinja 模板调试（例如 Flask）。 | `false`      |
 
-### [netCore object properties netCore 对象属性](https://code.visualstudio.com/docs/containers/debug-common#_netcore-object-properties)
+### [netCore object properties netCore 对象属性]({{< ref "/Docker/Debug#_netcore-object-properties" >}})
 
 > Properties passed in the `netCore` object are generally passed on to the .NET debug adaptor, even if not specifically listed below. The complete list of debugger properties is in the [OmniSharp VS Code extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md).
 >
@@ -207,7 +207,7 @@ Example `launch.json` configuration for debugging a .NET application using `Dock
 | :------------ | :----------------------------------------------------------- |
 | `appProject`  | The .NET project (.csproj, .fsproj, etc.) to debug. .NET 项目（.csproj、.fsproj 等）进行调试。 |
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/debug-common#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/Debug#_next-steps" >}})
 
 Read on to learn more about:
 
@@ -220,6 +220,6 @@ Read on to learn more about:
 - [Debugging .NET within Docker containers
   在 Docker 容器中调试 .NET](https://code.visualstudio.com/docs/containers/debug-netcore)
 - [Debugging with Docker Compose
-  使用 Docker Compose 进行调试](https://code.visualstudio.com/docs/containers/docker-compose#_debug)
+  使用 Docker Compose 进行调试]({{< ref "/Docker/DockerCompose#_debug" >}})
 - [Troubleshooting
-  故障排除](https://code.visualstudio.com/docs/containers/troubleshooting)
+  故障排除]({{< ref "/Docker/TipsandTricks" >}})

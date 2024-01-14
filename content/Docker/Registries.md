@@ -30,7 +30,7 @@ Users can connect to Docker registries from the following sources:
 - Any generic private registry that supports the [Docker V2 api](https://docs.docker.com/registry/spec/api/)
   支持 Docker V2 api 的任何通用私有注册表
 
-## [Push an image to a container registry 将映像推送到容器注册表](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_push-an-image-to-a-container-registry)
+## [Push an image to a container registry 将映像推送到容器注册表]({{< ref "/Docker/Registries#_push-an-image-to-a-container-registry" >}})
 
 Before you can deploy a Docker image, the image must be uploaded to a container registry. The image can be uploaded to [Docker Hub](https://hub.docker.com/), [Azure Container Registry (ACR)](https://learn.microsoft.com/azure/container-registry/container-registry-get-started-portal) or another registry. You can follow the same steps to push the image regardless of whether you're pushing to Docker Hub, Azure Container Registries, or any other registry. If you don't already have an Azure Container Registry, you can create one during the **Push** step.
 
@@ -74,7 +74,7 @@ Before you can deploy a Docker image, the image must be uploaded to a container 
 
    ![Refresh registry](./Registries_img/explorer-refresh-registry.png)
 
-## [Docker Hub](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_docker-hub)
+## [Docker Hub]({{< ref "/Docker/Registries#_docker-hub" >}})
 
 This connects to [Docker Hub](https://hub.docker.com/) and lists all of the repositories and images under the given account. Once you select this option, you will be required to type in your Docker Hub credentials.
 
@@ -101,14 +101,14 @@ For each tagged image in a repository, here are the actions that can be performe
   拉取映像：将映像的最新版本复制到本地
 - **Copy Full Tag**: copies the full tag to the clipboard
   复制完整标记：将完整标记复制到剪贴板
-- **Deploy Image to Azure App Service**: deploys the image to Azure App Service, see [Deploy images to Azure](https://code.visualstudio.com/docs/containers/app-service) page
+- **Deploy Image to Azure App Service**: deploys the image to Azure App Service, see [Deploy images to Azure]({{< ref "/Docker/DeploytoAzure" >}}) page
   将映像部署到 Azure 应用服务：将映像部署到 Azure 应用服务，请参阅部署映像到 Azure 页面
-- **Deploy Image to Azure Container Apps**: deploys the image to Azure Container Apps, see [Deploy images to Azure](https://code.visualstudio.com/docs/containers/app-service) page
+- **Deploy Image to Azure Container Apps**: deploys the image to Azure Container Apps, see [Deploy images to Azure]({{< ref "/Docker/DeploytoAzure" >}}) page
   将映像部署到 Azure 容器应用：将映像部署到 Azure 容器应用，请参阅部署映像到 Azure 页面
 - **Open in browser**: opens the browser and navigates to the given image on Docker Hub
   在浏览器中打开：打开浏览器并导航到 Docker Hub
 
-## [Azure Container Registry Azure 容器注册表](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_azure-container-registry)
+## [Azure Container Registry Azure 容器注册表]({{< ref "/Docker/Registries#_azure-container-registry" >}})
 
 This option requires the [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension to be able to connect to your Azure account and display all of the different subscriptions and registries. Once authenticated, the node **Azure** will display the subscriptions along with registries each have:
 
@@ -158,16 +158,16 @@ For each tagged image in a repository, here are the actions that can be performe
   复制映像摘要：将映像摘要（Docker 使用的 SHA256 哈希标识符）复制到剪贴板。有关映像摘要的更多信息，请参阅 Docker 文档
 - **Inspect Image Manifest**: inspects the image's registry manifest. This is not the same as inspecting the image when it is pulled locally.
   检查映像清单：检查映像的注册表清单。这与在本地拉取映像时检查映像不同。
-- **Deploy Image to Azure App Service**: deploys the image to Azure App Service, see [Deploy images to Azure](https://code.visualstudio.com/docs/containers/app-service) page
+- **Deploy Image to Azure App Service**: deploys the image to Azure App Service, see [Deploy images to Azure]({{< ref "/Docker/DeploytoAzure" >}}) page
   将映像部署到 Azure 应用服务：将映像部署到 Azure 应用服务，请参阅将映像部署到 Azure 页面
-- **Deploy Image to Azure Container Apps**: deploys the image to Azure Container Apps, see [Deploy images to Azure](https://code.visualstudio.com/docs/containers/app-service) page
+- **Deploy Image to Azure Container Apps**: deploys the image to Azure Container Apps, see [Deploy images to Azure]({{< ref "/Docker/DeploytoAzure" >}}) page
   将映像部署到 Azure 容器应用：将映像部署到 Azure 容器应用，请参阅将映像部署到 Azure 页面
 - **Untag Image**: untags the image
   取消标记映像：取消标记映像
 - **Delete Image**: deletes the image permanently
   删除映像：永久删除映像
 
-## [GitHub](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_github)
+## [GitHub]({{< ref "/Docker/Registries#_github" >}})
 
 This connects to Docker registries in your [GitHub](https://github.com/) account. Once you select this option, you are asked to type in your GitHub account credentials.
 
@@ -196,12 +196,12 @@ For each tagged image in a repository, here are the actions that can be performe
   复制映像摘要：将映像摘要（Docker 使用的 SHA256 哈希标识符）复制到剪贴板。有关映像摘要的更多信息，请参阅 Docker 文档
 - **Inspect Image Manifest**: inspects the image's registry manifest. This is not the same as inspecting the image when it is pulled locally.
   检查映像清单：检查映像的注册表清单。这与在本地拉取映像时检查映像不同。
-- **Deploy Image to Azure App Service**: deploys the image to Azure App Service, see [Deploy images to Azure](https://code.visualstudio.com/docs/containers/app-service) page
+- **Deploy Image to Azure App Service**: deploys the image to Azure App Service, see [Deploy images to Azure]({{< ref "/Docker/DeploytoAzure" >}}) page
   将映像部署到 Azure 应用服务：将映像部署到 Azure 应用服务，请参阅将映像部署到 Azure 页面
-- **Deploy Image to Azure Container Apps**: deploys the image to Azure Container Apps, see [Deploy images to Azure](https://code.visualstudio.com/docs/containers/app-service) page
+- **Deploy Image to Azure Container Apps**: deploys the image to Azure Container Apps, see [Deploy images to Azure]({{< ref "/Docker/DeploytoAzure" >}}) page
   将映像部署到 Azure 容器应用：将映像部署到 Azure 容器应用，请参阅将映像部署到 Azure 页面
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/Registries#_next-steps" >}})
 
 - [Deploy to Azure
-  部署到 Azure](https://code.visualstudio.com/docs/containers/app-service)
+  部署到 Azure]({{< ref "/Docker/DeploytoAzure" >}})

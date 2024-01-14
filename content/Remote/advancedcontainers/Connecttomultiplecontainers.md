@@ -14,7 +14,7 @@ draft = false
 
 
 
-Currently you can only connect to one container per Visual Studio Code window. However, you can spin up multiple VS Code windows to [attach to them](https://code.visualstudio.com/docs/devcontainers/attach-container).
+Currently you can only connect to one container per Visual Studio Code window. However, you can spin up multiple VS Code windows to [attach to them]({{< ref "/DevContainers/AttachtoContainer" >}}).
 
 ​​	目前您只能连接到每个 Visual Studio Code 窗口的一个容器。但是，您可以启动多个 VS Code 窗口以连接到它们。
 
@@ -103,7 +103,7 @@ The `"shutdownAction":"none"` in the `devcontainer.json` files is optional, but 
 
 ​​	 `"shutdownAction":"none"` 中的 `devcontainer.json` 文件是可选的，但会在关闭 VS Code 时使容器保持运行状态——这可以防止您通过关闭一个窗口而意外关闭两个容器。
 
-## [Connect to multiple containers in multiple VS Code windows 在多个 VS Code 窗口中连接到多个容器](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers#_connect-to-multiple-containers-in-multiple-vs-code-windows)
+## [Connect to multiple containers in multiple VS Code windows 在多个 VS Code 窗口中连接到多个容器]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers#_connect-to-multiple-containers-in-multiple-vs-code-windows" >}})
 
 1. Open a VS Code window at the root level of the project.
    在项目的根级别打开一个 VS Code 窗口。
@@ -124,7 +124,7 @@ You can now interact with both containers from separate windows.
 
 ​​	现在，您可以从单独的窗口与两个容器进行交互。
 
-## [Connect to multiple containers in a single VS Code window 在单个 VS Code 窗口中连接到多个容器](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers#_connect-to-multiple-containers-in-a-single-vs-code-window)
+## [Connect to multiple containers in a single VS Code window 在单个 VS Code 窗口中连接到多个容器]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers#_connect-to-multiple-containers-in-a-single-vs-code-window" >}})
 
 1. Open a VS Code window at the root level of the project.
    在项目的根级别打开一个 VS Code 窗口。
@@ -139,9 +139,9 @@ You can now interact with both containers from separate windows.
 6. You can switch back with the same command.
    您可以使用相同的命令切换回去。
 
-## [Extending a Docker Compose file when connecting to two containers 连接到两个容器时扩展 Docker Compose 文件](https://code.visualstudio.com/remote/advancedcontainers/connect-multiple-containers#_extending-a-docker-compose-file-when-connecting-to-two-containers)
+## [Extending a Docker Compose file when connecting to two containers 连接到两个容器时扩展 Docker Compose 文件]({{< ref "/Remote/advancedcontainers/Connecttomultiplecontainers#_extending-a-docker-compose-file-when-connecting-to-two-containers" >}})
 
-If you want to [extend your Docker Compose file for development](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development), you should use a single `docker-compose.yml` that extends **both** services (as needed) and is referenced in **both** `devcontainer.json` files.
+If you want to [extend your Docker Compose file for development]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}}), you should use a single `docker-compose.yml` that extends **both** services (as needed) and is referenced in **both** `devcontainer.json` files.
 
 ​​	如果您想扩展 Docker Compose 文件以进行开发，则应使用一个 `docker-compose.yml` ，它扩展了两个服务（根据需要），并在两个 `devcontainer.json` 文件中引用。
 

@@ -14,7 +14,7 @@ draft = false
 
 
 
-Visual Studio Code ships by default with English as the display language and other [languages](https://code.visualstudio.com/docs/getstarted/locales#_available-locales) rely on Language Pack [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) available from the [Marketplace](https://marketplace.visualstudio.com/search?target=VSCode&category=Language Packs&sortBy=Installs).
+Visual Studio Code ships by default with English as the display language and other [languages]({{< ref "/GetStarted/DisplayLanguage#_available-locales" >}}) rely on Language Pack [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) available from the [Marketplace](https://marketplace.visualstudio.com/search?target=VSCode&category=Language Packs&sortBy=Installs).
 
 ​​	Visual Studio Code 默认以英语作为显示语言，其他语言依赖于市场中提供的语言包扩展。
 
@@ -28,11 +28,11 @@ After installing the Language Pack extension and following the prompt to restart
 
 ​​	安装语言包扩展并按照提示重新启动后，VS Code 将使用与您的操作系统 UI 语言匹配的语言包。
 
-> **Note**: This topic explains how to change the display language in the VS Code UI via Language Packs such as French or Chinese. If you want to add programming language support, for example for C++ or Java, refer to the [Programming Languages](https://code.visualstudio.com/docs/languages/overview) section of the documentation.
+> **Note**: This topic explains how to change the display language in the VS Code UI via Language Packs such as French or Chinese. If you want to add programming language support, for example for C++ or Java, refer to the [Programming Languages]({{< ref "/Languages/Overview" >}}) section of the documentation.
 >
 > ​​	注意：本主题介绍如何通过语言包（如法语或中文）更改 VS Code UI 中的显示语言。如果您想添加编程语言支持，例如 C++ 或 Java，请参阅文档的编程语言部分。
 
-## [Changing the Display Language 更改显示语言](https://code.visualstudio.com/docs/getstarted/locales#_changing-the-display-language)
+## [Changing the Display Language 更改显示语言]({{< ref "/GetStarted/DisplayLanguage#_changing-the-display-language" >}})
 
 You can also override the default UI language by explicitly setting the VS Code display language using the **Configure Display Language** command.
 
@@ -44,7 +44,7 @@ Press Ctrl+Shift+P to bring up the **Command Palette** then start typing "displa
 
 ![configure display language command](./DisplayLanguage_img/configure-language-command.png)
 
-Press Enter and a list of installed languages by [locale](https://code.visualstudio.com/docs/getstarted/locales#_available-locales) is displayed, with the current `locale` highlighted.
+Press Enter and a list of installed languages by [locale]({{< ref "/GetStarted/DisplayLanguage#_available-locales" >}}) is displayed, with the current `locale` highlighted.
 
 ​​	按 Enter，将显示按区域设置安装的语言列表，其中当前 `locale` 突出显示。
 
@@ -62,7 +62,7 @@ The `locale` can also be changed by editing the `argv.json` file directly (**Pre
 
 ​​	还可以通过直接编辑 `argv.json` 文件（首选项：配置运行时参数）并重新启动 VS Code 来更改 `locale` 。
 
-## [Available locales 可用区域设置](https://code.visualstudio.com/docs/getstarted/locales#_available-locales)
+## [Available locales 可用区域设置]({{< ref "/GetStarted/DisplayLanguage#_available-locales" >}})
 
 | Display Language 显示语言            | Locale 区域设置 |
 | :----------------------------------- | :-------------- |
@@ -82,7 +82,7 @@ The `locale` can also be changed by editing the `argv.json` file directly (**Pre
 | Czech 捷克语                         | `cs`            |
 | Hungarian 匈牙利语                   | `hu`            |
 
-## [Marketplace Language Packs 市场语言包](https://code.visualstudio.com/docs/getstarted/locales#_marketplace-language-packs)
+## [Marketplace Language Packs 市场语言包]({{< ref "/GetStarted/DisplayLanguage#_marketplace-language-packs" >}})
 
 As described above, VS Code ships with English as the default display language, but other languages are available through [Marketplace Language Packs](https://marketplace.visualstudio.com/search?target=VSCode&category=Language Packs&sortBy=Installs).
 
@@ -98,7 +98,7 @@ You can have multiple Language Packs installed and select the current display la
 
 ​​	您可以安装多个语言包，并使用“配置显示语言”命令选择当前显示语言。
 
-## [Setting the Language 设置语言](https://code.visualstudio.com/docs/getstarted/locales#_setting-the-language)
+## [Setting the Language 设置语言]({{< ref "/GetStarted/DisplayLanguage#_setting-the-language" >}})
 
 If you want to use a specific language for a VS Code session, you can use the command-line switch `--locale` to specify a locale when you launch VS Code.
 
@@ -116,22 +116,22 @@ code . --locale=fr
 
 ​​	注意：您必须为使用命令行开关指定的语言安装相应的语言包。如果未安装匹配的语言包，VS Code 将显示英语。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/getstarted/locales#_common-questions)
+## [Common questions 常见问题]({{< ref "/GetStarted/DisplayLanguage#_common-questions" >}})
 
-### [Unable to write to file because the file is dirty 无法写入文件，因为文件已修改](https://code.visualstudio.com/docs/getstarted/locales#_unable-to-write-to-file-because-the-file-is-dirty)
+### [Unable to write to file because the file is dirty 无法写入文件，因为文件已修改]({{< ref "/GetStarted/DisplayLanguage#_unable-to-write-to-file-because-the-file-is-dirty" >}})
 
 This notification may mean that your `argv.json` file wasn't saved after a previous change. Check if there are any errors in the file (**Preferences: Configure Runtime Arguments**), make sure the file is saved, and try to install the Language Pack again.
 
 ​​	此通知可能意味着您的 `argv.json` 文件在上次更改后未保存。检查文件中是否有任何错误（首选项：配置运行时参数），确保文件已保存，然后尝试再次安装语言包。
 
-### [Can I contribute to a language pack's translations? 我可以为语言包的翻译做出贡献吗？](https://code.visualstudio.com/docs/getstarted/locales#_can-i-contribute-to-a-language-packs-translations)
+### [Can I contribute to a language pack's translations? 我可以为语言包的翻译做出贡献吗？]({{< ref "/GetStarted/DisplayLanguage#_can-i-contribute-to-a-language-packs-translations" >}})
 
 Yes, the [Visual Studio Code Community Localization Project](https://aka.ms/vscodeloc) is open to anyone, where contributors can provide new translations, vote on existing translations, or suggest process improvements.
 
 ​​	是的，Visual Studio Code 社区本地化项目对所有人开放，贡献者可以提供新的翻译、对现有翻译进行投票或建议改进流程。
 
-### [How can I enable a programming language like Python? 如何启用像 Python 这样的编程语言？](https://code.visualstudio.com/docs/getstarted/locales#_how-can-i-enable-a-programming-language-like-python)
+### [How can I enable a programming language like Python? 如何启用像 Python 这样的编程语言？]({{< ref "/GetStarted/DisplayLanguage#_how-can-i-enable-a-programming-language-like-python" >}})
 
-Refer to the [Programming Languages](https://code.visualstudio.com/docs/languages/overview) section to learn how to install support for programming languages, such as PHP, Python, and Java.
+Refer to the [Programming Languages]({{< ref "/Languages/Overview" >}}) section to learn how to install support for programming languages, such as PHP, Python, and Java.
 
 ​​	请参阅编程语言部分，了解如何安装对编程语言（如 PHP、Python 和 Java）的支持。

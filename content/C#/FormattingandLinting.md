@@ -24,7 +24,7 @@ Navigate to **File** > **Preferences** > **Settings** (Ctrl+,) to customize how 
 
 ![Commonly Used menu](./FormattingandLinting_img/commonly-used-menu.png)
 
-## [How to support EditorConfig with C# Dev Kit 如何使用 C# Dev Kit 支持 EditorConfig](https://code.visualstudio.com/docs/csharp/formatting-linting#_how-to-support-editorconfig-with-c-dev-kit)
+## [How to support EditorConfig with C# Dev Kit 如何使用 C# Dev Kit 支持 EditorConfig]({{< ref "/C#/FormattingandLinting#_how-to-support-editorconfig-with-c-dev-kit" >}})
 
 **EditorConfig (.editorconfig) files** are supported with the [EditorConfig for VS Code extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig), letting you customize formatting options in your C# project. These files are also used to override the user/workspace settings with the settings you specify in them.
 

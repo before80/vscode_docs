@@ -14,7 +14,7 @@ draft = false
 
 
 
-The Docker extension includes several Visual Studio Code tasks to control the behavior of Docker [build](https://code.visualstudio.com/docs/containers/reference#_docker-build-task) and [run](https://code.visualstudio.com/docs/containers/reference#_docker-run-task), and form the basis of container startup for debugging.
+The Docker extension includes several Visual Studio Code tasks to control the behavior of Docker [build]({{< ref "/Docker/Customize#_docker-build-task" >}}) and [run]({{< ref "/Docker/Customize#_docker-run-task" >}}), and form the basis of container startup for debugging.
 
 ​​	Docker 扩展包括几个 Visual Studio Code 任务，用于控制 Docker 构建和运行的行为，并形成用于调试的容器启动的基础。
 
@@ -22,11 +22,11 @@ The tasks allow for a great deal of control and customization. The final configu
 
 ​​	这些任务允许进行大量的控制和自定义。最终配置是常规默认值、特定于平台的默认值（例如 Node.js、Python 或 .NET）和用户输入的组合。当用户输入与默认值冲突时，用户输入优先。
 
-All common features of Visual Studio Code tasks (for example, grouping tasks into compound tasks) are supported by Docker extension tasks. For more information on common task features and properties, see the Visual Studio Code [custom task](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks) documentation.
+All common features of Visual Studio Code tasks (for example, grouping tasks into compound tasks) are supported by Docker extension tasks. For more information on common task features and properties, see the Visual Studio Code [custom task]({{< ref "/UserGuide/Tasks#_custom-tasks" >}}) documentation.
 
 ​​	Docker 扩展任务支持 Visual Studio Code 任务的所有常见功能（例如，将任务分组到复合任务中）。有关常见任务功能和属性的详细信息，请参阅 Visual Studio Code 自定义任务文档。
 
-## [Docker build task Docker 构建任务](https://code.visualstudio.com/docs/containers/reference#_docker-build-task)
+## [Docker build task Docker 构建任务]({{< ref "/Docker/Customize#_docker-build-task" >}})
 
 The `docker-build` task builds Docker images using the Docker command line (CLI). The task can be used by itself, or as part of a chain of tasks to run and/or debug an application within a Docker container.
 
@@ -41,17 +41,17 @@ The most important configuration settings for the `docker-build` task are `docke
 - The `platform` property is a hint that changes how the `docker-build` task determines Docker build defaults.
   属性 `platform` 是一个提示，它会更改 `docker-build` 任务确定 Docker 构建默认值的方式。
 
-See [property reference](https://code.visualstudio.com/docs/containers/reference#_build-task-reference) for full list of all task properties.
+See [property reference]({{< ref "/Docker/Customize#_build-task-reference" >}}) for full list of all task properties.
 
 ​​	有关所有任务属性的完整列表，请参阅属性参考。
 
-### [Platform support 平台支持](https://code.visualstudio.com/docs/containers/reference#_platform-support)
+### [Platform support 平台支持]({{< ref "/Docker/Customize#_platform-support" >}})
 
 While the `docker-build` task in `tasks.json` can be used to build any Docker image, the extension has explicit support (and simplified configuration) for Node.js, Python, and .NET Core.
 
 ​​	虽然 `tasks.json` 中的 `docker-build` 任务可用于构建任何 Docker 映像，但该扩展名对 Node.js、Python 和 .NET Core 提供了显式支持（以及简化的配置）。
 
-### [Node.js (docker-build)](https://code.visualstudio.com/docs/containers/reference#_nodejs-dockerbuild)
+### [Node.js (docker-build)]({{< ref "/Docker/Customize#_nodejs-dockerbuild" >}})
 
 **Minimal configuration using defaults
 使用默认值进行最小配置**
@@ -86,7 +86,7 @@ For Node.js Docker images, the `docker-build` task infers the following options:
 | `dockerBuild.dockerfile` | The file `Dockerfile` in the same directory as the `package.json` resides. 与 `package.json` 所在的同一目录中的 `Dockerfile` 文件。 |
 | `dockerBuild.tag`        | The application's `name` property in `package.json` (if defined), else the base name of the folder in which `package.json` resides. 应用程序在 `package.json` 中的 `name` 属性（如果已定义），否则为 `package.json` 所在文件夹的基本名称。 |
 
-### [Python (docker-build)](https://code.visualstudio.com/docs/containers/reference#_python-dockerbuild)
+### [Python (docker-build)]({{< ref "/Docker/Customize#_python-dockerbuild" >}})
 
 **Minimal configuration using defaults
 使用默认值进行最小配置**
@@ -121,7 +121,7 @@ For Python Docker images, the `docker-build` task infers the following options:
 | `dockerBuild.tag`        | The base name of the root workspace folder. 根工作区文件夹的基本名称。 |
 | `dockerBuild.pull`       | Defaults to true in order to pull new base images before building. 在构建之前拉取新的基础映像时，默认为 true。 |
 
-### [.NET (docker-build)](https://code.visualstudio.com/docs/containers/reference#_net-dockerbuild)
+### [.NET (docker-build)]({{< ref "/Docker/Customize#_net-dockerbuild" >}})
 
 **Minimal configuration using defaults
 使用默认值进行最小配置**
@@ -158,7 +158,7 @@ For .NET-based images, the `docker-build` task infers the following options:
 | `dockerBuild.dockerfile` | The file `Dockerfile` in the root workspace folder. 根工作区文件夹中的文件 `Dockerfile` 。 |
 | `dockerBuild.tag`        | The base name of the root workspace folder. 根工作区文件夹的基本名称。 |
 
-## [Build task reference 生成任务参考](https://code.visualstudio.com/docs/containers/reference#_build-task-reference)
+## [Build task reference 生成任务参考]({{< ref "/Docker/Customize#_build-task-reference" >}})
 
 Here are all properties available for configuring `docker-build` task. All properties are optional unless indicated otherwise.
 
@@ -166,13 +166,13 @@ Here are all properties available for configuring `docker-build` task. All prope
 
 | Property 属性 | Description 说明                                             |
 | :------------ | :----------------------------------------------------------- |
-| `dockerBuild` | Options for controlling the `docker build` command executed ([see below](https://code.visualstudio.com/docs/containers/reference#_dockerbuild-object-properties)). 用于控制执行的 `docker build` 命令的选项（请参见下文）。 Required unless `platform` is set. 除非设置了 `platform` ，否则是必需的。 |
+| `dockerBuild` | Options for controlling the `docker build` command executed ([see below]({{< ref "/Docker/Customize#_dockerbuild-object-properties" >}})). 用于控制执行的 `docker build` 命令的选项（请参见下文）。 Required unless `platform` is set. 除非设置了 `platform` ，否则是必需的。 |
 | `platform`    | Determines the platform: .NET (`netcore`) or Node.js (`node`) and default settings for `docker build` command. 确定平台：.NET ( `netcore` ) 或 Node.js ( `node` ) 以及 `docker build` 命令的默认设置。 |
-| `node`        | Determines options specific for Node.js projects ([see below](https://code.visualstudio.com/docs/containers/reference#_node-object-properties-dockerbuild-task)). 确定适用于 Node.js 项目的特定选项（请参见下文）。 |
+| `node`        | Determines options specific for Node.js projects ([see below]({{< ref "/Docker/Customize#_node-object-properties-dockerbuild-task" >}})). 确定适用于 Node.js 项目的特定选项（请参见下文）。 |
 | `python`      | There are no object properties for Python in the `docker-build` task. `docker-build` 任务中没有适用于 Python 的对象属性。 |
-| `netCore`     | Determines options specific for .NET projects ([see below](https://code.visualstudio.com/docs/containers/reference#_netcore-object-properties-dockerbuild-task)). 确定适用于 .NET 项目的特定选项（请参见下文）。 |
+| `netCore`     | Determines options specific for .NET projects ([see below]({{< ref "/Docker/Customize#_netcore-object-properties-dockerbuild-task" >}})). 确定适用于 .NET 项目的特定选项（请参见下文）。 |
 
-### [dockerBuild object properties dockerBuild 对象属性](https://code.visualstudio.com/docs/containers/reference#_dockerbuild-object-properties)
+### [dockerBuild object properties dockerBuild 对象属性]({{< ref "/Docker/Customize#_dockerbuild-object-properties" >}})
 
 | Property 属性   | Description 说明                                             | `docker build` CLI Equivalent `docker build` CLI 等效项 |
 | :-------------- | :----------------------------------------------------------- | :------------------------------------------------------ |
@@ -185,19 +185,19 @@ Here are all properties available for configuring `docker-build` task. All prope
 | `pull`          | Whether or not to pull new base images before building. 在构建之前是否拉取新的基础映像。 | `--pull`                                                |
 | `customOptions` | Any extra parameters to add before the context argument. No attempt is made to resolve conflicts with other options or validate this option. 在上下文参数之前添加的任何额外参数。不会尝试解决与其他选项的冲突或验证此选项。 | (any) （任何）                                          |
 
-### [node object properties (docker-build task) 节点对象属性（docker-build 任务）](https://code.visualstudio.com/docs/containers/reference#_node-object-properties-dockerbuild-task)
+### [node object properties (docker-build task) 节点对象属性（docker-build 任务）]({{< ref "/Docker/Customize#_node-object-properties-dockerbuild-task" >}})
 
 | Property 属性 | Description 说明                                             | Default 默认                                                 |
 | :------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | `package`     | The path to the `package.json` file associated with the Dockerfile and `docker-build` task. 与 Dockerfile 和 `docker-build` 任务关联的 `package.json` 文件的路径。 | The file `package.json` in the root workspace folder. 根工作区文件夹中的 `package.json` 文件。 |
 
-### [netCore object properties (docker-build task) netCore 对象属性（docker-build 任务）](https://code.visualstudio.com/docs/containers/reference#_netcore-object-properties-dockerbuild-task)
+### [netCore object properties (docker-build task) netCore 对象属性（docker-build 任务）]({{< ref "/Docker/Customize#_netcore-object-properties-dockerbuild-task" >}})
 
 | Property 属性 | Description 说明                                             |
 | :------------ | :----------------------------------------------------------- |
 | `appProject`  | The .NET project file (`.csproj`, `.fsproj`, etc.) associated with the Dockerfile and `docker-build` task. 与 Dockerfile 和 `docker-build` 任务关联的 .NET 项目文件 ( `.csproj` 、 `.fsproj` 等)。 Required always. 始终必需。 |
 
-## [Docker run task Docker 运行任务](https://code.visualstudio.com/docs/containers/reference#_docker-run-task)
+## [Docker run task Docker 运行任务]({{< ref "/Docker/Customize#_docker-run-task" >}})
 
 The `docker-run` task in `tasks.json` creates and starts a Docker container using the Docker command line (CLI). The task can be used by itself, or as part of a chain of tasks to debug an application within a Docker container.
 
@@ -212,17 +212,17 @@ The most important configuration settings for the `docker-run` task are `dockerR
 - The `platform` property is a hint that changes how the `docker-run` task determines Docker run defaults.
   `platform` 属性是一个提示，它会改变 `docker-run` 任务确定 Docker run 默认值的方式。
 
-See [property reference](https://code.visualstudio.com/docs/containers/reference#_run-task-reference) for full list of all task properties.
+See [property reference]({{< ref "/Docker/Customize#_run-task-reference" >}}) for full list of all task properties.
 
 ​​	有关所有任务属性的完整列表，请参阅属性参考。
 
-### [Docker run platform support Docker 运行平台支持](https://code.visualstudio.com/docs/containers/reference#_docker-run-platform-support)
+### [Docker run platform support Docker 运行平台支持]({{< ref "/Docker/Customize#_docker-run-platform-support" >}})
 
 While the `docker-run` task can be used to run any Docker image, the extension has explicit support (and simplified configuration) for Node.js, Python, and .NET.
 
 ​​	虽然 `docker-run` 任务可用于运行任何 Docker 映像，但该扩展名明确支持（且配置简化）Node.js、Python 和 .NET。
 
-### [Node.js (docker-run)](https://code.visualstudio.com/docs/containers/reference#_nodejs-dockerrun)
+### [Node.js (docker-run)]({{< ref "/Docker/Customize#_nodejs-dockerrun" >}})
 
 **Minimal configuration using defaults
 使用默认值的最小配置**
@@ -257,7 +257,7 @@ For Node.js-based Docker images, the `docker-run` task infers the following opti
 | `dockerRun.containerName` | Derived from the application package name. 从应用程序包名称派生。 |
 | `dockerRun.image`         | The tag from a dependent `docker-build` task (if one exists) or derived from the application package name, itself derived from the `name` property within `package.json` or the base name of the folder in which it resides. 来自依赖 `docker-build` 任务的标签（如果存在）或从应用程序包名称派生，应用程序包名称本身派生自 `package.json` 中的 `name` 属性或其所在文件夹的基本名称。 |
 
-### [Python (docker-run)](https://code.visualstudio.com/docs/containers/reference#_python-dockerrun)
+### [Python (docker-run)]({{< ref "/Docker/Customize#_python-dockerrun" >}})
 
 When building a Python-based Docker image, you can omit the `platform` property and just set the `python` object (`platform` is implicitly set to `python` when `python` object is present)
 
@@ -325,7 +325,7 @@ For Python-based Docker images, the `docker-run` task infers the following optio
 | `dockerRun.containerName` | Derived from the base name of the root workspace folder. 派生自根工作区文件夹的基本名称。 |
 | `dockerRun.image`         | The tag from a dependent docker-build task (if one exists) or derived from the base name of the root workspace folder. 来自相关 docker-build 任务的标签（如果存在）或派生自根工作区文件夹的基本名称。 |
 
-### [.NET (docker-run)](https://code.visualstudio.com/docs/containers/reference#_net-dockerrun)
+### [.NET (docker-run)]({{< ref "/Docker/Customize#_net-dockerrun" >}})
 
 **Minimal configuration using defaults
 使用默认值的最小配置**
@@ -364,7 +364,7 @@ For .NET-based images, the `docker-run` task infers the following options:
 | `dockerRun.os`            | `Linux`                                                      |
 | `dockerRun.volumes`       | Adds the following volumes as required: the local application folder, the source folder, the debugger folder, the NuGet package folder, and NuGet fallback folder. 根据需要添加以下卷：本地应用程序文件夹、源文件夹、调试器文件夹、NuGet 包文件夹和 NuGet 回退文件夹。 |
 
-## [Run task reference 运行任务参考](https://code.visualstudio.com/docs/containers/reference#_run-task-reference)
+## [Run task reference 运行任务参考]({{< ref "/Docker/Customize#_run-task-reference" >}})
 
 Here are all properties available for configuring `docker-run` task. All properties are optional unless indicated otherwise.
 
@@ -372,13 +372,13 @@ Here are all properties available for configuring `docker-run` task. All propert
 
 | Property 属性 | Description 说明                                             |
 | :------------ | :----------------------------------------------------------- |
-| `dockerRun`   | Options for controlling the `docker run` command executed ([see below](https://code.visualstudio.com/docs/containers/reference#_dockerrun-object-properties)). 用于控制执行的 `docker run` 命令的选项（请参见下文）。 Required unless `platform` is set. 除非设置了 `platform` ，否则为必需。 |
+| `dockerRun`   | Options for controlling the `docker run` command executed ([see below]({{< ref "/Docker/Customize#_dockerrun-object-properties" >}})). 用于控制执行的 `docker run` 命令的选项（请参见下文）。 Required unless `platform` is set. 除非设置了 `platform` ，否则为必需。 |
 | `platform`    | Determines the platform: .NET (`netcore`) or Node.js (`node`) and default settings for `docker run` command. 确定平台：.NET ( `netcore` ) 或 Node.js ( `node` ) 以及 `docker run` 命令的默认设置。 |
-| `node`        | For Node.js projects, this controls various options ([see below](https://code.visualstudio.com/docs/containers/reference#_node-object-properties-dockerrun-task)). 对于 Node.js 项目，此选项控制各种选项（请参见下文）。 |
-| `python`      | For Python projects, this controls various options ([see below](https://code.visualstudio.com/docs/containers/reference#_python-object-properties-dockerrun-task)). 对于 Python 项目，此选项控制各种选项（请参见下文）。 |
-| `netCore`     | For .NET projects, this controls various options ([see below](https://code.visualstudio.com/docs/containers/reference#_netcore-object-properties-dockerrun-task)). 对于 .NET 项目，此选项控制各种选项（请参见下文）。 |
+| `node`        | For Node.js projects, this controls various options ([see below]({{< ref "/Docker/Customize#_node-object-properties-dockerrun-task" >}})). 对于 Node.js 项目，此选项控制各种选项（请参见下文）。 |
+| `python`      | For Python projects, this controls various options ([see below]({{< ref "/Docker/Customize#_python-object-properties-dockerrun-task" >}})). 对于 Python 项目，此选项控制各种选项（请参见下文）。 |
+| `netCore`     | For .NET projects, this controls various options ([see below]({{< ref "/Docker/Customize#_netcore-object-properties-dockerrun-task" >}})). 对于 .NET 项目，此选项控制各种选项（请参见下文）。 |
 
-### [dockerRun object properties dockerRun 对象属性](https://code.visualstudio.com/docs/containers/reference#_dockerrun-object-properties)
+### [dockerRun object properties dockerRun 对象属性]({{< ref "/Docker/Customize#_dockerrun-object-properties" >}})
 
 | Property 属性     | Description 说明                                             | CLI Equivalent CLI 等效项               |
 | :---------------- | :----------------------------------------------------------- | :-------------------------------------- |
@@ -391,14 +391,14 @@ Here are all properties available for configuring `docker-run` task. All propert
 | `network`         | The name of the network to which the container will be connected. 容器将连接到的网络的名称。 | `--network`                             |
 | `networkAlias`    | The network-scoped alias for the started container. 已启动容器的网络范围别名。 | `--network-alias`                       |
 | `os`              | Default is `Linux`, the other option is `Windows`. The container operating system used. 默认值为 `Linux` ，另一个选项是 `Windows` 。容器操作系统已使用。 | N/A                                     |
-| `ports`           | The ports to publish (map) from container to host. This is a list of objects ([see below](https://code.visualstudio.com/docs/containers/reference#_ports-object-properties)). 从容器发布（映射）到主机的端口。这是一个对象列表（见下文）。 | `-p` or `--publish` `-p` 或 `--publish` |
+| `ports`           | The ports to publish (map) from container to host. This is a list of objects ([see below]({{< ref "/Docker/Customize#_ports-object-properties" >}})). 从容器发布（映射）到主机的端口。这是一个对象列表（见下文）。 | `-p` or `--publish` `-p` 或 `--publish` |
 | `portsPublishAll` | Whether to publish all ports exposed by the Docker image. Defaults to `true` if no ports are explicitly published. 是否发布 Docker 镜像公开的所有端口。如果未明确发布任何端口，则默认为 `true` 。 | `-P`                                    |
-| `extraHosts`      | The hosts to add to the container for DNS resolution. This is a list of objects ([see below](https://code.visualstudio.com/docs/containers/reference#_extrahosts-object-properties)). 要添加到容器中以进行 DNS 解析的主机。这是一个对象列表（见下文）。 | `--add-host`                            |
-| `volumes`         | The volumes to map into the started container. This is a list of objects ([see below](https://code.visualstudio.com/docs/containers/reference#_volumes-object-properties)). 要映射到已启动容器的卷。这是一个对象列表（见下文）。 | `-v` or `--volume` `-v` 或 `--volume`   |
+| `extraHosts`      | The hosts to add to the container for DNS resolution. This is a list of objects ([see below]({{< ref "/Docker/Customize#_extrahosts-object-properties" >}})). 要添加到容器中以进行 DNS 解析的主机。这是一个对象列表（见下文）。 | `--add-host`                            |
+| `volumes`         | The volumes to map into the started container. This is a list of objects ([see below]({{< ref "/Docker/Customize#_volumes-object-properties" >}})). 要映射到已启动容器的卷。这是一个对象列表（见下文）。 | `-v` or `--volume` `-v` 或 `--volume`   |
 | `remove`          | Whether or not to remove the container after it stops. 容器停止后是否将其删除。 | `--rm`                                  |
 | `customOptions`   | Any extra parameters to add before the image argument. No attempt is made to resolve conflicts with other options or validate this option. 在图像参数之前添加任何额外的参数。不会尝试解决与其他选项的冲突或验证此选项。 | (any)                                   |
 
-### [ports object properties 端口对象属性](https://code.visualstudio.com/docs/containers/reference#_ports-object-properties)
+### [ports object properties 端口对象属性]({{< ref "/Docker/Customize#_ports-object-properties" >}})
 
 | Property 属性   | Description 说明                                             | Default 默认                                       |
 | :-------------- | :----------------------------------------------------------- | :------------------------------------------------- |
@@ -406,14 +406,14 @@ Here are all properties available for configuring `docker-run` task. All propert
 | `hostPort`      | The port number bound on the host. 绑定到主机上的端口号。    | (randomly selected by Docker) (由 Docker 随机选择) |
 | `protocol`      | The protocol for the binding (`tcp` or `udp`). 绑定协议 ( `tcp` 或 `udp` )。 | `tcp`                                              |
 
-### [extraHosts object properties extraHosts 对象属性](https://code.visualstudio.com/docs/containers/reference#_extrahosts-object-properties)
+### [extraHosts object properties extraHosts 对象属性]({{< ref "/Docker/Customize#_extrahosts-object-properties" >}})
 
 | Property 属性 | Description 说明                                             |
 | :------------ | :----------------------------------------------------------- |
 | `hostname`    | The hostname for DNS resolution. 用于 DNS 解析的主机名。 Required. 必填。 |
 | `ip`          | The IP address associated with the above hostname. 与上述主机名关联的 IP 地址。 Required. 必填。 |
 
-### [volumes object properties volumes 对象属性](https://code.visualstudio.com/docs/containers/reference#_volumes-object-properties)
+### [volumes object properties volumes 对象属性]({{< ref "/Docker/Customize#_volumes-object-properties" >}})
 
 | Property 属性   | Description 说明                                             | Default 默认                    |
 | :-------------- | :----------------------------------------------------------- | :------------------------------ |
@@ -421,7 +421,7 @@ Here are all properties available for configuring `docker-run` task. All propert
 | `containerPath` | The path in the container to which the local path will be mapped. 将本地路径映射到的容器中的路径。 Required. 必填。 |                                 |
 | `permissions`   | Permissions the container has on the mapped path. Can be `ro` (read-only) or `rw` (read-write). 容器对映射路径的权限。可以是 `ro` （只读）或 `rw` （读写）。 | Container dependent. 容器相关。 |
 
-### [node object properties (docker-run task) node 对象属性（docker-run 任务）](https://code.visualstudio.com/docs/containers/reference#_node-object-properties-dockerrun-task)
+### [node object properties (docker-run task) node 对象属性（docker-run 任务）]({{< ref "/Docker/Customize#_node-object-properties-dockerrun-task" >}})
 
 | Property 属性     | Description 说明                                             | Default 默认                                                 |
 | :---------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -430,17 +430,17 @@ Here are all properties available for configuring `docker-run` task. All propert
 | `inspectMode`     | Defines the initial interaction between the application and the debugger (`default` or `break`). 定义应用程序与调试器之间的初始交互（ `default` 或 `break` ）。 The value `default` allows the application to run until the debugger attaches. 值 `default` 允许应用程序运行，直到调试器附加。 The value `break` prevents the application from running until the debugger attaches. 值 `break` 阻止应用程序运行，直到调试器附加。 | `default`                                                    |
 | `inspectPort`     | The port on which debugging should occur. 应进行调试的端口。 | `9229`                                                       |
 
-### [python object properties (docker-run task) python 对象属性（docker-run 任务）](https://code.visualstudio.com/docs/containers/reference#_python-object-properties-dockerrun-task)
+### [python object properties (docker-run task) python 对象属性（docker-run 任务）]({{< ref "/Docker/Customize#_python-object-properties-dockerrun-task" >}})
 
 | Property 属性 | Description 说明                                             | Default 默认                                                 |
 | :------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| `args`        | Arguments passed to the Python app. 传递给 Python 应用程序的参数。 | Platform dependent. Defaults of scaffolding shown [above](https://code.visualstudio.com/docs/containers/reference#_python-docker-run) 平台相关。上面显示的脚手架的默认值 |
+| `args`        | Arguments passed to the Python app. 传递给 Python 应用程序的参数。 | Platform dependent. Defaults of scaffolding shown [above]({{< ref "/Docker/Customize#_python-docker-run" >}}) 平台相关。上面显示的脚手架的默认值 |
 | `debugPort`   | The port that the debugger will listen on. 调试器将侦听的端口。 | `5678`                                                       |
 | `wait`        | Whether to wait for debugger to attach. 是否等待调试器附加。 | `true`                                                       |
 | `module`      | The Python module to run (only module **or** file should be chosen). 要运行的 Python 模块（仅应选择模块或文件）。 |                                                              |
 | `file`        | The Python file to run (only module **or** file should be chosen). 要运行的 Python 文件（仅应选择模块或文件）。 |                                                              |
 
-### [netCore object properties (docker-run task) netCore 对象属性（docker-run 任务）](https://code.visualstudio.com/docs/containers/reference#_netcore-object-properties-dockerrun-task)
+### [netCore object properties (docker-run task) netCore 对象属性（docker-run 任务）]({{< ref "/Docker/Customize#_netcore-object-properties-dockerrun-task" >}})
 
 | Property 属性     | Description 说明                                             |
 | :---------------- | :----------------------------------------------------------- |
@@ -448,7 +448,7 @@ Here are all properties available for configuring `docker-run` task. All propert
 | `configureSsl`    | Whether to configure ASP.NET Core SSL certificates and other settings to enable SSL on the service in the container. 是否配置 ASP.NET Core SSL 证书和其他设置以在容器中的服务上启用 SSL。 |
 | `enableDebugging` | Whether to enable the started container for debugging. This will infer additional volume mappings and other options necessary for debugging. 是否启用已启动容器进行调试。这将推断出调试所需的额外卷映射和其他选项。 |
 
-## [Docker Compose task Docker Compose 任务](https://code.visualstudio.com/docs/containers/reference#_docker-compose-task)
+## [Docker Compose task Docker Compose 任务]({{< ref "/Docker/Customize#_docker-compose-task" >}})
 
 The `docker-compose` task in `tasks.json` creates and starts Docker containers using the Docker Compose command line (CLI). The task can be used by itself, or as part of a chain of tasks to debug an application within a Docker container.
 
@@ -461,7 +461,7 @@ The most important configuration setting for the `docker-compose` task is `docke
 - The `dockerCompose` object specifies parameters for the Docker Compose command. Values specified by this object are applied directly to Docker Compose CLI invocation.
   `dockerCompose` 对象指定 Docker Compose 命令的参数。此对象指定的值直接应用于 Docker Compose CLI 调用。
 
-See [property reference](https://code.visualstudio.com/docs/containers/reference#_compose-task-reference) for full list of all task properties.
+See [property reference]({{< ref "/Docker/Customize#_compose-task-reference" >}}) for full list of all task properties.
 
 ​​	有关所有任务属性的完整列表，请参阅属性参考。
 
@@ -491,7 +491,7 @@ See [property reference](https://code.visualstudio.com/docs/containers/reference
 }
 ```
 
-## [Compose task reference Compose 任务参考](https://code.visualstudio.com/docs/containers/reference#_compose-task-reference)
+## [Compose task reference Compose 任务参考]({{< ref "/Docker/Customize#_compose-task-reference" >}})
 
 Here are all properties available for configuring `docker-compose` task. All properties are optional unless indicated otherwise.
 
@@ -499,9 +499,9 @@ Here are all properties available for configuring `docker-compose` task. All pro
 
 | Property 属性   | Description 说明                                             |
 | :-------------- | :----------------------------------------------------------- |
-| `dockerCompose` | Options for controlling the `docker-compose` command executed ([see below](https://code.visualstudio.com/docs/containers/reference#_dockercompose-object-properties)). 用于控制执行的 `docker-compose` 命令的选项（请参阅下文）。 Required. 必需。 |
+| `dockerCompose` | Options for controlling the `docker-compose` command executed ([see below]({{< ref "/Docker/Customize#_dockercompose-object-properties" >}})). 用于控制执行的 `docker-compose` 命令的选项（请参阅下文）。 Required. 必需。 |
 
-### [dockerCompose object properties dockerCompose 对象属性](https://code.visualstudio.com/docs/containers/reference#_dockercompose-object-properties)
+### [dockerCompose object properties dockerCompose 对象属性]({{< ref "/Docker/Customize#_dockercompose-object-properties" >}})
 
 | Property 属性 | Description 说明                                             | CLI Equivalent CLI 等效项 |
 | :------------ | :----------------------------------------------------------- | :------------------------ |
@@ -511,7 +511,7 @@ Here are all properties available for configuring `docker-compose` task. All pro
 | `envFile`     | File of environment variables read in and applied to the containers. 读取并应用到容器的环境变量文件。 | `--env-file <file>`       |
 | `projectName` | Alternate project name to use when naming and labeling Docker objects. If using an alternate project name when composing up, the same project name must be specified when composing down. 在命名和标记 Docker 对象时要使用的备用项目名称。如果在组合时使用备用项目名称，则在组合时必须指定相同的项目名称。 | `--project-name <name>`   |
 
-### [up object properties up 对象属性](https://code.visualstudio.com/docs/containers/reference#_up-object-properties)
+### [up object properties up 对象属性]({{< ref "/Docker/Customize#_up-object-properties" >}})
 
 | Property 属性   | Description 说明                                             | CLI Equivalent CLI 等效 | Default 默认 |
 | :-------------- | :----------------------------------------------------------- | :---------------------- | :----------- |
@@ -522,7 +522,7 @@ Here are all properties available for configuring `docker-compose` task. All pro
 | `profiles`      | A subset of the profiles to start. Cannot be combined with `services`. 要启动的配置文件的子集。不能与 `services` 组合使用。 | `--profile <profile>`   | (all) (全部) |
 | `customOptions` | Any extra parameters to add after the `up` argument. No attempt is made to resolve conflicts with other options or validate this option. 要在 `up` 参数后添加的任何额外参数。不会尝试解决与其他选项的冲突或验证此选项。 | (any) (任意)            |              |
 
-### [down object properties 下载对象属性](https://code.visualstudio.com/docs/containers/reference#_down-object-properties)
+### [down object properties 下载对象属性]({{< ref "/Docker/Customize#_down-object-properties" >}})
 
 | Property 属性   | Description 说明                                             | CLI Equivalent CLI 等效项 | Default 默认 |
 | :-------------- | :----------------------------------------------------------- | :------------------------ | :----------- |
@@ -530,13 +530,13 @@ Here are all properties available for configuring `docker-compose` task. All pro
 | `removeVolumes` | Whether or not to remove named volumes. 是否删除命名卷。     | `-v`                      | `false`      |
 | `customOptions` | Any extra parameters to add after the `down` argument. No attempt is made to resolve conflicts with other options or validate this option. 在 `down` 参数后添加的任何额外参数。不会尝试解决与其他选项的冲突或验证此选项。 | (any) (任何)              |              |
 
-## [Command customization 命令自定义](https://code.visualstudio.com/docs/containers/reference#_command-customization)
+## [Command customization 命令自定义]({{< ref "/Docker/Customize#_command-customization" >}})
 
 The Docker extension executes a number of Docker CLI commands when you perform various operations, such as to build images, run containers, attach to containers, and view container logs. Some of these commands have a large number of optional arguments, often used in very specific scenarios. As an alternative to the above Visual Studio Code tasks, several commands can be customized when tasks are not in use.
 
 ​​	当您执行各种操作（例如构建映像、运行容器、附加到容器和查看容器日志）时，Docker 扩展将执行许多 Docker CLI 命令。其中一些命令具有大量可选参数，通常用于非常特定的场景。作为上述 Visual Studio Code 任务的替代方法，可以在不使用任务时自定义多个命令。
 
-For example, the tokens `${serviceList}` and `${profileList}` in the [Compose Up](https://code.visualstudio.com/docs/containers/reference#_docker-compose-up) command allows for easily starting a subset of the services within your Docker Compose YAML file(s).
+For example, the tokens `${serviceList}` and `${profileList}` in the [Compose Up]({{< ref "/Docker/Customize#_docker-compose-up" >}}) command allows for easily starting a subset of the services within your Docker Compose YAML file(s).
 
 ​​	例如，Compose Up 命令中的标记 `${serviceList}` 和 `${profileList}` 允许轻松启动 Docker Compose YAML 文件中的服务子集。
 
@@ -544,7 +544,7 @@ For each of these customizable Docker commands, a configuration setting is avail
 
 ​​	对于这些可自定义的 Docker 命令中的每一个，都有一个配置设置可用于设置要执行的模板。或者，您可以定义多个模板，也可以使用正则表达式，当匹配时，提示应在其中使用模板的上下文。这些模板支持一些类似于 `launch.json` 和 `tasks.json` 的标记，例如 `${workspaceFolder}` 。
 
-### [Settings JSON schema 设置 JSON 架构](https://code.visualstudio.com/docs/containers/reference#_settings-json-schema)
+### [Settings JSON schema 设置 JSON 架构]({{< ref "/Docker/Customize#_settings-json-schema" >}})
 
 You have two options for configuring each of the templates (listed below). The first option is a single template that overrides the default behavior:
 
@@ -580,7 +580,7 @@ For example, three templates are shown in the following example:
 }
 ```
 
-### [Selection behavior 选择行为](https://code.visualstudio.com/docs/containers/reference#_selection-behavior)
+### [Selection behavior 选择行为]({{< ref "/Docker/Customize#_selection-behavior" >}})
 
 The command template chosen to execute is selected based on the following rules:
 
@@ -606,7 +606,7 @@ The command template chosen to execute is selected based on the following rules:
    4. If multiple unconstrained templates apply, the user will be prompted to choose. If only one applies, the user will not be prompted.
       如果应用多个不受限模板，系统将提示用户选择。如果只应用一个，则不会提示用户。
 
-### [Docker Build Docker 构建](https://code.visualstudio.com/docs/containers/reference#_docker-build)
+### [Docker Build Docker 构建]({{< ref "/Docker/Customize#_docker-build" >}})
 
 | Configuration Setting 配置设置 | Default Value 默认值                                         |
 | :----------------------------- | :----------------------------------------------------------- |
@@ -631,7 +631,7 @@ Supported tokens:
 >
 > ​​	注意：将针对所选 Dockerfile 名称和工作区文件夹名称比较 `match` 正则表达式。
 
-### [Docker Run Docker 运行](https://code.visualstudio.com/docs/containers/reference#_docker-run)
+### [Docker Run Docker 运行]({{< ref "/Docker/Customize#_docker-run" >}})
 
 | Configuration Setting 配置设置   | Default Value 默认值                                      |
 | :------------------------------- | :-------------------------------------------------------- |
@@ -652,7 +652,7 @@ Supported tokens:
 >
 > ​​	注意： `match` 正则表达式将与所选镜像的完整标记进行比较。
 
-### [Docker Attach](https://code.visualstudio.com/docs/containers/reference#_docker-attach)
+### [Docker Attach]({{< ref "/Docker/Customize#_docker-attach" >}})
 
 | Configuration Setting 配置设置 | Default Value 默认值                                         |
 | :----------------------------- | :----------------------------------------------------------- |
@@ -672,7 +672,7 @@ Supported tokens:
 >
 > ​​	注意： `match` 正则表达式将与容器名称和容器镜像的完整标记进行比较。
 
-### [Docker Logs Docker 日志](https://code.visualstudio.com/docs/containers/reference#_docker-logs)
+### [Docker Logs Docker 日志]({{< ref "/Docker/Customize#_docker-logs" >}})
 
 | Configuration Setting 配置设置 | Default Value 默认值                         |
 | :----------------------------- | :------------------------------------------- |
@@ -691,7 +691,7 @@ Supported tokens:
 >
 > ​​	注意： `match` 正则表达式将与容器名称和容器映像的完整标记进行比较。
 
-### [Docker Compose Up](https://code.visualstudio.com/docs/containers/reference#_docker-compose-up)
+### [Docker Compose Up]({{< ref "/Docker/Customize#_docker-compose-up" >}})
 
 | Configuration Setting 配置设置 | Default Value 默认值                                         |
 | :----------------------------- | :----------------------------------------------------------- |
@@ -710,7 +710,7 @@ Supported tokens:
 | `${profileList}`       | If specified and the Docker Compose YAML file contains profiles, prompts for a subset of the profiles to start when the command is run. 如果指定并且 Docker Compose YAML 文件包含配置文件，则在运行命令时提示启动配置文件的子集。 |
 | `${composeCommand}`    | Set to the value of the `docker.composeCommand` setting if set, otherwise the extension will try to automatically determine the command to use (`docker compose` or `docker-compose`). 如果设置了 `docker.composeCommand` 设置的值，则设置为该值，否则扩展程序将尝试自动确定要使用的命令（ `docker compose` 或 `docker-compose` ）。 |
 
-### [Docker Compose Down](https://code.visualstudio.com/docs/containers/reference#_docker-compose-down)
+### [Docker Compose Down]({{< ref "/Docker/Customize#_docker-compose-down" >}})
 
 | Configuration Setting 配置设置 | Default Value 默认值                          |
 | :----------------------------- | :-------------------------------------------- |
@@ -725,7 +725,7 @@ Supported tokens:
 | `${configurationFile}` | Set to `-f` plus the workspace-relative path to the selected Docker Compose YAML file. 设置为 `-f` ，外加选定的 Docker Compose YAML 文件相对于工作区路径。 |
 | `${composeCommand}`    | Set to the value of the `docker.composeCommand` setting if set, otherwise the extension will try to automatically determine the command to use (`docker compose` or `docker-compose`). 如果已设置，则设置为 `docker.composeCommand` 设置的值，否则扩展程序将尝试自动确定要使用的命令（ `docker compose` 或 `docker-compose` ）。 |
 
-### [Additional supported tokens 其他受支持的令牌](https://code.visualstudio.com/docs/containers/reference#_additional-supported-tokens)
+### [Additional supported tokens 其他受支持的令牌]({{< ref "/Docker/Customize#_additional-supported-tokens" >}})
 
 In addition to the command-specific supported tokens, the following tokens are supported in all command templates:
 

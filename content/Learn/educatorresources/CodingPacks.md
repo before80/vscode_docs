@@ -18,7 +18,7 @@ As educators, we know it's frustrating to install all the different software to 
 
 ​​​	作为教育工作者，我们知道为学生安装所有不同的软件以使其准备好进行编码是一件令人沮丧的事情。有编辑器/IDE、运行时和编译器、软件包或库以及每个软件包的不同版本……这很烦人！我们为您提供保障。
 
-## [Coding pack for Java 适用于 Java 的编码包](https://code.visualstudio.com/learn/educators/installers#_coding-pack-for-java)
+## [Coding pack for Java 适用于 Java 的编码包]({{< ref "/Learn/educatorresources/CodingPacks#_coding-pack-for-java" >}})
 
 This coding pack includes everything you need to start coding in Java.
 
@@ -40,7 +40,7 @@ This will install:
 
 ![Java Installer](./CodingPacks_img/java-installer.png)
 
-## [.NET Coding Pack .NET 编码包](https://code.visualstudio.com/learn/educators/installers#_net-coding-pack)
+## [.NET Coding Pack .NET 编码包]({{< ref "/Learn/educatorresources/CodingPacks#_net-coding-pack" >}})
 
 The .NET coding pack includes everything you need to start coding with .NET.
 

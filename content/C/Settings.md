@@ -18,7 +18,7 @@ You can override the default values for properties set in `c_cpp_properties.json
 
 ​​​	您可以在 `c_cpp_properties.json` 中设置的属性的默认值中进行覆盖。
 
-## [Visual Studio Code settings Visual Studio Code 设置](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_visual-studio-code-settings)
+## [Visual Studio Code settings Visual Studio Code 设置]({{< ref "/C/Settings#_visual-studio-code-settings" >}})
 
 The following `C_Cpp.default.*` settings map to each of the properties in a configuration block of `c_cpp_properties.json`. Namely:
 
@@ -56,7 +56,7 @@ This property of VS Code settings allows you to configure each of your workspace
 
 ​​​	VS Code 设置的此属性允许您独立配置每个工作区 - 使 `c_cpp_properties.json` 文件成为可选的。
 
-## [Updated c_cpp_properties.json syntax 更新的 c_cpp_properties.json 语法](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_updated-ccpppropertiesjson-syntax)
+## [Updated c_cpp_properties.json syntax 更新的 c_cpp_properties.json 语法]({{< ref "/C/Settings#_updated-ccpppropertiesjson-syntax" >}})
 
 A special variable has been added to the accepted syntax of `c_cpp_properties.json` that will instruct the extension to insert the value from the VS Code settings mentioned above. If you set the value of any setting in `c_cpp_properties.json` to "${default}" it will instruct the extension to read the VS Code default setting for that property and insert it. For example:
 
@@ -110,7 +110,7 @@ For in-depth information about the c_cpp_properties.json settings file, See [c_c
 
 ​​​	有关 c_cpp_properties.json 设置文件的详细信息，请参阅 c_cpp_properties.json 参考。
 
-### [System includes 系统包含](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_system-includes)
+### [System includes 系统包含]({{< ref "/C/Settings#_system-includes" >}})
 
 A new setting will be added that allows you specify the system include path separate from the folder's include path. If this setting has a value, then the system include path the extension gets from the compiler specified in the `compilerPath` setting will not be added to the path array that the extension uses for IntelliSense. We may want to provide a VS Code command to populate this value from the compiler's default for users who are interested in using it in case they want to make some modifications to the defaults.
 
@@ -120,7 +120,7 @@ A new setting will be added that allows you specify the system include path sepa
 C_Cpp.default.systemIncludePath : string[]
 ```
 
-### [System include path/defines resolution strategies 系统包含路径/定义解析策略](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_system-include-pathdefines-resolution-strategies)
+### [System include path/defines resolution strategies 系统包含路径/定义解析策略]({{< ref "/C/Settings#_system-include-pathdefines-resolution-strategies" >}})
 
 The extension determines the system includePath and defines to send to the IntelliSense engine in the following manner:
 
@@ -168,13 +168,13 @@ System includes should not be added to the `includePath` or `browse.path` variab
 
 ​​​	不应将系统包含项添加到 `includePath` 或 `browse.path` 变量中。如果扩展在 `includePath` 属性中检测到任何系统包含路径，它将静默删除它们，以便确保系统包含路径最后添加且按正确顺序添加（这对于 GCC/Clang 尤为重要）。
 
-### [Enhanced semantic colorization 增强的语义着色](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_enhanced-semantic-colorization)
+### [Enhanced semantic colorization 增强的语义着色]({{< ref "/C/Settings#_enhanced-semantic-colorization" >}})
 
 When IntelliSense is enabled, the Visual Studio Code C/C++ extension supports semantic colorization. See [Enhanced colorization](https://code.visualstudio.com/docs/cpp/colorization-cpp) for more details about setting colors for classes, functions, variables and so on.
 
 ​​​	启用 IntelliSense 时，Visual Studio Code C/C++ 扩展支持语义着色。有关为类、函数、变量等设置颜色的详细信息，请参阅增强的着色。
 
-### [Extension logging 扩展日志记录](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp#_extension-logging)
+### [Extension logging 扩展日志记录]({{< ref "/C/Settings#_extension-logging" >}})
 
 If you are experiencing a problem with the extension that we can't diagnose based on information in your issue report, we might ask you to enable logging and send us your logs. See [C/C++ extension logging](https://code.visualstudio.com/docs/cpp/enable-logging-cpp) for information about how to collect logs.
 

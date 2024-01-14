@@ -26,7 +26,7 @@ If you have any problems, feel free to file an issue for this tutorial in the [V
 
 ​​​	如果您遇到任何问题，请随时在 VS Code 文档存储库中为此教程提交问题。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C/GCConWindows#_prerequisites" >}})
 
 To successfully complete this tutorial, you must do the following steps:
 
@@ -42,9 +42,9 @@ To successfully complete this tutorial, you must do the following steps:
 
    ![C/C++ extension](./GCConWindows_img/cpp-extension.png)
 
-## [Installing the MinGW-w64 toolchain 安装 MinGW-w64 工具链](https://code.visualstudio.com/docs/cpp/config-mingw#_installing-the-mingww64-toolchain)
+## [Installing the MinGW-w64 toolchain 安装 MinGW-w64 工具链]({{< ref "/C/GCConWindows#_installing-the-mingww64-toolchain" >}})
 
-Get the latest version of MinGW-w64 via [MSYS2](https://www.msys2.org/), which provides up-to-date native builds of GCC, MinGW-w64, and other helpful C++ tools and libraries. This will provide you with the necessary tools to compile your code, debug it, and configure it to work with [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense).
+Get the latest version of MinGW-w64 via [MSYS2](https://www.msys2.org/), which provides up-to-date native builds of GCC, MinGW-w64, and other helpful C++ tools and libraries. This will provide you with the necessary tools to compile your code, debug it, and configure it to work with [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}).
 
 ​​​	通过 MSYS2 获取最新版本的 MinGW-w64，它提供了 GCC、MinGW-w64 和其他有用的 C++ 工具和库的最新原生版本。这将为您提供必要的工具来编译您的代码、调试它并将其配置为与 IntelliSense 配合使用。
 
@@ -101,7 +101,7 @@ To install the MinGW-w64 toolchain, check out this video or follow the steps bel
    5. Select **OK** to save the updated PATH. You will need to reopen any console windows for the new PATH location to be available.
       选择确定以保存更新的 PATH。您需要重新打开所有控制台窗口，才能使用新的 PATH 位置。
 
-### [Check your MinGW installation 检查您的 MinGW 安装](https://code.visualstudio.com/docs/cpp/config-mingw#_check-your-mingw-installation)
+### [Check your MinGW installation 检查您的 MinGW 安装]({{< ref "/C/GCConWindows#_check-your-mingw-installation" >}})
 
 To check that your MinGW-w64 tools are correctly installed and available, open a **new** Command Prompt and type:
 
@@ -146,7 +146,7 @@ You should see output that states which versions of GCC, g++ and GDB you have in
    - If on compilation you are getting the "The value of miDebuggerPath is invalid." message, one cause can be you are missing the `mingw-w64-gdb` package.
      如果在编译时收到“miDebuggerPath 的值无效。”消息，一个原因可能是您缺少 `mingw-w64-gdb` 软件包。
 
-## [Create a Hello World app 创建 Hello World 应用](https://code.visualstudio.com/docs/cpp/config-mingw#_create-a-hello-world-app)
+## [Create a Hello World app 创建 Hello World 应用]({{< ref "/C/GCConWindows#_create-a-hello-world-app" >}})
 
 First, lets get a project set up.
 
@@ -165,7 +165,7 @@ cd helloworld
 code .
 ```
 
-The "code ." command opens VS Code in the current working folder, which becomes your "workspace". Accept the [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) dialog by selecting **Yes, I trust the authors** since this is a folder you created.
+The "code ." command opens VS Code in the current working folder, which becomes your "workspace". Accept the [Workspace Trust]({{< ref "/UserGuide/WorkspaceTrust" >}}) dialog by selecting **Yes, I trust the authors** since this is a folder you created.
 
 ​​​	“code .” 命令在当前工作文件夹中打开 VS Code，该文件夹成为您的“工作区”。通过选择“是，我信任作者”接受工作区信任对话框，因为这是您创建的文件夹。
 
@@ -180,7 +180,7 @@ As you go through the tutorial, you will see three files created in a `.vscode` 
 - `c_cpp_properties.json` (compiler path and IntelliSense settings)
   `c_cpp_properties.json` （编译器路径和 IntelliSense 设置）
 
-### [Add a Hello World source code file 添加 Hello World 源代码文件](https://code.visualstudio.com/docs/cpp/config-mingw#_add-a-hello-world-source-code-file)
+### [Add a Hello World source code file 添加 Hello World 源代码文件]({{< ref "/C/GCConWindows#_add-a-hello-world-source-code-file" >}})
 
 In the File Explorer title bar, select the **New File** button and name the file `helloworld.cpp`.
 
@@ -188,7 +188,7 @@ In the File Explorer title bar, select the **New File** button and name the file
 
 ![New File title bar button](./GCConWindows_img/new-file-button.png)
 
-### [Add hello world source code 添加 hello world 源代码](https://code.visualstudio.com/docs/cpp/config-mingw#_add-hello-world-source-code)
+### [Add hello world source code 添加 hello world 源代码]({{< ref "/C/GCConWindows#_add-hello-world-source-code" >}})
 
 Now paste in this source code:
 
@@ -219,7 +219,7 @@ Now press Ctrl+S to save the file. Notice how the file you just added appears in
 
 ![File Explorer](./GCConWindows_img/file-explorer-mingw.png)
 
-You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) to automatically save your file changes, by selecting **File** > **Auto Save**. You can find out more about the other views in the VS Code [User Interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface).
+You can also enable [Auto Save]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}}) to automatically save your file changes, by selecting **File** > **Auto Save**. You can find out more about the other views in the VS Code [User Interface documentation]({{< ref "/GetStarted/UserInterface" >}}).
 
 ​​​	您还可以通过选择“文件”>“自动保存”来启用自动保存，以自动保存文件更改。您可以在 VS Code 用户界面文档中了解有关其他视图的更多信息。
 
@@ -227,9 +227,9 @@ You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codeba
 >
 > ​​​	注意：当您保存或打开 C++ 文件时，您可能会看到来自 C/C++ 扩展的通知，其中包含有关 Insider 版本可用性的信息，该版本允许您测试新功能和修复程序。您可以通过选择 `X` （清除通知）来忽略此通知。
 
-## [Explore IntelliSense 探索 IntelliSense](https://code.visualstudio.com/docs/cpp/config-mingw#_explore-intellisense)
+## [Explore IntelliSense 探索 IntelliSense]({{< ref "/C/GCConWindows#_explore-intellisense" >}})
 
-[IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) is a tool to help you code faster and more efficiently by adding code editing features such as code completion, parameter info, quick info, and member lists.
+[IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) is a tool to help you code faster and more efficiently by adding code editing features such as code completion, parameter info, quick info, and member lists.
 
 ​​​	IntelliSense 是一种工具，可通过添加代码编辑功能（如代码补全、参数信息、快速信息和成员列表）来帮助您更快、更高效地编写代码。
 
@@ -243,11 +243,11 @@ You can press the Tab key to insert a selected member. If you then add open pare
 
 ​​​	您可以按 Tab 键插入选定的成员。如果您随后添加左括号，IntelliSense 将显示有关需要哪些参数的信息。
 
-If IntelliSense is not already configured, open the Command Palette (Ctrl+Shift+P) and enter **Select IntelliSense Configuration**. From the dropdown of compilers, select `Use gcc.exe` to configure. More information can be found in the [IntelliSense configuration documentation](https://code.visualstudio.com/docs/languages/cpp#_intellisense-configuration).
+If IntelliSense is not already configured, open the Command Palette (Ctrl+Shift+P) and enter **Select IntelliSense Configuration**. From the dropdown of compilers, select `Use gcc.exe` to configure. More information can be found in the [IntelliSense configuration documentation]({{< ref "/Languages/C#_intellisense-configuration" >}}).
 
 ​​​	如果尚未配置 IntelliSense，请打开命令面板 (Ctrl+Shift+P) 并输入“选择 IntelliSense 配置”。从编译器下拉列表中，选择 `Use gcc.exe` 进行配置。您可以在 IntelliSense 配置文档中找到更多信息。
 
-## [Run helloworld.cpp 运行 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-mingw#_run-helloworldcpp)
+## [Run helloworld.cpp 运行 helloworld.cpp]({{< ref "/C/GCConWindows#_run-helloworldcpp" >}})
 
 Remember, the C++ extension uses the C++ compiler you have installed on your machine to build your program. Make sure you have completed the "Installing the MinGW-w64 toolchain" step before attempting to run and debug `helloworld.cpp` in VS Code.
 
@@ -283,7 +283,7 @@ Congratulations! You've just run your first C++ program in VS Code!
 
 ​​​	恭喜！您刚刚在 VS Code 中运行了第一个 C++ 程序！
 
-### [Understanding tasks.json 了解 tasks.json](https://code.visualstudio.com/docs/cpp/config-mingw#_understanding-tasksjson)
+### [Understanding tasks.json 了解 tasks.json]({{< ref "/C/GCConWindows#_understanding-tasksjson" >}})
 
 The first time you run your program, the C++ extension creates a `tasks.json` file, which you'll find in your project's `.vscode` folder. `tasks.json` stores your build configurations.
 
@@ -367,13 +367,13 @@ with this:
     "group": "build",
 ```
 
-### [Modifying tasks.json 修改 tasks.json](https://code.visualstudio.com/docs/cpp/config-mingw#_modifying-tasksjson)
+### [Modifying tasks.json 修改 tasks.json]({{< ref "/C/GCConWindows#_modifying-tasksjson" >}})
 
 You can modify your `tasks.json` to build multiple C++ files by using an argument like `"${workspaceFolder}/*.cpp"` instead of `"${file}"`.This will build all `.cpp` files in your current folder. You can also modify the output filename by replacing `"${fileDirname}\\${fileBasenameNoExtension}.exe"` with a hard-coded filename (for example `"${workspaceFolder}\\myProgram.exe"`).
 
 ​​​	您可以修改 `tasks.json` ，以使用 `"${workspaceFolder}/*.cpp"` 这样的参数而不是 `"${file}"` 来构建多个 C++ 文件。这将构建您当前文件夹中的所有 `.cpp` 文件。您还可以通过将 `"${fileDirname}\\${fileBasenameNoExtension}.exe"` 替换为硬编码的文件名（例如 `"${workspaceFolder}\\myProgram.exe"` ）来修改输出文件名。
 
-## [Debug helloworld.cpp 调试 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-mingw#_debug-helloworldcpp)
+## [Debug helloworld.cpp 调试 helloworld.cpp]({{< ref "/C/GCConWindows#_debug-helloworldcpp" >}})
 
 To debug your code,
 
@@ -392,7 +392,7 @@ The play button has two modes: **Run C/C++ File** and **Debug C/C++ File**. It w
 
 ​​​	播放按钮有两种模式：运行 C/C++ 文件和调试 C/C++ 文件。它将默认为上次使用的模式。如果您在播放按钮中看到调试图标，则您可以选择播放按钮进行调试，而无需使用下拉菜单。
 
-## [Explore the debugger 探索调试器](https://code.visualstudio.com/docs/cpp/config-mingw#_explore-the-debugger)
+## [Explore the debugger 探索调试器]({{< ref "/C/GCConWindows#_explore-the-debugger" >}})
 
 Before you start stepping through the code, let's take a moment to notice several changes in the user interface:
 
@@ -418,7 +418,7 @@ Before you start stepping through the code, let's take a moment to notice severa
 
   ![Debugging controls](https://code.visualstudio.com/assets/docs/cpp/cpp/debug-controls.png)
 
-### [Step through the code 逐步执行代码](https://code.visualstudio.com/docs/cpp/config-mingw#_step-through-the-code)
+### [Step through the code 逐步执行代码]({{< ref "/C/GCConWindows#_step-through-the-code" >}})
 
 Now you're ready to start stepping through the code.
 
@@ -468,7 +468,7 @@ Now you're ready to start stepping through the code.
 
    ![Debug output in terminal](https://code.visualstudio.com/assets/docs/cpp/mingw/mingw-debug-output.png)
 
-### [Set a watch 设置监视](https://code.visualstudio.com/docs/cpp/config-mingw#_set-a-watch)
+### [Set a watch 设置监视]({{< ref "/C/GCConWindows#_set-a-watch" >}})
 
 Sometimes you might want to keep track of the value of a variable as your program executes. You can do this by setting a **watch** on the variable.
 
@@ -490,7 +490,7 @@ Sometimes you might want to keep track of the value of a variable as your progra
 
    ![Mouse hover](https://code.visualstudio.com/assets/docs/cpp/cpp/mouse-hover.png)
 
-## [Customize debugging with launch.json 使用 launch.json 自定义调试](https://code.visualstudio.com/docs/cpp/config-mingw#_customize-debugging-with-launchjson)
+## [Customize debugging with launch.json 使用 launch.json 自定义调试]({{< ref "/C/GCConWindows#_customize-debugging-with-launchjson" >}})
 
 When you debug with the play button or F5, the C++ extension creates a dynamic debug configuration on the fly.
 
@@ -566,7 +566,7 @@ Change the `stopAtEntry` value to `true` to cause the debugger to stop on the `m
 >
 > ​​​	从现在开始，播放按钮和 F5 将在启动程序进行调试时从 `launch.json` 文件中读取。
 
-## [Adding additional C/C++ settings 添加其他 C/C++ 设置](https://code.visualstudio.com/docs/cpp/config-mingw#_adding-additional-cc-settings)
+## [Adding additional C/C++ settings 添加其他 C/C++ 设置]({{< ref "/C/GCConWindows#_adding-additional-cc-settings" >}})
 
 If you want more control over the C/C++ extension, you can create a `c_cpp_properties.json` file, which will allow you to change settings such as the path to the compiler, include paths, C++ standard (default is C++17), and more.
 
@@ -614,7 +614,7 @@ You only need to add to the **Include path** array setting if your program inclu
 
 ​​​	仅当程序包含不在工作区或标准库路径中的头文件时，才需要添加到包含路径数组设置中。
 
-### [Compiler path 编译器路径](https://code.visualstudio.com/docs/cpp/config-mingw#_compiler-path)
+### [Compiler path 编译器路径]({{< ref "/C/GCConWindows#_compiler-path" >}})
 
 The extension uses the `compilerPath` setting to infer the path to the C++ standard library header files. When the extension knows where to find those files, it can provide features like smart completions and **Go to Definition** navigation.
 
@@ -639,15 +639,15 @@ If you have Visual Studio or WSL installed, you might need to change `compilerPa
 
 ​​​	如果您安装了 Visual Studio 或 WSL，您可能需要更改 `compilerPath` 以匹配您项目的首选编译器。例如，如果您使用 i686 架构、Win32 线程和 sjlj 异常处理安装选项安装了 MinGW-w64 版本 8.1.0，则路径应如下所示： `C:\Program Files (x86)\mingw-w64\i686-8.1.0-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe` 。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/cpp/config-mingw#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/C/GCConWindows#_troubleshooting" >}})
 
-### [MSYS2 is installed, but g++ and gdb are still not found 已安装 MSYS2，但仍未找到 g++ 和 gdb](https://code.visualstudio.com/docs/cpp/config-mingw#_msys2-is-installed-but-g-and-gdb-are-still-not-found)
+### [MSYS2 is installed, but g++ and gdb are still not found 已安装 MSYS2，但仍未找到 g++ 和 gdb]({{< ref "/C/GCConWindows#_msys2-is-installed-but-g-and-gdb-are-still-not-found" >}})
 
 You must follow the steps on the [MSYS2 website](https://www.msys2.org/) to use the MSYS CLI to install the full MinGW-w64 toolchain(`pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain`), as well as all required prerequisites. The toolchain includes g++ and gdb.
 
 ​​​	您必须按照 MSYS2 网站上的步骤使用 MSYS CLI 安装完整的 MinGW-w64 工具链（ `pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain` ）以及所有必需的先决条件。该工具链包括 g++ 和 gdb。
 
-### [As a Windows user, running the pacman command gives me an error 作为 Windows 用户，运行 pacman 命令会给我一个错误](https://code.visualstudio.com/docs/cpp/config-mingw#_as-a-windows-user-running-the-pacman-command-gives-me-an-error)
+### [As a Windows user, running the pacman command gives me an error 作为 Windows 用户，运行 pacman 命令会给我一个错误]({{< ref "/C/GCConWindows#_as-a-windows-user-running-the-pacman-command-gives-me-an-error" >}})
 
 UCRT on Windows machines is only included in Windows 10 or later. If you are using another version of Windows, run the following command that does not use UCRT:
 
@@ -661,17 +661,17 @@ When adding the the MinGW-w64 destination folder to your list of environment var
 
 ​​​	将 MinGW-w64 目标文件夹添加到环境变量列表后，默认路径将变为： `C:\msys64\mingw64\bin` 。
 
-### [MinGW 32-bit MinGW 32 位](https://code.visualstudio.com/docs/cpp/config-mingw#_mingw-32bit)
+### [MinGW 32-bit MinGW 32 位]({{< ref "/C/GCConWindows#_mingw-32bit" >}})
 
 If you need a 32-bit version of the MinGW toolset, consult the [Downloading](https://www.msys2.org/wiki/MSYS2-installation/) section on the MSYS2 wiki. It includes links to both 32-bit and 64-bit installation options.
 
 ​​​	如果您需要 32 位版本的 MinGW 工具集，请参阅 MSYS2 wiki 上的下载部分。其中包含指向 32 位和 64 位安装选项的链接。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/config-mingw#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/GCConWindows#_next-steps" >}})
 
-- Explore the [VS Code User Guide](https://code.visualstudio.com/docs/editor/codebasics).
+- Explore the [VS Code User Guide]({{< ref "/UserGuide/BasicEditing" >}}).
   浏览 VS Code 用户指南。
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp).
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}}).
   查看 C++ 扩展概述。
 - Create a new workspace, copy your `.vscode` JSON files to it, adjust the necessary settings for the new workspace path, program name, etc. and start coding!
   创建一个新的工作区，将您的 `.vscode` JSON 文件复制到其中，调整新工作区路径、程序名称等的必要设置，然后开始编码！

@@ -32,13 +32,13 @@ VS Code can provide a **local-quality development experience** - including full 
 
 ​​	运行 命令行界面 (CLI) 的 命令。
 
-## [Getting Started 入门](https://code.visualstudio.com/docs/remote/tunnels#_getting-started)
+## [Getting Started 入门]({{< ref "/Remote/Tunnels#_getting-started" >}})
 
 You have two paths to work with tunnels:
 
 ​​	通过 VS Code 桌面 UI 启用隧道。
 
-- Run the `tunnel` command of the `code` [command-line interface (CLI)](https://code.visualstudio.com/docs/editor/command-line#_create-remote-tunnel).
+- Run the `tunnel` command of the `code` [command-line interface (CLI)]({{< ref "/UserGuide/CommandLineInterface#_create-remote-tunnel" >}}).
 - Enable tunneling through the VS Code Desktop UI.
 
 Both of these paths result in the same tunneling functionality – you can use whichever tooling works best for you. The CLI is a great option if you can't install the full VS Code Desktop on your remote machine. Using the VS Code Desktop UI is convenient if you're already doing some work in VS Code and would then like to enable tunneling for your current machine.
@@ -49,9 +49,9 @@ We'll describe both paths in the sections below.
 
 ​​	我们将在以下部分中描述这两条路径。
 
-## [Using the 'code' CLI 使用“代码”CLI](https://code.visualstudio.com/docs/remote/tunnels#_using-the-code-cli)
+## [Using the 'code' CLI 使用“代码”CLI]({{< ref "/Remote/Tunnels#_using-the-code-cli" >}})
 
-You may create and use tunnels through the `code` [CLI](https://code.visualstudio.com/docs/editor/command-line).
+You may create and use tunnels through the `code` [CLI]({{< ref "/UserGuide/CommandLineInterface" >}}).
 
 ​​	您可以通过 `code` CLI 创建和使用隧道。
 
@@ -59,7 +59,7 @@ You may create and use tunnels through the `code` [CLI](https://code.visualstudi
 
    ​​	在您希望通过 VS Code 客户端进行开发的远程计算机上安装 `code` CLI。CLI 在 VS Code 客户端和远程计算机之间建立隧道。CLI 会自动内置到 VS Code Desktop 中 - 无需其他设置。
 
-   ### [Alternative downloads 备用下载](https://code.visualstudio.com/docs/remote/tunnels#_alternative-downloads)
+   ### [Alternative downloads 备用下载]({{< ref "/Remote/Tunnels#_alternative-downloads" >}})
 
    Alternatively, you can grab the CLI through a [standalone install](https://code.visualstudio.com/#alt-downloads) on our download page, which is separate from a VS Code Desktop installation:
 
@@ -105,7 +105,7 @@ You may create and use tunnels through the `code` [CLI](https://code.visualstudi
 
    ​​	首次在此客户端上打开 vscode.dev URL 时，系统会提示您在 `https://github.com/login/oauth/authorize...` URL 中登录您的 GitHub 帐户。这会对您进行隧道服务身份验证，以确保您有权访问正确的远程计算机集。
 
-## [Using the VS Code UI 使用 VS Code UI](https://code.visualstudio.com/docs/remote/tunnels#_using-the-vs-code-ui)
+## [Using the VS Code UI 使用 VS Code UI]({{< ref "/Remote/Tunnels#_using-the-vs-code-ui" >}})
 
 1. Open VS Code on the remote machine where you'd like to turn on tunnel access.
 
@@ -131,7 +131,7 @@ You may create and use tunnels through the `code` [CLI](https://code.visualstudi
 >
 > ​​	注意：只有在 VS Code 在远程计算机上运行时，才能通过隧道访问远程计算机。退出 VS Code 后，将无法再通过隧道访问它，直到您再次在该计算机上启动 VS Code 或运行 `code tunnel` CLI 命令。
 
-## [Remote Tunnels extension Remote Tunnels 扩展](https://code.visualstudio.com/docs/remote/tunnels#_remote-tunnels-extension)
+## [Remote Tunnels extension Remote Tunnels 扩展]({{< ref "/Remote/Tunnels#_remote-tunnels-extension" >}})
 
 The vscode.dev instances you open through the `code` CLI or VS Code UI come with the Remote - Tunnels extension preinstalled.
 
@@ -153,9 +153,9 @@ Like the other Remote Development extensions, the name of your remote machine wi
 
 ![VS Code remote indicator connected to a remote tunnel](./Tunnels_img/remote-indicator-server.png)
 
-### [Open a folder on a Remote Tunnels host in a container 在容器中打开远程隧道主机上的文件夹](https://code.visualstudio.com/docs/remote/tunnels#_open-a-folder-on-a-remote-tunnels-host-in-a-container)
+### [Open a folder on a Remote Tunnels host in a container 在容器中打开远程隧道主机上的文件夹]({{< ref "/Remote/Tunnels#_open-a-folder-on-a-remote-tunnels-host-in-a-container" >}})
 
-You can use the Remote - Tunnels and [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) extensions together to open a folder on your remote host inside of a container. You do not even need to have a Docker client installed locally.
+You can use the Remote - Tunnels and [Dev Containers]({{< ref "/DevContainers/Overview" >}}) extensions together to open a folder on your remote host inside of a container. You do not even need to have a Docker client installed locally.
 
 ​​	您可以将远程隧道和开发容器扩展一起使用，以便在容器中打开远程主机上的文件夹。您甚至不需要在本地安装 Docker 客户端。
 
@@ -163,22 +163,22 @@ To do so:
 
 ​​	要执行此操作，请执行以下操作：
 
-1. Follow the [installation](https://code.visualstudio.com/docs/devcontainers/containers#_installation) steps for installing Docker on your remote host and VS Code and the Dev Containers extension locally.
+1. Follow the [installation]({{< ref "/DevContainers/Overview#_installation" >}}) steps for installing Docker on your remote host and VS Code and the Dev Containers extension locally.
    按照安装步骤在远程主机和 VS Code 上安装 Docker，并在本地安装 Dev Containers 扩展。
-2. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/tunnels#_getting-started) instructions for the Remote - Tunnels extension to set up a tunnel, connect to it and open a folder there.
+2. Follow the [Getting Started]({{< ref "/Remote/Tunnels#_getting-started" >}}) instructions for the Remote - Tunnels extension to set up a tunnel, connect to it and open a folder there.
    按照远程隧道扩展的入门说明进行操作，以设置隧道、连接到隧道并在其中打开文件夹。
 3. Use the **Dev Containers: Reopen in Container** command from the Command Palette (F1, Ctrl+Shift+P).
    从命令面板（F1、Ctrl+Shift+P）中使用 Dev Containers：在容器中重新打开命令。
 
-The rest of the [Dev Containers quick start](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) applies as-is. You can learn more about the [Dev Containers extension in its documentation](https://code.visualstudio.com/docs/devcontainers/containers). You can also see the [Develop on a remote Docker host](https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host) article for other options if this model does not meet your needs.
+The rest of the [Dev Containers quick start]({{< ref "/DevContainers/Overview#_quick-start-open-an-existing-folder-in-a-container" >}}) applies as-is. You can learn more about the [Dev Containers extension in its documentation]({{< ref "/DevContainers/Overview" >}}). You can also see the [Develop on a remote Docker host]({{< ref "/Remote/advancedcontainers/DeveloponaremoteDockerhost" >}}) article for other options if this model does not meet your needs.
 
 ​​	Dev Containers 快速入门指南的其余部分照常适用。您可以在其文档中了解有关 Dev Containers 扩展的更多信息。如果您不满足此模型的需求，您还可以参阅在远程 Docker 主机上进行开发一文，了解其他选项。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/remote/tunnels#_common-questions)
+## [Common questions 常见问题]({{< ref "/Remote/Tunnels#_common-questions" >}})
 
-### [What is the relationship between the Remote Tunnels, VS Code Server, and Remote Development? 远程隧道、VS Code Server 和远程开发之间的关系是什么？](https://code.visualstudio.com/docs/remote/tunnels#_what-is-the-relationship-between-the-remote-tunnels-vs-code-server-and-remote-development)
+### [What is the relationship between the Remote Tunnels, VS Code Server, and Remote Development? 远程隧道、VS Code Server 和远程开发之间的关系是什么？]({{< ref "/Remote/Tunnels#_what-is-the-relationship-between-the-remote-tunnels-vs-code-server-and-remote-development" >}})
 
-Visual Studio Code [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) allows you to use a container, remote machine, or the Windows Subsystem for Linux (WSL) as a full-featured development environment.
+Visual Studio Code [Remote Development]({{< ref "/Remote/Overview" >}}) allows you to use a container, remote machine, or the Windows Subsystem for Linux (WSL) as a full-featured development environment.
 
 ​​	Visual Studio Code 远程开发允许您将容器、远程计算机或适用于 Linux 的 Windows 子系统 (WSL) 用作功能齐全的开发环境。
 
@@ -186,7 +186,7 @@ Remote Development lets your local VS Code installation transparently interact w
 
 ​​	远程开发允许您的本地 VS Code 安装通过将某些命令的执行移至“远程服务器”VS Code Server，与其他计算机（无论是虚拟还是物理）上的源代码和运行时环境透明地交互。当您连接到远程端点时，VS Code 会快速安装 VS Code Server，并且可以托管与远程工作区、计算机和文件系统直接交互的扩展。
 
-We've released this VS Code Server backend component as a service you can run yourself (which you may read more about in [its documentation](https://code.visualstudio.com/docs/remote/vscode-server)), rather than it only being solely installed and managed by the Remote Development extensions.
+We've released this VS Code Server backend component as a service you can run yourself (which you may read more about in [its documentation]({{< ref "/Remote/VSCodeServer" >}})), rather than it only being solely installed and managed by the Remote Development extensions.
 
 ​​	我们已将此 VS Code Server 后端组件发布为您可以自行运行的服务（您可以在其文档中阅读更多相关信息），而不仅仅是仅由远程开发扩展安装和管理。
 
@@ -199,19 +199,19 @@ Accessing the VS Code Server involves a few components:
 - Remote - Tunnels extension: Extension that facilitates the connection to the remote machine, where you have an instance of the server running.
   Remote - Tunnels 扩展：该扩展可帮助连接到远程计算机，您可以在其中运行服务器实例。
 
-### [As an extension author, what do I need to do? 作为扩展作者，我需要做什么？](https://code.visualstudio.com/docs/remote/tunnels#_as-an-extension-author-what-do-i-need-to-do)
+### [As an extension author, what do I need to do? 作为扩展作者，我需要做什么？]({{< ref "/Remote/Tunnels#_as-an-extension-author-what-do-i-need-to-do" >}})
 
 The VS Code extension API abstracts away local/remote details so most extensions will work without modification. However, given extensions can use any node module or runtime they want, there are situations where adjustments may need to be made. We recommend you test your extension to be sure that no updates are required. See [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.
 
 ​​	VS Code 扩展 API 抽象了本地/远程详细信息，因此大多数扩展无需修改即可工作。但是，鉴于扩展可以使用任何所需的 node 模块或运行时，因此在某些情况下可能需要进行调整。我们建议您测试您的扩展以确保不需要任何更新。有关详细信息，请参阅支持远程开发。
 
-### [Can multiple users or clients access the same remote instance simultaneously? 多个用户或客户端是否可以同时访问同一个远程实例？](https://code.visualstudio.com/docs/remote/tunnels#_can-multiple-users-or-clients-access-the-same-remote-instance-simultaneously)
+### [Can multiple users or clients access the same remote instance simultaneously? 多个用户或客户端是否可以同时访问同一个远程实例？]({{< ref "/Remote/Tunnels#_can-multiple-users-or-clients-access-the-same-remote-instance-simultaneously" >}})
 
 No, an instance of the server is designed to be accessed by one user or client at a time.
 
 ​​	不可以，服务器实例一次只能供一个用户或客户端访问。
 
-### [How do I remove a tunnel or machine? 如何删除隧道或计算机？](https://code.visualstudio.com/docs/remote/tunnels#_how-do-i-remove-a-tunnel-or-machine)
+### [How do I remove a tunnel or machine? 如何删除隧道或计算机？]({{< ref "/Remote/Tunnels#_how-do-i-remove-a-tunnel-or-machine" >}})
 
 If you'd like to stop a tunnel you're running via the CLI, you may use Ctrl + C to end the active tunnel. If you've enabled tunneling through the VS Code UI, you can run the command **Remote Tunnels: Turn off Remote Tunnel Access...** in VS Code.
 
@@ -221,7 +221,7 @@ You can remove a machine's association with tunneling by running `code tunnel un
 
 ​​	您可以在计算机上运行 `code tunnel unregister` 来删除计算机与隧道的关联。您还可以打开任何 VS Code 客户端，选择“远程资源管理器”视图，右键单击要删除的计算机，然后选择“取消注册”。
 
-### [How are tunnels secured? 隧道如何保护安全？](https://code.visualstudio.com/docs/remote/tunnels#_how-are-tunnels-secured)
+### [How are tunnels secured? 隧道如何保护安全？]({{< ref "/Remote/Tunnels#_how-are-tunnels-secured" >}})
 
 Both hosting and connecting to a tunnel requires authentication with the same Github or Microsoft account on each end. In both cases, VS Code will make outbound connections to a service hosted in Azure; no firewall changes are generally necessary, and VS Code doesn't set up any network listeners.
 
@@ -239,7 +239,7 @@ You can learn more about the security of the underlying dev tunnels service in i
 
 ​​	您可以在其文档中了解有关基础开发隧道服务安全性的更多信息。
 
-### [Are there usage limits for the tunneling service? 隧道服务是否有使用限制？](https://code.visualstudio.com/docs/remote/tunnels#_are-there-usage-limits-for-the-tunneling-service)
+### [Are there usage limits for the tunneling service? 隧道服务是否有使用限制？]({{< ref "/Remote/Tunnels#_are-there-usage-limits-for-the-tunneling-service" >}})
 
 To avoid abuse of the underlying tunneling service, there are usage limits in place for resources like number of tunnels and bandwidth. We anticipate most users to never reach these limits.
 
@@ -253,7 +253,7 @@ If you are hitting a limit and would like to discuss getting more usage, we'd lo
 
 ​​	如果您达到限制并且想讨论获取更多使用权限，我们很乐意了解更多信息。请通过 `vscodeserver@microsoft.com` 联系我们，提供有关您的方案以及您需要多少使用权限的信息。
 
-### [How can I ensure I keep my tunnel running? 如何确保隧道保持运行？](https://code.visualstudio.com/docs/remote/tunnels#_how-can-i-ensure-i-keep-my-tunnel-running)
+### [How can I ensure I keep my tunnel running? 如何确保隧道保持运行？]({{< ref "/Remote/Tunnels#_how-can-i-ensure-i-keep-my-tunnel-running" >}})
 
 You have a few options:
 
@@ -264,12 +264,12 @@ You have a few options:
 - Use the `no-sleep` option, `code tunnel --no-sleep`, to prevent your remote machine from going to sleep.
   使用 `no-sleep` 选项 `code tunnel --no-sleep` 来防止远程计算机进入睡眠状态。
 
-As mentioned in the [`code` CLI doc](https://code.visualstudio.com/docs/editor/command-line#_create-remote-tunnel), you can explore all the possible CLI commands and options through `code tunnel --help`.
+As mentioned in the [`code` CLI doc]({{< ref "/UserGuide/CommandLineInterface#_create-remote-tunnel" >}}), you can explore all the possible CLI commands and options through `code tunnel --help`.
 
 ​​	如 `code` CLI 文档中所述，您可以通过 `code tunnel --help` 浏览所有可能的 CLI 命令和选项。
 
-### [Can I use other Remote Development Extensions or a dev container while I'm tunneling? 在进行隧道传输时，我可以使用其他远程开发扩展或开发容器吗？](https://code.visualstudio.com/docs/remote/tunnels#_can-i-use-other-remote-development-extensions-or-a-dev-container-while-im-tunneling)
+### [Can I use other Remote Development Extensions or a dev container while I'm tunneling? 在进行隧道传输时，我可以使用其他远程开发扩展或开发容器吗？]({{< ref "/Remote/Tunnels#_can-i-use-other-remote-development-extensions-or-a-dev-container-while-im-tunneling" >}})
 
-Yes! Currently, you can connect to [WSL](https://code.visualstudio.com/docs/remote/wsl) and [dev containers](https://code.visualstudio.com/docs/devcontainers/containers#_open-a-folder-on-a-remote-tunnel-host-in-a-container) over Remote - Tunnels.
+Yes! Currently, you can connect to [WSL]({{< ref "/Remote/WindowsSubsystemforLinux" >}}) and [dev containers]({{< ref "/DevContainers/Overview#_open-a-folder-on-a-remote-tunnel-host-in-a-container" >}}) over Remote - Tunnels.
 
 ​​	可以！目前，您可以通过远程 - 隧道连接到 WSL 和开发容器。

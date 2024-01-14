@@ -14,7 +14,7 @@ draft = false
 
 
 
-[Vue.js](https://vuejs.org/) is a popular JavaScript library for building web application user interfaces and Visual Studio Code has built-in support for the Vue.js building blocks of [HTML](https://code.visualstudio.com/docs/languages/html), [CSS](https://code.visualstudio.com/docs/languages/css), and [JavaScript](https://code.visualstudio.com/docs/languages/javascript). For a richer Vue.js development environment, you can install the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) and [Volar for TypeScript](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) extensions that support Vue.js IntelliSense, code snippets, formatting, and more.
+[Vue.js](https://vuejs.org/) is a popular JavaScript library for building web application user interfaces and Visual Studio Code has built-in support for the Vue.js building blocks of [HTML]({{< ref "/Languages/HTML" >}}), [CSS]({{< ref "/Languages/CSSSCSSandLess" >}}), and [JavaScript]({{< ref "/Languages/JavaScript" >}}). For a richer Vue.js development environment, you can install the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) and [Volar for TypeScript](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) extensions that support Vue.js IntelliSense, code snippets, formatting, and more.
 
 ​​	Vue.js 是一个用于构建 Web 应用程序用户界面的流行 JavaScript 库，Visual Studio Code 内置支持 Vue.js 的 HTML、CSS 和 JavaScript 构建模块。对于更丰富的 Vue.js 开发环境，可以安装支持 Vue.js IntelliSense、代码片段、格式化等的 Volar 和 Volar for TypeScript 扩展。
 
@@ -28,7 +28,7 @@ draft = false
 
 ------
 
-## [Welcome to Vue 欢迎使用 Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_welcome-to-vue)
+## [Welcome to Vue 欢迎使用 Vue]({{< ref "/Node_jsJavaScript/VueTutorial#_welcome-to-vue" >}})
 
 We'll be using the [Vite](https://vitejs.dev/) tooling for this tutorial. If you are new to the Vue.js framework, you can find great documentation and tutorials on the [vuejs.org](https://vuejs.org/) website.
 
@@ -96,7 +96,7 @@ VS Code will launch and display your Vue application in the File Explorer.
 
 ​​	VS Code 将启动并在文件资源管理器中显示您的 Vue 应用程序。
 
-## [Volar extension Volar 扩展](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_volar-extension)
+## [Volar extension Volar 扩展]({{< ref "/Node_jsJavaScript/VueTutorial#_volar-extension" >}})
 
 Now expand the `src` folder and select the `App.vue` file. You'll notice that VS Code doesn't show any syntax highlighting and it treats the file as **Plain Text** as you can see in the lower right Status Bar. You'll also see a notification recommending the [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension for the `.vue` file type.
 
@@ -120,7 +120,7 @@ You should now see that `.vue` is a recognized file type for the Vue.js language
 
 ![Vue language features](./VueTutorial_img/vue-language-features.png)
 
-## [IntelliSense](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_intellisense)
+## [IntelliSense]({{< ref "/Node_jsJavaScript/VueTutorial#_intellisense" >}})
 
 As you start typing in `App.vue`, you'll see smart suggestions or completions both for HTML and CSS but also for Vue.js specific items like declarations (`v-bind`, `v-for`) in the Vue `template` section:
 
@@ -134,9 +134,9 @@ and Vue properties such as `computed` in the `scripts` section:
 
 ![Vue.js JavaScript suggestions](./VueTutorial_img/javascript-suggestions.png)
 
-### [Go to Definition, Peek definition 转到定义、查看定义](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_go-to-definition-peek-definition)
+### [Go to Definition, Peek definition 转到定义、查看定义]({{< ref "/Node_jsJavaScript/VueTutorial#_go-to-definition-peek-definition" >}})
 
-VS Code through the Volar extension Vue.js language service can also provide type definition information in the editor through **Go to Definition** (F12) or **Peek Definition** (Alt+F12). Put the cursor over the `App`, right-click and select **Peek Definition**. A [Peek window](https://code.visualstudio.com/docs/editor/editingevolved#_peek) opens showing the `App` definition from `App.js`.
+VS Code through the Volar extension Vue.js language service can also provide type definition information in the editor through **Go to Definition** (F12) or **Peek Definition** (Alt+F12). Put the cursor over the `App`, right-click and select **Peek Definition**. A [Peek window]({{< ref "/UserGuide/CodeNavigation#_peek" >}}) opens showing the `App` definition from `App.js`.
 
 ​​	VS Code 通过 Volar 扩展 Vue.js 语言服务还可以通过转到定义 (F12) 或查看定义 (Alt+F12) 在编辑器中提供类型定义信息。将光标放在 `App` 上，右键单击并选择“查看定义”。将打开一个“查看”窗口，显示来自 `App.js` 的 `App` 定义。
 
@@ -146,7 +146,7 @@ Press Escape to close the Peek window.
 
 ​​	按 Escape 关闭查看窗口。
 
-## [Hello World](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_hello-world)
+## [Hello World]({{< ref "/Node_jsJavaScript/VueTutorial#_hello-world" >}})
 
 Let's update the sample application to "Hello World!". In `App.vue` replace the HelloWorld component `msg` custom attribute text with "Hello World!".
 
@@ -172,7 +172,7 @@ Once you save the `App.vue` file (Ctrl+S), restart the server with `npm run dev`
 
 ​​	保存 `App.vue` 文件 (Ctrl+S) 后，使用 `npm run dev` 重新启动服务器，您将看到“Hello World!”。在继续了解 Vue.js 客户端调试时，让服务器保持运行状态。
 
-> **Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：VS Code 支持自动保存，默认情况下会在延迟后保存您的文件。选中“文件”菜单中的“自动保存”选项以启用自动保存，或直接配置 `files.autoSave` 用户设置。
 
@@ -182,7 +182,7 @@ Once you save the `App.vue` file (Ctrl+S), restart the server with `npm run dev`
 
 ------
 
-## [Linting](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_linting)
+## [Linting]({{< ref "/Node_jsJavaScript/VueTutorial#_linting" >}})
 
 Linters analyze your source code and can warn you about potential problems before you run your application. The Vue ESLint plugin ([eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)) checks for Vue.js specific syntax errors, which are shown in the editor as red squiggles and are also displayed in the **Problems** panel (**View** > **Problems** Ctrl+Shift+M).
 
@@ -194,7 +194,7 @@ Below you can see an error when the Vue linter detects more than one root elemen
 
 ![Vue linting](./VueTutorial_img/vue-linting.png)
 
-## [Debugging 调试](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_debugging)
+## [Debugging 调试]({{< ref "/Node_jsJavaScript/VueTutorial#_debugging" >}})
 
 You can debug client side Vue.js code with the built-in JavaScript debugger. Follow this [conversation](https://github.com/vitejs/vite/discussions/4065#discussioncomment-1359932) to use Vite/Vue.js 3 project with VS Code using Microsoft Edge.
 
@@ -208,7 +208,7 @@ Another popular tool for debugging Vue.js is the [vue-devtools](https://github.c
 
 ​​	另一个流行的 Vue.js 调试工具是 vue-devtools 插件，无论环境如何，都可以使用该插件。
 
-## [Other extensions 其他扩展](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial#_other-extensions)
+## [Other extensions 其他扩展]({{< ref "/Node_jsJavaScript/VueTutorial#_other-extensions" >}})
 
 Volar is only one of many Vue.js extensions available for VS Code. Another recommended extension is [Volar for TypeScript](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 

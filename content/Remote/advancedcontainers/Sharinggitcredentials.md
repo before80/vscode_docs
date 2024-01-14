@@ -31,13 +31,13 @@ The extension will automatically copy your local `.gitconfig` file into the cont
 
 ​​	扩展将在启动时自动将您的本地 `.gitconfig` 文件复制到容器中，因此您无需在容器本身中执行此操作。
 
-## [Using a credential helper 使用凭据帮助器](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials#_using-a-credential-helper)
+## [Using a credential helper 使用凭据帮助器]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials#_using-a-credential-helper" >}})
 
 If you use HTTPS to clone your repositories and **have a [credential helper configured](https://docs.github.com/get-started/getting-started-with-git/caching-your-github-credentials-in-git) in your local OS, no further setup is required.** Credentials you've entered locally will be reused in the container and vice versa.
 
 ​​	如果您使用 HTTPS 克隆存储库并在本地操作系统中配置了凭据帮助器，则无需进一步设置。您在本地输入的凭据将在容器中重复使用，反之亦然。
 
-## [Using SSH keys 使用 SSH 密钥](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials#_using-ssh-keys)
+## [Using SSH keys 使用 SSH 密钥]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials#_using-ssh-keys" >}})
 
 There are some cases when you may be cloning your repository using SSH keys instead of a credential helper. To enable this scenario, the extension will automatically forward your **local [SSH agent](https://www.ssh.com/ssh/agent) if one is running**.
 
@@ -97,7 +97,7 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 ```
 
-## [Sharing GPG Keys 共享 GPG 密钥](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials#_sharing-gpg-keys)
+## [Sharing GPG Keys 共享 GPG 密钥]({{< ref "/Remote/advancedcontainers/Sharinggitcredentials#_sharing-gpg-keys" >}})
 
 If you want to [GPG](https://www.gnupg.org/) sign your commits, you can share your local keys with your container as well. You can find out about signing using a GPG key in [GitHub's documentation](https://docs.github.com/authentication/managing-commit-signature-verification).
 
@@ -152,7 +152,7 @@ For example:
 RUN apt-get update && apt-get install gnupg2 -y
 ```
 
-Or if running as a [non-root user](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user):
+Or if running as a [non-root user]({{< ref "/Remote/advancedcontainers/Addnon-rootuser" >}}):
 
 ​​	或者，如果以非 root 用户身份运行：
 

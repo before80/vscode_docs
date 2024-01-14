@@ -24,13 +24,13 @@ You can work with multiple project folders in Visual Studio Code with multi-root
 >
 > ​​	注意：如果您想详细了解 VS Code 的“工作区”概念，可以查看什么是 VS Code 的“工作区”？除非您明确创建多根工作区，否则“工作区”只是项目的单个根文件夹。
 
-## [Adding folders 添加文件夹](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_adding-folders)
+## [Adding folders 添加文件夹]({{< ref "/UserGuide/Multi-rootWorkspaces#_adding-folders" >}})
 
 It is easy to add another folder to your existing workspace. There are several gestures for adding folders:
 
 ​​	可以轻松地将另一个文件夹添加到现有工作区。有几种添加文件夹的手势：
 
-### [Add Folder to Workspace 将文件夹添加到工作区](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_add-folder-to-workspace)
+### [Add Folder to Workspace 将文件夹添加到工作区]({{< ref "/UserGuide/Multi-rootWorkspaces#_add-folder-to-workspace" >}})
 
 The **File** > **Add Folder to Workspace** command brings up an Open Folder dialog to select the new folder.
 
@@ -52,7 +52,7 @@ Settings like `files.exclude` are supported for each root folder if configured, 
 
 ​​	如果已配置，则每个根文件夹都支持 `files.exclude` 之类的设置，如果已配置为全局用户设置，则所有文件夹都支持。
 
-### [Drag and drop 拖放](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_drag-and-drop)
+### [Drag and drop 拖放]({{< ref "/UserGuide/Multi-rootWorkspaces#_drag-and-drop" >}})
 
 You can use drag and drop to add folders to a workspace. Drag a folder to the File Explorer to add it to the current workspace. You can even select and drag multiple folders.
 
@@ -66,13 +66,13 @@ You can also use drag and drop to reorder folders in the workspace.
 
 ​​	您还可以使用拖放来重新排列工作区中的文件夹。
 
-### [Multiple selection native file open dialogs 多选原生文件打开对话框](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_multiple-selection-native-file-open-dialogs)
+### [Multiple selection native file open dialogs 多选原生文件打开对话框]({{< ref "/UserGuide/Multi-rootWorkspaces#_multiple-selection-native-file-open-dialogs" >}})
 
 Opening multiple folders with your platform's native file open dialog will create a multi-root workspace.
 
 ​​	使用平台的原生文件打开对话框打开多个文件夹将创建一个多根工作区。
 
-### [command line --add 命令行 --add](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_command-line-add)
+### [command line --add 命令行 --add]({{< ref "/UserGuide/Multi-rootWorkspaces#_command-line-add" >}})
 
 Add a folder or multiple folders to the last active VS Code instance for a multi-root workspace.
 
@@ -82,13 +82,13 @@ Add a folder or multiple folders to the last active VS Code instance for a multi
   code --add vscode vscode-docs
 ```
 
-### [Removing folders 删除文件夹](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_removing-folders)
+### [Removing folders 删除文件夹]({{< ref "/UserGuide/Multi-rootWorkspaces#_removing-folders" >}})
 
 You can remove a folder from a Workspace with the **Remove Folder from Workspace** context menu command.
 
 ​​	您可以使用“从工作区移除文件夹”上下文菜单命令从工作区中移除文件夹。
 
-## [Workspace file 工作区文件](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_workspace-file)
+## [Workspace file 工作区文件]({{< ref "/UserGuide/Multi-rootWorkspaces#_workspace-file" >}})
 
 When you add multiple folders, they are initially placed in a Workspace titled **UNTITLED WORKSPACE** and that name will remain until you save the workspace. You do not need to save a Workspace until you want to have it in a permanent location, for example, on your Desktop. Untitled Workspaces are present as long as the VS Code instance they are using is open. Once you completely close an instance with an untitled workspace, you will be asked to save it if you plan to open it again in the future:
 
@@ -100,13 +100,13 @@ When you save your workspace, it will create a `.code-workspace` file and the fi
 
 ​​	保存工作区时，它将创建一个 `.code-workspace` 文件，文件名将显示在文件资源管理器中。
 
-### [Save Workspace As... 另存为工作区...](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_save-workspace-as)
+### [Save Workspace As... 另存为工作区...]({{< ref "/UserGuide/Multi-rootWorkspaces#_save-workspace-as" >}})
 
 If you want to move your Workspace file to a new location, you can use the **File** > **Save Workspace As** command, which will automatically set the correct folder paths relative to the new Workspace file location.
 
 ​​	如果要将工作区文件移动到新位置，可以使用“文件”>“另存为工作区”命令，该命令会自动设置相对于新工作区文件位置的正确文件夹路径。
 
-### [Opening workspace files 打开工作区文件](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_opening-workspace-files)
+### [Opening workspace files 打开工作区文件]({{< ref "/UserGuide/Multi-rootWorkspaces#_opening-workspace-files" >}})
 
 To reopen a Workspace, you can:
 
@@ -152,7 +152,7 @@ Just like **Close Folder** when a single folder is open in VS Code, there is a *
 
 ​​	就像在 VS Code 中打开单个文件夹时关闭文件夹一样，有一个关闭工作区 (Ctrl+K F) 命令来关闭活动工作区。
 
-### [Workspace file schema 工作区文件架构](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_workspace-file-schema)
+### [Workspace file schema 工作区文件架构]({{< ref "/UserGuide/Multi-rootWorkspaces#_workspace-file-schema" >}})
 
 The schema of `.code-workspace` is fairly straightforward. You have an array of folders with either absolute or relative paths. Relative paths are better when you want to share Workspace files.
 
@@ -194,15 +194,15 @@ As you can see from the example above, you can add comments to your Workspace fi
 
 ​​	从上面的示例中可以看到，您可以将注释添加到工作区文件。
 
-The Workspace file can also contain Workspace [global settings](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_settings) under `settings` and [extension recommendations](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_extensions) under `extensions`, which we will discuss below.
+The Workspace file can also contain Workspace [global settings]({{< ref "/UserGuide/Multi-rootWorkspaces#_settings" >}}) under `settings` and [extension recommendations]({{< ref "/UserGuide/Multi-rootWorkspaces#_extensions" >}}) under `extensions`, which we will discuss below.
 
 ​​	工作区文件还可以在 `settings` 下包含工作区全局设置，在 `extensions` 下包含扩展建议，我们将在下面讨论这些设置。
 
 ![workspace file schema](https://code.visualstudio.com/assets/docs/editor/multi-root-workspaces/workspace-file-schema.png)
 
-## [General UI 常规 UI](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_general-ui)
+## [General UI 常规 UI]({{< ref "/UserGuide/Multi-rootWorkspaces#_general-ui" >}})
 
-### [Editor 编辑器](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_editor)
+### [Editor 编辑器]({{< ref "/UserGuide/Multi-rootWorkspaces#_editor" >}})
 
 There are only a few changes to the VS Code UI when you are using multi-root workspaces, primarily to disambiguate files between folders. For example, if there is a name collision between files in multiple folders, VS Code will include the folder name in tabbed headers.
 
@@ -210,7 +210,7 @@ There are only a few changes to the VS Code UI when you are using multi-root wor
 
 ![tabbed headers](https://code.visualstudio.com/assets/docs/editor/multi-root-workspaces/tabbed-headers.png)
 
-If you'd always like to see the folder displayed in the tabbed header, you can use the `workbench.editor.labelFormat` [setting](https://code.visualstudio.com/docs/getstarted/settings) "medium" or "long" values to show the folder or full paths.
+If you'd always like to see the folder displayed in the tabbed header, you can use the `workbench.editor.labelFormat` [setting]({{< ref "/GetStarted/Settings" >}}) "medium" or "long" values to show the folder or full paths.
 
 ​​	如果您始终希望在选项卡标题中显示文件夹，可以使用 `workbench.editor.labelFormat` 设置“中等”或“长”值来显示文件夹或完整路径。
 
@@ -224,7 +224,7 @@ VS Code UI such as the **OPEN EDITORS** and **Quick Open** (Ctrl+P) lists includ
 
 ![quick pick has folder name](https://code.visualstudio.com/assets/docs/editor/multi-root-workspaces/quick-open-list.png)
 
-If you are using an [File Icon Theme](https://code.visualstudio.com/docs/getstarted/themes#_file-icon-themes) and the active theme supports it, you will see a special Workspace icon.
+If you are using an [File Icon Theme]({{< ref "/GetStarted/Themes#_file-icon-themes" >}}) and the active theme supports it, you will see a special Workspace icon.
 
 ​​	如果您正在使用文件图标主题并且活动主题支持它，您将看到一个特殊的工作区图标。
 
@@ -234,7 +234,7 @@ Below you can see the Workspace icons from the built-in **Minimal (Visual Studio
 
 ![custom workspace icon](https://code.visualstudio.com/assets/docs/editor/multi-root-workspaces/workspace-icon.png)
 
-### [Search 搜索](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_search)
+### [Search 搜索]({{< ref "/UserGuide/Multi-rootWorkspaces#_search" >}})
 
 VS Code features like global search work across all folders and group the search results by folder.
 
@@ -246,7 +246,7 @@ When you have a multi-root workspace open, you can choose to search in a single 
 
 ​​	当您打开多根工作区时，您可以选择使用 `./` 语法在要包含的框中搜索单个根文件夹。例如，如果您输入 `./project1/**/*.txt` ，它将在 `project1/` 根文件夹下搜索所有 `.txt` 文件。
 
-## [Settings 设置](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_settings)
+## [Settings 设置]({{< ref "/UserGuide/Multi-rootWorkspaces#_settings" >}})
 
 With multiple root folders in one workspace, it is possible to have a `.vscode` folder in each root folder defining the settings that should apply for that folder. To avoid setting collisions, only resource (file, folder) settings are applied when using a multi-root workspace. Settings that affect the entire editor (for example, UI layout) are ignored. For example, two projects cannot both set the zoom level.
 
@@ -301,7 +301,7 @@ Global Workspace settings override User settings and folder settings can overrid
 
 ​​	全局工作区设置会覆盖用户设置，文件夹设置可以覆盖工作区或用户设置。
 
-### [Unsupported folder settings 不受支持的文件夹设置](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_unsupported-folder-settings)
+### [Unsupported folder settings 不受支持的文件夹设置]({{< ref "/UserGuide/Multi-rootWorkspaces#_unsupported-folder-settings" >}})
 
 Unsupported editor-wide folder settings will be shown as grayed out in your folder settings and are filtered out of the **DEFAULT FOLDER SETTINGS** list. You will also see an information icon in front of the setting.
 
@@ -309,7 +309,7 @@ Unsupported editor-wide folder settings will be shown as grayed out in your fold
 
 ![unsupported setting information](https://code.visualstudio.com/assets/docs/editor/multi-root-workspaces/unsupported-setting-info.png)
 
-## [Debugging 调试](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_debugging)
+## [Debugging 调试]({{< ref "/UserGuide/Multi-rootWorkspaces#_debugging" >}})
 
 With multi-root workspaces, VS Code searches across all folders for `launch.json` debug configuration files and displays them with the folder name as a suffix. Additionally VS Code will also display launch configurations defined in the workspace configuration file.
 
@@ -331,7 +331,7 @@ You can also see the three **Add Config** commands for the folders, `tslint`, `t
 
 ​​	配置中使用的变量（例如 `${workspaceFolder}` 或现已弃用的 `${workspaceRoot}` ）相对于它们所属的文件夹进行解析。可以通过将根文件夹的名称追加到变量（用冒号分隔）来为每个工作区文件夹设置变量的范围。
 
-### [Workspace launch configurations 工作区启动配置](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_workspace-launch-configurations)
+### [Workspace launch configurations 工作区启动配置]({{< ref "/UserGuide/Multi-rootWorkspaces#_workspace-launch-configurations" >}})
 
 Workspace scoped launch configurations live in the `"launch"` section of the workspace configuration file (**Workspaces: Open Workspace Configuration File** in the Command Palette):
 
@@ -402,7 +402,7 @@ Here is an example for a launch configuration where the program lives in a folde
 }
 ```
 
-## [Tasks 任务](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_tasks)
+## [Tasks 任务]({{< ref "/UserGuide/Multi-rootWorkspaces#_tasks" >}})
 
 Similar to how VS Code searches for debugging configurations, VS Code will also try to autodetect tasks from gulp, grunt, npm, and TypeScript project files across all folders in a workspace as well as search for tasks defined in `tasks.json` files. The location of tasks is indicated by a folder name suffix. Note that tasks defined in `tasks.json` must be version 2.0.0.
 
@@ -414,13 +414,13 @@ From the TSLint extension [Workspace](https://github.com/microsoft/vscode-tslint
 
 ​​	从上面的 TSLint 扩展工作区示例中，您可以看到有来自 `tasks.json` 文件的两个已配置任务，位于 `tslint` 和 `tslint-tests` 文件夹中，以及许多自动检测到的 npm 和 TypeScript 编译器检测到的任务。
 
-### [Workspace task configuration 工作区任务配置](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_workspace-task-configuration)
+### [Workspace task configuration 工作区任务配置]({{< ref "/UserGuide/Multi-rootWorkspaces#_workspace-task-configuration" >}})
 
 Workspace scoped tasks live in the `"tasks"` section of the workspace configuration file (**Workspaces: Open Workspace Configuration File** in the Command Palette). Only `"shell"` and `"process"` type tasks can be defined in the workspace configuration file.
 
 ​​	工作区范围的任务位于工作区配置文件的 `"tasks"` 部分（工作区：在命令面板中打开工作区配置文件）。只能在工作区配置文件中定义 `"shell"` 和 `"process"` 类型任务。
 
-## [Source Control 源代码管理](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_source-control)
+## [Source Control 源代码管理]({{< ref "/UserGuide/Multi-rootWorkspaces#_source-control" >}})
 
 With multi-root workspaces, there is a **SOURCE CONTROL PROVIDERS** section that gives you an overview when you have multiple active repositories. These can be contributed by several SCM providers; for example, you can have Git repositories side-by-side with Azure DevOps Server workspaces. As you select repositories in this view, you can see the source control details below.
 
@@ -432,7 +432,7 @@ You can use Ctrl+Click or Shift+Click to select multiple repositories. Their det
 
 ​​	您可以使用 Ctrl+单击或 Shift+单击来选择多个存储库。它们的详细信息将作为单独的区域显示在下面。
 
-## [Extensions 扩展](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_extensions)
+## [Extensions 扩展]({{< ref "/UserGuide/Multi-rootWorkspaces#_extensions" >}})
 
 If you are an extension author, you can review our [Adopting Multi Root Workspace APIs](https://github.com/microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs) guide to learn about VS Code multi-root workspace APIs and how to make your extension work well across multiple folders.
 
@@ -482,7 +482,7 @@ lixvbnet
 
 ​​	注意：如果某个扩展尚不支持多个文件夹，它仍将在多根工作区的第一个文件夹中运行。
 
-### [Extension recommendations 扩展建议](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_extension-recommendations)
+### [Extension recommendations 扩展建议]({{< ref "/UserGuide/Multi-rootWorkspaces#_extension-recommendations" >}})
 
 VS Code supports folder level extension recommendations through the `extensions.json` files under the folder's `.vscode` subfolder. You can also provide global Workspace extension recommendations by adding them to your `.code-workspace` file. You can use the **Extensions: Configure Recommended Extensions (Workspace Folder)** command to open your Workspace file and add extension identifiers ({publisherName}.{extensionName}) to the `extensions.recommendations` array.
 
@@ -504,24 +504,24 @@ VS Code supports folder level extension recommendations through the `extensions.
 }
 ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Multi-rootWorkspaces#_next-steps" >}})
 
 - [What is a VS Code "workspace"?](https://code.visualstudio.com/docs/editor/workspaces) - More about single-folder and multi-root workspaces.
   什么是 VS Code “工作区”？- 更多有关单文件夹和多根工作区的信息。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Learn how to set up debugging for your application.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Learn how to set up debugging for your application.
   调试 - 了解如何为应用程序设置调试。
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - Tasks let you run external tools like compilers within VS Code.
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - Tasks let you run external tools like compilers within VS Code.
   任务 - 任务允许您在 VS Code 中运行外部工具，如编译器。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/Multi-rootWorkspaces#_common-questions" >}})
 
-### [How can I go back to working with a single project folder? 如何返回到使用单个项目文件夹？](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_how-can-i-go-back-to-working-with-a-single-project-folder)
+### [How can I go back to working with a single project folder? 如何返回到使用单个项目文件夹？]({{< ref "/UserGuide/Multi-rootWorkspaces#_how-can-i-go-back-to-working-with-a-single-project-folder" >}})
 
 You can either close the Workspace and open the folder directly or remove the folder from Workspace.
 
 ​​	您可以关闭工作区并直接打开文件夹，或从工作区中移除文件夹。
 
-### [As an extension author what do I need to do? 作为扩展作者，我需要做什么？](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_as-an-extension-author-what-do-i-need-to-do)
+### [As an extension author what do I need to do? 作为扩展作者，我需要做什么？]({{< ref "/UserGuide/Multi-rootWorkspaces#_as-an-extension-author-what-do-i-need-to-do" >}})
 
 See our [Adopting Multi Root Workspace APIs](https://github.com/microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs) guide. Most extensions can easily support multi-root workspaces.
 

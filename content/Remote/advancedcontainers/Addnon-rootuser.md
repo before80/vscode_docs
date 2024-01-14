@@ -30,7 +30,7 @@ Many Docker images use root as the default user, but there are cases where you m
 
   ​​	Linux 上的 Docker CE/EE：在容器内，任何已挂载的文件/文件夹都将具有与容器外完全相同的权限 - 包括所有者用户 ID (UID) 和组 ID (GID)。因此，您的容器用户要么需要具有相同的 UID，要么属于具有相同 GID 的组。用户/组的实际名称无关紧要。机器上的第一个用户通常会获得 1000 的 UID，因此大多数容器都使用此 ID 作为用户 ID 来尝试避免此问题。
 
-## [Specifying a user for VS Code 为 VS Code 指定用户](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_specifying-a-user-for-vs-code)
+## [Specifying a user for VS Code 为 VS Code 指定用户]({{< ref "/Remote/advancedcontainers/Addnon-rootuser#_specifying-a-user-for-vs-code" >}})
 
 If the image or Dockerfile you are using **already provides an optional non-root user** (like the `node` image) but still defaults to root, you can opt into having Visual Studio Code (server) and any sub-processes (terminals, tasks, debugging) use it by specifying the `remoteUser` property in `devcontainer.json`:
 
@@ -48,7 +48,7 @@ Since this setting only affects VS Code and related sub-processes, VS Code needs
 
 ​​	由于此设置仅影响 VS Code 和相关的子进程，因此需要重新启动 VS Code（或重新加载窗口）才能使其生效。但是，UID/GID 更新仅在创建容器时应用，并且需要重建才能更改。
 
-## [Specifying the default container user 指定默认容器用户](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_specifying-the-default-container-user)
+## [Specifying the default container user 指定默认容器用户]({{< ref "/Remote/advancedcontainers/Addnon-rootuser#_specifying-the-default-container-user" >}})
 
 In some cases, you may need all processes in the container to run as a different user (for example, due to startup requirements) rather than just VS Code. How you do this varies slightly depending on whether or not you are using Docker Compose.
 
@@ -66,7 +66,7 @@ In some cases, you may need all processes in the container to run as a different
 
   ​​	在 Linux 上，如 `remoteUser` ，这还将自动更新容器用户的 UID/GID 以匹配您的本地用户，以避免此环境中存在的绑定挂载权限问题（除非您设置 `"updateRemoteUserUID": false` ）。
 
-- **Docker Compose**: Update (or [extend](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)) your `docker-compose.yml` with the following for the appropriate service:
+- **Docker Compose**: Update (or [extend]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})) your `docker-compose.yml` with the following for the appropriate service:
 
   ​​	Docker Compose：使用以下内容更新（或扩展）您的 `docker-compose.yml` 以适用于相应服务：
 
@@ -74,7 +74,7 @@ In some cases, you may need all processes in the container to run as a different
   user: user-name-or-UID-goes-here
   ```
 
-## [Creating a non-root user 创建非 root 用户](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_creating-a-nonroot-user)
+## [Creating a non-root user 创建非 root 用户]({{< ref "/Remote/advancedcontainers/Addnon-rootuser#_creating-a-nonroot-user" >}})
 
 While any images or Dockerfiles that come from the Dev Containers extension will include a non-root user with a UID/GID of 1000 (typically either called `vscode` or `node`), many base images and Dockerfiles do not. Fortunately, you can update or create a Dockerfile that adds a non-root user into your container.
 
@@ -115,7 +115,7 @@ In either case, if you've already built the container and connected to it, run *
 
 ​​	无论哪种情况，如果您已经构建了容器并连接到它，请从命令面板 (F1) 运行“开发容器：从容器重建”，以获取更改。否则，请运行“开发容器：在容器中打开文件夹...”以连接到容器。
 
-## [Change the UID/GID of an existing container user 更改现有容器用户的 UID/GID](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_change-the-uidgid-of-an-existing-container-user)
+## [Change the UID/GID of an existing container user 更改现有容器用户的 UID/GID]({{< ref "/Remote/advancedcontainers/Addnon-rootuser#_change-the-uidgid-of-an-existing-container-user" >}})
 
 While the `remoteUser` property tries to automatically update the UID/GID as appropriate on Linux when using a **Dockerfile or image**, you can use this snippet in your Dockerfile to manually change the UID/GID of a user instead. Update the `ARG` values as appropriate.
 

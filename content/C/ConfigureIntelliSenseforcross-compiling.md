@@ -28,7 +28,7 @@ These configuration settings are stored in your project's `c_cpp_properties.json
 
 ![Command Palette](./ConfigureIntelliSenseforcross-compiling_img/command-palette.png)
 
-## [Example IntelliSense configuration IntelliSense 配置示例](https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation#_example-intellisense-configuration)
+## [Example IntelliSense configuration IntelliSense 配置示例]({{< ref "/C/ConfigureIntelliSenseforcross-compiling#_example-intellisense-configuration" >}})
 
 The following shows configuring the C/C++ extension for a Linux x64 host machine that targets Linux Arm. It configures the following IntelliSense settings:
 
@@ -43,7 +43,7 @@ At a minimum, setting **compiler path** and **IntelliSense mode** provides enoug
 
 ​​​	至少，设置编译器路径和 IntelliSense 模式可为扩展提供足够的信息来模拟项目的目标体系结构，尽管如果扩展能够根据从查询编译器路径返回的定义正确选择 IntelliSense 模式，则可能不需要设置 IntelliSense 模式。
 
-### [Compiler path 编译器路径](https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation#_compiler-path)
+### [Compiler path 编译器路径]({{< ref "/C/ConfigureIntelliSenseforcross-compiling#_compiler-path" >}})
 
 Set to the full path of the compiler you are using to build your project.
 
@@ -55,7 +55,7 @@ For example:
 
 ![Compiler path setting](./ConfigureIntelliSenseforcross-compiling_img/compiler-path.png)
 
-### [IntelliSense mode IntelliSense 模式](https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation#_intellisense-mode)
+### [IntelliSense mode IntelliSense 模式]({{< ref "/C/ConfigureIntelliSenseforcross-compiling#_intellisense-mode" >}})
 
 Set to the architecture-specific variant of the compiler you are using.
 
@@ -67,7 +67,7 @@ For example:
 
 ![IntelliSense mode setting](./ConfigureIntelliSenseforcross-compiling_img/intellisense-mode.png)
 
-### [Include path 包含路径](https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation#_include-path)
+### [Include path 包含路径]({{< ref "/C/ConfigureIntelliSenseforcross-compiling#_include-path" >}})
 
 You only need to modify the **Include path** if your program includes header files that aren't in your workspace or that are not in the standard library path.
 
@@ -100,13 +100,13 @@ Given the settings above, your `c_cpp_configuration.json` file will look somethi
 }
 ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/ConfigureIntelliSenseforcross-compiling#_next-steps" >}})
 
-- For more information about IntelliSense configuration, see [Customizing default settings](https://code.visualstudio.com/docs/cpp/customize-default-settings-cpp).
+- For more information about IntelliSense configuration, see [Customizing default settings]({{< ref "/C/Settings" >}}).
   有关 IntelliSense 配置的更多信息，请参阅自定义默认设置。
 - If you have trouble configuring the settings, please start a discussion at [GitHub discussions](https://github.com/microsoft/vscode-cpptools/discussions), or if you find an issue that needs to be fixed, file an issue at [GitHub issues](https://github.com/microsoft/vscode-cpptools/issues).
   如果您在配置设置时遇到问题，请在 GitHub 讨论中发起讨论，或者如果您发现需要修复的问题，请在 GitHub 问题中提交问题。
 - Explore the [c_cpp_properties schema](https://code.visualstudio.com/docs/cpp/c-cpp-properties-schema-reference).
   探索 c_cpp_properties 架构。
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp).
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}}).
   查看 C++ 扩展概述。

@@ -22,7 +22,7 @@ In this tutorial, you will configure Visual Studio Code to use the GCC C++ compi
 >
 > ​​​	注意：本教程的大部分内容适用于直接在 Linux 机器上使用 C++ 和 VS Code。
 
-Visual Studio Code has support for working directly in WSL with the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). We recommend this mode of [WSL development](https://code.visualstudio.com/docs/remote/wsl), where all your source code files, in addition to the compiler, are hosted on the Linux distro. For more background, see [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
+Visual Studio Code has support for working directly in WSL with the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). We recommend this mode of [WSL development]({{< ref "/Remote/WindowsSubsystemforLinux" >}}), where all your source code files, in addition to the compiler, are hosted on the Linux distro. For more background, see [VS Code Remote Development]({{< ref "/Remote/Overview" >}}).
 
 ​​​	Visual Studio Code 支持通过 WSL 扩展直接在 WSL 中工作。我们推荐这种 WSL 开发模式，其中除了编译器之外，您的所有源代码文件都托管在 Linux 发行版上。有关更多背景信息，请参阅 VS Code 远程开发。
 
@@ -34,7 +34,7 @@ If you have any problems, feel free to file an issue for this tutorial in the [V
 
 ​​​	如果您遇到任何问题，请随时在 VS Code 文档存储库中为此教程提交问题。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/cpp/config-wsl#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C/GCConWindowsSubsystemforLinux#_prerequisites" >}})
 
 To successfully complete this tutorial, you must do the following steps:
 
@@ -52,7 +52,7 @@ To successfully complete this tutorial, you must do the following steps:
 
    ​​​	安装适用于 Linux 的 Windows 子系统，然后使用同一页面上的链接安装您选择的 Linux 发行版。本教程使用 Ubuntu。在安装过程中，请记住您的 Linux 用户密码，因为您需要它来安装其他软件。
 
-## [Set up your Linux environment 设置您的 Linux 环境](https://code.visualstudio.com/docs/cpp/config-wsl#_set-up-your-linux-environment)
+## [Set up your Linux environment 设置您的 Linux 环境]({{< ref "/C/GCConWindowsSubsystemforLinux#_set-up-your-linux-environment" >}})
 
 1. Open the Bash shell for WSL. If you installed an Ubuntu distro, type "Ubuntu" in the Windows search box and then click on it in the result list. For Debian, type "Debian", and so on.
 
@@ -113,7 +113,7 @@ To successfully complete this tutorial, you must do the following steps:
 >
 > ​​​	注意：如果您直接在 Linux 机器上工作而不是在 WSL 中工作，则安装 g++ 编译器和 GDB 调试器的设置步骤适用。在您的 helloworld 项目中运行 VS Code，以及编辑、构建和调试步骤是相同的。
 
-## [Run VS Code in WSL 在 WSL 中运行 VS Code](https://code.visualstudio.com/docs/cpp/config-wsl#_run-vs-code-in-wsl)
+## [Run VS Code in WSL 在 WSL 中运行 VS Code]({{< ref "/C/GCConWindowsSubsystemforLinux#_run-vs-code-in-wsl" >}})
 
 Navigate to your helloworld project folder and launch VS Code from the WSL terminal with `code .`:
 
@@ -151,7 +151,7 @@ The **code .** command opened VS Code in the current working folder, which becom
 - `launch.json` (debugger settings)
   `launch.json` （调试器设置）
 
-## [Add a source code file 添加源代码文件](https://code.visualstudio.com/docs/cpp/config-wsl#_add-a-source-code-file)
+## [Add a source code file 添加源代码文件]({{< ref "/C/GCConWindowsSubsystemforLinux#_add-a-source-code-file" >}})
 
 In the File Explorer title bar, select the **New File** button and name the file `helloworld.cpp`.
 
@@ -159,7 +159,7 @@ In the File Explorer title bar, select the **New File** button and name the file
 
 ![New File title bar button](./GCConWindowsSubsystemforLinux_img/new-file-button.png)
 
-### [Install the C/C++ extension 安装 C/C++ 扩展](https://code.visualstudio.com/docs/cpp/config-wsl#_install-the-cc-extension)
+### [Install the C/C++ extension 安装 C/C++ 扩展]({{< ref "/C/GCConWindowsSubsystemforLinux#_install-the-cc-extension" >}})
 
 Once you create the file and VS Code detects it is a C++ language file, you may be prompted to install the [Microsoft C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) if you don't already have it installed.
 
@@ -177,7 +177,7 @@ If you already have C/C++ language extensions installed locally in VS Code, you'
 
 ![Install in WSL button](./GCConWindowsSubsystemforLinux_img/install-in-wsl.png)
 
-### [Add hello world source code 添加 hello world 源代码](https://code.visualstudio.com/docs/cpp/config-wsl#_add-hello-world-source-code)
+### [Add hello world source code 添加 hello world 源代码]({{< ref "/C/GCConWindowsSubsystemforLinux#_add-hello-world-source-code" >}})
 
 Now paste in this source code:
 
@@ -208,15 +208,15 @@ Now press Ctrl+S to save the file. Notice how the file you just added appears in
 
 ![File Explorer](./GCConWindowsSubsystemforLinux_img/file-explorer-helloworld.png)
 
-You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) to automatically save your file changes, by checking **Auto Save** in the main **File** menu.
+You can also enable [Auto Save]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}}) to automatically save your file changes, by checking **Auto Save** in the main **File** menu.
 
 ​​​	您还可以通过选中主文件菜单中的“自动保存”来启用“自动保存”，以自动保存您的文件更改。
 
-The Activity Bar on the far left lets you open different views such as **Search**, **Source Control**, and **Run**. You'll look at the **Run** view later in this tutorial. You can find out more about the other views in the VS Code [User Interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface).
+The Activity Bar on the far left lets you open different views such as **Search**, **Source Control**, and **Run**. You'll look at the **Run** view later in this tutorial. You can find out more about the other views in the VS Code [User Interface documentation]({{< ref "/GetStarted/UserInterface" >}}).
 
 ​​​	最左侧的活动栏允许您打开不同的视图，例如搜索、源代码管理和运行。您将在本教程的后面部分了解运行视图。您可以在 VS Code 用户界面文档中了解有关其他视图的更多信息。
 
-## [Explore IntelliSense 探索 IntelliSense](https://code.visualstudio.com/docs/cpp/config-wsl#_explore-intellisense)
+## [Explore IntelliSense 探索 IntelliSense]({{< ref "/C/GCConWindowsSubsystemforLinux#_explore-intellisense" >}})
 
 In your new `helloworld.cpp` file, hover over `vector` or `string` to see type information. After the declaration of the `msg` variable, start typing `msg.` as you would when calling a member function. You should immediately see a completion list that shows all the member functions, and a window that shows the type information for the `msg` object:
 
@@ -228,7 +228,7 @@ You can press the Tab key to insert the selected member; then, when you add the 
 
 ​​​	您可以按 Tab 键插入选定的成员；然后，当您添加左括号时，您将看到有关函数所需任何参数的信息。
 
-## [Run helloworld.cpp 运行 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-wsl#_run-helloworldcpp)
+## [Run helloworld.cpp 运行 helloworld.cpp]({{< ref "/C/GCConWindowsSubsystemforLinux#_run-helloworldcpp" >}})
 
 Remember, the C++ extension uses the C++ compiler you have installed on your machine to build your program. Make sure you have a C++ compiler installed before attempting to run and debug `helloworld.cpp` in VS Code.
 
@@ -328,13 +328,13 @@ with this:
     "group": "build",
 ```
 
-### [Modifying tasks.json 修改 tasks.json](https://code.visualstudio.com/docs/cpp/config-wsl#_modifying-tasksjson)
+### [Modifying tasks.json 修改 tasks.json]({{< ref "/C/GCConWindowsSubsystemforLinux#_modifying-tasksjson" >}})
 
 You can modify your `tasks.json` to build multiple C++ files by using an argument like `"${workspaceFolder}/*.cpp"` instead of `"${file}"`.This will build all `.cpp` files in your current folder. You can also modify the output filename by replacing `"${fileDirname}/${fileBasenameNoExtension}"` with a hard-coded filename (for example 'helloworld.out').
 
 ​​​	您可以通过使用 `"${workspaceFolder}/*.cpp"` 这样的参数而不是 `"${file}"` 来修改您的 `tasks.json` 以构建多个 C++ 文件。这将构建您当前文件夹中的所有 `.cpp` 文件。您还可以通过用硬编码文件名（例如“helloworld.out”）替换 `"${fileDirname}/${fileBasenameNoExtension}"` 来修改输出文件名。
 
-## [Debug helloworld.cpp 调试 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-wsl#_debug-helloworldcpp)
+## [Debug helloworld.cpp 调试 helloworld.cpp]({{< ref "/C/GCConWindowsSubsystemforLinux#_debug-helloworldcpp" >}})
 
 To debug your code,
 
@@ -353,7 +353,7 @@ The play button has two modes: **Run C/C++ File** and **Debug C/C++ File**. It w
 
 ​​​	播放按钮有两种模式：运行 C/C++ 文件和调试 C/C++ 文件。它将默认为上次使用的模式。如果您在播放按钮中看到调试图标，则可以选择播放按钮进行调试，而不是选择下拉菜单项。
 
-## [Explore the debugger 探索调试器](https://code.visualstudio.com/docs/cpp/config-wsl#_explore-the-debugger)
+## [Explore the debugger 探索调试器]({{< ref "/C/GCConWindowsSubsystemforLinux#_explore-the-debugger" >}})
 
 Before you start stepping through the code, let's take a moment to notice several changes in the user interface:
 
@@ -383,7 +383,7 @@ If you already have a launch.json file in your workspace, the play button will r
 
 ​​​	如果您的工作区中已有 launch.json 文件，则播放按钮将在确定如何运行和调试 C++ 文件时从中读取。如果您没有 launch.json，则播放按钮将临时创建一个“快速调试”配置，从而完全无需 launch.json！
 
-## [Step through the code 逐步执行代码](https://code.visualstudio.com/docs/cpp/config-wsl#_step-through-the-code)
+## [Step through the code 逐步执行代码]({{< ref "/C/GCConWindowsSubsystemforLinux#_step-through-the-code" >}})
 
 Now you're ready to start stepping through the code.
 
@@ -431,7 +431,7 @@ Now you're ready to start stepping through the code.
 
    ![Debug console display](./GCConWindowsSubsystemforLinux_img/debug-console-output-wsl.png)
 
-## [Set a watch 设置监视](https://code.visualstudio.com/docs/cpp/config-wsl#_set-a-watch)
+## [Set a watch 设置监视]({{< ref "/C/GCConWindowsSubsystemforLinux#_set-a-watch" >}})
 
 To keep track of the value of a variable as your program executes, set a **watch** on the variable.
 
@@ -457,7 +457,7 @@ It's important to have `helloworld.cpp` open in the editor because the next step
 
 ​​​	在编辑器中打开 `helloworld.cpp` 非常重要，因为下一步使用编辑器中的活动文件作为上下文，以便在下一步中创建构建任务。
 
-## [Customize debugging with launch.json 使用 launch.json 自定义调试](https://code.visualstudio.com/docs/cpp/config-wsl#_customize-debugging-with-launchjson)
+## [Customize debugging with launch.json 使用 launch.json 自定义调试]({{< ref "/C/GCConWindowsSubsystemforLinux#_customize-debugging-with-launchjson" >}})
 
 When you debug with the play button or F5, the C++ extension creates a dynamic debug configuration on the fly.
 
@@ -528,7 +528,7 @@ Change the `stopAtEntry` value to `true` to cause the debugger to stop on the `m
 >
 > ​​​	从现在开始，播放按钮和 F5 将在启动程序进行调试时从 `launch.json` 文件中读取。
 
-## [C/C++ configurations C/C++ 配置](https://code.visualstudio.com/docs/cpp/config-wsl#_cc-configurations)
+## [C/C++ configurations C/C++ 配置]({{< ref "/C/GCConWindowsSubsystemforLinux#_cc-configurations" >}})
 
 If you want more control over the C/C++ extension, you can create a `c_cpp_properties.json` file, which will allow you to change settings such as the path to the compiler, include paths, C++ standard (default is C++17), and more.
 
@@ -571,17 +571,17 @@ Visual Studio Code places these settings in `.vscode/c_cpp_properties.json`. If 
 }
 ```
 
-## [Closing the WSL session 关闭 WSL 会话](https://code.visualstudio.com/docs/cpp/config-wsl#_closing-the-wsl-session)
+## [Closing the WSL session 关闭 WSL 会话]({{< ref "/C/GCConWindowsSubsystemforLinux#_closing-the-wsl-session" >}})
 
 When you are done working in WSL, you can close your remote session with the **Close Remote Connection** command available in the main **File** menu and the Command Palette (Ctrl+Shift+P). This will restart VS Code running locally. You can easily reopen your WSL session from the **File** > **Open Recent** list by selecting folders with the **[WSL]** suffix.
 
 ​​​	在 WSL 中完成工作后，您可以使用主文件菜单和命令面板 (Ctrl+Shift+P) 中提供的“关闭远程连接”命令关闭远程会话。这将重新启动本地运行的 VS Code。您可以通过从文件 > 最近打开列表中选择带有 [WSL] 后缀的文件夹轻松重新打开 WSL 会话。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/config-wsl#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/GCConWindowsSubsystemforLinux#_next-steps" >}})
 
-- Explore the [VS Code User Guide](https://code.visualstudio.com/docs/editor/codebasics).
+- Explore the [VS Code User Guide]({{< ref "/UserGuide/BasicEditing" >}}).
   浏览 VS Code 用户指南。
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp).
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}}).
   查看 C++ 扩展概述。
 - Create a new workspace, copy your .json files to it, adjust the necessary settings for the new workspace path, program name, and so on, and start coding!
   创建一个新工作区，将您的 .json 文件复制到其中，调整新工作区路径、程序名称等必要的设置，然后开始编码！

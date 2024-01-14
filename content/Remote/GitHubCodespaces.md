@@ -20,15 +20,15 @@ draft = false
 
 ![GitHub Codespaces extension](./GitHubCodespaces_img/github-codespaces-extension.png)
 
-## [Environments 环境](https://code.visualstudio.com/docs/remote/codespaces#_environments)
+## [Environments 环境]({{< ref "/Remote/GitHubCodespaces#_environments" >}})
 
 An environment is the "backend" half of GitHub Codespaces. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up a Cloud-hosted environment, and GitHub Codespaces takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more.
 
 ​​	环境是 GitHub Codespaces 的“后端”部分。它是所有与软件开发相关的计算发生的地方：编译、调试、还原等。当您需要处理新项目、开始新任务或审查 PR 时，您可以简单地启动一个云托管环境，GitHub Codespaces 会负责正确配置它。它会自动配置您处理项目所需的一切：源代码、运行时、编译器、调试器、编辑器、自定义点文件配置、相关的编辑器扩展等。
 
-## [Customization 自定义](https://code.visualstudio.com/docs/remote/codespaces#_customization)
+## [Customization 自定义]({{< ref "/Remote/GitHubCodespaces#_customization" >}})
 
-GitHub Codespaces are fully customizable on a per project basis. This is accomplished by including a `devcontainer.json` file in the project's repository, similar to VS Code [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) development.
+GitHub Codespaces are fully customizable on a per project basis. This is accomplished by including a `devcontainer.json` file in the project's repository, similar to VS Code [Dev Containers]({{< ref "/DevContainers/Overview" >}}) development.
 
 ​​	GitHub Codespaces 可以根据每个项目进行完全自定义。这可以通过在项目的存储库中包含一个 `devcontainer.json` 文件来实现，类似于 VS Code Dev Containers 开发。
 
@@ -51,7 +51,7 @@ See the [Configuring Codespaces](https://docs.github.com/github/developing-onlin
 
 ​​	有关特定于代码空间的 `devcontainer.json` 设置，请参阅配置代码空间文档。
 
-## [Dotfile per user configuration 每个用户配置的点文件](https://code.visualstudio.com/docs/remote/codespaces#_dotfile-per-user-configuration)
+## [Dotfile per user configuration 每个用户配置的点文件]({{< ref "/Remote/GitHubCodespaces#_dotfile-per-user-configuration" >}})
 
 Dotfiles are files whose filename begins with a dot (.). They typically contain configuration information for applications and can control how terminals, editors, source control, and various other tools behave. `.bashrc`, `.gitignore`, and `.editorconfig` are examples of dotfiles commonly used by developers.
 
@@ -65,7 +65,7 @@ See the [Personalizing Codespaces](https://docs.github.com/github/developing-onl
 
 ​​	请参阅个性化代码空间文档，了解如何将您的点文件配置添加到代码空间。
 
-## [Getting started 入门](https://code.visualstudio.com/docs/remote/codespaces#_getting-started)
+## [Getting started 入门]({{< ref "/Remote/GitHubCodespaces#_getting-started" >}})
 
 There are getting started topics for both GitHub Codespaces clients. These will fast-track you through signing in to GitHub Codespaces, creating your first codespace, and connecting to it with your preferred client:
 
@@ -76,13 +76,13 @@ There are getting started topics for both GitHub Codespaces clients. These will 
 - [Codespaces in the browser](https://docs.github.com/github/developing-online-with-codespaces/creating-a-codespace) - Connect to your codespace through a browser-based editor.
   浏览器中的 Codespaces - 通过基于浏览器的编辑器连接到你的 codespace。
 
-## [Extension authors 扩展作者](https://code.visualstudio.com/docs/remote/codespaces#_extension-authors)
+## [Extension authors 扩展作者]({{< ref "/Remote/GitHubCodespaces#_extension-authors" >}})
 
 The VS Code extension API hides most of the implementation details of running remotely so many extensions will just work in GitHub Codespaces environments without any modification. However, we recommend that you test your extension in a codespace to be sure that all of its functionality works as expected. See the article on [Supporting Remote Development and GitHub Codespaces](https://code.visualstudio.com/api/advanced-topics/remote-extensions) for details.
 
 ​​	VS Code 扩展 API 隐藏了远程运行的大部分实现细节，因此许多扩展无需任何修改即可在 GitHub Codespaces 环境中运行。但是，我们建议你在 codespace 中测试你的扩展，以确保其所有功能按预期工作。有关详细信息，请参阅有关支持远程开发和 GitHub Codespaces 的文章。
 
-## [Browser-based editor 基于浏览器的编辑器](https://code.visualstudio.com/docs/remote/codespaces#_browserbased-editor)
+## [Browser-based editor 基于浏览器的编辑器]({{< ref "/Remote/GitHubCodespaces#_browserbased-editor" >}})
 
 You also have a free, lightweight Visual Studio Code experience entirely in the browser. The web-based editor lets you browse source code repositories from GitHub safely and quickly and make lightweight code changes. You can open any repository, fork, or pull request in the editor, which has many of the features of VS Code, including search and syntax highlighting. If you want to run or debug your code, you can switch to the cloud-hosted environment or the VS Code desktop.
 
@@ -100,7 +100,7 @@ Limitation: You may not be able to use the web-based editor if you are running y
 >
 > ​​	注意：此编辑器当前处于技术预览版。您今天可以试用它，并在 https://github.co/browser-editor-feedback 上提供反馈。
 
-## [Known limitations and adaptations 已知限制和改编](https://code.visualstudio.com/docs/remote/codespaces#_known-limitations-and-adaptations)
+## [Known limitations and adaptations 已知限制和改编]({{< ref "/Remote/GitHubCodespaces#_known-limitations-and-adaptations" >}})
 
 While working with Codespaces and specifically VS Code in the web, there are certain limitations to keep in mind. Some of these limitations have workarounds or adaptations in place to provide a consistent development experience.
 
@@ -125,9 +125,9 @@ For several issues (especially keybindings or those listed with a workaround for
 | Downloading a file with no extension from the browser automatically adds ".txt" 从浏览器下载没有扩展名的文件会自动添加“.txt” | This is how Chrome and Edge behave. 这是 Chrome 和 Edge 的行为方式。 | Context and potential future solutions in [issue #118436](https://github.com/microsoft/vscode/issues/118436). 问题 #118436 中的上下文和潜在的未来解决方案。 |
 | When you download a file from a remote (including Codespaces), attributes such as the executable bit are removed. 当您从远程（包括 Codespaces）下载文件时，可执行位等属性将被移除。 | Context and potential future solutions can be found in [issue #112099](https://github.com/microsoft/vscode/issues/112099). 可以在问题 #112099 中找到上下文和潜在的未来解决方案。 | No current workarounds. 目前没有解决方法。                   |
 | You may see the prompt, "`Your_codespace_name` can't open this folder because it contains system files" when trying to download certain folders from a Codespace. 尝试从 Codespace 下载某些文件夹时，您可能会看到提示“ `Your_codespace_name` 无法打开此文件夹，因为它包含系统文件”。 | A user agent is free to impose the level of restrictions on sensitive directories. More information in [this spec](https://wicg.github.io/file-system-access/#privacy-wide-access) and [Chromium's blocklist](https://source.chromium.org/chromium/chromium/src/+/master:chrome/browser/file_system_access/chrome_file_system_access_permission_context.cc;l=140-208). 用户代理可以自由地对敏感目录施加限制级别。有关更多信息，请参阅此规范和 Chromium 的阻止列表。 | No additional workarounds beyond the spec and blocklist. 除了规范和阻止列表之外，没有其他解决方法。 |
-| Manually visiting `http://localhost:forwarded_port` won't work to access a forwarded port from a Codespace in the web. 手动访问 `http://localhost:forwarded_port` 无法从 Web 中的 Codespace 访问已转发的端口。 | This is based on how Codespaces handles port forwarding and generates the correct URL for the web. 这是基于 Codespaces 如何处理端口转发并为 Web 生成正确 URL 的方式。 | Click the link from the port forwarding notification to open your app, or the globe icon in the [Ports view](https://code.visualstudio.com/docs/devcontainers/containers#_forwarding-or-publishing-a-port), both of which will provide the properly generated link. More information in the [Codespaces docs](https://docs.github.com/codespaces/developing-in-codespaces/forwarding-ports-in-your-codespace). 单击端口转发通知中的链接以打开您的应用，或单击“端口”视图中的地球图标，这两个操作都会提供正确生成的链接。有关更多信息，请参阅 Codespaces 文档。 |
+| Manually visiting `http://localhost:forwarded_port` won't work to access a forwarded port from a Codespace in the web. 手动访问 `http://localhost:forwarded_port` 无法从 Web 中的 Codespace 访问已转发的端口。 | This is based on how Codespaces handles port forwarding and generates the correct URL for the web. 这是基于 Codespaces 如何处理端口转发并为 Web 生成正确 URL 的方式。 | Click the link from the port forwarding notification to open your app, or the globe icon in the [Ports view]({{< ref "/DevContainers/Overview#_forwarding-or-publishing-a-port" >}}), both of which will provide the properly generated link. More information in the [Codespaces docs](https://docs.github.com/codespaces/developing-in-codespaces/forwarding-ports-in-your-codespace). 单击端口转发通知中的链接以打开您的应用，或单击“端口”视图中的地球图标，这两个操作都会提供正确生成的链接。有关更多信息，请参阅 Codespaces 文档。 |
 
-### [Some extensions behave differently in the web 某些扩展在 Web 中的行为不同](https://code.visualstudio.com/docs/remote/codespaces#_some-extensions-behave-differently-in-the-web)
+### [Some extensions behave differently in the web 某些扩展在 Web 中的行为不同]({{< ref "/Remote/GitHubCodespaces#_some-extensions-behave-differently-in-the-web" >}})
 
 | Extension 扩展                                               | Issue / Reason 问题/原因                                     | Workaround 解决方法                                          |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -139,14 +139,14 @@ For several issues (especially keybindings or those listed with a workaround for
 | [Project Manager 项目管理器](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) | Project Manager relies on syncing a custom `projects.json` file, which [isn't currently supported](https://github.com/microsoft/vscode/issues/113774). 项目管理器依赖于同步自定义 `projects.json` 文件，目前不支持此操作。 | You can use the extension in desktop Codespaces or local VS Code to save and manage your projects, as these options won't require syncing a custom file. 您可以在桌面 Codespaces 或本地 VS Code 中使用扩展来保存和管理项目，因为这些选项不需要同步自定义文件。 |
 | Extensions that rely on Chrome, such as [Protractor Test Runner](https://marketplace.visualstudio.com/items?itemName=luciannaie.protractor-test-runner#:~:text=Protractor Test Runner is a,that has protractor test files.) and [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview). 依赖于 Chrome 的扩展，例如 Protractor Test Runner 和浏览器预览。 | Chrome is not included in a Codespace. Codespace 中不包含 Chrome。 | Try to find alternative experiences, or you can use these extensions on your project in local VS Code (not connected to Codespaces). 尝试寻找替代体验，或者您可以在本地 VS Code（未连接到 Codespaces）中的项目中使用这些扩展。 |
 | [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) (and Flutter development overall) Flutter（以及整体的 Flutter 开发） | Several aspects of the Flutter workflow are limited due to the nature of Docker containers and Codespaces. 由于 Docker 容器和 Codespaces 的性质，Flutter 工作流的几个方面受到限制。Flutter recommends installation from snap, but snap cannot be installed within the Codespaces container. Flutter 建议从 snap 安装，但无法在 Codespaces 容器内安装 snap。Android Emulation does not work within a container. Android 模拟在容器内不起作用。Codespaces cannot detect USB devices plugged into your machine, which makes development on a physical device impossible. Codespaces 无法检测插入到计算机中的 USB 设备，这使得在物理设备上进行开发变得不可能。Codespaces, like other Linux environments, doesn't support iOS development. Codespaces 与其他 Linux 环境一样，不支持 iOS 开发。 | You can use local VS Code for Flutter development. 您可以使用本地 VS Code 进行 Flutter 开发。 |
-| [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) | The extension provides three kinds of features to help with LaTeX authoring: 1) a set of views that surface common commands, 2) a PDF previewer, and 3) language features like snippets and IntelliSense. The extension can be used fairly fully featured, but there are some web or security limitations. 该扩展程序提供三种功能来帮助 LaTeX 创作：1) 一组显示常用命令的视图，2) 一个 PDF 预览器，以及 3) 代码片段和 IntelliSense 等语言功能。该扩展程序的功能相当齐全，但存在一些网络或安全限制。 | The following workarounds address limitations in the view and previewer feature areas: 以下解决方法解决了视图和预览器功能区域中的限制：The views themselves work without issue, but a few of the commands try to launch native applications, like revealing the output folder in the OS file explorer. These do nothing in the web, so using the desktop is an alternative. 视图本身可以正常工作，但一些命令会尝试启动本机应用程序，例如在操作系统文件资源管理器中显示输出文件夹。这些命令在网络中不起作用，因此使用桌面是一个替代方案。`"latex-workshop.view.pdf.viewer"` - This setting provides a PDF previewer similar to the [Markdown preview](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). You can preview in a browser tab, in a separate PDF viewer, or in a VS Code tab. `"latex-workshop.view.pdf.viewer"` - 此设置提供类似于 Markdown 预览的 PDF 预览器。您可以在浏览器选项卡、单独的 PDF 查看器或 VS Code 选项卡中进行预览。 Only the browser tab is usable in web-based Codespaces. The separate PDF viewer fails silently, and the VS Code tab hits the [Content Security Policy](https://code.visualstudio.com/api/extension-guides/webview#_content-security-policy) issue. The VS Code Tab viewer has other features that aren't available due to this limitation. 在基于 Web 的 Codespaces 中，只有浏览器选项卡可用。单独的 PDF 查看器会静默失败，而 VS Code 选项卡会遇到内容安全策略问题。由于此限制，VS Code 选项卡查看器还有其他不可用的功能。 |
+| [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) | The extension provides three kinds of features to help with LaTeX authoring: 1) a set of views that surface common commands, 2) a PDF previewer, and 3) language features like snippets and IntelliSense. The extension can be used fairly fully featured, but there are some web or security limitations. 该扩展程序提供三种功能来帮助 LaTeX 创作：1) 一组显示常用命令的视图，2) 一个 PDF 预览器，以及 3) 代码片段和 IntelliSense 等语言功能。该扩展程序的功能相当齐全，但存在一些网络或安全限制。 | The following workarounds address limitations in the view and previewer feature areas: 以下解决方法解决了视图和预览器功能区域中的限制：The views themselves work without issue, but a few of the commands try to launch native applications, like revealing the output folder in the OS file explorer. These do nothing in the web, so using the desktop is an alternative. 视图本身可以正常工作，但一些命令会尝试启动本机应用程序，例如在操作系统文件资源管理器中显示输出文件夹。这些命令在网络中不起作用，因此使用桌面是一个替代方案。`"latex-workshop.view.pdf.viewer"` - This setting provides a PDF previewer similar to the [Markdown preview]({{< ref "/Languages/Markdown#_markdown-preview" >}}). You can preview in a browser tab, in a separate PDF viewer, or in a VS Code tab. `"latex-workshop.view.pdf.viewer"` - 此设置提供类似于 Markdown 预览的 PDF 预览器。您可以在浏览器选项卡、单独的 PDF 查看器或 VS Code 选项卡中进行预览。 Only the browser tab is usable in web-based Codespaces. The separate PDF viewer fails silently, and the VS Code tab hits the [Content Security Policy](https://code.visualstudio.com/api/extension-guides/webview#_content-security-policy) issue. The VS Code Tab viewer has other features that aren't available due to this limitation. 在基于 Web 的 Codespaces 中，只有浏览器选项卡可用。单独的 PDF 查看器会静默失败，而 VS Code 选项卡会遇到内容安全策略问题。由于此限制，VS Code 选项卡查看器还有其他不可用的功能。 |
 | [Git Graph Git 图表](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) | Some Git Graph webview functionality may be limited in Codespaces. For instance, switching between a file from a commit and the Git Graph webview may blank out the webview. Codespaces 中的一些 Git 图表 Web 视图功能可能会受到限制。例如，在提交中的文件和 Git 图表 Web 视图之间切换可能会使 Web 视图变为空白。 | You can use Git Graph fully within VS Code desktop. 您可以在 VS Code 桌面版中充分使用 Git 图表。 |
-| Other [Remote Development extensions](https://code.visualstudio.com/docs/remote/remote-overview) (WSL, Dev Containers, Remote - SSH) cannot be installed in a Codespace. 其他远程开发扩展（WSL、Dev Containers、Remote - SSH）无法安装在 Codespace 中。 | The Codespace is already a remote context. Codespace 已经是远程上下文。 | If you'd like to run in another remote context (for example WSL or a remote SSH computer), open VS Code desktop (not connected to a Codespace) and launch one of the other remote extensions. If you'd like to use a [custom dev container](https://code.visualstudio.com/docs/devcontainers/create-dev-container), you can use the same `.devcontainer` in both Codespaces and Dev Containers. 如果您想在另一个远程上下文中运行（例如 WSL 或远程 SSH 计算机），请打开 VS Code 桌面版（未连接到 Codespace）并启动其他远程扩展之一。如果您想使用自定义开发容器，则可以在 Codespaces 和 Dev Containers 中使用相同的 `.devcontainer` 。 |
-| **My_Favorite_Extension** doesn't work and isn't listed above. My_Favorite_Extension 不起作用，并且上面未列出。 | There are a few other issues that can prevent features from working as expected in remote contexts. 还有一些其他问题可能会导致功能无法按预期在远程上下文中工作。 | In some cases, you can use another command to work around the issue, but in others, the extension may need to be modified. Check out the [remote extension tips](https://code.visualstudio.com/docs/remote/troubleshooting#_extension-tips) for common remote issues and tips on resolving them. 在某些情况下，您可以使用其他命令来解决问题，但在其他情况下，可能需要修改扩展。查看远程扩展提示，了解常见的远程问题及其解决提示。 |
+| Other [Remote Development extensions]({{< ref "/Remote/Overview" >}}) (WSL, Dev Containers, Remote - SSH) cannot be installed in a Codespace. 其他远程开发扩展（WSL、Dev Containers、Remote - SSH）无法安装在 Codespace 中。 | The Codespace is already a remote context. Codespace 已经是远程上下文。 | If you'd like to run in another remote context (for example WSL or a remote SSH computer), open VS Code desktop (not connected to a Codespace) and launch one of the other remote extensions. If you'd like to use a [custom dev container]({{< ref "/DevContainers/CreateaDevContainer" >}}), you can use the same `.devcontainer` in both Codespaces and Dev Containers. 如果您想在另一个远程上下文中运行（例如 WSL 或远程 SSH 计算机），请打开 VS Code 桌面版（未连接到 Codespace）并启动其他远程扩展之一。如果您想使用自定义开发容器，则可以在 Codespaces 和 Dev Containers 中使用相同的 `.devcontainer` 。 |
+| **My_Favorite_Extension** doesn't work and isn't listed above. My_Favorite_Extension 不起作用，并且上面未列出。 | There are a few other issues that can prevent features from working as expected in remote contexts. 还有一些其他问题可能会导致功能无法按预期在远程上下文中工作。 | In some cases, you can use another command to work around the issue, but in others, the extension may need to be modified. Check out the [remote extension tips]({{< ref "/Remote/TipsandTricks#_extension-tips" >}}) for common remote issues and tips on resolving them. 在某些情况下，您可以使用其他命令来解决问题，但在其他情况下，可能需要修改扩展。查看远程扩展提示，了解常见的远程问题及其解决提示。 |
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/remote/codespaces#_common-questions)
+## [Common questions 常见问题]({{< ref "/Remote/GitHubCodespaces#_common-questions" >}})
 
-### [Why is an extension not installable in the browser 为什么扩展无法在浏览器中安装](https://code.visualstudio.com/docs/remote/codespaces#_why-is-an-extension-not-installable-in-the-browser)
+### [Why is an extension not installable in the browser 为什么扩展无法在浏览器中安装]({{< ref "/Remote/GitHubCodespaces#_why-is-an-extension-not-installable-in-the-browser" >}})
 
 There are a small number of extensions that have built-in assumptions or need to run on the desktop. Examples are when an extension accesses files from the VS Code installation on the desktop or when an extension depends on an executable that must run in a desktop environment. When you try to install such an extension in the browser, you will be informed that the extension is not available.
 
@@ -156,7 +156,7 @@ There are a small number of extensions that have built-in assumptions or need to
 
 ​​	请注意，当从运行在桌面上的 VS Code 连接到 Codespace 时，仍然可以使用此类扩展。
 
-### [How do I allow VS Code to access my clipboard for reading? 如何允许 VS Code 访问我的剪贴板以进行读取？](https://code.visualstudio.com/docs/remote/codespaces#_how-do-i-allow-vs-code-to-access-my-clipboard-for-reading)
+### [How do I allow VS Code to access my clipboard for reading? 如何允许 VS Code 访问我的剪贴板以进行读取？]({{< ref "/Remote/GitHubCodespaces#_how-do-i-allow-vs-code-to-access-my-clipboard-for-reading" >}})
 
 In certain cases, VS Code might ask you for permission to access the clipboard when reading from it. You should be able to grant access to the clipboard from your browser either through settings (search for "site permissions") or by looking for this option in the address bar on the right:
 
@@ -168,7 +168,7 @@ Once you have granted VS Code access to the clipboard, you can retry the operati
 
 ​​	授予 VS Code 对剪贴板的访问权限后，您可以重试该操作。
 
-### [How do I allow VS Code to always open new tabs and windows? 如何允许 VS Code 始终打开新标签页和窗口？](https://code.visualstudio.com/docs/remote/codespaces#_how-do-i-allow-vs-code-to-always-open-new-tabs-and-windows)
+### [How do I allow VS Code to always open new tabs and windows? 如何允许 VS Code 始终打开新标签页和窗口？]({{< ref "/Remote/GitHubCodespaces#_how-do-i-allow-vs-code-to-always-open-new-tabs-and-windows" >}})
 
 Sometimes browsers will, as a security precaution, block VS Code from opening new tabs or windows. If this happens, VS Code will detect the blocking action and explicitly prompt the user. However, you can allow VS Code to always open new windows and tabs by opening the site settings via the context menu in the browser navigation bar and by allowing to **Pop-up Windows**.
 
@@ -176,13 +176,13 @@ Sometimes browsers will, as a security precaution, block VS Code from opening ne
 
 ![Allow pop-up window in browser](./GitHubCodespaces_img/allow-new-tab.png)
 
-### [How do I allow VS Code in a browser to access local files and folders? 如何允许浏览器中的 VS Code 访问本地文件和文件夹？](https://code.visualstudio.com/docs/remote/codespaces#_how-do-i-allow-vs-code-in-a-browser-to-access-local-files-and-folders)
+### [How do I allow VS Code in a browser to access local files and folders? 如何允许浏览器中的 VS Code 访问本地文件和文件夹？]({{< ref "/Remote/GitHubCodespaces#_how-do-i-allow-vs-code-in-a-browser-to-access-local-files-and-folders" >}})
 
 Opening local files and folders in VS Code from a browser requires the browser to support the [File System Access API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API). As of today both [Microsoft Edge](https://www.microsoft.com/en-us/edge) and Google Chrome offer this level of support. If you want to access local files and folders when using VS Code in a browser, please consider to switch to one of these two browsers.
 
 ​​	从浏览器在 VS Code 中打开本地文件和文件夹需要浏览器支持文件系统访问 API。截至今日，Microsoft Edge 和 Google Chrome 都提供此级别的支持。如果您想在浏览器中使用 VS Code 时访问本地文件和文件夹，请考虑切换到这两个浏览器之一。
 
-## [Questions or feedback 问题或反馈](https://code.visualstudio.com/docs/remote/codespaces#_questions-or-feedback)
+## [Questions or feedback 问题或反馈]({{< ref "/Remote/GitHubCodespaces#_questions-or-feedback" >}})
 
 If you have questions, you can consult the GitHub Codespaces [Troubleshooting guide](https://docs.github.com/github/developing-online-with-codespaces/troubleshooting-your-codespace). If you'd like to provide feedback, you can enter issues in the GitHub Codespaces [Discussions](https://github.com/community/community/discussions/categories/codespaces).
 

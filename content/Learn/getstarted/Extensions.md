@@ -22,11 +22,11 @@ In this video, we walk you through installing Visual Studio Code extensions.
 
 
 
-Next video: [Personalize Visual Studio Code](https://code.visualstudio.com/learn/get-started/personalize)
+Next video: [Personalize Visual Studio Code]({{< ref "/Learn/getstarted/Customize" >}})
 
 ​​​	下一视频：个性化 Visual Studio Code
 
-## [Outline 大纲](https://code.visualstudio.com/learn/get-started/extensions#_outline)
+## [Outline 大纲]({{< ref "/Learn/getstarted/Extensions#_outline" >}})
 
 - Find extensions to install using the Extensions View.
   使用扩展视图查找要安装的扩展。
@@ -37,14 +37,14 @@ Next video: [Personalize Visual Studio Code](https://code.visualstudio.com/learn
 - See other recommendations for extensions.
   查看其他扩展建议。
 
-## [Next video 下一个视频](https://code.visualstudio.com/learn/get-started/extensions#_next-video)
+## [Next video 下一个视频]({{< ref "/Learn/getstarted/Extensions#_next-video" >}})
 
-- [Personalize Visual Studio Code](https://code.visualstudio.com/learn/get-started/personalize) - Make VS Code yours with custom themes and colors
+- [Personalize Visual Studio Code]({{< ref "/Learn/getstarted/Customize" >}}) - Make VS Code yours with custom themes and colors
   个性化 Visual Studio Code - 使用自定义主题和颜色让 VS Code 成为您的专属工具
 
-## [Learn more 了解更多信息](https://code.visualstudio.com/learn/get-started/extensions#_learn-more)
+## [Learn more 了解更多信息]({{< ref "/Learn/getstarted/Extensions#_learn-more" >}})
 
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - View the documentation for VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - View the documentation for VS Code.
   用户界面 - 查看 VS Code 的文档。
-- [Setup overview](https://code.visualstudio.com/docs/setup/setup-overview) - Documentation for getting up and running with VS Code, including platform-specific setup.
+- [Setup overview]({{< ref "/Setup/Overview" >}}) - Documentation for getting up and running with VS Code, including platform-specific setup.
   设置概述 - VS Code 的启动和运行文档，包括特定于平台的设置。

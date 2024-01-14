@@ -22,17 +22,17 @@ VS Code for the Web has many of the features of VS Code Desktop that you love, i
 
 ​​	VS Code for the Web 具有许多您喜爱的 VS Code Desktop 功能，包括在浏览和编辑时进行搜索和语法突出显示，以及扩展支持，以便处理您的代码库并进行更简单的编辑。除了从 GitHub 和 Azure Repos 等源代码控制提供程序打开存储库、分支和拉取请求外，您还可以处理存储在本地计算机上的代码。
 
-VS Code for the Web runs entirely in your web browser, so there are certain limitations compared to the desktop experience, which you can read more about [below](https://code.visualstudio.com/docs/editor/vscode-web#_limitations).
+VS Code for the Web runs entirely in your web browser, so there are certain limitations compared to the desktop experience, which you can read more about [below]({{< ref "/UserGuide/VSCodefortheWeb#_limitations" >}}).
 
 ​​	VS Code for the Web 完全在您的 Web 浏览器中运行，因此与桌面体验相比存在一定的局限性，您可以在下面阅读更多相关信息。
 
-## [Relationship to VS Code Desktop 与 VS Code Desktop 的关系](https://code.visualstudio.com/docs/editor/vscode-web#_relationship-to-vs-code-desktop)
+## [Relationship to VS Code Desktop 与 VS Code Desktop 的关系]({{< ref "/UserGuide/VSCodefortheWeb#_relationship-to-vs-code-desktop" >}})
 
-VS Code for the Web provides a browser-based experience for navigating files and repositories and committing lightweight code changes. However, if you need access to a runtime to run, build, or debug your code, you want to use platform features such as a terminal, or you want to run extensions that aren't supported in the web, we recommend moving your work to the desktop application, [GitHub Codespaces](https://github.com/features/codespaces), or using [Remote - Tunnels](https://code.visualstudio.com/docs/editor/vscode-web#_use-your-own-compute-with-remote-tunnels) for the full capabilities of VS Code. In addition, VS Code Desktop lets you use a full set of keyboard shortcuts not limited by your browser.
+VS Code for the Web provides a browser-based experience for navigating files and repositories and committing lightweight code changes. However, if you need access to a runtime to run, build, or debug your code, you want to use platform features such as a terminal, or you want to run extensions that aren't supported in the web, we recommend moving your work to the desktop application, [GitHub Codespaces](https://github.com/features/codespaces), or using [Remote - Tunnels]({{< ref "/UserGuide/VSCodefortheWeb#_use-your-own-compute-with-remote-tunnels" >}}) for the full capabilities of VS Code. In addition, VS Code Desktop lets you use a full set of keyboard shortcuts not limited by your browser.
 
 ​​	VS Code for the Web 提供基于浏览器的体验，用于导航文件和存储库以及提交轻量级代码更改。但是，如果您需要访问运行时来运行、构建或调试代码，您希望使用平台功能（如终端），或者您希望运行 Web 中不支持的扩展，我们建议您将工作移至桌面应用程序、GitHub Codespaces 或使用 Remote - Tunnels 以获得 VS Code 的全部功能。此外，VS Code Desktop 允许您使用一整套键盘快捷键，而不会受到浏览器的限制。
 
-When you're ready to switch, you'll be able to ["upgrade"](https://code.visualstudio.com/docs/editor/vscode-web#_continue-working-in-a-different-environment) to the full VS Code experience with a few clicks.
+When you're ready to switch, you'll be able to ["upgrade"]({{< ref "/UserGuide/VSCodefortheWeb#_continue-working-in-a-different-environment" >}}) to the full VS Code experience with a few clicks.
 
 ​​	当您准备好切换时，只需单击几下即可“升级”到完整的 VS Code 体验。
 
@@ -40,7 +40,7 @@ You can also switch between the Stable and Insiders versions of VS Code for the 
 
 ​​	您还可以通过选择齿轮图标，然后选择切换到 Insiders 版本...，或直接导航到 https://insiders.vscode.dev 来在 VS Code for the Web 的稳定版和 Insiders 版本之间切换。
 
-## [Opening a project 打开项目](https://code.visualstudio.com/docs/editor/vscode-web#_opening-a-project)
+## [Opening a project 打开项目]({{< ref "/UserGuide/VSCodefortheWeb#_opening-a-project" >}})
 
 By navigating to [https://vscode.dev](https://vscode.dev/), you can create a new local file or project, work on an existing local project, or access source code repositories hosted elsewhere, such as on GitHub and Azure Repos (part of Azure DevOps).
 
@@ -50,7 +50,7 @@ You can create a new local file in the web just as you would in a VS Code Deskto
 
 ​​	您可以在 Web 中创建新的本地文件，就像在 VS Code 桌面环境中使用“文件”>“命令面板”（F1）中的“新建文件”一样。
 
-## [GitHub repos GitHub 存储库](https://code.visualstudio.com/docs/editor/vscode-web#_github-repos)
+## [GitHub repos GitHub 存储库]({{< ref "/UserGuide/VSCodefortheWeb#_github-repos" >}})
 
 You can open a GitHub repository in VS Code for the Web directly from a URL, following the schema: `https://vscode.dev/github/<organization>/<repo>`. Using the [VS Code repository](https://github.com/microsoft/vscode) as an example, this would look like: `https://vscode.dev/github/microsoft/vscode`.
 
@@ -60,7 +60,7 @@ This experience is delivered at a custom `vscode.dev/github` URL, which is power
 
 ​​	此体验通过自定义 `vscode.dev/github` URL 提供，该 URL 由 GitHub 存储库扩展（作为更广泛的远程存储库扩展的一部分）提供支持。
 
-GitHub Repositories allows you to remotely browse and edit a repository from within the editor, without needing to pull code onto your local machine. You can learn more about the extension and how it works in our [GitHub Repositories](https://code.visualstudio.com/docs/sourcecontrol/github#_github-repositories-extension) guide.
+GitHub Repositories allows you to remotely browse and edit a repository from within the editor, without needing to pull code onto your local machine. You can learn more about the extension and how it works in our [GitHub Repositories]({{< ref "/SourceControl/CollaborateonGitHub#_github-repositories-extension" >}}) guide.
 
 ​​	GitHub 存储库允许您在编辑器中远程浏览和编辑存储库，而无需将代码拉取到本地计算机上。您可以在我们的 GitHub 存储库指南中了解有关该扩展的更多信息以及它的工作原理。
 
@@ -80,7 +80,7 @@ If you're already in VS Code for the Web at [https://vscode.dev](https://vscode.
 
 ![GitHub Repositories](./VSCodefortheWeb_img/remote-repositories.png)
 
-## [Azure Repos](https://code.visualstudio.com/docs/editor/vscode-web#_azure-repos)
+## [Azure Repos]({{< ref "/UserGuide/VSCodefortheWeb#_azure-repos" >}})
 
 You can open Azure Repos just like Github repos in VS Code for the Web.
 
@@ -98,7 +98,7 @@ Alternatively, when you are on an Azure DevOps repository or pull request, you c
 
 ​​	或者，当您在 Azure DevOps 存储库或拉取请求中时，可以按 (.) 在 VS Code for the Web 中将其打开。
 
-## [More custom URLs 更多自定义 URL](https://code.visualstudio.com/docs/editor/vscode-web#_more-custom-urls)
+## [More custom URLs 更多自定义 URL]({{< ref "/UserGuide/VSCodefortheWeb#_more-custom-urls" >}})
 
 Like in the desktop, you can customize VS Code for the Web through a rich ecosystem of extensions that support just about every back end, language, and service. `vscode.dev` includes URLs that provide shortcuts to common experiences.
 
@@ -110,13 +110,13 @@ We've explored a couple of URLs already (`vscode.dev/github` and `vscode.dev/azu
 
 | Service 服务                                      | URL Structure URL 结构                                       | Docs 文档                                                    |
 | :------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| GitHub                                            | `/github/<org>/<repo>`                                       | [More info above 上面的更多信息](https://code.visualstudio.com/docs/editor/vscode-web#_github-repos) |
-| Azure Repos                                       | `/azurerepos/<org>/<project>/<repo>`                         | [More info above 上面的更多信息](https://code.visualstudio.com/docs/editor/vscode-web#_azure-repos) |
-| Visual Studio Live Share                          | `/editor/liveshare/<sessionId>`                              | [More info below 更多信息如下](https://code.visualstudio.com/docs/editor/vscode-web#_visual-studio-live-share) |
+| GitHub                                            | `/github/<org>/<repo>`                                       | [More info above 上面的更多信息]({{< ref "/UserGuide/VSCodefortheWeb#_github-repos" >}}) |
+| Azure Repos                                       | `/azurerepos/<org>/<project>/<repo>`                         | [More info above 上面的更多信息]({{< ref "/UserGuide/VSCodefortheWeb#_azure-repos" >}}) |
+| Visual Studio Live Share                          | `/editor/liveshare/<sessionId>`                              | [More info below 更多信息如下]({{< ref "/UserGuide/VSCodefortheWeb#_visual-studio-live-share" >}}) |
 | Visual Studio Marketplace                         | `/editor/marketplace/<marketplacePublisher>` `/<extensionId>/<extensionVersion>` | [Example route](https://insiders.vscode.dev/editor/marketplace/Brigit/devcontainer-image-convert/0.0.1) to edit [this extension](https://marketplace.visualstudio.com/items?itemName=Brigit.devcontainer-image-convert) 编辑此扩展的示例路线 |
 | Power Pages                                       | `/power/pages`                                               | [Power Pages docs Power Pages 文档](https://learn.microsoft.com/power-pages/configure/visual-studio-code-editor) |
-| Profiles 配置文件                                 | `/editor/profile/github/<GUID>`                              | [Profiles docs Profiles 文档](https://code.visualstudio.com/docs/editor/profiles#_save-as-a-github-gist) |
-| Themes 主题                                       | `/editor/theme/<extensionId>`                                | [More info below 更多信息如下](https://code.visualstudio.com/docs/editor/vscode-web#_themes) |
+| Profiles 配置文件                                 | `/editor/profile/github/<GUID>`                              | [Profiles docs Profiles 文档]({{< ref "/UserGuide/Profiles#_save-as-a-github-gist" >}}) |
+| Themes 主题                                       | `/editor/theme/<extensionId>`                                | [More info below 更多信息如下]({{< ref "/UserGuide/VSCodefortheWeb#_themes" >}}) |
 | MakeCode                                          | `/edu/makecode`                                              | [MakeCode docs MakeCode 文档](https://arcade.makecode.com/vscode) |
 | VS Code for Education                             | `/edu`                                                       | [VS Code for Education landing page VS Code for Education 登陆页面](https://vscodeedu.com/) |
 | Azure Machine Learning (AML) Azure 机器学习 (AML) | `/+ms-toolsai.vscode-ai-remote-web`                          | [AML docs AML 文档](https://learn.microsoft.com/azure/machine-learning/how-to-launch-vs-code-remote?view=azureml-api-2&tabs=vscode-web) |
@@ -129,7 +129,7 @@ There's more information on some of these URLs below.
 
 ​​	下面是其中一些 URL 的更多信息。
 
-### [Themes 主题](https://code.visualstudio.com/docs/editor/vscode-web#_themes)
+### [Themes 主题]({{< ref "/UserGuide/VSCodefortheWeb#_themes" >}})
 
 You can share and experience color themes through VS Code for the Web through the URL schema: `https://vscode.dev/editor/theme/<extensionId>`.
 
@@ -155,13 +155,13 @@ As a theme author, you can add the following badge to your extension readme to a
 [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/<extensionId>)
 ```
 
-### [Visual Studio Live Share](https://code.visualstudio.com/docs/editor/vscode-web#_visual-studio-live-share)
+### [Visual Studio Live Share]({{< ref "/UserGuide/VSCodefortheWeb#_visual-studio-live-share" >}})
 
 [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) guest sessions are available in the browser through the `https://vscode.dev/editor/liveshare` URL. The `sessionId` will be passed to the extension to make joining a seamless experience.
 
 ​​	Live Share 客人会话可通过 `https://vscode.dev/editor/liveshare` URL 在浏览器中使用。将 `sessionId` 传递给扩展，以使加入成为无缝体验。
 
-## [Continue working in a different environment 在其他环境中继续工作](https://code.visualstudio.com/docs/editor/vscode-web#_continue-working-in-a-different-environment)
+## [Continue working in a different environment 在其他环境中继续工作]({{< ref "/UserGuide/VSCodefortheWeb#_continue-working-in-a-different-environment" >}})
 
 In some cases, you will want to access a different environment that has the ability to run code. You can switch to working on a repository in a development environment that has support for a local file system and full language and development tooling.
 
@@ -171,9 +171,9 @@ The GitHub Repositories extension makes it easy for you to clone the repository 
 
 ​​	GitHub Repositories 扩展使您可以轻松地在本地克隆存储库、在桌面上重新打开存储库或为当前存储库创建 GitHub 代码空间（如果您已安装 GitHub Codespaces 扩展并有权创建 GitHub 代码空间）。为此，请使用“命令面板”(F1) 中提供的“继续处理...”命令，或单击状态栏中的“远程”指示器。
 
-## [Saving and sharing work 保存和共享工作](https://code.visualstudio.com/docs/editor/vscode-web#_saving-and-sharing-work)
+## [Saving and sharing work 保存和共享工作]({{< ref "/UserGuide/VSCodefortheWeb#_saving-and-sharing-work" >}})
 
-When working on a local file in the web, your work is saved automatically if you have [Auto Save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) enabled. You can also save manually as you do when working in desktop VS Code (for example **File** > **Save**).
+When working on a local file in the web, your work is saved automatically if you have [Auto Save]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}}) enabled. You can also save manually as you do when working in desktop VS Code (for example **File** > **Save**).
 
 ​​	在网络中处理本地文件时，如果已启用自动保存，您的工作会自动保存。您也可以像在桌面 VS Code 中工作时一样手动保存（例如文件 > 保存）。
 
@@ -181,15 +181,15 @@ When working on a remote repository, your work is saved in the browser's local s
 
 ​​	在远程存储库中工作时，您的工作会保存在浏览器的本地存储中，直到您提交它。如果您使用 GitHub 存储库打开存储库或拉取请求，您可以在源代码管理视图中推送您的更改以保留任何新工作。
 
-You can also continue working in other environments via [Continue Working On](https://code.visualstudio.com/docs/editor/vscode-web#_continue-working-in-a-different-environment).
+You can also continue working in other environments via [Continue Working On]({{< ref "/UserGuide/VSCodefortheWeb#_continue-working-in-a-different-environment" >}}).
 
 ​​	您还可以通过继续处理继续在其他环境中工作。
 
-The first time that you use **Continue Working On** with uncommitted changes, you will have the option to bring your edits to your selected development environment using **Cloud Changes**, which uses a VS Code service to store your pending changes. This is described further in the [GitHub Repositories](https://code.visualstudio.com/docs/sourcecontrol/github#_continue-working-on) doc.
+The first time that you use **Continue Working On** with uncommitted changes, you will have the option to bring your edits to your selected development environment using **Cloud Changes**, which uses a VS Code service to store your pending changes. This is described further in the [GitHub Repositories]({{< ref "/SourceControl/CollaborateonGitHub#_continue-working-on" >}}) doc.
 
 ​​	第一次使用继续处理处理未提交的更改时，您将可以选择使用云更改将您的编辑内容带到您选择的开发环境，云更改使用 VS Code 服务来存储您的待处理更改。这在 GitHub 存储库文档中进行了进一步描述。
 
-## [Use your own compute with Remote Tunnels 使用远程隧道使用您自己的计算](https://code.visualstudio.com/docs/editor/vscode-web#_use-your-own-compute-with-remote-tunnels)
+## [Use your own compute with Remote Tunnels 使用远程隧道使用您自己的计算]({{< ref "/UserGuide/VSCodefortheWeb#_use-your-own-compute-with-remote-tunnels" >}})
 
 You may develop against another machine in VS Code for the Web using the [Remote - Tunnels](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-server) extension.
 
@@ -199,11 +199,11 @@ The Remote - Tunnels extension lets you connect to a remote machine, like a desk
 
 ​​	Remote - Tunnels 扩展程序允许您通过安全隧道连接到远程计算机，例如台式机或虚拟机 (VM)。然后，您可以从任何地方安全地连接到该计算机，而无需 SSH。这使您能够将“自己的计算”带到 vscode.dev，从而实现其他方案，例如在浏览器中运行代码。
 
-You may learn more about Remote - Tunnels in its [documentation](https://code.visualstudio.com/docs/remote/tunnels).
+You may learn more about Remote - Tunnels in its [documentation]({{< ref "/Remote/Tunnels" >}}).
 
 ​​	您可以在其文档中了解有关 Remote - Tunnels 的更多信息。
 
-## [Safe exploration 安全探索](https://code.visualstudio.com/docs/editor/vscode-web#_safe-exploration)
+## [Safe exploration 安全探索]({{< ref "/UserGuide/VSCodefortheWeb#_safe-exploration" >}})
 
 VS Code for the Web runs entirely in your web browser's sandbox and offers a very limited execution environment.
 
@@ -217,13 +217,13 @@ When working with local files, VS Code for the Web loads them through your brows
 
 ​​	在使用本地文件时，VS Code for the Web 会通过浏览器的文件系统访问 API 加载它们，这限制了浏览器可以访问的范围。
 
-## [Run anywhere 随处运行](https://code.visualstudio.com/docs/editor/vscode-web#_run-anywhere)
+## [Run anywhere 随处运行]({{< ref "/UserGuide/VSCodefortheWeb#_run-anywhere" >}})
 
-Similar to [GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces), VS Code for the Web can run on tablets, like iPads.
+Similar to [GitHub Codespaces]({{< ref "/Remote/GitHubCodespaces" >}}), VS Code for the Web can run on tablets, like iPads.
 
 ​​	与 GitHub Codespaces 类似，VS Code for the Web 可以在平板电脑（如 iPad）上运行。
 
-## [Language support 语言支持](https://code.visualstudio.com/docs/editor/vscode-web#_language-support)
+## [Language support 语言支持]({{< ref "/UserGuide/VSCodefortheWeb#_language-support" >}})
 
 Language support is a bit more nuanced on the web, including code editing, navigation, and browsing. The desktop experiences are typically powered by language services and compilers that expect a file system, runtime, and compute environment. In the browser, these experiences are powered by language services running in the browser that provide source code tokenization and syntax colorization, completions, and many single-file operations.
 
@@ -246,13 +246,13 @@ You can determine the level of language support in your current file through the
 
 ![Language status indicator](./VSCodefortheWeb_img/status-indicator.png)
 
-## [Limitations 局限性](https://code.visualstudio.com/docs/editor/vscode-web#_limitations)
+## [Limitations 局限性]({{< ref "/UserGuide/VSCodefortheWeb#_limitations" >}})
 
 Since VS Code for the Web runs completely within the browser, some experiences will naturally be more constrained when compared to what you can do in the desktop app. For example, the terminal and debugger are not available, which makes sense since you can't compile, run, and debug a Rust or Go application within the browser sandbox.
 
 ​​	由于 VS Code for the Web 完全在浏览器中运行，因此与您在桌面应用程序中可以执行的操作相比，某些体验自然会受到更多限制。例如，终端和调试器不可用，因为您无法在浏览器沙盒中编译、运行和调试 Rust 或 Go 应用程序。
 
-### [Extensions 扩展](https://code.visualstudio.com/docs/editor/vscode-web#_extensions)
+### [Extensions 扩展]({{< ref "/UserGuide/VSCodefortheWeb#_extensions" >}})
 
 Only a subset of extensions can run in the browser. You can use the Extensions view to install extensions in the web, and extensions that cannot be installed will have a warning icon and **Learn Why** link. We expect more extensions to become enabled over time.
 
@@ -260,7 +260,7 @@ Only a subset of extensions can run in the browser. You can use the Extensions v
 
 ![Limited extension support](./VSCodefortheWeb_img/extension-limit.png)
 
-When you install an extension, it is saved in the browser's local storage. You can ensure your extensions are synced across VS Code instances, including different browsers and even the desktop, by enabling [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync).
+When you install an extension, it is saved in the browser's local storage. You can ensure your extensions are synced across VS Code instances, including different browsers and even the desktop, by enabling [Settings Sync]({{< ref "/UserGuide/SettingsSync" >}}).
 
 ​​	安装扩展时，它将保存在浏览器的本地存储中。您可以通过启用设置同步来确保您的扩展在 VS Code 实例（包括不同的浏览器甚至桌面）之间同步。
 
@@ -274,17 +274,17 @@ When extensions are executed in the browser sandbox, they are more restricted. E
 
 ​​	当扩展在浏览器沙盒中执行时，它们受到更多限制。纯声明性扩展（例如大多数主题、代码段或语法）可以运行且无需修改，并且在 VS Code for the Web 中可用，无需扩展作者进行任何修改。正在运行代码的扩展需要更新以支持在浏览器沙盒中运行。您可以在 Web 扩展作者指南中阅读有关在浏览器中支持扩展的更多信息。
 
-There are also extensions that run in the browser with partial support only. A good example is a language extension that [restricts its support](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_partial-intellisense-mode) to single files or the currently opened files.
+There are also extensions that run in the browser with partial support only. A good example is a language extension that [restricts its support]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_partial-intellisense-mode" >}}) to single files or the currently opened files.
 
 ​​	还有一些扩展仅在浏览器中运行，且仅提供部分支持。一个很好的示例是将支持限制为单个文件或当前打开文件的语言扩展。
 
-### [File system API 文件系统 API](https://code.visualstudio.com/docs/editor/vscode-web#_file-system-api)
+### [File system API 文件系统 API]({{< ref "/UserGuide/VSCodefortheWeb#_file-system-api" >}})
 
 Edge and Chrome today support the [File System API](https://developer.mozilla.org/docs/Web/API/File_System_Access_API), allowing web pages to access the local file system. If your browser does not support the File System API, you cannot open a folder locally, but you can open files instead.
 
 ​​	Edge 和 Chrome 目前支持文件系统 API，允许网页访问本地文件系统。如果您的浏览器不支持文件系统 API，则无法在本地打开文件夹，但您可以打开文件。
 
-### [Browser support 浏览器支持](https://code.visualstudio.com/docs/editor/vscode-web#_browser-support)
+### [Browser support 浏览器支持]({{< ref "/UserGuide/VSCodefortheWeb#_browser-support" >}})
 
 You can use VS Code for the Web in the latest versions of Chrome, Edge, Firefox, and Safari. Older versions of each browser may not work - we only guarantee support for the latest version.
 
@@ -298,17 +298,17 @@ Webviews might appear differently or have some unexpected behavior in Firefox an
 
 ​​	Webview 在 Firefox 和 Safari 中可能看起来不同或有一些意外的行为。您可以在 VS Code GitHub 存储库中查看问题查询以跟踪与特定浏览器相关的问题，例如 Safari 标签和 Firefox 标签。
 
-There are additional steps you can take to improve your browser experience using VS Code for the Web. Review the [Additional browser setup](https://code.visualstudio.com/docs/editor/vscode-web#_additional-browser-setup) section for more information.
+There are additional steps you can take to improve your browser experience using VS Code for the Web. Review the [Additional browser setup]({{< ref "/UserGuide/VSCodefortheWeb#_additional-browser-setup" >}}) section for more information.
 
 ​​	您可以采取其他步骤来改善使用 VS Code for the Web 的浏览器体验。有关更多信息，请查看其他浏览器设置部分。
 
-### [Mobile support 移动设备支持](https://code.visualstudio.com/docs/editor/vscode-web#_mobile-support)
+### [Mobile support 移动设备支持]({{< ref "/UserGuide/VSCodefortheWeb#_mobile-support" >}})
 
 You can use VS Code for the Web on mobile devices, but smaller screens may have certain limitations.
 
 ​​	您可以在移动设备上使用 VS Code for the Web，但较小的屏幕可能存在某些限制。
 
-### [Keybindings 键绑定](https://code.visualstudio.com/docs/editor/vscode-web#_keybindings)
+### [Keybindings 键绑定]({{< ref "/UserGuide/VSCodefortheWeb#_keybindings" >}})
 
 Certain keybindings may also work differently in the web.
 
@@ -322,13 +322,13 @@ Certain keybindings may also work differently in the web.
 | Ctrl+Shift+B will not toggle the favorites bar in the browser. Ctrl+Shift+B 不会在浏览器中切换收藏栏。 | VS Code for the Web overrides this and redirects to the "Build" menu in the Command Palette. VS Code for the Web 会覆盖此操作，并重定向到命令面板中的“生成”菜单。 |
 | Alt+Left and Alt+Right should navigate within the editor but may incorrectly trigger tab history navigation. Alt+左箭头和 Alt+右箭头应在编辑器内导航，但可能会错误地触发选项卡历史记录导航。 | If focus is outside the editor, these shortcuts trigger tab history navigation instead. 如果焦点不在编辑器外，这些快捷方式会触发选项卡历史记录导航。 |
 
-## [Additional browser setup 其他浏览器设置](https://code.visualstudio.com/docs/editor/vscode-web#_additional-browser-setup)
+## [Additional browser setup 其他浏览器设置]({{< ref "/UserGuide/VSCodefortheWeb#_additional-browser-setup" >}})
 
 There are additional browser configuration steps you can take when working with VS Code in a browser.
 
 ​​	在浏览器中使用 VS Code 时，您可以执行其他浏览器配置步骤。
 
-### [Opening new tabs and windows 打开新选项卡和窗口](https://code.visualstudio.com/docs/editor/vscode-web#_opening-new-tabs-and-windows)
+### [Opening new tabs and windows 打开新选项卡和窗口]({{< ref "/UserGuide/VSCodefortheWeb#_opening-new-tabs-and-windows" >}})
 
 In certain cases, you may need to open a new tab or window while working in VS Code for the Web. VS Code might ask you for permission to access the clipboard when reading from it. Depending on your browser, you may grant access to the clipboard or otherwise allow for pop-up windows in different ways:
 

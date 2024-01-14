@@ -18,7 +18,7 @@ This document is an overview of how to build your C# projects and solutions in t
 
 ​​​	此文档概述了如何在 Visual Studio Code 的 C# 工具中构建 C# 项目和解决方案。它涵盖了 C# Dev Kit 扩展提供的功能。
 
-## [Building a solution 构建解决方案](https://code.visualstudio.com/docs/csharp/build-tools#_building-a-solution)
+## [Building a solution 构建解决方案]({{< ref "/C#/BuildTools#_building-a-solution" >}})
 
 When a solution is loaded, the C# Dev Kit extension provides several tasks that operate on the solution and the projects contained in it. In addition to the ability to right-click and build on any solution or project in the Solution Explorer, you can build your entire solution using the `.NET: Build` command:
 
@@ -40,7 +40,7 @@ You can also `watch` specific projects with these tasks. Watching a project mean
 
 ​​​	您还可以使用这些任务 `watch` 特定项目。监视项目意味着查看项目的源文件，并在这些文件发生更改时重新构建项目。这与直接对项目运行 dotnet watch 命令相同，只是集成到了您的编辑器中。
 
-## [Managing project files 管理项目文件](https://code.visualstudio.com/docs/csharp/build-tools#_managing-project-files)
+## [Managing project files 管理项目文件]({{< ref "/C#/BuildTools#_managing-project-files" >}})
 
 The project file is an extensible XML document that describes how your project should build. You can learn more about .NET Project files in the [.NET project SDKs documentation](https://learn.microsoft.com/dotnet/core/project-sdk/overview), but in general you modify your build by adding Properties (XML elements with inner values) and Items (XML elements with attributes).
 

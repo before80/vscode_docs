@@ -22,7 +22,7 @@ Visual Studio Code has built-in support for TypeScript refactoring through the [
 
 ​​	Visual Studio Code 通过 TypeScript 语言服务内置支持 TypeScript 重构，在本主题中，我们将演示使用 TypeScript 语言服务进行重构支持。
 
-## [Rename 重命名](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_rename)
+## [Rename 重命名]({{< ref "/TypeScript/Refactoring#_rename" >}})
 
 One of the simplest refactorings is to rename a method or variable. Press F2 to rename the symbol under the cursor across your TypeScript project:
 
@@ -30,7 +30,7 @@ One of the simplest refactorings is to rename a method or variable. Press F2 to 
 
 ![Renaming a method](./Refactoring_img/rename.png)
 
-## [Refactoring 重构](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_refactoring)
+## [Refactoring 重构]({{< ref "/TypeScript/Refactoring#_refactoring" >}})
 
 To see the available TypeScript refactorings, put your cursor on a region of your source code and either right-click to bring up the editor context menu and select **Refactor** or press Ctrl+Shift+R directly.
 
@@ -38,7 +38,7 @@ To see the available TypeScript refactorings, put your cursor on a region of you
 
 ![TypeScript refactoring](./Refactoring_img/refactorings.png)
 
-See [Refactorings](https://code.visualstudio.com/docs/editor/refactoring) for more information about refactorings and how you can configure keyboard shortcuts for individual refactorings.
+See [Refactorings]({{< ref "/UserGuide/Refactoring" >}}) for more information about refactorings and how you can configure keyboard shortcuts for individual refactorings.
 
 ​​	有关重构的更多信息以及如何为各个重构配置键盘快捷方式，请参阅重构。
 
@@ -104,7 +104,7 @@ Available TypeScript refactorings include:
 
   ​​	在箭头函数中添加/删除大括号 - 将单行箭头函数转换为多行，反之亦然。
 
-## [Quick Fixes 快速修复](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_quick-fixes)
+## [Quick Fixes 快速修复]({{< ref "/TypeScript/Refactoring#_quick-fixes" >}})
 
 Quick Fixes are suggested edits that address simple coding errors. Example Quick Fixes include:
 
@@ -119,7 +119,7 @@ Quick Fixes are suggested edits that address simple coding errors. Example Quick
 - Declaring
   声明
 
-When you move your cursor on to a TypeScript error, VS Code shows a light bulb that indicates that Quick Fixes are available. Click the light bulb or press Ctrl+. to show a list of available Quick Fixes and [refactorings](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_refactoring).
+When you move your cursor on to a TypeScript error, VS Code shows a light bulb that indicates that Quick Fixes are available. Click the light bulb or press Ctrl+. to show a list of available Quick Fixes and [refactorings]({{< ref "/TypeScript/Refactoring#_refactoring" >}}).
 
 ​​	将光标移到 TypeScript 错误上时，VS Code 会显示一个指示灯泡，表示可以使用快速修复。单击灯泡或按 Ctrl+. 以显示可用快速修复和重构的列表。
 
@@ -131,7 +131,7 @@ The command highlights the source code that will be refactored or fixed with Qui
 
 ​​	该命令突出显示将通过快速修复重构或修复的源代码。仍然可以在光标位置激活常规代码操作和非修复重构。
 
-## [Unused variables and unreachable code 未使用的变量和不可达代码](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_unused-variables-and-unreachable-code)
+## [Unused variables and unreachable code 未使用的变量和不可达代码]({{< ref "/TypeScript/Refactoring#_unused-variables-and-unreachable-code" >}})
 
 Unused TypeScript code, such as the `else` block of an `if` statement that is always true or an unreferenced import, is faded out in the editor:
 
@@ -156,7 +156,7 @@ To disable fading out of unused code, set `"editor.showUnused"` to `false`. You 
 },
 ```
 
-## [Organize Imports 整理导入](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_organize-imports)
+## [Organize Imports 整理导入]({{< ref "/TypeScript/Refactoring#_organize-imports" >}})
 
 The **Organize Imports** source code action sorts the imports in a TypeScript file and removes unused imports:
 
@@ -180,7 +180,7 @@ Organize imports can also be done automatically when you save a TypeScript file 
 }
 ```
 
-## [Update imports on file move 在移动文件时更新导入](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_update-imports-on-file-move)
+## [Update imports on file move 在移动文件时更新导入]({{< ref "/TypeScript/Refactoring#_update-imports-on-file-move" >}})
 
 When you move or rename a file that is imported by other files in your TypeScript project, VS Code can automatically update all import paths that reference the moved file.
 
@@ -197,7 +197,7 @@ The `typescript.updateImportsOnFileMove.enabled` setting controls this behavior.
 - `"never"` - Do not update paths automatically and do not prompt.
   `"never"` - 不要自动更新路径，也不要提示。
 
-## [Code Actions on Save 保存时的代码操作](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_code-actions-on-save)
+## [Code Actions on Save 保存时的代码操作]({{< ref "/TypeScript/Refactoring#_code-actions-on-save" >}})
 
 The `editor.codeActionsOnSave` setting lets you configure a set of Code Actions that are run when a file is saved. For example, you can enable Organize Imports on save by setting:
 
@@ -239,11 +239,11 @@ Here are some source actions:
 - `"addMissingImports"` - Adds all missing imports on save.
   `"addMissingImports"` - 保存时添加所有缺失的导入。
 
-See [TypeScript](https://code.visualstudio.com/docs/typescript/typescript-tutorial) for more information.
+See [TypeScript]({{< ref "/TypeScript/Tutorial" >}}) for more information.
 
 ​​	有关详细信息，请参阅 TypeScript。
 
-## [Code suggestions 代码建议](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_code-suggestions)
+## [Code suggestions 代码建议]({{< ref "/TypeScript/Refactoring#_code-suggestions" >}})
 
 VS Code automatically suggests some common code simplifications such as converting a chain of `.then` calls on a promise to use `async` and `await`
 
@@ -257,13 +257,13 @@ Set `"typescript.suggestionActions.enabled"` to `false` to disable suggestions.
 
 ​​	将 `"typescript.suggestionActions.enabled"` 设置为 `false` 以禁用建议。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/typescript/typescript-refactoring#_next-steps)
+## [Next steps 后续步骤]({{< ref "/TypeScript/Refactoring#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [Editing TypeScript](https://code.visualstudio.com/docs/typescript/typescript-editing) - Learn about VS Code editing features for TypeScript.
+- [Editing TypeScript]({{< ref "/TypeScript/Editing" >}}) - Learn about VS Code editing features for TypeScript.
   编辑 TypeScript - 了解 VS Code 的 TypeScript 编辑功能。
-- [Debugging TypeScript](https://code.visualstudio.com/docs/typescript/typescript-debugging) - Configure the debugger for your TypeScript project.
+- [Debugging TypeScript]({{< ref "/TypeScript/Debugging" >}}) - Configure the debugger for your TypeScript project.
   调试 TypeScript - 为 TypeScript 项目配置调试器。

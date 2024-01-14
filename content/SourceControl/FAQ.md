@@ -10,13 +10,13 @@ draft = false
 
 > 原文: [https://code.visualstudio.com/docs/sourcecontrol/faq](https://code.visualstudio.com/docs/sourcecontrol/faq)
 
-### [ 如何编辑最近的提交消息？](https://code.visualstudio.com/docs/sourcecontrol/faq#_how-to-i-edit-the-most-recent-commit-message)
+### [ 如何编辑最近的提交消息？]({{< ref "/SourceControl/FAQ#_how-to-i-edit-the-most-recent-commit-message" >}})
 
 To update the commit message for the last local commit use the **Git: Commit Staged (Amend)** command. It will open an editor to edit and save the last message. Make sure that no other changes are staged, as they would be included with the commit.
 
 ​​	若要更新最近本地提交的提交消息，请使用 Git：提交暂存（修改）命令。它将打开一个编辑器以编辑并保存最后一条消息。确保未暂存其他更改，因为它们将包含在提交中。
 
-### [I initialized my repo but the actions in the ... menu are all grayed out 我初始化了我的存储库，但 ... 菜单中的操作全部灰显](https://code.visualstudio.com/docs/sourcecontrol/faq#_i-initialized-my-repo-but-the-actions-in-the-menu-are-all-grayed-out)
+### [I initialized my repo but the actions in the ... menu are all grayed out 我初始化了我的存储库，但 ... 菜单中的操作全部灰显]({{< ref "/SourceControl/FAQ#_i-initialized-my-repo-but-the-actions-in-the-menu-are-all-grayed-out" >}})
 
 To **push, pull, and sync** you need to have a Git origin set up. You can get the required URL from the repository host. Once you have that URL, you need to add it to the Git settings by running a couple of command-line actions. For example:
 
@@ -27,13 +27,13 @@ To **push, pull, and sync** you need to have a Git origin set up. You can get th
 > git push -u origin main
 ```
 
-### [My team is using Team Foundation Version Control (TFVC) instead of Git. What should I do? 我的团队使用 Team Foundation 版本控制 (TFVC) 而不是 Git。我该怎么办？](https://code.visualstudio.com/docs/sourcecontrol/faq#_my-team-is-using-team-foundation-version-control-tfvc-instead-of-git-what-should-i-do)
+### [My team is using Team Foundation Version Control (TFVC) instead of Git. What should I do? 我的团队使用 Team Foundation 版本控制 (TFVC) 而不是 Git。我该怎么办？]({{< ref "/SourceControl/FAQ#_my-team-is-using-team-foundation-version-control-tfvc-instead-of-git-what-should-i-do" >}})
 
 Use the [Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) extension and this will light up TFVC support.
 
 ​​	使用 Azure Repos 扩展，这将点亮 TFVC 支持。
 
-### [Why do the Pull, Push and Sync actions never finish? 为什么拉取、推送和同步操作永远不会完成？](https://code.visualstudio.com/docs/sourcecontrol/faq#_why-do-the-pull-push-and-sync-actions-never-finish)
+### [Why do the Pull, Push and Sync actions never finish? 为什么拉取、推送和同步操作永远不会完成？]({{< ref "/SourceControl/FAQ#_why-do-the-pull-push-and-sync-actions-never-finish" >}})
 
 This usually means there is no credential management configured in Git and you're not getting credential prompts for some reason.
 
@@ -43,19 +43,19 @@ You can always set up a [credential helper](https://docs.github.com/get-started/
 
 ​​	您始终可以设置凭据帮助程序，以便从远程服务器拉取和推送，而无需 VS Code 每次都提示您输入凭据。
 
-### [How can I sign in to Git with my Azure DevOps organization that requires multi-factor authentication? 如何使用需要多重身份验证的 Azure DevOps 组织登录 Git？](https://code.visualstudio.com/docs/sourcecontrol/faq#_how-can-i-sign-in-to-git-with-my-azure-devops-organization-that-requires-multifactor-authentication)
+### [How can I sign in to Git with my Azure DevOps organization that requires multi-factor authentication? 如何使用需要多重身份验证的 Azure DevOps 组织登录 Git？]({{< ref "/SourceControl/FAQ#_how-can-i-sign-in-to-git-with-my-azure-devops-organization-that-requires-multifactor-authentication" >}})
 
 [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (GCM) is the recommended Git credential helper for Windows, macOS, and Linux. If you're running Git for Windows, GCM has already been installed and configured for you. If you're running on macOS or Linux, the GCM [README](https://github.com/GitCredentialManager/git-credential-manager#download-and-install) has setup instructions.
 
 ​​	Git Credential Manager (GCM) 是适用于 Windows、macOS 和 Linux 的推荐 Git 凭据帮助程序。如果您正在运行 Git for Windows，则 GCM 已为您安装并配置。如果您在 macOS 或 Linux 上运行，则 GCM 自述文件具有设置说明。
 
-### [I have GitHub Desktop installed on my computer but VS Code ignores it 我的计算机上安装了 GitHub Desktop，但 VS Code 忽略了它](https://code.visualstudio.com/docs/sourcecontrol/faq#_i-have-github-desktop-installed-on-my-computer-but-vs-code-ignores-it)
+### [I have GitHub Desktop installed on my computer but VS Code ignores it 我的计算机上安装了 GitHub Desktop，但 VS Code 忽略了它]({{< ref "/SourceControl/FAQ#_i-have-github-desktop-installed-on-my-computer-but-vs-code-ignores-it" >}})
 
 VS Code only supports the [official Git distribution](https://git-scm.com/) for its Git integration.
 
 ​​	VS Code 仅支持官方 Git 发行版进行 Git 集成。
 
-### [I keep getting Git authentication dialogs whenever VS Code is running 每当 VS Code 运行时，我都会收到 Git 身份验证对话框](https://code.visualstudio.com/docs/sourcecontrol/faq#_i-keep-getting-git-authentication-dialogs-whenever-vs-code-is-running)
+### [I keep getting Git authentication dialogs whenever VS Code is running 每当 VS Code 运行时，我都会收到 Git 身份验证对话框]({{< ref "/SourceControl/FAQ#_i-keep-getting-git-authentication-dialogs-whenever-vs-code-is-running" >}})
 
 VS Code automatically fetches changes from the server in order to present you with a summary of incoming changes. The Git authentication dialog is independent from VS Code itself and is a part of your current Git credential helper.
 
@@ -69,7 +69,7 @@ Another option is to disable the auto fetch feature by changing the following se
 
 ​​	另一种选择是通过更改以下设置来禁用自动获取功能： `"git.autofetch": false` 。
 
-### [Why is VS Code warning me that the git repository is potentially unsafe? 为什么 VS Code 警告我 Git 存储库可能不安全？](https://code.visualstudio.com/docs/sourcecontrol/faq#_why-is-vs-code-warning-me-that-the-git-repository-is-potentially-unsafe)
+### [Why is VS Code warning me that the git repository is potentially unsafe? 为什么 VS Code 警告我 Git 存储库可能不安全？]({{< ref "/SourceControl/FAQ#_why-is-vs-code-warning-me-that-the-git-repository-is-potentially-unsafe" >}})
 
 VS Code uses `git.exe` for executing all Git operations. Starting with Git [2.35.2](https://github.blog/2022-04-18-highlights-from-git-2-36/#stricter-repository-ownership-checks), users are prevented from running Git operations in a repository that is in a folder that owned by a user other than the current user as the repository is deemed to be potentially unsafe.
 
@@ -83,7 +83,7 @@ On Windows, a common scenario where this can occur is when a repository is clone
 
 ​​	在 Windows 上，可能会出现这种情况的常见场景是，当使用“以管理员身份”运行的应用程序（例如 Windows 终端或 VS Code）克隆存储库时，但使用不“以管理员身份”运行的另一个应用程序或实例（例如 VS Code）打开存储库时。
 
-### [Why isn't VS Code discovering Git repositories in parent folders of workspaces or open files? 为什么 VS Code 未在工作区或打开文件的父文件夹中发现 Git 存储库？](https://code.visualstudio.com/docs/sourcecontrol/faq#_why-isnt-vs-code-discovering-git-repositories-in-parent-folders-of-workspaces-or-open-files)
+### [Why isn't VS Code discovering Git repositories in parent folders of workspaces or open files? 为什么 VS Code 未在工作区或打开文件的父文件夹中发现 Git 存储库？]({{< ref "/SourceControl/FAQ#_why-isnt-vs-code-discovering-git-repositories-in-parent-folders-of-workspaces-or-open-files" >}})
 
 VS Code uses `git rev-parse --show-toplevel` to determine the root of a Git repository. In most cases, the root of the Git repository is inside the workspace, but there are scenarios where the root of the Git repository is in the parent folders of the workspace or the open file(s). While opening Git repositories in parent folders of workspaces or open files is a great feature for advanced users, it can be confusing for new users. We have seen cases where this confusion resulted in discarding changes from these Git repositories causing data loss.
 
@@ -97,15 +97,15 @@ You can control how Git repositories from parent folders are handled using the `
 
 ​​	您可以使用 `git.openRepositoryInParentFolders` 设置控制如何处理来自父文件夹的 Git 存储库。如果您想恢复旧行为，请将 `git.openRepositoryInParentFolders` 设置设置为 `always` 。
 
-### [Can I use SSH Git authentication with VS Code? 我可以使用 SSH Git 身份验证与 VS Code 配合使用吗？](https://code.visualstudio.com/docs/sourcecontrol/faq#_can-i-use-ssh-git-authentication-with-vs-code)
+### [Can I use SSH Git authentication with VS Code? 我可以使用 SSH Git 身份验证与 VS Code 配合使用吗？]({{< ref "/SourceControl/FAQ#_can-i-use-ssh-git-authentication-with-vs-code" >}})
 
 Yes, though VS Code works most easily with SSH keys without a passphrase. If you have an SSH key with a passphrase, you'll need to launch VS Code from a Git Bash prompt to inherit its SSH environment.
 
 ​​	是的，尽管 VS Code 最容易与没有密码的 SSH 密钥配合使用。如果您有带密码的 SSH 密钥，则需要从 Git Bash 提示符启动 VS Code 以继承其 SSH 环境。
 
-## [GitHub](https://code.visualstudio.com/docs/sourcecontrol/faq#_github)
+## [GitHub]({{< ref "/SourceControl/FAQ#_github" >}})
 
-### [Is GitHub Enterprise supported? 是否支持 GitHub Enterprise？](https://code.visualstudio.com/docs/sourcecontrol/faq#_is-github-enterprise-supported)
+### [Is GitHub Enterprise supported? 是否支持 GitHub Enterprise？]({{< ref "/SourceControl/FAQ#_is-github-enterprise-supported" >}})
 
 VS Code has official support for authentication with GitHub Enterprise Servers. Open a local checkout of a GHES repository and you will be prompted to sign in with your GitHub Enterprise Server account.
 

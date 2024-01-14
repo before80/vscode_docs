@@ -22,7 +22,7 @@ The [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.
 
 
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/editor/github-copilot#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/UserGuide/GitHubCopilot#_prerequisites" >}})
 
 You'll use the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) extension to power your artificial intelligence (AI) suggestions in VS Code.
 
@@ -33,11 +33,11 @@ You'll use the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemN
 
 ![Copilot extension in the VS Code Marketplace](./GitHubCopilot_img/copilot-extension.png)
 
-To use GitHub Copilot, you need an active GitHub Copilot subscription. In the [content below](https://code.visualstudio.com/docs/editor/github-copilot#_activate-your-free-trial), you'll learn how VS Code will help you activate your free trial directly from VS Code. You can also activate your trial starting from the [GitHub Copilot signup page](https://github.com/github-copilot/signup).
+To use GitHub Copilot, you need an active GitHub Copilot subscription. In the [content below]({{< ref "/UserGuide/GitHubCopilot#_activate-your-free-trial" >}}), you'll learn how VS Code will help you activate your free trial directly from VS Code. You can also activate your trial starting from the [GitHub Copilot signup page](https://github.com/github-copilot/signup).
 
 ​​	要使用 GitHub Copilot，您需要一个有效的 GitHub Copilot 订阅。在下面的内容中，您将了解 VS Code 如何帮助您直接从 VS Code 激活您的免费试用。您还可以从 GitHub Copilot 注册页面开始激活您的试用。
 
-## [Sign in and sign up 登录并注册](https://code.visualstudio.com/docs/editor/github-copilot#_sign-in-and-sign-up)
+## [Sign in and sign up 登录并注册]({{< ref "/UserGuide/GitHubCopilot#_sign-in-and-sign-up" >}})
 
 If you have not previously authorized VS Code in your GitHub account, you will be prompted to sign in to GitHub in VS Code:
 
@@ -49,7 +49,7 @@ In your browser, GitHub will request the necessary permissions for GitHub Copilo
 
 ​​	在您的浏览器中，GitHub 将请求 GitHub Copilot 的必要权限。要批准这些权限，请选择“授权 Visual Studio Code”。
 
-### [Activate your free trial 激活您的免费试用](https://code.visualstudio.com/docs/editor/github-copilot#_activate-your-free-trial)
+### [Activate your free trial 激活您的免费试用]({{< ref "/UserGuide/GitHubCopilot#_activate-your-free-trial" >}})
 
 If you haven't yet activated your free trial for Copilot, the extension will notify you in VS Code. Select **Signup for GitHub Copilot** to activate your trial.
 
@@ -61,7 +61,7 @@ You can learn more about billing for Copilot in the [GitHub Copilot documentatio
 
 ​​	您可以在 GitHub Copilot 文档中了解有关 Copilot 计费的更多信息。
 
-## [Using Copilot 使用 Copilot](https://code.visualstudio.com/docs/editor/github-copilot#_using-copilot)
+## [Using Copilot 使用 Copilot]({{< ref "/UserGuide/GitHubCopilot#_using-copilot" >}})
 
 Now that you've signed up for Copilot and activated the extension, let's see its assistance in action!
 
@@ -71,7 +71,7 @@ GitHub Copilot provides suggestions for numerous languages and a wide variety of
 
 ​​	GitHub Copilot 为多种语言和各种框架提供建议，它特别适用于 Python、JavaScript、TypeScript、Ruby、Go、C# 和 C++。
 
-## [Inline suggestions 内联建议](https://code.visualstudio.com/docs/editor/github-copilot#_inline-suggestions)
+## [Inline suggestions 内联建议]({{< ref "/UserGuide/GitHubCopilot#_inline-suggestions" >}})
 
 Copilot presents suggestions automatically to help you code more efficiently. There are just 3 steps to harnessing these suggestions:
 
@@ -122,7 +122,7 @@ If you don't want to accept any of the suggestions, you can continue typing, and
 
 ​​	如果您不想接受任何建议，您可以继续键入，副驾驶将继续在您工作时提供建议。
 
-## [Getting the most out of Copilot 充分利用副驾驶](https://code.visualstudio.com/docs/editor/github-copilot#_getting-the-most-out-of-copilot)
+## [Getting the most out of Copilot 充分利用副驾驶]({{< ref "/UserGuide/GitHubCopilot#_getting-the-most-out-of-copilot" >}})
 
 There are things you can do to help ("prompt") Copilot give you the best possible suggestions. And the good news is that you are probably already doing these right now since they help you and your colleagues understand your code.
 
@@ -136,45 +136,45 @@ Copilot suggestions work best when Copilot has sufficient context to know what y
 >
 > ​​	注意：“提示工程”是您在讨论人工智能时会听到的一个常见短语，它指的是如何以及将什么信息打包并发送到人工智能 API 端点。Copilot 扩展会为您执行此“提示工程”，但您可以通过提供提示来帮助指导该扩展。
 
-### [Provide context 提供上下文](https://code.visualstudio.com/docs/editor/github-copilot#_provide-context)
+### [Provide context 提供上下文]({{< ref "/UserGuide/GitHubCopilot#_provide-context" >}})
 
-#### [Open files 打开文件](https://code.visualstudio.com/docs/editor/github-copilot#_open-files)
+#### [Open files 打开文件]({{< ref "/UserGuide/GitHubCopilot#_open-files" >}})
 
 Copilot looks at the current and open files in your editor to analyze the context and create appropriate suggestions. Having related files open in VS Code while using Copilot helps set this context and lets the Copilot see a bigger picture of your project.
 
 ​​	Copilot 会查看编辑器中当前和打开的文件，以分析上下文并创建适当的建议。在使用 Copilot 时在 VS Code 中打开相关文件有助于设置此上下文，并让 Copilot 看到项目的更大画面。
 
-#### [Top level comment 顶级注释](https://code.visualstudio.com/docs/editor/github-copilot#_top-level-comment)
+#### [Top level comment 顶级注释]({{< ref "/UserGuide/GitHubCopilot#_top-level-comment" >}})
 
 Just as you would give a brief, high-level introduction to a coworker, a top level comment in the file you're working in can help Copilot understand the overall context of the pieces you will be creating.
 
 ​​	就像您会向同事提供简短的高级介绍一样，您正在处理的文件中的顶级注释可以帮助 Copilot 了解您将创建的部分的整体上下文。
 
-#### [Appropriate includes and references 适当的包含和引用](https://code.visualstudio.com/docs/editor/github-copilot#_appropriate-includes-and-references)
+#### [Appropriate includes and references 适当的包含和引用]({{< ref "/UserGuide/GitHubCopilot#_appropriate-includes-and-references" >}})
 
 It's best to manually set the includes or module references you need for your work. Copilot can make suggestions, but you likely know best what dependencies you'll need to include. This can also help let Copilot know what frameworks, libraries, and their versions you'd like it to use when crafting suggestions.
 
 ​​	最好手动设置您工作所需的包含或模块引用。副驾驶可以提出建议，但您可能最了解需要包含哪些依赖项。这还可以帮助副驾驶了解在提出建议时您希望它使用哪些框架、库及其版本。
 
-#### [Meaningful function names 有意义的函数名称](https://code.visualstudio.com/docs/editor/github-copilot#_meaningful-function-names)
+#### [Meaningful function names 有意义的函数名称]({{< ref "/UserGuide/GitHubCopilot#_meaningful-function-names" >}})
 
 Just as a method called `fetchData()` won't mean much to a coworker (or you after several months), `fetchData()` won't help Copilot either. Using meaningful function names will help Copilot provide a body that does what you want.
 
 ​​	就像一个名为 `fetchData()` 的方法对同事（或几个月后的您）来说意义不大一样， `fetchData()` 对副驾驶也没有帮助。使用有意义的函数名称将帮助副驾驶提供一个执行您想要的操作的主体。
 
-#### [Specific and well-scoped function comments 具体且范围明确的函数注释](https://code.visualstudio.com/docs/editor/github-copilot#_specific-and-wellscoped-function-comments)
+#### [Specific and well-scoped function comments 具体且范围明确的函数注释]({{< ref "/UserGuide/GitHubCopilot#_specific-and-wellscoped-function-comments" >}})
 
 A function name can only be so descriptive without being overly long so function comments can help fill in details that Copilot might need to know.
 
 ​​	函数名称只能在不过于冗长的情况下具有描述性，因此函数注释可以帮助填补副驾驶可能需要了解的详细信息。
 
-#### [Prime Copilot with sample code 使用示例代码启动副驾驶](https://code.visualstudio.com/docs/editor/github-copilot#_prime-copilot-with-sample-code)
+#### [Prime Copilot with sample code 使用示例代码启动副驾驶]({{< ref "/UserGuide/GitHubCopilot#_prime-copilot-with-sample-code" >}})
 
 One trick to get Copilot on the right page is to copy and paste sample code into your open editor that is close to what you are looking for. Providing a small example can help Copilot generate suggestions that match the language and tasks you want to achieve. Once Copilot begins providing you with the code you want and will actually use, you can delete the sample code from the file. This can be especially helpful to jump start Copilot to a newer library version when it defaults to providing older code suggestions.
 
 ​​	让 Copilot 进入正确页面的一个技巧是将与您要查找的内容接近的示例代码复制并粘贴到打开的编辑器中。提供一个小示例可以帮助 Copilot 生成与您想要实现的语言和任务相匹配的建议。一旦 Copilot 开始为您提供您想要且实际会使用的代码，您就可以从文件中删除示例代码。当 Copilot 默认提供较旧的代码建议时，这对于将其快速启动到较新的库版本特别有用。
 
-### [Be consistent and keep the quality bar high 保持一致并保持质量标准](https://code.visualstudio.com/docs/editor/github-copilot#_be-consistent-and-keep-the-quality-bar-high)
+### [Be consistent and keep the quality bar high 保持一致并保持质量标准]({{< ref "/UserGuide/GitHubCopilot#_be-consistent-and-keep-the-quality-bar-high" >}})
 
 Copilot is going to latch on to your code to generate suggestions that follow the existing pattern so the adage "garbage in, garbage out" applies.
 
@@ -192,7 +192,7 @@ From the dropdown, you can disable completions entirely or just for the active f
 
 ![Copilot status menu dropdown with Disable Completions selected](./GitHubCopilot_img/disable-completions.png)
 
-### [More resources 更多资源](https://code.visualstudio.com/docs/editor/github-copilot#_more-resources)
+### [More resources 更多资源]({{< ref "/UserGuide/GitHubCopilot#_more-resources" >}})
 
 If you'd like to learn more about productively using GitHub Copilot, you can follow up with these videos and blog posts:
 
@@ -207,7 +207,7 @@ If you'd like to learn more about productively using GitHub Copilot, you can fol
 - [How to use GitHub Copilot: Prompts, tips, and use cases
   如何使用 GitHub Copilot：提示、技巧和用例](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
 
-## [Chat features 聊天功能](https://code.visualstudio.com/docs/editor/github-copilot#_chat-features)
+## [Chat features 聊天功能]({{< ref "/UserGuide/GitHubCopilot#_chat-features" >}})
 
 In addition to inline suggestions, you can also get assistance from Copilot via a chat interface. This is supported in several ways:
 
@@ -229,7 +229,7 @@ The Chat features are available by installing the additional [GitHub Copilot Cha
 
 ![GitHub Copilot Chat extension](./GitHubCopilot_img/copilot-chat-extension.png)
 
-## [Chat view 聊天视图](https://code.visualstudio.com/docs/editor/github-copilot#_chat-view)
+## [Chat view 聊天视图]({{< ref "/UserGuide/GitHubCopilot#_chat-view" >}})
 
 When developing a project or learning something new, it can be a big help to get AI assistance on your questions, big or small. Copilot enables an interactive Chat experience that understands the context of your code, workspace, extensions, settings, and more.
 
@@ -241,7 +241,7 @@ You can access the Chat view via the Activity Bar:
 
 ![Copilot view in VS Code Activity Bar](./GitHubCopilot_img/copilot-view.png)
 
-Like other views in VS Code, you can move it anywhere. For example, you can move it to the [Secondary side bar](https://code.visualstudio.com/docs/editor/custom-layout#_secondary-side-bar) so that you can use other views like the Explorer at the same time:
+Like other views in VS Code, you can move it anywhere. For example, you can move it to the [Secondary side bar]({{< ref "/UserGuide/CustomLayout#_secondary-side-bar" >}}) so that you can use other views like the Explorer at the same time:
 
 ​​	与 VS Code 中的其他视图一样，您可以将其移动到任意位置。例如，您可以将其移动到辅助侧边栏，以便同时使用其他视图，如资源管理器：
 
@@ -261,7 +261,7 @@ You can help Copilot provide better answers by upvoting or downvoting responses 
 
 ​​	您可以通过对回复右上角的点赞和倒赞图标进行点赞或点倒赞来帮助 Copilot 提供更好的答案。这会向 Copilot 提供有关它对您的方案提供了多少帮助的反馈，以便它将来能够更好地帮助您。
 
-### [Keyboard shortcuts 键盘快捷键](https://code.visualstudio.com/docs/editor/github-copilot#_keyboard-shortcuts)
+### [Keyboard shortcuts 键盘快捷键]({{< ref "/UserGuide/GitHubCopilot#_keyboard-shortcuts" >}})
 
 To make it easy to work with the Chat view, there are several keyboard shortcuts:
 
@@ -274,7 +274,7 @@ To make it easy to work with the Chat view, there are several keyboard shortcuts
 - Ctrl+Down - Moves keyboard focus to the Chat view input box
   Ctrl+向下 - 将键盘焦点移至聊天视图输入框
 
-### [Agents and slash commands 代理和斜杠命令](https://code.visualstudio.com/docs/editor/github-copilot#_agents-and-slash-commands)
+### [Agents and slash commands 代理和斜杠命令]({{< ref "/UserGuide/GitHubCopilot#_agents-and-slash-commands" >}})
 
 To further help Copilot give you more relevant answers, you can indicate the scope and intent of your question through **agents** and **slash commands**.
 
@@ -327,7 +327,7 @@ In addition to agent and slash command combinations, there are general purpose s
 - /clear: Clear the session.
   /clear：清除会话。
 
-### [Code blocks 代码块](https://code.visualstudio.com/docs/editor/github-copilot#_code-blocks)
+### [Code blocks 代码块]({{< ref "/UserGuide/GitHubCopilot#_code-blocks" >}})
 
 Depending on your question, Copilot Chat may return source code in a code block.
 
@@ -351,9 +351,9 @@ If Copilot Chat detects that a code block contains a command, you can run it dir
 
 ![Copilot Chat code block to list files with Insert into Terminal option visible](./GitHubCopilot_img/run-in-terminal.png)
 
-### [Chat view locations 聊天视图位置](https://code.visualstudio.com/docs/editor/github-copilot#_chat-view-locations)
+### [Chat view locations 聊天视图位置]({{< ref "/UserGuide/GitHubCopilot#_chat-view-locations" >}})
 
-By default, the Chat view is displayed in the [Primary side bar](https://code.visualstudio.com/docs/getstarted/userinterface#_basic-layout) but like other views in VS Code, you can [drag and drop](https://code.visualstudio.com/docs/editor/custom-layout#_drag-and-drop-views-and-panels) it anywhere. For example, you could drag and drop the Chat view into the Panel region:
+By default, the Chat view is displayed in the [Primary side bar]({{< ref "/GetStarted/UserInterface#_basic-layout" >}}) but like other views in VS Code, you can [drag and drop]({{< ref "/UserGuide/CustomLayout#_drag-and-drop-views-and-panels" >}}) it anywhere. For example, you could drag and drop the Chat view into the Panel region:
 
 ​​	默认情况下，“聊天”视图显示在“主侧边栏”中，但与 VS Code 中的其他视图一样，您可以将其拖放到任意位置。例如，您可以将“聊天”视图拖放到“面板”区域：
 
@@ -365,7 +365,7 @@ You can also open the Chat view in the editor region for a larger display area. 
 
 ![Copilot Chat view title bar More Actions with Open Session in Editor selected](./GitHubCopilot_img/open-session-in-editor.png)
 
-Just like any open editor, you can move editor-hosted Chat views into separate [Editor Groups](https://code.visualstudio.com/docs/getstarted/userinterface#_editor-groups) and use display customizations such as [Grid layout](https://code.visualstudio.com/docs/editor/custom-layout#_grid-layout) to have multiple chat sessions open in the editor region.
+Just like any open editor, you can move editor-hosted Chat views into separate [Editor Groups]({{< ref "/GetStarted/UserInterface#_editor-groups" >}}) and use display customizations such as [Grid layout]({{< ref "/UserGuide/CustomLayout#_grid-layout" >}}) to have multiple chat sessions open in the editor region.
 
 ​​	就像任何打开的编辑器一样，您可以将由编辑器托管的聊天视图移至单独的编辑器组，并使用网格布局等显示自定义项在编辑器区域中打开多个聊天会话。
 
@@ -375,7 +375,7 @@ To move the Chat view back to the side bar, use the **Open Session in Side Bar**
 
 ![Chat view in editor with Open Session in Side bar displayed](./GitHubCopilot_img/open-session-in-sidebar.png)
 
-## [Inline chat 内联聊天](https://code.visualstudio.com/docs/editor/github-copilot#_inline-chat)
+## [Inline chat 内联聊天]({{< ref "/UserGuide/GitHubCopilot#_inline-chat" >}})
 
 An additional key functionality of Copilot is answering questions inline as you're coding. This allows you to harness the power of AI while staying in your existing editor workflow.
 
@@ -391,7 +391,7 @@ You can ask Copilot questions that emerge as you write and iterate on code, such
 
 ​​	您可以询问 Copilot 在您编写和迭代代码时出现的问题，例如“解释这段代码”或“如何添加执行 X 的功能？”如果您在编辑器中选择了代码，Copilot 会将您的问题限定为所选内容。
 
-Several [slash commands](https://code.visualstudio.com/docs/editor/github-copilot#_agents-and-slash-commands) also work in inline chat such as `/explain` to ask Copilot to explain a block of code or `/tests` to generate unit tests.
+Several [slash commands]({{< ref "/UserGuide/GitHubCopilot#_agents-and-slash-commands" >}}) also work in inline chat such as `/explain` to ask Copilot to explain a block of code or `/tests` to generate unit tests.
 
 ​​	几个斜杠命令也适用于内联聊天，例如 `/explain` ，用于要求 Copilot 解释一段代码，或 `/tests` ，用于生成单元测试。
 
@@ -403,7 +403,7 @@ A useful command is `/fix`, which analyzes the error line or selected code and p
 
 ![Inline chat /fix identifying an unassigned variable and proposing a fix in a diff view](./GitHubCopilot_img/inline-chat-fix-example.png)
 
-## [Quick Chat 快速聊天](https://code.visualstudio.com/docs/editor/github-copilot#_quick-chat)
+## [Quick Chat 快速聊天]({{< ref "/UserGuide/GitHubCopilot#_quick-chat" >}})
 
 If you want to ask Copilot a quick question and don't want to start a full Chat view session or have inline Chat open in your editor, you can use the Quick Chat dropdown. To open Quick Chat, you can run **Chat: Open Quick Chat** or use the Ctrl+Shift+I keyboard shortcut.
 
@@ -417,7 +417,7 @@ You can type questions, scope your questions with agents and slash commands such
 
 ![Quick Chat Open in Chat View button](./GitHubCopilot_img/open-in-chat-view.png)
 
-## [Chat smart actions 聊天智能操作](https://code.visualstudio.com/docs/editor/github-copilot#_chat-smart-actions)
+## [Chat smart actions 聊天智能操作]({{< ref "/UserGuide/GitHubCopilot#_chat-smart-actions" >}})
 
 To make it easier to use Copilot Chat features, there is a **Copilot** menu group in the editor context menu. Right-click in the editor and navigate to **Copilot** to see the available options:
 
@@ -431,13 +431,13 @@ You can apply these smart actions on the current file or a selection in the file
 
 ![Inline chat /doc results adding JSDoc comment for a TypeScript function](./GitHubCopilot_img/generate-docs-example.png)
 
-## [Other Copilot uses 其他 Copilot 用法](https://code.visualstudio.com/docs/editor/github-copilot#_other-copilot-uses)
+## [Other Copilot uses 其他 Copilot 用法]({{< ref "/UserGuide/GitHubCopilot#_other-copilot-uses" >}})
 
 In addition to inline completions and chat, GitHub Copilot can help with other development tasks and workflows. For example, Copilot can help with writing commit messages, fixing errors, and finding commands.
 
 ​​	除了内联补全和聊天之外，GitHub Copilot 还可以帮助完成其他开发任务和工作流。例如，Copilot 可以帮助编写提交消息、修复错误和查找命令。
 
-### [Sparkles 闪光](https://code.visualstudio.com/docs/editor/github-copilot#_sparkles)
+### [Sparkles 闪光]({{< ref "/UserGuide/GitHubCopilot#_sparkles" >}})
 
 When Copilot can help with a task or workflow, VS Code displays a **sparkle** icon. Hovering over the sparkle icon will describe the Copilot action.
 
@@ -445,7 +445,7 @@ When Copilot can help with a task or workflow, VS Code displays a **sparkle** ic
 
 ![Sparkle icon in an input box](./GitHubCopilot_img/sparkle-icon.png)
 
-### [Generate Git commit messages 生成 Git 提交消息](https://code.visualstudio.com/docs/editor/github-copilot#_generate-git-commit-messages)
+### [Generate Git commit messages 生成 Git 提交消息]({{< ref "/UserGuide/GitHubCopilot#_generate-git-commit-messages" >}})
 
 Copilot can help you write GitHub commit messages. In the Source Control message input box, select the sparkle button at the right and Copilot will create a commit message based on your pending changes.
 
@@ -457,7 +457,7 @@ If you using the [GitHub Pull Request and Issues](https://marketplace.visualstud
 
 ​​	如果您使用 GitHub Pull Request 和 Issues 扩展，则有一个闪光按钮可以填写 Pull Request 创建视图中的标题和说明。
 
-### [Terminal Quick Fixes 终端快速修复](https://code.visualstudio.com/docs/editor/github-copilot#_terminal-quick-fixes)
+### [Terminal Quick Fixes 终端快速修复]({{< ref "/UserGuide/GitHubCopilot#_terminal-quick-fixes" >}})
 
 When a command fails to run in the terminal, Copilot displays a sparkle in the gutter that offers a Quick Fix to explain what happened.
 
@@ -471,7 +471,7 @@ Selecting **Explain using Copilot** will populate Quick Chat with the `@terminal
 
 ![Quick Chat with @terminal #terminalLastCommand and Copilot's answer](./GitHubCopilot_img/terminal-command-explanation.png)
 
-### [Command Palette help 命令面板帮助](https://code.visualstudio.com/docs/editor/github-copilot#_command-palette-help)
+### [Command Palette help 命令面板帮助]({{< ref "/UserGuide/GitHubCopilot#_command-palette-help" >}})
 
 When trying to find a command in the Command Palette (Ctrl+Shift+P), if you don't think you see the command you want, you can run **Ask GitHub Copilot** with your search term.
 
@@ -485,15 +485,15 @@ The **Ask GitHub Copilot** command will open the Chat view and input your search
 
 ![Chat view with answer to "hide editor overview"](./GitHubCopilot_img/copilot-answer-hide-editor-overview.png)
 
-## [Getting the most out of Copilot Chat 充分利用 Copilot 聊天](https://code.visualstudio.com/docs/editor/github-copilot#_getting-the-most-out-of-copilot-chat)
+## [Getting the most out of Copilot Chat 充分利用 Copilot 聊天]({{< ref "/UserGuide/GitHubCopilot#_getting-the-most-out-of-copilot-chat" >}})
 
-This section is similar to the earlier [Getting the most out of Copilot](https://code.visualstudio.com/docs/editor/github-copilot#_getting-the-most-out-of-copilot), which had recommendations for getting the best editor inline completions from Copilot. Here we'll cover tips to effectively use Copilot Chat (Chat view, inline chat, Quick Chat).
+This section is similar to the earlier [Getting the most out of Copilot]({{< ref "/UserGuide/GitHubCopilot#_getting-the-most-out-of-copilot" >}}), which had recommendations for getting the best editor inline completions from Copilot. Here we'll cover tips to effectively use Copilot Chat (Chat view, inline chat, Quick Chat).
 
 ​​	此部分类似于早期的充分利用 Copilot，其中包含有关从 Copilot 获取最佳编辑器内联完成的建议。在这里，我们将介绍有效使用 Copilot 聊天（聊天视图、内联聊天、快速聊天）的技巧。
 
-### [Use agents and slash commands 使用代理和斜杠命令](https://code.visualstudio.com/docs/editor/github-copilot#_use-agents-and-slash-commands)
+### [Use agents and slash commands 使用代理和斜杠命令]({{< ref "/UserGuide/GitHubCopilot#_use-agents-and-slash-commands" >}})
 
-[Agents](https://code.visualstudio.com/docs/editor/github-copilot#_agents-and-slash-commands) are designed to collect extra context either about a code base or a specific domain or technology. By using the appropriate agent, Copilot Chat can find and provide better information to send to the Copilot backend.
+[Agents]({{< ref "/UserGuide/GitHubCopilot#_agents-and-slash-commands" >}}) are designed to collect extra context either about a code base or a specific domain or technology. By using the appropriate agent, Copilot Chat can find and provide better information to send to the Copilot backend.
 
 ​​	代理旨在收集有关代码库或特定域或技术的额外上下文。通过使用适当的代理，Copilot 聊天可以查找并提供更好的信息以发送到 Copilot 后端。
 
@@ -510,7 +510,7 @@ You could write out your project scope or current task with a natural language q
 
 ​​	您可以使用自然语言查询写出您的项目范围或当前任务，但使用代理和斜杠命令更加简洁和明确。
 
-### [Iterate on your solution 迭代您的解决方案](https://code.visualstudio.com/docs/editor/github-copilot#_iterate-on-your-solution)
+### [Iterate on your solution 迭代您的解决方案]({{< ref "/UserGuide/GitHubCopilot#_iterate-on-your-solution" >}})
 
 When asking Copilot Chat for help, you aren't stuck with the first response. You can iterate and prompt Copilot to improve the solution. Copilot has both the context of the generated code and also your current conversation.
 
@@ -540,7 +540,7 @@ Even if you've already accepted a result, you can always ask Copilot to iterate 
 
 ![Ask inline chat to use better variable names on existing code](./GitHubCopilot_img/fibonacci-better-var-names.png)
 
-## [Additional resources 其他资源](https://code.visualstudio.com/docs/editor/github-copilot#_additional-resources)
+## [Additional resources 其他资源]({{< ref "/UserGuide/GitHubCopilot#_additional-resources" >}})
 
 Congratulations, you've now used artificial intelligence to enhance your coding!
 
@@ -554,9 +554,9 @@ Or check out the [VS Code Copilot Series](https://www.youtube.com/playlist?list=
 
 ​​	或者查看 YouTube 上的 VS Code Copilot 系列，您可以在其中找到更多入门内容以及使用 Copilot 与 Python、C#、Java、PowerShell 等一起进行编程的特定视频。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/github-copilot#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/GitHubCopilot#_common-questions" >}})
 
-### [The Copilot Chat features aren't working for me? Copilot 聊天功能对我来说不起作用？](https://code.visualstudio.com/docs/editor/github-copilot#_the-copilot-chat-features-arent-working-for-me)
+### [The Copilot Chat features aren't working for me? Copilot 聊天功能对我来说不起作用？]({{< ref "/UserGuide/GitHubCopilot#_the-copilot-chat-features-arent-working-for-me" >}})
 
 Check each requirement if Copilot Chat doesn't work:
 
@@ -569,9 +569,9 @@ Check each requirement if Copilot Chat doesn't work:
 - Your GitHub account that is signed into VS Code must have an activated Copilot subscription (check your [subscription](https://github.com/settings/copilot)).
   您登录到 VS Code 的 GitHub 帐户必须具有已激活的 Copilot 订阅（检查您的订阅）。
 
-### [I can't find Copilot Chat in the Activity bar 我在活动栏中找不到 Copilot 聊天](https://code.visualstudio.com/docs/editor/github-copilot#_i-cant-find-copilot-chat-in-the-activity-bar)
+### [I can't find Copilot Chat in the Activity bar 我在活动栏中找不到 Copilot 聊天]({{< ref "/UserGuide/GitHubCopilot#_i-cant-find-copilot-chat-in-the-activity-bar" >}})
 
-If you've moved the Chat view out of the Primary side bar, for example, you dragged the view to the [Secondary side bar](https://code.visualstudio.com/docs/editor/custom-layout#_secondary-side-bar), the Chat view icon will no longer be displayed on the Activity bar. If you close the Secondary side bar, the Chat view won't be visible and it may appear that you've lost access to the Chat view.
+If you've moved the Chat view out of the Primary side bar, for example, you dragged the view to the [Secondary side bar]({{< ref "/UserGuide/CustomLayout#_secondary-side-bar" >}}), the Chat view icon will no longer be displayed on the Activity bar. If you close the Secondary side bar, the Chat view won't be visible and it may appear that you've lost access to the Chat view.
 
 ​​	例如，如果您已将聊天视图移出主侧边栏，您将视图拖动到辅助侧边栏，则聊天视图图标将不再显示在活动栏上。如果您关闭辅助侧边栏，则聊天视图将不可见，并且您似乎失去了对聊天视图的访问权限。
 
@@ -590,13 +590,13 @@ As with any view, you can drag and drop the Chat view back to the Activity bar o
 
 ​​	与任何视图一样，您可以将聊天视图拖放到活动栏中，或使用视图标题栏上下文菜单中的“重置位置”。
 
-### [How do I disable Copilot? 如何禁用副驾驶？](https://code.visualstudio.com/docs/editor/github-copilot#_how-do-i-disable-copilot)
+### [How do I disable Copilot? 如何禁用副驾驶？]({{< ref "/UserGuide/GitHubCopilot#_how-do-i-disable-copilot" >}})
 
 You can temporarily deactivate Copilot from the Status bar. You will be prompted whether you want to disable Copilot for all code (globally) or just the programming language detected in the active editor (for example, Python).
 
 ​​	您可以从状态栏中暂时停用副驾驶。系统将提示您是要禁用所有代码（全局）的副驾驶，还是仅禁用活动编辑器中检测到的编程语言（例如 Python）。
 
-### [How can I provide feedback on Copilot? 如何对副驾驶提供反馈？](https://code.visualstudio.com/docs/editor/github-copilot#_how-can-i-provide-feedback-on-copilot)
+### [How can I provide feedback on Copilot? 如何对副驾驶提供反馈？]({{< ref "/UserGuide/GitHubCopilot#_how-can-i-provide-feedback-on-copilot" >}})
 
 You can give feedback on Copilot inline suggestions and responses in the [GitHub Copilot Discussions](https://github.com/orgs/community/discussions/categories/copilot).
 
@@ -606,7 +606,7 @@ If you would like to provide feedback on the Copilot Chat features, you can crea
 
 ​​	如果您想对副驾驶聊天功能提供反馈，可以在 vscode-copilot-release 存储库中创建问题。
 
-### [Are there pre-release builds of the Copilot extensions? Copilot 扩展是否有预发布版本？](https://code.visualstudio.com/docs/editor/github-copilot#_are-there-prerelease-builds-of-the-copilot-extensions)
+### [Are there pre-release builds of the Copilot extensions? Copilot 扩展是否有预发布版本？]({{< ref "/UserGuide/GitHubCopilot#_are-there-prerelease-builds-of-the-copilot-extensions" >}})
 
 Yes, you can switch to the pre-release (nightly) version of a Copilot extension to try the latest features and fixes. From the Extensions view, right-click or select the gear icon to bring up the context menu and select **Switch to Pre-Release Version**:
 

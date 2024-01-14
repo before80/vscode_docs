@@ -18,28 +18,28 @@ Visual Studio Code provides many options to refactor your source code as well as
 
 ​​​	Visual Studio Code 提供了许多选项来重构源代码，以及在您编码时生成代码和修复问题的源代码操作。要访问它们，请在您看到它时单击 `light bulb` 💡。或者右键单击编辑器视图并选择源代码操作....
 
-## [List of Supported Code Actions 受支持的代码操作列表](https://code.visualstudio.com/docs/java/java-refactoring#_list-of-supported-code-actions)
+## [List of Supported Code Actions 受支持的代码操作列表]({{< ref "/Java/Refactoring#_list-of-supported-code-actions" >}})
 
 - Refactoring
   正在重构
 
   - [Assign to variable
-    分配给变量](https://code.visualstudio.com/docs/java/java-refactoring#_assign-to-variable)
+    分配给变量]({{< ref "/Java/Refactoring#_assign-to-variable" >}})
 
   - [Convert anonymous to nested class
-    将匿名转换为嵌套类](https://code.visualstudio.com/docs/java/java-refactoring#_convert-anonymous-to-nested-class)
+    将匿名转换为嵌套类]({{< ref "/Java/Refactoring#_convert-anonymous-to-nested-class" >}})
 
   - [Convert to anonymous class creation
-    转换为匿名类创建](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-anonymous-class-creation)
+    转换为匿名类创建]({{< ref "/Java/Refactoring#_convert-to-anonymous-class-creation" >}})
 
   - [Convert to enhanced for loop
-    转换为增强型 for 循环](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-enhanced-for-loop)
+    转换为增强型 for 循环]({{< ref "/Java/Refactoring#_convert-to-enhanced-for-loop" >}})
 
   - [Convert to lambda expression
-    转换为 lambda 表达式](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-lambda-expression)
+    转换为 lambda 表达式]({{< ref "/Java/Refactoring#_convert-to-lambda-expression" >}})
 
   - [Convert to static import
-    转换为静态导入](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-static-import)
+    转换为静态导入]({{< ref "/Java/Refactoring#_convert-to-static-import" >}})
 
   - Extract refactorings
 
@@ -47,13 +47,13 @@ Visual Studio Code provides many options to refactor your source code as well as
     提取重构
 
     - [Extract to constant
-      提取为常量](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-constant)
+      提取为常量]({{< ref "/Java/Refactoring#_extract-to-constant" >}})
     - [Extract to field
-      提取到字段](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-field)
+      提取到字段]({{< ref "/Java/Refactoring#_extract-to-field" >}})
     - [Extract to method
-      提取到方法](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-method)
+      提取到方法]({{< ref "/Java/Refactoring#_extract-to-method" >}})
     - [Extract to local variable
-      提取到局部变量](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-local-variable)
+      提取到局部变量]({{< ref "/Java/Refactoring#_extract-to-local-variable" >}})
 
   - Inline refactorings
 
@@ -61,11 +61,11 @@ Visual Studio Code provides many options to refactor your source code as well as
     内联重构
 
     - [Inline constant
-      内联常量](https://code.visualstudio.com/docs/java/java-refactoring#_inline-constant)
+      内联常量]({{< ref "/Java/Refactoring#_inline-constant" >}})
     - [Inline local variable
-      内联局部变量](https://code.visualstudio.com/docs/java/java-refactoring#_inline-local-variable)
+      内联局部变量]({{< ref "/Java/Refactoring#_inline-local-variable" >}})
     - [Inline method
-      内联方法](https://code.visualstudio.com/docs/java/java-refactoring#_inline-method)
+      内联方法]({{< ref "/Java/Refactoring#_inline-method" >}})
 
   - Invert boolean
 
@@ -73,15 +73,15 @@ Visual Studio Code provides many options to refactor your source code as well as
     反转布尔值
 
     - [Invert conditions
-      反转条件](https://code.visualstudio.com/docs/java/java-refactoring#_invert-conditions)
+      反转条件]({{< ref "/Java/Refactoring#_invert-conditions" >}})
     - [Invert local variable
-      反转局部变量](https://code.visualstudio.com/docs/java/java-refactoring#_invert-local-variable)
+      反转局部变量]({{< ref "/Java/Refactoring#_invert-local-variable" >}})
 
   - [Move
-    移动](https://code.visualstudio.com/docs/java/java-refactoring#_move)
+    移动]({{< ref "/Java/Refactoring#_move" >}})
 
   - [Rename
-    重命名](https://code.visualstudio.com/docs/java/java-refactoring#_rename)
+    重命名]({{< ref "/Java/Refactoring#_rename" >}})
 
   - Type change
 
@@ -89,29 +89,29 @@ Visual Studio Code provides many options to refactor your source code as well as
     类型更改
 
     - [Change resolved type to var type
-      将已解决的类型更改为 var 类型](https://code.visualstudio.com/docs/java/java-refactoring#_change-resolved-type-to-var-type)
+      将已解决的类型更改为 var 类型]({{< ref "/Java/Refactoring#_change-resolved-type-to-var-type" >}})
     - [Change var type to resolved type
-      将 var 类型更改为已解决的类型](https://code.visualstudio.com/docs/java/java-refactoring#_change-var-type-to-resolved-type)
+      将 var 类型更改为已解决的类型]({{< ref "/Java/Refactoring#_change-var-type-to-resolved-type" >}})
 
 - Source Actions
   源操作
 
   - [Generate constructors
-    生成构造函数](https://code.visualstudio.com/docs/java/java-refactoring#_generate-constructors)
+    生成构造函数]({{< ref "/Java/Refactoring#_generate-constructors" >}})
   - [Generate delegate methods
-    生成委托方法](https://code.visualstudio.com/docs/java/java-refactoring#_generate-delegate-methods)
+    生成委托方法]({{< ref "/Java/Refactoring#_generate-delegate-methods" >}})
   - [Override/implement methods
-    重写/实现方法](https://code.visualstudio.com/docs/java/java-refactoring#_overrideimplement-methods)
+    重写/实现方法]({{< ref "/Java/Refactoring#_overrideimplement-methods" >}})
   - [Organize imports
-    整理导入](https://code.visualstudio.com/docs/java/java-refactoring#_organize-imports)
+    整理导入]({{< ref "/Java/Refactoring#_organize-imports" >}})
   - [Generate getters and setters
-    生成 getter 和 setter](https://code.visualstudio.com/docs/java/java-refactoring#_generate-getters-and-setters)
+    生成 getter 和 setter]({{< ref "/Java/Refactoring#_generate-getters-and-setters" >}})
   - [Generate `hashCode()` and `equals()`
-    生成 `hashCode()` 和 `equals()`](https://code.visualstudio.com/docs/java/java-refactoring#_generate-hashcode-and-equals)
+    生成 `hashCode()` 和 `equals()`]({{< ref "/Java/Refactoring#_generate-hashcode-and-equals" >}})
   - [Generate `toString()`
-    生成 `toString()`](https://code.visualstudio.com/docs/java/java-refactoring#_generate-tostring)
+    生成 `toString()`]({{< ref "/Java/Refactoring#_generate-tostring" >}})
   - [Change modifiers to final where possible
-    尽可能将修饰符更改为 final](https://code.visualstudio.com/docs/java/java-refactoring#_change-modifiers-to-final-where-possible)
+    尽可能将修饰符更改为 final]({{< ref "/Java/Refactoring#_change-modifiers-to-final-where-possible" >}})
 
 - Other Code Actions supported
 
@@ -119,19 +119,19 @@ Visual Studio Code provides many options to refactor your source code as well as
   支持的其他代码操作
 
   - [Fix non-accessible reference
-    修复不可访问的引用](https://code.visualstudio.com/docs/java/java-refactoring#_fix-nonaccessible-reference)
+    修复不可访问的引用]({{< ref "/Java/Refactoring#_fix-nonaccessible-reference" >}})
   - [Create non-existing package
-    创建不存在的包](https://code.visualstudio.com/docs/java/java-refactoring#_create-non-existing-package)
+    创建不存在的包]({{< ref "/Java/Refactoring#_create-non-existing-package" >}})
   - [More...
-    更多...](https://code.visualstudio.com/docs/java/java-refactoring#_other-code-actions-supported)
+    更多...]({{< ref "/Java/Refactoring#_other-code-actions-supported" >}})
 
-## [Refactoring 重构](https://code.visualstudio.com/docs/java/java-refactoring#_refactoring)
+## [Refactoring 重构]({{< ref "/Java/Refactoring#_refactoring" >}})
 
 The goal of the Java program refactoring is to make system-wide code changes without affecting behavior of the program. The Java Language Support for VS Code provides many easily accessible refactoring options.
 
 ​​​	Java 程序重构的目标是在不影响程序行为的情况下进行系统范围的代码更改。VS Code 的 Java 语言支持提供了许多易于访问的重构选项。
 
-### [Invoke refactoring 调用重构](https://code.visualstudio.com/docs/java/java-refactoring#_invoke-refactoring)
+### [Invoke refactoring 调用重构]({{< ref "/Java/Refactoring#_invoke-refactoring" >}})
 
 Refactoring commands are available from the context menu of the editor. Select the element you want to refactor, right-click to open the context menu, and choose **Refactor...**:
 
@@ -143,13 +143,13 @@ Then you will see all the available refactoring options.
 
 ​​​	然后您将看到所有可用的重构选项。
 
-### [Assign to variable 分配给变量](https://code.visualstudio.com/docs/java/java-refactoring#_assign-to-variable)
+### [Assign to variable 分配给变量]({{< ref "/Java/Refactoring#_assign-to-variable" >}})
 
 Assigns an expression to a local variable or a field.
 
 ​​​	将表达式分配给局部变量或字段。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 ##### Before 之前
 
@@ -171,13 +171,13 @@ It can also be used to assign a parameter to a new field for unused parameter(s)
 
 
 
-### [Convert anonymous to nested class 将匿名类转换为嵌套类](https://code.visualstudio.com/docs/java/java-refactoring#_convert-anonymous-to-nested-class)
+### [Convert anonymous to nested class 将匿名类转换为嵌套类]({{< ref "/Java/Refactoring#_convert-anonymous-to-nested-class" >}})
 
 Converts an anonymous inner class to a member class.
 
 ​​​	将匿名内部类转换为成员类。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's convert the anonymous class `Interface(){...}` to a member of the class `Clazz`.
 
@@ -221,13 +221,13 @@ public class Clazz {
 }
 ```
 
-### [Convert to anonymous class creation 转换为匿名类创建](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-anonymous-class-creation)
+### [Convert to anonymous class creation 转换为匿名类创建]({{< ref "/Java/Refactoring#_convert-to-anonymous-class-creation" >}})
 
 Converts lambda expression to anonymous class creation.
 
 ​​​	之前将 lambda 表达式转换为匿名类创建。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 The variable `runnable` is assigned with a lambda expression. Let's convert it to an anonymous class creation.
 
@@ -256,17 +256,17 @@ public void method() {
 }
 ```
 
-> Also see: [Convert to lambda expression](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-lambda-expression)
+> Also see: [Convert to lambda expression]({{< ref "/Java/Refactoring#_convert-to-lambda-expression" >}})
 >
 > ​​​	之前另请参阅：转换为 lambda 表达式
 
-### [Convert to enhanced for loop 转换为增强型 for 循环](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-enhanced-for-loop)
+### [Convert to enhanced for loop 转换为增强型 for 循环]({{< ref "/Java/Refactoring#_convert-to-enhanced-for-loop" >}})
 
 Converts the simple `for` loop to `for-each` style.
 
 ​​​	将简单的 `for` 循环转换为 `for-each` 样式。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 ##### Before 转换为 lambda 表达式之前
 
@@ -292,13 +292,13 @@ public void order(String[] books) {
 
 
 
-### [Convert to lambda expression 将匿名类创建转换为 lambda 表达式。](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-lambda-expression)
+### [Convert to lambda expression 将匿名类创建转换为 lambda 表达式。]({{< ref "/Java/Refactoring#_convert-to-lambda-expression" >}})
 
 Converts an anonymous class creation to the lambda expression.
 
 ​​​	示例
 
-#### [Example 让我们将匿名类 转换为 lambda 表达式。](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 让我们将匿名类 转换为 lambda 表达式。]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's convert the anonymous class `Runnable(){...}` to a lambda expression.
 
@@ -327,17 +327,17 @@ public void method() {
   }
 ```
 
-> Also see: [Convert to anonymous class creation](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-anonymous-class-creation)
+> Also see: [Convert to anonymous class creation]({{< ref "/Java/Refactoring#_convert-to-anonymous-class-creation" >}})
 >
 > ​​​	转换为静态导入
 
-### [Convert to static import 将字段或方法转换为静态导入。](https://code.visualstudio.com/docs/java/java-refactoring#_convert-to-static-import)
+### [Convert to static import 将字段或方法转换为静态导入。]({{< ref "/Java/Refactoring#_convert-to-static-import" >}})
 
 Converts the field or method to static import.
 
 ​​​	示例
 
-#### [Example](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's transform the `Assert.assertEquals()` invocation to a static import.
 
@@ -367,13 +367,13 @@ public void test() {
 
 
 
-### [Extract to constant 提取到常量](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-constant)
+### [Extract to constant 提取到常量]({{< ref "/Java/Refactoring#_extract-to-constant" >}})
 
 Creates a static final field from the selected expression and substitutes a field reference, then rewrites other places where the same expression occurs.
 
 ​​​	中之前，从所选表达式创建一个静态 final 字段并替换字段引用，然后重写出现相同表达式的其他位置。
 
-#### [Examples 示例](https://code.visualstudio.com/docs/java/java-refactoring#_examples)
+#### [Examples 示例]({{< ref "/Java/Refactoring#_examples" >}})
 
 Let's extract the value of π: `3.14` to a constant.
 
@@ -397,17 +397,17 @@ public double getArea(double r) {
 }
 ```
 
-> Also see: [Inline constant](https://code.visualstudio.com/docs/java/java-refactoring#_inline-constant)
+> Also see: [Inline constant]({{< ref "/Java/Refactoring#_inline-constant" >}})
 >
 > ​​​	之前，另请参阅：内联常量
 
-### [Extract to field 提取到字段](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-field)
+### [Extract to field 提取到字段]({{< ref "/Java/Refactoring#_extract-to-field" >}})
 
 Declares a new field and initializes it with the selected expression. The original expression is replaced with the usage of the field.
 
 ​​​	声明一个新字段并使用所选表达式对其进行初始化。原始表达式将替换为字段的使用情况。
 
-#### [Examples 示例](https://code.visualstudio.com/docs/java/java-refactoring#_examples)
+#### [Examples 示例]({{< ref "/Java/Refactoring#_examples" >}})
 
 Let's extract the variable `area` to a field of the class `Square`.
 
@@ -451,13 +451,13 @@ When selecting a variable declaration, convert the variable to field.
 
 
 
-### [Extract to method 提取到方法](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-method)
+### [Extract to method 提取到方法]({{< ref "/Java/Refactoring#_extract-to-method" >}})
 
 Creates a new method containing the statements or expressions currently selected and replaces the selection with a reference to the new method. This feature is useful for cleaning up lengthy, cluttered, or overly complicated methods.
 
 ​​​	创建一个包含当前选定语句或表达式的新的方法，并用对新方法的引用替换选定内容。此功能可用于清理冗长、杂乱或过于复杂的方法。
 
-#### [Examples 示例](https://code.visualstudio.com/docs/java/java-refactoring#_examples)
+#### [Examples 示例]({{< ref "/Java/Refactoring#_examples" >}})
 
 Let's extract the expression `height * width` to a new method.
 
@@ -491,17 +491,17 @@ private int getArea(int height, int width) {
 
 
 
-> Also see: [Inline method](https://code.visualstudio.com/docs/java/java-refactoring#_inline-method)
+> Also see: [Inline method]({{< ref "/Java/Refactoring#_inline-method" >}})
 >
 > ​​​	另请参阅：内联方法
 
-### [Extract to local variable 提取到局部变量](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-local-variable)
+### [Extract to local variable 提取到局部变量]({{< ref "/Java/Refactoring#_extract-to-local-variable" >}})
 
 Creates a new variable assigned to the expression currently selected and replaces the selection with a reference to the new variable.
 
 ​​​	为当前选定的表达式创建一个新的变量，并用对新变量的引用替换该选择。
 
-#### [Examples 示例](https://code.visualstudio.com/docs/java/java-refactoring#_examples)
+#### [Examples 示例]({{< ref "/Java/Refactoring#_examples" >}})
 
 Let's extract the expression `platform.equalsIgnoreCase("MAC")` to a new variable.
 
@@ -540,17 +540,17 @@ After the extraction, you can also perform a rename in the same transaction.
 
 
 
-> Also see: [Inline local variable](https://code.visualstudio.com/docs/java/java-refactoring#_inline-local-variable)
+> Also see: [Inline local variable]({{< ref "/Java/Refactoring#_inline-local-variable" >}})
 >
 > ​​​	内联常量
 
-### [Inline constant 用其定义的值替换常量引用。](https://code.visualstudio.com/docs/java/java-refactoring#_inline-constant)
+### [Inline constant 用其定义的值替换常量引用。]({{< ref "/Java/Refactoring#_inline-constant" >}})
 
 Replaces a constant reference with its defined value.
 
 ​​​	示例
 
-#### [Examples](https://code.visualstudio.com/docs/java/java-refactoring#_examples)
+#### [Examples]({{< ref "/Java/Refactoring#_examples" >}})
 
 Let's replace the constant `PI` to its defined value: `3.14`.
 
@@ -576,17 +576,17 @@ public double getArea(double r) {
 }
 ```
 
-> Also see: [Extract to constant](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-constant)
+> Also see: [Extract to constant]({{< ref "/Java/Refactoring#_extract-to-constant" >}})
 >
 > ​​​	另请参阅：提取到常量
 
-### [Inline local variable 内联局部变量](https://code.visualstudio.com/docs/java/java-refactoring#_inline-local-variable)
+### [Inline local variable 内联局部变量]({{< ref "/Java/Refactoring#_inline-local-variable" >}})
 
 Replaces redundant variable usage with its initializer.
 
 ​​​	用其初始化程序替换冗余变量用法。
 
-#### [Examples 示例](https://code.visualstudio.com/docs/java/java-refactoring#_examples)
+#### [Examples 示例]({{< ref "/Java/Refactoring#_examples" >}})
 
 Let's replace the variable `isMac` directly to the boolean expression.
 
@@ -613,17 +613,17 @@ public void method() {
 }
 ```
 
-> Also see: [Extract to local variable](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-local-variable)
+> Also see: [Extract to local variable]({{< ref "/Java/Refactoring#_extract-to-local-variable" >}})
 >
 > ​​​	另请参阅：提取到局部变量
 
-### [Inline method 内联方法](https://code.visualstudio.com/docs/java/java-refactoring#_inline-method)
+### [Inline method 内联方法]({{< ref "/Java/Refactoring#_inline-method" >}})
 
 Replaces calls to the method with the method’s body.
 
 ​​​	用方法的主体替换对该方法的调用。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's replace the method `getArea(int height, int width)` directly to the expression `height * width`.
 
@@ -657,17 +657,17 @@ public void method() {
 
 
 
-> Also see: [Extract to method](https://code.visualstudio.com/docs/java/java-refactoring#_extract-to-method)
+> Also see: [Extract to method]({{< ref "/Java/Refactoring#_extract-to-method" >}})
 >
 > ​​​	另请参阅：提取到方法
 
-### [Invert conditions 反转条件](https://code.visualstudio.com/docs/java/java-refactoring#_invert-conditions)
+### [Invert conditions 反转条件]({{< ref "/Java/Refactoring#_invert-conditions" >}})
 
 Inverts the boolean expression in the conditions.
 
 ​​​	反转条件中的布尔表达式。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's invert the boolean expression in the if statement.
 
@@ -693,13 +693,13 @@ public void method(int value) {
 }
 ```
 
-### [Invert local variable 反转局部变量](https://code.visualstudio.com/docs/java/java-refactoring#_invert-local-variable)
+### [Invert local variable 反转局部变量]({{< ref "/Java/Refactoring#_invert-local-variable" >}})
 
 Inverts the local boolean variable.
 
 ​​​	反转局部布尔变量。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's invert the variable `valid`.
 
@@ -725,7 +725,7 @@ public void method(int value) {
 
 
 
-### [Move 移动](https://code.visualstudio.com/docs/java/java-refactoring#_move)
+### [Move 移动]({{< ref "/Java/Refactoring#_move" >}})
 
 Moves the selected elements and corrects all references to the elements (also in other files). Available actions are:
 
@@ -738,7 +738,7 @@ Moves the selected elements and corrects all references to the elements (also in
 - Move inner class to a new file
   将内部类移动到新文件
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's move the static method `print()` from class `Office` to class `Printer`.
 
@@ -800,7 +800,7 @@ Move an inner class to new a new file.
 
 
 
-### [Rename 重命名](https://code.visualstudio.com/docs/java/java-refactoring#_rename)
+### [Rename 重命名]({{< ref "/Java/Refactoring#_rename" >}})
 
 Default shortcut: F2
 
@@ -810,7 +810,7 @@ Renames the selected element and corrects all references to the elements (also i
 
 ​​​	重命名所选元素并更正对该元素的所有引用（包括在其他文件中）。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 Let's rename the class `Foo` to `Bar`
 
@@ -854,13 +854,13 @@ Rename refactoring is also supported from the File Explorer for folders and file
 
 ![Rename from Explorer](./Refactoring_img/rename-explorer.gif)
 
-### [Change resolved type to var type 将已解析类型更改为 var 类型](https://code.visualstudio.com/docs/java/java-refactoring#_change-resolved-type-to-var-type)
+### [Change resolved type to var type 将已解析类型更改为 var 类型]({{< ref "/Java/Refactoring#_change-resolved-type-to-var-type" >}})
 
 Uses `var` to declare local variables.
 
 ​​​	使用 `var` 声明局部变量。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 ##### Before 之前
 
@@ -874,19 +874,19 @@ String s = "";
 var s = "";
 ```
 
-> Also see: [Change var type to resolved type](https://code.visualstudio.com/docs/java/java-refactoring#_change-var-type-to-resolved-type)
+> Also see: [Change var type to resolved type]({{< ref "/Java/Refactoring#_change-var-type-to-resolved-type" >}})
 >
 > ​​​	另请参阅：将 var 类型更改为已解析类型
 
 ------
 
-### [Change var type to resolved type 将 var 类型更改为已解析类型](https://code.visualstudio.com/docs/java/java-refactoring#_change-var-type-to-resolved-type)
+### [Change var type to resolved type 将 var 类型更改为已解析类型]({{< ref "/Java/Refactoring#_change-var-type-to-resolved-type" >}})
 
 Uses the resolved type to declare local variables.
 
 ​​​	使用已解析类型声明局部变量。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 ##### Before 之前
 
@@ -900,17 +900,17 @@ var s = "";
 String s = "";
 ```
 
-> Also see: [Change resolved type to var type](https://code.visualstudio.com/docs/java/java-refactoring#_change-resolved-type-to-var-type)
+> Also see: [Change resolved type to var type]({{< ref "/Java/Refactoring#_change-resolved-type-to-var-type" >}})
 >
 > ​​​	另请参阅：将已解决的类型更改为 var 类型
 
-## [Source Actions 源操作](https://code.visualstudio.com/docs/java/java-refactoring#_source-actions)
+## [Source Actions 源操作]({{< ref "/Java/Refactoring#_source-actions" >}})
 
 Source Actions could be used to generate common code structures and recurring elements. Some of them are Quick Fixes that help you fix code issues on the fly.
 
 ​​​	源操作可用于生成常见代码结构和重复元素。其中一些是快速修复，可帮助您即时修复代码问题。
 
-### [Generate constructors 生成构造函数](https://code.visualstudio.com/docs/java/java-refactoring#_generate-constructors)
+### [Generate constructors 生成构造函数]({{< ref "/Java/Refactoring#_generate-constructors" >}})
 
 Add a constructor for the class.
 
@@ -920,7 +920,7 @@ Add a constructor for the class.
 
 
 
-### [Generate delegate methods 生成委托方法](https://code.visualstudio.com/docs/java/java-refactoring#_generate-delegate-methods)
+### [Generate delegate methods 生成委托方法]({{< ref "/Java/Refactoring#_generate-delegate-methods" >}})
 
 Generate delegate methods
 
@@ -930,7 +930,7 @@ Generate delegate methods
 
 
 
-### [Override/implement methods 重写/实现方法](https://code.visualstudio.com/docs/java/java-refactoring#_overrideimplement-methods)
+### [Override/implement methods 重写/实现方法]({{< ref "/Java/Refactoring#_overrideimplement-methods" >}})
 
 With this Source Action, all the candidates are presented to you with a checklist. You can then decide what to override or implement.
 
@@ -940,7 +940,7 @@ With this Source Action, all the candidates are presented to you with a checklis
 
 
 
-### [Organize imports 整理导入](https://code.visualstudio.com/docs/java/java-refactoring#_organize-imports)
+### [Organize imports 整理导入]({{< ref "/Java/Refactoring#_organize-imports" >}})
 
 You can use this Source Action to clean up your imports. It can also deal with ambiguous imports, in that case, a dropdown list will be presented for you to pick the right one. The code line with the unresolved type is also presented to you to help you decide.
 
@@ -950,7 +950,7 @@ You can use this Source Action to clean up your imports. It can also deal with a
 
 
 
-### [Generate getters and setters 生成 getter 和 setter](https://code.visualstudio.com/docs/java/java-refactoring#_generate-getters-and-setters)
+### [Generate getters and setters 生成 getter 和 setter]({{< ref "/Java/Refactoring#_generate-getters-and-setters" >}})
 
 You can bulk generate getters and setters for all new member variables. If the class has more than one field, the Source Action will prompt a Quick Pick for you to select the target fields to use to generate the accessor methods.
 
@@ -960,7 +960,7 @@ You can bulk generate getters and setters for all new member variables. If the c
 
 
 
-### [Generate hashCode() and equals() 生成 hashCode() 和 equals()](https://code.visualstudio.com/docs/java/java-refactoring#_generate-hashcode-and-equals)
+### [Generate hashCode() and equals() 生成 hashCode() 和 equals()]({{< ref "/Java/Refactoring#_generate-hashcode-and-equals" >}})
 
 `hashCode()` and `equals()` can be generated with default implementations. All the non-static member variables are listed, and you can customize the generated code using the check list.
 
@@ -979,7 +979,7 @@ There are two options for you to customize the generated code:
 
 
 
-### [Generate toString() 生成 toString()](https://code.visualstudio.com/docs/java/java-refactoring#_generate-tostring)
+### [Generate toString() 生成 toString()]({{< ref "/Java/Refactoring#_generate-tostring" >}})
 
 There is a new Source Action to generate the `toString()` method. Customization is possible with a check list of all the member variables.
 
@@ -989,13 +989,13 @@ There is a new Source Action to generate the `toString()` method. Customization 
 
 
 
-### [Change modifiers to final where possible 尽可能将修饰符更改为 final](https://code.visualstudio.com/docs/java/java-refactoring#_change-modifiers-to-final-where-possible)
+### [Change modifiers to final where possible 尽可能将修饰符更改为 final]({{< ref "/Java/Refactoring#_change-modifiers-to-final-where-possible" >}})
 
 Adds `final` modifier to all the variables and parameters in the current source file.
 
 ​​​	将 `final` 修饰符添加到当前源文件中的所有变量和参数。
 
-#### [Example 示例](https://code.visualstudio.com/docs/java/java-refactoring#_example)
+#### [Example 示例]({{< ref "/Java/Refactoring#_example" >}})
 
 ##### Before 之前
 
@@ -1023,7 +1023,7 @@ public class Clazz {
 }
 ```
 
-### [Fix non-accessible reference 修复不可访问的引用](https://code.visualstudio.com/docs/java/java-refactoring#_fix-nonaccessible-reference)
+### [Fix non-accessible reference 修复不可访问的引用]({{< ref "/Java/Refactoring#_fix-nonaccessible-reference" >}})
 
 This Quick Fix helps you fix non-accessible reference.
 
@@ -1033,7 +1033,7 @@ This Quick Fix helps you fix non-accessible reference.
 
 
 
-### [Create non-existing package 创建不存在的包](https://code.visualstudio.com/docs/java/java-refactoring#_create-nonexisting-package)
+### [Create non-existing package 创建不存在的包]({{< ref "/Java/Refactoring#_create-nonexisting-package" >}})
 
 When your package name doesn't match the folder name, you have the options to either change the package name in your source code, or move the folder in the file system (even when the destination folder doesn't exist yet).
 
@@ -1043,7 +1043,7 @@ When your package name doesn't match the folder name, you have the options to ei
 
 
 
-### [Other Code Actions supported 其他受支持的代码操作](https://code.visualstudio.com/docs/java/java-refactoring#_other-code-actions-supported)
+### [Other Code Actions supported 其他受支持的代码操作]({{< ref "/Java/Refactoring#_other-code-actions-supported" >}})
 
 The list of Code Actions supported by VS Code keeps growing and only listed the most popular ones above. Other notable supported actions include (but not limited to):
 

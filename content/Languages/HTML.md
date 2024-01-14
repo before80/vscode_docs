@@ -18,7 +18,7 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
 
 ​​	Visual Studio Code 开箱即用地为 HTML 编程提供了基本支持。它具有语法突出显示、带有 IntelliSense 的智能补全以及可自定义的格式。VS Code 还包括出色的 Emmet 支持。
 
-## [IntelliSense](https://code.visualstudio.com/docs/languages/html#_intellisense)
+## [IntelliSense]({{< ref "/Languages/HTML#_intellisense" >}})
 
 As you type in HTML, we offer suggestions via HTML IntelliSense. In the image below, you can see a suggested HTML element closure `</div>` as well as a context specific list of suggested elements.
 
@@ -38,7 +38,7 @@ You can trigger suggestions at any time by pressing Ctrl+Space.
 
 ​​	您可以随时按 Ctrl+Space 触发建议。
 
-You can also control which built-in code completion providers are active. Override these in your user or workspace [settings](https://code.visualstudio.com/docs/getstarted/settings) if you prefer not to see the corresponding suggestions.
+You can also control which built-in code completion providers are active. Override these in your user or workspace [settings]({{< ref "/GetStarted/Settings" >}}) if you prefer not to see the corresponding suggestions.
 
 ​​	您还可以控制哪些内置代码补全提供程序处于活动状态。如果您不想看到相应的建议，请在用户或工作区设置中覆盖这些建议。
 
@@ -47,7 +47,7 @@ You can also control which built-in code completion providers are active. Overri
 "html.suggest.html5": true
 ```
 
-## [Close tags 关闭标记](https://code.visualstudio.com/docs/languages/html#_close-tags)
+## [Close tags 关闭标记]({{< ref "/Languages/HTML#_close-tags" >}})
 
 Tag elements are automatically closed when `>` of the opening tag is typed.
 
@@ -61,7 +61,7 @@ The matching closing tag is inserted when `/` of the closing tag is entered.
 
 ![HTML Close2](./HTML_img/auto-close2.gif)
 
-You can turn off autoclosing tags with the following [setting](https://code.visualstudio.com/docs/getstarted/settings):
+You can turn off autoclosing tags with the following [setting]({{< ref "/GetStarted/Settings" >}}):
 
 ​​	您可以使用以下设置关闭自动关闭标签：
 
@@ -69,7 +69,7 @@ You can turn off autoclosing tags with the following [setting](https://code.visu
 "html.autoClosingTags": false
 ```
 
-## [Auto update tags 自动更新标记](https://code.visualstudio.com/docs/languages/html#_auto-update-tags)
+## [Auto update tags 自动更新标记]({{< ref "/Languages/HTML#_auto-update-tags" >}})
 
 When modifying a tag, the linked editing feature automatically updates the matching closing tag. The feature is optional and can be enabled by setting:
 
@@ -79,7 +79,7 @@ When modifying a tag, the linked editing feature automatically updates the match
 "editor.linkedEditing": true
 ```
 
-## [Color picker 颜色选取器](https://code.visualstudio.com/docs/languages/html#_color-picker)
+## [Color picker 颜色选取器]({{< ref "/Languages/HTML#_color-picker" >}})
 
 The VS Code color picker UI is now available in HTML style sections.
 
@@ -91,7 +91,7 @@ It supports configuration of hue, saturation and opacity for the color that is p
 
 ​​	它支持对从编辑器中选取的颜色配置色调、饱和度和不透明度。它还提供了通过单击选取器顶部的颜色字符串在不同颜色模式之间触发的功能。当您位于颜色定义上方时，选取器会以悬停方式出现。
 
-## [Hover 悬停](https://code.visualstudio.com/docs/languages/html#_hover)
+## [Hover 悬停]({{< ref "/Languages/HTML#_hover" >}})
 
 Move the mouse over HTML tags or embedded styles and JavaScript to get more information on the symbol under the cursor.
 
@@ -99,7 +99,7 @@ Move the mouse over HTML tags or embedded styles and JavaScript to get more info
 
 ![HTML Hover](./HTML_img/htmlhover.png)
 
-## [Validation 验证](https://code.visualstudio.com/docs/languages/html#_validation)
+## [Validation 验证]({{< ref "/Languages/HTML#_validation" >}})
 
 The HTML language support performs validation on all embedded JavaScript and CSS.
 
@@ -117,7 +117,7 @@ You can turn that validation off with the following settings:
 "html.validate.styles": true
 ```
 
-## [Folding 折叠](https://code.visualstudio.com/docs/languages/html#_folding)
+## [Folding 折叠]({{< ref "/Languages/HTML#_folding" >}})
 
 You can fold regions of source code using the folding icons on the gutter between line numbers and line start. Folding regions are available for all HTML elements for multiline comments in the source code.
 
@@ -137,13 +137,13 @@ If you prefer to switch to indentation based folding for HTML use:
 },
 ```
 
-## [Formatting 格式化](https://code.visualstudio.com/docs/languages/html#_formatting)
+## [Formatting 格式化]({{< ref "/Languages/HTML#_formatting" >}})
 
 To improve the formatting of your HTML source code, you can use the **Format Document** command Shift+Alt+F to format the entire file or **Format Selection** Ctrl+K Ctrl+F to just format the selected text.
 
 ​​	为了改进 HTML 源代码的格式，您可以使用“格式化文档”命令 Shift+Alt+F 格式化整个文件，或使用“格式化选定内容”Ctrl+K Ctrl+F 仅格式化选定的文本。
 
-The HTML formatter is based on [js-beautify](https://www.npmjs.com/package/js-beautify). The formatting options offered by that library are surfaced in the VS Code [settings](https://code.visualstudio.com/docs/getstarted/settings):
+The HTML formatter is based on [js-beautify](https://www.npmjs.com/package/js-beautify). The formatting options offered by that library are surfaced in the VS Code [settings]({{< ref "/GetStarted/Settings" >}}):
 
 ​​	HTML 格式化程序基于 js-beautify。该库提供的格式化选项显示在 VS Code 设置中：
 
@@ -209,7 +209,7 @@ The Marketplace has several alternative formatters to choose from. If you want t
 
 ​​	市场有几种备选格式化程序可供选择。如果您想使用不同的格式化程序，请在设置中定义 `"html.format.enable": false` 以关闭内置格式化程序。
 
-## [Emmet snippets Emmet 代码段](https://code.visualstudio.com/docs/languages/html#_emmet-snippets)
+## [Emmet snippets Emmet 代码段]({{< ref "/Languages/HTML#_emmet-snippets" >}})
 
 VS Code supports [Emmet snippet](https://emmet.io/) expansion. Emmet abbreviations are listed along with other suggestions and snippets in the editor auto-completion list.
 
@@ -221,7 +221,7 @@ VS Code supports [Emmet snippet](https://emmet.io/) expansion. Emmet abbreviatio
 >
 > ​​	提示：请参阅 Emmet 速查表的 HTML 部分，了解有效的缩写。
 
-If you'd like to use HTML Emmet abbreviations with other languages, you can associate one of the Emmet modes (such as `css`, `html`) with other languages with the `emmet.includeLanguages` [setting](https://code.visualstudio.com/docs/getstarted/settings). The setting takes a [language identifier](https://code.visualstudio.com/docs/languages/overview#_language-identifier) and associates it with the language ID of an Emmet supported mode.
+If you'd like to use HTML Emmet abbreviations with other languages, you can associate one of the Emmet modes (such as `css`, `html`) with other languages with the `emmet.includeLanguages` [setting]({{< ref "/GetStarted/Settings" >}}). The setting takes a [language identifier]({{< ref "/Languages/Overview#_language-identifier" >}}) and associates it with the language ID of an Emmet supported mode.
 
 ​​	如果您想将 HTML Emmet 缩写与其他语言一起使用，您可以将其中一种 Emmet 模式（例如 `css` 、 `html` ）与其他语言关联，方法是使用 `emmet.includeLanguages` 设置。该设置采用语言标识符，并将其与 Emmet 支持的模式的语言 ID 关联。
 
@@ -237,11 +237,11 @@ For example, to use Emmet HTML abbreviations inside JavaScript:
 }
 ```
 
-We also support [User Defined Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
+We also support [User Defined Snippets]({{< ref "/UserGuide/Snippets" >}}).
 
 ​​	我们还支持用户定义的代码段。
 
-## [HTML custom data HTML 自定义数据](https://code.visualstudio.com/docs/languages/html#_html-custom-data)
+## [HTML custom data HTML 自定义数据]({{< ref "/Languages/HTML#_html-custom-data" >}})
 
 You can extend VS Code's HTML support through a declarative [custom data format](https://github.com/microsoft/vscode-html-languageservice/blob/main/docs/customData.md). By setting `html.customData` to a list of JSON files following the custom data format, you can enhance VS Code's understanding of new HTML tags, attributes and attribute values. VS Code will then offer language support such as completion & hover information for the provided tags, attributes and attribute values.
 
@@ -251,7 +251,7 @@ You can read more about using custom data in the [vscode-custom-data](https://gi
 
 ​​	您可以在 vscode-custom-data 存储库中阅读有关使用自定义数据的更多信息。
 
-## [HTML extensions HTML 扩展](https://code.visualstudio.com/docs/languages/html#_html-extensions)
+## [HTML extensions HTML 扩展]({{< ref "/Languages/HTML#_html-extensions" >}})
 
 Install an extension to add more functionality. Go to the **Extensions** view (Ctrl+Shift+X) and type 'html' to see a list of relevant extensions to help with creating and editing HTML.
 
@@ -299,22 +299,22 @@ mkaufman
 >
 > ​​	提示：单击上方的扩展磁贴以阅读说明和评论，以决定哪个扩展最适合您。在 Marketplace 中查看更多内容。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/languages/html#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Languages/HTML#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [CSS, SCSS, and Less](https://code.visualstudio.com/docs/languages/css) - VS Code has first class support for CSS including Less and SCSS.
+- [CSS, SCSS, and Less]({{< ref "/Languages/CSSSCSSandLess" >}}) - VS Code has first class support for CSS including Less and SCSS.
   CSS、SCSS 和 Less - VS Code 对 CSS 提供一流的支持，包括 Less 和 SCSS。
-- [Emmet](https://code.visualstudio.com/docs/editor/emmet) - Learn about VS Code's powerful built-in Emmet support.
+- [Emmet]({{< ref "/UserGuide/Emmet" >}}) - Learn about VS Code's powerful built-in Emmet support.
   Emmet - 了解 VS Code 功能强大的内置 Emmet 支持。
 - [Emmet official documentation](https://docs.emmet.io/) - Emmet, the essential toolkit for web-developers.
   Emmet 官方文档 - Emmet，Web 开发人员必备工具包。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/languages/html#_common-questions)
+## [Common questions 常见问题]({{< ref "/Languages/HTML#_common-questions" >}})
 
-### [Does VS Code have HTML preview? VS Code 有 HTML 预览吗？](https://code.visualstudio.com/docs/languages/html#_does-vs-code-have-html-preview)
+### [Does VS Code have HTML preview? VS Code 有 HTML 预览吗？]({{< ref "/Languages/HTML#_does-vs-code-have-html-preview" >}})
 
 No, VS Code doesn't have built-in support for HTML preview but there are extensions available in the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode). Open the **Extensions** view (Ctrl+Shift+X) and search on 'live preview' or 'html preview' to see a list of available HTML preview extensions.
 

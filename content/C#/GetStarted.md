@@ -30,7 +30,7 @@ Keep in mind, that this guide won't teach you C#. Instead, it teaches you how to
 [Learn C# Curriculum
 学习 C# 课程](https://aka.ms/selfguidedcsharp)
 
-## [Necessary tools 必要的工具](https://code.visualstudio.com/docs/csharp/get-started#_necessary-tools)
+## [Necessary tools 必要的工具]({{< ref "/C#/GetStarted#_necessary-tools" >}})
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension
@@ -38,13 +38,13 @@ Keep in mind, that this guide won't teach you C#. Instead, it teaches you how to
 - For .NET Development, the [.NET SDK](https://dotnet.microsoft.com/download)
   对于 .NET 开发，.NET SDK
 
-## [Install 安装](https://code.visualstudio.com/docs/csharp/get-started#_install)
+## [Install 安装]({{< ref "/C#/GetStarted#_install" >}})
 
-### [Installing VS Code and extensions 安装 VS Code 和扩展](https://code.visualstudio.com/docs/csharp/get-started#_installing-vs-code-and-extensions)
+### [Installing VS Code and extensions 安装 VS Code 和扩展]({{< ref "/C#/GetStarted#_installing-vs-code-and-extensions" >}})
 
 1. If you haven't already done so, [install VS Code](https://code.visualstudio.com/).
    如果您尚未执行此操作，请安装 VS Code。
-2. Next, install [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) from the Visual Studio Marketplace. For additional details on installing extensions, read [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace). The C# extension is called **C# Dev Kit** and it's published by Microsoft.
+2. Next, install [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) from the Visual Studio Marketplace. For additional details on installing extensions, read [Extension Marketplace]({{< ref "/UserGuide/ExtensionMarketplace" >}}). The C# extension is called **C# Dev Kit** and it's published by Microsoft.
    接下来，从 Visual Studio Marketplace 安装 C# Dev Kit。有关安装扩展的更多详细信息，请阅读扩展 Marketplace。C# 扩展名为 C# Dev Kit，由 Microsoft 发布。
 
 > **Note**: C# Dev Kit supports cloud native development. To do cross-platform mobile and desktop development, you can use C# Dev Kit with the [.NET MAUI extension](https://aka.ms/mauidevkit-marketplace). Learn [how to get set up](https://aka.ms/mauidevkit-docs) with .NET MAUI in VS Code.
@@ -58,7 +58,7 @@ Upon installation, C# Dev Kit launches an extension walkthrough. You can follow 
 > **Note**: You are required to sign in to a Visual Studio subscription to use C# Dev Kit. Check out the [Signing in to C# Dev Kit](https://code.visualstudio.com/docs/csharp/signing-in) documentation to learn more.
 > 注意：您需要登录 Visual Studio 订阅才能使用 C# Dev Kit。查看登录到 C# Dev Kit 文档以了解更多信息。
 
-### [Installing the .NET Coding Pack for students 为学生安装 .NET 编码包](https://code.visualstudio.com/docs/csharp/get-started#_installing-the-net-coding-pack-for-students)
+### [Installing the .NET Coding Pack for students 为学生安装 .NET 编码包]({{< ref "/C#/GetStarted#_installing-the-net-coding-pack-for-students" >}})
 
 If you're a student, we recommend installing the **.NET Coding Pack** for an easier setup experience. The Coding Pack includes VS Code, the .NET SDK, and essential .NET extensions. The Coding Pack can be used as a clean installation, or to update or repair an existing development environment.
 如果您是学生，我们建议安装 .NET Coding Pack 以获得更轻松的设置体验。Coding Pack 包括 VS Code、.NET SDK 和必要的 .NET 扩展。Coding Pack 可用作全新安装，或用于更新或修复现有开发环境。
@@ -72,9 +72,9 @@ If you're a student, we recommend installing the **.NET Coding Pack** for an eas
 > **Note**: The .NET Coding Pack is only available for Windows and macOS. For other operating systems, you need to manually install the .NET SDK, VS Code, and .NET extensions.
 > 注意：.NET Coding Pack 仅适用于 Windows 和 macOS。对于其他操作系统，您需要手动安装 .NET SDK、VS Code 和 .NET 扩展。
 
-## [Open folder 打开文件夹](https://code.visualstudio.com/docs/csharp/get-started#_open-folder)
+## [Open folder 打开文件夹]({{< ref "/C#/GetStarted#_open-folder" >}})
 
-By starting VS Code in a folder, that folder becomes your "workspace". VS Code stores [settings](https://code.visualstudio.com/docs/getstarted/settings) that are specific to that workspace in `.vscode/settings.json`, which are separate from user settings that are stored globally.
+By starting VS Code in a folder, that folder becomes your "workspace". VS Code stores [settings]({{< ref "/GetStarted/Settings" >}}) that are specific to that workspace in `.vscode/settings.json`, which are separate from user settings that are stored globally.
 通过在文件夹中启动 VS Code，该文件夹将成为您的“工作区”。VS Code 将特定于该工作区且与全局存储的用户设置分开的设置存储在 `.vscode/settings.json` 中。
 
 Using a terminal, create an empty folder called "hello", navigate into it, and open VS Code (code) in that folder (.) by entering the following commands:
@@ -89,12 +89,12 @@ code .
 Alternatively, you can run VS Code through the operating system UI, then use **File** > **Open Folder** to open the project folder.
 或者，您可以通过操作系统 UI 运行 VS Code，然后使用“文件”>“打开文件夹”打开项目文件夹。
 
-## [Create a Hello World app 创建一个 Hello World 应用程序](https://code.visualstudio.com/docs/csharp/get-started#_create-a-hello-world-app)
+## [Create a Hello World app 创建一个 Hello World 应用程序]({{< ref "/C#/GetStarted#_create-a-hello-world-app" >}})
 
 First, ensure you are within the new folder (workspace) that you created. From here, you can create the project in two ways.
 首先，确保您位于您创建的新文件夹（工作区）中。在此处，您可以通过两种方式创建项目。
 
-### [Use the Command Palette 使用命令面板](https://code.visualstudio.com/docs/csharp/get-started#_use-the-command-palette)
+### [Use the Command Palette 使用命令面板]({{< ref "/C#/GetStarted#_use-the-command-palette" >}})
 
 1. Bring up the Command Palette using Ctrl+Shift+P and then type ".NET".
    使用 Ctrl+Shift+P 调出命令面板，然后键入“.NET”。
@@ -102,12 +102,12 @@ First, ensure you are within the new folder (workspace) that you created. From h
    查找并选择 .NET: 新建项目命令。
 3. After selecting the command, you'll need to choose the project template. Choose **Console app**.
    选择命令后，您需要选择项目模板。选择控制台应用。
-4. To run your app, select **Run > Start Debugging** in the upper menu, or use the F5 keyboard shortcut. To learn more about debugging your C# project, read the [debugging documentation](https://code.visualstudio.com/docs/csharp/debugging).
+4. To run your app, select **Run > Start Debugging** in the upper menu, or use the F5 keyboard shortcut. To learn more about debugging your C# project, read the [debugging documentation]({{< ref "/C#/RunandDebug" >}}).
    若要运行应用，请在顶部菜单中选择运行 > 开始调试，或使用 F5 键盘快捷键。若要详细了解如何调试 C# 项目，请阅读调试文档。
 
 ![Use the Command Palette to create a new .NET project](./GetStarted_img/open-new-project.gif)
 
-### [Use the terminal 使用终端](https://code.visualstudio.com/docs/csharp/get-started#_use-the-terminal)
+### [Use the terminal 使用终端]({{< ref "/C#/GetStarted#_use-the-terminal" >}})
 
 1. Open a terminal/command prompt and navigate to the folder in which you'd like to create the app. Enter the following command in the command shell:
    打开终端/命令提示符，并导航到您想要创建应用的文件夹。在命令外壳中输入以下命令：
@@ -132,7 +132,7 @@ First, ensure you are within the new folder (workspace) that you created. From h
    dotnet run
    ```
 
-## [Learn more 了解更多信息](https://code.visualstudio.com/docs/csharp/get-started#_learn-more)
+## [Learn more 了解更多信息]({{< ref "/C#/GetStarted#_learn-more" >}})
 
 Explore all the features the C# extension has to offer by looking for **.NET** in the Command Palette. For more information on these features, refer to the other documentation pages.
 通过在命令面板中查找 .NET，探索 C# 扩展提供的所有功能。有关这些功能的更多信息，请参阅其他文档页面。
@@ -147,7 +147,7 @@ For learning materials on C# and .NET, check out the following resources:
 3. [Learn to build web applications
    学习构建 Web 应用程序](https://learn.microsoft.com/training/paths/build-web-apps-with-blazor/)
 
-## [Join the community 加入社区](https://code.visualstudio.com/docs/csharp/get-started#_join-the-community)
+## [Join the community 加入社区]({{< ref "/C#/GetStarted#_join-the-community" >}})
 
 Find community resources and connect with user groups.
 查找社区资源并与用户组建立联系。

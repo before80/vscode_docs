@@ -14,11 +14,11 @@ draft = false
 
 
 
-This article covers troubleshooting tips and tricks for the Visual Studio Code [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) extension. See the [Overview](https://code.visualstudio.com/docs/containers/overview) and quickstart articles for [Node.js](https://code.visualstudio.com/docs/containers/quickstart-node), [Python](https://code.visualstudio.com/docs/containers/quickstart-python), or [ASP.NET](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core) for details on setting up and working with Docker.
+This article covers troubleshooting tips and tricks for the Visual Studio Code [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) extension. See the [Overview]({{< ref "/Docker/Overview" >}}) and quickstart articles for [Node.js]({{< ref "/Docker/Node_js" >}}), [Python]({{< ref "/Docker/Python" >}}), or [ASP.NET]({{< ref "/Docker/ASP_NETCore" >}}) for details on setting up and working with Docker.
 
 ​​	本文介绍了 Visual Studio Code Docker 扩展的故障排除提示和技巧。有关设置和使用 Docker 的详细信息，请参阅 Node.js、Python 或 ASP.NET 的概述和快速入门文章。
 
-## [Running as a non-root user 以非 root 用户身份运行](https://code.visualstudio.com/docs/containers/troubleshooting#_running-as-a-nonroot-user)
+## [Running as a non-root user 以非 root 用户身份运行]({{< ref "/Docker/TipsandTricks#_running-as-a-nonroot-user" >}})
 
 For security reasons, we recommend selecting the default ports when executing the **Add Dockerfiles to Workspace** command, or otherwise opting for a port **greater than** 1023 whenever possible. This will allow VS Code to configure the Dockerfile with non-root access and prevent a malicious user from elevating permissions in the container. In some cases, there is no port selection, so the Docker extension configures non-root access by default. In all cases, you must ensure each resource (such as ports and files) modified or used by your application can be accessed by a non-root user in your container.
 
@@ -71,19 +71,19 @@ Next, ensure the `docker run` task in `tasks.json` also expects the same port. Y
 }
 ```
 
-## [Error "connect EACCES /var/run/docker.sock" on Linux Linux 上的错误“connect EACCES /var/run/docker.sock”](https://code.visualstudio.com/docs/containers/troubleshooting#_error-connect-eacces-varrundockersock-on-linux)
+## [Error "connect EACCES /var/run/docker.sock" on Linux Linux 上的错误“connect EACCES /var/run/docker.sock”]({{< ref "/Docker/TipsandTricks#_error-connect-eacces-varrundockersock-on-linux" >}})
 
 Since VS Code runs as a non-root user, you will need to follow the steps in "Manage Docker as a non-root user" from [Post-installation steps for Linux](https://aka.ms/AA37yk6) to access Docker from the extension.
 
 ​​	由于 VS Code 以非 root 用户身份运行，因此您需要按照 Linux 安装后步骤中的“以非 root 用户身份管理 Docker”中的步骤操作，才能从扩展访问 Docker。
 
-## [Docker containers and images have disappeared from Docker view Docker 容器和映像已从 Docker 视图中消失](https://code.visualstudio.com/docs/containers/troubleshooting#_docker-containers-and-images-have-disappeared-from-docker-view)
+## [Docker containers and images have disappeared from Docker view Docker 容器和映像已从 Docker 视图中消失]({{< ref "/Docker/TipsandTricks#_docker-containers-and-images-have-disappeared-from-docker-view" >}})
 
 This is most likely caused by a conflict with another extension called `Docker Explorer` (not authored by Microsoft). To resolve this issue, use a workaround described [vscode-docker issue #1609](https://github.com/microsoft/vscode-docker/issues/1609#issuecomment-586331394).
 
 ​​	这很可能是由于与另一个名为 `Docker Explorer` 的扩展（非 Microsoft 创作）发生冲突所致。要解决此问题，请使用 vscode-docker 问题 #1609 中描述的解决方法。
 
-## [The extension does not find Docker on a remote machine 扩展在远程计算机上找不到 Docker](https://code.visualstudio.com/docs/containers/troubleshooting#_the-extension-does-not-find-docker-on-a-remote-machine)
+## [The extension does not find Docker on a remote machine 扩展在远程计算机上找不到 Docker]({{< ref "/Docker/TipsandTricks#_the-extension-does-not-find-docker-on-a-remote-machine" >}})
 
 Error message "Failed to connect. Is Docker installed and running?"
 
@@ -94,7 +94,7 @@ Error message "Failed to connect. Is Docker installed and running?"
 2. If you are using a remote development environment (remote machine via SSH, WSL subsystem, GitHub Codespace), make sure the Docker extension is installed remotely as well as locally.
    如果您使用的是远程开发环境（通过 SSH、WSL 子系统、GitHub Codespace 的远程计算机），请确保 Docker 扩展已在远程和本地安装。
 
-## [Invalid URL errors 无效的 URL 错误](https://code.visualstudio.com/docs/containers/troubleshooting#_invalid-url-errors)
+## [Invalid URL errors 无效的 URL 错误]({{< ref "/Docker/TipsandTricks#_invalid-url-errors" >}})
 
 If you have a need to connect to a remote Docker daemon, we recommend using Docker contexts instead of a `docker.environment` attribute in the settings. Check out this guide to learn how to [create and use a context](https://docs.docker.com/engine/context/working-with-contexts/) to communicate with a remote Docker daemon.
 
@@ -112,7 +112,7 @@ If you still need to override the Docker context you are currently using, make s
 >
 > ​​	提示：在 Powershell 中，您可以使用 `$ENV:DOCKER_HOST = 'ssh://username@1.2.3.4'` 更改 Docker 环境变量
 
-## [Questions and feedback 问题和反馈](https://code.visualstudio.com/docs/containers/troubleshooting#_questions-and-feedback)
+## [Questions and feedback 问题和反馈]({{< ref "/Docker/TipsandTricks#_questions-and-feedback" >}})
 
 We love your feedback! If you have any ideas or suggestions, [report an issue](https://github.com/microsoft/vscode-docker/issues/new).
 

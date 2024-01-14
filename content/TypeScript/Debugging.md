@@ -14,11 +14,11 @@ draft = false
 
 
 
-Visual Studio Code supports TypeScript debugging through its built-in [Node.js debugger](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) and [Edge and Chrome debugger](https://code.visualstudio.com/docs/nodejs/browser-debugging).
+Visual Studio Code supports TypeScript debugging through its built-in [Node.js debugger]({{< ref "/Node_jsJavaScript/Node_jsDebugging" >}}) and [Edge and Chrome debugger]({{< ref "/Node_jsJavaScript/BrowserDebugging" >}}).
 
 ​​	Visual Studio Code 通过其内置的 Node.js 调试器和 Edge 和 Chrome 调试器支持 TypeScript 调试。
 
-## [JavaScript source map support JavaScript 源映射支持](https://code.visualstudio.com/docs/typescript/typescript-debugging#_javascript-source-map-support)
+## [JavaScript source map support JavaScript 源映射支持]({{< ref "/TypeScript/Debugging#_javascript-source-map-support" >}})
 
 TypeScript debugging supports JavaScript source maps. To generate source maps for your TypeScript files, compile with the `--sourcemap` option or set the `sourceMap` property in the `tsconfig.json` file to `true`.
 
@@ -28,7 +28,7 @@ In-lined source maps (a source map where the content is stored as a data URL ins
 
 ​​	内联源映射（其中内容存储为数据 URL，而不是单独的文件）也受支持，尽管尚未支持内联源。
 
-For a simple example of source maps in action, see the [TypeScript tutorial](https://code.visualstudio.com/docs/typescript/typescript-tutorial), which shows debugging a simple "Hello World" Node.js application using the following `tsconfig.json` and VS Code default Node.js debugging configuration.
+For a simple example of source maps in action, see the [TypeScript tutorial]({{< ref "/TypeScript/Tutorial" >}}), which shows debugging a simple "Hello World" Node.js application using the following `tsconfig.json` and VS Code default Node.js debugging configuration.
 
 ​​	有关操作中的源映射的简单示例，请参阅 TypeScript 教程，该教程演示了使用以下 `tsconfig.json` 和 VS Code 默认 Node.js 调试配置对简单的“Hello World”Node.js 应用程序进行调试。
 
@@ -80,19 +80,19 @@ There is full IntelliSense with suggestions and information for `launch.json` to
 
 ![launch.json IntelliSense](./Debugging_img/launch-json-intellisense.png)
 
-Also see [Node.js Debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) for examples and further explanations.
+Also see [Node.js Debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging" >}}) for examples and further explanations.
 
 ​​	另请参阅 Node.js 调试，以获取示例和进一步的说明。
 
-## [Mapping the output location 映射输出位置](https://code.visualstudio.com/docs/typescript/typescript-debugging#_mapping-the-output-location)
+## [Mapping the output location 映射输出位置]({{< ref "/TypeScript/Debugging#_mapping-the-output-location" >}})
 
 If generated (transpiled) JavaScript files do not live next to their source, you can help the VS Code debugger locate them by setting the `outFiles` attribute in the launch configuration. Whenever you set a breakpoint in the original source, VS Code tries to find the generated source by searching the files specified by glob patterns in `outFiles`.
 
 ​​	如果生成的（转译的）JavaScript 文件不在其源代码旁边，您可以通过在启动配置中设置 `outFiles` 属性来帮助 VS Code 调试器找到它们。每当您在原始源代码中设置断点时，VS Code 都会尝试通过搜索 `outFiles` 中的 glob 模式指定的文件来查找生成的源代码。
 
-## [Client-side debugging 客户端调试](https://code.visualstudio.com/docs/typescript/typescript-debugging#_clientside-debugging)
+## [Client-side debugging 客户端调试]({{< ref "/TypeScript/Debugging#_clientside-debugging" >}})
 
-TypeScript is great for writing client-side code as well as Node.js applications and you can debug client-side source code with the [built-in Edge and Chrome debugger](https://code.visualstudio.com/docs/nodejs/browser-debugging).
+TypeScript is great for writing client-side code as well as Node.js applications and you can debug client-side source code with the [built-in Edge and Chrome debugger]({{< ref "/Node_jsJavaScript/BrowserDebugging" >}}).
 
 ​​	TypeScript 非常适合编写客户端代码以及 Node.js 应用程序，您还可以使用内置的 Edge 和 Chrome 调试器调试客户端源代码。
 
@@ -169,9 +169,9 @@ The **Run and Debug** view configuration dropdown will now show the new configur
 
 ![client-side debug breakpoint](./Debugging_img/client-side-debug-breakpoint.png)
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/typescript/typescript-debugging#_common-questions)
+## [Common questions 常见问题]({{< ref "/TypeScript/Debugging#_common-questions" >}})
 
-### [Cannot launch program because corresponding JavaScript cannot be found 无法启动程序，因为找不到相应的 JavaScript](https://code.visualstudio.com/docs/typescript/typescript-debugging#_cannot-launch-program-because-corresponding-javascript-cannot-be-found)
+### [Cannot launch program because corresponding JavaScript cannot be found 无法启动程序，因为找不到相应的 JavaScript]({{< ref "/TypeScript/Debugging#_cannot-launch-program-because-corresponding-javascript-cannot-be-found" >}})
 
 You've likely not set `"sourceMap": true` in your `tsconfig.json` or `outFiles` in your `launch.json` and the VS Code Node.js debugger can't map your TypeScript source code to the running JavaScript. Turn on source maps and rebuild your project.
 

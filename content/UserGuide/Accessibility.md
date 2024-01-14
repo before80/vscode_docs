@@ -18,7 +18,7 @@ Visual Studio Code has many features to help make the editor accessible to all u
 
 ​​	Visual Studio Code 具有许多功能，可帮助使编辑器对所有用户都可访问。缩放级别和高对比度颜色可提高编辑器可见性，仅键盘导航支持不使用鼠标，并且编辑器针对屏幕阅读器进行了优化。
 
-## [Zoom 缩放](https://code.visualstudio.com/docs/editor/accessibility#_zoom)
+## [Zoom 缩放]({{< ref "/UserGuide/Accessibility#_zoom" >}})
 
 You can adjust the zoom level in VS Code with the **View** > **Appearance** > **Zoom** commands. Each **Zoom** command increases or decreases the zoom level by 20 percent.
 
@@ -37,13 +37,13 @@ You can adjust the zoom level in VS Code with the **View** > **Appearance** > **
 
 ![Zoomed in editor](./Accessibility_img/zoomed-in.png)
 
-### [Persisted zoom level 持久缩放级别](https://code.visualstudio.com/docs/editor/accessibility#_persisted-zoom-level)
+### [Persisted zoom level 持久缩放级别]({{< ref "/UserGuide/Accessibility#_persisted-zoom-level" >}})
 
-When you adjust the zoom level with the **View** > **Zoom In / Out** commands, the zoom level is persisted in the `window.zoomLevel` [setting](https://code.visualstudio.com/docs/getstarted/settings). The default value is 0 and each increment/decrement changes the zoom level by 20 percent.
+When you adjust the zoom level with the **View** > **Zoom In / Out** commands, the zoom level is persisted in the `window.zoomLevel` [setting]({{< ref "/GetStarted/Settings" >}}). The default value is 0 and each increment/decrement changes the zoom level by 20 percent.
 
 ​​	当您使用“视图”>“放大/缩小”命令调整缩放级别时，缩放级别会保存在 `window.zoomLevel` 设置中。默认值为 0，每次增量/减量都会将缩放级别更改 20%。
 
-## [High Contrast theme 高对比度主题](https://code.visualstudio.com/docs/editor/accessibility#_high-contrast-theme)
+## [High Contrast theme 高对比度主题]({{< ref "/UserGuide/Accessibility#_high-contrast-theme" >}})
 
 VS Code supports a High Contrast color theme on all platforms. Use **File** > **Preferences** > **Theme** > **Color Theme** (Ctrl+K Ctrl+T) to display the **Select Color Theme** dropdown and select the **High Contrast** theme.
 
@@ -51,7 +51,7 @@ VS Code supports a High Contrast color theme on all platforms. Use **File** > **
 
 ![High Contrast Theme](./Accessibility_img/high-contrast.png)
 
-## [Color vision accessibility 色觉可访问性](https://code.visualstudio.com/docs/editor/accessibility#_color-vision-accessibility)
+## [Color vision accessibility 色觉可访问性]({{< ref "/UserGuide/Accessibility#_color-vision-accessibility" >}})
 
 You can search for extensions in **Visual Studio Marketplace** that are compatible with color vision deficiency. Use the Extensions view Ctrl+Shift+X and search for "color blind" to populate relevant options.
 
@@ -59,13 +59,13 @@ You can search for extensions in **Visual Studio Marketplace** that are compatib
 
 ![Visual Studio Marketplace in VS Code UI](./Accessibility_img/accessibility-extension-marketplace.png)
 
-Once you have installed a color theme from the Marketplace, you can change the [color theme](https://code.visualstudio.com/docs/getstarted/themes) with **File** > **Preferences** > **Theme** > **Color Theme** Ctrl+K Ctrl+T.
+Once you have installed a color theme from the Marketplace, you can change the [color theme]({{< ref "/GetStarted/Themes" >}}) with **File** > **Preferences** > **Theme** > **Color Theme** Ctrl+K Ctrl+T.
 
 ​​	从 Marketplace 安装颜色主题后，您可以使用文件 > 首选项 > 主题 > 颜色主题 Ctrl+K Ctrl+T 更改颜色主题。
 
 ![Dropdown for Select Color Theme](./Accessibility_img/accessibility-select-theme.png)
 
-### [Recommended themes for color vision accessibility 推荐用于色觉可访问性的主题](https://code.visualstudio.com/docs/editor/accessibility#_recommended-themes-for-color-vision-accessibility)
+### [Recommended themes for color vision accessibility 推荐用于色觉可访问性的主题]({{< ref "/UserGuide/Accessibility#_recommended-themes-for-color-vision-accessibility" >}})
 
 - [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) - Accessible to most forms of color blindness and matches the themes in GitHub's settings.
   GitHub - 适用于大多数形式的色盲，并与 GitHub 设置中的主题匹配。
@@ -78,13 +78,13 @@ Once you have installed a color theme from the Marketplace, you can change the [
 - [Pitaya Smoothie](https://marketplace.visualstudio.com/items?itemName=trallard.pitaya-smoothie) - Accessible to most forms of color blindness and compliant with [WCAG 2.1 criteria for color contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
   Pitaya Smoothie - 适用于大多数形式的色盲，并符合 WCAG 2.1 的颜色对比度标准。
 
-## [Customizing warning colors 自定义警告颜色](https://code.visualstudio.com/docs/editor/accessibility#_customizing-warning-colors)
+## [Customizing warning colors 自定义警告颜色]({{< ref "/UserGuide/Accessibility#_customizing-warning-colors" >}})
 
 The default Color Theme for VS Code is **Dark+**. However, you can customize both the theme and property colors in the user interface.
 
 ​​	VS Code 的默认颜色主题为 Dark+。但是，您可以在用户界面中自定义主题和属性颜色。
 
-> **Note**: Go to [Customizing a Color Theme](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme) for more information about overriding the colors in your current theme.
+> **Note**: Go to [Customizing a Color Theme]({{< ref "/GetStarted/Themes#_customizing-a-color-theme" >}}) for more information about overriding the colors in your current theme.
 >
 > ​​	注意：有关覆盖当前主题中的颜色的更多信息，请转到自定义颜色主题。
 
@@ -124,7 +124,7 @@ Assigning a color to the background of `editorError` and `editorWarning` also he
 
 ​​	为 `editorError` 和 `editorWarning` 的背景分配颜色也有助于识别潜在问题。您选择的颜色将突出显示相应的错误或警告。在前面的示例中显示的颜色， `#ffef0f` （黄色）和 `#37777ff` （蓝色），对于具有常见形式色觉缺陷的人来说更容易识别。
 
-### [Selecting accessible colors 选择可访问的颜色](https://code.visualstudio.com/docs/editor/accessibility#_selecting-accessible-colors)
+### [Selecting accessible colors 选择可访问的颜色]({{< ref "/UserGuide/Accessibility#_selecting-accessible-colors" >}})
 
 The accessibility of colors is subjective to the type of anomalous trichromacy (color blindness). The level of severity ranges per person and can be divided into four condition types:
 
@@ -147,13 +147,13 @@ One of the best approaches to selecting the best colors for a specific condition
 >
 > ​​	注意：有关查找互补色的更多信息，请访问 Adobe Color 中的色盲模拟器和交互式色轮。
 
-## [Dim unfocused editors and terminals 调暗未聚焦的编辑器和终端](https://code.visualstudio.com/docs/editor/accessibility#_dim-unfocused-editors-and-terminals)
+## [Dim unfocused editors and terminals 调暗未聚焦的编辑器和终端]({{< ref "/UserGuide/Accessibility#_dim-unfocused-editors-and-terminals" >}})
 
 Unfocused views can be dimmed to make it clearer where typed input will go. This is especially useful when working with multiple editor groups or terminals. Turn on this feature by setting `"accessibility.dimUnfocused.enabled": true`. You can control the dimness level with `accessibility.dimUnfocused.opacity`, which takes the opacity fraction from 0.2 to 1 (default 0.75).
 
 ​​	可以调暗未聚焦的视图，以便更清楚地了解键入的输入将转到何处。在使用多个编辑器组或终端时，此功能特别有用。通过设置 `"accessibility.dimUnfocused.enabled": true` 来启用此功能。您可以使用 `accessibility.dimUnfocused.opacity` 控制调暗级别，该级别将不透明度分数从 0.2 调整到 1（默认值为 0.75）。
 
-## [Keyboard navigation 键盘导航](https://code.visualstudio.com/docs/editor/accessibility#_keyboard-navigation)
+## [Keyboard navigation 键盘导航]({{< ref "/UserGuide/Accessibility#_keyboard-navigation" >}})
 
 VS Code provides an exhaustive list of commands in the **Command Palette** (Ctrl+Shift+P) so that you can use VS Code without a mouse. Press Ctrl+Shift+P, then type a command name (for example 'git') to filter the list of commands.
 
@@ -165,7 +165,7 @@ VS Code also has many preset keyboard shortcuts for commands.
 
 ![Key bindings for commands are displayed at the end of the command palette entry](./Accessibility_img/keyboard-shortcuts.png)
 
-You can also set your own keyboard shortcuts. **File** > **Preferences** > **Keyboard Shortcuts** (Ctrl+K Ctrl+S) opens the Keyboard Shortcuts editor, where you can discover and modify key bindings for VS Code actions. See [Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings) for more details on customizing or adding your own keyboard shortcuts.
+You can also set your own keyboard shortcuts. **File** > **Preferences** > **Keyboard Shortcuts** (Ctrl+K Ctrl+S) opens the Keyboard Shortcuts editor, where you can discover and modify key bindings for VS Code actions. See [Key Bindings]({{< ref "/GetStarted/KeyBindings" >}}) for more details on customizing or adding your own keyboard shortcuts.
 
 ​​	您还可以设置自己的键盘快捷键。文件 > 首选项 > 键盘快捷键 (Ctrl+K Ctrl+S) 将打开键盘快捷键编辑器，您可以在其中发现和修改 VS Code 操作的键绑定。有关自定义或添加您自己的键盘快捷键的更多详细信息，请参阅键绑定。
 
@@ -173,13 +173,13 @@ For quick navigation across the workbench, we recommend using **Focus Next Part*
 
 ​​	为了在工作台中快速导航，我们建议使用聚焦下一部分 (F6) 和聚焦上一部分 (Shift+F6) 命令。
 
-### [Anchor selection 锚定选择](https://code.visualstudio.com/docs/editor/accessibility#_anchor-selection)
+### [Anchor selection 锚定选择]({{< ref "/UserGuide/Accessibility#_anchor-selection" >}})
 
 To make it easier to start and end selections with the keyboard, there are four commands: **Set Selection Anchor** (Ctrl+K Ctrl+B), **Select From Anchor to Cursor** (Ctrl+K Ctrl+K), **Cancel Selection Anchor** (Escape) and **Go to Selection Anchor**.
 
 ​​	为了更容易地使用键盘开始和结束选择，有四个命令：设置选择锚点 (Ctrl+K Ctrl+B)、从锚点选择到光标 (Ctrl+K Ctrl+K)、取消选择锚点 (Esc) 和转到选择锚点。
 
-## [Tab navigation Tab 导航](https://code.visualstudio.com/docs/editor/accessibility#_tab-navigation)
+## [Tab navigation Tab 导航]({{< ref "/UserGuide/Accessibility#_tab-navigation" >}})
 
 You can use the Tab key to navigate between UI controls in VS Code. Use Shift+Tab to tab in reverse order. As you tab through the UI controls, an indicator will appear around each UI element when it has focus.
 
@@ -193,7 +193,7 @@ All elements in the workbench support tab navigation. To avoid having too many t
 >
 > ​​	注意：制表符导航遵循视觉自然顺序，Markdown 预览等 WebView 除外。对于 WebView，我们建议使用 F6 和 Shift+F6 命令在 WebView 与工作台的其余部分之间导航。或者，您可以使用许多聚焦编辑器命令之一。
 
-## [Tab trapping 制表符捕获](https://code.visualstudio.com/docs/editor/accessibility#_tab-trapping)
+## [Tab trapping 制表符捕获]({{< ref "/UserGuide/Accessibility#_tab-trapping" >}})
 
 By default, pressing Tab within a source code file inserts the Tab character (or spaces depending on your indentation setting) and does not leave the open file. You can toggle Tab trapping with Ctrl+M, and subsequent Tab keys will move focus out of the file. When default Tab trapping is off, you will see a **Tab moves focus** indicator in the Status Bar.
 
@@ -213,7 +213,7 @@ Read-only files never trap the Tab key. The **Integrated Terminal** panel respec
 
 ​​	只读文件绝不会捕获 Tab 键。集成终端面板遵循制表符捕获模式，可以使用 Ctrl+M 进行切换。
 
-## [Screen readers 屏幕阅读器](https://code.visualstudio.com/docs/editor/accessibility#_screen-readers)
+## [Screen readers 屏幕阅读器]({{< ref "/UserGuide/Accessibility#_screen-readers" >}})
 
 VS Code supports screen readers in the editor using a strategy based on text pagination. The following screen readers have been tested:
 
@@ -242,7 +242,7 @@ In the diff view pane, the **Go to Next/Previous Difference** actions (F7 and Sh
 
 ​​	在 diff 视图窗格中，转到下一个/上一个差异操作（F7 和 Shift+F7）将显示无障碍差异查看器，其中以统一的补丁格式显示差异。使用向上和向下键导航到未更改、已插入或已删除的行。按 Enter 键可将焦点返回到 diff 编辑器的已修改窗格，位于所选行号（或如果选择了已删除的行，则返回到仍然存在的最近行号）。使用 Escape 或 Shift+Escape 退出无障碍差异查看器。
 
-## [Accessibility help 辅助功能帮助](https://code.visualstudio.com/docs/editor/accessibility#_accessibility-help)
+## [Accessibility help 辅助功能帮助]({{< ref "/UserGuide/Accessibility#_accessibility-help" >}})
 
 The command **Open Accessibility Help** Alt+F1 opens a help menu based on the current context. It currently applies to the editor, terminal, notebook, chat view, and inline chat features.
 
@@ -254,13 +254,13 @@ You can dismiss the accessibility help menu or open additional documentation fro
 
 ![When triggered in an editor, a dialog appears that explains how to enable screen reader mode explicitly, tab focus mode and other details](./Accessibility_img/status.png)
 
-## [Accessible View 无障碍视图](https://code.visualstudio.com/docs/editor/accessibility#_accessible-view)
+## [Accessible View 无障碍视图]({{< ref "/UserGuide/Accessibility#_accessible-view" >}})
 
 Run the command **Open Accessible View** Alt+F2 to display an Accessible View to inspect content character by character, line by line. The Accessible View is currently available for hovers, notifications, Jupyter notebook output, and chat responses.
 
 ​​	运行打开无障碍视图 Alt+F2 命令以显示无障碍视图，逐个字符、逐行检查内容。无障碍视图目前可用于悬停、通知、Jupyter 笔记本输出和聊天回复。
 
-## [Screen reader mode 屏幕阅读器模式](https://code.visualstudio.com/docs/editor/accessibility#_screen-reader-mode)
+## [Screen reader mode 屏幕阅读器模式]({{< ref "/UserGuide/Accessibility#_screen-reader-mode" >}})
 
 When VS Code detects that a screen reader is being used, it goes into an optimized screen reader mode for UI such as the editor and Integrated Terminal. The Status bar will display **Screen Reader Optimized** in the lower right. You can exit screen reader mode by clicking on the display text or using the **Toggle Screen Reader Accessibility Mode** command.
 
@@ -272,13 +272,13 @@ Some features, such as folding and minimap (code overview), are disabled when in
 
 ​​	折叠和迷你地图（代码概览）等某些功能在屏幕阅读器模式下禁用。您可以通过编辑器：辅助功能支持设置（ `editor.accessibilitySupport` ）控制 VS Code 是否使用屏幕阅读器模式，其值可以是 `on` 、 `off` 或默认的 `auto` ，后者会通过查询平台自动检测屏幕阅读器。
 
-## [Input control and result navigation 输入控件和结果导航](https://code.visualstudio.com/docs/editor/accessibility#_input-control-and-result-navigation)
+## [Input control and result navigation 输入控件和结果导航]({{< ref "/UserGuide/Accessibility#_input-control-and-result-navigation" >}})
 
 Navigating between an input control (for example, search or filter input) and its results is consistent across the Extensions view, the Keyboard Shortcuts editor, and the Comments, Problems, and Debug Console panels using (Ctrl+Down) and (Ctrl+Up).
 
 ​​	在输入控件（例如，搜索或筛选输入）及其结果之间导航在扩展视图、键盘快捷方式编辑器以及注释、问题和调试控制台中使用 (Ctrl+向下) 和 (Ctrl+向上) 保持一致。
 
-## [Terminal accessibility 终端辅助功能](https://code.visualstudio.com/docs/editor/accessibility#_terminal-accessibility)
+## [Terminal accessibility 终端辅助功能]({{< ref "/UserGuide/Accessibility#_terminal-accessibility" >}})
 
 You can display terminal accessibility help via Alt+F1, which describes useful tips when using a screen reader. One tip is to use Alt+F2 to access the buffer in the terminal. This will automatically enter the screen reader's browse mode, depending on your screen reader, for an accessible view of the entire terminal buffer.
 
@@ -288,9 +288,9 @@ Use `editor.tabFocusMode` to control whether the terminal receives the Tab key i
 
 ​​	使用 `editor.tabFocusMode` 控制终端是否接收 Tab 键而不是工作台，类似于编辑器。
 
-### [Shell integration 外壳集成](https://code.visualstudio.com/docs/editor/accessibility#_shell-integration)
+### [Shell integration 外壳集成]({{< ref "/UserGuide/Accessibility#_shell-integration" >}})
 
-The terminal has a feature called [shell integration](https://code.visualstudio.com/docs/terminal/shell-integration) that enables many additional features that are not found in other terminals. When using a screen reader, the [Run Recent Command](https://code.visualstudio.com/docs/terminal/shell-integration#_run-recent-command) and [Go to Recent Directory](https://code.visualstudio.com/docs/terminal/shell-integration#_go-to-recent-directory) features are particularly useful.
+The terminal has a feature called [shell integration]({{< ref "/Terminal/ShellIntegration" >}}) that enables many additional features that are not found in other terminals. When using a screen reader, the [Run Recent Command]({{< ref "/Terminal/ShellIntegration#_run-recent-command" >}}) and [Go to Recent Directory]({{< ref "/Terminal/ShellIntegration#_go-to-recent-directory" >}}) features are particularly useful.
 
 ​​	终端有一个称为 shell 集成的功能，该功能启用了许多其他终端中找不到的其他功能。使用屏幕阅读器时，“运行最近的命令”和“转到最近的目录”功能特别有用。
 
@@ -298,7 +298,7 @@ Another shell integration powered command, **Go to Symbol in Accessible View** (
 
 ​​	另一个由 shell 集成支持的命令“转到无障碍视图中的符号”(Ctrl+Shift+O) 允许您在终端命令之间导航，类似于编辑器中的“转到编辑器中的符号...”导航。
 
-### [Minimum contrast ratio 最小对比度](https://code.visualstudio.com/docs/editor/accessibility#_minimum-contrast-ratio)
+### [Minimum contrast ratio 最小对比度]({{< ref "/UserGuide/Accessibility#_minimum-contrast-ratio" >}})
 
 Set `terminal.integrated.minimumContrastRatio` to a number between 1 and 21 to adjust text color luminance until the desired contrast ratio is met or pure white (`#FFFFFF`) black (`#000000`) is hit.
 
@@ -308,19 +308,19 @@ Note that the `terminal.integrated.minimumContrastRatio` setting will not apply 
 
 ​​	请注意， `terminal.integrated.minimumContrastRatio` 设置不适用于 `powerline` 字符。
 
-## [Status bar accessibility 状态栏无障碍性](https://code.visualstudio.com/docs/editor/accessibility#_status-bar-accessibility)
+## [Status bar accessibility 状态栏无障碍性]({{< ref "/UserGuide/Accessibility#_status-bar-accessibility" >}})
 
 Once focus is in the Status bar via **Focus Next Part** (F6), you can use arrow navigation to move focus between Status bar entries.
 
 ​​	通过“聚焦下一个部分”(F6) 将焦点置于状态栏后，您可以使用箭头导航在状态栏条目之间移动焦点。
 
-### [Diff editor accessibility 差异编辑器无障碍性](https://code.visualstudio.com/docs/editor/accessibility#_diff-editor-accessibility)
+### [Diff editor accessibility 差异编辑器无障碍性]({{< ref "/UserGuide/Accessibility#_diff-editor-accessibility" >}})
 
 There is an Accessible Diff Viewer in the Diff editor that presents changes in a unified patch format. You can navigate between changes with **Go to Next Difference** (F7) and **Go to Previous Difference** (Shift+F7). Navigate lines with the arrow keys and press Enter to jump back in the Diff editor and the selected line.
 
 ​​	差异编辑器中有一个无障碍差异查看器，它以统一的修补程序格式显示更改。您可以使用“转到下一个差异”(F7) 和“转到上一个差异”(Shift+F7) 在更改之间导航。使用箭头键导航行，然后按 Enter 键可在差异编辑器和选定行中跳回。
 
-## [Debugger accessibility 调试器无障碍性](https://code.visualstudio.com/docs/editor/accessibility#_debugger-accessibility)
+## [Debugger accessibility 调试器无障碍性]({{< ref "/UserGuide/Accessibility#_debugger-accessibility" >}})
 
 The VS Code debugger UI is user accessible and has the following features:
 
@@ -337,7 +337,7 @@ The VS Code debugger UI is user accessible and has the following features:
 - Keyboard shortcuts can be created to set focus to each debugger area.
   可以创建键盘快捷方式来将焦点设置为每个调试器区域。
 
-## [Audio Cues 音频提示](https://code.visualstudio.com/docs/editor/accessibility#_audio-cues)
+## [Audio Cues 音频提示]({{< ref "/UserGuide/Accessibility#_audio-cues" >}})
 
 Audio cues indicate if the current line has certain markers such as: errors, warnings, breakpoints, folded text regions or inline suggestions.
 
@@ -351,25 +351,25 @@ The command **Help: List Audio Cues** lists all available audio cues, lets you h
 
 ​​	命令“帮助：列出音频提示”列出所有可用的音频提示，让您在浏览列表时听到每个音频提示，并查看当前启用了哪些提示。
 
-## [Hover accessibility 悬停辅助功能](https://code.visualstudio.com/docs/editor/accessibility#_hover-accessibility)
+## [Hover accessibility 悬停辅助功能]({{< ref "/UserGuide/Accessibility#_hover-accessibility" >}})
 
 Some hovers cannot be hovered normally, which makes them hard to use with screen magnifiers. To work around this, hold the Alt or Option key while a hover is active to "lock" it in place so that it won't hide when hovered. Release the key to unlock the hover.
 
 ​​	某些悬停无法正常悬停，这使得它们难以与屏幕放大镜配合使用。要解决此问题，请在悬停处于活动状态时按住 Alt 或 Option 键将其“锁定”到位，以便在悬停时不会隐藏。释放按键以解锁悬停。
 
-## [Current known issues 当前已知问题](https://code.visualstudio.com/docs/editor/accessibility#_current-known-issues)
+## [Current known issues 当前已知问题]({{< ref "/UserGuide/Accessibility#_current-known-issues" >}})
 
 VS Code has some known accessibility issues, depending on the platform. For the full list, go to [VS Code accessibility issues](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility).
 
 ​​	VS Code 存在一些已知的辅助功能问题，具体取决于平台。有关完整列表，请转到 VS Code 辅助功能问题。
 
-### [macOS](https://code.visualstudio.com/docs/editor/accessibility#_macos)
+### [macOS]({{< ref "/UserGuide/Accessibility#_macos" >}})
 
 The editor includes screen reader support for VoiceOver.
 
 ​​	编辑器包括对 VoiceOver 的屏幕阅读器支持。
 
-### [Linux](https://code.visualstudio.com/docs/editor/accessibility#_linux)
+### [Linux]({{< ref "/UserGuide/Accessibility#_linux" >}})
 
 VS Code works well with the Orca screen reader. If Orca in your Linux distribution does not read the editor content:
 
@@ -384,15 +384,15 @@ After you enable that setting, VS Code should work with the Orca screen reader.
 
 ​​	启用该设置后，VS Code 应可与 Orca 屏幕阅读器配合使用。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/accessibility#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Accessibility#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [Visual Studio Code User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - A quick orientation to VS Code.
+- [Visual Studio Code User Interface]({{< ref "/GetStarted/UserInterface" >}}) - A quick orientation to VS Code.
   Visual Studio Code 用户界面 - VS Code 的快速入门。
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn about the powerful VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn about the powerful VS Code editor.
   基本编辑 - 了解功能强大的 VS Code 编辑器。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。

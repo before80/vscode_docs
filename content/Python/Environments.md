@@ -18,13 +18,13 @@ An "environment" in Python is the context in which a Python program runs that co
 
 ​​​	Python 中的“环境”是指 Python 程序运行的上下文，其中包括解释器和任意数量的已安装软件包。
 
-> **Note**: If you'd like to become more familiar with the Python programming language, review [More Python resources](https://code.visualstudio.com/docs/python/environments#_more-python-resources).
+> **Note**: If you'd like to become more familiar with the Python programming language, review [More Python resources]({{< ref "/Python/Environments#_more-python-resources" >}}).
 >
 > ​​​	注意：如果您想更熟悉 Python 编程语言，请查看更多 Python 资源。
 
-## [Types of Python environments Python 环境的类型](https://code.visualstudio.com/docs/python/environments#_types-of-python-environments)
+## [Types of Python environments Python 环境的类型]({{< ref "/Python/Environments#_types-of-python-environments" >}})
 
-### [Global environments 全局环境](https://code.visualstudio.com/docs/python/environments#_global-environments)
+### [Global environments 全局环境]({{< ref "/Python/Environments#_global-environments" >}})
 
 By default, any Python interpreter installed runs in its own **global environment**. For example, if you just run `python`, `python3`, or `py` at a new terminal (depending on how you installed Python), you're running in that interpreter's global environment. Any packages that you install or uninstall affect the global environment and all programs that you run within it.
 
@@ -34,13 +34,13 @@ By default, any Python interpreter installed runs in its own **global environmen
 >
 > ​​​	提示：在 Python 中，最好创建一个特定于工作区的环境，例如，通过使用本地环境。
 
-### [Local environments 本地环境](https://code.visualstudio.com/docs/python/environments#_local-environments)
+### [Local environments 本地环境]({{< ref "/Python/Environments#_local-environments" >}})
 
 There are two types of environments that you can create for your workspace: **virtual** and **conda**. These environments allow you to install packages without affecting other environments, isolating your workspace's package installations.
 
 ​​​	您可以为工作区创建两种类型的环境：虚拟环境和 conda 环境。这些环境允许您安装软件包而不影响其他环境，从而隔离工作区的软件包安装。
 
-#### [Virtual environments 虚拟环境](https://code.visualstudio.com/docs/python/environments#_virtual-environments)
+#### [Virtual environments 虚拟环境]({{< ref "/Python/Environments#_virtual-environments" >}})
 
 A [**virtual environment**](https://docs.python.org/3/glossary.html#term-virtual-environment) is a built-in way to create an environment. A virtual environment creates a folder that contains a copy (or symlink) to a specific interpreter. When you install packages into a virtual environment it will end up in this new folder, and thus isolated from other packages used by other workspaces.
 
@@ -50,13 +50,13 @@ A [**virtual environment**](https://docs.python.org/3/glossary.html#term-virtual
 >
 > ​​​	注意：虽然可以将虚拟环境文件夹作为工作空间打开，但这样做并不推荐，并且可能会导致使用 Python 扩展时出现问题。
 
-#### [Conda environments Conda 环境](https://code.visualstudio.com/docs/python/environments#_conda-environments)
+#### [Conda environments Conda 环境]({{< ref "/Python/Environments#_conda-environments" >}})
 
 A **conda environment** is a Python environment that's managed using the `conda` package manager (see [Getting started with conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)).Choosing between conda and virtual environments depends on your packaging needs, team standards, etc.
 
 ​​​	Conda 环境是一个使用 `conda` 包管理器管理的 Python 环境（请参阅 Conda 入门）。在 conda 和虚拟环境之间进行选择取决于您的打包需求、团队标准等。
 
-### [Python environment tools Python 环境工具](https://code.visualstudio.com/docs/python/environments#_python-environment-tools)
+### [Python environment tools Python 环境工具]({{< ref "/Python/Environments#_python-environment-tools" >}})
 
 The following table lists the various tools involved with Python environments:
 
@@ -68,9 +68,9 @@ The following table lists the various tools involved with Python environments:
 | [venv](https://docs.python.org/3/library/venv.html) | Allows you to manage separate package installations for different projects and is installed with Python 3 by default (unless you are on a Debian-based OS; install `python3-venv` in that case) 允许您管理不同项目的单独软件包安装，并且默认情况下随 Python 3 一起安装（除非您使用的是基于 Debian 的操作系统；在这种情况下，安装 `python3-venv` ） |
 |           [conda](https://docs.conda.io/)           | Installed with [**Miniconda**](https://docs.conda.io/en/latest/miniconda.html). It can be used to manage both packages and virtual environments. Generally used for data science projects. 随 Miniconda 一起安装。它可用于管理软件包和虚拟环境。通常用于数据科学项目。 |
 
-## [Creating environments 创建环境](https://code.visualstudio.com/docs/python/environments#_creating-environments)
+## [Creating environments 创建环境]({{< ref "/Python/Environments#_creating-environments" >}})
 
-### [Using the Create Environment command 使用“创建环境”命令](https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command)
+### [Using the Create Environment command 使用“创建环境”命令]({{< ref "/Python/Environments#_using-the-create-environment-command" >}})
 
 To create local environments in VS Code using virtual environments or Anaconda, you can follow these steps: open the Command Palette (Ctrl+Shift+P), search for the **Python: Create Environment** command, and select it.
 
@@ -104,7 +104,7 @@ After selecting the desired interpreter or Python version, a notification will s
 >
 > ​​​	注意：该命令还将安装 requirements/dependencies 文件中列出的必要软件包，例如 `requirements.txt` 、 `pyproject.toml` 或 `environment.yml` ，这些软件包位于项目文件夹中。它还将在虚拟环境中添加一个 `.gitignore` 文件，以帮助您避免意外地将虚拟环境提交到源代码管理。
 
-### [Create a virtual environment in the terminal 在终端中创建虚拟环境](https://code.visualstudio.com/docs/python/environments#_create-a-virtual-environment-in-the-terminal)
+### [Create a virtual environment in the terminal 在终端中创建虚拟环境]({{< ref "/Python/Environments#_create-a-virtual-environment-in-the-terminal" >}})
 
 If you choose to create a virtual environment manually, use the following command (where ".venv" is the name of the environment folder):
 
@@ -134,7 +134,7 @@ When you create a new virtual environment, a prompt will be displayed in VS Code
 >
 > ​​​	提示：确保更新源代码管理设置，以防止意外提交您的虚拟环境（例如 `.gitignore` ）。由于虚拟环境不可移植，因此通常没有必要提交它们供其他人使用。
 
-### [Create a conda environment in the terminal 在终端中创建 conda 环境](https://code.visualstudio.com/docs/python/environments#_create-a-conda-environment-in-the-terminal)
+### [Create a conda environment in the terminal 在终端中创建 conda 环境]({{< ref "/Python/Environments#_create-a-conda-environment-in-the-terminal" >}})
 
 The Python extension automatically detects existing conda environments. We recommend you install a Python interpreter into your conda environment, otherwise one will be installed for you after you select the environment. For example, the following command creates a conda environment named `env-01` with a Python 3.9 interpreter and several libraries:
 
@@ -166,7 +166,7 @@ Additional notes:
 
   ​​​	尽管 VS Code 的 Python 扩展目前没有与 conda `environment.yml` 文件直接集成，但 VS Code 本身是一个很棒的 YAML 编辑器。
 
-- Conda environments can't be automatically activated in the VS Code Integrated Terminal if the default shell is set to PowerShell. To change the shell, see [Integrated terminal - Terminal profiles](https://code.visualstudio.com/docs/terminal/profiles).
+- Conda environments can't be automatically activated in the VS Code Integrated Terminal if the default shell is set to PowerShell. To change the shell, see [Integrated terminal - Terminal profiles]({{< ref "/Terminal/TerminalProfiles" >}}).
 
   ​​​	如果将默认 shell 设置为 PowerShell，则无法在 VS Code 集成终端中自动激活 Conda 环境。若要更改 shell，请参阅集成终端 - 终端配置文件。
 
@@ -174,9 +174,9 @@ Additional notes:
 
   ​​​	您可以手动指定要用于激活的 `conda` 可执行文件的路径（版本 4.4+）。为此，请打开命令面板 (Ctrl+Shift+P) 并运行首选项：打开用户设置。然后设置 `python.condaPath` ，它位于用户设置的 Python 扩展部分，并带有适当的路径。
 
-## [Working with Python interpreters 使用 Python 解释器](https://code.visualstudio.com/docs/python/environments#_working-with-python-interpreters)
+## [Working with Python interpreters 使用 Python 解释器]({{< ref "/Python/Environments#_working-with-python-interpreters" >}})
 
-### [Select and activate an environment 选择并激活环境](https://code.visualstudio.com/docs/python/environments#_select-and-activate-an-environment)
+### [Select and activate an environment 选择并激活环境]({{< ref "/Python/Environments#_select-and-activate-an-environment" >}})
 
 The Python extension tries to find and then select what it deems the best environment for the workspace. If you would prefer to select a specific environment, use the **Python: Select Interpreter** command from the **Command Palette** (Ctrl+Shift+P).
 
@@ -184,11 +184,11 @@ The Python extension tries to find and then select what it deems the best enviro
 
 ![Python: Select Interpreter command](./Environments_img/select-interpreters-command.png)
 
-> **Note**: If the Python extension doesn't find an interpreter, it issues a warning. On macOS 12.2 and older, the extension also issues a warning if you're using the OS-installed Python interpreter as it is known to have compatibility issues. In either case, you can disable these warnings by setting `python.disableInstallationCheck` to `true` in your user [settings](https://code.visualstudio.com/docs/getstarted/settings).
+> **Note**: If the Python extension doesn't find an interpreter, it issues a warning. On macOS 12.2 and older, the extension also issues a warning if you're using the OS-installed Python interpreter as it is known to have compatibility issues. In either case, you can disable these warnings by setting `python.disableInstallationCheck` to `true` in your user [settings]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​​	注意：如果 Python 扩展未找到解释器，它会发出警告。在 macOS 12.2 及更早版本中，如果您使用已知存在兼容性问题的 OS 安装的 Python 解释器，该扩展也会发出警告。在任何一种情况下，您都可以通过在用户设置中将 `python.disableInstallationCheck` 设置为 `true` 来禁用这些警告。
 
-The **Python: Select Interpreter** command displays a list of available global environments, conda environments, and virtual environments. (See the [Where the extension looks for environments](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments) section for details, including the distinctions between these types of environments.) The following image, for example, shows several Anaconda and CPython installations along with a conda environment and a virtual environment (`env`) that's located within the workspace folder:
+The **Python: Select Interpreter** command displays a list of available global environments, conda environments, and virtual environments. (See the [Where the extension looks for environments]({{< ref "/Python/Environments#_where-the-extension-looks-for-environments" >}}) section for details, including the distinctions between these types of environments.) The following image, for example, shows several Anaconda and CPython installations along with a conda environment and a virtual environment (`env`) that's located within the workspace folder:
 
 ​​​	Python: 选择解释器命令会显示可用全局环境、conda 环境和虚拟环境的列表。（有关详细信息，包括这些类型环境之间的区别，请参阅扩展查找环境的位置部分。）例如，下图显示了几个 Anaconda 和 CPython 安装，以及一个 conda 环境和一个虚拟环境 ( `env` )，该环境位于工作区文件夹中：
 
@@ -214,7 +214,7 @@ The selected environment is used by the Python extension for running Python code
 >
 > ​​​	提示：如果激活命令生成消息“Activate.ps1 未经过数字签名。您无法在当前系统上运行此脚本。”，那么您需要暂时更改 PowerShell 执行策略以允许脚本运行（请参阅 PowerShell 文档中的关于执行策略）： `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process`
 
-> **Note**: By default, VS Code uses the interpreter selected for your workspace when debugging code. You can override this behavior by specifying a different path in the `python` property of a debug configuration. See [Choose a debugging environment](https://code.visualstudio.com/docs/python/environments#_choose-a-debugging-environment).
+> **Note**: By default, VS Code uses the interpreter selected for your workspace when debugging code. You can override this behavior by specifying a different path in the `python` property of a debug configuration. See [Choose a debugging environment]({{< ref "/Python/Environments#_choose-a-debugging-environment" >}}).
 >
 > ​​​	注意：默认情况下，VS Code 在调试代码时使用为您的工作区选定的解释器。您可以通过在调试配置的 `python` 属性中指定不同的路径来覆盖此行为。请参阅选择调试环境。
 
@@ -238,7 +238,7 @@ In either case, clicking this area of the Status Bar is a convenient shortcut fo
 >
 > ​​​	提示：如果您在 VS Code 识别虚拟环境时遇到任何问题，请提交问题，以便我们帮助确定原因。
 
-### [Manually specify an interpreter 手动指定解释器](https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter)
+### [Manually specify an interpreter 手动指定解释器]({{< ref "/Python/Environments#_manually-specify-an-interpreter" >}})
 
 If VS Code doesn't automatically locate an interpreter you want to use, you can browse for the interpreter on your file system or provide the path to it manually.
 
@@ -268,7 +268,7 @@ Additionally, if you'd like to set up a default interpreter to all of your Pytho
 
 ​​​	此外，如果您想为所有 Python 应用程序设置默认解释器，可以在用户设置中手动添加 `python.defaultInterpreterPath` 的条目。为此，请打开命令面板 (Ctrl+Shift+P) 并输入首选项：打开用户设置。然后设置 `python.defaultInterpreterPath` ，它位于用户设置的 Python 扩展部分，并使用适当的解释器。
 
-### [How the extension chooses an environment automatically 扩展如何自动选择环境](https://code.visualstudio.com/docs/python/environments#_how-the-extension-chooses-an-environment-automatically)
+### [How the extension chooses an environment automatically 扩展如何自动选择环境]({{< ref "/Python/Environments#_how-the-extension-chooses-an-environment-automatically" >}})
 
 If an interpreter hasn't been specified, then the Python extension automatically selects the interpreter with the highest version in the following priority order:
 
@@ -285,11 +285,11 @@ If an interpreter hasn't been specified, then the Python extension automatically
 >
 > ​​​	注意：所选解释器可能与 `python` 在您的终端中引用的解释器不同。
 
-If Visual Studio Code doesn't locate your interpreter automatically, you can [manually specify an interpreter](https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter).
+If Visual Studio Code doesn't locate your interpreter automatically, you can [manually specify an interpreter]({{< ref "/Python/Environments#_manually-specify-an-interpreter" >}}).
 
 ​​​	如果 Visual Studio Code 未自动找到您的解释器，您可以手动指定一个解释器。
 
-### [Where the extension looks for environments 扩展查找环境的位置](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments)
+### [Where the extension looks for environments 扩展查找环境的位置]({{< ref "/Python/Environments#_where-the-extension-looks-for-environments" >}})
 
 The extension automatically looks for interpreters in the following locations, in no particular order:
 
@@ -299,7 +299,7 @@ The extension automatically looks for interpreters in the following locations, i
   标准安装路径，例如 `/usr/local/bin` 、 `/usr/sbin` 、 `/sbin` 、 `c:\\python36` 等。
 - Virtual environments located directly under the workspace (project) folder.
   直接位于工作区（项目）文件夹下的虚拟环境。
-- Virtual environments located in the folder identified by the `python.venvPath` setting (see [General Python settings](https://code.visualstudio.com/docs/python/settings-reference#_general-python-settings)), which can contain multiple virtual environments. The extension looks for virtual environments in the first-level subfolders of `venvPath`.
+- Virtual environments located in the folder identified by the `python.venvPath` setting (see [General Python settings]({{< ref "/Python/SettingsReference#_general-python-settings" >}})), which can contain multiple virtual environments. The extension looks for virtual environments in the first-level subfolders of `venvPath`.
   位于由 `python.venvPath` 设置（请参阅常规 Python 设置）标识的文件夹中的虚拟环境，其中可以包含多个虚拟环境。扩展程序在 `venvPath` 的一级子文件夹中查找虚拟环境。
 - Virtual environments located in a `~/.virtualenvs` folder for [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/).
   位于 `~/.virtualenvs` 文件夹中的虚拟环境，适用于 virtualenvwrapper。
@@ -312,7 +312,7 @@ The extension automatically looks for interpreters in the following locations, i
 - Interpreters installed in a `.direnv` folder for [direnv](https://direnv.net/) under the workspace folder.
   安装在工作区文件夹下 `.direnv` 文件夹中的 direnv 解释器。
 
-### [Environments and Terminal windows 环境和终端窗口](https://code.visualstudio.com/docs/python/environments#_environments-and-terminal-windows)
+### [Environments and Terminal windows 环境和终端窗口]({{< ref "/Python/Environments#_environments-and-terminal-windows" >}})
 
 After using **Python: Select Interpreter**, that interpreter is applied when right-clicking a file and selecting **Python: Run Python File in Terminal**. The environment is also activated automatically when you use the **Terminal: Create New Terminal** command unless you change the `python.terminal.activateEnvironment` setting to `false`.
 
@@ -322,7 +322,7 @@ Please note that launching VS Code from a shell in which a specific Python envir
 
 ​​​	请注意，从已激活特定 Python 环境的 shell 中启动 VS Code 不会自动在默认集成终端中激活该环境。
 
-> **Note:** conda environments cannot be automatically activated in the integrated terminal if PowerShell is set as the integrated shell. See [Integrated terminal - Terminal profiles](https://code.visualstudio.com/docs/terminal/profiles) for how to change the shell.
+> **Note:** conda environments cannot be automatically activated in the integrated terminal if PowerShell is set as the integrated shell. See [Integrated terminal - Terminal profiles]({{< ref "/Terminal/TerminalProfiles" >}}) for how to change the shell.
 >
 > ​​​	注意：如果将 PowerShell 设置为集成 shell，则无法在集成终端中自动激活 conda 环境。有关如何更改 shell，请参阅集成终端 - 终端配置文件。
 
@@ -330,19 +330,19 @@ Changing interpreters with the **Python: Select Interpreter** command doesn't af
 
 ​​​	使用 Python: 选择解释器命令更改解释器不会影响已打开的终端面板。因此，您可以在拆分终端中激活单独的环境：选择第一个解释器，为其创建一个终端，选择另一个解释器，然后使用终端标题栏中的拆分按钮 (Ctrl+Shift+5)。
 
-### [Choose a debugging environment 选择调试环境](https://code.visualstudio.com/docs/python/environments#_choose-a-debugging-environment)
+### [Choose a debugging environment 选择调试环境]({{< ref "/Python/Environments#_choose-a-debugging-environment" >}})
 
 By default, the debugger will use the Python interpreter chosen with the Python extension. However, if there is a `python` property specified in the debug configuration of `launch.json`, it takes precedence. If this property is not defined, it will fall back to using the Python interpreter path selected for the workspace.
 
 ​​​	默认情况下，调试器将使用 Python 扩展选择的 Python 解释器。但是，如果在 `launch.json` 的调试配置中指定了 `python` 属性，则该属性优先。如果未定义此属性，它将退回到为工作区选择的 Python 解释器路径。
 
-For more details on debug configuration, see [Debugging configurations](https://code.visualstudio.com/docs/python/debugging).
+For more details on debug configuration, see [Debugging configurations]({{< ref "/Python/Debugging" >}}).
 
 ​​​	有关调试配置的更多详细信息，请参阅调试配置。
 
-## [Environment variables 环境变量](https://code.visualstudio.com/docs/python/environments#_environment-variables)
+## [Environment variables 环境变量]({{< ref "/Python/Environments#_environment-variables" >}})
 
-### [Environment variable definitions file 环境变量定义文件](https://code.visualstudio.com/docs/python/environments#_environment-variable-definitions-file)
+### [Environment variable definitions file 环境变量定义文件]({{< ref "/Python/Environments#_environment-variable-definitions-file" >}})
 
 An environment variable definitions file is a text file containing key-value pairs in the form of `environment_variable=value`, with `#` used for comments. Multiline values aren't supported, but references to previously defined environment variables are allowed. Environment variable definitions files can be used for scenarios such as debugging and tool execution (including linters, formatters, IntelliSense, and testing tools), but aren't applied to the terminal.
 
@@ -352,7 +352,7 @@ An environment variable definitions file is a text file containing key-value pai
 >
 > ​​​	注意：环境变量定义文件不一定跨平台。例如，Unix 在环境变量中使用 `:` 作为路径分隔符，而 Windows 使用 `;` 。没有对这种操作系统差异进行规范化，因此您需要确保任何环境定义文件都使用与您的操作系统兼容的值。
 
-By default, the Python extension looks for and loads a file named `.env` in the current workspace folder, then applies those definitions. The file is identified by the default entry `"python.envFile": "${workspaceFolder}/.env"` in your user settings (see [General Python settings](https://code.visualstudio.com/docs/python/settings-reference#_general-python-settings)). You can change the `python.envFile` setting at any time to use a different definitions file.
+By default, the Python extension looks for and loads a file named `.env` in the current workspace folder, then applies those definitions. The file is identified by the default entry `"python.envFile": "${workspaceFolder}/.env"` in your user settings (see [General Python settings]({{< ref "/Python/SettingsReference#_general-python-settings" >}})). You can change the `python.envFile` setting at any time to use a different definitions file.
 
 ​​​	默认情况下，Python 扩展会在当前工作区文件夹中查找并加载名为 `.env` 的文件，然后应用这些定义。该文件由用户设置中的默认条目 `"python.envFile": "${workspaceFolder}/.env"` 标识（请参阅常规 Python 设置）。您可以随时更改 `python.envFile` 设置以使用不同的定义文件。
 
@@ -360,7 +360,7 @@ By default, the Python extension looks for and loads a file named `.env` in the 
 >
 > ​​​	注意：并非在所有可以使用环境变量的情况下都会使用环境变量定义文件。除非 Visual Studio Code 文档另有说明，否则这些文件仅会根据其定义影响某些方案。例如，扩展在解析设置值时不会使用环境变量定义文件。
 
-A debug configuration also contains an `envFile` property that also defaults to the `.env` file in the current workspace (see [Debugging - Set configuration options](https://code.visualstudio.com/docs/python/debugging#_set-configuration-options)). This property allows you to easily set variables for debugging purposes that replace variables specified in the default `.env` file.
+A debug configuration also contains an `envFile` property that also defaults to the `.env` file in the current workspace (see [Debugging - Set configuration options]({{< ref "/Python/Debugging#_set-configuration-options" >}})). This property allows you to easily set variables for debugging purposes that replace variables specified in the default `.env` file.
 
 ​​​	调试配置还包含一个 `envFile` 属性，该属性也默认为当前工作区中的 `.env` 文件（请参阅调试 - 设置配置选项）。此属性允许您轻松设置变量以用于调试目的，这些变量会替换默认 `.env` 文件中指定的变量。
 
@@ -406,7 +406,7 @@ You can then set the `python.envFile` setting to `${workspaceFolder}/prod.env`, 
 >
 > ​​​	注意：当使用多种方法指定环境变量时，请注意存在优先级顺序。在 `launch.json` 文件中定义的所有 `env` 变量将覆盖 `.env` 文件中包含的变量，由 `python.envFile` 设置（用户或工作区）指定。同样，在 `launch.json` 文件中定义的 `env` 变量将覆盖在 `launch.json` 中指定的 `envFile` 中定义的环境变量。
 
-### [Use of the PYTHONPATH variable 使用 PYTHONPATH 变量](https://code.visualstudio.com/docs/python/environments#_use-of-the-pythonpath-variable)
+### [Use of the PYTHONPATH variable 使用 PYTHONPATH 变量]({{< ref "/Python/Environments#_use-of-the-pythonpath-variable" >}})
 
 The [PYTHONPATH](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH) environment variable specifies additional locations where the Python interpreter should look for modules. In VS Code, PYTHONPATH can be set through the terminal settings (`terminal.integrated.env.*`) and/or within an `.env` file.
 
@@ -416,20 +416,20 @@ When the terminal settings are used, PYTHONPATH affects any tools that are run w
 
 ​​​	当使用终端设置时，PYTHONPATH 会影响用户在终端中运行的任何工具，以及扩展为用户执行的任何通过终端路由的操作，例如调试。但是，在这种情况下，当扩展执行未通过终端路由的操作时，例如使用 linter 或格式化程序，则此设置不会对模块查找产生影响。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/environments#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Python/Environments#_next-steps" >}})
 
-- [Editing code](https://code.visualstudio.com/docs/python/editing) - Learn about autocomplete, IntelliSense, formatting, and refactoring for Python.
+- [Editing code]({{< ref "/Python/EditingCode" >}}) - Learn about autocomplete, IntelliSense, formatting, and refactoring for Python.
   编辑代码 - 了解 Python 的自动完成、IntelliSense、格式化和重构。
-- [Debugging](https://code.visualstudio.com/docs/python/debugging) - Learn to debug Python both locally and remotely.
+- [Debugging]({{< ref "/Python/Debugging" >}}) - Learn to debug Python both locally and remotely.
   调试 - 了解如何在本地和远程调试 Python。
-- [Testing](https://code.visualstudio.com/docs/python/testing) - Configure test environments and discover, run, and debug tests.
+- [Testing]({{< ref "/Python/Testing" >}}) - Configure test environments and discover, run, and debug tests.
   测试 - 配置测试环境并发现、运行和调试测试。
-- [Settings reference](https://code.visualstudio.com/docs/python/settings-reference) - Explore the full range of Python-related settings in VS Code.
+- [Settings reference]({{< ref "/Python/SettingsReference" >}}) - Explore the full range of Python-related settings in VS Code.
   设置参考 - 探索 VS Code 中与 Python 相关的全部设置。
 
-## [More Python resources 更多 Python 资源](https://code.visualstudio.com/docs/python/environments#_more-python-resources)
+## [More Python resources 更多 Python 资源]({{< ref "/Python/Environments#_more-python-resources" >}})
 
-- [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial) - Learn how to edit, run, and debug code in VS Code.
+- [Getting Started with Python in VS Code]({{< ref "/Python/Tutorial" >}}) - Learn how to edit, run, and debug code in VS Code.
   在 VS Code 中开始使用 Python - 了解如何在 VS Code 中编辑、运行和调试代码。
 - [Virtual Environments and Packages (Python.org)](https://docs.python.org/3/tutorial/venv.html) - Learn more about virtual environments and packages.
   虚拟环境和包 (Python.org) - 详细了解虚拟环境和包。

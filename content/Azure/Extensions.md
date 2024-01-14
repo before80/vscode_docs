@@ -20,7 +20,7 @@ You can use [Azure](https://azure.microsoft.com/) directly from Visual Studio Co
 
 ![app service](./Extensions_img/azure-tools.png)
 
-## [Visual Studio Code Marketplace](https://code.visualstudio.com/docs/azure/extensions#_visual-studio-code-marketplace)
+## [Visual Studio Code Marketplace]({{< ref "/Azure/Extensions#_visual-studio-code-marketplace" >}})
 
 There are many VS Code extensions on the [Marketplace](https://marketplace.visualstudio.com/search?term=azure&target=VSCode&category=All categories&sortBy=Relevance) that make it easy to build and host applications on Azure.
 
@@ -100,7 +100,7 @@ ms-azuretools
 >
 > ​​​	提示：单击上面的扩展磁贴以阅读 Marketplace 中的说明和评论。
 
-## [Searching for extensions 正在搜索扩展](https://code.visualstudio.com/docs/azure/extensions#_searching-for-extensions)
+## [Searching for extensions 正在搜索扩展]({{< ref "/Azure/Extensions#_searching-for-extensions" >}})
 
 You can also search for Azure or cloud extensions in the VS Code Extensions view (Ctrl+Shift+X) and type 'azure'.
 
@@ -108,9 +108,9 @@ You can also search for Azure or cloud extensions in the VS Code Extensions view
 
 ![popular Azure extensions](./Extensions_img/popular-azure-extensions.png)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/azure/extensions#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Azure/Extensions#_next-steps" >}})
 
-- [Deploying to Azure](https://code.visualstudio.com/docs/azure/deployment) - Learn step-by-step how to deploy your application to Azure.
+- [Deploying to Azure]({{< ref "/Azure/Deployment" >}}) - Learn step-by-step how to deploy your application to Azure.
   在 Azure 中部署 - 逐步了解如何将应用程序部署到 Azure。
-- [Working with Docker](https://code.visualstudio.com/docs/azure/docker) - Put your application in a Docker container for easy reuse and deployment.
+- [Working with Docker]({{< ref "/Azure/Docker" >}}) - Put your application in a Docker container for easy reuse and deployment.
   使用 Docker - 将您的应用程序放入 Docker 容器中，以便轻松重复使用和部署。

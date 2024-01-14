@@ -18,7 +18,7 @@ Visual Studio Code has a high productivity code editor which, when combined with
 
 ​​	Visual Studio Code 具有高生产力的代码编辑器，当与编程语言服务结合使用时，它为你提供了 IDE 的强大功能和文本编辑器的速度。在本主题中，我们将首先介绍 VS Code 的语言智能功能（建议、参数提示、智能代码导航），然后展示核心文本编辑器的强大功能。
 
-## [Quick file navigation 快速文件导航](https://code.visualstudio.com/docs/editor/editingevolved#_quick-file-navigation)
+## [Quick file navigation 快速文件导航]({{< ref "/UserGuide/CodeNavigation#_quick-file-navigation" >}})
 
 > **Tip:** You can open any file by its name when you type Ctrl+P (**Quick Open**).
 >
@@ -38,7 +38,7 @@ Alternatively, you can use Alt+Left and Alt+Right to navigate between files and 
 
 ​​	或者，你可以使用 Alt+左箭头和 Alt+右箭头在文件和编辑位置之间导航。如果你在同一文件的不同行之间跳转，这些快捷方式可让你轻松地在这些位置之间导航。
 
-## [Breadcrumbs 面包屑](https://code.visualstudio.com/docs/editor/editingevolved#_breadcrumbs)
+## [Breadcrumbs 面包屑]({{< ref "/UserGuide/CodeNavigation#_breadcrumbs" >}})
 
 The editor has a navigation bar above its contents called [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumb_(navigation)). It shows the current location and allows you to quickly navigate between folders, files, and symbols.
 
@@ -62,17 +62,17 @@ If the current file type has language support for symbols, you will see the curr
 
 ![breadcrumb symbol dropdown](./CodeNavigation_img/breadcrumb-symbol-dropdown.png)
 
-You can turn off breadcrumbs with the **View** > **Show Breadcrumbs** toggle or with the `breadcrumbs.enabled` [setting](https://code.visualstudio.com/docs/getstarted/settings).
+You can turn off breadcrumbs with the **View** > **Show Breadcrumbs** toggle or with the `breadcrumbs.enabled` [setting]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	您可以使用“视图”>“显示面包屑”切换按钮或 `breadcrumbs.enabled` 设置关闭面包屑。
 
-### [Breadcrumb customization 面包屑自定义](https://code.visualstudio.com/docs/editor/editingevolved#_breadcrumb-customization)
+### [Breadcrumb customization 面包屑自定义]({{< ref "/UserGuide/CodeNavigation#_breadcrumb-customization" >}})
 
 The appearance of breadcrumbs can be customized. If you have very long paths or are only interested in either file paths or symbols paths, you can use the `breadcrumbs.filePath` and `breadcrumbs.symbolPath` settings. Both support `on`, `off`, and `last` and they define if or what part of the path you see. By default, breadcrumbs show file and symbol icons to the left of the breadcrumb but you can remove the icons by setting `breadcrumbs.icons` to false.
 
 ​​	可以自定义面包屑的外观。如果您有很长的路径或仅对文件路径或符号路径感兴趣，则可以使用 `breadcrumbs.filePath` 和 `breadcrumbs.symbolPath` 设置。两者都支持 `on` 、 `off` 和 `last` ，并且它们定义您看到路径的哪一部分或是否看到。默认情况下，面包屑在面包屑的左侧显示文件和符号图标，但您可以通过将 `breadcrumbs.icons` 设置为 false 来移除图标。
 
-### [Symbol order in Breadcrumbs 面包屑中的符号顺序](https://code.visualstudio.com/docs/editor/editingevolved#_symbol-order-in-breadcrumbs)
+### [Symbol order in Breadcrumbs 面包屑中的符号顺序]({{< ref "/UserGuide/CodeNavigation#_symbol-order-in-breadcrumbs" >}})
 
 You can control how symbols are ordered in the Breadcrumbs dropdown with the `breadcrumbs.symbolSortOrder` settings.
 
@@ -89,7 +89,7 @@ Allowed values are:
 - `type` - symbol type order
   `type` - 符号类型顺序
 
-### [Breadcrumb keyboard navigation 面包屑键盘导航](https://code.visualstudio.com/docs/editor/editingevolved#_breadcrumb-keyboard-navigation)
+### [Breadcrumb keyboard navigation 面包屑键盘导航]({{< ref "/UserGuide/CodeNavigation#_breadcrumb-keyboard-navigation" >}})
 
 To interact with breadcrumbs, use the **Focus Breadcrumbs** command or press Ctrl+Shift+.. It will select that last element and open a dropdown that allows you to navigate to a sibling file or symbol. Use the Left and Right keyboard shortcuts to go to elements before or after the current element. When the dropdown appears, start typing - all matching elements will be highlighted and the best match will be selected for quick navigation.
 
@@ -99,9 +99,9 @@ You can also interact with breadcrumbs without the dropdown. Press Ctrl+Shift+; 
 
 ​​	您也可以在不使用下拉列表的情况下与面包屑进行交互。按 Ctrl+Shift+; 以聚焦最后一个元素，使用左右键导航，并使用空格键在编辑器中显示该元素。
 
-## [Go to Definition 转到定义](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition)
+## [Go to Definition 转到定义]({{< ref "/UserGuide/CodeNavigation#_go-to-definition" >}})
 
-If a [language](https://code.visualstudio.com/docs/languages/overview) supports it, you can go to the definition of a symbol by pressing F12.
+If a [language]({{< ref "/Languages/Overview" >}}) supports it, you can go to the definition of a symbol by pressing F12.
 
 ​​	如果语言支持，您可以通过按 F12 转到符号的定义。
 
@@ -115,19 +115,19 @@ If you press Ctrl and hover over a symbol, a preview of the declaration will app
 >
 > ​​	提示：您可以通过 Ctrl+单击跳转到定义，或通过 Ctrl+Alt+单击将定义打开到侧面。
 
-## [Go to Type Definition 转到类型定义](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-type-definition)
+## [Go to Type Definition 转到类型定义]({{< ref "/UserGuide/CodeNavigation#_go-to-type-definition" >}})
 
-Some [languages](https://code.visualstudio.com/docs/languages/overview) also support jumping to the type definition of a symbol by running the **Go to Type Definition** command from either the editor context menu or the **Command Palette**. This will take you to the definition of the type of a symbol. The command `editor.action.goToTypeDefinition` is not bound to a keyboard shortcut by default but you can add your own custom [keybinding](https://code.visualstudio.com/docs/getstarted/keybindings).
+Some [languages]({{< ref "/Languages/Overview" >}}) also support jumping to the type definition of a symbol by running the **Go to Type Definition** command from either the editor context menu or the **Command Palette**. This will take you to the definition of the type of a symbol. The command `editor.action.goToTypeDefinition` is not bound to a keyboard shortcut by default but you can add your own custom [keybinding]({{< ref "/GetStarted/KeyBindings" >}}).
 
 ​​	某些语言还支持通过从编辑器上下文菜单或命令面板运行“转到类型定义”命令来跳转到符号的类型定义。这将带您到符号类型的定义。默认情况下，该命令 `editor.action.goToTypeDefinition` 未绑定到键盘快捷键，但您可以添加自己的自定义键绑定。
 
-## [Go to Implementation 转到实现](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-implementation)
+## [Go to Implementation 转到实现]({{< ref "/UserGuide/CodeNavigation#_go-to-implementation" >}})
 
-[Languages](https://code.visualstudio.com/docs/languages/overview) can also support jumping to the implementation of a symbol by pressing Ctrl+F12. For an interface, this shows all the implementors of that interface and for abstract methods, this shows all concrete implementations of that method.
+[Languages]({{< ref "/Languages/Overview" >}}) can also support jumping to the implementation of a symbol by pressing Ctrl+F12. For an interface, this shows all the implementors of that interface and for abstract methods, this shows all concrete implementations of that method.
 
 ​​	语言还可以支持通过按 Ctrl+F12 跳转到符号的实现。对于接口，这将显示该接口的所有实现者，对于抽象方法，这将显示该方法的所有具体实现。
 
-## [Go to Symbol 转到符号](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-symbol)
+## [Go to Symbol 转到符号]({{< ref "/UserGuide/CodeNavigation#_go-to-symbol" >}})
 
 You can navigate symbols inside a file with Ctrl+Shift+O. By typing : the symbols will be grouped by category. Press Up or Down and navigate to the place you want.
 
@@ -135,7 +135,7 @@ You can navigate symbols inside a file with Ctrl+Shift+O. By typing : the symbol
 
 ![Go to Symbol](./CodeNavigation_img/gotosymbol.png)
 
-## [Open symbol by name 按名称打开符号](https://code.visualstudio.com/docs/editor/editingevolved#_open-symbol-by-name)
+## [Open symbol by name 按名称打开符号]({{< ref "/UserGuide/CodeNavigation#_open-symbol-by-name" >}})
 
 Some languages support jumping to a symbol across files with Ctrl+T. Type the first letter of a type you want to navigate to, regardless of which file contains it, and press Enter.
 
@@ -143,7 +143,7 @@ Some languages support jumping to a symbol across files with Ctrl+T. Type the fi
 
 ![Open symbol by name](./CodeNavigation_img/symbol.png)
 
-## [Peek 窥视](https://code.visualstudio.com/docs/editor/editingevolved#_peek)
+## [Peek 窥视]({{< ref "/UserGuide/CodeNavigation#_peek" >}})
 
 We think there's nothing worse than a big context switch when all you want is to quickly check something. That's why we support peeked editors. When you execute a **Go to References** search (via Shift+F12), or a **Peek Definition** (via Alt+F12), we embed the result inline:
 
@@ -155,11 +155,11 @@ You can navigate between different references in the peeked editor and make quic
 
 ​​	您可以在窥视编辑器中导航到不同的引用，并在那里进行快速编辑。单击窥视编辑器文件名或在结果列表中双击将在外部编辑器中打开引用。
 
-> **Tip:** Additionally, the peek window is closed if you press Escape or double-click in the peek editor region. You can disable this behavior with the `editor.stablePeek` [setting](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip:** Additionally, the peek window is closed if you press Escape or double-click in the peek editor region. You can disable this behavior with the `editor.stablePeek` [setting]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：此外，如果您按 Escape 或在窥视编辑器区域中双击，窥视窗口将关闭。您可以使用 `editor.stablePeek` 设置禁用此行为。
 
-## [Bracket matching 括号匹配](https://code.visualstudio.com/docs/editor/editingevolved#_bracket-matching)
+## [Bracket matching 括号匹配]({{< ref "/UserGuide/CodeNavigation#_bracket-matching" >}})
 
 Matching brackets will be highlighted as soon as the cursor is near one of them.
 
@@ -171,7 +171,7 @@ Matching brackets will be highlighted as soon as the cursor is near one of them.
 >
 > ​​	提示：您可以使用 Ctrl+Shift+\ 跳转到匹配的括号
 
-### [Bracket Pair Colorization 括号对颜色化](https://code.visualstudio.com/docs/editor/editingevolved#_bracket-pair-colorization)
+### [Bracket Pair Colorization 括号对颜色化]({{< ref "/UserGuide/CodeNavigation#_bracket-pair-colorization" >}})
 
 Matching bracket pairs can also be colorized by setting `editor.bracketPairColorization.enabled` to `true`.
 
@@ -195,7 +195,7 @@ You can use `workbench.colorCustomizations` to override these theme-contributed 
 },
 ```
 
-## [Reference information 引用信息](https://code.visualstudio.com/docs/editor/editingevolved#_reference-information)
+## [Reference information 引用信息]({{< ref "/UserGuide/CodeNavigation#_reference-information" >}})
 
 Some languages like C# support inline reference information, that is updated live. This allows you to quickly analyze the impact of your edit or the popularity of your specific method or property throughout your project:
 
@@ -207,11 +207,11 @@ Some languages like C# support inline reference information, that is updated liv
 >
 > ​​	提示：通过单击这些注释直接调用“查看引用”操作。
 
-> **Tip:** Reference information shown in CodeLens can be turned on or off through the `editor.codeLens` [setting](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip:** Reference information shown in CodeLens can be turned on or off through the `editor.codeLens` [setting]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：可以通过 `editor.codeLens` 设置打开或关闭 CodeLens 中显示的引用信息。
 
-## [Rename symbol 重命名符号](https://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol)
+## [Rename symbol 重命名符号]({{< ref "/UserGuide/CodeNavigation#_rename-symbol" >}})
 
 Some languages support rename symbol across files. Press F2 and then type the new desired name and press Enter. All usages of the symbol will be renamed, across files.
 
@@ -219,9 +219,9 @@ Some languages support rename symbol across files. Press F2 and then type the ne
 
 ![Rename](./CodeNavigation_img/rename.png)
 
-## [Errors & warnings 错误和警告](https://code.visualstudio.com/docs/editor/editingevolved#_errors-warnings)
+## [Errors & warnings 错误和警告]({{< ref "/UserGuide/CodeNavigation#_errors-warnings" >}})
 
-Warnings or Errors can be generated either via [configured tasks](https://code.visualstudio.com/docs/editor/tasks), by rich language services, or by linters, that constantly analyze your code in the background. Since we love bug-free code, warnings and errors show up in multiple places:
+Warnings or Errors can be generated either via [configured tasks]({{< ref "/UserGuide/Tasks" >}}), by rich language services, or by linters, that constantly analyze your code in the background. Since we love bug-free code, warnings and errors show up in multiple places:
 
 ​​	警告或错误可以通过配置的任务、丰富的语言服务或在后台持续分析代码的 linter 生成。由于我们喜欢无 bug 的代码，因此警告和错误会显示在多个位置：
 
@@ -240,13 +240,13 @@ Warnings or Errors can be generated either via [configured tasks](https://code.v
 
 ![Errors and Warnings Inline](./CodeNavigation_img/errorsinline.png)
 
-## [Code Action 代码操作](https://code.visualstudio.com/docs/editor/editingevolved#_code-action)
+## [Code Action 代码操作]({{< ref "/UserGuide/CodeNavigation#_code-action" >}})
 
 Warnings and Errors can provide Code Actions (also known as Quick Fixes) to help fix issues. These will be displayed in the editor in the left margin as a lightbulb. Clicking on the lightbulb will either display the Code Action options or perform the action.
 
 ​​	警告和错误可以提供代码操作（也称为快速修复）来帮助解决问题。这些操作将以灯泡的形式显示在编辑器的左边缘。单击灯泡将显示代码操作选项或执行操作。
 
-## [Inlay Hints 镶嵌提示](https://code.visualstudio.com/docs/editor/editingevolved#_inlay-hints)
+## [Inlay Hints 镶嵌提示]({{< ref "/UserGuide/CodeNavigation#_inlay-hints" >}})
 
 Some languages provide inlay hints: that is additional information about source code that is rendered inline. This is usually used to show inferred types. The sample below shows inlay hints that display the inferred types of JavaScript variables and function return types.
 
@@ -258,7 +258,7 @@ Inlay hints can be enabled/disabled with the `editor.inlayHints.enabled` setting
 
 ​​	可以使用 `editor.inlayHints.enabled` 设置启用/禁用内联提示，默认情况下启用。需要 TypeScript 或 Rust 等扩展来提供实际的内联提示信息。
 
-## [Outgoing link protection 外部链接保护](https://code.visualstudio.com/docs/editor/editingevolved#_outgoing-link-protection)
+## [Outgoing link protection 外部链接保护]({{< ref "/UserGuide/CodeNavigation#_outgoing-link-protection" >}})
 
 For your protection, VS Code displays a prompt before opening an outgoing website link from the editor.
 
@@ -288,7 +288,7 @@ The **Trusted Domains** JSON file also has comments with examples of the support
 
 ​​	受信任的域 JSON 文件还包含有关受支持域格式的示例的注释，以及默认受信任的域列表，例如 `https://*.visualstudio.com` 和 `https://*.microsoft.com` 。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/editingevolved#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/CodeNavigation#_next-steps" >}})
 
 Now that you know how the editor works, time to try a few other things...
 
@@ -296,16 +296,16 @@ Now that you know how the editor works, time to try a few other things...
 
 - [Intro Video - Code Editing](https://code.visualstudio.com/docs/introvideos/codeediting) - Watch an introductory video on code editing features.
   简介视频 - 代码编辑 - 观看有关代码编辑功能的介绍性视频。
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - In case you missed a basic orientation around VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - In case you missed a basic orientation around VS Code.
   用户界面 - 以防您错过了 VS Code 的基本方向。
-- [Key Bindings](https://code.visualstudio.com/docs/getstarted/keybindings) - Learn how to modify key bindings to your preference.
+- [Key Bindings]({{< ref "/GetStarted/KeyBindings" >}}) - Learn how to modify key bindings to your preference.
   键绑定 - 了解如何根据您的喜好修改键绑定。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - This is where VS Code really shines.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - This is where VS Code really shines.
   调试 - 这是 VS Code 真正出彩的地方。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/editingevolved#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/CodeNavigation#_common-questions" >}})
 
-### [How can I automatically select the second entry in Quick Open instead of the first? 如何在快速打开中自动选择第二个条目而不是第一个条目？](https://code.visualstudio.com/docs/editor/editingevolved#_how-can-i-automatically-select-the-second-entry-in-quick-open-instead-of-the-first)
+### [How can I automatically select the second entry in Quick Open instead of the first? 如何在快速打开中自动选择第二个条目而不是第一个条目？]({{< ref "/UserGuide/CodeNavigation#_how-can-i-automatically-select-the-second-entry-in-quick-open-instead-of-the-first" >}})
 
 With the command `workbench.action.quickOpenPreviousEditor`, you can have the second entry automatically selected in Quick Open. This can be useful if you want to select the previous entry from the list without having to invoke another keybinding:
 
@@ -324,7 +324,7 @@ With the command `workbench.action.quickOpenPreviousEditor`, you can have the se
 ]
 ```
 
-### [How can I configure Ctrl+Tab to navigate across all editors of all groups 如何将 Ctrl+Tab 配置为在所有组的所有编辑器之间导航](https://code.visualstudio.com/docs/editor/editingevolved#_how-can-i-configure-ctrltab-to-navigate-across-all-editors-of-all-groups)
+### [How can I configure Ctrl+Tab to navigate across all editors of all groups 如何将 Ctrl+Tab 配置为在所有组的所有编辑器之间导航]({{< ref "/UserGuide/CodeNavigation#_how-can-i-configure-ctrltab-to-navigate-across-all-editors-of-all-groups" >}})
 
 By default, Ctrl+Tab navigates between editors of the same editor group. If you want to navigate across all opened editors in all groups, you can create keyboard shortcuts for the `workbench.action.quickOpenPreviousRecentlyUsedEditor` and `workbench.action.quickOpenLeastRecentlyUsedEditor` commands:
 
@@ -345,7 +345,7 @@ By default, Ctrl+Tab navigates between editors of the same editor group. If you 
 ]
 ```
 
-### [How can I navigate between recently used editors without a picker 如何在没有选取器的情况下在最近使用的编辑器之间导航](https://code.visualstudio.com/docs/editor/editingevolved#_how-can-i-navigate-between-recently-used-editors-without-a-picker)
+### [How can I navigate between recently used editors without a picker 如何在没有选取器的情况下在最近使用的编辑器之间导航]({{< ref "/UserGuide/CodeNavigation#_how-can-i-navigate-between-recently-used-editors-without-a-picker" >}})
 
 Here is a list of commands you can use to navigate in editors without opening a picker:
 

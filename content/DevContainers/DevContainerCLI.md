@@ -18,7 +18,7 @@ This topic covers the development container command-line interface (dev containe
 
 ​​	本主题介绍了开发容器命令行界面 (dev container CLI)，它允许您构建和管理开发容器，并且是开发容器规范的配套工具。
 
-## [Development containers 开发容器](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_development-containers)
+## [Development containers 开发容器]({{< ref "/DevContainers/DevContainerCLI#_development-containers" >}})
 
 A consistent, predictable environment is key to a productive and enjoyable software development experience.
 
@@ -38,7 +38,7 @@ As containerizing production workloads becomes commonplace, dev containers have 
 
 ​​	随着容器化生产工作负载变得司空见惯，开发容器已广泛适用于 VS Code 之外的场景。为了在任何环境中推广开发容器，已开始着手制定开发容器规范，该规范使任何人在任何工具中都能配置一致的开发环境。开源开发容器 CLI 充当该规范的参考实现。
 
-## [The dev container CLI 开发容器 CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_the-dev-container-cli)
+## [The dev container CLI 开发容器 CLI]({{< ref "/DevContainers/DevContainerCLI#_the-dev-container-cli" >}})
 
 When tools like VS Code and Codespaces detect a `devcontainer.json` file in a user's project, they use a CLI to configure a dev container. The dev container CLI is a reference implementation so that individual users and other tools can read in `devcontainer.json` metadata and create dev containers from it.
 
@@ -52,13 +52,13 @@ The CLI is available in the [devcontainers/cli](https://github.com/devcontainers
 
 ​​	CLI 可在 devcontainers/cli 代码库中获得。
 
-## [Installation 安装](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_installation)
+## [Installation 安装]({{< ref "/DevContainers/DevContainerCLI#_installation" >}})
 
 You can quickly try out the CLI through the Dev Containers extension. Select the **Dev Containers: Install devcontainer CLI** command from the Command Palette (F1).
 
 ​​	您可以通过 Dev Containers 扩展快速试用 CLI。从命令面板（F1）中选择 Dev Containers：安装 devcontainer CLI 命令。
 
-## [Alternate installation 备用安装](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_alternate-installation)
+## [Alternate installation 备用安装]({{< ref "/DevContainers/DevContainerCLI#_alternate-installation" >}})
 
 There are additional options for using the CLI elsewhere:
 
@@ -87,7 +87,7 @@ On this page, we'll focus on using the npm package.
 
 ​​	在此页面中，我们将重点介绍如何使用 npm 包。
 
-### [npm install](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_npm-install)
+### [npm install]({{< ref "/DevContainers/DevContainerCLI#_npm-install" >}})
 
 To install the npm package, you will need Python, Node.js (version 14 or greater), and C/C++ installed to build one of the dependencies. The VS Code [How to Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute) wiki has details about the recommended toolsets.
 
@@ -122,7 +122,7 @@ Options:
 >
 > ​​	注意：如果您通过 VS Code 安装了 CLI，则会列出打开开发容器的 `open` 命令。
 
-## [Running the CLI 运行 CLI](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_running-the-cli)
+## [Running the CLI 运行 CLI]({{< ref "/DevContainers/DevContainerCLI#_running-the-cli" >}})
 
 Once you have the CLI, you can try it out with a sample project, like this [Rust sample](https://github.com/microsoft/vscode-remote-try-rust).
 
@@ -185,13 +185,13 @@ These steps above are also provided in the CLI repo's [README](https://github.co
 
 ​​	上述步骤也在 CLI 存储库的自述文件中提供。
 
-## [Automation 自动化](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_automation)
+## [Automation 自动化]({{< ref "/DevContainers/DevContainerCLI#_automation" >}})
 
 If you'd like to use the dev container CLI in your CI/CD builds or test automation, you can find examples of GitHub Actions and Azure DevOps Tasks in the [devcontainers/ci](https://github.com/devcontainers/ci) repository.
 
 ​​	如果您想在 CI/CD 构建或测试自动化中使用 dev 容器 CLI，可以在 devcontainers/ci 存储库中找到 GitHub Actions 和 Azure DevOps 任务的示例。
 
-## [Pre-building 预构建](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_prebuilding)
+## [Pre-building 预构建]({{< ref "/DevContainers/DevContainerCLI#_prebuilding" >}})
 
 The `devcontainer build` command allows you to quickly build a dev container image following the same steps as used by the Dev Containers extension or GitHub Codespaces. This is particularly useful when you want to pre-build a dev container image using a CI or DevOps product like GitHub Actions.
 
@@ -201,17 +201,17 @@ The `devcontainer build` command allows you to quickly build a dev container ima
 
 ​​	 `build` 接受包含 `.devcontainer` 文件夹或 `.devcontainer.json` 文件的文件夹的路径。例如， `devcontainer build --workspace-folder <my_repo>` 将为 `my_repo` 构建容器映像。
 
-### [Example of building and publishing an image 构建和发布映像的示例](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_example-of-building-and-publishing-an-image)
+### [Example of building and publishing an image 构建和发布映像的示例]({{< ref "/DevContainers/DevContainerCLI#_example-of-building-and-publishing-an-image" >}})
 
 For example, you may want to pre-build a number of images that you then reuse across multiple projects or repositories. To do so, follow these steps:
 
 ​​	例如，您可能希望预构建一些映像，然后在多个项目或存储库中重复使用它们。为此，请按照以下步骤操作：
 
-1. [Create](https://code.visualstudio.com/docs/sourcecontrol/overview#_initialize-a-repository) a source code repository.
+1. [Create]({{< ref "/SourceControl/Overview#_initialize-a-repository" >}}) a source code repository.
 
    ​​	创建源代码存储库。
 
-2. Create dev container configuration for each image you want to pre-build, customizing as you wish (including [dev container Features](https://code.visualstudio.com/docs/devcontainers/containers#_dev-container-features)). For example, consider this `devcontainer.json` file:
+2. Create dev container configuration for each image you want to pre-build, customizing as you wish (including [dev container Features]({{< ref "/DevContainers/Overview#_dev-container-features" >}})). For example, consider this `devcontainer.json` file:
 
    ​​	为要预构建的每个映像创建 dev 容器配置，并根据需要进行自定义（包括 dev 容器功能）。例如，考虑此 `devcontainer.json` 文件：
 
@@ -236,31 +236,31 @@ For example, you may want to pre-build a number of images that you then reuse ac
    devcontainer build --workspace-folder <my_repo> --push true --image-name <my_image_name>:<optional_image_version>
    ```
 
-## [Avoiding problems with images built using Docker 避免使用 Docker 构建的映像出现问题](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_avoiding-problems-with-images-built-using-docker)
+## [Avoiding problems with images built using Docker 避免使用 Docker 构建的映像出现问题]({{< ref "/DevContainers/DevContainerCLI#_avoiding-problems-with-images-built-using-docker" >}})
 
-Given Dockerfiles and Docker Compose files can be used without VS Code or the `devcontainer` CLI, you may want to let users know that they should not try to build the image directly. You may learn more in the [advanced dev container documentation](https://code.visualstudio.com/remote/advancedcontainers/reduce-docker-warnings#_avoiding-problems-with-images-built-using-docker).
+Given Dockerfiles and Docker Compose files can be used without VS Code or the `devcontainer` CLI, you may want to let users know that they should not try to build the image directly. You may learn more in the [advanced dev container documentation]({{< ref "/Remote/advancedcontainers/ReduceDockerwarnings#_avoiding-problems-with-images-built-using-docker" >}}).
 
 ​​	鉴于 Dockerfile 和 Docker Compose 文件可以在没有 VS Code 或 `devcontainer` CLI 的情况下使用，您可能希望让用户知道他们不应尝试直接构建镜像。您可以在高级开发容器文档中了解更多信息。
 
-## [Templates and Features 模板和功能](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_templates-and-features)
+## [Templates and Features 模板和功能]({{< ref "/DevContainers/DevContainerCLI#_templates-and-features" >}})
 
 You can work with dev container [Templates](https://containers.dev/implementors/templates/) and [Features](https://containers.dev/implementors/features/) using the dev container CLI. As you create and use Templates, you may want to publish them for others, which you may learn more about in the [dev container spec](https://containers.dev/implementors/templates-distribution/).
 
 ​​	您可以使用开发容器 CLI 来处理开发容器模板和功能。在创建和使用模板时，您可能希望将它们发布给其他人，您可以在开发容器规范中了解更多相关信息。
 
-## [Feedback 反馈](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_feedback)
+## [Feedback 反馈]({{< ref "/DevContainers/DevContainerCLI#_feedback" >}})
 
 The dev container CLI and specification are under active development and we welcome your feedback, which you can provide in [this issue](https://github.com/devcontainers/cli/issues/7), or through new issues and pull requests in the [devcontainers/cli](https://github.com/devcontainers/cli) repository.
 
 ​​	开发容器 CLI 和规范正在积极开发中，我们欢迎您的反馈，您可以在此问题中提供反馈，也可以在 devcontainers/cli 存储库中通过新问题和拉取请求提供反馈。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/devcontainers/devcontainer-cli#_next-steps)
+## [Next steps 后续步骤]({{< ref "/DevContainers/DevContainerCLI#_next-steps" >}})
 
 - [Dev container specification repository](https://containers.dev/) - Read and contribute to the open specification.
   开发容器规范存储库 - 阅读并为开放规范做出贡献。
 - [devcontainer.json reference](https://containers.dev/implementors/json_reference) - Review the `devcontainer.json` schema.
   devcontainer.json 参考 - 查看 `devcontainer.json` 架构。
-- [Create a Development Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container) - Create a custom container for your work environment.
+- [Create a Development Container]({{< ref "/DevContainers/CreateaDevContainer" >}}) - Create a custom container for your work environment.
   创建开发容器 - 为您的工作环境创建一个自定义容器。
-- [Advanced Containers](https://code.visualstudio.com/remote/advancedcontainers/overview) - Find solutions to advanced container scenarios.
+- [Advanced Containers]({{< ref "/Remote/advancedcontainers/Overview" >}}) - Find solutions to advanced container scenarios.
   高级容器 - 查找高级容器方案的解决方案。

@@ -18,13 +18,13 @@ The navigation and editing tools described in this overview are enabled by the [
 
 ​​​	概述中所述的导航和编辑工具由 C# Dev Kit 扩展启用，这是一个轻量级扩展，可增强您在 Visual Studio Code 中的 C# 开发体验。
 
-## [Code Navigation 代码导航](https://code.visualstudio.com/docs/csharp/navigate-edit#_code-navigation)
+## [Code Navigation 代码导航]({{< ref "/C#/NavigateandEdit#_code-navigation" >}})
 
-With the [Outline view](https://code.visualstudio.com/docs/getstarted/userinterface#_outline-view), you can conveniently navigate the members within the current file. Installing the C# Dev Kit extension also gives you the [Solution Explorer view](https://code.visualstudio.com/docs/csharp/project-management). This view helps you add, manage, and modify your projects contained within a larger solution without switching between the command line and the editor.
+With the [Outline view]({{< ref "/GetStarted/UserInterface#_outline-view" >}}), you can conveniently navigate the members within the current file. Installing the C# Dev Kit extension also gives you the [Solution Explorer view]({{< ref "/C#/ProjectManagement" >}}). This view helps you add, manage, and modify your projects contained within a larger solution without switching between the command line and the editor.
 
 ​​​	借助“大纲”视图，您可以方便地导航当前文件中的成员。安装 C# Dev Kit 扩展还将为您提供“解决方案资源管理器”视图。此视图可帮助您添加、管理和修改包含在较大解决方案中的项目，而无需在命令行和编辑器之间切换。
 
-## [Go To Definition 转到定义](https://code.visualstudio.com/docs/csharp/navigate-edit#_go-to-definition)
+## [Go To Definition 转到定义]({{< ref "/C#/NavigateandEdit#_go-to-definition" >}})
 
 The **Go To Definition** feature navigates to the source or file of a type or member, and opens the result in a new tab. If you are a keyboard user, place your text cursor somewhere inside the symbol name and press F12. If you are a mouse user, either right-click the symbol name and select **Go To Definition** from the context menu or Ctrl+click the symbol name. You can also use Ctrl+Alt+click to open the definition on the side.
 
@@ -32,7 +32,7 @@ The **Go To Definition** feature navigates to the source or file of a type or me
 
 ![Go to Definition example](./NavigateandEdit_img/go-to-definition.gif)
 
-## [Peek Definition 查看定义](https://code.visualstudio.com/docs/csharp/navigate-edit#_peek-definition)
+## [Peek Definition 查看定义]({{< ref "/C#/NavigateandEdit#_peek-definition" >}})
 
 You can take a quick look at how a symbol was defined by using the **Peek Definition** feature. This feature displays a few lines of code near the definition inside a peek window, so you can take a look without navigating away from your current location.
 
@@ -44,7 +44,7 @@ To peek at a symbol's definition, place your cursor on the symbol anywhere it's 
 
 ![Peek Definition example](./NavigateandEdit_img/peek-definition.gif)
 
-## [Peek Implementations 查看实现](https://code.visualstudio.com/docs/csharp/navigate-edit#_peek-implementations)
+## [Peek Implementations 查看实现]({{< ref "/C#/NavigateandEdit#_peek-implementations" >}})
 
 You can take a quick, inline view at how and where a class, method, or symbol was implemented using the **Peek Implementations** feature.
 
@@ -54,7 +54,7 @@ To view the list of implementation locations, place the cursor on the symbol any
 
 ​​​	要查看实现位置列表，请将光标放在源代码中使用该符号的任何位置，然后按 Ctrl+Shift+F12。或者，您可以从上下文菜单中选择“查看实现”（右键单击，然后选择“查看”>“查看实现”）。
 
-## [Peek References 查看引用](https://code.visualstudio.com/docs/csharp/navigate-edit#_peek-references)
+## [Peek References 查看引用]({{< ref "/C#/NavigateandEdit#_peek-references" >}})
 
 You can get an inline list of sources where a selected symbol has been referenced in your code using the **Peek References** feature. Place the cursor on the symbol anywhere it's used in your source code, right-click, then choose **Peek > Peek References**.
 
@@ -62,7 +62,7 @@ You can get an inline list of sources where a selected symbol has been reference
 
 ![Peek References example](./NavigateandEdit_img/peek-references.gif)
 
-## [Collapse or expand code snippets 折叠或展开代码片段](https://code.visualstudio.com/docs/csharp/navigate-edit#_collapse-or-expand-code-snippets)
+## [Collapse or expand code snippets 折叠或展开代码片段]({{< ref "/C#/NavigateandEdit#_collapse-or-expand-code-snippets" >}})
 
 To better view the source code, hover over the editor gutter to collapse or expand code snippets using the caret that appears.
 
@@ -70,7 +70,7 @@ To better view the source code, hover over the editor gutter to collapse or expa
 
 ![Collapse or expand code snippet example](./NavigateandEdit_img/collapse-or-expand-code-snippets.gif)
 
-## [Smart selection 智能选择](https://code.visualstudio.com/docs/csharp/navigate-edit#_smart-selection)
+## [Smart selection 智能选择]({{< ref "/C#/NavigateandEdit#_smart-selection" >}})
 
 With [smart selection](https://code.visualstudio.com/updates/v1_33#_smart-select-api) (semantic selection), you can expand or shrink the selection range based on the semantic information of the caret position in your source code.
 

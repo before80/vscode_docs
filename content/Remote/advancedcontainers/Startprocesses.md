@@ -22,7 +22,7 @@ When you are working in a development container, you may want to execute a comma
 "postStartCommand": "yarn install"
 ```
 
-### [Video: Run npm install when a container is created 视频：在创建容器时运行 npm install](https://code.visualstudio.com/remote/advancedcontainers/start-processes#_video-run-npm-install-when-a-container-is-created)
+### [Video: Run npm install when a container is created 视频：在创建容器时运行 npm install]({{< ref "/Remote/advancedcontainers/Startprocesses#_video-run-npm-install-when-a-container-is-created" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9qRy_kxVCK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
@@ -40,7 +40,7 @@ In other cases, you may want to start up a process and leave it running. This ca
 "postStartCommand": "nohup bash -c 'your-command-here &'"
 ```
 
-### [Video: Run 'npm start' whenever the container is started 视频：每当容器启动时运行“npm start”](https://code.visualstudio.com/remote/advancedcontainers/start-processes#_video-run-npm-start-whenever-the-container-is-started)
+### [Video: Run 'npm start' whenever the container is started 视频：每当容器启动时运行“npm start”]({{< ref "/Remote/advancedcontainers/Startprocesses#_video-run-npm-start-whenever-the-container-is-started" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zFzPnWgBx_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
@@ -70,13 +70,13 @@ These systems also include a `service` command that will use `systemctl` or `/et
 "postStartCommand": "service ssh start"
 ```
 
-### [Video: Start SSH service in a container 视频：在容器中启动 SSH 服务](https://code.visualstudio.com/remote/advancedcontainers/start-processes#_video-start-ssh-service-in-a-container)
+### [Video: Start SSH service in a container 视频：在容器中启动 SSH 服务]({{< ref "/Remote/advancedcontainers/Startprocesses#_video-start-ssh-service-in-a-container" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KuSNpZgDYDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
 
 
-## [Adding startup commands to the Docker image instead 相反，将启动命令添加到 Docker 镜像](https://code.visualstudio.com/remote/advancedcontainers/start-processes#_adding-startup-commands-to-the-docker-image-instead)
+## [Adding startup commands to the Docker image instead 相反，将启动命令添加到 Docker 镜像]({{< ref "/Remote/advancedcontainers/Startprocesses#_adding-startup-commands-to-the-docker-image-instead" >}})
 
 While `postStartCommand` is convenient and allows you to execute commands in your source tree, you can also add these steps instead to a Dockerfile using a custom [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) or [CMD](https://docs.docker.com/engine/reference/builder/#cmd).
 

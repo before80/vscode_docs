@@ -22,7 +22,7 @@ If you are used to working with larger, monolithic development tools (IDEs), you
 
 ​​	如果您习惯使用更大的单片式开发工具 (IDE)，您可能会惊讶地发现您的方案并未完全开箱即用地得到支持。例如，没有预装项目模板的文件 > 新建项目对话框。大多数 VS Code 用户需要根据其特定需求安装其他组件。
 
-## [Commonly used components 常用组件](https://code.visualstudio.com/docs/setup/additional-components#_commonly-used-components)
+## [Commonly used components 常用组件]({{< ref "/Setup/AdditionalComponents#_commonly-used-components" >}})
 
 Here are a few commonly installed components:
 
@@ -39,9 +39,9 @@ You'll find the components above mentioned often in our documentation and walkth
 
 ​​	您将在我们的文档和演练中经常发现上面提到的组件。
 
-## [VS Code extensions VS Code 扩展](https://code.visualstudio.com/docs/setup/additional-components#_vs-code-extensions)
+## [VS Code extensions VS Code 扩展]({{< ref "/Setup/AdditionalComponents#_vs-code-extensions" >}})
 
-You can extend the VS Code editor itself through [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace). The VS Code community has built hundreds of useful extensions available on the VS Code [Marketplace](https://marketplace.visualstudio.com/VSCode).
+You can extend the VS Code editor itself through [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}). The VS Code community has built hundreds of useful extensions available on the VS Code [Marketplace](https://marketplace.visualstudio.com/VSCode).
 
 ​​	您可以通过扩展来扩展 VS Code 编辑器本身。VS Code 社区已经构建了数百个有用的扩展，可在 VS Code Marketplace 上获取。
 
@@ -82,7 +82,7 @@ The extensions shown above are the current most popular on Marketplace. Click on
 
 ​​	上面显示的扩展是 Marketplace 上当前最受欢迎的扩展。单击上面的扩展磁贴以阅读扩展的说明和评论。
 
-## [Additional tools 其他工具](https://code.visualstudio.com/docs/setup/additional-components#_additional-tools)
+## [Additional tools 其他工具]({{< ref "/Setup/AdditionalComponents#_additional-tools" >}})
 
 Visual Studio Code integrates with existing tool chains. We think the following tools will enhance your development experiences.
 
@@ -105,11 +105,11 @@ Visual Studio Code integrates with existing tool chains. We think the following 
 >
 > ​​	注意：大多数这些工具都需要 Node.js 和 npm 包管理器才能安装和使用。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/setup/additional-components#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Setup/AdditionalComponents#_next-steps" >}})
 
-- [User Interface](https://code.visualstudio.com/docs/getstarted/userinterface) - A quick orientation around VS Code.
+- [User Interface]({{< ref "/GetStarted/UserInterface" >}}) - A quick orientation around VS Code.
   用户界面 - VS Code 的快速入门。
-- [User/Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences through settings.
+- [User/Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences through settings.
   用户/工作区设置 - 了解如何通过设置将 VS Code 配置为您的首选项。
-- [Languages](https://code.visualstudio.com/docs/languages/overview) - VS Code supports many programming languages out-of-the-box as well as many more through community created extensions.
+- [Languages]({{< ref "/Languages/Overview" >}}) - VS Code supports many programming languages out-of-the-box as well as many more through community created extensions.
   语言 - VS Code 开箱即用支持多种编程语言，还可通过社区创建的扩展支持更多语言。

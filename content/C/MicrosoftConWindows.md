@@ -26,7 +26,7 @@ If you have any problems, feel free to file an issue for this tutorial in the [V
 
 ​​​	如果您遇到任何问题，请随时在 VS Code 文档存储库中为此教程提交问题。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/cpp/config-msvc#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C/MicrosoftConWindows#_prerequisites" >}})
 
 To successfully complete this tutorial, you must do the following:
 
@@ -66,7 +66,7 @@ To successfully complete this tutorial, you must do the following:
 >
 > ​​​	注意：只要您还拥有有效的 Visual Studio 许可证（社区版、专业版或企业版），并且您正在积极使用该许可证来开发该 C++ 代码库，就可以将 Visual Studio Build Tools 中的 C++ 工具集与 Visual Studio Code 配合使用来编译、构建和验证任何 C++ 代码库。
 
-### [Check your Microsoft Visual C++ installation 检查您的 Microsoft Visual C++ 安装](https://code.visualstudio.com/docs/cpp/config-msvc#_check-your-microsoft-visual-c-installation)
+### [Check your Microsoft Visual C++ installation 检查您的 Microsoft Visual C++ 安装]({{< ref "/C/MicrosoftConWindows#_check-your-microsoft-visual-c-installation" >}})
 
 To use MSVC from a command line or VS Code, you must run from a **Developer Command Prompt for Visual Studio**. An ordinary shell such as PowerShell, Bash, or the Windows command prompt does not have the necessary path environment variables set.
 
@@ -88,11 +88,11 @@ If the Developer Command Prompt is using the BuildTools location as the starting
 
 ​​​	如果 Developer Command Prompt 使用 BuildTools 位置作为起始目录（您不想将项目放在那里），请在开始创建新项目之前导航到您的用户文件夹 ( `C:\users\{your username}\` )。
 
-> **Note**: If for some reason you can't run VS Code from a **Developer Command Prompt**, you can find a workaround for building C++ projects with VS Code in [Run VS Code outside a Developer Command Prompt](https://code.visualstudio.com/docs/cpp/config-msvc#_run-vs-code-outside-the-developer-command-prompt).
+> **Note**: If for some reason you can't run VS Code from a **Developer Command Prompt**, you can find a workaround for building C++ projects with VS Code in [Run VS Code outside a Developer Command Prompt]({{< ref "/C/MicrosoftConWindows#_run-vs-code-outside-the-developer-command-prompt" >}}).
 >
 > ​​​	注意：如果您出于某种原因无法从 Developer Command Prompt 运行 VS Code，您可以在在 Developer Command Prompt 外部运行 VS Code 中找到用于构建 C++ 项目的解决方法。
 
-## [Create Hello World 创建 Hello World](https://code.visualstudio.com/docs/cpp/config-msvc#_create-hello-world)
+## [Create Hello World 创建 Hello World]({{< ref "/C/MicrosoftConWindows#_create-hello-world" >}})
 
 From the Developer Command Prompt, create an empty folder called "projects" where you can store all your VS Code projects, then create a subfolder called "helloworld", navigate into it, and open VS Code (`code`) in that folder (`.`) by entering the following commands:
 
@@ -117,7 +117,7 @@ The "code ." command opens VS Code in the current working folder, which becomes 
 - `c_cpp_properties.json` (compiler path and IntelliSense settings)
   `c_cpp_properties.json` （编译器路径和 IntelliSense 设置）
 
-### [Add a source code file 添加源代码文件](https://code.visualstudio.com/docs/cpp/config-msvc#_add-a-source-code-file)
+### [Add a source code file 添加源代码文件]({{< ref "/C/MicrosoftConWindows#_add-a-source-code-file" >}})
 
 In the File Explorer title bar, select the **New File** button and name the file `helloworld.cpp`.
 
@@ -125,7 +125,7 @@ In the File Explorer title bar, select the **New File** button and name the file
 
 ![New File title bar button](https://code.visualstudio.com/assets/docs/cpp/msvc/new-file-button.png)
 
-### [Add hello world source code 添加 hello world 源代码](https://code.visualstudio.com/docs/cpp/config-msvc#_add-hello-world-source-code)
+### [Add hello world source code 添加 hello world 源代码]({{< ref "/C/MicrosoftConWindows#_add-hello-world-source-code" >}})
 
 Now paste in this source code:
 
@@ -156,11 +156,11 @@ Now press Ctrl+S to save the file. Notice how the file you just added appears in
 
 ![File Explorer](./MicrosoftConWindows_img/file-explorer.png)
 
-You can also enable [Auto Save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) to automatically save your file changes, by checking **Auto Save** in the main **File** menu.
+You can also enable [Auto Save]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}}) to automatically save your file changes, by checking **Auto Save** in the main **File** menu.
 
 ​​​	您还可以通过选中主文件菜单中的“自动保存”来启用“自动保存”，以自动保存您的文件更改。
 
-The Activity Bar on the far left lets you open different views such as **Search**, **Source Control**, and **Run**. You'll look at the **Run** view later in this tutorial. You can find out more about the other views in the VS Code [User Interface documentation](https://code.visualstudio.com/docs/getstarted/userinterface).
+The Activity Bar on the far left lets you open different views such as **Search**, **Source Control**, and **Run**. You'll look at the **Run** view later in this tutorial. You can find out more about the other views in the VS Code [User Interface documentation]({{< ref "/GetStarted/UserInterface" >}}).
 
 ​​​	最左侧的活动栏允许您打开不同的视图，例如搜索、源代码管理和运行。您将在本教程的后面部分了解运行视图。您可以在 VS Code 用户界面文档中了解有关其他视图的更多信息。
 
@@ -168,7 +168,7 @@ The Activity Bar on the far left lets you open different views such as **Search*
 >
 > ​​​	注意：当您保存或打开 C++ 文件时，您可能会看到来自 C/C++ 扩展的通知，其中包含有关 Insider 版本可用性的信息，该版本允许您测试新功能和修复程序。您可以通过选择 `X` （清除通知）来忽略此通知。
 
-## [Explore IntelliSense 探索 IntelliSense](https://code.visualstudio.com/docs/cpp/config-msvc#_explore-intellisense)
+## [Explore IntelliSense 探索 IntelliSense]({{< ref "/C/MicrosoftConWindows#_explore-intellisense" >}})
 
 In your new `helloworld.cpp` file, hover over `vector` or `string` to see type information. After the declaration of the `msg` variable, start typing `msg.` as you would when calling a member function. You should immediately see a completion list that shows all the member functions, and a window that shows the type information for the `msg` object:
 
@@ -180,7 +180,7 @@ You can press the Tab key to insert the selected member; then, when you add the 
 
 ​​​	您可以按 Tab 键插入选定的成员；然后，当您添加左括号时，您将看到有关函数所需任何参数的信息。
 
-## [Run helloworld.cpp 运行 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-msvc#_run-helloworldcpp)
+## [Run helloworld.cpp 运行 helloworld.cpp]({{< ref "/C/MicrosoftConWindows#_run-helloworldcpp" >}})
 
 Remember, the C++ extension uses the C++ compiler you have installed on your machine to build your program. Make sure you have a C++ compiler installed before attempting to run and debug `helloworld.cpp` in VS Code.
 
@@ -212,7 +212,7 @@ You'll only be asked to choose a compiler the first time you run `helloworld.cpp
 
    ![screenshot of program output](https://code.visualstudio.com/assets/docs/cpp/playbutton/helloworld-terminal-output.png)
 
-If you get an error trying to build and debug with cl.exe, make sure you have [started VS Code from the Developer Command Prompt for Visual Studio](https://code.visualstudio.com/docs/cpp/config-msvc#_check-your-microsoft-visual-c-installation) using the `code .` shortcut.
+If you get an error trying to build and debug with cl.exe, make sure you have [started VS Code from the Developer Command Prompt for Visual Studio]({{< ref "/C/MicrosoftConWindows#_check-your-microsoft-visual-c-installation" >}}) using the `code .` shortcut.
 
 ​​​	如果在尝试使用 cl.exe 构建和调试时遇到错误，请确保已使用 `code .` 快捷方式从 Visual Studio 的开发人员命令提示符启动 VS Code。
 
@@ -293,13 +293,13 @@ with this:
     "group": "build",
 ```
 
-### [Modifying tasks.json 修改 tasks.json](https://code.visualstudio.com/docs/cpp/config-msvc#_modifying-tasksjson)
+### [Modifying tasks.json 修改 tasks.json]({{< ref "/C/MicrosoftConWindows#_modifying-tasksjson" >}})
 
 You can modify your `tasks.json` to build multiple C++ files by using an argument like `"${workspaceFolder}/*.cpp"` instead of `"${file}"`.This will build all `.cpp` files in your current folder. You can also modify the output filename by replacing `"${fileDirname}\\${fileBasenameNoExtension}.exe"` with a hard-coded filename (for example `"${workspaceFolder}\\myProgram.exe"`).
 
 ​​​	您可以修改 `tasks.json` ，以使用 `"${workspaceFolder}/*.cpp"` 这样的参数而不是 `"${file}"` 来构建多个 C++ 文件。这将构建您当前文件夹中的所有 `.cpp` 文件。您还可以通过将 `"${fileDirname}\\${fileBasenameNoExtension}.exe"` 替换为硬编码的文件名（例如 `"${workspaceFolder}\\myProgram.exe"` ）来修改输出文件名。
 
-## [Debug helloworld.cpp 调试 helloworld.cpp](https://code.visualstudio.com/docs/cpp/config-msvc#_debug-helloworldcpp)
+## [Debug helloworld.cpp 调试 helloworld.cpp]({{< ref "/C/MicrosoftConWindows#_debug-helloworldcpp" >}})
 
 To debug your code,
 
@@ -318,13 +318,13 @@ The play button has two modes: **Run C/C++ File** and **Debug C/C++ File**. It w
 
 ​​​	播放按钮有两种模式：运行 C/C++ 文件和调试 C/C++ 文件。它将默认为上次使用的模式。如果您在播放按钮中看到调试图标，则可以选择播放按钮进行调试，而不是选择下拉菜单项。
 
-If you get an error trying to build and debug with cl.exe, make sure you have [started VS Code from the Developer Command Prompt for Visual Studio](https://code.visualstudio.com/docs/cpp/config-msvc#_check-your-microsoft-visual-c-installation) using the `code .` shortcut.
+If you get an error trying to build and debug with cl.exe, make sure you have [started VS Code from the Developer Command Prompt for Visual Studio]({{< ref "/C/MicrosoftConWindows#_check-your-microsoft-visual-c-installation" >}}) using the `code .` shortcut.
 
 ​​​	如果尝试使用 cl.exe 构建和调试时出现错误，请确保已使用 `code .` 快捷方式从 Visual Studio 的开发人员命令提示符启动 VS Code。
 
 ![Error notification when trying to use MSVC without running VS Code from the Developer Command Prompt for VS](https://code.visualstudio.com/assets/docs/cpp/playbutton/dev-command-prompt-error.png)
 
-## [Explore the debugger 探索调试器](https://code.visualstudio.com/docs/cpp/config-msvc#_explore-the-debugger)
+## [Explore the debugger 探索调试器]({{< ref "/C/MicrosoftConWindows#_explore-the-debugger" >}})
 
 Before you start stepping through the code, let's take a moment to notice several changes in the user interface:
 
@@ -350,7 +350,7 @@ Before you start stepping through the code, let's take a moment to notice severa
 
   ![Debugging controls](./MicrosoftConWindows_img/debug-controls.png)
 
-## [Step through the code 逐步执行代码](https://code.visualstudio.com/docs/cpp/config-msvc#_step-through-the-code)
+## [Step through the code 逐步执行代码]({{< ref "/C/MicrosoftConWindows#_step-through-the-code" >}})
 
 Now you're ready to start stepping through the code.
 
@@ -396,7 +396,7 @@ Now you're ready to start stepping through the code.
 
    ​​​	然后按F5从标准库头文件中的当前行开始执行。执行将在 `cout` 处中断。如果您愿意，可以再次按F9来切换断点。
 
-## [Set a watch 设置监视](https://code.visualstudio.com/docs/cpp/config-msvc#_set-a-watch)
+## [Set a watch 设置监视]({{< ref "/C/MicrosoftConWindows#_set-a-watch" >}})
 
 Sometimes you might want to keep track of the value of a variable as your program executes. You can do this by setting a **watch** on the variable.
 
@@ -418,7 +418,7 @@ Sometimes you might want to keep track of the value of a variable as your progra
 
    ![Mouse hover](https://code.visualstudio.com/assets/docs/cpp/cpp/mouse-hover.png)
 
-## [Customize debugging with launch.json 使用 launch.json 自定义调试](https://code.visualstudio.com/docs/cpp/config-msvc#_customize-debugging-with-launchjson)
+## [Customize debugging with launch.json 使用 launch.json 自定义调试]({{< ref "/C/MicrosoftConWindows#_customize-debugging-with-launchjson" >}})
 
 When you debug with the play button or F5, the C++ extension creates a dynamic debug configuration on the fly.
 
@@ -480,7 +480,7 @@ Change the `stopAtEntry` value to `true` to cause the debugger to stop on the `m
 >
 > ​​​	从现在开始，播放按钮和 F5 将在启动程序进行调试时从 `launch.json` 文件中读取。
 
-## [C/C++ configurations C/C++ 配置](https://code.visualstudio.com/docs/cpp/config-msvc#_cc-configurations)
+## [C/C++ configurations C/C++ 配置]({{< ref "/C/MicrosoftConWindows#_cc-configurations" >}})
 
 If you want more control over the C/C++ extension, you can create a `c_cpp_properties.json` file, which will allow you to change settings such as the path to the compiler, include paths, C++ standard (default is C++17), and more.
 
@@ -524,7 +524,7 @@ You only need to add to the **Include path** array setting if your program inclu
 
 ​​​	仅当程序包含不在工作区或标准库路径中的头文件时，才需要添加到包含路径数组设置中。
 
-### [Compiler path 编译器路径](https://code.visualstudio.com/docs/cpp/config-msvc#_compiler-path)
+### [Compiler path 编译器路径]({{< ref "/C/MicrosoftConWindows#_compiler-path" >}})
 
 The `compilerPath` setting is an important setting in your configuration. The extension uses it to infer the path to the C++ standard library header files. When the extension knows where to find those files, it can provide useful features like smart completions and **Go to Definition** navigation.
 
@@ -549,13 +549,13 @@ If you have g++ or WSL installed, you might need to change `compilerPath` to mat
 
 ​​​	如果您已安装 g++ 或 WSL，您可能需要更改 `compilerPath` 以匹配项目的首选编译器。对于 Microsoft C++，路径应如下所示，具体取决于您已安装的特定版本：“C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe”。
 
-## [Reusing your C++ configuration 重用 C++ 配置](https://code.visualstudio.com/docs/cpp/config-msvc#_reusing-your-c-configuration)
+## [Reusing your C++ configuration 重用 C++ 配置]({{< ref "/C/MicrosoftConWindows#_reusing-your-c-configuration" >}})
 
 VS Code is now configured to use the Microsoft C++ compiler. The configuration applies to the current workspace. To reuse the configuration, just copy the JSON files to a `.vscode` folder in a new project folder (workspace) and change the names of the source file(s) and executable as needed.
 
 ​​​	VS Code 现已配置为使用 Microsoft C++ 编译器。该配置适用于当前工作区。若要重复使用该配置，只需将 JSON 文件复制到新项目文件夹（工作区）中的 `.vscode` 文件夹，并根据需要更改源文件和可执行文件的名称。
 
-## [Run VS Code outside the Developer Command Prompt 在 Developer Command Prompt 外部运行 VS Code](https://code.visualstudio.com/docs/cpp/config-msvc#_run-vs-code-outside-the-developer-command-prompt)
+## [Run VS Code outside the Developer Command Prompt 在 Developer Command Prompt 外部运行 VS Code]({{< ref "/C/MicrosoftConWindows#_run-vs-code-outside-the-developer-command-prompt" >}})
 
 In certain circumstances, it isn't possible to run VS Code from **Developer Command Prompt for Visual Studio** (for example, in Remote Development through SSH scenarios). In that case, you can automate initialization of **Developer Command Prompt for Visual Studio** during the build using the following `tasks.json` configuration:
 
@@ -603,15 +603,15 @@ In certain circumstances, it isn't possible to run VS Code from **Developer Comm
 >
 > ​​​	注意： `VsDevCmd.bat` 的路径可能因 Visual Studio 版本或安装路径而异。您可以通过打开命令提示符并运行 `dir "\VsDevCmd*" /s` 来查找 `VsDevCmd.bat` 的路径。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/cpp/config-msvc#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/C/MicrosoftConWindows#_troubleshooting" >}})
 
-### [The term 'cl.exe' is not recognized 术语“cl.exe”无法识别](https://code.visualstudio.com/docs/cpp/config-msvc#_the-term-clexe-is-not-recognized)
+### [The term 'cl.exe' is not recognized 术语“cl.exe”无法识别]({{< ref "/C/MicrosoftConWindows#_the-term-clexe-is-not-recognized" >}})
 
 If you see the error "The term 'cl.exe' is not recognized as the name of a cmdlet, function, script file, or operable program.", this usually means you are running VS Code outside of a **Developer Command Prompt for Visual Studio** and VS Code doesn't know the path to the `cl.exe` compiler.
 
 ​​​	如果您看到错误“术语“cl.exe”无法识别为 cmdlet、函数、脚本文件或可操作程序的名称。”，这通常意味着您在 Visual Studio 的 Developer Command Prompt 外部运行 VS Code，并且 VS Code 不知道 `cl.exe` 编译器的路径。
 
-VS Code must either be started from the Developer Command Prompt for Visual Studio, or the task must be configured to [run outside a Developer Command Prompt](https://code.visualstudio.com/docs/cpp/config-msvc#_run-vs-code-outside-the-developer-command-prompt).
+VS Code must either be started from the Developer Command Prompt for Visual Studio, or the task must be configured to [run outside a Developer Command Prompt]({{< ref "/C/MicrosoftConWindows#_run-vs-code-outside-the-developer-command-prompt" >}}).
 
 ​​​	VS Code 必须从 Visual Studio 的开发者命令提示符启动，或者必须将任务配置为在开发者命令提示符之外运行。
 
@@ -619,17 +619,17 @@ You can always check that you are running VS Code in the context of the Develope
 
 ​​​	您可以始终通过打开一个新的终端 (Ctrl+Shift+`) 并键入“cl”来验证 `cl.exe` 是否可用于 VS Code，从而检查您是否在开发者命令提示符的上下文中运行 VS Code。
 
-### [fatal error C1034: assert.h: no include path set 致命错误 C1034：assert.h：未设置包含路径](https://code.visualstudio.com/docs/cpp/config-msvc#_fatal-error-c1034-asserth-no-include-path-set)
+### [fatal error C1034: assert.h: no include path set 致命错误 C1034：assert.h：未设置包含路径]({{< ref "/C/MicrosoftConWindows#_fatal-error-c1034-asserth-no-include-path-set" >}})
 
-In this case, `cl.exe` is available to VS Code through the `PATH` environment variable, but VS Code still needs to either be started from the **Developer Command Prompt for Visual Studio**, or be configured to [run outside the Developer Command Prompt](https://code.visualstudio.com/docs/cpp/config-msvc#_run-vs-code-outside-the-developer-command-prompt). Otherwise, `cl.exe` does not have access to important environment variables such as `INCLUDE`.
+In this case, `cl.exe` is available to VS Code through the `PATH` environment variable, but VS Code still needs to either be started from the **Developer Command Prompt for Visual Studio**, or be configured to [run outside the Developer Command Prompt]({{< ref "/C/MicrosoftConWindows#_run-vs-code-outside-the-developer-command-prompt" >}}). Otherwise, `cl.exe` does not have access to important environment variables such as `INCLUDE`.
 
 ​​​	在这种情况下， `cl.exe` 可通过 `PATH` 环境变量供 VS Code 使用，但 VS Code 仍需要从 Visual Studio 的开发者命令提示符启动，或配置为在开发者命令提示符之外运行。否则， `cl.exe` 无法访问重要的环境变量，例如 `INCLUDE` 。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/config-msvc#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/MicrosoftConWindows#_next-steps" >}})
 
-- Explore the [VS Code User Guide](https://code.visualstudio.com/docs/editor/codebasics).
+- Explore the [VS Code User Guide]({{< ref "/UserGuide/BasicEditing" >}}).
   浏览 VS Code 用户指南。
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp).
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}}).
   查看 C++ 扩展概述。
 - Create a new workspace, copy your `.vscode` JSON files to it, adjust the necessary settings for the new workspace path, program name, and so on, and start coding!
   创建一个新的工作区，将 `.vscode` JSON 文件复制到其中，调整新工作区路径、程序名称等必要的设置，然后开始编码！

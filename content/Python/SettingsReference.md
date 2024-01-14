@@ -18,11 +18,11 @@ The Python Extension for Visual Studio Code is highly configurable. This page de
 
 ​​​	Visual Studio Code 的 Python 扩展高度可配置。此页面介绍您可以使用的主要设置。
 
-For general information about working with settings in VS Code, refer to [User and workspace settings](https://code.visualstudio.com/docs/getstarted/settings), as well as the [Variables reference](https://code.visualstudio.com/docs/editor/variables-reference) for information about predefined variable support.
+For general information about working with settings in VS Code, refer to [User and workspace settings]({{< ref "/GetStarted/Settings" >}}), as well as the [Variables reference](https://code.visualstudio.com/docs/editor/variables-reference) for information about predefined variable support.
 
 ​​​	有关在 VS Code 中使用设置的常规信息，请参阅用户和工作区设置，以及变量参考以了解有关预定义变量支持的信息。
 
-## [General Python settings 常规 Python 设置](https://code.visualstudio.com/docs/python/settings-reference#_general-python-settings)
+## [General Python settings 常规 Python 设置]({{< ref "/Python/SettingsReference#_general-python-settings" >}})
 
 | Setting 设置 (python.)                | Default 默认                   | Description 说明                                             |
 | :------------------------------------ | :----------------------------- | :----------------------------------------------------------- |
@@ -31,7 +31,7 @@ For general information about working with settings in VS Code, refer to [User a
 | interpreter.infoVisibility            | `"onPythonRelated"`            | Controls when to display the selected interpreter information on the status bar. 控制何时在状态栏中显示所选解释器信息。 By default, it only shows when there are Python related files open in the editor. 默认情况下，它仅在编辑器中打开 Python 相关文件时显示。 You can set it to `"always"` if you'd like it to always show on the status bar, or `"never"` to hide it entirely. 如果希望它始终显示在状态栏中，可以将其设置为 `"always"` ，或者将其设置为 `"never"` 以完全隐藏它。 |
 | pipenvPath                            | `"pipenv"`                     | Path to the pipenv executable to use for activation. 要用于激活的 pipenv 可执行文件的路径。 |
 | venvFolders                           | `[]`                           | Paths to folders where virtual environments are created. 创建虚拟环境的文件夹的路径。 Depending on the virtualization tool used, it can be the project itself: `${workspaceFolder}`, or separate folders for all virtual environments located side by side: `.\envs`, `~/.virtualenvs`, and so on. 根据所使用的虚拟化工具，它可以是项目本身： `${workspaceFolder}` ，或者并排放置所有虚拟环境的单独文件夹： `.\envs` 、 `~/.virtualenvs` 等。 |
-| envFile                               | `"${workspaceFolder}/` `.env"` | Absolute path to a file containing environment variable definitions. 包含环境变量定义的文件的绝对路径。 See [Configuring Python environments - environment variable definitions file](https://code.visualstudio.com/docs/python/environments#_environment-variable-definitions-file). 请参阅配置 Python 环境 - 环境变量定义文件。 |
+| envFile                               | `"${workspaceFolder}/` `.env"` | Absolute path to a file containing environment variable definitions. 包含环境变量定义的文件的绝对路径。 See [Configuring Python environments - environment variable definitions file]({{< ref "/Python/Environments#_environment-variable-definitions-file" >}}). 请参阅配置 Python 环境 - 环境变量定义文件。 |
 | globalModuleInstallation              | `false`                        | Specifies whether to install packages for the current user only using the `--user` command-line argument (the default), or to install for all users in the global environment (when set to `true`). Ignored when using a virtual environment. 指定是仅使用 `--user` 命令行参数为当前用户安装软件包（默认），还是在全局环境中为所有用户安装软件包（设置为 `true` 时）。使用虚拟环境时忽略。 For more information on the `--user` argument, see [pip - User Installs](https://pip.pypa.io/en/stable/user_guide/#user-installs). 有关 `--user` 参数的更多信息，请参阅 pip - 用户安装。 |
 | poetryPath                            | `"poetry"`                     | Specifies the location of the [Poetry dependency manager](https://poetry.eustace.io/) executable, if installed. The default value `"poetry"` assumes the executable is in the current path. 如果已安装，指定 Poetry 依赖项管理器可执行文件的位置。默认值 `"poetry"` 假设可执行文件位于当前路径中。 The Python extension uses this setting to install packages when Poetry is available and there's a `poetry.lock` file in the workspace folder. Python 扩展使用此设置在工作区文件夹中存在 `poetry.lock` 文件时安装软件包。 |
 | terminal.launchArgs                   | `[]`                           | Launch arguments that are given to the Python interpreter when you run a file using commands such as **Python: Run Python File in Terminal**. 使用诸如 Python: 在终端中运行 Python 文件之类的命令运行文件时提供给 Python 解释器的启动参数。 In the `launchArgs` list, each item is a top-level command-line element that's separated by a space (quoted values that contain spaces are a single top-level element and are thus one item in the list). 在 `launchArgs` 列表中，每个项目都是一个顶级命令行元素，由空格分隔（包含空格的引号值是一个顶级元素，因此是列表中的一个项目）。 For example, for the arguments `--a --b --c {"value1" : 1, "value2" : 2}`, the list items should be `["--a", "--b", "--c", "{\"value1\" : 1, \"value2\" : 2}\""]`. 例如，对于参数 `--a --b --c {"value1" : 1, "value2" : 2}` ，列表项应为 `["--a", "--b", "--c", "{\"value1\" : 1, \"value2\" : 2}\""]` 。 Note that VS Code ignores this setting when debugging because it instead uses arguments from your selected debugging configuration in `launch.json`. 请注意，VS Code 在调试时会忽略此设置，因为它会使用 `launch.json` 中所选调试配置中的参数。 |
@@ -42,9 +42,9 @@ For general information about working with settings in VS Code, refer to [User a
 | logging.level                         | `error`                        | Specifies the level of logging to be performed by the extension. 指定扩展程序执行的日志记录级别。 The possible levels of logging, in increasing level of information provided, are `off`, `error`, `warn`, `info`, and `debug`. 日志记录的可能级别（提供的信息量依次增加）为 `off` 、 `error` 、 `warn` 、 `info` 和 `debug` 。 When set to `off`, which is not recommended, basic information will still be shown such as startup information and commands run by the Python extension. 如果设置为 `off` （不推荐），仍会显示基本信息，例如 Python 扩展程序运行的启动信息和命令。 At the `error` level, basic information and errors will be shown. 在 `error` 级别，将显示基本信息和错误。 At the `warn` level, basic, error, and warning information will be shown. At the `info` level, basic, error, warning, and additional information like method execution times and return values will be shown. At this time, the `debug` level doesn't display additional information. 在 `warn` 级别，将显示基本、错误和警告信息。在 `info` 级别，将显示基本、错误、警告以及其他信息，如方法执行时间和返回值。此时， `debug` 级别不会显示其他信息。 |
 | experiments.enabled                   | `true`                         | Enables [A/B experiments in the Python extension](https://aka.ms/AAjvt9q). If enabled, you may be provided with proposed enhancements and/or features. 在 Python 扩展程序中启用 A/B 实验。如果启用，可能会向您提供建议的增强功能和/或特性。 |
 
-## [Code analysis settings 代码分析设置](https://code.visualstudio.com/docs/python/settings-reference#_code-analysis-settings)
+## [Code analysis settings 代码分析设置]({{< ref "/Python/SettingsReference#_code-analysis-settings" >}})
 
-### [IntelliSense engine settings IntelliSense 引擎设置](https://code.visualstudio.com/docs/python/settings-reference#_intellisense-engine-settings)
+### [IntelliSense engine settings IntelliSense 引擎设置]({{< ref "/Python/SettingsReference#_intellisense-engine-settings" >}})
 
 > **Note:** If you have never changed your language server setting, your language server is set to Pylance via the “Default” setting value.
 >
@@ -54,9 +54,9 @@ For general information about working with settings in VS Code, refer to [User a
 | :--------------------- | :----------- | :----------------------------------------------------------- |
 | languageServer         | Default 默认 | Defines type of the language server (Default, [Pylance](https://devblogs.microsoft.com/python/announcing-pylance-fast-feature-rich-language-support-for-python-in-visual-studio-code/), Jedi, and None). 定义语言服务器的类型（默认、Pylance、Jedi 和无）。 |
 
-### [Python Language Server settings Python 语言服务器设置](https://code.visualstudio.com/docs/python/settings-reference#_python-language-server-settings)
+### [Python Language Server settings Python 语言服务器设置]({{< ref "/Python/SettingsReference#_python-language-server-settings" >}})
 
-#### [Pylance Language Server Pylance 语言服务器](https://code.visualstudio.com/docs/python/settings-reference#_pylance-language-server)
+#### [Pylance Language Server Pylance 语言服务器]({{< ref "/Python/SettingsReference#_pylance-language-server" >}})
 
 The language server settings apply when `python.languageServer` is `Pylance` or `Default`. If you have difficulties with the language server, see [Troubleshooting](https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md) in the language server repository.
 
@@ -154,39 +154,39 @@ This section details all the available rules that can be customized using the `p
 | reportUnsupportedDunderAll                                   | Diagnostics for unsupported operations performed on `__all__`. 对 `__all__` 执行的操作不受支持的诊断。 |
 | reportUnusedCoroutine                                        | Diagnostics for call expressions that return a Coroutine and whose results are not consumed. 诊断返回协程且结果未使用的调用表达式。 |
 
-## [AutoComplete settings 自动完成设置](https://code.visualstudio.com/docs/python/settings-reference#_autocomplete-settings)
+## [AutoComplete settings 自动完成设置]({{< ref "/Python/SettingsReference#_autocomplete-settings" >}})
 
 | Setting 设置 (python.autoComplete.) | Default 默认 | Description 说明                                             | See also 另请参阅                                            |
 | :---------------------------------- | :----------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| extraPaths                          | `[]`         | Specifies locations of additional packages for which to load autocomplete data. 指定要加载自动完成数据的其他包的位置。 | [Editing 编辑](https://code.visualstudio.com/docs/python/editing#_autocomplete-and-intellisense) |
+| extraPaths                          | `[]`         | Specifies locations of additional packages for which to load autocomplete data. 指定要加载自动完成数据的其他包的位置。 | [Editing 编辑]({{< ref "/Python/EditingCode#_autocomplete-and-intellisense" >}}) |
 
-## [Testing settings 测试设置](https://code.visualstudio.com/docs/python/settings-reference#_testing-settings)
+## [Testing settings 测试设置]({{< ref "/Python/SettingsReference#_testing-settings" >}})
 
-### [General testing 常规测试](https://code.visualstudio.com/docs/python/settings-reference#_general-testing)
+### [General testing 常规测试]({{< ref "/Python/SettingsReference#_general-testing" >}})
 
 | Setting 设置 (python.testing.) | Default 默认 | Description 说明                                             | See also 另请参阅                                            |
 | :----------------------------- | :----------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| cwd                            | null         | Specifies an optional working directory for tests. 指定测试的可选工作目录。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
-| promptToConfigure              | `true`       | Specifies whether VS Code prompts to configure a test framework if potential tests are discovered. 指定 VS Code 是否在发现潜在测试时提示配置测试框架。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
-| debugPort                      | `3000`       | Port number used for debugging of unittest tests. 用于调试单元测试的端口号。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
-| autoTestDiscoverOnSaveEnabled  | `true`       | Specifies whether to enable or disable auto run test discovery when saving a test file. 指定在保存测试文件时是否启用或禁用自动运行测试发现。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
+| cwd                            | null         | Specifies an optional working directory for tests. 指定测试的可选工作目录。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
+| promptToConfigure              | `true`       | Specifies whether VS Code prompts to configure a test framework if potential tests are discovered. 指定 VS Code 是否在发现潜在测试时提示配置测试框架。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
+| debugPort                      | `3000`       | Port number used for debugging of unittest tests. 用于调试单元测试的端口号。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
+| autoTestDiscoverOnSaveEnabled  | `true`       | Specifies whether to enable or disable auto run test discovery when saving a test file. 指定在保存测试文件时是否启用或禁用自动运行测试发现。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
 
-### [unittest framework unittest 框架](https://code.visualstudio.com/docs/python/settings-reference#_unittest-framework)
+### [unittest framework unittest 框架]({{< ref "/Python/SettingsReference#_unittest-framework" >}})
 
 | Setting 设置 (python.testing.) | Default 默认                           | Description 说明                                             | See also 另请参阅                                            |
 | :----------------------------- | :------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| unittestEnabled                | `false`                                | Specifies whether unittest is enabled for testing. 指定是否启用 unittest 进行测试。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
-| unittestArgs                   | `["-v", "-s", ".", "-p", "*test*.py"]` | Arguments to pass to unittest, where each top-level element that's separated by a space is a separate item in the list. 要传递给 unittest 的参数，其中每个以空格分隔的顶级元素都是列表中的一个单独项。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
+| unittestEnabled                | `false`                                | Specifies whether unittest is enabled for testing. 指定是否启用 unittest 进行测试。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
+| unittestArgs                   | `["-v", "-s", ".", "-p", "*test*.py"]` | Arguments to pass to unittest, where each top-level element that's separated by a space is a separate item in the list. 要传递给 unittest 的参数，其中每个以空格分隔的顶级元素都是列表中的一个单独项。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
 
-### [pytest framework pytest 框架](https://code.visualstudio.com/docs/python/settings-reference#_pytest-framework)
+### [pytest framework pytest 框架]({{< ref "/Python/SettingsReference#_pytest-framework" >}})
 
 | Setting 设置 (python.testing.) | Default 默认 | Description 说明                                             | See also 另请参阅                                            |
 | :----------------------------- | :----------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| pytestEnabled                  | `false`      | Specifies whether pytest is enabled for testing. 指定是否启用 pytest 进行测试。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
-| pytestPath                     | `"pytest"`   | Path to pytest. Use a full path if pytest is located outside the current environment. 指向 pytest 的路径。如果 pytest 位于当前环境之外，请使用完整路径。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
-| pytestArgs                     | `[]`         | Arguments to pass to pytest, where each top-level element that's separated by a space is a separate item in the list. When debugging tests with pytest-cov installed, include `--no-cov` in these arguments. 要传递给 pytest 的参数，其中每个以空格分隔的顶级元素都是列表中的一个单独项。在安装了 pytest-cov 的情况下调试测试时，请在这些参数中包含 `--no-cov` 。 | [Testing 测试](https://code.visualstudio.com/docs/python/testing) |
+| pytestEnabled                  | `false`      | Specifies whether pytest is enabled for testing. 指定是否启用 pytest 进行测试。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
+| pytestPath                     | `"pytest"`   | Path to pytest. Use a full path if pytest is located outside the current environment. 指向 pytest 的路径。如果 pytest 位于当前环境之外，请使用完整路径。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
+| pytestArgs                     | `[]`         | Arguments to pass to pytest, where each top-level element that's separated by a space is a separate item in the list. When debugging tests with pytest-cov installed, include `--no-cov` in these arguments. 要传递给 pytest 的参数，其中每个以空格分隔的顶级元素都是列表中的一个单独项。在安装了 pytest-cov 的情况下调试测试时，请在这些参数中包含 `--no-cov` 。 | [Testing 测试]({{< ref "/Python/Testing" >}}) |
 
-## [Predefined variables 预定义变量](https://code.visualstudio.com/docs/python/settings-reference#_predefined-variables)
+## [Predefined variables 预定义变量]({{< ref "/Python/SettingsReference#_predefined-variables" >}})
 
 The Python extension settings support predefined variables. Similar to the general VS Code settings, variables use the **${variableName}** syntax. Specifically, the extension supports the following variables:
 
@@ -252,15 +252,15 @@ For additional information about predefined variables and example usages, see th
 
 ​​​	有关预定义变量和示例用法的更多信息，请参阅常规 VS Code 文档中的变量参考。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/settings-reference#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Python/SettingsReference#_next-steps" >}})
 
-- [Python environments](https://code.visualstudio.com/docs/python/environments) - Control which Python interpreter is used for editing and debugging.
+- [Python environments]({{< ref "/Python/Environments" >}}) - Control which Python interpreter is used for editing and debugging.
   Python 环境 - 控制用于编辑和调试的 Python 解释器。
-- [Editing code](https://code.visualstudio.com/docs/python/editing) - Learn about autocomplete, IntelliSense, formatting, and refactoring for Python.
+- [Editing code]({{< ref "/Python/EditingCode" >}}) - Learn about autocomplete, IntelliSense, formatting, and refactoring for Python.
   编辑代码 - 了解 Python 的自动完成、IntelliSense、格式化和重构。
-- [Linting](https://code.visualstudio.com/docs/python/linting) - Enable, configure, and apply a variety of Python linters.
+- [Linting]({{< ref "/Python/Linting" >}}) - Enable, configure, and apply a variety of Python linters.
   Linting - 启用、配置和应用各种 Python linter。
-- [Debugging](https://code.visualstudio.com/docs/python/debugging) - Learn to debug Python both locally and remotely.
+- [Debugging]({{< ref "/Python/Debugging" >}}) - Learn to debug Python both locally and remotely.
   调试 - 了解如何在本地和远程调试 Python。
-- [Testing](https://code.visualstudio.com/docs/python/testing) - Configure test environments and discover, run, and debug tests.
+- [Testing]({{< ref "/Python/Testing" >}}) - Configure test environments and discover, run, and debug tests.
   测试 - 配置测试环境并发现、运行和调试测试。

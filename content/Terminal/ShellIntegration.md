@@ -14,7 +14,7 @@ draft = false
 
 
 
-Visual Studio Code has the ability to integrate with common shells, allowing the terminal to understand more about what's actually happening inside the shell. This additional information enables some useful features such as [working directory detection](https://code.visualstudio.com/docs/terminal/shell-integration#_current-working-directory-detection) and command detection, [decorations](https://code.visualstudio.com/docs/terminal/shell-integration#_command-decorations-and-the-overview-ruler), and [navigation](https://code.visualstudio.com/docs/terminal/shell-integration#_command-navigation).
+Visual Studio Code has the ability to integrate with common shells, allowing the terminal to understand more about what's actually happening inside the shell. This additional information enables some useful features such as [working directory detection]({{< ref "/Terminal/ShellIntegration#_current-working-directory-detection" >}}) and command detection, [decorations]({{< ref "/Terminal/ShellIntegration#_command-decorations-and-the-overview-ruler" >}}), and [navigation]({{< ref "/Terminal/ShellIntegration#_command-navigation" >}}).
 
 ​​	Visual Studio Code 能够与常见 shell 集成，从而使终端更好地了解 shell 内部实际发生的情况。此附加信息支持一些有用的功能，例如工作目录检测和命令检测、修饰和导航。
 
@@ -27,15 +27,15 @@ Supported shells:
 - Windows: pwsh
   Windows：pwsh
 
-## [Installation 安装](https://code.visualstudio.com/docs/terminal/shell-integration#_installation)
+## [Installation 安装]({{< ref "/Terminal/ShellIntegration#_installation" >}})
 
-### [Automatic script injection 自动脚本注入](https://code.visualstudio.com/docs/terminal/shell-integration#_automatic-script-injection)
+### [Automatic script injection 自动脚本注入]({{< ref "/Terminal/ShellIntegration#_automatic-script-injection" >}})
 
 By default, the shell integration script should automatically activate on supported shells launched from VS Code. This is done by injecting arguments and/or environment variables when the shell session launches. This automatic injection can be disabled by setting `terminal.integrated.shellIntegration.enabled` to `false`.
 
 ​​	默认情况下，shell 集成脚本应在从 VS Code 启动的受支持 shell 上自动激活。这是通过在 shell 会话启动时注入参数和/或环境变量来完成的。可以通过将 `terminal.integrated.shellIntegration.enabled` 设置为 `false` 来禁用此自动注入。
 
-This standard, easy way will not work for some advanced use cases like in sub-shells, through a regular `ssh` session (when not using the [Remote - SSH extension](https://code.visualstudio.com/docs/remote/ssh)) or for some complex shell setups. The recommended way to enable shell integration for those is [manual installation](https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation).
+This standard, easy way will not work for some advanced use cases like in sub-shells, through a regular `ssh` session (when not using the [Remote - SSH extension]({{< ref "/Remote/SSH" >}})) or for some complex shell setups. The recommended way to enable shell integration for those is [manual installation]({{< ref "/Terminal/ShellIntegration#_manual-installation" >}}).
 
 ​​	这种标准的简单方法不适用于某些高级用例，例如在子 shell 中、通过常规 `ssh` 会话（不使用远程 - SSH 扩展时）或对于某些复杂的 shell 设置。为这些用例启用 shell 集成的推荐方法是手动安装。
 
@@ -43,7 +43,7 @@ This standard, easy way will not work for some advanced use cases like in sub-sh
 >
 > ​​	注意：自动注入可能无法在旧版本的 shell 上运行，例如旧版本的 fish 不支持 `$XDG_DATA_DIRS` 环境变量，而注入正是通过该变量实现的。您可能仍能够通过手动安装使其运行。
 
-### [Manual installation 手动安装](https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation)
+### [Manual installation 手动安装]({{< ref "/Terminal/ShellIntegration#_manual-installation" >}})
 
 To manually install shell integration, the VS Code shell integration script needs to run during your shell's initialization. Where and how to do this depends on the shell and OS you're using. When using manual install it's recommended to set `terminal.integrated.shellIntegration.enabled` to `false`, though not mandatory.
 
@@ -108,7 +108,7 @@ Add the following to your `~/.bashrc` file. Run `code ~/.bashrc` in Git Bash to 
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path bash)"
 ```
 
-#### [Portability versus performance 可移植性与性能](https://code.visualstudio.com/docs/terminal/shell-integration#_portability-versus-performance)
+#### [Portability versus performance 可移植性与性能]({{< ref "/Terminal/ShellIntegration#_portability-versus-performance" >}})
 
 The above shell integration installation is cross-platform and compatible with any installation type if `code` is in the `$PATH`. However, this recommended approach starts Node.js to fetch the script path, leading to a slight delay in shell startup. To mitigate this delay, inline the script above by resolving the path ahead of time and adding it directly into your init script.
 
@@ -122,7 +122,7 @@ code --locate-shell-integration-path bash
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "/path/to/shell/integration/script.sh"
 ```
 
-## [Command decorations and the overview ruler 命令修饰和概述标尺](https://code.visualstudio.com/docs/terminal/shell-integration#_command-decorations-and-the-overview-ruler)
+## [Command decorations and the overview ruler 命令修饰和概述标尺]({{< ref "/Terminal/ShellIntegration#_command-decorations-and-the-overview-ruler" >}})
 
 One of the things that shell integration enables is the ability to get the exit codes of the commands run within the terminal. Using this information, decorations are added to the left of the line to indicate whether the command succeeded or failed. These decorations also show up in the relatively new overview ruler in the scroll bar, just like in the editor.
 
@@ -140,13 +140,13 @@ The command and overview ruler decorations can be configured with the `terminal.
 
 ​​	命令和概览标尺装饰可以通过 `terminal.integrated.shellIntegration.decorationsEnabled` 设置进行配置。
 
-## [Command navigation 命令导航](https://code.visualstudio.com/docs/terminal/shell-integration#_command-navigation)
+## [Command navigation 命令导航]({{< ref "/Terminal/ShellIntegration#_command-navigation" >}})
 
 The commands detected by shell integration feed into the command navigation feature (Ctrl/Cmd+Up, Ctrl/Cmd+Down) to give it more reliable command positions. This feature allows for quick navigation between commands and selection of their output. To select from the current position to the command, you can also hold down Shift, pressing Shift+Ctrl/Cmd+Up and Shift+Ctrl/Cmd+Down.
 
 ​​	通过 shell 集成检测到的命令会馈送到命令导航功能（Ctrl/Cmd+向上键、Ctrl/Cmd+向下键），以便为其提供更可靠的命令位置。此功能允许在命令之间快速导航并选择其输出。若要从当前位置选择到命令，还可以按住 Shift，然后按 Shift+Ctrl/Cmd+向上键和 Shift+Ctrl/Cmd+向下键。
 
-## [Sticky scroll 粘性滚动](https://code.visualstudio.com/docs/terminal/shell-integration#_sticky-scroll)
+## [Sticky scroll 粘性滚动]({{< ref "/Terminal/ShellIntegration#_sticky-scroll" >}})
 
 The sticky scroll feature will "stick" the command that is partially showing at the top of the terminal, making it much easier to see what command that output belongs to. Clicking on the sticky scroll component will scroll to the command's location in the terminal buffer.
 
@@ -158,7 +158,7 @@ This can be enabled with the `terminal.integrated.stickyScroll.enabled` setting.
 
 ​​	这可以通过 `terminal.integrated.stickyScroll.enabled` 设置启用。
 
-## [Quick fixes 快速修复](https://code.visualstudio.com/docs/terminal/shell-integration#_quick-fixes)
+## [Quick fixes 快速修复]({{< ref "/Terminal/ShellIntegration#_quick-fixes" >}})
 
 VS Code scans the output of a command and presents a Quick Fix with actions that have a high likelihood of being what the user will want to do next.
 
@@ -181,11 +181,11 @@ Here are some of the built-in Quick Fixes:
 - When a `General` or `cmd-not-found` PowerShell feedback provider triggers, suggest each suggestion.
   当 `General` 或 `cmd-not-found` PowerShell 反馈提供程序触发时，建议每个建议。
 
-The Quick Fix feature also supports [audio cues](https://code.visualstudio.com/docs/editor/accessibility#_audio-cues) for additional feedback when a Quick Fix is available.
+The Quick Fix feature also supports [audio cues]({{< ref "/UserGuide/Accessibility#_audio-cues" >}}) for additional feedback when a Quick Fix is available.
 
 ​​	快速修复功能还支持在有快速修复可用时提供额外的反馈的音频提示。
 
-## [Run recent command 运行最近的命令](https://code.visualstudio.com/docs/terminal/shell-integration#_run-recent-command)
+## [Run recent command 运行最近的命令]({{< ref "/Terminal/ShellIntegration#_run-recent-command" >}})
 
 The **Terminal: Run Recent Command** command surfaces history from various sources in a Quick Pick, providing similar functionality to a shell's reverse search (Ctrl+R). The sources are the current session's history, previous session history for this shell type and the common shell history file.
 
@@ -230,7 +230,7 @@ The keybindings can be flipped when accessibility mode is off with the following
 }
 ```
 
-## [Go to recent directory 转到最近的目录](https://code.visualstudio.com/docs/terminal/shell-integration#_go-to-recent-directory)
+## [Go to recent directory 转到最近的目录]({{< ref "/Terminal/ShellIntegration#_go-to-recent-directory" >}})
 
 Similar to the run recent command feature, the **Terminal: Go to Recent Directory** command keeps track of directories that have been visited and allows quick filtering and navigating (`cd`) to them. Alt can be held to write the text to the terminal without running it.
 
@@ -240,7 +240,7 @@ The default keybinding for this command is Ctrl+G as it behaves similar to the *
 
 ​​	此命令的默认键绑定为 Ctrl+G，因为它与编辑器中的转到行/列命令的行为类似。可以使用 Ctrl+Alt+G 将 Ctrl+G 发送到 shell。
 
-## [Current working directory detection 当前工作目录检测](https://code.visualstudio.com/docs/terminal/shell-integration#_current-working-directory-detection)
+## [Current working directory detection 当前工作目录检测]({{< ref "/Terminal/ShellIntegration#_current-working-directory-detection" >}})
 
 Shell integration tells VS Code what the current working directory of the shell is. This information is not possible to get on Windows without trying to detect the prompt through regex and requires polling on macOS and Linux, which isn't good for performance.
 
@@ -254,7 +254,7 @@ The current working directory is also used to show the directory in the terminal
 
 ​​	当前工作目录还用于在终端选项卡中显示目录，在运行最近命令快速选取中以及用于 `"terminal.integrated.splitCwd": "inherited"` 功能。
 
-## [Extended PowerShell keybindings 扩展的 PowerShell 键绑定](https://code.visualstudio.com/docs/terminal/shell-integration#_extended-powershell-keybindings)
+## [Extended PowerShell keybindings 扩展的 PowerShell 键绑定]({{< ref "/Terminal/ShellIntegration#_extended-powershell-keybindings" >}})
 
 Windows' console API allows for more keybindings than Linux/macOS terminals, since VS Code's terminal emulates the latter even on Windows there are some PowerShell keybindings that aren't possible using the standard means due to lack of VT encoding such as Ctrl+Space. Shell integration allows VS Code to attach a custom keybindings to send a special sequence to PowerShell that then gets handled in the shell integration script and forwarded to the proper key handler.
 
@@ -275,26 +275,26 @@ The following keybindings should work in PowerShell when shell integration is en
 - Shift+Home: Defaults to `SelectBackwardsLine` on all platforms
   Shift+Home：在所有平台上默认为 `SelectBackwardsLine`
 
-## [Enhanced accessibility 增强辅助功能](https://code.visualstudio.com/docs/terminal/shell-integration#_enhanced-accessibility)
+## [Enhanced accessibility 增强辅助功能]({{< ref "/Terminal/ShellIntegration#_enhanced-accessibility" >}})
 
-The information that shell integration provides to VS Code is used to improve [accessibility in the terminal](https://code.visualstudio.com/docs/editor/accessibility#_terminal-accessibility). Some examples of enhancements are:
+The information that shell integration provides to VS Code is used to improve [accessibility in the terminal]({{< ref "/UserGuide/Accessibility#_terminal-accessibility" >}}). Some examples of enhancements are:
 
 ​​	Shell 集成提供给 VS Code 的信息用于改进终端中的辅助功能。增强功能的一些示例包括：
 
 - Navigation through detected commands in the accessible buffer (Alt+F2)
   在可访问缓冲区中通过检测到的命令进行导航（Alt+F2）
-- An [audio cue](https://code.visualstudio.com/docs/editor/accessibility#_audio-cues) plays when a command fails.
+- An [audio cue]({{< ref "/UserGuide/Accessibility#_audio-cues" >}}) plays when a command fails.
   命令失败时会播放音频提示。
 - Underlying text box synchronizing such that using the arrow and backspace keys behave more correctly.
   底层文本框同步，以便使用箭头和退格键的行为更加正确。
 
-## [Supported escape sequences 支持的转义序列](https://code.visualstudio.com/docs/terminal/shell-integration#_supported-escape-sequences)
+## [Supported escape sequences 支持的转义序列]({{< ref "/Terminal/ShellIntegration#_supported-escape-sequences" >}})
 
 VS Code supports several custom escape sequences:
 
 ​​	VS Code 支持多种自定义转义序列：
 
-### [VS Code custom sequences 'OSC 633 ; ... ST' VS Code 自定义序列“OSC 633 ; ... ST”](https://code.visualstudio.com/docs/terminal/shell-integration#_vs-code-custom-sequences-osc-633-st)
+### [VS Code custom sequences 'OSC 633 ; ... ST' VS Code 自定义序列“OSC 633 ; ... ST”]({{< ref "/Terminal/ShellIntegration#_vs-code-custom-sequences-osc-633-st" >}})
 
 VS Code has a set of custom escape sequences designed to enable the shell integration feature when run in VS Code's terminal. These are used by the built-in scripts but can also be used by any application capable of sending sequences to the terminal, for example the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia) uses these to support shell integration in the Julia REPL.
 
@@ -359,7 +359,7 @@ These sequences should be ignored by other terminals, but unless other terminals
   - `IsWindows` - Indicates whether the terminal is using a Windows backend like winpty or conpty. This may be used to enable additional heuristics as the positioning of the shell integration sequences are not guaranteed to be correct. Valid values are `True` and `False`.
     `IsWindows` - 指示终端是否使用类似于 winpty 或 conpty 的 Windows 后端。这可用于启用其他启发式方法，因为无法保证外壳集成序列的位置正确。有效值为 `True` 和 `False` 。
 
-### [Final Term shell integration Final Term 外壳集成](https://code.visualstudio.com/docs/terminal/shell-integration#_final-term-shell-integration)
+### [Final Term shell integration Final Term 外壳集成]({{< ref "/Terminal/ShellIntegration#_final-term-shell-integration" >}})
 
 VS Code supports Final Term's shell integration sequences, which allow non-VS Code shell integration scripts to work in VS Code. This results in a somewhat degraded experience as it doesn't support as many features as `OSC 633`. Here are the specific sequences that are supported:
 
@@ -374,7 +374,7 @@ VS Code supports Final Term's shell integration sequences, which allow non-VS Co
 - `OSC 133 ; D [; <exitcode>] ST` - Mark execution finished with an optional exit code.
   `OSC 133 ; D [; <exitcode>] ST` - 标记执行完成，并带有可选的退出代码。
 
-### [SetMark 'OSC 1337 ; SetMark ST'](https://code.visualstudio.com/docs/terminal/shell-integration#_setmark-osc-1337-setmark-st)
+### [SetMark 'OSC 1337 ; SetMark ST']({{< ref "/Terminal/ShellIntegration#_setmark-osc-1337-setmark-st" >}})
 
 This sequence adds a mark to the left of the line it was triggered on and also adds an annotation to the scroll bar:
 
@@ -386,9 +386,9 @@ These marks integrate with command navigation to make them easy to navigate to v
 
 ​​	这些标记与命令导航集成，以便通过默认的 ctrl/cmd+up 和 ctrl/cmd+down 轻松导航到它们。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/terminal/shell-integration#_common-questions)
+## [Common questions 常见问题]({{< ref "/Terminal/ShellIntegration#_common-questions" >}})
 
-### [When does automatic injection not work? 自动注入何时不起作用？](https://code.visualstudio.com/docs/terminal/shell-integration#_when-does-automatic-injection-not-work)
+### [When does automatic injection not work? 自动注入何时不起作用？]({{< ref "/Terminal/ShellIntegration#_when-does-automatic-injection-not-work" >}})
 
 There are several cases where automatic injection doesn't work, here are some common cases:
 
@@ -409,9 +409,9 @@ There are several cases where automatic injection doesn't work, here are some co
 
   ​​	某些 shell 插件可能会在初始化时取消设置 `$VSCODE_SHELL_INTEGRATION` ，从而明确禁用 VS Code 的 shell 集成。
 
-### [Why are command decorations showing when the feature is disabled? 在禁用该功能时，为什么命令修饰仍会显示？](https://code.visualstudio.com/docs/terminal/shell-integration#_why-are-command-decorations-showing-when-the-feature-is-disabled)
+### [Why are command decorations showing when the feature is disabled? 在禁用该功能时，为什么命令修饰仍会显示？]({{< ref "/Terminal/ShellIntegration#_why-are-command-decorations-showing-when-the-feature-is-disabled" >}})
 
-The likely cause of this is that your system has shell integration for another terminal installed that [VS Code understands](https://code.visualstudio.com/docs/terminal/shell-integration#_final-term-shell-integration). If you don't want any decorations, you can hide them with the following setting:
+The likely cause of this is that your system has shell integration for another terminal installed that [VS Code understands]({{< ref "/Terminal/ShellIntegration#_final-term-shell-integration" >}}). If you don't want any decorations, you can hide them with the following setting:
 
 ​​	造成这种情况的可能原因是您的系统已安装了 VS Code 理解的另一个终端的 shell 集成。如果您不想要任何修饰，可以使用以下设置隐藏它们：
 
@@ -419,11 +419,11 @@ The likely cause of this is that your system has shell integration for another t
 "terminal.integrated.shellIntegration.decorationsEnabled": never
 ```
 
-Alternatively, you could remove the shell integration script from your shell rc/startup script but you will lose access to command-aware features like [command navigation](https://code.visualstudio.com/docs/terminal/shell-integration#_command-navigation).
+Alternatively, you could remove the shell integration script from your shell rc/startup script but you will lose access to command-aware features like [command navigation]({{< ref "/Terminal/ShellIntegration#_command-navigation" >}}).
 
 ​​	或者，您可以从 shell rc/启动脚本中删除 shell 集成脚本，但您将失去对命令感知功能（如命令导航）的访问权限。
 
-### [Why does the command decoration jump around on Windows? 为什么命令修饰在 Windows 上四处跳动？](https://code.visualstudio.com/docs/terminal/shell-integration#_why-does-the-command-decoration-jump-around-on-windows)
+### [Why does the command decoration jump around on Windows? 为什么命令修饰在 Windows 上四处跳动？]({{< ref "/Terminal/ShellIntegration#_why-does-the-command-decoration-jump-around-on-windows" >}})
 
 Windows uses an emulated pseudoterminal (pty) backend called ConPTY. It works a little differently to a regular pty because it needs to maintain compatibility with the Windows Console API. One of the impacts of this is the pty handles rendering specially in such a way that the shell integration sequences that identify the commands in the terminal buffer may be misplaced. When the command jumps around it's typically after a command has run, and VS Code's heuristics have kicked in to improve the position of the command decorations.
 

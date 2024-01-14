@@ -22,7 +22,7 @@ In this FastAPI tutorial, we will create a grocery list app using FastAPI. By th
 
 ​​​	在本 FastAPI 教程中，我们将使用 FastAPI 创建一个杂货清单应用。在完成本教程后，您将了解如何在 Visual Studio Code 终端、编辑器和调试器中使用 FastAPI。本教程不是 FastAPI 深入教程。为此，您可以参考官方 FastAPI 文档。
 
-If this is your first time using Python, we recommend you to start with our [Python tutorial](https://code.visualstudio.com/docs/python/python-tutorial) to get familiar with the language and VS Code's Python support. This tutorial is more suited for those who are already familiar with Python and want to learn how to work with FastAPI in VS Code.
+If this is your first time using Python, we recommend you to start with our [Python tutorial]({{< ref "/Python/Tutorial" >}}) to get familiar with the language and VS Code's Python support. This tutorial is more suited for those who are already familiar with Python and want to learn how to work with FastAPI in VS Code.
 
 ​​​	如果您是第一次使用 Python，我们建议您先学习我们的 Python 教程，以熟悉该语言和 VS Code 对 Python 的支持。本教程更适合已经熟悉 Python 并希望学习如何在 VS Code 中使用 FastAPI 的人。
 
@@ -34,13 +34,13 @@ If you have any problems, you can search for answers or ask a question on the [P
 
 ​​​	如果您遇到任何问题，可以在 Python 扩展讨论问答中搜索答案或提问。
 
-## [Set up the project 设置项目](https://code.visualstudio.com/docs/python/tutorial-fastapi#_set-up-the-project)
+## [Set up the project 设置项目]({{< ref "/Python/FastAPITutorial#_set-up-the-project" >}})
 
-There are different ways you can set up your project for this tutorial. We will cover how you can set it up in [GitHub Codespaces](https://code.visualstudio.com/docs/python/tutorial-fastapi#_github-codespaces) and in [VS Code on your local machine](https://code.visualstudio.com/docs/python/tutorial-fastapi#_locally-in-vs-code).
+There are different ways you can set up your project for this tutorial. We will cover how you can set it up in [GitHub Codespaces]({{< ref "/Python/FastAPITutorial#_github-codespaces" >}}) and in [VS Code on your local machine]({{< ref "/Python/FastAPITutorial#_locally-in-vs-code" >}}).
 
 ​​​	在本教程中，您可以通过不同的方式来设置项目。我们将介绍如何在 GitHub Codespaces 和本地计算机上的 VS Code 中进行设置。
 
-### [GitHub Codespaces](https://code.visualstudio.com/docs/python/tutorial-fastapi#_github-codespaces)
+### [GitHub Codespaces]({{< ref "/Python/FastAPITutorial#_github-codespaces" >}})
 
 You can set up this project to develop in [GitHub Codespaces](https://github.com/features/codespaces), where you can code, debug, and run your app remotely in a codespace. A codespace provides a fully configured development environment hosted in the cloud, eliminating the need for local setup. This environment includes your project's dependencies, tools, and extensions, ensuring a consistent and reproducible development experience. It streamlines collaboration by providing real-time editing, integrated version control, and easy access to debugging and testing tools, all while maintaining the security and reliability of your project.
 
@@ -64,19 +64,19 @@ Then, select **Code** > **Codespaces** > **Create Codespace on <dictionarybased>
 
 ​​​	然后，选择代码 > Codespaces > 在 分支上创建 Codespace，为您的项目创建并打开一个 Codespace。
 
-Once you're done, you can continue with the [Replace the database](https://code.visualstudio.com/docs/python/tutorial-fastapi#_replace-the-database) section below.
+Once you're done, you can continue with the [Replace the database]({{< ref "/Python/FastAPITutorial#_replace-the-database" >}}) section below.
 
 ​​​	完成后，您可以继续执行下面的替换数据库部分。
 
-### [Locally in VS Code 在 VS Code 中本地](https://code.visualstudio.com/docs/python/tutorial-fastapi#_locally-in-vs-code)
+### [Locally in VS Code 在 VS Code 中本地]({{< ref "/Python/FastAPITutorial#_locally-in-vs-code" >}})
 
 To successfully complete this tutorial in [VS Code](https://code.visualstudio.com/), you first need to set up your Python development environment. Specifically, this tutorial requires:
 
 ​​​	要在 VS Code 中成功完成本教程，您首先需要设置 Python 开发环境。具体来说，本教程需要：
 
-- Python 3 (check the [installation guide](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter) if you don't have it installed)
+- Python 3 (check the [installation guide]({{< ref "/Python/Tutorial#_install-a-python-interpreter" >}}) if you don't have it installed)
   Python 3（如果您尚未安装，请查看安装指南）
-- [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (For additional details on installing extensions, you can read [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace)).
+- [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (For additional details on installing extensions, you can read [Extension Marketplace]({{< ref "/UserGuide/ExtensionMarketplace" >}})).
   VS Code 的 Python 扩展（有关安装扩展的更多详细信息，您可以阅读扩展市场）。
 
 In this section, we will create a folder to open as a workspace in VS Code, set up a Python virtual environment, and install the project's dependencies.
@@ -91,7 +91,7 @@ In this section, we will create a folder to open as a workspace in VS Code, set 
 
    ​​​	在 VS Code 中打开此新文件夹（文件 > 打开文件夹…）。
 
-3. When the [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) prompt shows up, select **Yes, I trust the authors** to allow the workspace to access necessary resources and extensions. You can learn more about Workspace Trust in the [documentation](https://code.visualstudio.com/docs/editor/workspace-trust).
+3. When the [Workspace Trust]({{< ref "/UserGuide/WorkspaceTrust" >}}) prompt shows up, select **Yes, I trust the authors** to allow the workspace to access necessary resources and extensions. You can learn more about Workspace Trust in the [documentation]({{< ref "/UserGuide/WorkspaceTrust" >}}).
 
    ​​​	当出现 Workspace Trust 提示时，选择是，我信任作者允许工作区访问必要的资源和扩展。您可以在文档中了解有关 Workspace Trust 的更多信息。
 
@@ -158,7 +158,7 @@ The virtual environment will be created, the dependencies automatically installe
 >
 > ​​​	注意：如果您在状态栏上找不到新创建的环境信息，可以单击 Python 解释器指示符（或从命令面板运行 Python: Select Interpreter 命令）并手动选择虚拟环境。
 
-## [Start Coding 开始编码](https://code.visualstudio.com/docs/python/tutorial-fastapi#_start-coding)
+## [Start Coding 开始编码]({{< ref "/Python/FastAPITutorial#_start-coding" >}})
 
 Let's create the application!
 
@@ -216,7 +216,7 @@ Let's create the application!
 
    ​​​	使用调试工具栏中的停止按钮或通过 Shift+F5 停止调试器。
 
-## [Create a model for grocery list items 为杂货清单项目创建模型](https://code.visualstudio.com/docs/python/tutorial-fastapi#_create-a-model-for-grocery-list-items)
+## [Create a model for grocery list items 为杂货清单项目创建模型]({{< ref "/Python/FastAPITutorial#_create-a-model-for-grocery-list-items" >}})
 
 Now that we have the FastAPI app working, we can define our grocery list items by using [Pydantic](https://docs.pydantic.dev/latest/), a data validation and parsing library that integrates seamlessly with FastAPI. Pydantic lets you define data models using Python classes with [type hints](https://docs.python.org/3/library/typing.html) for automatic validation and parsing of incoming data (called "payloads") in API requests.
 
@@ -268,7 +268,7 @@ The three steps below are optional, but given that FastAPI uses type hints exten
 
    ![Two Python Analysis Type Hints settings being enabled in the Settings editor: for Function Return Types and for Variable Types](./FastAPITutorial_img/function_and_variable_return_type_hint_settings.png)
 
-## [Create routes 创建路由](https://code.visualstudio.com/docs/python/tutorial-fastapi#_create-routes)
+## [Create routes 创建路由]({{< ref "/Python/FastAPITutorial#_create-routes" >}})
 
 Now we need a place to store the grocery list items. For simplicity, let's start with an empty dictionary.
 
@@ -400,7 +400,7 @@ Now let's use VS Code's Debug Console to do some exploration.
 
    ​​​	这将打开调试控制台并运行所选表达式。正如我们示例中所料，表达式求值为 `False` 。
 
-The Debug Console can be a powerful tool to quickly test expressions and better understand the state of your code at the time of a breakpoint. You can also use it to run arbitrary code, such as calling functions or printing variables. You can learn more about Python debugging in VS Code in the [Python tutorial](https://code.visualstudio.com/docs/python/python-tutorial#_configure-and-run-the-debugger).
+The Debug Console can be a powerful tool to quickly test expressions and better understand the state of your code at the time of a breakpoint. You can also use it to run arbitrary code, such as calling functions or printing variables. You can learn more about Python debugging in VS Code in the [Python tutorial]({{< ref "/Python/Tutorial#_configure-and-run-the-debugger" >}}).
 
 ​​​	调试控制台可以是一个强大的工具，可以快速测试表达式并更好地了解代码在断点时的状态。您还可以使用它来运行任意代码，例如调用函数或打印变量。您可以在 Python 教程中了解有关在 VS Code 中进行 Python 调试的更多信息。
 
@@ -500,7 +500,7 @@ Congratulations! You now have a working FastAPI application with routes to add, 
 
 ​​​	恭喜！您现在有一个可用的 FastAPI 应用程序，其中包含用于向购物清单中添加、列出和删除项目的路由。
 
-## [Set up the data storage 设置数据存储](https://code.visualstudio.com/docs/python/tutorial-fastapi#_set-up-the-data-storage)
+## [Set up the data storage 设置数据存储]({{< ref "/Python/FastAPITutorial#_set-up-the-data-storage" >}})
 
 At this point, you already have a working version of the application with the base functionality. This section guides you through setting up data storage for persistence, but you can choose to skip it if you're happy with what you've learned already.
 
@@ -514,19 +514,19 @@ To persist the data, we will use [Redis](https://redis.io/), which is an open so
 
 ​​​	为了持久化数据，我们将使用 Redis，它是一个开源的内存数据结构存储。由于其速度和多功能性，Redis 通常用作各种应用程序中的数据存储系统，包括 Web 应用程序、实时分析系统、缓存层、本教程等。
 
-If you are already working on **GitHub Codespaces** with our existing template, you can skip directly to the [Replace the database](https://code.visualstudio.com/docs/python/tutorial-fastapi#_replace-the-database) section.
+If you are already working on **GitHub Codespaces** with our existing template, you can skip directly to the [Replace the database]({{< ref "/Python/FastAPITutorial#_replace-the-database" >}}) section.
 
 ​​​	如果您已经在使用我们现有模板的 GitHub Codespaces 工作，则可以直接跳到替换数据库部分。
 
-If you are on Windows, you can work with Redis by setting up either a [Docker container](https://www.docker.com/products/docker-desktop), a [GitHub Codespace](https://github.com/features/codespaces), or through [WSL](https://learn.microsoft.com/windows/wsl) (Windows Subsystem for Linux). In this tutorial we will use a Docker container, but you can refer to the [section above](https://code.visualstudio.com/docs/python/tutorial-fastapi#_github-codespaces) for instructions on how to set up a GitHub Codespace.
+If you are on Windows, you can work with Redis by setting up either a [Docker container](https://www.docker.com/products/docker-desktop), a [GitHub Codespace](https://github.com/features/codespaces), or through [WSL](https://learn.microsoft.com/windows/wsl) (Windows Subsystem for Linux). In this tutorial we will use a Docker container, but you can refer to the [section above]({{< ref "/Python/FastAPITutorial#_github-codespaces" >}}) for instructions on how to set up a GitHub Codespace.
 
 ​​​	如果您使用的是 Windows，则可以通过设置 Docker 容器、GitHub Codespace 或通过 WSL（适用于 Linux 的 Windows 子系统）来使用 Redis。在本教程中，我们将使用 Docker 容器，但您可以参考上面的部分了解有关如何设置 GitHub Codespace 的说明。
 
-Otherwise, if you are on a Linux or a macOS machine, you can install Redis by following the [instructions on their website](https://redis.io/docs/install), and then skip to the [Replace the database](https://code.visualstudio.com/docs/python/tutorial-fastapi#_replace-the-database) section.
+Otherwise, if you are on a Linux or a macOS machine, you can install Redis by following the [instructions on their website](https://redis.io/docs/install), and then skip to the [Replace the database]({{< ref "/Python/FastAPITutorial#_replace-the-database" >}}) section.
 
 ​​​	否则，如果您使用的是 Linux 或 macOS 机器，则可以按照其网站上的说明安装 Redis，然后跳到替换数据库部分。
 
-### [Setting up a Docker Container on Windows 在 Windows 上设置 Docker 容器](https://code.visualstudio.com/docs/python/tutorial-fastapi#_setting-up-a-docker-container-on-windows)
+### [Setting up a Docker Container on Windows 在 Windows 上设置 Docker 容器]({{< ref "/Python/FastAPITutorial#_setting-up-a-docker-container-on-windows" >}})
 
 The VS Code [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension offers a streamlined approach to consolidate your project, its dependencies, and all necessary tools into one tidy container, creating a full-featured development environment. The extension lets you open your project inside (or mounted into) the container in VS Code, where you'll have its full feature set.
 
@@ -536,14 +536,14 @@ For the steps below, make sure you have the following requirements installed on 
 
 ​​​	对于以下步骤，请确保您的计算机上已安装以下要求：
 
-#### [Requirements 要求](https://code.visualstudio.com/docs/python/tutorial-fastapi#_requirements)
+#### [Requirements 要求]({{< ref "/Python/FastAPITutorial#_requirements" >}})
 
 - [Docker for Windows
   适用于 Windows 的 Docker](https://www.docker.com/)
 - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
   Dev Containers 扩展
 
-#### [Create the Dev container configuration 创建 Dev 容器配置](https://code.visualstudio.com/docs/python/tutorial-fastapi#_create-the-dev-container-configuration)
+#### [Create the Dev container configuration 创建 Dev 容器配置]({{< ref "/Python/FastAPITutorial#_create-the-dev-container-configuration" >}})
 
 1. Open the Command Palette and run the **Dev Containers: Add Dev Container Configuration Files…**.
 
@@ -632,7 +632,7 @@ Next, we will add the necessary dependency installation commands to the `postCre
    >
    > ​​​	注意：根据 Internet 速度和计算机性能，构建容器可能需要几分钟时间。
 
-   You can learn more about dev container configuration in the [Dev Containers documentation](https://code.visualstudio.com/docs/devcontainers/containers#_create-a-devcontainerjson-file).
+   You can learn more about dev container configuration in the [Dev Containers documentation]({{< ref "/DevContainers/Overview#_create-a-devcontainerjson-file" >}}).
 
    ​​​	您可以在 Dev Containers 文档中了解有关 dev 容器配置的更多信息。
 
@@ -664,7 +664,7 @@ We are now ready to move on to the next section, where we will replace the data 
 
 ​​​	现在，我们准备继续下一部分，在其中我们将替换数据存储。
 
-## [Replace the database 替换数据库](https://code.visualstudio.com/docs/python/tutorial-fastapi#_replace-the-database)
+## [Replace the database 替换数据库]({{< ref "/Python/FastAPITutorial#_replace-the-database" >}})
 
 We have a dictionary that stores the grocery list items, but we want to replace it with a Redis database. In this tutorial, we will use Redis hashes to store our data, which is a data structure that can store multiple key-value pairs.
 
@@ -990,7 +990,7 @@ Congrats! You now have a working FastAPI application with routes to add, list, a
 
 ​​​	恭喜！您现在拥有一个可正常工作的 FastAPI 应用程序，其中包含用于向购物清单中添加、列出和删除项目的路由，并且数据保存在 Redis 数据库中。
 
-## [Optional: Set up database deletion 可选：设置数据库删除](https://code.visualstudio.com/docs/python/tutorial-fastapi#_optional-set-up-database-deletion)
+## [Optional: Set up database deletion 可选：设置数据库删除]({{< ref "/Python/FastAPITutorial#_optional-set-up-database-deletion" >}})
 
 With the data now persisted by Redis, you might want to create a script to erase all testing data. To do so, create a new file called `flushdb.py` with the following content:
 
@@ -1011,7 +1011,7 @@ Note that this should be done with caution because it will delete all the keys i
 
 ​​​	请注意，这应谨慎进行，因为它会删除当前数据库中的所有键，如果在生产中进行，可能会导致数据丢失。
 
-## [Optional: Create a ChatGPT plugin 可选：创建 ChatGPT 插件](https://code.visualstudio.com/docs/python/tutorial-fastapi#_optional-create-a-chatgpt-plugin)
+## [Optional: Create a ChatGPT plugin 可选：创建 ChatGPT 插件]({{< ref "/Python/FastAPITutorial#_optional-create-a-chatgpt-plugin" >}})
 
 With GitHub Codespaces, you can host your application for testing purposes when using [ChatGPT Plugins](https://platform.openai.com/docs/plugins/introduction). ChatGPT Plugins are tools that enable [ChatGPT](https://chat.openai.com/) to interact with existing APIs to enhance ChatGPT's abilities, allowing it to perform a wide range of actions. ChatGPT Plugins are not currently publicly available, but you can join their [wait list](https://openai.com/waitlist/plugins) to get access. Once you do, you can follow along the live stream recording below to create your own grocery list plugin for ChatGPT:
 
@@ -1025,7 +1025,7 @@ With GitHub Codespaces, you can host your application for testing purposes when 
 >
 > ​​​	注意：所有个人 GitHub.com 帐户都包含在免费或专业计划中，每月可免费使用 GitHub Codespaces。有关更多信息，请转到关于 GitHub Codespaces 的计费。
 
-## [Next Steps 后续步骤](https://code.visualstudio.com/docs/python/tutorial-fastapi#_next-steps)
+## [Next Steps 后续步骤]({{< ref "/Python/FastAPITutorial#_next-steps" >}})
 
 Thank you for following along this tutorial! We hope you learned something new about FastAPI and how to use it with VS Code.
 
@@ -1048,10 +1048,10 @@ You can also review these other VS Code Python articles:
 ​​​	您还可以查看以下其他 VS Code Python 文章：
 
 - [Editing Python code
-  编辑 Python 代码](https://code.visualstudio.com/docs/python/editing)
+  编辑 Python 代码]({{< ref "/Python/EditingCode" >}})
 - [Managing Python environments
-  管理 Python 环境](https://code.visualstudio.com/docs/python/environments)
+  管理 Python 环境]({{< ref "/Python/Environments" >}})
 - [Debugging Python
-  调试 Python](https://code.visualstudio.com/docs/python/debugging)
+  调试 Python]({{< ref "/Python/Debugging" >}})
 - [Testing
-  测试](https://code.visualstudio.com/docs/python/testing)
+  测试]({{< ref "/Python/Testing" >}})

@@ -18,20 +18,20 @@ Visual Studio Code is an editor first and foremost, and includes the features yo
 
 ​​	Visual Studio Code 首先是一款编辑器，它包含了高效率源代码编辑所需的功能。本主题将带您了解编辑器的基础知识，帮助您开始使用代码。
 
-## [Keyboard shortcuts 键盘快捷键](https://code.visualstudio.com/docs/editor/codebasics#_keyboard-shortcuts)
+## [Keyboard shortcuts 键盘快捷键]({{< ref "/UserGuide/BasicEditing#_keyboard-shortcuts" >}})
 
 Being able to keep your hands on the keyboard when writing code is crucial for high productivity. VS Code has a rich set of default keyboard shortcuts as well as allowing you to customize them.
 
 ​​	在编写代码时能够将手放在键盘上对于提高工作效率至关重要。VS Code 有一套丰富的默认键盘快捷键，还允许您自定义它们。
 
-- [Keyboard Shortcuts Reference](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference) - Learn the most commonly used and popular keyboard shortcuts by downloading the reference sheet.
+- [Keyboard Shortcuts Reference]({{< ref "/GetStarted/KeyBindings#_keyboard-shortcuts-reference" >}}) - Learn the most commonly used and popular keyboard shortcuts by downloading the reference sheet.
   键盘快捷键参考 - 通过下载参考表来学习最常用和最受欢迎的键盘快捷键。
-- [Install a Keymap extension](https://code.visualstudio.com/docs/getstarted/keybindings#_keymap-extensions) - Use the keyboard shortcuts of your old editor (such as Sublime Text, Atom, and Vim) in VS Code by installing a Keymap extension.
+- [Install a Keymap extension]({{< ref "/GetStarted/KeyBindings#_keymap-extensions" >}}) - Use the keyboard shortcuts of your old editor (such as Sublime Text, Atom, and Vim) in VS Code by installing a Keymap extension.
   安装按键映射扩展 - 通过安装按键映射扩展，在 VS Code 中使用旧编辑器（例如 Sublime Text、Atom 和 Vim）的键盘快捷键。
-- [Customize Keyboard Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor) - Change the default keyboard shortcuts to fit your style.
+- [Customize Keyboard Shortcuts]({{< ref "/GetStarted/KeyBindings#_keyboard-shortcuts-editor" >}}) - Change the default keyboard shortcuts to fit your style.
   自定义键盘快捷键 - 更改默认键盘快捷键以适应您的风格。
 
-## [Multiple selections (multi-cursor) 多重选择（多光标）](https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor)
+## [Multiple selections (multi-cursor) 多重选择（多光标）]({{< ref "/UserGuide/BasicEditing#_multiple-selections-multicursor" >}})
 
 VS Code supports multiple cursors for fast simultaneous edits. You can add secondary cursors (rendered thinner) with Alt+Click. Each cursor operates independently based on the context it sits in. A common way to add more cursors is with Ctrl+Alt+Down or Ctrl+Alt+Up that insert cursors below or above.
 
@@ -53,9 +53,9 @@ Ctrl+D selects the word at the cursor, or the next occurrence of the current sel
 >
 > ​​	提示：您还可以使用 Ctrl+Shift+L 添加更多光标，这将在当前选定文本的每个出现位置添加一个选定内容。
 
-### [Multi-cursor modifier 多光标修饰符](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier)
+### [Multi-cursor modifier 多光标修饰符]({{< ref "/UserGuide/BasicEditing#_multicursor-modifier" >}})
 
-If you'd like to change the modifier key for applying multiple cursors to Cmd+Click on macOS and Ctrl+Click on Windows and Linux, you can do so with the `editor.multiCursorModifier` [setting](https://code.visualstudio.com/docs/getstarted/settings). This lets users coming from other editors such as Sublime Text or Atom continue to use the keyboard modifier they are familiar with.
+If you'd like to change the modifier key for applying multiple cursors to Cmd+Click on macOS and Ctrl+Click on Windows and Linux, you can do so with the `editor.multiCursorModifier` [setting]({{< ref "/GetStarted/Settings" >}}). This lets users coming from other editors such as Sublime Text or Atom continue to use the keyboard modifier they are familiar with.
 
 ​​	如果您想更改在 macOS 上使用 Cmd+Click 和在 Windows 和 Linux 上使用 Ctrl+Click 应用多个光标的修饰键，可以使用 `editor.multiCursorModifier` 设置来实现。这使用户可以继续使用他们熟悉的键盘修饰符，例如来自 Sublime Text 或 Atom 等其他编辑器。
 
@@ -76,7 +76,7 @@ The **Go to Definition** and **Open Link** gestures will also respect this setti
 
 ​​	转到定义和打开链接手势也将遵循此设置，并进行调整，以避免冲突。例如，当设置是 `ctrlCmd` 时，可以使用 Ctrl/Cmd+Click 添加多个光标，并且可以使用 Alt+Click 打开链接或转到定义。
 
-### [Shrink/expand selection 缩小/展开选择](https://code.visualstudio.com/docs/editor/codebasics#_shrinkexpand-selection)
+### [Shrink/expand selection 缩小/展开选择]({{< ref "/UserGuide/BasicEditing#_shrinkexpand-selection" >}})
 
 Quickly shrink or expand the current selection. Trigger it with Shift+Alt+Left and Shift+Alt+Right.
 
@@ -88,7 +88,7 @@ Here's an example of expanding the selection with Shift+Alt+Right:
 
 ![Expand selection](./BasicEditing_img/expandselection.gif)
 
-## [Column (box) selection 列（框）选择](https://code.visualstudio.com/docs/editor/codebasics#_column-box-selection)
+## [Column (box) selection 列（框）选择]({{< ref "/UserGuide/BasicEditing#_column-box-selection" >}})
 
 Place the cursor in one corner and then hold Shift+Alt while dragging to the opposite corner:
 
@@ -96,7 +96,7 @@ Place the cursor in one corner and then hold Shift+Alt while dragging to the opp
 
 ![Column text selection](./BasicEditing_img/column-select.gif)
 
-Note: This changes to Shift+Ctrl/Cmd when using Ctrl/Cmd as [multi-cursor modifier](https://code.visualstudio.com/docs/editor/codebasics#_multi-cursor-modifier).
+Note: This changes to Shift+Ctrl/Cmd when using Ctrl/Cmd as [multi-cursor modifier]({{< ref "/UserGuide/BasicEditing#_multi-cursor-modifier" >}}).
 
 ​​	注意：当使用 Ctrl/Cmd 作为多光标修饰符时，这会变为 Shift+Ctrl/Cmd。
 
@@ -113,17 +113,17 @@ There are also default key bindings for column selection on macOS and Windows, b
 | Ctrl+Shift+Alt+PageDown                  | Column Select Page Down 列选择向下翻页 | `cursorColumnSelectPageDown` |
 | Ctrl+Shift+Alt+PageUp                    | Column Select Page Up 列选择向上翻页   | `cursorColumnSelectPageUp`   |
 
-You can [edit](https://code.visualstudio.com/docs/getstarted/keybindings) your `keybindings.json` to bind them to something more familiar if you want.
+You can [edit]({{< ref "/GetStarted/KeyBindings" >}}) your `keybindings.json` to bind them to something more familiar if you want.
 
 ​​	如果您想将 `keybindings.json` 编辑为更熟悉的内容，可以这样做。
 
-### [Column Selection mode 列选择模式](https://code.visualstudio.com/docs/editor/codebasics#_column-selection-mode)
+### [Column Selection mode 列选择模式]({{< ref "/UserGuide/BasicEditing#_column-selection-mode" >}})
 
 The user setting **Editor: Column Selection** controls this feature. Once this mode is entered, as indicated in the Status bar, the mouse gestures and the arrow keys will create a column selection by default. This global toggle is also accessible via the **Selection** > **Column Selection Mode** menu item. In addition, one can also disable Column Selection mode from the Status bar.
 
 ​​	用户设置编辑器：列选择控制此功能。一旦进入此模式，如状态栏中所示，鼠标手势和箭头键将默认创建列选择。还可以通过“选择”>“列选择模式”菜单项访问此全局切换。此外，还可以从状态栏禁用列选择模式。
 
-## [Save / Auto Save 保存/自动保存](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)
+## [Save / Auto Save 保存/自动保存]({{< ref "/UserGuide/BasicEditing#_save-auto-save" >}})
 
 By default, VS Code requires an explicit action to save your changes to disk, Ctrl+S.
 
@@ -133,7 +133,7 @@ However, it's easy to turn on `Auto Save`, which will save your changes after a 
 
 ​​	但是，很容易打开 `Auto Save` ，它将在配置的延迟后或焦点离开编辑器时保存您的更改。启用此选项后，无需显式保存文件。打开 `Auto Save` 的最简单方法是使用“文件”>“自动保存”切换，它会在延迟后打开和关闭保存。
 
-For more control over `Auto Save`, open User or Workspace [settings](https://code.visualstudio.com/docs/getstarted/settings) and find the associated settings:
+For more control over `Auto Save`, open User or Workspace [settings]({{< ref "/GetStarted/Settings" >}}) and find the associated settings:
 
 ​​	要对 `Auto Save` 进行更多控制，请打开用户或工作区设置并查找关联的设置：
 
@@ -158,7 +158,7 @@ For more control over `Auto Save`, open User or Workspace [settings](https://cod
 - `files.autoSaveDelay`: Configures the delay in milliseconds when `files.autoSave` is configured to `afterDelay`. The default is 1000 ms.
   `files.autoSaveDelay` ：当 `files.autoSave` 配置为 `afterDelay` 时，配置延迟（以毫秒为单位）。默认值为 1000 毫秒。
 
-## [Hot Exit 热退出](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit)
+## [Hot Exit 热退出]({{< ref "/UserGuide/BasicEditing#_hot-exit" >}})
 
 VS Code will remember unsaved changes to files when you exit by default. Hot exit is triggered when the application is closed via **File** > **Exit** (**Code** > **Quit** on macOS) or when the last window is closed.
 
@@ -183,7 +183,7 @@ If something happens to go wrong with hot exit, all backups are stored in the fo
 - **macOS** `$HOME/Library/Application Support/Code/Backups`
 - **Linux** `$HOME/.config/Code/Backups`
 
-## [Find and Replace 查找和替换](https://code.visualstudio.com/docs/editor/codebasics#_find-and-replace)
+## [Find and Replace 查找和替换]({{< ref "/UserGuide/BasicEditing#_find-and-replace" >}})
 
 VS Code allows you to quickly find text and replace in the currently opened file. Press Ctrl+F to open the Find Widget in the editor, search results will be highlighted in the editor, overview ruler and minimap.
 
@@ -193,7 +193,7 @@ If there are more than one matched result in the current opened file, you can pr
 
 ​​	如果在当前打开的文件中有多个匹配结果，则可以在查找输入框获得焦点时按 Enter 和 Shift+Enter 导航到下一个或上一个结果。
 
-### [Seed Search String From Selection 从所选内容播种搜索字符串](https://code.visualstudio.com/docs/editor/codebasics#_seed-search-string-from-selection)
+### [Seed Search String From Selection 从所选内容播种搜索字符串]({{< ref "/UserGuide/BasicEditing#_seed-search-string-from-selection" >}})
 
 When the Find Widget is opened, it will automatically populate the selected text in the editor into the find input box. If the selection is empty, the word under the cursor will be inserted into the input box instead.
 
@@ -205,7 +205,7 @@ This feature can be turned off by setting `editor.find.seedSearchStringFromSelec
 
 ​​	可以通过将 `editor.find.seedSearchStringFromSelection` 设置为 `"never"` 来关闭此功能。
 
-### [Find In Selection 在选中内容中查找](https://code.visualstudio.com/docs/editor/codebasics#_find-in-selection)
+### [Find In Selection 在选中内容中查找]({{< ref "/UserGuide/BasicEditing#_find-in-selection" >}})
 
 By default, the find operations are run on the entire file in the editor. It can also be run on selected text. You can turn this feature on by clicking the hamburger icon on the Find Widget.
 
@@ -217,7 +217,7 @@ If you want it to be the default behavior of the Find Widget, you can set `edito
 
 ​​	如果您希望它是查找小部件的默认行为，则可以将 `editor.find.autoFindInSelection` 设置为 `always` ，或者将其设置为 `multiline` ，如果您希望仅在选择多行内容时在选定的文本上运行它。
 
-### [Advanced find and replace options 高级查找和替换选项](https://code.visualstudio.com/docs/editor/codebasics#_advanced-find-and-replace-options)
+### [Advanced find and replace options 高级查找和替换选项]({{< ref "/UserGuide/BasicEditing#_advanced-find-and-replace-options" >}})
 
 In addition to find and replace with plain text, the Find Widget also has three advanced search options:
 
@@ -234,7 +234,7 @@ The replace input box support case preserving, you can turn it on by clicking th
 
 ​​	替换输入框支持保留大小写，您可以通过单击“保留大小写 (AB)”按钮来启用它。
 
-### [Multiline support and Find Widget resizing 支持多行和调整“查找”小组件大小](https://code.visualstudio.com/docs/editor/codebasics#_multiline-support-and-find-widget-resizing)
+### [Multiline support and Find Widget resizing 支持多行和调整“查找”小组件大小]({{< ref "/UserGuide/BasicEditing#_multiline-support-and-find-widget-resizing" >}})
 
 You can search multiple line text by pasting the text into the Find input box and Replace input box. Pressing `Ctrl+Enter` inserts a new line in the input box.
 
@@ -248,7 +248,7 @@ While searching long text, the default size of Find Widget might be too small. Y
 
 ![Resize Find Widget](./BasicEditing_img/resize-find-widget.gif)
 
-## [Search across files 跨文件搜索](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
+## [Search across files 跨文件搜索]({{< ref "/UserGuide/BasicEditing#_search-across-files" >}})
 
 VS Code allows you to quickly search over all files in the currently opened folder. Press Ctrl+Shift+F and enter your search term. Search results are grouped into files containing the search term, with an indication of the hits in each file and its location. Expand a file to see a preview of all of the hits within that file. Then single-click on one of the hits to view it in the editor.
 
@@ -264,7 +264,7 @@ You can configure advanced search options by clicking the ellipsis (**Toggle Sea
 
 ​​	您可以通过单击搜索框右侧下方的省略号（切换搜索详细信息）来配置高级搜索选项（或按 Ctrl+Shift+J）。这将显示其他字段以配置搜索。
 
-### [Advanced search options 高级搜索选项](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)
+### [Advanced search options 高级搜索选项]({{< ref "/UserGuide/BasicEditing#_advanced-search-options" >}})
 
 ![Advanced search options](./BasicEditing_img/searchadvanced.png)
 
@@ -285,7 +285,7 @@ In the two input boxes below the search box, you can enter patterns to include o
 - `[!...]` to negate a range of characters to match (`example.[!0-9]` to match on `example.a`, `example.b`, but not `example.0`)
   `[!...]` 否定要匹配的一系列字符（ `example.[!0-9]` 匹配 `example.a` 、 `example.b` ，但不匹配 `example.0` ）
 
-VS Code excludes some folders by default to reduce the number of search results that you are not interested in (for example: `node_modules`). Open [settings](https://code.visualstudio.com/docs/getstarted/settings) to change these rules under the `files.exclude` and `search.exclude` section.
+VS Code excludes some folders by default to reduce the number of search results that you are not interested in (for example: `node_modules`). Open [settings]({{< ref "/GetStarted/Settings" >}}) to change these rules under the `files.exclude` and `search.exclude` section.
 
 ​​	VS Code 默认会排除一些文件夹，以减少您不感兴趣的搜索结果数量（例如： `node_modules` ）。打开设置，在 `files.exclude` 和 `search.exclude` 部分下更改这些规则。
 
@@ -301,7 +301,7 @@ Also note the **Use Exclude Settings and Ignore Files** toggle button in the **f
 >
 > ​​	提示：在资源管理器中，您可以右键单击文件夹并选择“在文件夹中查找”以仅在文件夹内搜索。
 
-### [Search and replace 搜索和替换](https://code.visualstudio.com/docs/editor/codebasics#_search-and-replace)
+### [Search and replace 搜索和替换]({{< ref "/UserGuide/BasicEditing#_search-and-replace" >}})
 
 You can also Search and Replace across files. Expand the Search widget to display the Replace text box.
 
@@ -319,7 +319,7 @@ When you type text into the Replace text box, you will see a diff display of the
 >
 > ​​	提示：您可以使用向下和向上键浏览搜索词历史记录，快速重复使用以前的搜索词。
 
-### [Case changing in regex replace 在正则表达式替换中更改大小写](https://code.visualstudio.com/docs/editor/codebasics#_case-changing-in-regex-replace)
+### [Case changing in regex replace 在正则表达式替换中更改大小写]({{< ref "/UserGuide/BasicEditing#_case-changing-in-regex-replace" >}})
 
 VS Code supports changing the case of regex matching groups while doing Search and Replace in the editor or globally. This is done with the modifiers `\u\U\l\L`, where `\u` and `\l` will upper/lowercase a single character, and `\U` and `\L` will upper/lowercase the rest of the matching group.
 
@@ -335,7 +335,7 @@ The modifiers can also be stacked - for example, `\u\u\u$1` will uppercase the f
 
 ​​	修饰符还可以堆叠 - 例如， `\u\u\u$1` 将使组的前三个字符变为大写，或者 `\l\U$1` 将使第一个字符变为小写，并将其余部分变为大写。捕获组在替换字符串中由 `$n` 引用，其中 `n` 是捕获组的顺序。
 
-## [Search Editor 搜索编辑器](https://code.visualstudio.com/docs/editor/codebasics#_search-editor)
+## [Search Editor 搜索编辑器]({{< ref "/UserGuide/BasicEditing#_search-editor" >}})
 
 Search Editors let you view workspace search results in a full-sized editor, complete with syntax highlighting and optional lines of surrounding context.
 
@@ -365,7 +365,7 @@ The Search Editor above was opened by selecting the **Open New Search Editor** b
 
 ​​	上面的搜索编辑器是通过选择搜索视图顶部的“打开新搜索编辑器”按钮（第三个按钮）打开的。
 
-### [Search Editor commands and arguments 搜索编辑器命令和参数](https://code.visualstudio.com/docs/editor/codebasics#_search-editor-commands-and-arguments)
+### [Search Editor commands and arguments 搜索编辑器命令和参数]({{< ref "/UserGuide/BasicEditing#_search-editor-commands-and-arguments" >}})
 
 - `search.action.openNewEditor` - Opens the Search Editor in a new tab.
   `search.action.openNewEditor` - 在新选项卡中打开搜索编辑器。
@@ -395,21 +395,21 @@ For example, the following keybinding runs the search when the Search Editor is 
 }
 ```
 
-### [Search Editor context default 搜索编辑器上下文默认值](https://code.visualstudio.com/docs/editor/codebasics#_search-editor-context-default)
+### [Search Editor context default 搜索编辑器上下文默认值]({{< ref "/UserGuide/BasicEditing#_search-editor-context-default" >}})
 
 The `search.searchEditor.defaultNumberOfContextLines` setting has a default value of 1, meaning one context line will be shown before and after each result line in the Search Editor.
 
 ​​	 `search.searchEditor.defaultNumberOfContextLines` 设置的默认值为 1，这意味着在搜索编辑器中的每行结果之前和之后都会显示一行上下文行。
 
-### [Reuse last Search Editor configuration 重用上次搜索编辑器配置](https://code.visualstudio.com/docs/editor/codebasics#_reuse-last-search-editor-configuration)
+### [Reuse last Search Editor configuration 重用上次搜索编辑器配置]({{< ref "/UserGuide/BasicEditing#_reuse-last-search-editor-configuration" >}})
 
 The `search.searchEditor.reusePriorSearchConfiguration` setting (default is `false`) lets you reuse the last active Search Editor's configuration when creating a new Search Editor.
 
 ​​	 `search.searchEditor.reusePriorSearchConfiguration` 设置（默认值为 `false` ）允许您在创建新的搜索编辑器时重用上次活动的搜索编辑器的配置。
 
-## [IntelliSense](https://code.visualstudio.com/docs/editor/codebasics#_intellisense)
+## [IntelliSense]({{< ref "/UserGuide/BasicEditing#_intellisense" >}})
 
-We'll always offer word completion, but for the rich [languages](https://code.visualstudio.com/docs/languages/overview), such as JavaScript, JSON, HTML, CSS, SCSS, Less, C# and TypeScript, we offer a true IntelliSense experience. If a language service knows possible completions, the IntelliSense suggestions will pop up as you type. You can always manually trigger it with Ctrl+Space. By default, Tab or Enter are the accept keyboard triggers but you can also [customize these key bindings](https://code.visualstudio.com/docs/getstarted/keybindings).
+We'll always offer word completion, but for the rich [languages]({{< ref "/Languages/Overview" >}}), such as JavaScript, JSON, HTML, CSS, SCSS, Less, C# and TypeScript, we offer a true IntelliSense experience. If a language service knows possible completions, the IntelliSense suggestions will pop up as you type. You can always manually trigger it with Ctrl+Space. By default, Tab or Enter are the accept keyboard triggers but you can also [customize these key bindings]({{< ref "/GetStarted/KeyBindings" >}}).
 
 ​​	我们将始终提供单词补全功能，但对于 JavaScript、JSON、HTML、CSS、SCSS、Less、C# 和 TypeScript 等丰富的语言，我们提供真正的 IntelliSense 体验。如果语言服务知道可能的补全，IntelliSense 建议将在您键入时弹出。您始终可以使用 Ctrl+Space 手动触发它。默认情况下，Tab 或 Enter 是接受键盘触发器，但您也可以自定义这些键绑定。
 
@@ -417,19 +417,19 @@ We'll always offer word completion, but for the rich [languages](https://code.vi
 >
 > ​​	提示：建议筛选支持 CamelCase，因此您可以键入方法名中大写的字母来限制建议。例如，“cra”将快速显示“createApplication”。
 
-> **Tip:** IntelliSense suggestions can be configured via the `editor.quickSuggestions` and `editor.suggestOnTriggerCharacters` [settings](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip:** IntelliSense suggestions can be configured via the `editor.quickSuggestions` and `editor.suggestOnTriggerCharacters` [settings]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：可以通过 `editor.quickSuggestions` 和 `editor.suggestOnTriggerCharacters` 设置配置 IntelliSense 建议。
 
-JavaScript and TypeScript developers can take advantage of the [npmjs](https://www.npmjs.com/) type declaration (typings) file repository to get IntelliSense for common JavaScript libraries (Node.js, React, Angular). You can find a good explanation on using type declaration files in the [JavaScript language](https://code.visualstudio.com/docs/languages/javascript#_intellisense) topic and the [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) tutorial.
+JavaScript and TypeScript developers can take advantage of the [npmjs](https://www.npmjs.com/) type declaration (typings) file repository to get IntelliSense for common JavaScript libraries (Node.js, React, Angular). You can find a good explanation on using type declaration files in the [JavaScript language]({{< ref "/Languages/JavaScript#_intellisense" >}}) topic and the [Node.js]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}) tutorial.
 
 ​​	JavaScript 和 TypeScript 开发人员可以利用 npmjs 类型声明（类型化）文件存储库，为常见的 JavaScript 库（Node.js、React、Angular）获取 IntelliSense。您可以在 JavaScript 语言主题和 Node.js 教程中找到有关在类型声明文件中使用类型的良好解释。
 
-Learn more in the [IntelliSense document](https://code.visualstudio.com/docs/editor/intellisense).
+Learn more in the [IntelliSense document]({{< ref "/UserGuide/IntelliSense" >}}).
 
 ​​	在 IntelliSense 文档中了解更多信息。
 
-## [Formatting 格式化](https://code.visualstudio.com/docs/editor/codebasics#_formatting)
+## [Formatting 格式化]({{< ref "/UserGuide/BasicEditing#_formatting" >}})
 
 VS Code has great support for source code formatting. The editor has two explicit format actions:
 
@@ -444,7 +444,7 @@ You can invoke these from the **Command Palette** (Ctrl+Shift+P) or the editor c
 
 ​​	您可以从命令面板（Ctrl+Shift+P）或编辑器上下文菜单中调用这些命令。
 
-VS Code has default formatters for JavaScript, TypeScript, JSON, HTML, and CSS. Each language has specific formatting options (for example, `html.format.indentInnerHtml`) which you can tune to your preference in your user or workspace [settings](https://code.visualstudio.com/docs/getstarted/settings). You can also disable the default language formatter if you have another extension installed that provides formatting for the same language.
+VS Code has default formatters for JavaScript, TypeScript, JSON, HTML, and CSS. Each language has specific formatting options (for example, `html.format.indentInnerHtml`) which you can tune to your preference in your user or workspace [settings]({{< ref "/GetStarted/Settings" >}}). You can also disable the default language formatter if you have another extension installed that provides formatting for the same language.
 
 ​​	VS Code 具有适用于 JavaScript、TypeScript、JSON、HTML 和 CSS 的默认格式化程序。每种语言都有特定的格式化选项（例如， `html.format.indentInnerHtml` ），您可以在用户或工作区设置中根据自己的喜好对其进行调整。如果您安装了另一个提供相同语言格式化的扩展，也可以禁用默认语言格式化程序。
 
@@ -452,7 +452,7 @@ VS Code has default formatters for JavaScript, TypeScript, JSON, HTML, and CSS. 
 "html.format.enable": false
 ```
 
-Along with manually invoking code formatting, you can also trigger formatting based on user gestures such as typing, saving or pasting. These are off by default but you can enable these behaviors through the following [settings](https://code.visualstudio.com/docs/getstarted/settings):
+Along with manually invoking code formatting, you can also trigger formatting based on user gestures such as typing, saving or pasting. These are off by default but you can enable these behaviors through the following [settings]({{< ref "/GetStarted/Settings" >}}):
 
 ​​	除了手动调用代码格式化之外，您还可以根据用户手势（例如键入、保存或粘贴）触发格式化。这些功能默认关闭，但您可以通过以下设置启用这些行为：
 
@@ -471,7 +471,7 @@ In addition to the default formatters, you can find extensions on the Marketplac
 
 ​​	除了默认格式化程序外，您还可以在 Marketplace 上找到扩展，以支持其他语言或格式化工具。有一个 `Formatters` 类别，因此您可以轻松搜索和查找格式化扩展。在“扩展”视图搜索框中，键入“formatters”或“category:formatters”，以查看 VS Code 中的扩展的筛选列表。
 
-## [Folding 折叠](https://code.visualstudio.com/docs/editor/codebasics#_folding)
+## [Folding 折叠]({{< ref "/UserGuide/BasicEditing#_folding" >}})
 
 You can fold regions of source code using the folding icons on the gutter between line numbers and line start. Move the mouse over the gutter and click to fold and unfold regions. Use Shift + Click on the folding icon to fold or unfold the region and all regions inside.
 
@@ -550,7 +550,7 @@ To fold and unfold only the regions defined by markers use:
 - Unfold Marker Regions (Ctrl+K Ctrl+9) unfolds all marker regions.
   展开标记区域（Ctrl+K Ctrl+9）展开所有标记区域。
 
-### [Fold selection 折叠选择](https://code.visualstudio.com/docs/editor/codebasics#_fold-selection)
+### [Fold selection 折叠选择]({{< ref "/UserGuide/BasicEditing#_fold-selection" >}})
 
 The command **Create Manual Folding Ranges from Selection** (Ctrl+K Ctrl+,) creates a folding range from the currently selected lines and collapses it. That range is called a **manual** folding range that goes on top of the ranges computed by folding providers.
 
@@ -564,9 +564,9 @@ Manual folding ranges are especially useful for cases when there isn't programmi
 
 ​​	手动折叠范围对于没有编程语言折叠支持的情况特别有用。
 
-## [Indentation 缩进](https://code.visualstudio.com/docs/editor/codebasics#_indentation)
+## [Indentation 缩进]({{< ref "/UserGuide/BasicEditing#_indentation" >}})
 
-VS Code lets you control text indentation and whether you'd like to use spaces or tab stops. By default, VS Code inserts spaces and uses 4 spaces per Tab key. If you'd like to use another default, you can modify the `editor.insertSpaces` and `editor.tabSize` [settings](https://code.visualstudio.com/docs/getstarted/settings).
+VS Code lets you control text indentation and whether you'd like to use spaces or tab stops. By default, VS Code inserts spaces and uses 4 spaces per Tab key. If you'd like to use another default, you can modify the `editor.insertSpaces` and `editor.tabSize` [settings]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	VS Code 允许您控制文本缩进以及您是否想要使用空格或制表符。默认情况下，VS Code 插入空格并每个制表符键使用 4 个空格。如果您想使用其他默认值，可以修改 `editor.insertSpaces` 和 `editor.tabSize` 设置。
 
@@ -575,7 +575,7 @@ VS Code lets you control text indentation and whether you'd like to use spaces o
     "editor.tabSize": 4,
 ```
 
-### [Auto-detection 自动检测](https://code.visualstudio.com/docs/editor/codebasics#_autodetection)
+### [Auto-detection 自动检测]({{< ref "/UserGuide/BasicEditing#_autodetection" >}})
 
 VS Code analyzes your open file and determines the indentation used in the document. The auto-detected indentation overrides your default indentation settings. The detected setting is displayed on the right side of the Status Bar:
 
@@ -598,7 +598,7 @@ You can click on the Status Bar indentation display to bring up a dropdown with 
     "editor.tabSize": 3,
 ```
 
-## [File encoding support 文件编码支持](https://code.visualstudio.com/docs/editor/codebasics#_file-encoding-support)
+## [File encoding support 文件编码支持]({{< ref "/UserGuide/BasicEditing#_file-encoding-support" >}})
 
 Set the file encoding globally or per workspace by using the `files.encoding` setting in **User Settings** or **Workspace Settings**.
 
@@ -624,7 +624,7 @@ Then choose an encoding.
 
 ![Select an encoding](./BasicEditing_img/encodingselection.png)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/codebasics#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/BasicEditing#_next-steps" >}})
 
 You've covered the basic user interface - there is a lot more to VS Code. Read on to find out about:
 
@@ -632,20 +632,20 @@ You've covered the basic user interface - there is a lot more to VS Code. Read o
 
 - [Intro Video - Setup and Basics](https://code.visualstudio.com/docs/introvideos/basics) - Watch a tutorial on the basics of VS Code.
   简介视频 - 设置和基础知识 - 观看有关 VS Code 基础知识的教程。
-- [User/Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) - Learn how to configure VS Code to your preferences through user and workspace settings.
+- [User/Workspace Settings]({{< ref "/GetStarted/Settings" >}}) - Learn how to configure VS Code to your preferences through user and workspace settings.
   用户/工作区设置 - 了解如何通过用户和工作区设置将 VS Code 配置为您的首选项。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Peek and Goto Definition, and more.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Peek and Goto Definition, and more.
   代码导航 - 窥视和转到定义等。
-- [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics) - Learn about the integrated terminal for quickly performing command-line tasks from within VS Code.
+- [Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}) - Learn about the integrated terminal for quickly performing command-line tasks from within VS Code.
   集成终端 - 了解集成终端，以便在 VS Code 中快速执行命令行任务。
-- [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) - VS Code brings smart code completions.
+- [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) - VS Code brings smart code completions.
   IntelliSense - VS Code 提供智能代码补全。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - This is where VS Code really shines.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - This is where VS Code really shines.
   调试 - 这是 VS Code 真正出彩的地方。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/codebasics#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/BasicEditing#_common-questions" >}})
 
-### [Is it possible to globally search and replace? 是否可以全局搜索和替换？](https://code.visualstudio.com/docs/editor/codebasics#_is-it-possible-to-globally-search-and-replace)
+### [Is it possible to globally search and replace? 是否可以全局搜索和替换？]({{< ref "/UserGuide/BasicEditing#_is-it-possible-to-globally-search-and-replace" >}})
 
 Yes, expand the Search view text box to include a replace text field. You can search and replace across all the files in your workspace. Note that if you did not open VS Code on a folder, the search will only run on the currently open files.
 
@@ -653,9 +653,9 @@ Yes, expand the Search view text box to include a replace text field. You can se
 
 ![global search and replace](./BasicEditing_img/global-search-replace.png)
 
-### [How do I turn on word wrap? 如何启用自动换行？](https://code.visualstudio.com/docs/editor/codebasics#_how-do-i-turn-on-word-wrap)
+### [How do I turn on word wrap? 如何启用自动换行？]({{< ref "/UserGuide/BasicEditing#_how-do-i-turn-on-word-wrap" >}})
 
-You can control word wrap through the `editor.wordWrap` [setting](https://code.visualstudio.com/docs/getstarted/settings). By default, `editor.wordWrap` is `off` but if you set to it to `on`, text will wrap on the editor's viewport width.
+You can control word wrap through the `editor.wordWrap` [setting]({{< ref "/GetStarted/Settings" >}}). By default, `editor.wordWrap` is `off` but if you set to it to `on`, text will wrap on the editor's viewport width.
 
 ​​	您可以通过 `editor.wordWrap` 设置控制自动换行。默认情况下， `editor.wordWrap` 为 `off` ，但如果您将其设置为 `on` ，则文本将在编辑器的视口宽度上换行。
 
@@ -675,7 +675,7 @@ As in other editors, commands such as **Cut** and **Copy** apply to the whole wr
 
 ​​	与其他编辑器一样，剪切和复制等命令适用于整个换行。三次单击可选择整个换行。按两次 Home 可将光标移至行的最开头。按两次 End 可将光标移至行的最末尾。
 
-### [How can I avoid placing extra cursors in word wrapped lines? 如何避免在自动换行的行中放置额外的光标？](https://code.visualstudio.com/docs/editor/codebasics#_how-can-i-avoid-placing-extra-cursors-in-word-wrapped-lines)
+### [How can I avoid placing extra cursors in word wrapped lines? 如何避免在自动换行的行中放置额外的光标？]({{< ref "/UserGuide/BasicEditing#_how-can-i-avoid-placing-extra-cursors-in-word-wrapped-lines" >}})
 
 If you'd like to ignore line wraps when adding cursors above or below your current selection, you can pass in `{ "logicalLine": true }` to `args` on the keybinding like this:
 

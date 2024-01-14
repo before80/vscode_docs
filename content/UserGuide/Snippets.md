@@ -28,7 +28,7 @@ The snippet syntax follows the [TextMate snippet syntax](https://manual.macromat
 
 ![ajax snippet](./Snippets_img/ajax-snippet.gif)
 
-## [Built-in snippets 内置代码片段](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_builtin-snippets)
+## [Built-in snippets 内置代码片段]({{< ref "/UserGuide/Snippets#_builtin-snippets" >}})
 
 VS Code has built-in snippets for a number of languages such as: JavaScript, TypeScript, Markdown, and PHP.
 
@@ -40,9 +40,9 @@ You can see the available snippets for a language by running the **Insert Snippe
 
 ​​	您可以通过在命令面板中运行“插入代码片段”命令来查看适用于某种语言的可用代码片段，以获取当前文件语言的代码片段列表。但是，请记住，此列表还包括您已定义的用户代码片段，以及您已安装的扩展提供的任何代码片段。
 
-## [Install snippets from the Marketplace 从 Marketplace 安装代码片段](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_install-snippets-from-the-marketplace)
+## [Install snippets from the Marketplace 从 Marketplace 安装代码片段]({{< ref "/UserGuide/Snippets#_install-snippets-from-the-marketplace" >}})
 
-Many [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) on the [VS Code Marketplace](https://marketplace.visualstudio.com/vscode) include snippets. You can search for extensions that contains snippets in the Extensions view (Ctrl+Shift+X) using the `@category:"snippets"` filter.
+Many [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) on the [VS Code Marketplace](https://marketplace.visualstudio.com/vscode) include snippets. You can search for extensions that contains snippets in the Extensions view (Ctrl+Shift+X) using the `@category:"snippets"` filter.
 
 ​​	VS Code Marketplace 上的许多扩展都包含代码段。您可以使用 `@category:"snippets"` 筛选器在扩展视图（Ctrl+Shift+X）中搜索包含代码段的扩展。
 
@@ -52,7 +52,7 @@ If you find an extension you want to use, install it, then restart VS Code and t
 
 ​​	如果您找到想要使用的扩展，请安装它，然后重新启动 VS Code，新的代码段将可用。
 
-## [Create your own snippets 创建您自己的代码段](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets)
+## [Create your own snippets 创建您自己的代码段]({{< ref "/UserGuide/Snippets#_create-your-own-snippets" >}})
 
 You can easily define your own snippets without any extension. To create or edit your own snippets, select **Configure User Snippets** under **File** > **Preferences**, and then select the language (by [language identifier](https://code.visualstudio.com/docs/languages/identifiers)) for which the snippets should appear, or the **New Global Snippets file** option if they should appear for all languages. VS Code manages the creation and refreshing of the underlying snippets file(s) for you.
 
@@ -96,13 +96,13 @@ Additionally, the `body` of the example above has three placeholders (listed in 
 
 ​​	此外，上面的示例的 `body` 有三个占位符（按遍历顺序列出）： `${1:array}` 、 `${2:element}` 和 `$0` 。您可以使用 Tab 键快速跳转到下一个占位符，此时您可以编辑占位符或跳转到下一个占位符。冒号 `:` 后面的字符串（如果有）是默认文本，例如 `${2:element}` 中的 `element` 。占位符遍历顺序按数字升序排列，从一开头；零是一个可选的特例，它始终排在最后，并使用光标在指定位置退出代码段模式。
 
-### [File template snippets 文件模板代码段](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_file-template-snippets)
+### [File template snippets 文件模板代码段]({{< ref "/UserGuide/Snippets#_file-template-snippets" >}})
 
 You can add the `isFileTemplate` attribute to your snippet's definition if the snippet is intended to populate or replace a file's contents. File template snippets are displayed in a dropdown when you run the **Snippets: Populate File from Snippet** command in a new or existing file.
 
 ​​	如果代码段旨在填充或替换文件的内容，则可以将 `isFileTemplate` 属性添加到代码段的定义中。在新建或现有文件中运行“代码段：从代码段填充文件”命令时，文件模板代码段会显示在下拉列表中。
 
-## [Snippet scope 代码段范围](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-scope)
+## [Snippet scope 代码段范围]({{< ref "/UserGuide/Snippets#_snippet-scope" >}})
 
 Snippets are scoped so that only relevant snippets are suggested. Snippets can be scoped by either:
 
@@ -113,7 +113,7 @@ Snippets are scoped so that only relevant snippets are suggested. Snippets can b
 2. the **project(s)** to which snippets are scoped (probably all)
    代码段的范围项目（可能全部）
 
-### [Language snippet scope 语言代码段范围](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_language-snippet-scope)
+### [Language snippet scope 语言代码段范围]({{< ref "/UserGuide/Snippets#_language-snippet-scope" >}})
 
 Every snippet is scoped to one, several, or all ("global") languages based on whether it is defined in:
 
@@ -136,37 +136,37 @@ Most user-defined snippets are scoped to a single language, and so are defined i
 
 ​​	大多数用户定义的代码段都限定为一种语言，因此在特定于语言的代码段文件中定义。
 
-### [Project snippet scope 项目代码段范围](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_project-snippet-scope)
+### [Project snippet scope 项目代码段范围]({{< ref "/UserGuide/Snippets#_project-snippet-scope" >}})
 
 You can also have a global snippets file (JSON with file suffix `.code-snippets`) scoped to your project. Project-folder snippets are created with the **New Snippets file for ''...** option in the **Snippets: Configure User Snippets** dropdown menu and are located at the root of the project in a `.vscode` folder. Project snippet files are useful for sharing snippets with all users working in that project. Project-folder snippets are similar to global snippets and can be scoped to specific languages through the `scope` property.
 
 ​​	您还可以将全局代码段文件（具有文件后缀 `.code-snippets` 的 JSON）限定为您的项目。项目文件夹代码段使用代码段：配置用户代码段下拉菜单中的新建代码段文件''...选项创建，并位于项目的根目录中的 `.vscode` 文件夹中。项目代码段文件对于与在该项目中工作的用户共享代码段非常有用。项目文件夹代码段类似于全局代码段，并且可以通过 `scope` 属性限定为特定语言。
 
-## [Snippet syntax 代码段语法](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax)
+## [Snippet syntax 代码段语法]({{< ref "/UserGuide/Snippets#_snippet-syntax" >}})
 
 The `body` of a snippet can use special constructs to control cursors and the text being inserted. The following are supported features and their syntaxes:
 
 ​​	片段的 `body` 可以使用特殊结构来控制光标和正在插入的文本。以下是一些支持的功能及其语法：
 
-### [Tabstops 制表符](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_tabstops)
+### [Tabstops 制表符]({{< ref "/UserGuide/Snippets#_tabstops" >}})
 
 With tabstops, you can make the editor cursor move inside a snippet. Use `$1`, `$2` to specify cursor locations. The number is the order in which tabstops will be visited, whereas `$0` denotes the final cursor position. Multiple occurrences of the same tabstop are linked and updated in sync.
 
 ​​	使用制表符，您可以使编辑器光标在片段中移动。使用 `$1` 、 `$2` 来指定光标位置。数字是访问制表符的顺序，而 `$0` 表示最终光标位置。相同制表符的多次出现会链接并同步更新。
 
-### [Placeholders 占位符](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_placeholders)
+### [Placeholders 占位符]({{< ref "/UserGuide/Snippets#_placeholders" >}})
 
 Placeholders are tabstops with values, like `${1:foo}`. The placeholder text will be inserted and selected such that it can be easily changed. Placeholders can be nested, like `${1:another ${2:placeholder}}`.
 
 ​​	占位符是带有值的制表符，例如 `${1:foo}` 。占位符文本将被插入并选中，以便于更改。占位符可以嵌套，例如 `${1:another ${2:placeholder}}` 。
 
-### [Choice 选择](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_choice)
+### [Choice 选择]({{< ref "/UserGuide/Snippets#_choice" >}})
 
 Placeholders can have choices as values. The syntax is a comma-separated enumeration of values, enclosed with the pipe-character, for example `${1|one,two,three|}`. When the snippet is inserted and the placeholder selected, choices will prompt the user to pick one of the values.
 
 ​​	占位符可以将选择作为值。语法是用竖线字符括起来的逗号分隔的值枚举，例如 `${1|one,two,three|}` 。当插入片段并选择占位符时，选择会提示用户选择其中一个值。
 
-### [Variables 变量](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables)
+### [Variables 变量]({{< ref "/UserGuide/Snippets#_variables" >}})
 
 With `$name` or `${name:default}`, you can insert the value of a variable. When a variable isn't set, its **default** or the empty string is inserted. When a variable is unknown (that is, its name isn't defined) the name of the variable is inserted and it is transformed into a placeholder.
 
@@ -274,7 +274,7 @@ The snippet below inserts `/* Hello World */` in JavaScript files and `<!-- Hell
 }
 ```
 
-### [Variable transforms 变量转换](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variable-transforms)
+### [Variable transforms 变量转换]({{< ref "/UserGuide/Snippets#_variable-transforms" >}})
 
 Transformations allow you to modify the value of a variable before it is inserted. The definition of a transformation consists of three parts:
 
@@ -305,13 +305,13 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
   |-> resolves to the filename
 ```
 
-### [Placeholder-Transform 占位符转换](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_placeholdertransform)
+### [Placeholder-Transform 占位符转换]({{< ref "/UserGuide/Snippets#_placeholdertransform" >}})
 
 Like a Variable-Transform, a transformation of a placeholder allows changing the inserted text for the placeholder when moving to the next tab stop. The inserted text is matched with the regular expression and the match or matches - depending on the options - are replaced with the specified replacement format text. Every occurrence of a placeholder can define its own transformation independently using the value of the first placeholder. The format for Placeholder-Transforms is the same as for Variable-Transforms.
 
 ​​	与变量转换类似，占位符的转换允许在移动到下一个制表位时更改占位符的插入文本。插入的文本与正则表达式匹配，并且匹配或匹配（取决于选项）将替换为指定的替换格式文本。占位符的每个出现都可以使用第一个占位符的值独立定义其自己的转换。占位符转换的格式与变量转换的格式相同。
 
-### [Transform examples 转换示例](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_transform-examples)
+### [Transform examples 转换示例]({{< ref "/UserGuide/Snippets#_transform-examples" >}})
 
 The examples are shown within double quotes, as they would appear inside a snippet body, to illustrate the need to double escape certain characters. Sample transformations and the resulting output for the filename `example-123.456-TEST.js`.
 
@@ -324,7 +324,7 @@ The examples are shown within double quotes, as they would appear inside a snipp
 | `"${TM_FILENAME/(.*)/${1:/upcase}/}"` | `EXAMPLE-123.456-TEST.JS` | Change to all uppercase 全部改为大写                         |
 | `"${TM_FILENAME/[^0-9^a-z]//gi}"`     | `example123456TESTjs`     | Remove non-alphanumeric characters 删除非字母数字字符        |
 
-### [Grammar 语法](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_grammar)
+### [Grammar 语法]({{< ref "/UserGuide/Snippets#_grammar" >}})
 
 Below is the EBNF ([extended Backus-Naur form](https://en.wikipedia.org/wiki/Extended_Backus-Naur_form)) for snippets. With `\` (backslash), you can escape `$`, `}`, and `\`. Within choice elements, the backslash also escapes comma and pipe characters. Only the characters required to be escaped can be escaped, so `$` should not be escaped within these constructs and neither `$` or `}` should be escaped inside choice constructs.
 
@@ -355,15 +355,15 @@ if          ::= text
 else        ::= text
 ```
 
-## [Using TextMate snippets 使用 TextMate 代码段](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_using-textmate-snippets)
+## [Using TextMate snippets 使用 TextMate 代码段]({{< ref "/UserGuide/Snippets#_using-textmate-snippets" >}})
 
 You can also use existing TextMate snippets (.tmSnippets) with VS Code. See the [Using TextMate Snippets](https://code.visualstudio.com/api/language-extensions/snippet-guide#_using-textmate-snippets) topic in our Extension API section to learn more.
 
 ​​	您还可以将现有的 TextMate 代码段 (.tmSnippets) 与 VS Code 配合使用。请参阅扩展 API 部分中的“使用 TextMate 代码段”主题以了解更多信息。
 
-## [Assign keybindings to snippets 将键绑定分配给代码段](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_assign-keybindings-to-snippets)
+## [Assign keybindings to snippets 将键绑定分配给代码段]({{< ref "/UserGuide/Snippets#_assign-keybindings-to-snippets" >}})
 
-You can create custom [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) to insert specific snippets. Open `keybindings.json` (**Preferences: Open Keyboard Shortcuts File**), which defines all your keybindings, and add a keybinding passing `"snippet"` as an extra argument:
+You can create custom [keybindings]({{< ref "/GetStarted/KeyBindings" >}}) to insert specific snippets. Open `keybindings.json` (**Preferences: Open Keyboard Shortcuts File**), which defines all your keybindings, and add a keybinding passing `"snippet"` as an extra argument:
 
 ​​	您可以创建自定义键绑定以插入特定代码段。打开 `keybindings.json` （首选项：打开键盘快捷方式文件），其中定义了所有键绑定，并添加一个键绑定，将 `"snippet"` 作为额外参数传递：
 
@@ -378,7 +378,7 @@ You can create custom [keybindings](https://code.visualstudio.com/docs/getstarte
 }
 ```
 
-The keybinding will invoke the **Insert Snippet** command but instead of prompting you to select a snippet, it will insert the provided snippet. You define the custom [keybinding](https://code.visualstudio.com/docs/getstarted/keybindings) as usual with a keyboard shortcut, command ID, and optional [when clause context](https://code.visualstudio.com/docs/getstarted/keybindings#_when-clause-contexts) for when the keyboard shortcut is enabled.
+The keybinding will invoke the **Insert Snippet** command but instead of prompting you to select a snippet, it will insert the provided snippet. You define the custom [keybinding]({{< ref "/GetStarted/KeyBindings" >}}) as usual with a keyboard shortcut, command ID, and optional [when clause context]({{< ref "/GetStarted/KeyBindings#_when-clause-contexts" >}}) for when the keyboard shortcut is enabled.
 
 ​​	键绑定将调用“插入代码段”命令，但不会提示您选择代码段，而是插入提供的代码段。您可以像往常一样使用键盘快捷方式、命令 ID 和可选的何时子句上下文来定义自定义键绑定，以启用键盘快捷方式。
 
@@ -398,24 +398,24 @@ Also, instead of using the `snippet` argument value to define your snippet inlin
 }
 ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Snippets#_next-steps" >}})
 
-- [Command Line](https://code.visualstudio.com/docs/editor/command-line) - VS Code has a rich command-line interface to open or diff files and install extensions.
+- [Command Line]({{< ref "/UserGuide/CommandLineInterface" >}}) - VS Code has a rich command-line interface to open or diff files and install extensions.
   命令行 - VS Code 具有丰富的命令行界面，可用于打开或比较文件以及安装扩展。
 - [Extension API](https://code.visualstudio.com/api) - Learn about other ways to extend VS Code.
   扩展 API - 了解扩展 VS Code 的其他方法。
 - [Snippet Guide](https://code.visualstudio.com/api/language-extensions/snippet-guide) - You can package snippets for use in VS Code.
   代码段指南 - 您可以打包代码段以在 VS Code 中使用。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/Snippets#_common-questions" >}})
 
-### [What if I want to use existing TextMate snippets from a .tmSnippet file? 如果我想使用 .tmSnippet 文件中的现有 TextMate 代码段，该怎么办？](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_what-if-i-want-to-use-existing-textmate-snippets-from-a-tmsnippet-file)
+### [What if I want to use existing TextMate snippets from a .tmSnippet file? 如果我想使用 .tmSnippet 文件中的现有 TextMate 代码段，该怎么办？]({{< ref "/UserGuide/Snippets#_what-if-i-want-to-use-existing-textmate-snippets-from-a-tmsnippet-file" >}})
 
 You can easily package TextMate snippets files for use in VS Code. See [Using TextMate Snippets](https://code.visualstudio.com/api/language-extensions/snippet-guide#_using-textmate-snippets) in our Extension API documentation.
 
 ​​	您可以轻松打包 TextMate 代码段文件以供在 VS Code 中使用。请参阅扩展 API 文档中的使用 TextMate 代码段。
 
-### [How do I have a snippet place a variable in the pasted script? 如何让代码段在粘贴的脚本中放置变量？](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_how-do-i-have-a-snippet-place-a-variable-in-the-pasted-script)
+### [How do I have a snippet place a variable in the pasted script? 如何让代码段在粘贴的脚本中放置变量？]({{< ref "/UserGuide/Snippets#_how-do-i-have-a-snippet-place-a-variable-in-the-pasted-script" >}})
 
 To have a variable in the pasted script, you need to escape the '$' of the `$variable` name so that it isn't parsed by the snippet expansion phase.
 
@@ -437,7 +437,7 @@ This results in the pasted snippet as:
 $MyVar = 2
 ```
 
-### [Can I remove snippets from IntelliSense? 我是否可以从 IntelliSense 中删除代码段？](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_can-i-remove-snippets-from-intellisense)
+### [Can I remove snippets from IntelliSense? 我是否可以从 IntelliSense 中删除代码段？]({{< ref "/UserGuide/Snippets#_can-i-remove-snippets-from-intellisense" >}})
 
 Yes, you can hide specific snippets from showing in IntelliSense (completion list) by selecting the **Hide from IntelliSense** button to the right of snippet items in the **Insert Snippet** command dropdown.
 

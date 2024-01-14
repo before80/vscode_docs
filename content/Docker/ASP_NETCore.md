@@ -25,16 +25,16 @@ In this guide you will learn how to:
 - Debug the service running as a container.
   调试作为容器运行的服务。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Docker/ASP_NETCore#_prerequisites" >}})
 
-- Docker and the VS Code Docker extension must be installed as described on the [overview](https://code.visualstudio.com/docs/containers/overview#_installation).
+- Docker and the VS Code Docker extension must be installed as described on the [overview]({{< ref "/Docker/Overview#_installation" >}}).
   必须按照概述中所述安装 Docker 和 VS Code Docker 扩展。
 - For .NET development, install [.NET SDK](https://dotnet.microsoft.com/download).
   对于 .NET 开发，请安装 .NET SDK。
 - Microsoft [C# for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) extension.
   适用于 Visual Studio Code 的 Microsoft C# 扩展。
 
-## [Create a .NET Web API project 创建 .NET Web API 项目](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_create-a-net-web-api-project)
+## [Create a .NET Web API project 创建 .NET Web API 项目]({{< ref "/Docker/ASP_NETCore#_create-a-net-web-api-project" >}})
 
 1. Create a folder for the project.
 
@@ -48,7 +48,7 @@ In this guide you will learn how to:
    dotnet new webapi --no-https
    ```
 
-## [Add Docker files to the project 将 Docker 文件添加到项目](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_add-docker-files-to-the-project)
+## [Add Docker files to the project 将 Docker 文件添加到项目]({{< ref "/Docker/ASP_NETCore#_add-docker-files-to-the-project" >}})
 
 1. Open the project folder in VS Code.
 
@@ -92,7 +92,7 @@ In this guide you will learn how to:
 
    ​​	该扩展程序还将创建一组 VS Code 任务，用于构建和运行容器（在调试和发布配置中，总共四个任务），以及一个用于在调试模式下启动容器的调试配置。
 
-## [Build the application 构建应用程序](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_build-the-application)
+## [Build the application 构建应用程序]({{< ref "/Docker/ASP_NETCore#_build-the-application" >}})
 
 1. Open terminal prompt (Ctrl+`).
 
@@ -116,7 +116,7 @@ In this guide you will learn how to:
    Time Elapsed 00:00:08.96
    ```
 
-## [Add an environment variable to the image 向镜像添加环境变量](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_add-an-environment-variable-to-the-image)
+## [Add an environment variable to the image 向镜像添加环境变量]({{< ref "/Docker/ASP_NETCore#_add-an-environment-variable-to-the-image" >}})
 
 You can use the Docker extension to author Docker files. The extension provides completions and contextual help. To see these capabilities add an environment variable to your service image by following these steps:
 
@@ -144,7 +144,7 @@ You can use the Docker extension to author Docker files. The extension provides 
 
    ​​	保存 `Dockerfile` 文件。
 
-## [Build the image 构建映像](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_build-the-image)
+## [Build the image 构建映像]({{< ref "/Docker/ASP_NETCore#_build-the-image" >}})
 
 1. Open Command Palette (Ctrl+Shift+P) and issue **Docker Images: Build Image...** command.
 
@@ -156,7 +156,7 @@ You can use the Docker extension to author Docker files. The extension provides 
 
    ![Verify Docker image exists](./ASP_NETCore_img/aspnetcore-verify-image.png)
 
-## [Test the service container 测试服务容器](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_test-the-service-container)
+## [Test the service container 测试服务容器]({{< ref "/Docker/ASP_NETCore#_test-the-service-container" >}})
 
 1. Right-click on the image built in previous step and choose **Run** or **Run Interactive**. The container should start and you should be able to see it in the "Containers" pane of the Docker Explorer:
 
@@ -201,7 +201,7 @@ You can use the Docker extension to author Docker files. The extension provides 
 
    ​​	测试完成后，在 Docker Explorer 中右键单击容器并选择“停止”。
 
-## [Debug in container 在容器中调试](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_debug-in-container)
+## [Debug in container 在容器中调试]({{< ref "/Docker/ASP_NETCore#_debug-in-container" >}})
 
 When Docker files were added to the application, the Docker extension also added a **VS Code debugger configuration** for debugging the service when it is running inside a container. The extension will automatically detect the protocol and port that the service is using and point the browser to the service, but we need to tell it what URL path to use.
 
@@ -264,7 +264,7 @@ You can use specific port on the host by changing the Docker run options used by
     }
 ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/ASP_NETCore#_next-steps" >}})
 
 You're done! Now that your container is ready, you may want to:
 
@@ -273,10 +273,10 @@ You're done! Now that your container is ready, you may want to:
 - [Learn about debugging .NET in a container
   了解如何在容器中调试 .NET](https://code.visualstudio.com/docs/containers/debug-netcore)
 - [Customize your Docker build and run tasks
-  自定义 Docker 构建并运行任务](https://code.visualstudio.com/docs/containers/reference)
+  自定义 Docker 构建并运行任务]({{< ref "/Docker/Customize" >}})
 - [Push your image to a container registry
-  将您的镜像推送到容器注册表](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_push-an-image-to-a-container-registry)
+  将您的镜像推送到容器注册表]({{< ref "/Docker/Registries#_push-an-image-to-a-container-registry" >}})
 - [Deploy a containerized app to Azure App Service or Azure Container Apps
-  将容器化应用部署到 Azure 应用服务或 Azure 容器应用](https://code.visualstudio.com/docs/containers/app-service)
+  将容器化应用部署到 Azure 应用服务或 Azure 容器应用]({{< ref "/Docker/DeploytoAzure" >}})
 - [Learn about using Docker Compose
-  了解如何使用 Docker Compose](https://code.visualstudio.com/docs/containers/docker-compose)
+  了解如何使用 Docker Compose]({{< ref "/Docker/DockerCompose" >}})

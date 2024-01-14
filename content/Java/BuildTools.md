@@ -22,7 +22,7 @@ If you run into any issues when using the features below, you can contact us by 
 
 ​​​	如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
 
-## [Maven](https://code.visualstudio.com/docs/java/java-build#_maven)
+## [Maven]({{< ref "/Java/BuildTools#_maven" >}})
 
 [Maven](https://maven.apache.org/) is a software tool that helps you manage Java projects and automate application builds. The [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven) extension for Visual Studio Code provides fully integrated Maven support, allowing you to explore Maven projects, execute Maven commands, and perform the goals of build lifecycle and plugins. We recommend installing the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack), which includes Maven support and other important Java development features.
 
@@ -31,7 +31,7 @@ If you run into any issues when using the features below, you can contact us by 
 [Install the Extension Pack for Java
 安装 Java 扩展包](vscode:extension/vscjava.vscode-java-pack)
 
-### [Exploring Maven project 浏览 Maven 项目](https://code.visualstudio.com/docs/java/java-build#_exploring-maven-project)
+### [Exploring Maven project 浏览 Maven 项目]({{< ref "/Java/BuildTools#_exploring-maven-project" >}})
 
 Once a Maven project is loaded, the extension will be activated and it will automatically scan for `pom.xml` files in your workspace and displays all Maven projects and their modules in the side bar.
 
@@ -39,7 +39,7 @@ Once a Maven project is loaded, the extension will be activated and it will auto
 
 ![Maven Explorer](./BuildTools_img/maven-explorer.png)
 
-### [Resolve unknown type 解析未知类型](https://code.visualstudio.com/docs/java/java-build#_resolve-unknown-type)
+### [Resolve unknown type 解析未知类型]({{< ref "/Java/BuildTools#_resolve-unknown-type" >}})
 
 The Maven extension also supports searching Maven Central to resolve unknown types in your source code. You can do this by selecting the **Resolve unknown type** link shown on hover.
 
@@ -49,7 +49,7 @@ The Maven extension also supports searching Maven Central to resolve unknown typ
 
 
 
-### [Working with POM.xml 使用 POM.xml](https://code.visualstudio.com/docs/java/java-build#_working-with-pomxml)
+### [Working with POM.xml 使用 POM.xml]({{< ref "/Java/BuildTools#_working-with-pomxml" >}})
 
 The extension provides code snippets and auto completion for adding Maven dependencies based on local Maven repositories. See how easy it is to add a new dependency to your `pom.xml` with those convenient features.
 
@@ -91,7 +91,7 @@ Furthermore, VS Code also supports showing dependencies in a tree view, which al
 
 
 
-### [Execute Maven commands and goals 执行 Maven 命令和目标](https://code.visualstudio.com/docs/java/java-build#_execute-maven-commands-and-goals)
+### [Execute Maven commands and goals 执行 Maven 命令和目标]({{< ref "/Java/BuildTools#_execute-maven-commands-and-goals" >}})
 
 By right-clicking each Maven project in the Explorer, you can conveniently run Maven goals.
 
@@ -142,7 +142,7 @@ To debug Maven goals, right-click on a goal and start debugging. The Maven exten
 
 
 
-### [Generate project from Maven Archetype 从 Maven Archetype 生成项目](https://code.visualstudio.com/docs/java/java-build#_generate-project-from-maven-archetype)
+### [Generate project from Maven Archetype 从 Maven Archetype 生成项目]({{< ref "/Java/BuildTools#_generate-project-from-maven-archetype" >}})
 
 Another handy feature provided by this extension is to generate a Maven project from [Archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html). The extension loads archetypes listed in local/remote catalogs. After selection, the extension sends `mvn archetype:generate -D...` to the terminal.
 
@@ -170,13 +170,13 @@ There are several ways to create a Maven project:
 
    <video autoplay="" loop="" muted="" playsinline="" controls="" title="Create Maven Project Command" data-immersive-translate-walked="d5419e34-f9f4-42ed-8bd0-0b6bc6bc0534" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; display: inline-block; vertical-align: baseline; margin-top: 1.5rem; margin-bottom: 2.5rem; width: 576.662px; max-width: 100%;"></video>
 
-## [Gradle](https://code.visualstudio.com/docs/java/java-build#_gradle)
+## [Gradle]({{< ref "/Java/BuildTools#_gradle" >}})
 
 VS Code supports Gradle Java project (not including Android) via the [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) extension. The extension provides a visual interface for your Gradle build, you can use this interface to view Gradle Tasks and Project dependencies, or run Gradle Tasks as VS Code Tasks. The extension also offers a better Gradle build file authoring experience including syntax highlighting, error reporting, and auto-completion.
 
 ​​​	VS Code 通过 Gradle for Java 扩展支持 Gradle Java 项目（不包括 Android）。该扩展为您的 Gradle 构建提供了一个可视化界面，您可以使用此界面来查看 Gradle 任务和项目依赖项，或将 Gradle 任务作为 VS Code 任务运行。该扩展还提供了更好的 Gradle 构建文件创作体验，包括语法突出显示、错误报告和自动完成。
 
-### [Working with Gradle tasks 使用 Gradle 任务](https://code.visualstudio.com/docs/java/java-build#_working-with-gradle-tasks)
+### [Working with Gradle tasks 使用 Gradle 任务]({{< ref "/Java/BuildTools#_working-with-gradle-tasks" >}})
 
 When you open a Gradle project in VSCode, you can find some useful Gradle views by clicking the Gradle Side Bar item. **Gradle Projects** view lists all the Gradle projects found in the workspace. You can view, run, or debug Gradle tasks here.
 
@@ -194,7 +194,7 @@ When there are many Gradle tasks in the workspace, it might be hard to find a sp
 
 
 
-### [Viewing Gradle dependencies 查看 Gradle 依赖项](https://code.visualstudio.com/docs/java/java-build#_viewing-gradle-dependencies)
+### [Viewing Gradle dependencies 查看 Gradle 依赖项]({{< ref "/Java/BuildTools#_viewing-gradle-dependencies" >}})
 
 In the **Gradle Projects** view, you can find a **Dependencies** item under each Gradle project item. It includes all the dependencies in your specified configuration, you can easily check the dependency status of your project.
 
@@ -202,7 +202,7 @@ In the **Gradle Projects** view, you can find a **Dependencies** item under each
 
 ![Gradle Dependencies](./BuildTools_img/gradle-dependencies.png)
 
-### [Managing Gradle Daemons 管理 Gradle 守护进程](https://code.visualstudio.com/docs/java/java-build#_managing-gradle-daemons)
+### [Managing Gradle Daemons 管理 Gradle 守护进程]({{< ref "/Java/BuildTools#_managing-gradle-daemons" >}})
 
 The **Gradle Daemons** view shows the daemon status of the current workspace. It lists all the running Gradle daemons in the same version as the workspace. You can choose to stop a specific one or all the daemons in this view.
 
@@ -212,7 +212,7 @@ The **Gradle Daemons** view shows the daemon status of the current workspace. It
 
 
 
-### [Authoring build files 编写构建文件](https://code.visualstudio.com/docs/java/java-build#_authoring-build-files)
+### [Authoring build files 编写构建文件]({{< ref "/Java/BuildTools#_authoring-build-files" >}})
 
 The extension provides some useful authoring features on the Gradle build files.
 
@@ -252,7 +252,7 @@ When you are trying to declare a new dependency, the extension will provide a de
 
 
 
-### [Additional resources 其他资源](https://code.visualstudio.com/docs/java/java-build#_additional-resources)
+### [Additional resources 其他资源]({{< ref "/Java/BuildTools#_additional-resources" >}})
 
 Visit the [GitHub Repo](https://github.com/microsoft/vscode-maven) of the Maven extension for additional [configurations](https://github.com/microsoft/vscode-maven/tree/main#additional-configurations) and a [troubleshooting guide](https://github.com/microsoft/vscode-maven/blob/main/Troubleshooting.md).
 
@@ -262,17 +262,17 @@ In addition to Maven, there's also a [Bazel extension](https://marketplace.visua
 
 ​​​	除了 Maven 之外，如果您使用 Bazel 来构建和测试项目，还有一个 Bazel 扩展。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/java/java-build#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Java/BuildTools#_next-steps" >}})
 
 Read on to find out more about:
 
 ​​​	继续阅读以详细了解：
 
-- [Java editing](https://code.visualstudio.com/docs/java/java-editing) - Explore the editing features for Java in VS Code.
+- [Java editing]({{< ref "/Java/NavigateandEdit" >}}) - Explore the editing features for Java in VS Code.
   Java 编辑 - 探索 VS Code 中的 Java 编辑功能。
-- [Java debugging](https://code.visualstudio.com/docs/java/java-debugging) - Find out how to debug your Java project with VS Code.
+- [Java debugging]({{< ref "/Java/RunandDebug" >}}) - Find out how to debug your Java project with VS Code.
   Java 调试 - 了解如何使用 VS Code 调试 Java 项目。
-- [Java testing](https://code.visualstudio.com/docs/java/java-testing) - Use VS Code for your JUnit and TestNG cases.
+- [Java testing]({{< ref "/Java/Testing" >}}) - Use VS Code for your JUnit and TestNG cases.
   Java 测试 - 将 VS Code 用于您的 JUnit 和 TestNG 案例。
-- [Java extensions](https://code.visualstudio.com/docs/java/extensions) - Learn about more useful Java extensions for VS Code.
+- [Java extensions]({{< ref "/Java/Extensions" >}}) - Learn about more useful Java extensions for VS Code.
   Java 扩展 - 了解 VS Code 的更多有用 Java 扩展。

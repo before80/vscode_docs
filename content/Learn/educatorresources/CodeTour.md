@@ -18,7 +18,7 @@ Helping students understand a new codebase can be challenging and time consuming
 
 ​​​	帮助学生理解新的代码库可能具有挑战性且耗时。创建足够说明性的说明可能很麻烦，而且对于学生来说仍然不够容易理解。CodeTour 可以帮助您以简化且交互的方式向学生介绍您的作业和项目。
 
-## [What is CodeTour? 什么是 CodeTour？](https://code.visualstudio.com/learn/educators/codetour#_what-is-codetour)
+## [What is CodeTour? 什么是 CodeTour？]({{< ref "/Learn/educatorresources/CodeTour#_what-is-codetour" >}})
 
 [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour) is a Visual Studio Code extension that allows you to create a step-by-step guide through your codebases. This can be helpful in your classroom to break up your assignments into steps for students to follow or to get them familiar with all parts of the assignment by pointing them to relevant pieces within the assignment.
 
@@ -32,7 +32,7 @@ Essentially, a "code tour" is simply a series of interactive steps, each of whic
 
 ​​​	本质上，“代码之旅”只是一系列交互式步骤，每个步骤都与特定目录或文件/行相关联，并包含对相应代码的描述。可以将之旅检入到存储库中以与源代码管理共享，或导出到“之旅文件”，这样任何人都可以重播相同的之旅，而无需克隆任何代码！
 
-## [Case study 案例研究](https://code.visualstudio.com/learn/educators/codetour#_case-study)
+## [Case study 案例研究]({{< ref "/Learn/educatorresources/CodeTour#_case-study" >}})
 
 We've used CodeTour in the Microsoft partnered Space Jam lessons: [Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY](https://learn.microsoft.com/training/paths/optimize-basketball-games-with-machine-learning)
 
@@ -48,7 +48,7 @@ Here is a short clip of a student using CodeTour to start working on their baske
 
 ​​​	以下是一个学生使用 CodeTour 开始开发其篮球网络应用程序的简短片段：![CodeTour in a Space Jam lesson](./CodeTour_img/codetour-space-jam.gif)
 
-## [Getting started with CodeTour 开始使用 CodeTour](https://code.visualstudio.com/learn/educators/codetour#_getting-started-with-codetour)
+## [Getting started with CodeTour 开始使用 CodeTour]({{< ref "/Learn/educatorresources/CodeTour#_getting-started-with-codetour" >}})
 
 To start using CodeTour, you'll need to download the CodeTour extension from the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode).
 

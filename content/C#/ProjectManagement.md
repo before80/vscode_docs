@@ -22,7 +22,7 @@ When you create a C# application in Visual Studio Code, you start with a **proje
 >
 > ​​​	注意：使用 VS Code 中的解决方案资源管理器视图需要 C# Dev Kit 扩展。
 
-## [Solution Explorer 解决方案资源管理器](https://code.visualstudio.com/docs/csharp/project-management#_solution-explorer)
+## [Solution Explorer 解决方案资源管理器]({{< ref "/C#/ProjectManagement#_solution-explorer" >}})
 
 The new C# Dev Kit extension contains a new view in the Primary Sidebar, the **Solution Explorer**. This view provides a structured view of your application, its solutions, and its projects for effortless, central project management. When you open a Workspace that contains .NET solution files or project files, the Solution Explorer will automatically appear.
 
@@ -68,7 +68,7 @@ When you invoke the **Open Solution** command, if there is a single solution fil
 
 ​​​	调用“打开解决方案”命令时，如果工作区中只有一个解决方案文件，它将自动加载该文件。如果有多个解决方案文件，系统会提示您选择要加载的解决方案文件。当您首次打开包含一个或多个解决方案文件的工作区时，也会出现同样的情况。我们接着讨论解决方案资源管理器中对解决方案文件夹的支持。
 
-## [Solution Folders 解决方案文件夹](https://code.visualstudio.com/docs/csharp/project-management#_solution-folders)
+## [Solution Folders 解决方案文件夹]({{< ref "/C#/ProjectManagement#_solution-folders" >}})
 
 In the Solution Explorer, if a solution contains Solution Folders (virtual folders used to group projects in a solution), they will be displayed. Here, you can interact with Solution Folder contents. To add a new Solution Folder, you can right-click the solution and select the **New Solution Folder** menu item. Take a look at the short video below.
 
@@ -108,7 +108,7 @@ When you remove a Solution Folder from a solution, the Solution Folder and its c
 
 ​​​	从解决方案中移除解决方案文件夹时，解决方案文件夹及其内容将从解决方案中移除。其中包含的文件和/或项目不会从磁盘中删除。现在我们已经讨论了解决方案文件夹，接下来让我们看看如何在解决方案资源管理器中与项目进行更多交互。
 
-## [Working with projects 使用项目](https://code.visualstudio.com/docs/csharp/project-management#_working-with-projects)
+## [Working with projects 使用项目]({{< ref "/C#/ProjectManagement#_working-with-projects" >}})
 
 In the Solution Explorer, there are a number of features to enable you to work with projects. When you first open a solution, you will see the projects and Solution Folders. You can expand Solution Folders or projects to see its contents. The image below shows the Solution Explorer with a few nodes expanded.
 

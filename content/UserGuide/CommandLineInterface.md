@@ -20,11 +20,11 @@ Visual Studio Code has a powerful command-line interface built-in that lets you 
 
 ![command line example](./CommandLineInterface_img/hero.png)
 
-If you are looking for how to run command-line tools inside VS Code, see the [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics).
+If you are looking for how to run command-line tools inside VS Code, see the [Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}).
 
 ​​	如果您正在寻找如何在 VS Code 中运行命令行工具，请参阅集成终端。
 
-## [Command line help 命令行帮助](https://code.visualstudio.com/docs/editor/command-line#_command-line-help)
+## [Command line help 命令行帮助]({{< ref "/UserGuide/CommandLineInterface#_command-line-help" >}})
 
 To get an overview of the VS Code command-line interface, open a terminal or command prompt and type `code --help`. You will see the version, usage example, and list of command line options.
 
@@ -32,7 +32,7 @@ To get an overview of the VS Code command-line interface, open a terminal or com
 
 ![command line help](./CommandLineInterface_img/command-line-help.png)
 
-## [Launching from command line 从命令行启动](https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line)
+## [Launching from command line 从命令行启动]({{< ref "/UserGuide/CommandLineInterface#_launching-from-command-line" >}})
 
 You can launch VS Code from the command line to quickly open a file, folder, or project. Typically, you open VS Code within the context of a folder. To do this, from an open terminal or command prompt, navigate to your project folder and type `code .`:
 
@@ -40,11 +40,11 @@ You can launch VS Code from the command line to quickly open a file, folder, or 
 
 ![launch VS Code](./CommandLineInterface_img/launch-vscode.png)
 
-**Note:** Users on macOS must first run a command (**Shell Command: Install 'code' command in PATH**) to add VS Code executable to the `PATH` environment variable. Read the [macOS setup guide](https://code.visualstudio.com/docs/setup/mac) for help.
+**Note:** Users on macOS must first run a command (**Shell Command: Install 'code' command in PATH**) to add VS Code executable to the `PATH` environment variable. Read the [macOS setup guide]({{< ref "/Setup/macOS" >}}) for help.
 
 ​​	注意：macOS 上的用户必须先运行一个命令（Shell 命令：在 PATH 中安装“code”命令）才能将 VS Code 可执行文件添加到 `PATH` 环境变量中。有关帮助，请阅读 macOS 设置指南。
 
-Windows and Linux installations should add the VS Code binaries location to your system path. If this isn't the case, you can manually add the location to the `Path` environment variable (`$PATH` on Linux). For example, on Windows, the default VS Code binaries location is `AppData\Local\Programs\Microsoft VS Code\bin`. To review platform-specific setup instructions, see [Setup](https://code.visualstudio.com/docs/setup/setup-overview).
+Windows and Linux installations should add the VS Code binaries location to your system path. If this isn't the case, you can manually add the location to the `Path` environment variable (`$PATH` on Linux). For example, on Windows, the default VS Code binaries location is `AppData\Local\Programs\Microsoft VS Code\bin`. To review platform-specific setup instructions, see [Setup]({{< ref "/Setup/Overview" >}}).
 
 ​​	Windows 和 Linux 安装应将 VS Code 二进制文件位置添加到系统路径。如果不是这种情况，您可以手动将位置添加到 `Path` 环境变量（在 Linux 上为 `$PATH` ）。例如，在 Windows 上，默认的 VS Code 二进制文件位置是 `AppData\Local\Programs\Microsoft VS Code\bin` 。要查看特定于平台的设置说明，请参阅设置。
 
@@ -52,7 +52,7 @@ Windows and Linux installations should add the VS Code binaries location to your
 >
 > ​​	内部人员：如果您使用的是 VS Code 内部人员预览版，则可以使用 `code-insiders` 启动内部人员版本。
 
-## [Core CLI options 核心 CLI 选项](https://code.visualstudio.com/docs/editor/command-line#_core-cli-options)
+## [Core CLI options 核心 CLI 选项]({{< ref "/UserGuide/CommandLineInterface#_core-cli-options" >}})
 
 Here are optional arguments you can use when starting VS Code at the command line via `code`:
 
@@ -68,11 +68,11 @@ Here are optional arguments you can use when starting VS Code at the command lin
 | `-d` or `--diff <file1> <file2>` `-d` 或 `--diff <file1> <file2>` | Open a file difference editor. Requires two file paths as arguments. 打开文件差异编辑器。需要两个文件路径作为参数。 |
 | `-m` or `--merge <path1> <path2> <base> <result>` `-m` 或 `--merge <path1> <path2> <base> <result>` | Perform a three-way merge by providing paths for two modified versions of a file, the common origin of both modified versions, and the output file to save merge results. 通过提供两个修改版本的文件路径、两个修改版本文件的公共源文件以及保存合并结果的输出文件来执行三向合并。 |
 | `-w` or `--wait` `-w` 或 `--wait`                            | Wait for the files to be closed before returning. 等待文件关闭后再返回。 |
-| `--locale <locale>`                                          | Set the [display language](https://code.visualstudio.com/docs/getstarted/locales) (locale) for the VS Code session. (for example, `en-US` or `zh-TW`) 设置 VS Code 会话的显示语言（区域设置）。（例如， `en-US` 或 `zh-TW` ） |
+| `--locale <locale>`                                          | Set the [display language]({{< ref "/GetStarted/DisplayLanguage" >}}) (locale) for the VS Code session. (for example, `en-US` or `zh-TW`) 设置 VS Code 会话的显示语言（区域设置）。（例如， `en-US` 或 `zh-TW` ） |
 
 ![launch with locale](./CommandLineInterface_img/launch-locale.png)
 
-## [Opening Files and Folders 打开文件和文件夹](https://code.visualstudio.com/docs/editor/command-line#_opening-files-and-folders)
+## [Opening Files and Folders 打开文件和文件夹]({{< ref "/UserGuide/CommandLineInterface#_opening-files-and-folders" >}})
 
 Sometimes you will want to open or create a file. If the specified file does not exist, VS Code will create them for you along with any new intermediate folders:
 
@@ -90,7 +90,7 @@ If you specify more than one file at the command line, VS Code will open only a 
 
 ​​	如果您在命令行中指定多个文件，VS Code 将只打开一个实例。
 
-If you specify more than one folder at the command line, VS Code will create a [Multi-root Workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) including each folder.
+If you specify more than one folder at the command line, VS Code will create a [Multi-root Workspace]({{< ref "/UserGuide/Multi-rootWorkspaces" >}}) including each folder.
 
 ​​	如果您在命令行中指定多个文件夹，VS Code 将创建一个包含每个文件夹的多根工作区。
 
@@ -98,13 +98,13 @@ If you specify more than one folder at the command line, VS Code will create a [
 | :---------------------- | :----------------------------------------------------------- |
 | `file`                  | Name of a file to open. If the file doesn't exist, it will be created and marked as edited. You can specify multiple files by separating each file name with a space. 要打开的文件的名称。如果文件不存在，它将被创建并标记为已编辑。您可以通过用空格分隔每个文件名来指定多个文件。 |
 | `file:line[:character]` | Used with the `-g` argument. Name of a file to open at the specified line and optional character position. 与 `-g` 参数一起使用。要在指定行和可选字符位置打开的文件的名称。 |
-| `folder`                | Name of a folder to open. You can specify multiple folders and a new [Multi-root Workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) is created. 要打开的文件夹的名称。您可以指定多个文件夹，并创建一个新的多根工作区。 |
+| `folder`                | Name of a folder to open. You can specify multiple folders and a new [Multi-root Workspace]({{< ref "/UserGuide/Multi-rootWorkspaces" >}}) is created. 要打开的文件夹的名称。您可以指定多个文件夹，并创建一个新的多根工作区。 |
 
 ![go to line and column](./CommandLineInterface_img/goto-line-column.png)
 
-## [Select a profile 选择配置文件](https://code.visualstudio.com/docs/editor/command-line#_select-a-profile)
+## [Select a profile 选择配置文件]({{< ref "/UserGuide/CommandLineInterface#_select-a-profile" >}})
 
-You can launch VS Code with a specific [profile](https://code.visualstudio.com/docs/editor/profiles) via the `--profile` command-line interface option. You pass the name of the profile after the `--profile` argument and open a folder or a workspace using that profile. The command line below opens the `web-sample` folder with the "Web Development" profile:
+You can launch VS Code with a specific [profile]({{< ref "/UserGuide/Profiles" >}}) via the `--profile` command-line interface option. You pass the name of the profile after the `--profile` argument and open a folder or a workspace using that profile. The command line below opens the `web-sample` folder with the "Web Development" profile:
 
 ​​	您可以通过 `--profile` 命令行界面选项使用特定配置文件启动 VS Code。您在 `--profile` 参数后传递配置文件的名称，并使用该配置文件打开文件夹或工作区。以下命令行使用“Web 开发”配置文件打开 `web-sample` 文件夹：
 
@@ -116,9 +116,9 @@ If the profile specified does not exist, a new empty profile with the given name
 
 ​​	如果指定的配置文件不存在，则会创建一个具有给定名称的新空配置文件。
 
-## [Working with extensions 使用扩展](https://code.visualstudio.com/docs/editor/command-line#_working-with-extensions)
+## [Working with extensions 使用扩展]({{< ref "/UserGuide/CommandLineInterface#_working-with-extensions" >}})
 
-You can install and manage VS Code [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) from the command line.
+You can install and manage VS Code [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) from the command line.
 
 ​​	您可以从命令行安装和管理 VS Code 扩展。
 
@@ -133,7 +133,7 @@ You can install and manage VS Code [extensions](https://code.visualstudio.com/do
 
 ![install extension](./CommandLineInterface_img/install-extension.png)
 
-## [Advanced CLI options 高级 CLI 选项](https://code.visualstudio.com/docs/editor/command-line#_advanced-cli-options)
+## [Advanced CLI options 高级 CLI 选项]({{< ref "/UserGuide/CommandLineInterface#_advanced-cli-options" >}})
 
 There are several CLI options that help with reproducing errors and advanced setup.
 
@@ -152,9 +152,9 @@ There are several CLI options that help with reproducing errors and advanced set
 | **Multi-root 多根**      |                                                              |
 | `--add <dir>`            | Add folder(s) to the last active window for a multi-root workspace. 将文件夹添加到多根工作区的最后一个活动窗口。 |
 
-### [Create remote tunnel 创建远程隧道](https://code.visualstudio.com/docs/editor/command-line#_create-remote-tunnel)
+### [Create remote tunnel 创建远程隧道]({{< ref "/UserGuide/CommandLineInterface#_create-remote-tunnel" >}})
 
-VS Code integrates with other [remote environments](https://code.visualstudio.com/docs/remote/remote-overview) to become even more powerful and flexible. Our goal is to provide a cohesive experience that allows you to manage both local and remote machines from one, unified CLI.
+VS Code integrates with other [remote environments]({{< ref "/Remote/Overview" >}}) to become even more powerful and flexible. Our goal is to provide a cohesive experience that allows you to manage both local and remote machines from one, unified CLI.
 
 ​​	VS Code 与其他远程环境集成，变得更加强大和灵活。我们的目标是提供一种连贯的体验，允许您从一个统一的 CLI 管理本地和远程计算机。
 
@@ -184,11 +184,11 @@ As you may need to run the CLI on a remote machine that can't install VS Code De
 
 ​​	由于您可能需要在无法安装 VS Code Desktop 的远程计算机上运行 CLI，因此 CLI 也可用于在 VS Code 下载页面上独立安装。
 
-For more information on Remote Tunnels, you can review the [Remote Tunnels documentation](https://code.visualstudio.com/docs/remote/tunnels).
+For more information on Remote Tunnels, you can review the [Remote Tunnels documentation]({{< ref "/Remote/Tunnels" >}}).
 
 ​​	有关远程隧道的更多信息，您可以查看远程隧道文档。
 
-## [Opening VS Code with URLs 使用 URL 打开 VS Code](https://code.visualstudio.com/docs/editor/command-line#_opening-vs-code-with-urls)
+## [Opening VS Code with URLs 使用 URL 打开 VS Code]({{< ref "/UserGuide/CommandLineInterface#_opening-vs-code-with-urls" >}})
 
 You can also open projects and files using the platform's URL handling mechanism. Use the following URL formats to:
 
@@ -234,44 +234,44 @@ You can use the URL in applications such as browsers or file explorers that can 
 >
 > ​​	注意：如果您使用的是 VS Code Insiders 内部版本，则 URL 前缀为 `vscode-insiders://` 。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/command-line#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/CommandLineInterface#_next-steps" >}})
 
 Read on to find out about:
 
 ​​	继续阅读以了解：
 
-- [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics) - Run command-line tools from inside VS Code.
+- [Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}) - Run command-line tools from inside VS Code.
   集成终端 - 从 VS Code 内部运行命令行工具。
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn the basics of the VS Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn the basics of the VS Code editor.
   基本编辑 - 了解 VS Code 编辑器的基础知识。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - VS Code lets you quickly understand and move through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - VS Code lets you quickly understand and move through your source code.
   代码导航 - VS Code 允许您快速理解和浏览源代码。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/command-line#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/CommandLineInterface#_common-questions" >}})
 
-### ['code' is not recognized as an internal or external command 'code' 未被识别为内部或外部命令](https://code.visualstudio.com/docs/editor/command-line#_code-is-not-recognized-as-an-internal-or-external-command)
+### ['code' is not recognized as an internal or external command 'code' 未被识别为内部或外部命令]({{< ref "/UserGuide/CommandLineInterface#_code-is-not-recognized-as-an-internal-or-external-command" >}})
 
-Your OS cannot find the VS Code binary `code` on its path. The VS Code Windows and Linux installations should have installed VS Code on your path. Try uninstalling and reinstalling VS Code. If `code` is still not found, consult the platform-specific setup topics for [Windows](https://code.visualstudio.com/docs/setup/windows) and [Linux](https://code.visualstudio.com/docs/setup/linux).
+Your OS cannot find the VS Code binary `code` on its path. The VS Code Windows and Linux installations should have installed VS Code on your path. Try uninstalling and reinstalling VS Code. If `code` is still not found, consult the platform-specific setup topics for [Windows]({{< ref "/Setup/Windows" >}}) and [Linux]({{< ref "/Setup/Linux" >}}).
 
 ​​	您的操作系统无法在其路径上找到 VS Code 二进制文件 `code` 。VS Code Windows 和 Linux 安装应已在您的路径上安装 VS Code。尝试卸载并重新安装 VS Code。如果仍然找不到 `code` ，请参阅 Windows 和 Linux 的特定于平台的安装主题。
 
-On macOS, you need to manually run the **Shell Command: Install 'code' command in PATH** command (available through the **Command Palette** Ctrl+Shift+P). Consult the [macOS](https://code.visualstudio.com/docs/setup/mac) specific setup topic for details.
+On macOS, you need to manually run the **Shell Command: Install 'code' command in PATH** command (available through the **Command Palette** Ctrl+Shift+P). Consult the [macOS]({{< ref "/Setup/macOS" >}}) specific setup topic for details.
 
 ​​	在 macOS 上，您需要手动运行 Shell 命令：在 PATH 命令中安装“code”命令（可通过命令面板 Ctrl+Shift+P 获得）。有关详细信息，请参阅 macOS 特定的安装主题。
 
-### [How do I get access to a command line (terminal) from within VS Code? 如何从 VS Code 内部访问命令行（终端）？](https://code.visualstudio.com/docs/editor/command-line#_how-do-i-get-access-to-a-command-line-terminal-from-within-vs-code)
+### [How do I get access to a command line (terminal) from within VS Code? 如何从 VS Code 内部访问命令行（终端）？]({{< ref "/UserGuide/CommandLineInterface#_how-do-i-get-access-to-a-command-line-terminal-from-within-vs-code" >}})
 
-VS Code has an [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics) where you can run command-line tools from within VS Code.
+VS Code has an [Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}) where you can run command-line tools from within VS Code.
 
 ​​	VS Code 具有一个集成终端，您可以在其中运行 VS Code 内部的命令行工具。
 
-### [Can I specify the settings location for VS Code in order to have a portable version? 我可以指定 VS Code 的设置位置，以便拥有一个便携版本吗？](https://code.visualstudio.com/docs/editor/command-line#_can-i-specify-the-settings-location-for-vs-code-in-order-to-have-a-portable-version)
+### [Can I specify the settings location for VS Code in order to have a portable version? 我可以指定 VS Code 的设置位置，以便拥有一个便携版本吗？]({{< ref "/UserGuide/CommandLineInterface#_can-i-specify-the-settings-location-for-vs-code-in-order-to-have-a-portable-version" >}})
 
 Not directly through the command line, but VS Code has a [Portable Mode](https://code.visualstudio.com/docs/editor/portable), which lets you keep settings and data in the same location as your installation, for example, on a USB drive.
 
 ​​	不能直接通过命令行，但 VS Code 具有便携模式，该模式允许您将设置和数据保存在与安装位置相同的位置，例如 USB 驱动器上。
 
-### [How do I detect when a shell was launched by VS Code? 如何检测 VS Code 启动了某个 shell？](https://code.visualstudio.com/docs/editor/command-line#_how-do-i-detect-when-a-shell-was-launched-by-vs-code)
+### [How do I detect when a shell was launched by VS Code? 如何检测 VS Code 启动了某个 shell？]({{< ref "/UserGuide/CommandLineInterface#_how-do-i-detect-when-a-shell-was-launched-by-vs-code" >}})
 
 When VS Code starts up, it may launch a shell in order to source the "shell environment" to help set up tools. This will launch an **interactive login** shell and fetch its environment. Depending on your shell setup, this may cause problems. For example, it may be unexpected that the shell is launched as an interactive session, which VS Code needs in order to try to align `$PATH` with the exact value in a user created terminal.
 

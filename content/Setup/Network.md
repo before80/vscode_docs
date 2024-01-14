@@ -18,7 +18,7 @@ Visual Studio Code is built on top of [Electron](https://www.electronjs.org/) an
 
 ​​	Visual Studio Code 是基于 Electron 构建的，并受益于 Chromium 的所有网络堆栈功能。这也意味着 VS Code 用户可以获得 Google Chrome 中的大部分网络支持。
 
-## [Common hostnames 常见主机名](https://code.visualstudio.com/docs/setup/network#_common-hostnames)
+## [Common hostnames 常见主机名]({{< ref "/Setup/Network#_common-hostnames" >}})
 
 A handful of features within VS Code require network communication to work, such as the auto-update mechanism, querying and installing extensions, and telemetry. For these features to work properly in a proxy environment, you must have the product correctly configured.
 
@@ -66,7 +66,7 @@ If you are behind a firewall that needs to allow specific domains used by VS Cod
 - `default.exp-tas.com` - Visual Studio Code Experiment Service, used to provide experimental user experiences
   `default.exp-tas.com` - Visual Studio Code 实验服务，用于提供实验性用户体验
 
-## [Proxy server support 代理服务器支持](https://code.visualstudio.com/docs/setup/network#_proxy-server-support)
+## [Proxy server support 代理服务器支持]({{< ref "/Setup/Network#_proxy-server-support" >}})
 
 VS Code has exactly the same proxy server support as Google Chromium. Here's a snippet from [Chromium's documentation](https://www.chromium.org/developers/design-documents/network-settings):
 
@@ -107,7 +107,7 @@ To learn more about these command-line arguments, see [Chromium Network Settings
 
 ​​	若要详细了解这些命令行参数，请参阅 Chromium 网络设置。
 
-### [Authenticated proxies 经过身份验证的代理](https://code.visualstudio.com/docs/setup/network#_authenticated-proxies)
+### [Authenticated proxies 经过身份验证的代理]({{< ref "/Setup/Network#_authenticated-proxies" >}})
 
 Authenticated proxies should work seamlessly within VS Code with the addition of [PR #22369](https://github.com/microsoft/vscode/pull/22369).
 
@@ -139,7 +139,7 @@ See [Chromium HTTP authentication](https://www.chromium.org/developers/design-do
 
 ​​	请参阅 Chromium HTTP 身份验证以详细了解 VS Code 中的 HTTP 代理身份验证。
 
-### [SSL certificates SSL 证书](https://code.visualstudio.com/docs/setup/network#_ssl-certificates)
+### [SSL certificates SSL 证书]({{< ref "/Setup/Network#_ssl-certificates" >}})
 
 Often HTTPS proxies rewrite SSL certificates of the incoming requests. Chromium was designed to reject responses which are signed by certificates which it doesn't trust. If you hit any SSL trust issues, there are a few options available for you:
 
@@ -152,7 +152,7 @@ Often HTTPS proxies rewrite SSL certificates of the incoming requests. Chromium 
 - If all else fails, you can tell VS Code to ignore all certificate errors using the [--ignore-certificate-errors](https://peter.sh/experiments/chromium-command-line-switches/#ignore-certificate-errors) command-line flag. **Warning:** This is **dangerous** and **not recommended**, since it opens the door to security issues.
   如果所有方法均失败，您可以使用 --ignore-certificate-errors 命令行标志告诉 VS Code 忽略所有证书错误。警告：这样做很危险，不建议这样做，因为它会引发安全问题。
 
-## [Legacy proxy server support 旧版代理服务器支持](https://code.visualstudio.com/docs/setup/network#_legacy-proxy-server-support)
+## [Legacy proxy server support 旧版代理服务器支持]({{< ref "/Setup/Network#_legacy-proxy-server-support" >}})
 
 Extensions don't benefit yet from the same proxy support that VS Code supports. You can follow this issue's development in [GitHub](https://github.com/microsoft/vscode/issues/12588).
 
@@ -166,7 +166,7 @@ Due to both of these constraints, the `http.proxy`, `http.proxyStrictSSL` and `h
 
 ​​	由于这两个限制， `http.proxy` 、 `http.proxyStrictSSL` 和 `http.proxyAuthorization` 变量仍是 VS Code 设置的一部分，但它们仅在此两种情况下受到尊重。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/setup/network#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/Setup/Network#_troubleshooting" >}})
 
 Here are some helpful links that might help you troubleshoot networking issues in VS Code:
 

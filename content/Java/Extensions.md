@@ -18,7 +18,7 @@ Thanks to the great Java community around Visual Studio Code, you can use a wide
 
 ​​​	借助 Visual Studio Code 周围强大的 Java 社区，您可以使用各种扩展来增强您的 Java 开发体验。
 
-> **Tip:** To learn how to install and manage your extensions, refer to the general [VS Code extension documentation](https://code.visualstudio.com/docs/editor/extension-marketplace).
+> **Tip:** To learn how to install and manage your extensions, refer to the general [VS Code extension documentation]({{< ref "/UserGuide/ExtensionMarketplace" >}}).
 >
 > ​​​	提示：若要了解如何安装和管理您的扩展，请参阅常规 VS Code 扩展文档。
 
@@ -26,7 +26,7 @@ In this topic, we recommend a list of popular extensions helpful for different J
 
 ​​​	在此主题中，我们推荐一份对不同 Java 开发场景有帮助的常用扩展列表。
 
-## [Fundamental Java development Java 基本开发](https://code.visualstudio.com/docs/java/extensions#_fundamental-java-development)
+## [Fundamental Java development Java 基本开发]({{< ref "/Java/Extensions#_fundamental-java-development" >}})
 
 If you are looking for core Java development experience on Visual Studio Code (including Java code auto-completion, running / debugging / testing Java applications, Java project management, etc.), we recommend the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack). This extension pack contains a list of popular Java extensions for fundamental Java development:
 
@@ -47,7 +47,7 @@ If you are looking for core Java development experience on Visual Studio Code (i
 [Install the Extension Pack for Java
 安装 Java 扩展包](vscode:extension/vscjava.vscode-java-pack)
 
-To get started with this extension pack, you can visit [Getting Started with Java](https://code.visualstudio.com/docs/java/java-tutorial) tutorial.
+To get started with this extension pack, you can visit [Getting Started with Java]({{< ref "/Java/GettingStarted" >}}) tutorial.
 
 ​​​	若要开始使用此扩展包，您可以访问 Java 入门教程。
 
@@ -55,7 +55,7 @@ You can also install the [SonarLint](https://marketplace.visualstudio.com/items?
 
 ​​​	您还可以安装 SonarLint 扩展，它可以检测代码中的质量和安全问题。
 
-## [Spring Boot extensions Spring Boot 扩展](https://code.visualstudio.com/docs/java/extensions#_spring-boot-extensions)
+## [Spring Boot extensions Spring Boot 扩展]({{< ref "/Java/Extensions#_spring-boot-extensions" >}})
 
 Spring Boot is an open source, microservice-based Java web framework that is very popular among Java developers. There are great extensions provided by VMware and Microsoft for Spring Boot development.
 
@@ -73,27 +73,27 @@ We recommend installing the [Spring Boot Extension Pack](https://marketplace.vis
 [Install the Spring Boot Extension Pack
 安装 Spring Boot Extension Pack](vscode:extension/vmware.vscode-boot-dev-pack)
 
-More Spring Boot related information can be found at the [Spring Boot](https://code.visualstudio.com/docs/java/java-spring-boot) page.
+More Spring Boot related information can be found at the [Spring Boot]({{< ref "/Java/SpringBoot" >}}) page.
 
 ​​​	更多 Spring Boot 相关信息可在 Spring Boot 页面找到。
 
-## [Gradle for Java 适用于 Java 的 Gradle](https://code.visualstudio.com/docs/java/extensions#_gradle-for-java)
+## [Gradle for Java 适用于 Java 的 Gradle]({{< ref "/Java/Extensions#_gradle-for-java" >}})
 
-Visual Studio Code offers support Gradle support via the [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) extension. To learn more how to use this extension, visit the [Gradle section](https://code.visualstudio.com/docs/java/java-build#_gradle) on Build Tools page.
+Visual Studio Code offers support Gradle support via the [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) extension. To learn more how to use this extension, visit the [Gradle section]({{< ref "/Java/BuildTools#_gradle" >}}) on Build Tools page.
 
 ​​​	Visual Studio Code 通过 Gradle for Java 扩展提供 Gradle 支持。要详细了解如何使用此扩展，请访问构建工具页面上的 Gradle 部分。
 
-## [Application Servers (Tomcat / Jetty / etc.) 应用程序服务器（Tomcat/Jetty 等）](https://code.visualstudio.com/docs/java/extensions#_application-servers-tomcat-jetty-etc)
+## [Application Servers (Tomcat / Jetty / etc.) 应用程序服务器（Tomcat/Jetty 等）]({{< ref "/Java/Extensions#_application-servers-tomcat-jetty-etc" >}})
 
 [Community Server Connectors](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector) is an excellent extension for application servers such as Tomcat and Jetty.
 
 ​​​	Community Server Connectors 是适用于 Tomcat 和 Jetty 等应用程序服务器的出色扩展。
 
-To learn more about how to work with Java application servers on Visual Studio Code, refer to the [Application Server](https://code.visualstudio.com/docs/java/java-tomcat-jetty) page.
+To learn more about how to work with Java application servers on Visual Studio Code, refer to the [Application Server]({{< ref "/Java/ApplicationServers" >}}) page.
 
 ​​​	要详细了解如何在 Visual Studio Code 上使用 Java 应用程序服务器，请参阅应用程序服务器页面。
 
-## [MicroProfile / Quarkus MicroProfile/Quarkus](https://code.visualstudio.com/docs/java/extensions#_microprofile-quarkus)
+## [MicroProfile / Quarkus MicroProfile/Quarkus]({{< ref "/Java/Extensions#_microprofile-quarkus" >}})
 
 Support for Eclipse MicroProfile and Quarkus are provided via the following extensions:
 
@@ -103,7 +103,7 @@ Support for Eclipse MicroProfile and Quarkus are provided via the following exte
   适用于 MicroProfile 的扩展包](https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.vscode-microprofile-pack)
 - [Quarkus](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-quarkus)
 
-## [Keymaps for other Java IDEs 其他 Java IDE 的按键映射](https://code.visualstudio.com/docs/java/extensions#_keymaps-for-other-java-ides)
+## [Keymaps for other Java IDEs 其他 Java IDE 的按键映射]({{< ref "/Java/Extensions#_keymaps-for-other-java-ides" >}})
 
 There are some extensions from the community for developers who might be used to the keyboard shortcuts from other Java IDEs.
 
@@ -118,13 +118,13 @@ Keymap extensions apply keyboard shortcuts from other IDEs or editors on to VS C
 
 ​​​	按键映射扩展将其他 IDE 或编辑器的键盘快捷键应用到 VS Code 上，因此您不必重新训练手指来适应新的键盘快捷键。
 
-## [Remote development and container support 远程开发和容器支持](https://code.visualstudio.com/docs/java/extensions#_remote-development-and-container-support)
+## [Remote development and container support 远程开发和容器支持]({{< ref "/Java/Extensions#_remote-development-and-container-support" >}})
 
 We'd also like to recommend a couple of other extensions that are useful for remote and container development scenarios.
 
 ​​​	我们还推荐几个其他扩展，它们对远程和容器开发场景很有用。
 
-- The [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) extensions let you use VS Code to access a container, a remote machine, or the Windows Subsystem for Linux.
+- The [Remote Development]({{< ref "/Remote/Overview" >}}) extensions let you use VS Code to access a container, a remote machine, or the Windows Subsystem for Linux.
   远程开发扩展允许您使用 VS Code 访问容器、远程计算机或适用于 Linux 的 Windows 子系统。
 - You can use [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) extension to build docker images and work with image registries.
   您可以使用 Docker 扩展来构建 docker 镜像并使用镜像注册表。
@@ -133,34 +133,34 @@ We'd also like to recommend a couple of other extensions that are useful for rem
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) is a great tool to use when you need to collaborate with someone else on the same code base.
   Live Share 是一个很棒的工具，当您需要与其他人协作使用相同的代码库时可以使用它。
 
-## [Azure on Visual Studio Code Visual Studio Code 中的 Azure](https://code.visualstudio.com/docs/java/extensions#_azure-on-visual-studio-code)
+## [Azure on Visual Studio Code Visual Studio Code 中的 Azure]({{< ref "/Java/Extensions#_azure-on-visual-studio-code" >}})
 
 The Azure extensions for Visual Studio Code provide seamless integration with Azure and the cloud. There are a few Azure extensions we'd like to recommend.
 
 ​​​	适用于 Visual Studio Code 的 Azure 扩展提供与 Azure 和云的无缝集成。我们想推荐几个 Azure 扩展。
 
-### [Team development 团队开发](https://code.visualstudio.com/docs/java/extensions#_team-development)
+### [Team development 团队开发]({{< ref "/Java/Extensions#_team-development" >}})
 
 - The [Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) extension makes it easy to connect to your Azure DevOps Servers, allowing you to easily monitor builds, pull requests, and work items for your TFVC or Git source repositories.
   Azure Repos 扩展可以轻松连接到 Azure DevOps 服务器，允许您轻松监视 TFVC 或 Git 源存储库的生成、拉取请求和工作项。
 
-### [Internet of Things 物联网](https://code.visualstudio.com/docs/java/extensions#_internet-of-things)
+### [Internet of Things 物联网]({{< ref "/Java/Extensions#_internet-of-things" >}})
 
 - The [Azure IoT Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) for VS Code makes it easy to develop and connect your [IoT applications to Azure](https://learn.microsoft.com/azure/?product=iot). With this extension, you can interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub.
   适用于 VS Code 的 Azure IoT 工具包可以轻松地将您的 IoT 应用程序开发并连接到 Azure。借助此扩展，您可以与 Azure IoT 中心交互，管理连接到 Azure IoT 中心设备，并使用 Azure IoT 中心代码段进行开发。
 
-### [General tools 常规工具](https://code.visualstudio.com/docs/java/extensions#_general-tools)
+### [General tools 常规工具]({{< ref "/Java/Extensions#_general-tools" >}})
 
 - The [Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) provides a rich set of extensions that makes it easy to discover and interact with Azure services to power your applications.
   Azure 工具扩展包提供了一套丰富的扩展，可以轻松发现和与 Azure 服务进行交互，为您的应用程序提供支持。
 - The [Azure Resource Manager Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) provide a rich editing experience for Azure Resource Manager deployment templates and template language expressions. For example, IntelliSense for TLE function names, parameter references, signature help, Go to Definition, Peek Definition, and Peek References as well as Errors and Warnings, making it quick and easy to author Azure Resource Manager templates in VS Code.
   Azure Resource Manager 工具为 Azure Resource Manager 部署模板和模板语言表达式提供了丰富的编辑体验。例如，TLE 函数名称、参数引用、签名帮助、转到定义、查看定义和查看引用以及错误和警告的 IntelliSense，使在 VS Code 中创作 Azure Resource Manager 模板变得快速而轻松。
 
-Visit [Azure Extensions](https://code.visualstudio.com/docs/azure/extensions) to find more Azure extensions.
+Visit [Azure Extensions]({{< ref "/Azure/Extensions" >}}) to find more Azure extensions.
 
 ​​​	访问 Azure 扩展以查找更多 Azure 扩展。
 
-## [Search for other Java extensions 搜索其他 Java 扩展](https://code.visualstudio.com/docs/java/extensions#_search-for-other-java-extensions)
+## [Search for other Java extensions 搜索其他 Java 扩展]({{< ref "/Java/Extensions#_search-for-other-java-extensions" >}})
 
 If the extensions above do not meet your requirement, you can also search for other Java related extensions within Visual Studio Code. Here are the steps:
 

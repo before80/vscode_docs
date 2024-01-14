@@ -20,11 +20,11 @@ Visual Studio Code takes security seriously and wants to help you safely browse 
 
 ![Trust this folder dialog](./WorkspaceTrust_img/workspace-trust-dialog.png)
 
-> **Note**: When in doubt, leave a folder in [Restricted Mode](https://code.visualstudio.com/docs/editor/workspace-trust#_restricted-mode). You can always [enable trust](https://code.visualstudio.com/docs/editor/workspace-trust#_trusting-a-workspace) later.
+> **Note**: When in doubt, leave a folder in [Restricted Mode]({{< ref "/UserGuide/WorkspaceTrust#_restricted-mode" >}}). You can always [enable trust]({{< ref "/UserGuide/WorkspaceTrust#_trusting-a-workspace" >}}) later.
 >
 > ​​	注意：如有疑问，请将文件夹保留在受限模式下。您始终可以在以后启用信任。
 
-## [Safe code browsing 安全代码浏览](https://code.visualstudio.com/docs/editor/workspace-trust#_safe-code-browsing)
+## [Safe code browsing 安全代码浏览]({{< ref "/UserGuide/WorkspaceTrust#_safe-code-browsing" >}})
 
 It's great that there is so much source code available on public repositories and file shares. No matter the coding task or problem, there is probably already a good solution available somewhere. It is also great that there are so many powerful coding tools available to help you understand, debug, and optimize your code. However, using open-source code and tools does have risks, and you can leave yourself open to malicious code execution and exploits.
 
@@ -38,7 +38,7 @@ Workspace Trust provides an extra layer of security when working with unfamiliar
 >
 > ​​	注意：术语“工作区”和“文件夹”广泛用于 VS Code UI 和文档中。您可以将“工作区”视为一个文件夹，其中包含 VS Code 创建和使用的额外元数据。
 
-## [Restricted Mode 受限模式](https://code.visualstudio.com/docs/editor/workspace-trust#_restricted-mode)
+## [Restricted Mode 受限模式]({{< ref "/UserGuide/WorkspaceTrust#_restricted-mode" >}})
 
 When prompted by the Workspace Trust dialog, if you choose **No, I don't trust the authors**, VS Code will go into Restricted Mode to prevent code execution. The workbench will display a banner at the top with links to **Manage** your folder via the Workspace Trust editor, and **Learn More** about Workspace Trust (which takes you to back to this documentation).
 
@@ -66,9 +66,9 @@ To see the full list of features disabled in Restricted Mode, you can open the W
 >
 > ​​	注意：工作区信任无法阻止恶意扩展执行代码并忽略受限模式。您应该只安装和运行来自您信任的知名发布者的扩展。
 
-### [Tasks 任务](https://code.visualstudio.com/docs/editor/workspace-trust#_tasks)
+### [Tasks 任务]({{< ref "/UserGuide/WorkspaceTrust#_tasks" >}})
 
-[Tasks](https://code.visualstudio.com/docs/editor/tasks) can run scripts and tool binaries, and because task definitions are defined in the workspace `.vscode` folder, they are part of the committed source code for a repo, and shared to every user of that repo. Were someone to create a malicious task, it could be unknowingly run by anyone who cloned that repository.
+[Tasks]({{< ref "/UserGuide/Tasks" >}}) can run scripts and tool binaries, and because task definitions are defined in the workspace `.vscode` folder, they are part of the committed source code for a repo, and shared to every user of that repo. Were someone to create a malicious task, it could be unknowingly run by anyone who cloned that repository.
 
 ​​	任务可以运行脚本和工具二进制文件，并且由于任务定义是在工作区 `.vscode` 文件夹中定义的，因此它们是存储库的已提交源代码的一部分，并与该存储库的每个用户共享。如果有人创建恶意任务，则克隆该存储库的任何人都可能在不知情的情况下运行该任务。
 
@@ -78,9 +78,9 @@ If you try to run or even enumerate tasks (**Terminal** > **Run Task...**) while
 
 ![Workspace Trust Restricted Mode tasks dialog](./WorkspaceTrust_img/restricted-mode-tasks-dialog.png)
 
-### [Debugging 调试](https://code.visualstudio.com/docs/editor/workspace-trust#_debugging)
+### [Debugging 调试]({{< ref "/UserGuide/WorkspaceTrust#_debugging" >}})
 
-Similar to running a VS Code task, debug extensions can run debugger binaries when launching a debug session. For that reason, [debugging](https://code.visualstudio.com/docs/editor/debugging) is also disabled when a folder is open in Restricted Mode.
+Similar to running a VS Code task, debug extensions can run debugger binaries when launching a debug session. For that reason, [debugging]({{< ref "/UserGuide/Debugging" >}}) is also disabled when a folder is open in Restricted Mode.
 
 ​​	与运行 VS Code 任务类似，调试扩展可以在启动调试会话时运行调试器二进制文件。因此，当文件夹在受限模式下打开时，调试也会被禁用。
 
@@ -90,9 +90,9 @@ If you try to start a debug session (**Run** > **Start Debugging**) while in Res
 
 ![Workspace Trust Restricted Mode debugging dialog](./WorkspaceTrust_img/restricted-mode-debugging-dialog.png)
 
-### [Workspace settings 工作区设置](https://code.visualstudio.com/docs/editor/workspace-trust#_workspace-settings)
+### [Workspace settings 工作区设置]({{< ref "/UserGuide/WorkspaceTrust#_workspace-settings" >}})
 
-Workspace [settings](https://code.visualstudio.com/docs/getstarted/settings) are stored in the `.vscode` folder at the root of your workspace, and are therefore shared by anyone who clones the workspace repository. Some settings contain paths to executables (for example, linter binaries), which if set to point to malicious code, could do damage. For this reason, there is a set of workspace settings that are disabled when running in Restricted Mode.
+Workspace [settings]({{< ref "/GetStarted/Settings" >}}) are stored in the `.vscode` folder at the root of your workspace, and are therefore shared by anyone who clones the workspace repository. Some settings contain paths to executables (for example, linter binaries), which if set to point to malicious code, could do damage. For this reason, there is a set of workspace settings that are disabled when running in Restricted Mode.
 
 ​​	工作区设置存储在工作区根目录下的 `.vscode` 文件夹中，因此由克隆工作区存储库的任何人都共享。某些设置包含可执行文件的路径（例如，linter 二进制文件），如果将其设置为指向恶意代码，则可能会造成损害。出于此原因，在受限模式下运行时，有一组工作区设置被禁用。
 
@@ -104,9 +104,9 @@ In the Workspace Trust editor, there is a link to display the workspace settings
 
 ![Settings editor scoped by the requireTrustedWorkspace tag in a restricted workspace](./WorkspaceTrust_img/requireTrustedWorkspace-settings.png)
 
-### [Extensions 扩展](https://code.visualstudio.com/docs/editor/workspace-trust#_extensions)
+### [Extensions 扩展]({{< ref "/UserGuide/WorkspaceTrust#_extensions" >}})
 
-The VS Code [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) ecosystem is incredibly rich and diverse. People have created extensions to help with just about any programming task or editor customization. Some extensions provide full programming language support (IntelliSense, debugging, code analysis), and others let you play music or have virtual [pets](https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets).
+The VS Code [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) ecosystem is incredibly rich and diverse. People have created extensions to help with just about any programming task or editor customization. Some extensions provide full programming language support (IntelliSense, debugging, code analysis), and others let you play music or have virtual [pets](https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets).
 
 ​​	VS Code 扩展生态系统非常丰富且多样。人们创建扩展来帮助完成几乎任何编程任务或编辑器自定义。某些扩展提供完整的编程语言支持（IntelliSense、调试、代码分析），而其他扩展则允许您播放音乐或拥有虚拟宠物。
 
@@ -146,7 +146,7 @@ For example, the VS Code built-in PHP extension limits the use of the `php.valid
 
 ![PHP extension limited in Restricted Mode hover](./WorkspaceTrust_img/php-limited-hover.png)
 
-You can override an extension's Workspace Trust support level using the `extensions.supportUntrustedWorkspaces` setting described in the [Enabling extensions](https://code.visualstudio.com/docs/editor/workspace-trust#_enabling-extensions) section below.
+You can override an extension's Workspace Trust support level using the `extensions.supportUntrustedWorkspaces` setting described in the [Enabling extensions]({{< ref "/UserGuide/WorkspaceTrust#_enabling-extensions" >}}) section below.
 
 ​​	您可以使用下面启用扩展部分中描述的 `extensions.supportUntrustedWorkspaces` 设置覆盖扩展的工作区信任支持级别。
 
@@ -160,7 +160,7 @@ If you try to install an extension in Restricted Mode, you will be prompted to e
 >
 > ​​	注意：扩展作者可以通过阅读工作区信任扩展指南了解如何更新其扩展以支持工作区信任。
 
-## [Trusting a workspace 信任工作区](https://code.visualstudio.com/docs/editor/workspace-trust#_trusting-a-workspace)
+## [Trusting a workspace 信任工作区]({{< ref "/UserGuide/WorkspaceTrust#_trusting-a-workspace" >}})
 
 If you trust the authors and maintainers of a project, you can trust the project's folder on your local machine. For example, it is usually safe to trust repositories from well-known GitHub organizations such as github.com/microsoft or github.com/docker.
 
@@ -200,7 +200,7 @@ You can also at any time use:
 
 ![Manage Workspace Trust command in the Manage gear context menu](./WorkspaceTrust_img/gear-manage-workspace-trust.png)
 
-## [Selecting folders 选择文件夹](https://code.visualstudio.com/docs/editor/workspace-trust#_selecting-folders)
+## [Selecting folders 选择文件夹]({{< ref "/UserGuide/WorkspaceTrust#_selecting-folders" >}})
 
 When you trust a folder, it is added to the **Trusted Folders & Workspaces** list displayed in the Workspace Trust editor.
 
@@ -212,7 +212,7 @@ You can manually add, edit, and remove folders from this list and the active fol
 
 ​​	您可以手动添加、编辑和删除此列表中的文件夹，并且启用信任的活动文件夹将以粗体突出显示。
 
-### [Selecting a parent folder 选择父文件夹](https://code.visualstudio.com/docs/editor/workspace-trust#_selecting-a-parent-folder)
+### [Selecting a parent folder 选择父文件夹]({{< ref "/UserGuide/WorkspaceTrust#_selecting-a-parent-folder" >}})
 
 When you trust a folder via the Workspace Trust editor, you have the option to trust the parent folder. This will apply trust to the parent folder and all subfolders.
 
@@ -232,7 +232,7 @@ You can add, modify, and remove a parent folder entry from the **Trusted Folders
 
 ​​	您可以从“受信任文件夹和工作区”列表中添加、修改和删除父文件夹条目。
 
-### [Folder configurations 文件夹配置](https://code.visualstudio.com/docs/editor/workspace-trust#_folder-configurations)
+### [Folder configurations 文件夹配置]({{< ref "/UserGuide/WorkspaceTrust#_folder-configurations" >}})
 
 As mentioned above, you can trust a parent folder and all subfolders will be trusted. This allows you to control Workspace Trust via a repository's location on disk.
 
@@ -257,7 +257,7 @@ You also group and set trust on your repositories by grouping them under organiz
 └── local - Local un-published repositories
 ```
 
-## [Enabling extensions 启用扩展](https://code.visualstudio.com/docs/editor/workspace-trust#_enabling-extensions)
+## [Enabling extensions 启用扩展]({{< ref "/UserGuide/WorkspaceTrust#_enabling-extensions" >}})
 
 What happens if you want to use Restricted Mode but your favorite extension doesn't support Workspace Trust? This can happen if an extension, while useful and functional, isn't being actively maintained and hasn't declared their Workspace Trust support. To handle this scenario, you can override the extension's trust state with the `extensions.supportUntrustedWorkspaces` setting.
 
@@ -298,7 +298,7 @@ If you'd like to learn more about how extension authors evaluate and determine w
 
 ​​	如果您想详细了解扩展作者如何评估和确定在受限模式下限制哪些功能，可以阅读工作区信任扩展指南。
 
-## [Opening untrusted files 打开不受信任的文件](https://code.visualstudio.com/docs/editor/workspace-trust#_opening-untrusted-files)
+## [Opening untrusted files 打开不受信任的文件]({{< ref "/UserGuide/WorkspaceTrust#_opening-untrusted-files" >}})
 
 If you open a file that is located outside of a trusted folder, VS Code will detect that the file comes from somewhere outside the folder root and prompt you with the option to continue to open the file or open the file in a new window in Restricted Mode. Opening in Restricted Mode is the safest option and you can always reopen the file in your original VS Code window once you determine the file is trustworthy.
 
@@ -310,21 +310,21 @@ If you would prefer to not be prompted when opening files from outside trusted w
 
 ​​	如果您不想在从受信任工作区外部打开文件时收到提示，可以将 `security.workspace.trust.untrustedFiles` 设置为 `open` 。您还可以将 `security.workspace.trust.untrustedFiles` 设置为 `newWindow` ，以便始终在受限模式下创建新窗口。选中不受信任文件对话框中的“记住我的决定以适用于所有工作区”选项，将您的选择应用于 `security.workspace.trust.untrustedFiles` 用户设置。
 
-### [Opening untrusted folders 打开不受信任的文件夹](https://code.visualstudio.com/docs/editor/workspace-trust#_opening-untrusted-folders)
+### [Opening untrusted folders 打开不受信任的文件夹]({{< ref "/UserGuide/WorkspaceTrust#_opening-untrusted-folders" >}})
 
-When working with [multi-root workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces) with multiple folders, if you try to add a new folder to a trusted multi-root workspace, you will be prompted to decide if you trust the files in that folder or if not, the entire workspace will switch to Restricted Mode.
+When working with [multi-root workspaces]({{< ref "/UserGuide/Multi-rootWorkspaces" >}}) with multiple folders, if you try to add a new folder to a trusted multi-root workspace, you will be prompted to decide if you trust the files in that folder or if not, the entire workspace will switch to Restricted Mode.
 
 ​​	在使用具有多个文件夹的多根工作区时，如果您尝试将新文件夹添加到受信任的多根工作区，系统将提示您决定是否信任该文件夹中的文件，否则整个工作区将切换到受限模式。
 
 ![Untrusted folder dialog](./WorkspaceTrust_img/untrusted-folder-dialog.png)
 
-### [Empty windows (no open folder) 空窗口（无打开文件夹）](https://code.visualstudio.com/docs/editor/workspace-trust#_empty-windows-no-open-folder)
+### [Empty windows (no open folder) 空窗口（无打开文件夹）]({{< ref "/UserGuide/WorkspaceTrust#_empty-windows-no-open-folder" >}})
 
 By default, if you open a new VS Code window (instance) without opening a folder or workspace, VS Code runs the window with full trust. All installed extensions are enabled and you can use the empty window without restrictions.
 
 ​​	默认情况下，如果您在不打开文件夹或工作区的情况下打开新的 VS Code 窗口（实例），VS Code 将以完全信任运行该窗口。所有已安装的扩展都已启用，您可以毫无限制地使用空窗口。
 
-When you open a file, you will be prompted whether you want to open an [untrusted file](https://code.visualstudio.com/docs/editor/workspace-trust#_opening-untrusted-files) since there is no folder to parent it.
+When you open a file, you will be prompted whether you want to open an [untrusted file]({{< ref "/UserGuide/WorkspaceTrust#_opening-untrusted-files" >}}) since there is no folder to parent it.
 
 ​​	当您打开文件时，系统将提示您是否要打开不受信任的文件，因为没有父文件夹。
 
@@ -336,7 +336,7 @@ If you want all empty windows to be in Restricted Mode, you can set `security.wo
 
 ​​	如果您希望所有空窗口都处于受限模式，您可以将 `security.workspace.trust.emptyWindow` 设置为 `false` 。
 
-## [Settings 设置](https://code.visualstudio.com/docs/editor/workspace-trust#_settings)
+## [Settings 设置]({{< ref "/UserGuide/WorkspaceTrust#_settings" >}})
 
 Below are the available Workspace Trust settings:
 
@@ -355,13 +355,13 @@ Below are the available Workspace Trust settings:
 - `security.workspace.trust.banner` - Controls when the Restricted Mode banner is displayed. Default is `untilDismissed`.
   `security.workspace.trust.banner` - 控制何时显示受限模式横幅。默认是 `untilDismissed` 。
 
-## [Command-line switch 命令行开关](https://code.visualstudio.com/docs/editor/workspace-trust#_commandline-switch)
+## [Command-line switch 命令行开关]({{< ref "/UserGuide/WorkspaceTrust#_commandline-switch" >}})
 
 You can disable Workspace Trust via the VS Code command line by passing `--disable-workspace-trust`. This switch only affects the current session.
 
 ​​	您可以通过传递 `--disable-workspace-trust` 来通过 VS Code 命令行禁用工作区信任。此开关仅影响当前会话。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/workspace-trust#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/WorkspaceTrust#_next-steps" >}})
 
 Learn more at:
 
@@ -371,50 +371,50 @@ Learn more at:
   工作区信任扩展指南 - 了解扩展作者如何支持工作区信任。
 - [What is a VS Code "workspace"?](https://code.visualstudio.com/docs/editor/workspaces) - Find out more details about the VS Code "workspace" concept.
   什么是 VS Code “工作区”？- 了解有关 VS Code “工作区”概念的更多详细信息。
-- [GitHub Repositories extension](https://code.visualstudio.com/docs/sourcecontrol/github#_github-repositories-extension) - Work directly on a repository without cloning the source code to your local machine.
+- [GitHub Repositories extension]({{< ref "/SourceControl/CollaborateonGitHub#_github-repositories-extension" >}}) - Work directly on a repository without cloning the source code to your local machine.
   GitHub 存储库扩展 - 直接在存储库上工作，而无需将源代码克隆到本地计算机。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/workspace-trust#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/WorkspaceTrust#_common-questions" >}})
 
-### [Can I still edit my source code in Restricted Mode? 我是否仍可以在受限模式下编辑我的源代码？](https://code.visualstudio.com/docs/editor/workspace-trust#_can-i-still-edit-my-source-code-in-restricted-mode)
+### [Can I still edit my source code in Restricted Mode? 我是否仍可以在受限模式下编辑我的源代码？]({{< ref "/UserGuide/WorkspaceTrust#_can-i-still-edit-my-source-code-in-restricted-mode" >}})
 
 Yes, you can still browse and edit source code in Restricted Mode. Some language features may be disabled, but text editing is always supported.
 
 ​​	是，您仍可以在受限模式下浏览和编辑源代码。某些语言功能可能被禁用，但始终支持文本编辑。
 
-### [Where did my installed extensions go? 我的已安装扩展程序到哪里去了？](https://code.visualstudio.com/docs/editor/workspace-trust#_where-did-my-installed-extensions-go)
+### [Where did my installed extensions go? 我的已安装扩展程序到哪里去了？]({{< ref "/UserGuide/WorkspaceTrust#_where-did-my-installed-extensions-go" >}})
 
 In Restricted Mode, any extension that doesn't support Workspace Trust will be disabled, and all UI elements such as Activity bar icons and commands will not be displayed.
 
 ​​	在受限模式下，任何不支持工作区信任的扩展程序都将被禁用，并且所有 UI 元素（如活动栏图标和命令）都不会显示。
 
-You can override an extension's Workspace Trust support level with the `extensions.supportUntrustedWorkspaces` setting but do so with care. [Enabling extensions](https://code.visualstudio.com/docs/editor/workspace-trust#_enabling-extensions) has more details.
+You can override an extension's Workspace Trust support level with the `extensions.supportUntrustedWorkspaces` setting but do so with care. [Enabling extensions]({{< ref "/UserGuide/WorkspaceTrust#_enabling-extensions" >}}) has more details.
 
 ​​	您可以使用 `extensions.supportUntrustedWorkspaces` 设置覆盖扩展程序的工作区信任支持级别，但请谨慎操作。启用扩展程序有更多详细信息。
 
-### [Can I disable the Workspace Trust feature? 我可以禁用工作区信任功能吗？](https://code.visualstudio.com/docs/editor/workspace-trust#_can-i-disable-the-workspace-trust-feature)
+### [Can I disable the Workspace Trust feature? 我可以禁用工作区信任功能吗？]({{< ref "/UserGuide/WorkspaceTrust#_can-i-disable-the-workspace-trust-feature" >}})
 
 You can but it is not recommended. If you don't want VS Code to check for Workspace Trust when opening a new folder or repository, you can set `security.workspace.trust.enabled` to false. VS Code will then behave as it did before the 1.57 release.
 
 ​​	可以，但不建议这样做。如果您不希望 VS Code 在打开新文件夹或存储库时检查工作区信任，则可以将 `security.workspace.trust.enabled` 设置为 false。然后，VS Code 将按照 1.57 版本发布之前的方式运行。
 
-### [How do I untrust a folder/workspace? 如何取消信任文件夹/工作区？](https://code.visualstudio.com/docs/editor/workspace-trust#_how-do-i-untrust-a-folderworkspace)
+### [How do I untrust a folder/workspace? 如何取消信任文件夹/工作区？]({{< ref "/UserGuide/WorkspaceTrust#_how-do-i-untrust-a-folderworkspace" >}})
 
 Bring up Workspace Trust editor (**Workspaces: Manage Workspace Trust** from the Command Palette) and select the **Don't Trust** button. You can also remove the folder from the **Trusted Folders & Workspaces** list.
 
 ​​	打开工作区信任编辑器（工作区：从命令面板管理工作区信任），然后选择“不信任”按钮。您还可以从“受信任文件夹和工作区”列表中删除该文件夹。
 
-### [Why don't I see the "Don't Trust" button? 为什么我看不到“不信任”按钮？](https://code.visualstudio.com/docs/editor/workspace-trust#_why-dont-i-see-the-dont-trust-button)
+### [Why don't I see the "Don't Trust" button? 为什么我看不到“不信任”按钮？]({{< ref "/UserGuide/WorkspaceTrust#_why-dont-i-see-the-dont-trust-button" >}})
 
 If you don't see the **Don't Trust** button in the Workspace Trust dialog, the folder's trust level may be inherited from a parent folder. Review the **Trusted Folders & Workspaces** list to check if a parent folder has enabled Workspace Trust.
 
 ​​	如果在工作区信任对话框中看不到“不信任”按钮，则该文件夹的信任级别可能从父文件夹继承而来。查看受信任文件夹和工作区列表，以检查父文件夹是否已启用工作区信任。
 
-Some workflows such as connecting to a [GitHub Codespace](https://code.visualstudio.com/docs/remote/codespaces) or [attaching to a running Docker container](https://code.visualstudio.com/docs/remote/attach-container) are automatically trusted since these are managed environments to which you should already have a high level of trust.
+Some workflows such as connecting to a [GitHub Codespace]({{< ref "/Remote/GitHubCodespaces" >}}) or [attaching to a running Docker container](https://code.visualstudio.com/docs/remote/attach-container) are automatically trusted since these are managed environments to which you should already have a high level of trust.
 
 ​​	某些工作流（例如连接到 GitHub Codespace 或附加到正在运行的 Docker 容器）会自动受到信任，因为这些是您应该已经高度信任的受管环境。
 
-### [What does Workspace Trust protect against? 工作区信任可以防止什么？](https://code.visualstudio.com/docs/editor/workspace-trust#_what-does-workspace-trust-protect-against)
+### [What does Workspace Trust protect against? 工作区信任可以防止什么？]({{< ref "/UserGuide/WorkspaceTrust#_what-does-workspace-trust-protect-against" >}})
 
 Many features of VS Code allow third-party tools and extensions to run automatically, such as linting or format on save, or when you do certain operations like compiling code or debugging. An unethical person could craft an innocent looking project that would run malicious code without your knowledge and harm your local machine. Workspace Trust provides an extra layer of security by trying to prevent code execution while you are evaluating the safety and integrity of unfamiliar source code.
 

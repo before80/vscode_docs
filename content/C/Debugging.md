@@ -29,7 +29,7 @@ Visual Studio Code supports the following debuggers for C/C++ depending on the o
 - **Windows**: the Visual Studio Windows Debugger or GDB (using Cygwin or MinGW)
   Windows：Visual Studio Windows 调试器或 GDB（使用 Cygwin 或 MinGW）
 
-## [Windows debugging with GDB 使用 GDB 进行 Windows 调试](https://code.visualstudio.com/docs/cpp/cpp-debug#_windows-debugging-with-gdb)
+## [Windows debugging with GDB 使用 GDB 进行 Windows 调试]({{< ref "/C/Debugging#_windows-debugging-with-gdb" >}})
 
 You can debug Windows applications created using Cygwin or MinGW by using VS Code. To use Cygwin or MinGW debugging features, the debugger path must be set manually in the launch configuration (`launch.json`). To debug your Cygwin or MinGW application, add the `miDebuggerPath` property and set its value to the location of the corresponding gdb.exe for your Cygwin or MinGW environment.
 
@@ -47,15 +47,15 @@ Cygwin/MinGW debugging on Windows supports both attach and launch debugging scen
 
 ​​​	Windows 上的 Cygwin/MinGW 调试支持附加和启动调试方案。
 
-To learn more, see [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference).
+To learn more, see [Configure C/C++ debugging]({{< ref "/C/Configuredebugging" >}}).
 
 ​​​	若要了解详细信息，请参阅配置 C/C++ 调试。
 
-If you are debugging with GDB on Windows, see [Windows Debugging with MinGW64](https://code.visualstudio.com/docs/cpp/config-mingw).
+If you are debugging with GDB on Windows, see [Windows Debugging with MinGW64]({{< ref "/C/GCConWindows" >}}).
 
 ​​​	如果您在 Windows 上使用 GDB 进行调试，请参阅使用 MinGW64 进行 Windows 调试。
 
-## [Conditional breakpoints 条件断点](https://code.visualstudio.com/docs/cpp/cpp-debug#_conditional-breakpoints)
+## [Conditional breakpoints 条件断点]({{< ref "/C/Debugging#_conditional-breakpoints" >}})
 
 Conditional breakpoints enable you to break execution on a particular line of code only when the value of the condition is true. To set a conditional breakpoint, right-click on an existing breakpoint and select **Edit Breakpoint**. This opens a small peek window where you can enter the condition that must evaluate to true in order for the breakpoint to be hit during debugging.
 
@@ -67,13 +67,13 @@ In the editor, conditional breakpoints are indicated by a breakpoint symbol that
 
 ​​​	在编辑器中，条件断点由断点符号指示，其中包含一个黑色的等号。您可以将光标放在条件断点上以显示其条件。
 
-## [Function breakpoints 函数断点](https://code.visualstudio.com/docs/cpp/cpp-debug#_function-breakpoints)
+## [Function breakpoints 函数断点]({{< ref "/C/Debugging#_function-breakpoints" >}})
 
 Function breakpoints enable you to break execution at the beginning of a function instead of on a particular line of code. To set a function breakpoint, on the **Run** view right-click inside the **Breakpoints** section, then choose **Add Function Breakpoint** and enter the name of the function on which you want to break execution.
 
 ​​​	函数断点使您能够在函数开头中断执行，而不是在特定代码行上中断执行。要设置函数断点，请在“运行”视图中右键单击“断点”部分，然后选择“添加函数断点”，并输入要中断执行的函数的名称。
 
-## [Expression evaluation 表达式评估](https://code.visualstudio.com/docs/cpp/cpp-debug#_expression-evaluation)
+## [Expression evaluation 表达式评估]({{< ref "/C/Debugging#_expression-evaluation" >}})
 
 VS Code supports expression evaluation in several contexts:
 
@@ -90,7 +90,7 @@ Expressions in the **Watch** section take effect in the application being debugg
 
 ​​​	监视部分中的表达式在正在调试的应用程序中生效；修改变量值的表达式将在程序持续期间修改该变量。
 
-## [Multi-threaded debugging 多线程调试](https://code.visualstudio.com/docs/cpp/cpp-debug#_multithreaded-debugging)
+## [Multi-threaded debugging 多线程调试]({{< ref "/C/Debugging#_multithreaded-debugging" >}})
 
 The C/C++ extension for VS Code has the ability to debug multi-threaded programs. All threads and their call stacks appear in the **Call Stack** section:
 
@@ -98,13 +98,13 @@ The C/C++ extension for VS Code has the ability to debug multi-threaded programs
 
 ![Multi-threaded process](./Debugging_img/threads.png)
 
-## [Memory dump debugging 内存转储调试](https://code.visualstudio.com/docs/cpp/cpp-debug#_memory-dump-debugging)
+## [Memory dump debugging 内存转储调试]({{< ref "/C/Debugging#_memory-dump-debugging" >}})
 
 The C/C++ extension for VS Code also has the ability to debug memory dumps. To debug a memory dump, open your `launch.json` file and add the `coreDumpPath` (for GDB or LLDB) or `dumpPath` (for the Visual Studio Windows Debugger) property to the **C++ Launch** configuration, set its value to be a string containing the path to the memory dump. This will even work for x86 programs being debugged on an x64 machine.
 
 ​​​	VS Code 的 C/C++ 扩展程序还能够调试内存转储。若要调试内存转储，请打开您的 `launch.json` 文件，并将 `coreDumpPath` （适用于 GDB 或 LLDB）或 `dumpPath` （适用于 Visual Studio Windows 调试器）属性添加到 C++ 启动配置中，将其值设置为包含内存转储路径的字符串。这甚至适用于在 x64 机器上调试的 x86 程序。
 
-## [Additional symbols 其他符号](https://code.visualstudio.com/docs/cpp/cpp-debug#_additional-symbols)
+## [Additional symbols 其他符号]({{< ref "/C/Debugging#_additional-symbols" >}})
 
 If there are additional directories where the debugger can find symbol files (for example, `.pdb` files for the Visual Studio Windows Debugger), they can be specified by adding the `additionalSOLibSearchPath` (for GDB or LLDB) or `symbolSearchPath` (for the Visual Studio Windows Debugger).
 
@@ -124,7 +124,7 @@ or
     "symbolSearchPath": "C:\\path\\to\\symbols;C:\\another\\path\\to\\symbols"
 ```
 
-## [Locate source files 查找源文件](https://code.visualstudio.com/docs/cpp/cpp-debug#_locate-source-files)
+## [Locate source files 查找源文件]({{< ref "/C/Debugging#_locate-source-files" >}})
 
 The source file location can be changed if the source files are not located in the compilation location. This is done by simple replacement pairs added in the `sourceFileMap` section. The first match in this list will be used.
 
@@ -141,13 +141,13 @@ For example:
 }
 ```
 
-## [GDB, LLDB, and LLDB-MI Commands (GDB/LLDB) GDB、LLDB 和 LLDB-MI 命令 (GDB/LLDB)](https://code.visualstudio.com/docs/cpp/cpp-debug#_gdb-lldb-and-lldbmi-commands-gdblldb)
+## [GDB, LLDB, and LLDB-MI Commands (GDB/LLDB) GDB、LLDB 和 LLDB-MI 命令 (GDB/LLDB)]({{< ref "/C/Debugging#_gdb-lldb-and-lldbmi-commands-gdblldb" >}})
 
 For the `C++ (GDB/LLDB)` debugging environment, you can execute GDB, LLDB and LLDB-MI commands directly through the debug console with the `-exec` command, but be careful, executing commands directly in the debug console is untested and might crash VS Code in some cases.
 
 ​​​	对于 `C++ (GDB/LLDB)` 调试环境，您可以使用 `-exec` 命令直接通过调试控制台执行 GDB、LLDB 和 LLDB-MI 命令，但请小心，在调试控制台中直接执行命令未经测试，在某些情况下可能会导致 VS Code 崩溃。
 
-## [Other debugging features 其他调试功能](https://code.visualstudio.com/docs/cpp/cpp-debug#_other-debugging-features)
+## [Other debugging features 其他调试功能]({{< ref "/C/Debugging#_other-debugging-features" >}})
 
 - Unconditional breakpoints
   无条件断点
@@ -158,35 +158,35 @@ For the `C++ (GDB/LLDB)` debugging environment, you can execute GDB, LLDB and LL
 - Stepping
   单步执行
 
-For more information on debugging with VS Code, see this introduction to [debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging).
+For more information on debugging with VS Code, see this introduction to [debugging in VS Code]({{< ref "/UserGuide/Debugging" >}}).
 
 ​​​	有关使用 VS Code 进行调试的详细信息，请参阅 VS Code 中的调试简介。
 
-For additional ways to configure the launch.json file so that you can debug your C/C++ app, see [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference).
+For additional ways to configure the launch.json file so that you can debug your C/C++ app, see [Configure C/C++ debugging]({{< ref "/C/Configuredebugging" >}}).
 
 ​​​	有关配置 launch.json 文件以便调试 C/C++ 应用程序的其他方法，请参阅配置 C/C++ 调试。
 
-### [Natvis framework Natvis 框架](https://code.visualstudio.com/docs/cpp/cpp-debug#_natvis-framework)
+### [Natvis framework Natvis 框架]({{< ref "/C/Debugging#_natvis-framework" >}})
 
 You create custom views of C++ object in the debugger with the [Natvis](https://learn.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects) framework. You can read the [Custom views for native objects](https://code.visualstudio.com/docs/cpp/natvis) topic for details on using Natvis with the C/C++ extension.
 
 ​​​	您可以使用 Natvis 框架在调试器中创建 C++ 对象的自定义视图。您可以阅读本机对象的自定义视图主题，了解有关将 Natvis 与 C/C++ 扩展一起使用的详细信息。
 
-### [Debug remotely 远程调试](https://code.visualstudio.com/docs/cpp/cpp-debug#_debug-remotely)
+### [Debug remotely 远程调试]({{< ref "/C/Debugging#_debug-remotely" >}})
 
 For information about attaching to a remote process, such as debugging a process in a Docker container, see [Pipe transport](https://code.visualstudio.com/docs/cpp/pipe-transport).
 
 ​​​	有关附加到远程进程（例如调试 Docker 容器中的进程）的信息，请参阅管道传输。
 
-### [Debug the debugger 调试调试器](https://code.visualstudio.com/docs/cpp/cpp-debug#_debug-the-debugger)
+### [Debug the debugger 调试调试器]({{< ref "/C/Debugging#_debug-the-debugger" >}})
 
 If you are experiencing a debugging problem with the extension that we can't diagnose based on information in your issue report, we might ask you to enable logging and send us your logs. See [Enable logging for the debug adapter](https://code.visualstudio.com/docs/cpp/enable-logging-cpp#_enable-logging-for-the-debug-adapter) to learn how to get C/C++ extension logs.
 
 ​​​	如果您在扩展中遇到我们无法根据问题报告中的信息诊断的调试问题，我们可能会要求您启用日志记录并向我们发送您的日志。请参阅为调试适配器启用日志记录，了解如何获取 C/C++ 扩展日志。
 
-## [Known limitations 已知限制](https://code.visualstudio.com/docs/cpp/cpp-debug#_known-limitations)
+## [Known limitations 已知限制]({{< ref "/C/Debugging#_known-limitations" >}})
 
-### [Symbols and code navigation 符号和代码导航](https://code.visualstudio.com/docs/cpp/cpp-debug#_symbols-and-code-navigation)
+### [Symbols and code navigation 符号和代码导航]({{< ref "/C/Debugging#_symbols-and-code-navigation" >}})
 
 All platforms:
 
@@ -195,7 +195,7 @@ All platforms:
 - Because the extension doesn't parse function bodies, **Peek Definition** and **Go to Definition** don't work for symbols defined inside the body of a function.
   由于扩展不解析函数体，因此 Peek Definition 和 Go to Definition 不适用于函数体内部定义的符号。
 
-### [Debugging 调试](https://code.visualstudio.com/docs/cpp/cpp-debug#_debugging)
+### [Debugging 调试]({{< ref "/C/Debugging#_debugging" >}})
 
 Windows:
 
@@ -265,27 +265,27 @@ macOS:
   - When attached to a process with GDB, break-all will end the process.
     使用 GDB 附加到进程时，break-all 将结束该进程。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/cpp-debug#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/Debugging#_next-steps" >}})
 
 Read on to find out about:
 
 ​​​	继续阅读以了解：
 
 - [Configure VS Code for Windows Subsystem for Linux
-  为 Linux 的 Windows 子系统配置 VS Code](https://code.visualstudio.com/docs/cpp/config-wsl)
+  为 Linux 的 Windows 子系统配置 VS Code]({{< ref "/C/GCConWindowsSubsystemforLinux" >}})
 - [Configure VS Code for Mingw-w64 and GCC
-  为 Mingw-w64 和 GCC 配置 VS Code](https://code.visualstudio.com/docs/cpp/config-mingw)
+  为 Mingw-w64 和 GCC 配置 VS Code]({{< ref "/C/GCConWindows" >}})
 - [Configure VS Code for macOS
-  为 macOS 配置 VS Code](https://code.visualstudio.com/docs/cpp/config-clang-mac)
-- [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference) - Learn about additional debugger configuration options.
+  为 macOS 配置 VS Code]({{< ref "/C/ClangonmacOS" >}})
+- [Configure C/C++ debugging]({{< ref "/C/Configuredebugging" >}}) - Learn about additional debugger configuration options.
   配置 C/C++ 调试 - 了解其他调试器配置选项。
-- [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) - Learn about the powerful Visual Studio Code editor.
+- [Basic Editing]({{< ref "/UserGuide/BasicEditing" >}}) - Learn about the powerful Visual Studio Code editor.
   基本编辑 - 了解功能强大的 Visual Studio Code 编辑器。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - Move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - Move quickly through your source code.
   代码导航 - 快速浏览源代码。
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - use tasks to build your project and more.
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - use tasks to build your project and more.
   任务 - 使用任务构建项目等。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - find out about the Visual Studio Code debugger.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - find out about the Visual Studio Code debugger.
   调试 - 了解 Visual Studio Code 调试器。
 
 If you have any other questions or run into any issues, please file an issue on [GitHub](https://github.com/microsoft/vscode-cpptools/issues).

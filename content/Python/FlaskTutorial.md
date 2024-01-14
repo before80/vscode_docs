@@ -34,9 +34,9 @@ If you have any problems, you can search for answers or ask a question on the [P
 
 ​​​	如果您遇到任何问题，可以在 Python 扩展讨论问答中搜索答案或提问。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/python/tutorial-flask#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Python/FlaskTutorial#_prerequisites" >}})
 
-To successfully complete this Flask tutorial, you must do the following (which are the same steps as in the [general Python tutorial](https://code.visualstudio.com/docs/python/python-tutorial)):
+To successfully complete this Flask tutorial, you must do the following (which are the same steps as in the [general Python tutorial]({{< ref "/Python/Tutorial" >}})):
 
 ​​​	要成功完成本 Flask 教程，您必须执行以下操作（与常规 Python 教程中的步骤相同）：
 
@@ -61,7 +61,7 @@ To successfully complete this Flask tutorial, you must do the following (which a
 
    ​​​	在 Windows 上，确保您的 Python 解释器的位置包含在您的 PATH 环境变量中。您可以通过在命令提示符下运行 `path` 来检查位置。如果 Python 解释器的文件夹未包含在内，请打开 Windows 设置，搜索“环境”，选择为您的帐户编辑环境变量，然后编辑 Path 变量以包含该文件夹。
 
-## [Create a project environment for the Flask tutorial 为 Flask 教程创建一个项目环境](https://code.visualstudio.com/docs/python/tutorial-flask#_create-a-project-environment-for-the-flask-tutorial)
+## [Create a project environment for the Flask tutorial 为 Flask 教程创建一个项目环境]({{< ref "/Python/FlaskTutorial#_create-a-project-environment-for-the-flask-tutorial" >}})
 
 In this section, you will create a virtual environment in which Flask is installed. Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.
 
@@ -79,13 +79,13 @@ In this section, you will create a virtual environment in which Flask is install
 
    ​​​	在 VS Code 中，打开命令面板（“视图”>“命令面板”或 (Ctrl+Shift+P)）。然后选择“Python: 创建环境”命令，以在您的工作区中创建一个虚拟环境。选择 `venv` ，然后选择您想要用于创建它的 Python 环境。
 
-   > **Note**: If you want to create an environment manually, or run into error in the environment creation process, visit the [Environments](https://code.visualstudio.com/docs/python/environments#_create-a-virtual-environment-in-the-terminal) page.
+   > **Note**: If you want to create an environment manually, or run into error in the environment creation process, visit the [Environments]({{< ref "/Python/Environments#_create-a-virtual-environment-in-the-terminal" >}}) page.
    >
    > ​​​	注意：如果您想手动创建一个环境，或在环境创建过程中遇到错误，请访问“环境”页面。
 
    ![Flask tutorial: opening the Command Palette in VS Code](./FlaskTutorial_img/command-palette.png)
 
-4. After your virtual environment creation has been completed, run [**Terminal: Create New Terminal**](https://code.visualstudio.com/docs/terminal/basics) (Ctrl+Shift+`)) from the Command Palette, which creates a terminal and automatically activates the virtual environment by running its activation script.
+4. After your virtual environment creation has been completed, run [**Terminal: Create New Terminal**]({{< ref "/Terminal/TerminalBasics" >}}) (Ctrl+Shift+`)) from the Command Palette, which creates a terminal and automatically activates the virtual environment by running its activation script.
 
    ​​​	虚拟环境创建完成后，从命令面板中运行终端：创建新终端（Ctrl+Shift+`），这将创建一个终端并通过运行其激活脚本自动激活虚拟环境。
 
@@ -105,7 +105,7 @@ You now have a self-contained environment ready for writing Flask code. VS Code 
 
 ​​​	您现在拥有一个可用于编写 Flask 代码的独立环境。当您使用终端：创建新终端时，VS Code 会自动激活环境。如果您打开单独的命令提示符或终端，请通过运行 `source .venv/bin/activate` （Linux/macOS）或 `.venv\Scripts\Activate.ps1` （Windows）来激活环境。当命令提示符开头显示 (.venv) 时，说明环境已激活。
 
-## [Create and run a minimal Flask app 创建并运行一个最小的 Flask 应用程序](https://code.visualstudio.com/docs/python/tutorial-flask#_create-and-run-a-minimal-flask-app)
+## [Create and run a minimal Flask app 创建并运行一个最小的 Flask 应用程序]({{< ref "/Python/FlaskTutorial#_create-and-run-a-minimal-flask-app" >}})
 
 1. In VS Code, create a new file in your project folder named `app.py` using either **File** > **New** from the menu, pressing Ctrl+N, or using the new file icon in the Explorer View (shown below).
 
@@ -113,7 +113,7 @@ You now have a self-contained environment ready for writing Flask code. VS Code 
 
    ![Flask tutorial: new file icon in Explorer View](./FlaskTutorial_img/new-file-icon.png)
 
-2. In `app.py`, add code to import Flask and create an instance of the Flask object. If you type the code below (instead of using copy-paste), you can observe VS Code's [IntelliSense and auto-completions](https://code.visualstudio.com/docs/python/editing#_autocomplete-and-intellisense):
+2. In `app.py`, add code to import Flask and create an instance of the Flask object. If you type the code below (instead of using copy-paste), you can observe VS Code's [IntelliSense and auto-completions]({{< ref "/Python/EditingCode#_autocomplete-and-intellisense" >}}):
 
    ​​​	在 `app.py` 中，添加代码以导入 Flask 并创建一个 Flask 对象的实例。如果您键入以下代码（而不是使用复制粘贴），您可以观察 VS Code 的 IntelliSense 和自动完成功能：
 
@@ -183,9 +183,9 @@ You now have a self-contained environment ready for writing Flask code. VS Code 
 >
 > ​​​	提示：当使用与 `app.py` 不同的文件名时，例如 `webapp.py` ，您需要定义一个名为 FLASK_APP 的环境变量，并将其值设置为您选择的文件。然后，Flask 的开发服务器将使用 FLASK_APP 的值，而不是默认文件 `app.py` 。有关更多信息，请参阅 Flask 命令行界面。
 
-## [Run the app in the debugger 在调试器中运行应用程序](https://code.visualstudio.com/docs/python/tutorial-flask#_run-the-app-in-the-debugger)
+## [Run the app in the debugger 在调试器中运行应用程序]({{< ref "/Python/FlaskTutorial#_run-the-app-in-the-debugger" >}})
 
-Debugging gives you the opportunity to pause a running program on a particular line of code. When a program is paused, you can examine variables, run code in the Debug Console panel, and otherwise take advantage of the features described on [Debugging](https://code.visualstudio.com/docs/python/debugging). Running the debugger also automatically saves any modified files before the debugging session begins.
+Debugging gives you the opportunity to pause a running program on a particular line of code. When a program is paused, you can examine variables, run code in the Debug Console panel, and otherwise take advantage of the features described on [Debugging]({{< ref "/Python/Debugging" >}}). Running the debugger also automatically saves any modified files before the debugging session begins.
 
 ​​​	调试使您有机会在特定代码行上暂停正在运行的程序。当程序暂停时，您可以检查变量、在“调试控制台”面板中运行代码，还可以利用“调试”中描述的功能。运行调试器还会在调试会话开始前自动保存所有已修改的文件。
 
@@ -318,7 +318,7 @@ Debugging gives you the opportunity to pause a running program on a particular l
 
    ![Flask tutorial: appearance of the debugging status bar](./FlaskTutorial_img/debug-status-bar.png)
 
-   A debugging toolbar (shown below) also appears in VS Code containing commands in the following order: Pause (or Continue, F5), Step Over (F10), Step Into (F11), Step Out (Shift+F11), Restart (Ctrl+Shift+F5), and Stop (Shift+F5). See [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging) for a description of each command.
+   A debugging toolbar (shown below) also appears in VS Code containing commands in the following order: Pause (or Continue, F5), Step Over (F10), Step Into (F11), Step Out (Shift+F11), Restart (Ctrl+Shift+F5), and Stop (Shift+F5). See [VS Code debugging]({{< ref "/UserGuide/Debugging" >}}) for a description of each command.
 
    ​​​	VS Code 中还会显示一个调试工具栏（如下所示），其中按以下顺序排列着命令：暂停（或继续，F5）、单步执行（F10）、单步进入（F11）、单步退出（Shift+F11）、重新启动（Ctrl+Shift+F5）和停止（Shift+F5）。有关每个命令的说明，请参阅 VS Code 调试。
 
@@ -334,7 +334,7 @@ Debugging gives you the opportunity to pause a running program on a particular l
 
    ​​​	使用单步执行来运行 `now = datetime.now()` 语句。
 
-10. On the left side of the VS Code window, you see a **Variables** pane that shows local variables, such as `now`, as well as arguments, such as `name`. Below that are panes for **Watch**, **Call Stack**, and **Breakpoints** (see [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging) for details). In the **Locals** section, try expanding different values. You can also double-click values (or use F2) to modify them. Changing variables such as `now`, however, can break the program. Developers typically make changes only to correct values when the code didn't produce the right value to begin with.
+10. On the left side of the VS Code window, you see a **Variables** pane that shows local variables, such as `now`, as well as arguments, such as `name`. Below that are panes for **Watch**, **Call Stack**, and **Breakpoints** (see [VS Code debugging]({{< ref "/UserGuide/Debugging" >}}) for details). In the **Locals** section, try expanding different values. You can also double-click values (or use F2) to modify them. Changing variables such as `now`, however, can break the program. Developers typically make changes only to correct values when the code didn't produce the right value to begin with.
 
     ​​​	在 VS Code 窗口的左侧，您会看到一个变量窗格，其中显示了局部变量（例如 `now` ）以及参数（例如 `name` ）。其下方是监视、调用堆栈和断点窗格（有关详细信息，请参阅 VS Code 调试）。在“局部变量”部分，尝试展开不同的值。您还可以双击值（或使用 F2）来修改它们。但是，更改变量（例如 `now` ）可能会中断程序。通常，开发人员仅在代码一开始未生成正确的值时才进行更改以更正值。
 
@@ -384,7 +384,7 @@ Debugging gives you the opportunity to pause a running program on a particular l
 >
 > ​​​	提示：为了更轻松地重复导航到特定 URL，例如 `http://127.0.0.1:5000/hello/VSCode` ，请使用 `print` 语句输出该 URL。URL 会显示在终端中，您可以在其中使用 Ctrl+单击在浏览器中将其打开。
 
-## [Go to Definition and Peek Definition commands 转到定义和预览定义命令](https://code.visualstudio.com/docs/python/tutorial-flask#_go-to-definition-and-peek-definition-commands)
+## [Go to Definition and Peek Definition commands 转到定义和预览定义命令]({{< ref "/Python/FlaskTutorial#_go-to-definition-and-peek-definition-commands" >}})
 
 During your work with Flask or any other library, you may want to examine the code in those libraries themselves. VS Code provides two convenient commands that navigate directly to the definitions of classes and other objects in any code:
 
@@ -400,7 +400,7 @@ During your work with Flask or any other library, you may want to examine the co
 
   ![Flask tutorial: peek definition showing the Flask class inline](./FlaskTutorial_img/peek-definition.png)
 
-## [Use a template to render a page 使用模板呈现页面](https://code.visualstudio.com/docs/python/tutorial-flask#_use-a-template-to-render-a-page)
+## [Use a template to render a page 使用模板呈现页面]({{< ref "/Python/FlaskTutorial#_use-a-template-to-render-a-page" >}})
 
 The app you've created so far in this tutorial generates only plain text web pages from Python code. Although it's possible to generate HTML directly in code, developers avoid such a practice because it opens the app to [cross-site scripting (XSS) attacks](https://flask.palletsprojects.com/security/#cross-site-scripting-xss). In the `hello_there` function of this tutorial, for example, one might think to format the output in code with something like `content = "<h1>Hello there, " + clean_name + "!</h1>"`, where the result in `content` is given directly to a browser. This opening allows an attacker to place malicious HTML, including JavaScript code, in the URL that ends up in `clean_name` and thus ends up being run in the browser.
 
@@ -483,7 +483,7 @@ In this section, you create a single page using a template. In the sections that
 
    ​​​	还可以尝试使用 `<a%20value%20that%20could%20be%20HTML>` 之类的名称导航到 /hello/name URL，以查看 Flask 的自动转义功能。在浏览器中，“name”值显示为纯文本，而不是呈现实际元素。
 
-## [Serve static files 提供静态文件](https://code.visualstudio.com/docs/python/tutorial-flask#_serve-static-files)
+## [Serve static files 提供静态文件]({{< ref "/Python/FlaskTutorial#_serve-static-files" >}})
 
 Static files are of two types. First are those files like stylesheets to which a page template can just refer directly. Such files can live in any folder in the app, but are commonly placed within a `static` folder.
 
@@ -497,7 +497,7 @@ The following sections demonstrate both types of static files.
 
 ​​​	以下部分演示了两种类型的静态文件。
 
-### [Refer to static files in a template 在模板中引用静态文件](https://code.visualstudio.com/docs/python/tutorial-flask#_refer-to-static-files-in-a-template)
+### [Refer to static files in a template 在模板中引用静态文件]({{< ref "/Python/FlaskTutorial#_refer-to-static-files-in-a-template" >}})
 
 1. In the `hello_flask` folder, create a folder named `static`.
 
@@ -542,7 +542,7 @@ The following sections demonstrate both types of static files.
 
    ​​​	运行应用，导航到 /hello/name URL，并观察消息以蓝色呈现。完成后停止应用。
 
-### [Serve a static file from code 从代码提供静态文件](https://code.visualstudio.com/docs/python/tutorial-flask#_serve-a-static-file-from-code)
+### [Serve a static file from code 从代码提供静态文件]({{< ref "/Python/FlaskTutorial#_serve-a-static-file-from-code" >}})
 
 1. In the `static` folder, create a JSON data file named `data.json` with the following contents (which are meaningless sample data):
 
@@ -570,7 +570,7 @@ The following sections demonstrate both types of static files.
 
    ​​​	运行该应用并导航到 /api/data 端点，以查看是否已返回静态文件。完成后，停止该应用。
 
-## [Create multiple templates that extend a base template 创建多个扩展基本模板的模板](https://code.visualstudio.com/docs/python/tutorial-flask#_create-multiple-templates-that-extend-a-base-template)
+## [Create multiple templates that extend a base template 创建多个扩展基本模板的模板]({{< ref "/Python/FlaskTutorial#_create-multiple-templates-that-extend-a-base-template" >}})
 
 Because most web apps have more than one page, and because those pages typically share many common elements, developers separate those common elements into a base page template that other page templates can then extend (this is also called template inheritance.)
 
@@ -584,7 +584,7 @@ The following sections walk through different parts of this process.
 
 ​​​	以下部分将介绍此过程的不同部分。
 
-### [Create a base page template and styles 创建基本页面模板和样式](https://code.visualstudio.com/docs/python/tutorial-flask#_create-a-base-page-template-and-styles)
+### [Create a base page template and styles 创建基本页面模板和样式]({{< ref "/Python/FlaskTutorial#_create-a-base-page-template-and-styles" >}})
 
 A base page template in Flask contains all the shared parts of a set of pages, including references to CSS files, script files, and so forth. Base templates also define one or more **block** tags that other templates that extend the base are expected to override. A block tag is delineated by `{% block <name> %}` and `{% endblock %}` in both the base template and extended templates.
 
@@ -664,7 +664,7 @@ You can run the app at this point, but because you haven't made use of the base 
 
 ​​​	您现在可以运行该应用，但由于您尚未在任何地方使用基本模板，也未更改任何代码文件，因此结果与上一步相同。完成剩余部分以查看最终效果。
 
-### [Create a code snippet 创建代码段](https://code.visualstudio.com/docs/python/tutorial-flask#_create-a-code-snippet)
+### [Create a code snippet 创建代码段]({{< ref "/Python/FlaskTutorial#_create-a-code-snippet" >}})
 
 Because the three pages you create in the next section extend `layout.html`, it saves time to create a **code snippet** to initialize a new template file with the appropriate reference to the base template. A code snippet provides a consistent piece of code from a single source, which avoids errors that can creep in when using copy-paste from existing code.
 
@@ -706,11 +706,11 @@ Because the three pages you create in the next section extend `layout.html`, it 
 
    ​​​	现在，每当您开始键入代码片段的前缀（例如 `flext` ）时，VS Code 都会提供该代码片段作为自动完成选项，如下一部分所示。您还可以使用“插入代码片段”命令从菜单中选择一个代码片段。
 
-For more information on code snippets in general, refer to [Creating snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
+For more information on code snippets in general, refer to [Creating snippets]({{< ref "/UserGuide/Snippets" >}}).
 
 ​​​	有关代码片段的更多信息，请参阅创建片段。
 
-### [Use the code snippet to add pages 使用代码片段添加页面](https://code.visualstudio.com/docs/python/tutorial-flask#_use-the-code-snippet-to-add-pages)
+### [Use the code snippet to add pages 使用代码片段添加页面]({{< ref "/Python/FlaskTutorial#_use-the-code-snippet-to-add-pages" >}})
 
 With the code snippet in place, you can quickly create templates for the Home, About, and Contact pages.
 
@@ -760,7 +760,7 @@ With the code snippet in place, you can quickly create templates for the Home, A
        return render_template("contact.html")
    ```
 
-### [Run the app 运行应用](https://code.visualstudio.com/docs/python/tutorial-flask#_run-the-app)
+### [Run the app 运行应用]({{< ref "/Python/FlaskTutorial#_run-the-app" >}})
 
 With all the page templates in place, save `app.py`, run the app, and open a browser to see the results. Navigate between the pages to verify that the page templates are properly extending the base template.
 
@@ -772,13 +772,13 @@ With all the page templates in place, save `app.py`, run the app, and open a bro
 >
 > ​​​	注意：如果您没有看到最新更改，您可能需要对页面进行强制刷新以避免看到缓存文件。
 
-## [Optional activities 可选活动](https://code.visualstudio.com/docs/python/tutorial-flask#_optional-activities)
+## [Optional activities 可选活动]({{< ref "/Python/FlaskTutorial#_optional-activities" >}})
 
 The following sections describe additional steps that you might find helpful in your work with Python and Visual Studio Code.
 
 ​​​	以下部分介绍了在使用 Python 和 Visual Studio Code 时可能对你有所帮助的其他步骤。
 
-### [Create a requirements.txt file for the environment 为环境创建 requirements.txt 文件](https://code.visualstudio.com/docs/python/tutorial-flask#_create-a-requirementstxt-file-for-the-environment)
+### [Create a requirements.txt file for the environment 为环境创建 requirements.txt 文件]({{< ref "/Python/FlaskTutorial#_create-a-requirementstxt-file-for-the-environment" >}})
 
 When you share your app code through source control or some other means, it doesn't make sense to copy all the files in a virtual environment because recipients can always recreate the environment themselves.
 
@@ -808,7 +808,7 @@ Anyone (or any build server) that receives a copy of the project needs only to r
 >
 > ​​​	注意： `pip freeze` 会列出您在当前环境中安装的所有 Python 软件包，包括您当前未使用的软件包。该命令还会列出具有确切版本号的软件包，您可能希望将其转换为范围以便将来更灵活。有关更多信息，请参阅 pip 命令文档中的需求文件。
 
-### [Refactor the project to support further development 重构项目以支持进一步开发](https://code.visualstudio.com/docs/python/tutorial-flask#_refactor-the-project-to-support-further-development)
+### [Refactor the project to support further development 重构项目以支持进一步开发]({{< ref "/Python/FlaskTutorial#_refactor-the-project-to-support-further-development" >}})
 
 Throughout this Flask tutorial, all the app code is contained in a single `app.py` file. To allow for further development and to separate concerns, it's helpful to refactor the pieces of `app.py` into separate files.
 
@@ -906,9 +906,9 @@ Throughout this Flask tutorial, all the app code is contained in a single `app.p
    2. Navigate into the `hello_app` folder, then launch the program using `python -m flask run`.
       导航到 `hello_app` 文件夹，然后使用 `python -m flask run` 启动程序。
 
-### [Create a container for a Flask app using the Docker extension 使用 Docker 扩展为 Flask 应用程序创建容器](https://code.visualstudio.com/docs/python/tutorial-flask#_create-a-container-for-a-flask-app-using-the-docker-extension)
+### [Create a container for a Flask app using the Docker extension 使用 Docker 扩展为 Flask 应用程序创建容器]({{< ref "/Python/FlaskTutorial#_create-a-container-for-a-flask-app-using-the-docker-extension" >}})
 
-The [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. If you're interested in learning how to create a Python container for the Flask app developed in this tutorial, check out the [Python in a container](https://code.visualstudio.com/docs/containers/quickstart-python) tutorial, which will walk you through how to:
+The [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. If you're interested in learning how to create a Python container for the Flask app developed in this tutorial, check out the [Python in a container]({{< ref "/Docker/Python" >}}) tutorial, which will walk you through how to:
 
 ​​​	Docker 扩展可以轻松地从 Visual Studio Code 构建、管理和部署容器化应用程序。如果您有兴趣了解如何为本教程中开发的 Flask 应用程序创建 Python 容器，请查看 Python in a container 教程，该教程将指导您完成以下操作：
 
@@ -923,7 +923,7 @@ If you have any problems, you can search for answers or ask a question on the [P
 
 ​​​	如果您遇到任何问题，可以在 Python 扩展讨论问答中搜索答案或提问。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/python/tutorial-flask#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Python/FlaskTutorial#_next-steps" >}})
 
 Congratulations on completing this walkthrough of working with Flask in Visual Studio Code!
 
@@ -946,11 +946,11 @@ You may also want to review the following articles in the VS Code docs that are 
 ​​​	您可能还希望查看 VS Code 文档中与 Python 相关的以下文章：
 
 - [Editing Python code
-  编辑 Python 代码](https://code.visualstudio.com/docs/python/editing)
-- [Linting](https://code.visualstudio.com/docs/python/linting)
+  编辑 Python 代码]({{< ref "/Python/EditingCode" >}})
+- [Linting]({{< ref "/Python/Linting" >}})
 - [Managing Python environments
-  管理 Python 环境](https://code.visualstudio.com/docs/python/environments)
+  管理 Python 环境]({{< ref "/Python/Environments" >}})
 - [Debugging Python
-  调试 Python](https://code.visualstudio.com/docs/python/debugging)
+  调试 Python]({{< ref "/Python/Debugging" >}})
 - [Testing
-  测试](https://code.visualstudio.com/docs/python/testing)
+  测试]({{< ref "/Python/Testing" >}})

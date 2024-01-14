@@ -30,7 +30,7 @@ If you have any trouble, please file an issue for this tutorial in the [VS Code 
 
 ​​​	如果您遇到任何问题，请在此教程中提交 VS Code 文档存储库中的问题。此外，有关 CMake Tools 的更多信息，请参阅 Visual Studio Code 文档中的 CMake Tools
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/cpp/cmake-linux#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/C/CMakeToolsonLinux#_prerequisites" >}})
 
 To complete this tutorial on Ubuntu, install the following:
 
@@ -56,7 +56,7 @@ To complete this tutorial on Ubuntu, install the following:
 
    ​​​	您还需要安装 CMake、编译器、调试器和构建工具。
 
-### [Ensure that CMake is installed 确保已安装 CMake](https://code.visualstudio.com/docs/cpp/cmake-linux#_ensure-that-cmake-is-installed)
+### [Ensure that CMake is installed 确保已安装 CMake]({{< ref "/C/CMakeToolsonLinux#_ensure-that-cmake-is-installed" >}})
 
 The VS Code CMake Tools extension does its work by using CMake installed on your system. For best results, use CMake version 3.27 or greater.
 
@@ -74,7 +74,7 @@ To install CMake, or to get a later version if you don't at least have version 3
 
 ​​​	要安装 CMake，或者在您至少没有 3.27 版本的情况下获取更高版本，请参阅 Kitware APT 存储库中针对您平台的说明。安装 3.27 或更高版本。
 
-### [Ensure that development tools are installed 确保已安装开发工具](https://code.visualstudio.com/docs/cpp/cmake-linux#_ensure-that-development-tools-are-installed)
+### [Ensure that development tools are installed 确保已安装开发工具]({{< ref "/C/CMakeToolsonLinux#_ensure-that-development-tools-are-installed" >}})
 
 Although you'll use VS Code to edit your source code, you'll compile and debug the source code using the compiler, debugger, and build tools (such as `make`) installed on your system.
 
@@ -84,7 +84,7 @@ For this tutorial on Ubuntu, we'll use the GCC compiler, GDB to debug, and `make
 
 ​​​	对于 Ubuntu 上的本教程，我们将使用 GCC 编译器、GDB 进行调试，以及 `make` 来构建项目。这些工具默认情况下未安装在 Ubuntu 上，因此您需要安装它们。幸运的是，这很容易。
 
-### [Check if GCC is installed 检查是否已安装 GCC](https://code.visualstudio.com/docs/cpp/cmake-linux#_check-if-gcc-is-installed)
+### [Check if GCC is installed 检查是否已安装 GCC]({{< ref "/C/CMakeToolsonLinux#_check-if-gcc-is-installed" >}})
 
 To see if GCC is already installed on your system, open a Terminal window and enter the following command:
 
@@ -110,9 +110,9 @@ Next, install the GNU compiler, `make`, and the GDB debugger with this command:
 sudo apt-get install build-essential gdb
 ```
 
-## [Create a CMake project 创建 CMake 项目](https://code.visualstudio.com/docs/cpp/cmake-linux#_create-a-cmake-project)
+## [Create a CMake project 创建 CMake 项目]({{< ref "/C/CMakeToolsonLinux#_create-a-cmake-project" >}})
 
-If you have an existing CMake project that already has a `CMakeLists.txt` file in the root directory, you can skip to [Select a kit](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-kit) to configure your existing project.
+If you have an existing CMake project that already has a `CMakeLists.txt` file in the root directory, you can skip to [Select a kit]({{< ref "/C/CMakeToolsonLinux#_select-a-kit" >}}) to configure your existing project.
 
 ​​​	如果您有现有 CMake 项目，且其根目录中已有 `CMakeLists.txt` 文件，则可以跳至选择工具包以配置现有项目。
 
@@ -130,7 +130,7 @@ The `code .` command opens VS Code in the current working folder, which becomes 
 
 ​​​	 `code .` 命令在当前工作文件夹中打开 VS Code，该文件夹将成为您的“工作区”。
 
-### [Create a CMake hello world project 创建 CMake hello world 项目](https://code.visualstudio.com/docs/cpp/cmake-linux#_create-a-cmake-hello-world-project)
+### [Create a CMake hello world project 创建 CMake hello world 项目]({{< ref "/C/CMakeToolsonLinux#_create-a-cmake-hello-world-project" >}})
 
 The CMake Tools extension can create the files for a basic CMake project for you. Open the Command Palette (Ctrl+Shift+P) and run the **CMake: Quick Start** command:
 
@@ -158,7 +158,7 @@ This creates a hello world CMake project containing `main.cpp`, `CMakeLists.txt`
 
 ![Project contents](./CMakeToolsonLinux_img/cmake-project-contents.png)
 
-### [Select a kit 选择工具包](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-kit)
+### [Select a kit 选择工具包]({{< ref "/C/CMakeToolsonLinux#_select-a-kit" >}})
 
 Before you can use the CMake Tools extension to build a project, you need to configure it to know about the compilers on your system. Do that by scanning for 'kits'. A kit represents a toolchain, which is the compiler, linker, and other tools used to build your project. To scan for kits:
 
@@ -174,7 +174,7 @@ Before you can use the CMake Tools extension to build a project, you need to con
 
    ![Select the kit](./CMakeToolsonLinux_img/cmake-selectkit.png)
 
-## [Configure Hello World 配置 Hello World](https://code.visualstudio.com/docs/cpp/cmake-linux#_configure-hello-world)
+## [Configure Hello World 配置 Hello World]({{< ref "/C/CMakeToolsonLinux#_configure-hello-world" >}})
 
 There are two things you must do to configure your CMake project: select a kit (which you just did) and select a variant.
 
@@ -190,7 +190,7 @@ To change the kit, you can click on the kit in the **Project Status** view in th
 
 ​​​	要更改工具包，您可以在 CMake 工具边栏的“项目状态”视图中单击工具包，或从命令面板再次运行 CMake: 选择工具包命令。如果您没有看到您要查找的编译器，您可以在项目中编辑 `cmake-tools-kits.json` 文件。要编辑该文件，请打开命令面板 (Ctrl+Shift+P) 并运行 CMake: 编辑用户本地 CMake 工具包命令。
 
-### [Select a variant 选择一个变体](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variant)
+### [Select a variant 选择一个变体]({{< ref "/C/CMakeToolsonLinux#_select-a-variant" >}})
 
 A variant contains instructions for how to build your project. By default, the CMake Tools extension provides four variants, each corresponding to a default build type: `Debug`, `Release`, `MinRelSize`, and `RelWithDebInfo`. These options do the following:
 
@@ -216,13 +216,13 @@ The selected variant will appear in the Status bar next to the active kit.
 
 ​​​	选定的变体将显示在状态栏中，位于活动工具包旁边。
 
-### [CMake: Configure CMake：配置](https://code.visualstudio.com/docs/cpp/cmake-linux#_cmake-configure)
+### [CMake: Configure CMake：配置]({{< ref "/C/CMakeToolsonLinux#_cmake-configure" >}})
 
 Now that you've selected a kit and a variant, open the Command Palette (Ctrl+Shift+P) and run the **CMake: Configure** command to configure your project. This generates build files in the project's build folder using the kit and variant you selected.
 
 ​​​	现在您已选择一个工具包和一个变体，请打开命令面板（Ctrl+Shift+P）并运行 CMake：配置命令以配置您的项目。这将在项目的构建文件夹中使用您选择的工具包和变体生成构建文件。
 
-## [Build hello world 构建 hello world](https://code.visualstudio.com/docs/cpp/cmake-linux#_build-hello-world)
+## [Build hello world 构建 hello world]({{< ref "/C/CMakeToolsonLinux#_build-hello-world" >}})
 
 After configuring your project, you're ready to build. Open the Command Palette (Ctrl+Shift+P) and run the **CMake: Build** command, or select the **Build** button from the status bar.
 
@@ -236,7 +236,7 @@ You can select which targets you'd like to build by selecting **CMake: Set Build
 
 ![Build Target](./CMakeToolsonLinux_img/build-target.png)
 
-## [Debug hello world 调试 hello world](https://code.visualstudio.com/docs/cpp/cmake-linux#_debug-hello-world)
+## [Debug hello world 调试 hello world]({{< ref "/C/CMakeToolsonLinux#_debug-hello-world" >}})
 
 To run and debug your project, open `main.cpp` and put a breakpoint on the `std::cout` line. Then open the Command Palette (Ctrl+Shift+P) and run **CMake: Debug**. The debugger will stop on the `std::cout` line:
 
@@ -253,15 +253,15 @@ You've now used the VS Code CMake Tools extension to use CMake to build and debu
 ​​​	您现在已使用 VS Code CMake 工具扩展使用 CMake 在 Ubuntu 上构建和调试 C++ 应用。其他平台的步骤相同；不同之处在于您如何安装 CMake 以及您选择的平台的编译器/调试器。有关为其他平台设置编译器/调试器的说明，请参阅以下内容：
 
 - [Microsoft C++ on Windows
-  Windows 上的 Microsoft C++](https://code.visualstudio.com/docs/cpp/config-msvc)
+  Windows 上的 Microsoft C++]({{< ref "/C/MicrosoftConWindows" >}})
 - [Clang on macOS
-  macOS 上的 Clang](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+  macOS 上的 Clang]({{< ref "/C/ClangonmacOS" >}})
 - [GCC on Windows Subsystem for Linux
-  适用于 Linux 的 Windows 子系统上的 GCC](https://code.visualstudio.com/docs/cpp/config-wsl)
+  适用于 Linux 的 Windows 子系统上的 GCC]({{< ref "/C/GCConWindowsSubsystemforLinux" >}})
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/cpp/cmake-linux#_next-steps)
+## [Next steps 后续步骤]({{< ref "/C/CMakeToolsonLinux#_next-steps" >}})
 
 - Explore the [CMake Tools](https://aka.ms/cmaketoolsdocumentation) documentation
   探索 CMake 工具文档
-- Review the [Overview of the C++ extension](https://code.visualstudio.com/docs/languages/cpp)
+- Review the [Overview of the C++ extension]({{< ref "/Languages/C" >}})
   查看 C++ 扩展概述

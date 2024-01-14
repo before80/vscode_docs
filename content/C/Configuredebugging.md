@@ -14,7 +14,7 @@ draft = false
 
 
 
-A `launch.json` file is used to configure the [debugger](https://code.visualstudio.com/docs/editor/debugging) in Visual Studio Code.
+A `launch.json` file is used to configure the [debugger]({{< ref "/UserGuide/Debugging" >}}) in Visual Studio Code.
 
 ​​​	A `launch.json` 文件用于配置 Visual Studio Code 中的调试器。
 
@@ -26,37 +26,37 @@ The generated file contains two sections, one that configures debugging for laun
 
 ​​​	生成的文件包含两个部分，一个用于配置启动调试，另一个用于配置附加调试。
 
-## [Configure VS Code's debugging behavior 配置 VS Code 的调试行为](https://code.visualstudio.com/docs/cpp/launch-json-reference#_configure-vs-codes-debugging-behavior)
+## [Configure VS Code's debugging behavior 配置 VS Code 的调试行为]({{< ref "/C/Configuredebugging#_configure-vs-codes-debugging-behavior" >}})
 
 Set or change the following options to control VS Code's behavior during debugging:
 
 ​​​	设置或更改以下选项以控制 VS Code 在调试期间的行为：
 
-### [program (required) 程序（必需）](https://code.visualstudio.com/docs/cpp/launch-json-reference#_program-required)
+### [program (required) 程序（必需）]({{< ref "/C/Configuredebugging#_program-required" >}})
 
 Specifies the full path to the executable the debugger will launch or attach to. The debugger requires this location in order to load debug symbols.
 
 ​​​	指定调试器将启动或附加到的可执行文件的完整路径。调试器需要此位置才能加载调试符号。
 
-### [symbolSearchPath](https://code.visualstudio.com/docs/cpp/launch-json-reference#_symbolsearchpath)
+### [symbolSearchPath]({{< ref "/C/Configuredebugging#_symbolsearchpath" >}})
 
 Tells the Visual Studio Windows Debugger what paths to search for symbol (.pdb) files. Separate multiple paths with a semicolon. For example: `"C:\\Symbols;C:\\SymbolDir2"`.
 
 ​​​	告诉 Visual Studio Windows 调试器搜索符号 (.pdb) 文件的路径。用分号分隔多个路径。例如： `"C:\\Symbols;C:\\SymbolDir2"` .
 
-### [requireExactSource](https://code.visualstudio.com/docs/cpp/launch-json-reference#_requireexactsource)
+### [requireExactSource]({{< ref "/C/Configuredebugging#_requireexactsource" >}})
 
 An optional flag that tells the Visual Studio Windows Debugger to require current source code to match the pdb.
 
 ​​​	一个可选标志，指示 Visual Studio Windows 调试器要求当前源代码与 pdb 匹配。
 
-### [additionalSOLibSearchPath](https://code.visualstudio.com/docs/cpp/launch-json-reference#_additionalsolibsearchpath)
+### [additionalSOLibSearchPath]({{< ref "/C/Configuredebugging#_additionalsolibsearchpath" >}})
 
 Tells GDB or LLDB what paths to search for .so files. Separate multiple paths with a semicolon. For example: `"/Users/user/dir1;/Users/user/dir2"`.
 
 ​​​	告诉 GDB 或 LLDB 在何处搜索 .so 文件的路径。用分号分隔多个路径。例如： `"/Users/user/dir1;/Users/user/dir2"` .
 
-### [externalConsole](https://code.visualstudio.com/docs/cpp/launch-json-reference#_externalconsole)
+### [externalConsole]({{< ref "/C/Configuredebugging#_externalconsole" >}})
 
 Used only when launching the debuggee. For `attach`, this parameter does not change the debuggee's behavior.
 
@@ -69,13 +69,13 @@ Used only when launching the debuggee. For `attach`, this parameter does not cha
 - **macOS**: When set to true, it will spawn an external console through `lldb-mi`. When set to false, the output can be seen in VS Code's debugConsole. Due to limitations within `lldb-mi`, integratedTerminal support is not available.
   macOS：当设置为 true 时，它将通过 `lldb-mi` 生成一个外部控制台。当设置为 false 时，可以在 VS Code 的 debugConsole 中看到输出。由于 `lldb-mi` 中的限制，integratedTerminal 支持不可用。
 
-### [avoidWindowsConsoleRedirection](https://code.visualstudio.com/docs/cpp/launch-json-reference#_avoidwindowsconsoleredirection)
+### [avoidWindowsConsoleRedirection]({{< ref "/C/Configuredebugging#_avoidwindowsconsoleredirection" >}})
 
 In order to support VS Code's Integrated Terminal with gdb on Windows, the extension adds console redirection commands to the debuggee's arguments to have console input and output show up in the integrated terminal. Setting this option to `true` will disable it.
 
 ​​​	为了在 Windows 上支持 VS Code 的集成终端与 gdb，扩展将控制台重定向命令添加到被调试程序的参数中，以便控制台输入和输出显示在集成终端中。将此选项设置为 `true` 将禁用它。
 
-### [logging 日志记录](https://code.visualstudio.com/docs/cpp/launch-json-reference#_logging)
+### [logging 日志记录]({{< ref "/C/Configuredebugging#_logging" >}})
 
 Optional flags to determine what types of messages should be logged to the Debug Console.
 
@@ -94,13 +94,13 @@ Optional flags to determine what types of messages should be logged to the Debug
 - **traceResponse**: Optional flag to determine whether diagnostic adapter command and response tracing should be logged to the Debug Console. Defaults to false.
   跟踪响应：用于确定是否应将诊断适配器命令和响应跟踪记录到调试控制台的可选标志。默认为 false。
 
-### [visualizerFile 可视化程序文件](https://code.visualstudio.com/docs/cpp/launch-json-reference#_visualizerfile)
+### [visualizerFile 可视化程序文件]({{< ref "/C/Configuredebugging#_visualizerfile" >}})
 
 `.natvis` file to be used when debugging. See [Create custom views of native objects](https://learn.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects) for information on how to create Natvis files.
 
 ​​​	 `.natvis` 调试时要使用的文件。有关如何创建 Natvis 文件的信息，请参阅创建本机对象的自定义视图。
 
-### [showDisplayString](https://code.visualstudio.com/docs/cpp/launch-json-reference#_showdisplaystring)
+### [showDisplayString]({{< ref "/C/Configuredebugging#_showdisplaystring" >}})
 
 When a `visualizerFile` is specified, `showDisplayString` will enable the display string. Turning on this option can cause slower performance during debugging.
 
@@ -126,25 +126,25 @@ When a `visualizerFile` is specified, `showDisplayString` will enable the displa
 }
 ```
 
-## [Configure the target application 配置目标应用程序](https://code.visualstudio.com/docs/cpp/launch-json-reference#_configure-the-target-application)
+## [Configure the target application 配置目标应用程序]({{< ref "/C/Configuredebugging#_configure-the-target-application" >}})
 
 The following options enable you to modify the state of the target application when it is launched:
 
 ​​​	以下选项允许您在启动目标应用程序时修改其状态：
 
-### [args](https://code.visualstudio.com/docs/cpp/launch-json-reference#_args)
+### [args]({{< ref "/C/Configuredebugging#_args" >}})
 
 JSON array of command-line arguments to pass to the program when it is launched. Example `["arg1", "arg2"]`. If you are escaping characters, you will need to double escape them. For example, `["{\\\"arg1\\\": true}"]` will send `{"arg1": true}` to your application.
 
 ​​​	启动程序时要传递给该程序的命令行参数的 JSON 数组。示例 `["arg1", "arg2"]` 。如果您要转义字符，则需要对其进行双重转义。例如， `["{\\\"arg1\\\": true}"]` 会将 `{"arg1": true}` 发送到您的应用程序。
 
-### [cwd](https://code.visualstudio.com/docs/cpp/launch-json-reference#_cwd)
+### [cwd]({{< ref "/C/Configuredebugging#_cwd" >}})
 
 Sets the working directory of the application launched by the debugger.
 
 ​​​	设置由调试器启动的应用程序的工作目录。
 
-### [environment](https://code.visualstudio.com/docs/cpp/launch-json-reference#_environment)
+### [environment]({{< ref "/C/Configuredebugging#_environment" >}})
 
 Environment variables to add to the environment for the program. Example: `[ { "name": "config", "value": "Debug" } ]`, not `[ { "config": "Debug" } ]`.
 
@@ -165,55 +165,55 @@ Environment variables to add to the environment for the program. Example: `[ { "
 }
 ```
 
-## [Customizing GDB or LLDB 自定义 GDB 或 LLDB](https://code.visualstudio.com/docs/cpp/launch-json-reference#_customizing-gdb-or-lldb)
+## [Customizing GDB or LLDB 自定义 GDB 或 LLDB]({{< ref "/C/Configuredebugging#_customizing-gdb-or-lldb" >}})
 
 You can change the behavior of GDB or LLDB by setting the following options:
 
 ​​​	您可以通过设置以下选项来更改 GDB 或 LLDB 的行为：
 
-### [MIMode](https://code.visualstudio.com/docs/cpp/launch-json-reference#_mimode)
+### [MIMode]({{< ref "/C/Configuredebugging#_mimode" >}})
 
 Indicates the debugger that VS Code will connect to. Must be set to `gdb` or `lldb`. This is pre-configured on a per-operating system basis and can be changed as needed.
 
 ​​​	指示 VS Code 将连接到的调试器。必须设置为 `gdb` 或 `lldb` 。这是根据每个操作系统进行预先配置的，可以根据需要进行更改。
 
-### [miDebuggerPath](https://code.visualstudio.com/docs/cpp/launch-json-reference#_midebuggerpath)
+### [miDebuggerPath]({{< ref "/C/Configuredebugging#_midebuggerpath" >}})
 
 The path to the debugger (such as gdb). When only the executable is specified, it will search the operating system's PATH variable for a debugger (GDB on Linux and Windows, LLDB on OS X).
 
 ​​​	调试器的路径（例如 gdb）。仅指定可执行文件时，它将在操作系统 PATH 变量中搜索调试器（Linux 和 Windows 上的 GDB，OS X 上的 LLDB）。
 
-### [miDebuggerArgs](https://code.visualstudio.com/docs/cpp/launch-json-reference#_midebuggerargs)
+### [miDebuggerArgs]({{< ref "/C/Configuredebugging#_midebuggerargs" >}})
 
 Additional arguments to pass to the debugger (such as gdb).
 
 ​​​	传递给调试器的其他参数（例如 gdb）。
 
-### [stopAtEntry](https://code.visualstudio.com/docs/cpp/launch-json-reference#_stopatentry)
+### [stopAtEntry]({{< ref "/C/Configuredebugging#_stopatentry" >}})
 
 If set to true, the debugger should stop at the entry-point of the target (ignored on attach). Default value is `false`.
 
 ​​​	如果设置为 true，调试器应在目标的入口点处停止（在附加时忽略）。默认值为 `false` 。
 
-### [stopAtConnect](https://code.visualstudio.com/docs/cpp/launch-json-reference#_stopatconnect)
+### [stopAtConnect]({{< ref "/C/Configuredebugging#_stopatconnect" >}})
 
 If set to true, the debugger should stop after connecting to the target. If set to false, the debugger will continue after connecting. Default value is `false`.
 
 ​​​	如果设置为 true，则调试器应在连接到目标后停止。如果设置为 false，则调试器将在连接后继续。默认值为 `false` 。
 
-### [setupCommands](https://code.visualstudio.com/docs/cpp/launch-json-reference#_setupcommands)
+### [setupCommands]({{< ref "/C/Configuredebugging#_setupcommands" >}})
 
 JSON array of commands to execute in order to set up the GDB or LLDB. Example: `"setupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]`.
 
 ​​​	要执行的 JSON 数组命令，以便设置 GDB 或 LLDB。示例： `"setupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]` 。
 
-### [customLaunchSetupCommands](https://code.visualstudio.com/docs/cpp/launch-json-reference#_customlaunchsetupcommands)
+### [customLaunchSetupCommands]({{< ref "/C/Configuredebugging#_customlaunchsetupcommands" >}})
 
 If provided, this replaces the default commands used to launch a target with some other commands. For example, this can be "-target-attach" in order to attach to a target process. An empty command list replaces the launch commands with nothing, which can be useful if the debugger is being provided launch options as command-line options. Example: `"customLaunchSetupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]`.
 
 ​​​	如果提供，则此命令将用其他一些命令替换用于启动目标的默认命令。例如，这可以是“-target-attach”，以便附加到目标进程。空命令列表将启动命令替换为空，如果将启动选项作为命令行选项提供给调试器，这可能很有用。示例： `"customLaunchSetupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]` 。
 
-### [launchCompleteCommand](https://code.visualstudio.com/docs/cpp/launch-json-reference#_launchcompletecommand)
+### [launchCompleteCommand]({{< ref "/C/Configuredebugging#_launchcompletecommand" >}})
 
 The command to execute after the debugger is fully set up in order to cause the target process to run. Allowed values are "exec-run", "exec-continue", "None". The default value is "exec-run".
 
@@ -247,120 +247,120 @@ The command to execute after the debugger is fully set up in order to cause the 
 }
 ```
 
-### [symbolLoadInfo](https://code.visualstudio.com/docs/cpp/launch-json-reference#_symbolloadinfo)
+### [symbolLoadInfo]({{< ref "/C/Configuredebugging#_symbolloadinfo" >}})
 
 - **loadAll**: If true, symbols for all libs will be loaded, otherwise no solib symbols will be loaded. Modified by ExceptionList. Default value is true.
   loadAll：如果为 true，则将加载所有库的符号，否则将不加载任何 solib 符号。由 ExceptionList 修改。默认值为 true。
 - **exceptionList**: List of filenames (wildcards allowed) separated by semicolons `;`. Modifies behavior of LoadAll. If LoadAll is true then don't load symbols for libs that match any name in the list. Otherwise only load symbols for libs that match. Example: `"foo.so;bar.so"`
   exceptionList：以分号分隔的文件名列表（允许使用通配符） `;` 。修改 LoadAll 的行为。如果 LoadAll 为 true，则不要加载与列表中任何名称匹配的库的符号。否则，仅加载与匹配的库的符号。示例： `"foo.so;bar.so"`
 
-## [Debugging dump files 调试转储文件](https://code.visualstudio.com/docs/cpp/launch-json-reference#_debugging-dump-files)
+## [Debugging dump files 调试转储文件]({{< ref "/C/Configuredebugging#_debugging-dump-files" >}})
 
 The C/C++ extension enables debugging dump files on Windows and core dump files Linux and OS X.
 
 ​​​	C/C++ 扩展支持在 Windows 上调试转储文件，在 Linux 和 OS X 上调试核心转储文件。
 
-### [dumpPath](https://code.visualstudio.com/docs/cpp/launch-json-reference#_dumppath)
+### [dumpPath]({{< ref "/C/Configuredebugging#_dumppath" >}})
 
 If you want to debug a Windows dump file, set this to the path to the dump file to start debugging in the `launch` configuration.
 
 ​​​	如果要调试 Windows 转储文件，请将其设置为转储文件的路径，以便在 `launch` 配置中开始调试。
 
-### [coreDumpPath](https://code.visualstudio.com/docs/cpp/launch-json-reference#_coredumppath)
+### [coreDumpPath]({{< ref "/C/Configuredebugging#_coredumppath" >}})
 
 Full path to a core dump file to debug for the specified program. Set this to the path to the core dump file to start debugging in the `launch` configuration. *Note: core dump debugging is not supported with MinGw.*
 
 ​​​	要为指定程序调试的核心转储文件的完整路径。将其设置为核心转储文件的路径，以便在 `launch` 配置中开始调试。注意：MinGw 不支持核心转储调试。
 
-## [Remote debugging or debugging with a local debugger server 使用本地调试器服务器进行远程调试或调试](https://code.visualstudio.com/docs/cpp/launch-json-reference#_remote-debugging-or-debugging-with-a-local-debugger-server)
+## [Remote debugging or debugging with a local debugger server 使用本地调试器服务器进行远程调试或调试]({{< ref "/C/Configuredebugging#_remote-debugging-or-debugging-with-a-local-debugger-server" >}})
 
-### [miDebuggerServerAddress](https://code.visualstudio.com/docs/cpp/launch-json-reference#_midebuggerserveraddress)
+### [miDebuggerServerAddress]({{< ref "/C/Configuredebugging#_midebuggerserveraddress" >}})
 
 Network address of the debugger server (for example, gdbserver) to connect to for remote debugging (example: `localhost:1234`).
 
 ​​​	要连接进行远程调试的调试器服务器（例如，gdbserver）的网络地址（例如： `localhost:1234` ）。
 
-### [debugServerPath](https://code.visualstudio.com/docs/cpp/launch-json-reference#_debugserverpath)
+### [debugServerPath]({{< ref "/C/Configuredebugging#_debugserverpath" >}})
 
 Full path to debug server to launch.
 
 ​​​	要启动的调试服务器的完整路径。
 
-### [debugServerArgs](https://code.visualstudio.com/docs/cpp/launch-json-reference#_debugserverargs)
+### [debugServerArgs]({{< ref "/C/Configuredebugging#_debugserverargs" >}})
 
 Arguments for the debugger server.
 
 ​​​	调试器服务器的参数。
 
-### [serverStarted](https://code.visualstudio.com/docs/cpp/launch-json-reference#_serverstarted)
+### [serverStarted]({{< ref "/C/Configuredebugging#_serverstarted" >}})
 
 Server-started pattern to look for in the debug server output. Regular expressions are supported.
 
 ​​​	在调试服务器输出中查找的服务器已启动模式。支持正则表达式。
 
-### [filterStdout](https://code.visualstudio.com/docs/cpp/launch-json-reference#_filterstdout)
+### [filterStdout]({{< ref "/C/Configuredebugging#_filterstdout" >}})
 
 If set to true, search `stdout` stream for server-started pattern and log stdout to debug output. Default value is `true`.
 
 ​​​	如果设置为 true，则在 `stdout` 流中搜索服务器已启动模式并将 stdout 记录到调试输出。默认值为 `true` 。
 
-### [filterStderr](https://code.visualstudio.com/docs/cpp/launch-json-reference#_filterstderr)
+### [filterStderr]({{< ref "/C/Configuredebugging#_filterstderr" >}})
 
 If set to true, search `stderr` stream for server-started pattern and log stderr to debug output. Default value is `false`.
 
 ​​​	如果设置为 true，则在 `stderr` 流中搜索服务器已启动模式并将 stderr 记录到调试输出。默认值为 `false` 。
 
-### [serverLaunchTimeout](https://code.visualstudio.com/docs/cpp/launch-json-reference#_serverlaunchtimeout)
+### [serverLaunchTimeout]({{< ref "/C/Configuredebugging#_serverlaunchtimeout" >}})
 
 Time in milliseconds, for the debugger to wait for the debugServer to start up. Default is 10000.
 
 ​​​	调试器等待 debugServer 启动的时间（以毫秒为单位）。默认值为 10000。
 
-### [pipeTransport](https://code.visualstudio.com/docs/cpp/launch-json-reference#_pipetransport)
+### [pipeTransport]({{< ref "/C/Configuredebugging#_pipetransport" >}})
 
 For information about attaching to a remote process, such as debugging a process in a Docker container, see the [Pipe transport](https://code.visualstudio.com/docs/cpp/pipe-transport) settings article.
 
 ​​​	有关如何附加到远程进程（例如调试 Docker 容器中的进程）的信息，请参阅管道传输设置一文。
 
-### [hardwareBreakpoints](https://code.visualstudio.com/docs/cpp/launch-json-reference#_hardwarebreakpoints)
+### [hardwareBreakpoints]({{< ref "/C/Configuredebugging#_hardwarebreakpoints" >}})
 
 If provided, this explicitly controls hardware breakpoint behavior for remote targets. If `require` is set to true, always use hardware breakpoints. Default value is `false`. `limit` is an optional limit on the number of available hardware breakpoints to use which is only enforced when `require` is true and `limit` is greater than 0. Defaults value is 0. Example: `"hardwareBreakpoints": { require: true, limit: 6 }`.
 
 ​​​	如果提供，则此项明确控制远程目标的硬件断点行为。如果将 `require` 设置为 true，则始终使用硬件断点。默认值为 `false` 。 `limit` 是可用于的硬件断点数量的可选限制，仅在 `require` 为 true 且 `limit` 大于 0 时强制执行。默认值为 0。示例： `"hardwareBreakpoints": { require: true, limit: 6 }` 。
 
-## [Additional properties 其他属性](https://code.visualstudio.com/docs/cpp/launch-json-reference#_additional-properties)
+## [Additional properties 其他属性]({{< ref "/C/Configuredebugging#_additional-properties" >}})
 
-### [processId](https://code.visualstudio.com/docs/cpp/launch-json-reference#_processid)
+### [processId]({{< ref "/C/Configuredebugging#_processid" >}})
 
 Defaults to `${command:pickProcess}` which will display a list of available processes the debugger can attach to. We recommend that you leave this default, but the property can be explicitly set to a specific process ID for the debugger to attach to.
 
 ​​​	默认为 `${command:pickProcess}` ，这会显示调试器可以附加到的可用进程列表。我们建议您保留此默认值，但可以将该属性明确设置为调试器要附加到的特定进程 ID。
 
-### [request](https://code.visualstudio.com/docs/cpp/launch-json-reference#_request)
+### [request]({{< ref "/C/Configuredebugging#_request" >}})
 
 Indicates whether the configuration section is intended to `launch` the program or `attach` to an already running instance.
 
 ​​​	指示配置部分是打算 `launch` 程序还是 `attach` 到已运行的实例。
 
-### [targetArchitecture](https://code.visualstudio.com/docs/cpp/launch-json-reference#_targetarchitecture)
+### [targetArchitecture]({{< ref "/C/Configuredebugging#_targetarchitecture" >}})
 
 `Deprecated` This option is no longer needed as the target architecture is automatically detected.
 
 ​​​	 `Deprecated` 不再需要此选项，因为会自动检测目标体系结构。
 
-### [type](https://code.visualstudio.com/docs/cpp/launch-json-reference#_type)
+### [type]({{< ref "/C/Configuredebugging#_type" >}})
 
 Indicates the underlying debugger being used. Must be `cppvsdbg` when using the Visual Studio Windows debugger, and `cppdbg` when using GDB or LLDB. This is automatically set to the correct value when the `launch.json` file is created.
 
 ​​​	指示正在使用的底层调试器。使用 Visual Studio Windows 调试器时必须为 `cppvsdbg` ，使用 GDB 或 LLDB 时必须为 `cppdbg` 。创建 `launch.json` 文件时，会自动将其设置为正确的值。
 
-### [sourceFileMap](https://code.visualstudio.com/docs/cpp/launch-json-reference#_sourcefilemap)
+### [sourceFileMap]({{< ref "/C/Configuredebugging#_sourcefilemap" >}})
 
 This allows mapping of the compile-time paths for source to local source locations. It is an object of key/value pairs and will resolve the first string-matched path. (example: `"sourceFileMap": { "/mnt/c": "c:\\" }` will map any path returned by the debugger that begins with `/mnt/c` and convert it to `c:\\`. You can have multiple mappings in the object but they will be handled in the order provided.)
 
 ​​​	这允许将源的编译时路径映射到本地源位置。它是一个键/值对的对象，并将解析第一个字符串匹配的路径。（示例： `"sourceFileMap": { "/mnt/c": "c:\\" }` 将映射调试器返回的任何以 `/mnt/c` 开头的路径并将其转换为 `c:\\` 。您可以在对象中有多个映射，但它们将按提供的顺序处理。）
 
-## [Environment variable definitions file 环境变量定义文件](https://code.visualstudio.com/docs/cpp/launch-json-reference#_environment-variable-definitions-file)
+## [Environment variable definitions file 环境变量定义文件]({{< ref "/C/Configuredebugging#_environment-variable-definitions-file" >}})
 
 An environment variable definitions file is a simple text file containing key-value pairs in the form of `environment_variable=value`, with `#` used for comments. Multiline values are not supported.
 
@@ -388,7 +388,7 @@ MYENVRIONMENTPATH=C:\\Users\\USERNAME\\Project
 SPACED_OUT_PATH="C:\\This Has Spaces\\Project"
 ```
 
-## [Symbol Options 符号选项](https://code.visualstudio.com/docs/cpp/launch-json-reference#_symbol-options)
+## [Symbol Options 符号选项]({{< ref "/C/Configuredebugging#_symbol-options" >}})
 
 The `symbolOptions` element allows customization of how the debugger searches for symbols. Example:
 
@@ -409,7 +409,7 @@ The `symbolOptions` element allows customization of how the debugger searches fo
     }
 ```
 
-### [Properties 属性](https://code.visualstudio.com/docs/cpp/launch-json-reference#_properties)
+### [Properties 属性]({{< ref "/C/Configuredebugging#_properties" >}})
 
 **searchPaths**: Array of symbol server URLs (example: https://msdl.microsoft.com/download/symbols) or directories (example: /build/symbols) to search for .pdb files. These directories will be searched in addition to the default locations -- next to the module and the path where the pdb was originally dropped to.
 
@@ -427,13 +427,13 @@ The `symbolOptions` element allows customization of how the debugger searches fo
 
 ​​​	moduleFilter.mode：此值是 `"loadAllButExcluded"` 或 `"loadOnlyIncluded"` 。在 `"loadAllButExcluded"` 模式下，调试器会加载所有模块的符号，除非该模块位于“excludedModules”数组中。在 `"loadOnlyIncluded"` 模式下，调试器不会尝试加载任何模块的符号，除非该模块位于“includedModules”数组中，或通过“includeSymbolsNextToModules”设置包含该模块。
 
-#### [Properties for "loadAllButExcluded" mode “loadAllButExcluded”模式的属性](https://code.visualstudio.com/docs/cpp/launch-json-reference#_properties-for-loadallbutexcluded-mode)
+#### [Properties for "loadAllButExcluded" mode “loadAllButExcluded”模式的属性]({{< ref "/C/Configuredebugging#_properties-for-loadallbutexcluded-mode" >}})
 
 **moduleFilter.excludedModules**: Array of modules that the debugger should NOT load symbols for. Wildcards (example: MyCompany.*.dll) are supported.
 
 ​​​	moduleFilter.excludedModules：调试器不应加载符号的模块数组。支持通配符（例如：MyCompany.*.dll）。
 
-#### [Properties for "loadOnlyIncluded" mode “loadOnlyIncluded”模式的属性](https://code.visualstudio.com/docs/cpp/launch-json-reference#_properties-for-loadonlyincluded-mode)
+#### [Properties for "loadOnlyIncluded" mode “loadOnlyIncluded”模式的属性]({{< ref "/C/Configuredebugging#_properties-for-loadonlyincluded-mode" >}})
 
 **moduleFilter.includedModules**: Array of modules that the debugger should load symbols for. Wildcards (example: MyCompany.*.dll) are supported.
 

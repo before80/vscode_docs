@@ -14,11 +14,11 @@ draft = false
 
 
 
-Visual Studio Code's integrated terminal has many advanced features and settings, such as Unicode and emoji support, custom keybindings, and automatic replies. This topic explains these advanced features in detail. If you are new to VS Code or the integrated terminal, you may want to review the [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) topic first.
+Visual Studio Code's integrated terminal has many advanced features and settings, such as Unicode and emoji support, custom keybindings, and automatic replies. This topic explains these advanced features in detail. If you are new to VS Code or the integrated terminal, you may want to review the [Terminal Basics]({{< ref "/Terminal/TerminalBasics" >}}) topic first.
 
 ​​	Visual Studio Code 的集成终端具有许多高级功能和设置，例如 Unicode 和表情符号支持、自定义键绑定和自动回复。本主题详细介绍了这些高级功能。如果您不熟悉 VS Code 或集成终端，您可能需要先查看“终端基础知识”主题。
 
-## [Persistent sessions 持久会话](https://code.visualstudio.com/docs/terminal/advanced#_persistent-sessions)
+## [Persistent sessions 持久会话]({{< ref "/Terminal/Advanced#_persistent-sessions" >}})
 
 The terminal supports two different types of persistent sessions:
 
@@ -33,13 +33,13 @@ Both of these persistent sessions can be disabled by setting `terminal.integrate
 
 ​​	可以通过将 `terminal.integrated.enablePersistentSessions` 设置为 `false` 来禁用这两个持久会话，并且还原的滚动量由 `terminal.integrated.persistentSessionScrollback` 设置控制。可以使用 `terminal.integrated.persistentSessionReviveProcess` 独立配置进程恢复。
 
-### [Moving terminals between windows 在窗口之间移动终端](https://code.visualstudio.com/docs/terminal/advanced#_moving-terminals-between-windows)
+### [Moving terminals between windows 在窗口之间移动终端]({{< ref "/Terminal/Advanced#_moving-terminals-between-windows" >}})
 
 Terminal tabs can be dragged and dropped between VS Code windows. This can also be done manually through the Command Palette and the **Terminal: Detach Session** and **Terminal: Attach to Session** commands.
 
 ​​	可以在 VS Code 窗口之间拖放终端选项卡。也可以通过命令面板和“终端：分离会话”和“终端：附加到会话”命令手动完成此操作。
 
-### [Configure how the terminal behaves on start up 配置终端在启动时的行为](https://code.visualstudio.com/docs/terminal/advanced#_configure-how-the-terminal-behaves-on-start-up)
+### [Configure how the terminal behaves on start up 配置终端在启动时的行为]({{< ref "/Terminal/Advanced#_configure-how-the-terminal-behaves-on-start-up" >}})
 
 When opening a window, if the terminal view is visible it will either reconnect to the terminal using persistent sessions, or create a new shell. This behavior can be fine tuned with the `terminal.integrated.hideOnStartup` setting.
 
@@ -52,7 +52,7 @@ When opening a window, if the terminal view is visible it will either reconnect 
 - `always`: Always hide the terminal, even when there are persistent sessions restored.
   `always` ：始终隐藏终端，即使恢复了持久会话。
 
-## [Keybinding and the shell 键绑定和 shell](https://code.visualstudio.com/docs/terminal/advanced#_keybinding-and-the-shell)
+## [Keybinding and the shell 键绑定和 shell]({{< ref "/Terminal/Advanced#_keybinding-and-the-shell" >}})
 
 As an embedded application, the integrated terminal should intercept some, but not all, keybindings dispatched within VS Code.
 
@@ -77,19 +77,19 @@ Look at the `terminal.integrated.commandsToSkipShell` setting details to see the
 
 ​​	查看 `terminal.integrated.commandsToSkipShell` 设置详细信息以查看默认命令的完整列表。
 
-> **Tip:** `terminal.integrated.sendKeybindingsToShell` can be configured to override `terminal.integrated.commandsToSkipShell` and dispatch most keybindings to the shell. Note that this will disable keybindings like Ctrl+F to open [find](https://code.visualstudio.com/docs/terminal/basics#find) though.
+> **Tip:** `terminal.integrated.sendKeybindingsToShell` can be configured to override `terminal.integrated.commandsToSkipShell` and dispatch most keybindings to the shell. Note that this will disable keybindings like Ctrl+F to open [find]({{< ref "/Terminal/TerminalBasics#find" >}}) though.
 >
 > ​​	提示： `terminal.integrated.sendKeybindingsToShell` 可以配置为覆盖 `terminal.integrated.commandsToSkipShell` 并将大多数键绑定分派到 shell。请注意，这将禁用诸如 Ctrl+F 之类的键绑定以打开查找。
 
-### [Chords 和弦](https://code.visualstudio.com/docs/terminal/advanced#_chords)
+### [Chords 和弦]({{< ref "/Terminal/Advanced#_chords" >}})
 
 Chord keybindings are made up of two keybindings, for example Ctrl+K followed by Ctrl+C to change the line to a comment. Chords always skip the shell by default but can be disabled with `terminal.integrated.allowChords`.
 
 ​​	和弦键绑定由两个键绑定组成，例如 Ctrl+K 后跟 Ctrl+C 将行更改为注释。和弦始终默认跳过 shell，但可以使用 `terminal.integrated.allowChords` 禁用。
 
-### [macOS clear screen macOS 清除屏幕](https://code.visualstudio.com/docs/terminal/advanced#_macos-clear-screen)
+### [macOS clear screen macOS 清除屏幕]({{< ref "/Terminal/Advanced#_macos-clear-screen" >}})
 
-On macOS, Cmd+K is a common keybindings in terminals to clear the screen so VS Code also respects that, which means Cmd+K chords will not work. Cmd+K chords can be enabled by [removing the clear keybinding](https://code.visualstudio.com/docs/getstarted/keybindings#_removing-a-specific-key-binding-rule):
+On macOS, Cmd+K is a common keybindings in terminals to clear the screen so VS Code also respects that, which means Cmd+K chords will not work. Cmd+K chords can be enabled by [removing the clear keybinding]({{< ref "/GetStarted/KeyBindings#_removing-a-specific-key-binding-rule" >}}):
 
 ​​	在 macOS 上，Cmd+K 是终端中清除屏幕的常见键绑定，因此 VS Code 也尊重这一点，这意味着 Cmd+K 和弦将不起作用。可以通过删除清除键绑定来启用 Cmd+K 和弦：
 
@@ -112,13 +112,13 @@ Additionally, this keyboard shortcut will be overridden automatically if any ext
 }
 ```
 
-### [Mnemonics 助记符](https://code.visualstudio.com/docs/terminal/advanced#_mnemonics)
+### [Mnemonics 助记符]({{< ref "/Terminal/Advanced#_mnemonics" >}})
 
 Using mnemonics to access VS Code's menu (for example, Alt+F for File menu) is disabled by default in the terminal as these key events are often important hotkeys in shells. Set `terminal.integrated.allowMnemonics` to enable mnemonics, but note that this will disallow any Alt key events to go to the shell. This setting does nothing on macOS.
 
 ​​	默认情况下，在终端中禁用使用助记符访问 VS Code 的菜单（例如，Alt+F 用于文件菜单），因为这些键盘事件通常是 shell 中重要的热键。将 `terminal.integrated.allowMnemonics` 设置为启用助记符，但请注意，这将禁止任何 Alt 键事件进入 shell。此设置在 macOS 上不起作用。
 
-### [Custom sequence keybindings 自定义序列键绑定](https://code.visualstudio.com/docs/terminal/advanced#_custom-sequence-keybindings)
+### [Custom sequence keybindings 自定义序列键绑定]({{< ref "/Terminal/Advanced#_custom-sequence-keybindings" >}})
 
 The `workbench.action.terminal.sendSequence` command can be used to send a specific sequence of text to the terminal, including escape sequences that are interpreted specially by the shell. The command enables you to send Arrow keys, Enter, cursor moves, etc.
 
@@ -151,7 +151,7 @@ The `sendSequence` command only works with the `\u0000` format for using charact
 - [List of C0 and C1 control codes
   C0 和 C1 控制代码列表](https://github.com/xtermjs/xterm.js/blob/0e45909c7e79c83452493d2cd46d99c0a0bb585f/src/common/data/EscapeSequences.ts)
 
-## [Confirmation dialogs 确认对话框](https://code.visualstudio.com/docs/terminal/advanced#_confirmation-dialogs)
+## [Confirmation dialogs 确认对话框]({{< ref "/Terminal/Advanced#_confirmation-dialogs" >}})
 
 In order to avoid unnecessary output and user prompts, the terminal does not show warning dialogs when processes exit. If warnings are desirable, they can be configured with the following settings:
 
@@ -164,7 +164,7 @@ In order to avoid unnecessary output and user prompts, the terminal does not sho
 - `terminal.integrated.showExitAlert` - Controls whether to show the alert "The terminal process terminated with exit code" when exit code is non-zero.
   `terminal.integrated.showExitAlert` - 控制当退出代码非零时是否显示警报“终端进程以退出代码终止”。
 
-## [Auto replies 自动回复](https://code.visualstudio.com/docs/terminal/advanced#_auto-replies)
+## [Auto replies 自动回复]({{< ref "/Terminal/Advanced#_auto-replies" >}})
 
 The terminal can automatically provide a configurable input response to the shell if an exact sequence of output is received. The most common use case is to automatically reply to a prompt when hitting Ctrl+C in batch scripts that ask whether the user wants to terminate the batch job. To automatically dismiss this message, add this setting:
 
@@ -178,7 +178,7 @@ The terminal can automatically provide a configurable input response to the shel
 }
 ```
 
-Notice that the `\r` character used here means Enter, and much like [custom sequence keybindings](https://code.visualstudio.com/docs/terminal/advanced#_custom-sequence-keybindings), this feature supports sending escape sequences to the shell.
+Notice that the `\r` character used here means Enter, and much like [custom sequence keybindings]({{< ref "/Terminal/Advanced#_custom-sequence-keybindings" >}}), this feature supports sending escape sequences to the shell.
 
 ​​	请注意，此处使用的 `\r` 字符表示回车，与自定义序列键绑定非常相似，此功能支持向外壳发送转义序列。
 
@@ -186,13 +186,13 @@ No auto replies are configured by default as providing shell input should be an 
 
 ​​	默认情况下不配置自动回复，因为提供外壳输入应为用户的显式操作或配置。
 
-## [Change tab stop width 更改制表符宽度](https://code.visualstudio.com/docs/terminal/advanced#_change-tab-stop-width)
+## [Change tab stop width 更改制表符宽度]({{< ref "/Terminal/Advanced#_change-tab-stop-width" >}})
 
 The `terminal.integrated.tabStopWidth` setting allows configuring the tab stop width when a program running in the terminal outputs `\t`. This should typically not be needed as programs will often move the cursor instead of using the Tab character, but may be useful in some situations.
 
 ​​	当在终端中运行的程序输出 `\t` 时， `terminal.integrated.tabStopWidth` 设置允许配置制表符宽度。通常不需要这样做，因为程序通常会移动光标而不是使用 Tab 字符，但在某些情况下可能有用。
 
-## [Unicode and emoji support 支持 Unicode 和表情符号](https://code.visualstudio.com/docs/terminal/advanced#_unicode-and-emoji-support)
+## [Unicode and emoji support 支持 Unicode 和表情符号]({{< ref "/Terminal/Advanced#_unicode-and-emoji-support" >}})
 
 The terminal has both Unicode and emoji support. When these characters are used in the terminal, there are some caveats to that support:
 
@@ -205,7 +205,7 @@ The terminal has both Unicode and emoji support. When these characters are used 
 - Emoji support is limited on Windows.
   在 Windows 上，表情符号支持有限。
 
-## [Image support 图像支持](https://code.visualstudio.com/docs/terminal/advanced#_image-support)
+## [Image support 图像支持]({{< ref "/Terminal/Advanced#_image-support" >}})
 
 Images in the terminal work provided they use either the Sixel or iTerm inline image protocols. This feature is disabled by default and can be enabled with the `terminal.integrated.enableImages` setting.
 
@@ -224,15 +224,15 @@ Current limitations:
 - Images that are shorter than a cell will not work properly, this is a [design flaw with the sequences and also occurs in XTerm](https://github.com/microsoft/vscode/issues/183840#issuecomment-1569345048).
   短于一个单元格的图像无法正常工作，这是序列的一个设计缺陷，在 XTerm 中也会发生。
 
-## [Process environment 进程环境](https://code.visualstudio.com/docs/terminal/advanced#_process-environment)
+## [Process environment 进程环境]({{< ref "/Terminal/Advanced#_process-environment" >}})
 
 The process environment of the application running within the terminal is influenced by various settings and extensions and can cause the output in the VS Code terminal to look different than in other terminals.
 
 ​​	在终端内运行的应用程序的进程环境受各种设置和扩展的影响，可能导致 VS Code 终端中的输出看起来与其他终端中的输出不同。
 
-### [Environment inheritance 环境继承](https://code.visualstudio.com/docs/terminal/advanced#_environment-inheritance)
+### [Environment inheritance 环境继承]({{< ref "/Terminal/Advanced#_environment-inheritance" >}})
 
-When VS Code is opened, it launches a login shell environment in order to source a shell environment. This is done because developer tools are often added to the `$PATH` in a shell launch script like `~/.bash_profile`. By default, the terminal inherits this environment, depending on your [profile shell arguments](https://code.visualstudio.com/docs/terminal/profiles#_configuring-profiles), and means that multiple profile scripts may have run, which could cause unexpected behavior.
+When VS Code is opened, it launches a login shell environment in order to source a shell environment. This is done because developer tools are often added to the `$PATH` in a shell launch script like `~/.bash_profile`. By default, the terminal inherits this environment, depending on your [profile shell arguments]({{< ref "/Terminal/TerminalProfiles#_configuring-profiles" >}}), and means that multiple profile scripts may have run, which could cause unexpected behavior.
 
 ​​	打开 VS Code 时，它会启动一个登录 shell 环境，以便获取 shell 环境的源。这样做是因为通常在 shell 启动脚本（如 `~/.bash_profile` ）中将开发人员工具添加到 `$PATH` 中。默认情况下，终端会继承此环境（具体取决于您的配置文件 shell 参数），这意味着可能运行了多个配置文件脚本，这可能会导致意外行为。
 
@@ -240,7 +240,7 @@ This environment inheritance can be disabled on macOS and Linux via the `termina
 
 ​​	可以在 macOS 和 Linux 上通过 `terminal.integrated.inheritEnv` 设置禁用此环境继承。
 
-### [Interaction with $LANG 与 $LANG 的交互](https://code.visualstudio.com/docs/terminal/advanced#_interaction-with-lang)
+### [Interaction with $LANG 与 $LANG 的交互]({{< ref "/Terminal/Advanced#_interaction-with-lang" >}})
 
 There is some special interaction with the `$LANG` environment variable, which determines how characters are presented in the terminal. This feature is configured with the `terminal.integrated.detectLocale` setting:
 
@@ -252,7 +252,7 @@ There is some special interaction with the `$LANG` environment variable, which d
 | `auto` (default) `auto` （默认值） | Set `$LANG` similar to the `on` behavior if `$LANG` is not properly configured (is not set to a UTF or EUC encoding). 如果 `$LANG` 未正确配置（未设置为 UTF 或 EUC 编码），则将 `$LANG` 设置为类似于 `on` 的行为。 |
 | `off`                              | Do not modify `$LANG`. 不要修改 `$LANG` 。                   |
 
-### [Extension environment contributions 扩展环境贡献](https://code.visualstudio.com/docs/terminal/advanced#_extension-environment-contributions)
+### [Extension environment contributions 扩展环境贡献]({{< ref "/Terminal/Advanced#_extension-environment-contributions" >}})
 
 Extensions are able to [contribute to terminal environments](https://code.visualstudio.com/api/references/vscode-api#ExtensionContext.environmentVariableCollection), allowing them to provide some integration with the terminal. For example, the built-in Git extension injects the `GIT_ASKPASS` environment variable to allow VS Code to handle authentication to a Git remote.
 
@@ -264,7 +264,7 @@ If an extension changes the terminal environment, any existing terminals will be
 
 ![A warning icon appears next to the terminal tab when a relaunch is required, information on the changes can be viewed by hovering it](./Advanced_img/envvarcollection-warning.png)
 
-## [Windows and ConPTY Windows 和 ConPTY](https://code.visualstudio.com/docs/terminal/advanced#_windows-and-conpty)
+## [Windows and ConPTY Windows 和 ConPTY]({{< ref "/Terminal/Advanced#_windows-and-conpty" >}})
 
 VS Code's terminal is built on the [xterm.js](https://github.com/xtermjs/xterm.js) project to implement a Unix-style terminal that serializes all data into a string and pipes it through a "pseudoterminal". Historically, this was not how the terminal worked on Windows, which used the [Console API](https://learn.microsoft.com/windows/console/console-functions) to implement its console called 'conhost'.
 
@@ -280,13 +280,13 @@ Since ConPTY is an emulation layer, it does come with some quirks. The most comm
 
 ​​	由于 ConPTY 是一个模拟层，因此它确实有一些怪癖。最常见的是 ConPTY 认为自己是视口的拥有者，因此有时会重新打印屏幕。这种重新打印可能会导致意外行为，例如在运行 Terminal: Clear 命令后显示旧内容。
 
-## [Remote development 远程开发](https://code.visualstudio.com/docs/terminal/advanced#_remote-development)
+## [Remote development 远程开发]({{< ref "/Terminal/Advanced#_remote-development" >}})
 
-This section outlines topics specific to when VS Code is connected to a remote machine using a VS Code [Remote Development](https://code.visualstudio.com/docs/remote/remote-overview) extension.
+This section outlines topics specific to when VS Code is connected to a remote machine using a VS Code [Remote Development]({{< ref "/Remote/Overview" >}}) extension.
 
 ​​	本部分概述了使用 VS Code 远程开发扩展将 VS Code 连接到远程计算机时特有的主题。
 
-### [Reducing remote input latency 减少远程输入延迟](https://code.visualstudio.com/docs/terminal/advanced#_reducing-remote-input-latency)
+### [Reducing remote input latency 减少远程输入延迟]({{< ref "/Terminal/Advanced#_reducing-remote-input-latency" >}})
 
 Local echo is a feature that helps mitigate the effect of input latency on remote windows. It writes the keystrokes in the terminal in a dimmed color before the result is confirmed by the remote. By default, the feature start running when latency is detected to be above 30 ms and the timing can be configured with `terminal.integrated.localEchoLatencyThreshold`. The color of the unconfirmed characters is defined by `terminal.integrated.localEchoStyle`.
 
@@ -306,7 +306,7 @@ To disable the feature completely, use:
 }
 ```
 
-### [Local terminals in remote windows 远程窗口中的本地终端](https://code.visualstudio.com/docs/terminal/advanced#_local-terminals-in-remote-windows)
+### [Local terminals in remote windows 远程窗口中的本地终端]({{< ref "/Terminal/Advanced#_local-terminals-in-remote-windows" >}})
 
 The default **local** terminal profile can be launched in remote windows with the **Terminal: Create New Integrated Terminal (Local)** command via the Command Palette. Currently non-default profiles cannot be launched from remote windows.
 

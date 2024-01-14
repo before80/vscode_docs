@@ -14,11 +14,11 @@ draft = false
 
 
 
-"Tips and Tricks" lets you jump right in and learn how to be productive with Visual Studio Code. You'll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in [Getting Started](https://code.visualstudio.com/docs/getstarted/userinterface) and the [User Guide](https://code.visualstudio.com/docs/editor/codebasics) to learn more.
+"Tips and Tricks" lets you jump right in and learn how to be productive with Visual Studio Code. You'll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in [Getting Started]({{< ref "/GetStarted/UserInterface" >}}) and the [User Guide]({{< ref "/UserGuide/BasicEditing" >}}) to learn more.
 
 ​​	“提示和技巧”可让您直接上手并学习如何高效使用 Visual Studio Code。您将熟悉其强大的编辑、代码智能和源代码控制功能，并学习有用的键盘快捷键。本主题进行得很快，并提供了广泛的概述，因此务必查看入门和用户指南中的其他深入主题以了解更多信息。
 
-> If you don't have Visual Studio Code installed, go to the [Download](https://code.visualstudio.com/download) page. You can find platform specific setup instructions at [Running VS Code on Linux](https://code.visualstudio.com/docs/setup/linux), [macOS](https://code.visualstudio.com/docs/setup/mac), and [Windows](https://code.visualstudio.com/docs/setup/windows).
+> If you don't have Visual Studio Code installed, go to the [Download](https://code.visualstudio.com/download) page. You can find platform specific setup instructions at [Running VS Code on Linux]({{< ref "/Setup/Linux" >}}), [macOS]({{< ref "/Setup/macOS" >}}), and [Windows]({{< ref "/Setup/Windows" >}}).
 >
 > ​​	如果您尚未安装 Visual Studio Code，请转到下载页面。您可以在 Linux、macOS 和 Windows 上运行 VS Code 中找到特定于平台的安装说明。
 
@@ -26,9 +26,9 @@ Prefer a video? You can watch a recent Microsoft Build talk [Visual Studio Code 
 
 ​​	喜欢视频吗？您可以观看最近的 Microsoft Build 演讲 Visual Studio Code 提示和技巧，其中介绍了 20 个使用 VS Code 高效工作的提示和技巧。
 
-## [Basics 基础知识](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_basics)
+## [Basics 基础知识]({{< ref "/GetStarted/TipsandTricks#_basics" >}})
 
-### [Getting started 入门](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_getting-started)
+### [Getting started 入门]({{< ref "/GetStarted/TipsandTricks#_getting-started" >}})
 
 The best way of exploring VS Code hands-on is to open the **Welcome** page. You will get an overview of VS Code's customizations and features. **Help** > **Welcome**.
 
@@ -40,13 +40,13 @@ Pick a **Walkthrough** for a self-guided tour through the setup steps, features,
 
 ​​	选择演练以自导游览 VS Code 提供的设置步骤、功能和更深入的自定义项。随着您的发现和学习，演练将跟踪您的进度。
 
-If you are looking to improve your code editing skills open the **Interactive Editor Playground**. Try out VS Code's [code editing features](https://code.visualstudio.com/docs/editor/codebasics), like multi-cursor editing, [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense), Snippets, [Emmet](https://code.visualstudio.com/docs/editor/emmet), and many more. **Help** > **Editor Playground**.
+If you are looking to improve your code editing skills open the **Interactive Editor Playground**. Try out VS Code's [code editing features]({{< ref "/UserGuide/BasicEditing" >}}), like multi-cursor editing, [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}), Snippets, [Emmet]({{< ref "/UserGuide/Emmet" >}}), and many more. **Help** > **Editor Playground**.
 
 ​​	如果您想提高代码编辑技能，请打开交互式编辑器游乐场。试用 VS Code 的代码编辑功能，如多光标编辑、IntelliSense、代码片段、Emmet 等。帮助 > 编辑器游乐场。
 
 ![Interactive editor playground](./TipsandTricks_img/interactive_playground.png)
 
-### [Command Palette 命令面板](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-palette)
+### [Command Palette 命令面板]({{< ref "/GetStarted/TipsandTricks#_command-palette" >}})
 
 Access all available commands based on your current context.
 
@@ -58,7 +58,7 @@ Keyboard Shortcut: Ctrl+Shift+P
 
 ![Command Palette](./TipsandTricks_img/OpenCommandPalatte.gif)
 
-### [Default keyboard shortcuts 默认键盘快捷键](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_default-keyboard-shortcuts)
+### [Default keyboard shortcuts 默认键盘快捷键]({{< ref "/GetStarted/TipsandTricks#_default-keyboard-shortcuts" >}})
 
 All of the commands are in the **Command Palette** with the associated key binding (if it exists). If you forget a keyboard shortcut, use the **Command Palette** to help you out.
 
@@ -66,7 +66,7 @@ All of the commands are in the **Command Palette** with the associated key bindi
 
 ![keyboard references](./TipsandTricks_img/keyboard-references.png)
 
-### [Keyboard reference sheets 键盘参考表](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_keyboard-reference-sheets)
+### [Keyboard reference sheets 键盘参考表]({{< ref "/GetStarted/TipsandTricks#_keyboard-reference-sheets" >}})
 
 Download the keyboard shortcut reference sheet for your platform ([macOS](https://go.microsoft.com/fwlink/?linkid=832143), [Windows](https://go.microsoft.com/fwlink/?linkid=832145), [Linux](https://go.microsoft.com/fwlink/?linkid=832144)).
 
@@ -74,7 +74,7 @@ Download the keyboard shortcut reference sheet for your platform ([macOS](https:
 
 ![Keyboard Reference Sheet](./TipsandTricks_img/KeyboardReferenceSheet.png)
 
-### [Quick Open 快速打开](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_quick-open)
+### [Quick Open 快速打开]({{< ref "/GetStarted/TipsandTricks#_quick-open" >}})
 
 Quickly open files.
 
@@ -98,19 +98,19 @@ Typing commands such as `edt` and `term` followed by a space will bring up dropd
 
 ![term command in Quick Open](./TipsandTricks_img/term-quick-open.png)
 
-### [Navigate between recently opened files 在最近打开的文件之间导航](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigate-between-recently-opened-files)
+### [Navigate between recently opened files 在最近打开的文件之间导航]({{< ref "/GetStarted/TipsandTricks#_navigate-between-recently-opened-files" >}})
 
 Repeat the **Quick Open** keyboard shortcut to cycle quickly between recently opened files.
 
 ​​	重复快速打开键盘快捷键，可在最近打开的文件之间快速循环。
 
-### [Open multiple files from Quick Open 从快速打开中打开多个文件](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_open-multiple-files-from-quick-open)
+### [Open multiple files from Quick Open 从快速打开中打开多个文件]({{< ref "/GetStarted/TipsandTricks#_open-multiple-files-from-quick-open" >}})
 
 You can open multiple files from **Quick Open** by pressing the Right arrow key. This will open the currently selected file in the background and you can continue selecting files from **Quick Open**.
 
 ​​	您可以通过按向右箭头键从快速打开中打开多个文件。这将在后台打开当前选定的文件，您可以继续从快速打开中选择文件。
 
-### [Navigate between recently opened folders and workspaces 在最近打开的文件夹和工作区之间导航](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigate-between-recently-opened-folders-and-workspaces)
+### [Navigate between recently opened folders and workspaces 在最近打开的文件夹和工作区之间导航]({{< ref "/GetStarted/TipsandTricks#_navigate-between-recently-opened-folders-and-workspaces" >}})
 
 Open Recent
 
@@ -124,13 +124,13 @@ Displays a Quick Pick dropdown with the list from **File** > **Open Recent** wit
 
 ​​	显示一个快速选择下拉列表，其中包含“文件”>“打开最近”中的列表，其中包含最近打开的文件夹和工作区，后跟文件。
 
-## [Command line 命令行](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line)
+## [Command line 命令行]({{< ref "/GetStarted/TipsandTricks#_command-line" >}})
 
 VS Code has a powerful command line interface (CLI) which allows you to customize how the editor is launched to support various scenarios.
 
 ​​	VS Code 具有强大的命令行界面 (CLI)，可让您自定义编辑器的启动方式以支持各种方案。
 
-> Make sure the VS Code binary is on your path so you can simply type 'code' to launch VS Code. See the platform specific setup topics if VS Code is added to your environment path during installation ([Running VS Code on Linux](https://code.visualstudio.com/docs/setup/linux), [macOS](https://code.visualstudio.com/docs/setup/mac), [Windows](https://code.visualstudio.com/docs/setup/windows)).
+> Make sure the VS Code binary is on your path so you can simply type 'code' to launch VS Code. See the platform specific setup topics if VS Code is added to your environment path during installation ([Running VS Code on Linux]({{< ref "/Setup/Linux" >}}), [macOS]({{< ref "/Setup/macOS" >}}), [Windows]({{< ref "/Setup/Windows" >}})).
 >
 > ​​	确保 VS Code 二进制文件位于您的路径中，以便您可以简单地键入“code”来启动 VS Code。如果在安装期间将 VS Code 添加到您的环境路径中，请参阅特定于平台的设置主题（在 Linux、macOS、Windows 上运行 VS Code）。
 
@@ -160,15 +160,15 @@ code --help
 code --disable-extensions .
 ```
 
-### [.vscode folder .vscode 文件夹](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_vscode-folder)
+### [.vscode folder .vscode 文件夹]({{< ref "/GetStarted/TipsandTricks#_vscode-folder" >}})
 
 Workspace specific files are in a `.vscode` folder at the root. For example, `tasks.json` for the Task Runner and `launch.json` for the debugger.
 
 ​​	特定于工作区的文件位于根目录下的 `.vscode` 文件夹中。例如， `tasks.json` 用于任务运行程序， `launch.json` 用于调试器。
 
-## [Status Bar 状态栏](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_status-bar)
+## [Status Bar 状态栏]({{< ref "/GetStarted/TipsandTricks#_status-bar" >}})
 
-### [Errors and warnings 错误和警告](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_errors-and-warnings)
+### [Errors and warnings 错误和警告]({{< ref "/GetStarted/TipsandTricks#_errors-and-warnings" >}})
 
 Keyboard Shortcut: Ctrl+Shift+M
 
@@ -188,7 +188,7 @@ You can filter problems either by type ('errors', 'warnings') or text matching.
 
 ​​	您可以按类型（“错误”、“警告”）或匹配的文本筛选问题。
 
-### [Change language mode 更改语言模式](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_change-language-mode)
+### [Change language mode 更改语言模式]({{< ref "/GetStarted/TipsandTricks#_change-language-mode" >}})
 
 Keyboard Shortcut: Ctrl+K M
 
@@ -200,7 +200,7 @@ If you want to persist the new language mode for that file type, you can use the
 
 ​​	如果您想对该文件类型永久保留新的语言模式，可以使用“配置文件关联”命令将当前文件扩展名与已安装的语言关联。
 
-## [Customization 自定义](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_customization)
+## [Customization 自定义]({{< ref "/GetStarted/TipsandTricks#_customization" >}})
 
 There are many things you can do to customize VS Code.
 
@@ -219,7 +219,7 @@ There are many things you can do to customize VS Code.
 - Install extensions
   安装扩展
 
-### [Change your theme 更改主题](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_change-your-theme)
+### [Change your theme 更改主题]({{< ref "/GetStarted/TipsandTricks#_change-your-theme" >}})
 
 Keyboard Shortcut: Ctrl+K Ctrl+T
 
@@ -237,7 +237,7 @@ Additionally, you can install and change your File Icon themes.
 
 ![File icon themes](./TipsandTricks_img/PreviewFileIconThemes.gif)
 
-### [Keymaps 按键映射](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_keymaps)
+### [Keymaps 按键映射]({{< ref "/GetStarted/TipsandTricks#_keymaps" >}})
 
 Are you used to keyboard shortcuts from another editor? You can install a Keymap extension that brings the keyboard shortcuts from your favorite editor to VS Code. Go to **Preferences** > **Migrate Keyboard Shortcuts from...** to see the current list on the [Marketplace](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs). Some of the more popular ones:
 
@@ -257,7 +257,7 @@ Are you used to keyboard shortcuts from another editor? You can install a Keymap
 - [Visual Studio Keymap
   Visual Studio 键映射](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)
 
-### [Customize your keyboard shortcuts 自定义键盘快捷键](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_customize-your-keyboard-shortcuts)
+### [Customize your keyboard shortcuts 自定义键盘快捷键]({{< ref "/GetStarted/TipsandTricks#_customize-your-keyboard-shortcuts" >}})
 
 Keyboard Shortcut: Ctrl+K Ctrl+S
 
@@ -271,11 +271,11 @@ You can search for shortcuts and add your own keybindings to the `keybindings.js
 
 ![customize keyboard shortcuts](./TipsandTricks_img/KeyboardShortcuts.gif)
 
-See more in [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings).
+See more in [Key Bindings for Visual Studio Code]({{< ref "/GetStarted/KeyBindings" >}}).
 
 ​​	在 Visual Studio Code 的键绑定中查看更多内容。
 
-### [Tune your settings 调整您的设置](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_tune-your-settings)
+### [Tune your settings 调整您的设置]({{< ref "/GetStarted/TipsandTricks#_tune-your-settings" >}})
 
 By default VS Code shows the Settings editor, you can find settings listed below in a search bar, but you can still edit the underlying `settings.json` file by using the **Open User Settings (JSON)** command or by changing your default settings editor with the `workbench.settings.editor` setting.
 
@@ -409,11 +409,11 @@ Remove these files / folders from search results.
 }
 ```
 
-And many, many [other customizations](https://code.visualstudio.com/docs/getstarted/settings).
+And many, many [other customizations]({{< ref "/GetStarted/Settings" >}}).
 
 ​​	还有许多其他自定义设置。
 
-### [Language specific settings 特定语言设置](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_language-specific-settings)
+### [Language specific settings 特定语言设置]({{< ref "/GetStarted/TipsandTricks#_language-specific-settings" >}})
 
 You can scope the settings that you only want for specific languages by the language identifier. You can find a list of commonly used language IDs in the [Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers) reference.
 
@@ -431,7 +431,7 @@ You can scope the settings that you only want for specific languages by the lang
 
 ![language based settings](./TipsandTricks_img/lang-based-settings.png)
 
-### [Add JSON validation 添加 JSON 验证](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_add-json-validation)
+### [Add JSON validation 添加 JSON 验证]({{< ref "/GetStarted/TipsandTricks#_add-json-validation" >}})
 
 Enabled by default for many file types. Create your own schema and validation in `settings.json`
 
@@ -486,17 +486,17 @@ or a custom schema
 ]
 ```
 
-See more in the [JSON](https://code.visualstudio.com/docs/languages/json) documentation.
+See more in the [JSON]({{< ref "/Languages/JSON" >}}) documentation.
 
 ​​	在 JSON 文档中查看更多信息。
 
-## [Extensions 扩展](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_extensions)
+## [Extensions 扩展]({{< ref "/GetStarted/TipsandTricks#_extensions" >}})
 
 Keyboard Shortcut: Ctrl+Shift+X
 
 ​​	键盘快捷键：Ctrl+Shift+X
 
-### [Find extensions 查找扩展](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_find-extensions)
+### [Find extensions 查找扩展]({{< ref "/GetStarted/TipsandTricks#_find-extensions" >}})
 
 1. In the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode).
    在 VS Code Marketplace 中。
@@ -507,7 +507,7 @@ Keyboard Shortcut: Ctrl+Shift+X
 4. Community curated extension lists, such as [awesome-vscode](https://github.com/viatsko/awesome-vscode).
    社区策划的扩展列表，例如 awesome-vscode。
 
-### [Install extensions 安装扩展](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_install-extensions)
+### [Install extensions 安装扩展]({{< ref "/GetStarted/TipsandTricks#_install-extensions" >}})
 
 In the **Extensions** view, you can search via the search bar or click the **More Actions** (...) button to filter and sort by install count.
 
@@ -515,7 +515,7 @@ In the **Extensions** view, you can search via the search bar or click the **Mor
 
 ![install extensions](./TipsandTricks_img/show-popular-extensions.png)
 
-### [Extension recommendations 扩展建议](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_extension-recommendations)
+### [Extension recommendations 扩展建议]({{< ref "/GetStarted/TipsandTricks#_extension-recommendations" >}})
 
 In the **Extensions** view, click **Show Recommended Extensions** in the **More Actions** (...) button menu.
 
@@ -523,7 +523,7 @@ In the **Extensions** view, click **Show Recommended Extensions** in the **More 
 
 ![show recommended extensions](./TipsandTricks_img/show-recommended-extensions.png)
 
-### [Creating my own extension 创建自己的扩展](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_creating-my-own-extension)
+### [Creating my own extension 创建自己的扩展]({{< ref "/GetStarted/TipsandTricks#_creating-my-own-extension" >}})
 
 Are you interested in creating your own extension? You can learn how to do this in the [Extension API documentation](https://code.visualstudio.com/api), specifically check out the [documentation on contribution points](https://code.visualstudio.com/api/references/contribution-points).
 
@@ -547,9 +547,9 @@ Are you interested in creating your own extension? You can learn how to do this 
   代码片段
 - jsonValidation
 
-## [Files and folders 文件和文件夹](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_files-and-folders)
+## [Files and folders 文件和文件夹]({{< ref "/GetStarted/TipsandTricks#_files-and-folders" >}})
 
-### [Integrated Terminal 集成终端](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_integrated-terminal)
+### [Integrated Terminal 集成终端]({{< ref "/GetStarted/TipsandTricks#_integrated-terminal" >}})
 
 Keyboard Shortcut: Ctrl+`
 
@@ -561,12 +561,12 @@ Further reading:
 
 ​​	延伸阅读：
 
-- [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics) documentation
+- [Integrated Terminal]({{< ref "/Terminal/TerminalBasics" >}}) documentation
   集成终端文档
 - [Mastering VS Code's Terminal article
   掌握 VS Code 的终端文章](https://www.growingwiththeweb.com/2017/03/mastering-vscodes-terminal.html)
 
-### [Toggle Sidebar 切换侧边栏](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_toggle-sidebar)
+### [Toggle Sidebar 切换侧边栏]({{< ref "/GetStarted/TipsandTricks#_toggle-sidebar" >}})
 
 Keyboard Shortcut: Ctrl+B
 
@@ -574,13 +574,13 @@ Keyboard Shortcut: Ctrl+B
 
 ![toggle side bar](./TipsandTricks_img/toggle_side_bar.gif)
 
-### [Toggle Panel 切换面板](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_toggle-panel)
+### [Toggle Panel 切换面板]({{< ref "/GetStarted/TipsandTricks#_toggle-panel" >}})
 
 Keyboard Shortcut: Ctrl+J
 
 ​​	键盘快捷键：Ctrl+J
 
-### [Zen mode 禅模式](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_zen-mode)
+### [Zen mode 禅模式]({{< ref "/GetStarted/TipsandTricks#_zen-mode" >}})
 
 Keyboard Shortcut: Ctrl+K Z
 
@@ -596,7 +596,7 @@ Press Esc twice to exit Zen Mode.
 
 ​​	按两次 Esc 退出禅模式。
 
-### [Side by side editing 并排编辑](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_side-by-side-editing)
+### [Side by side editing 并排编辑]({{< ref "/GetStarted/TipsandTricks#_side-by-side-editing" >}})
 
 Keyboard Shortcut: Ctrl+\
 
@@ -608,7 +608,7 @@ You can also drag and drop editors to create new editor groups and move editors 
 
 ![split editors](./TipsandTricks_img/split_editor.gif)
 
-### [Switch between editors 在编辑器之间切换](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_switch-between-editors)
+### [Switch between editors 在编辑器之间切换]({{< ref "/GetStarted/TipsandTricks#_switch-between-editors" >}})
 
 Keyboard Shortcut: Ctrl+1, Ctrl+2, Ctrl+3
 
@@ -616,13 +616,13 @@ Keyboard Shortcut: Ctrl+1, Ctrl+2, Ctrl+3
 
 ![navigate editors](./TipsandTricks_img/navigate_editors.gif)
 
-### [Move to Explorer window 移至资源管理器窗口](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_move-to-explorer-window)
+### [Move to Explorer window 移至资源管理器窗口]({{< ref "/GetStarted/TipsandTricks#_move-to-explorer-window" >}})
 
 Keyboard Shortcut: Ctrl+Shift+E
 
 ​​	键盘快捷键：Ctrl+Shift+E
 
-### [Create or open a file 创建或打开文件](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_create-or-open-a-file)
+### [Create or open a file 创建或打开文件]({{< ref "/GetStarted/TipsandTricks#_create-or-open-a-file" >}})
 
 Keyboard Shortcut: Ctrl+click (Cmd+click on macOS)
 
@@ -634,13 +634,13 @@ You can quickly open a file or image or create a new file by moving the cursor t
 
 ![create and open file](./TipsandTricks_img/create_open_file.gif)
 
-### [Close the currently opened folder 关闭当前打开的文件夹](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_close-the-currently-opened-folder)
+### [Close the currently opened folder 关闭当前打开的文件夹]({{< ref "/GetStarted/TipsandTricks#_close-the-currently-opened-folder" >}})
 
 Keyboard Shortcut: Ctrl+K F
 
 ​​	键盘快捷键：Ctrl+K F
 
-### [Navigation history 导航历史记录](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigation-history)
+### [Navigation history 导航历史记录]({{< ref "/GetStarted/TipsandTricks#_navigation-history" >}})
 
 Navigate entire history: Ctrl+Tab
 
@@ -656,7 +656,7 @@ Navigate forward: Alt+Right
 
 ![navigate history](./TipsandTricks_img/navigate_history.gif)
 
-### [File associations 文件关联](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_file-associations)
+### [File associations 文件关联]({{< ref "/GetStarted/TipsandTricks#_file-associations" >}})
 
 Create language associations for files that aren't detected correctly. For example, many configuration files with custom file extensions are actually JSON.
 
@@ -668,7 +668,7 @@ Create language associations for files that aren't detected correctly. For examp
 }
 ```
 
-### [Preventing dirty writes 防止脏写](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_preventing-dirty-writes)
+### [Preventing dirty writes 防止脏写]({{< ref "/GetStarted/TipsandTricks#_preventing-dirty-writes" >}})
 
 VS Code will show you an error message when you try to save a file that cannot be saved because it has changed on disk. VS Code blocks saving the file to prevent overwriting changes that have been made outside of the editor.
 
@@ -688,7 +688,7 @@ Use the actions in the editor toolbar to resolve the save conflict. You can eith
 
 ​​	注意：该文件将保持脏状态，并且在您选择其中一项操作来解决冲突之前无法保存。
 
-## [Editing hacks 编辑技巧](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks)
+## [Editing hacks 编辑技巧]({{< ref "/GetStarted/TipsandTricks#_editing-hacks" >}})
 
 Here is a selection of common features for editing code. If the keyboard shortcuts aren't comfortable for you, consider installing a [keymap extension](https://marketplace.visualstudio.com/search?target=VSCode&category=Keymaps&sortBy=Installs) for your old editor.
 
@@ -698,7 +698,7 @@ Here is a selection of common features for editing code. If the keyboard shortcu
 
 ​​	提示：您可以在扩展视图中通过将搜索过滤为 `@recommended:keymaps` 来查看推荐的按键映射扩展。
 
-### [Multi cursor selection 多光标选择](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection)
+### [Multi cursor selection 多光标选择]({{< ref "/GetStarted/TipsandTricks#_multi-cursor-selection" >}})
 
 To add cursors at arbitrary positions, select a position with your mouse and use Alt+Click (Option+Click on macOS).
 
@@ -720,7 +720,7 @@ You can add additional cursors to all occurrences of the current selection with 
 
 ![add cursor to all occurrences of current selection](./TipsandTricks_img/add_cursor_current_selection.gif)
 
-> Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the `editor.multiCursorModifier` [setting](https://code.visualstudio.com/docs/getstarted/settings) . See [Multi-cursor Modifier](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier) for details.
+> Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the `editor.multiCursorModifier` [setting]({{< ref "/GetStarted/Settings" >}}) . See [Multi-cursor Modifier]({{< ref "/UserGuide/BasicEditing#_multicursor-modifier" >}}) for details.
 >
 > ​​	注意：您还可以将修饰键更改为 Ctrl/Cmd，以便使用 `editor.multiCursorModifier` 设置应用多个光标。有关详细信息，请参阅多光标修饰键。
 
@@ -730,7 +730,7 @@ If you do not want to add all occurrences of the current selection, you can use 
 
 ![add cursor to next occurrences of current selection one by one](./TipsandTricks_img/add_cursor_current_selection_one_by_one.gif)
 
-### [Column (box) selection 列（框）选择](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_column-box-selection)
+### [Column (box) selection 列（框）选择]({{< ref "/GetStarted/TipsandTricks#_column-box-selection" >}})
 
 You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while you drag your mouse. A separate cursor will be added to the end of each selected line.
 
@@ -738,11 +738,11 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 ![Column text selection](./TipsandTricks_img/column-select.gif)
 
-You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/codebasics#_column-box-selection) to trigger column selection.
+You can also use [keyboard shortcuts]({{< ref "/UserGuide/BasicEditing#_column-box-selection" >}}) to trigger column selection.
 
 ​​	您还可以使用键盘快捷键触发列选择。
 
-### [Vertical rulers 垂直标尺](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_vertical-rulers)
+### [Vertical rulers 垂直标尺]({{< ref "/GetStarted/TipsandTricks#_vertical-rulers" >}})
 
 You can add vertical column rulers to the editor with the `editor.rulers` setting, which takes an array of column character positions where you'd like vertical rulers.
 
@@ -756,13 +756,13 @@ You can add vertical column rulers to the editor with the `editor.rulers` settin
 
 ![Editor rulers in the editor](./TipsandTricks_img/editor-rulers.png)
 
-### [Fast scrolling 快速滚动](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_fast-scrolling)
+### [Fast scrolling 快速滚动]({{< ref "/GetStarted/TipsandTricks#_fast-scrolling" >}})
 
 Pressing the Alt key enables fast scrolling in the editor and Explorers. By default, fast scrolling uses a 5X speed multiplier but you can control the multiplier with the **Editor: Fast Scroll Sensitivity** (`editor.fastScrollSensitivity`) setting.
 
 ​​	按 Alt 键可在编辑器和资源管理器中启用快速滚动。默认情况下，快速滚动使用 5 倍速乘数，但您可以使用编辑器：快速滚动灵敏度 ( `editor.fastScrollSensitivity` ) 设置控制乘数。
 
-### [Copy line up / down 向上/向下复制行](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_copy-line-up-down)
+### [Copy line up / down 向上/向下复制行]({{< ref "/GetStarted/TipsandTricks#_copy-line-up-down" >}})
 
 Keyboard Shortcut: Shift+Alt+Up or Shift+Alt+Down
 
@@ -774,7 +774,7 @@ Keyboard Shortcut: Shift+Alt+Up or Shift+Alt+Down
 
 ![copy line down](./TipsandTricks_img/copy_line_down.gif)
 
-### [Move line up and down 移动行向上和向下](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_move-line-up-and-down)
+### [Move line up and down 移动行向上和向下]({{< ref "/GetStarted/TipsandTricks#_move-line-up-and-down" >}})
 
 Keyboard Shortcut: Alt+Up or Alt+Down
 
@@ -782,7 +782,7 @@ Keyboard Shortcut: Alt+Up or Alt+Down
 
 ![move line up and down](./TipsandTricks_img/move_line.gif)
 
-### [Shrink / expand selection 缩小/展开选择](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_shrink-expand-selection)
+### [Shrink / expand selection 缩小/展开选择]({{< ref "/GetStarted/TipsandTricks#_shrink-expand-selection" >}})
 
 Keyboard Shortcut: Shift+Alt+Left or Shift+Alt+Right
 
@@ -790,11 +790,11 @@ Keyboard Shortcut: Shift+Alt+Left or Shift+Alt+Right
 
 ![shrink expand selection](./TipsandTricks_img/shrink_expand_selection.gif)
 
-You can learn more in the [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics#_shrinkexpand-selection) documentation.
+You can learn more in the [Basic Editing]({{< ref "/UserGuide/BasicEditing#_shrinkexpand-selection" >}}) documentation.
 
 ​​	您可以在基本编辑文档中了解更多信息。
 
-### [Go to Symbol in File 转到文件中的符号](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_go-to-symbol-in-file)
+### [Go to Symbol in File 转到文件中的符号]({{< ref "/GetStarted/TipsandTricks#_go-to-symbol-in-file" >}})
 
 Keyboard Shortcut: Ctrl+Shift+O
 
@@ -808,7 +808,7 @@ You can group the symbols by kind by adding a colon, `@:`.
 
 ![group symbols by kind](./TipsandTricks_img/group_symbols_by_kind.png)
 
-### [Go to Symbol in Workspace 转到工作区中的符号](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_go-to-symbol-in-workspace)
+### [Go to Symbol in Workspace 转到工作区中的符号]({{< ref "/GetStarted/TipsandTricks#_go-to-symbol-in-workspace" >}})
 
 Keyboard Shortcut: Ctrl+T
 
@@ -816,7 +816,7 @@ Keyboard Shortcut: Ctrl+T
 
 ![go to symbol in workspace](./TipsandTricks_img/go_to_symbol_in_workspace.png)
 
-### [Outline view 大纲视图](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_outline-view)
+### [Outline view 大纲视图]({{< ref "/GetStarted/TipsandTricks#_outline-view" >}})
 
 The Outline view in the File Explorer (default collapsed at the bottom) shows you the symbols of the currently open file.
 
@@ -828,19 +828,19 @@ You can sort by symbol name, category, and position in the file and allows quick
 
 ​​	您可以按符号名称、类别和文件中的位置进行排序，并允许快速导航到符号位置。
 
-### [Navigate to a specific line 导航到特定行](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigate-to-a-specific-line)
+### [Navigate to a specific line 导航到特定行]({{< ref "/GetStarted/TipsandTricks#_navigate-to-a-specific-line" >}})
 
 Keyboard Shortcut: Ctrl+G
 
 ​​	键盘快捷键：Ctrl+G
 
-### [Undo cursor position 撤销光标位置](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_undo-cursor-position)
+### [Undo cursor position 撤销光标位置]({{< ref "/GetStarted/TipsandTricks#_undo-cursor-position" >}})
 
 Keyboard Shortcut: Ctrl+U
 
 ​​	键盘快捷键：Ctrl+U
 
-### [Trim trailing whitespace 修剪尾随空格](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_trim-trailing-whitespace)
+### [Trim trailing whitespace 修剪尾随空格]({{< ref "/GetStarted/TipsandTricks#_trim-trailing-whitespace" >}})
 
 Keyboard Shortcut: Ctrl+K Ctrl+X
 
@@ -848,7 +848,7 @@ Keyboard Shortcut: Ctrl+K Ctrl+X
 
 ![trailing whitespace](./TipsandTricks_img/trim_whitespace.gif)
 
-### [Transform text commands 转换文本命令](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_transform-text-commands)
+### [Transform text commands 转换文本命令]({{< ref "/GetStarted/TipsandTricks#_transform-text-commands" >}})
 
 You can change selected text to uppercase, lowercase, and title case with the **Transform** commands from the Command Palette.
 
@@ -856,7 +856,7 @@ You can change selected text to uppercase, lowercase, and title case with the **
 
 ![Transform text commands](./TipsandTricks_img/transform-text-commands.png)
 
-### [Code formatting 代码格式化](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_code-formatting)
+### [Code formatting 代码格式化]({{< ref "/GetStarted/TipsandTricks#_code-formatting" >}})
 
 Currently selected source code: Ctrl+K Ctrl+F
 
@@ -868,7 +868,7 @@ Whole document format: Shift+Alt+F
 
 ![code formatting](./TipsandTricks_img/code_formatting.gif)
 
-### [Code folding 代码折叠](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_code-folding)
+### [Code folding 代码折叠]({{< ref "/GetStarted/TipsandTricks#_code-folding" >}})
 
 Keyboard Shortcut: Ctrl+Shift+[ and Ctrl+Shift+]
 
@@ -884,19 +884,19 @@ You can fold all block comments with **Fold All Block Comments** (Ctrl+K Ctrl+/)
 
 ​​	您可以使用折叠所有块注释（Ctrl+K Ctrl+/）折叠所有块注释。
 
-### [Select current line 选择当前行](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_select-current-line)
+### [Select current line 选择当前行]({{< ref "/GetStarted/TipsandTricks#_select-current-line" >}})
 
 Keyboard Shortcut: Ctrl+L
 
 ​​	键盘快捷键：Ctrl+L
 
-### [Navigate to beginning and end of file 导航到文件开头和结尾](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_navigate-to-beginning-and-end-of-file)
+### [Navigate to beginning and end of file 导航到文件开头和结尾]({{< ref "/GetStarted/TipsandTricks#_navigate-to-beginning-and-end-of-file" >}})
 
 Keyboard Shortcut: Ctrl+Home and Ctrl+End
 
 ​​	键盘快捷键：Ctrl+Home 和 Ctrl+End
 
-### [Open Markdown preview 打开 Markdown 预览](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_open-markdown-preview)
+### [Open Markdown preview 打开 Markdown 预览]({{< ref "/GetStarted/TipsandTricks#_open-markdown-preview" >}})
 
 In a Markdown file, use
 
@@ -908,7 +908,7 @@ Keyboard Shortcut: Ctrl+Shift+V
 
 ![Markdown preview](./TipsandTricks_img/markdown-preview.png)
 
-### [Side by side Markdown edit and preview 并排的 Markdown 编辑和预览](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_side-by-side-markdown-edit-and-preview)
+### [Side by side Markdown edit and preview 并排的 Markdown 编辑和预览]({{< ref "/GetStarted/TipsandTricks#_side-by-side-markdown-edit-and-preview" >}})
 
 In a Markdown file, use
 
@@ -924,7 +924,7 @@ The preview and editor will synchronize with your scrolling in either view.
 
 ![side by side Markdown preview](./TipsandTricks_img/markdown-preview-side-by-side.png)
 
-## [IntelliSense](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_intellisense)
+## [IntelliSense]({{< ref "/GetStarted/TipsandTricks#_intellisense" >}})
 
 Ctrl+Space to trigger the Suggestions widget.
 
@@ -936,7 +936,7 @@ You can view available methods, parameter hints, short documentation, etc.
 
 ​​	您可以查看可用方法、提示、简短文档等。
 
-### [Peek 窥视](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_peek)
+### [Peek 窥视]({{< ref "/GetStarted/TipsandTricks#_peek" >}})
 
 Select a symbol then type Alt+F12. Alternatively, you can use the context menu.
 
@@ -944,7 +944,7 @@ Select a symbol then type Alt+F12. Alternatively, you can use the context menu.
 
 ![peek](./TipsandTricks_img/peek.gif)
 
-### [Go to Definition 转到定义](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_go-to-definition)
+### [Go to Definition 转到定义]({{< ref "/GetStarted/TipsandTricks#_go-to-definition" >}})
 
 Select a symbol then type F12. Alternatively, you can use the context menu or Ctrl+click (Cmd+click on macOS).
 
@@ -960,7 +960,7 @@ You can also see the type definition if you press Ctrl (Cmd on macOS) when you a
 
 ​​	您还可以在将鼠标悬停在类型上时按 Ctrl（在 macOS 上为 Cmd）查看类型定义。
 
-### [Go to References 转到引用](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_go-to-references)
+### [Go to References 转到引用]({{< ref "/GetStarted/TipsandTricks#_go-to-references" >}})
 
 Select a symbol then type Shift+F12. Alternatively, you can use the context menu.
 
@@ -968,13 +968,13 @@ Select a symbol then type Shift+F12. Alternatively, you can use the context menu
 
 ![peek references](./TipsandTricks_img/find_all_references.gif)
 
-### [Find All References view 查找所有引用视图](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_find-all-references-view)
+### [Find All References view 查找所有引用视图]({{< ref "/GetStarted/TipsandTricks#_find-all-references-view" >}})
 
 Select a symbol then type Shift+Alt+F12 to open the References view showing all your file's symbols in a dedicated view.
 
 ​​	选择一个符号，然后键入 Shift+Alt+F12 以打开引用视图，在专用视图中显示所有文件的符号。
 
-### [Rename Symbol 重命名符号](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_rename-symbol)
+### [Rename Symbol 重命名符号]({{< ref "/GetStarted/TipsandTricks#_rename-symbol" >}})
 
 Select a symbol then type F2. Alternatively, you can use the context menu.
 
@@ -982,7 +982,7 @@ Select a symbol then type F2. Alternatively, you can use the context menu.
 
 ![rename symbol](./TipsandTricks_img/rename_symbol.gif)
 
-### [Search and modify 搜索和修改](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_search-and-modify)
+### [Search and modify 搜索和修改]({{< ref "/GetStarted/TipsandTricks#_search-and-modify" >}})
 
 Besides searching and replacing expressions, you can also search and reuse parts of what was matched, using regular expressions with capturing groups. Enable regular expressions in the search box by clicking the **Use Regular Expression** `.*` button (Alt+R) and then write a regular expression and use parentheses to define groups. You can then reuse the content matched in each group by using `$1`, `$2`, etc. in the Replace field.
 
@@ -990,7 +990,7 @@ Besides searching and replacing expressions, you can also search and reuse parts
 
 ![search and modify](./TipsandTricks_img/search_and_modify.png)
 
-### [.eslintrc.json](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_eslintrcjson)
+### [.eslintrc.json]({{< ref "/GetStarted/TipsandTricks#_eslintrcjson" >}})
 
 Install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Configure your linter however you'd like. Consult the [ESLint specification](https://eslint.org/docs/user-guide/configuring) for details on its linting rules and options.
 
@@ -1038,7 +1038,7 @@ Here is configuration to use ES6.
 }
 ```
 
-### [package.json](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_packagejson)
+### [package.json]({{< ref "/GetStarted/TipsandTricks#_packagejson" >}})
 
 See IntelliSense for your `package.json` file.
 
@@ -1046,17 +1046,17 @@ See IntelliSense for your `package.json` file.
 
 ![package json intellisense](./TipsandTricks_img/package_json_intellisense.gif)
 
-### [Emmet syntax Emmet 语法](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_emmet-syntax)
+### [Emmet syntax Emmet 语法]({{< ref "/GetStarted/TipsandTricks#_emmet-syntax" >}})
 
-[Support for Emmet syntax](https://code.visualstudio.com/docs/editor/emmet).
+[Support for Emmet syntax]({{< ref "/UserGuide/Emmet" >}}).
 
 ​​	支持 Emmet 语法。
 
 ![emmet syntax](./TipsandTricks_img/emmet_syntax.gif)
 
-## [Snippets 代码片段](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_snippets)
+## [Snippets 代码片段]({{< ref "/GetStarted/TipsandTricks#_snippets" >}})
 
-### [Create custom snippets 创建自定义代码片段](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_create-custom-snippets)
+### [Create custom snippets 创建自定义代码片段]({{< ref "/GetStarted/TipsandTricks#_create-custom-snippets" >}})
 
 **File** > **Preferences** > **Configure User Snippets**, select the language, and create a snippet.
 
@@ -1077,11 +1077,11 @@ See IntelliSense for your `package.json` file.
 },
 ```
 
-See more details in [Creating your own Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
+See more details in [Creating your own Snippets]({{< ref "/UserGuide/Snippets" >}}).
 
 ​​	在创建自己的代码段中查看更多详细信息。
 
-## [Git integration Git 集成](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_git-integration)
+## [Git integration Git 集成]({{< ref "/GetStarted/TipsandTricks#_git-integration" >}})
 
 Keyboard Shortcut: Ctrl+Shift+G
 
@@ -1091,7 +1091,7 @@ Git integration comes with VS Code "out-of-the-box". You can install other SCM p
 
 ​​	Git 集成随 VS Code “开箱即用”。您可以从扩展市场安装其他 SCM 提供程序。本部分介绍 Git 集成，但其他 SCM 提供程序共享大部分 UI 和手势。
 
-### [Diffs 差异](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_diffs)
+### [Diffs 差异]({{< ref "/GetStarted/TipsandTricks#_diffs" >}})
 
 From the **Source Control** view, select a file to open the diff.
 
@@ -1136,7 +1136,7 @@ You can make edits directly in the pending changes of the diff view.
 
 ​​	您可以在差异视图的挂起更改中直接进行编辑。
 
-### [Branches 分支](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_branches)
+### [Branches 分支]({{< ref "/GetStarted/TipsandTricks#_branches" >}})
 
 Easily switch between Git branches via the Status Bar.
 
@@ -1144,7 +1144,7 @@ Easily switch between Git branches via the Status Bar.
 
 ![switch branches](./TipsandTricks_img/mswitch-branch.gif)
 
-### [Staging 暂存](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_staging)
+### [Staging 暂存]({{< ref "/GetStarted/TipsandTricks#_staging" >}})
 
 **Stage file changes
 舞台文件更改**
@@ -1166,7 +1166,7 @@ Stage a portion of a file by selecting that file (using the arrows) and then cho
 
 ​​	通过选择该文件（使用箭头），然后从命令面板中选择“暂存所选范围”来暂存文件的一部分。
 
-### [Undo last commit 撤消上次提交](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_undo-last-commit)
+### [Undo last commit 撤消上次提交]({{< ref "/GetStarted/TipsandTricks#_undo-last-commit" >}})
 
 Click the (...) button and then select **Undo Last Commit** to undo the previous commit. The changes are added to the Staged Changes section.
 
@@ -1174,7 +1174,7 @@ Click the (...) button and then select **Undo Last Commit** to undo the previous
 
 ![undo last commit](./TipsandTricks_img/mundo-last-commit.gif)
 
-### [See Git output 查看 Git 输出](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_see-git-output)
+### [See Git output 查看 Git 输出]({{< ref "/GetStarted/TipsandTricks#_see-git-output" >}})
 
 VS Code makes it easy to see what Git commands are actually running. This is helpful when learning Git or debugging a difficult source control issue.
 
@@ -1184,15 +1184,15 @@ Use the **Toggle Output** command (Ctrl+Shift+U) and select **Git** in the dropd
 
 ​​	使用“切换输出”命令 (Ctrl+Shift+U) 并从下拉列表中选择 Git。
 
-### [Gutter indicators 标尺指示符](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_gutter-indicators)
+### [Gutter indicators 标尺指示符]({{< ref "/GetStarted/TipsandTricks#_gutter-indicators" >}})
 
-View diff decorations in editor. See [documentation](https://code.visualstudio.com/docs/sourcecontrol/overview#_gutter-indicators) for more details.
+View diff decorations in editor. See [documentation]({{< ref "/SourceControl/Overview#_gutter-indicators" >}}) for more details.
 
 ​​	在编辑器中查看差异修饰。有关更多详细信息，请参阅文档。
 
 ![git gutter indicators](./TipsandTricks_img/mgutter_icons.gif)
 
-### [Resolve merge conflicts 解决合并冲突](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_resolve-merge-conflicts)
+### [Resolve merge conflicts 解决合并冲突]({{< ref "/GetStarted/TipsandTricks#_resolve-merge-conflicts" >}})
 
 During a merge, go to the **Source Control** view (Ctrl+Shift+G) and make changes in the diff view.
 
@@ -1202,31 +1202,31 @@ You can resolve merge conflicts with the inline CodeLens which lets you **Accept
 
 ​​	您可以使用允许您接受当前更改、接受传入更改、接受两个更改和比较更改的内联 CodeLens 来解决合并冲突。
 
-### [Set VS Code as default merge tool 将 VS Code 设置为默认合并工具](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_set-vs-code-as-default-merge-tool)
+### [Set VS Code as default merge tool 将 VS Code 设置为默认合并工具]({{< ref "/GetStarted/TipsandTricks#_set-vs-code-as-default-merge-tool" >}})
 
 ```
 git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd 'code --wait $MERGED'
 ```
 
-### [Set VS Code as default diff tool 将 VS Code 设置为默认差异工具](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_set-vs-code-as-default-diff-tool)
+### [Set VS Code as default diff tool 将 VS Code 设置为默认差异工具]({{< ref "/GetStarted/TipsandTricks#_set-vs-code-as-default-diff-tool" >}})
 
 ```
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
 ```
 
-## [Debugging 调试](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_debugging)
+## [Debugging 调试]({{< ref "/GetStarted/TipsandTricks#_debugging" >}})
 
-### [Configure debugger 配置调试器](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_configure-debugger)
+### [Configure debugger 配置调试器]({{< ref "/GetStarted/TipsandTricks#_configure-debugger" >}})
 
-From the Run and Debug view (Ctrl+Shift+D), select **create a launch.json file**, which will prompt you to select the environment that matches your project (Node.js, Python, C++, etc). This will generate a `launch.json` file. Node.js support is built-in and other environments require installing the appropriate language extensions. See the debugging [documentation](https://code.visualstudio.com/docs/editor/debugging) for more details.
+From the Run and Debug view (Ctrl+Shift+D), select **create a launch.json file**, which will prompt you to select the environment that matches your project (Node.js, Python, C++, etc). This will generate a `launch.json` file. Node.js support is built-in and other environments require installing the appropriate language extensions. See the debugging [documentation]({{< ref "/UserGuide/Debugging" >}}) for more details.
 
 ​​	在运行和调试视图 (Ctrl+Shift+D) 中，选择创建 launch.json 文件，这将提示您选择与您的项目匹配的环境 (Node.js、Python、C++ 等)。这将生成一个 `launch.json` 文件。Node.js 支持是内置的，其他环境需要安装相应的语言扩展。有关更多详细信息，请参阅调试文档。
 
 ![configure debugging](./TipsandTricks_img/configure-debug.png)
 
-### [Breakpoints and stepping through 断点和单步执行](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_breakpoints-and-stepping-through)
+### [Breakpoints and stepping through 断点和单步执行]({{< ref "/GetStarted/TipsandTricks#_breakpoints-and-stepping-through" >}})
 
 Place breakpoints next to the line number. Navigate forward with the Debug widget.
 
@@ -1234,7 +1234,7 @@ Place breakpoints next to the line number. Navigate forward with the Debug widge
 
 ![debug](./TipsandTricks_img/node_debug.gif)
 
-### [Data inspection 数据检查](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_data-inspection)
+### [Data inspection 数据检查]({{< ref "/GetStarted/TipsandTricks#_data-inspection" >}})
 
 Inspect variables in the **Run** panels and in the console.
 
@@ -1242,7 +1242,7 @@ Inspect variables in the **Run** panels and in the console.
 
 ![data inspection](./TipsandTricks_img/debug_data_inspection.gif)
 
-### [Logpoints 日志点](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_logpoints)
+### [Logpoints 日志点]({{< ref "/GetStarted/TipsandTricks#_logpoints" >}})
 
 Logpoints act much like breakpoints but instead of halting the debugger when they are hit, they log a message to the console. Logpoints are especially useful for injecting logging while debugging production servers that cannot be modified or paused.
 
@@ -1254,11 +1254,11 @@ Add a logpoint with the **Add Logpoint** command in the left editor gutter and i
 
 ![Logpoint set in the editor](./TipsandTricks_img/logpoint.png)
 
-## [Task runner 任务运行器](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_task-runner)
+## [Task runner 任务运行器]({{< ref "/GetStarted/TipsandTricks#_task-runner" >}})
 
-### [Auto detect tasks 自动检测任务](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_auto-detect-tasks)
+### [Auto detect tasks 自动检测任务]({{< ref "/GetStarted/TipsandTricks#_auto-detect-tasks" >}})
 
-Select **Terminal** from the top-level menu, run the command **Configure Tasks**, then select the type of task you'd like to run. This will generate a `tasks.json` file with content like the following. See the [Tasks](https://code.visualstudio.com/docs/editor/tasks) documentation for more details.
+Select **Terminal** from the top-level menu, run the command **Configure Tasks**, then select the type of task you'd like to run. This will generate a `tasks.json` file with content like the following. See the [Tasks]({{< ref "/UserGuide/Tasks" >}}) documentation for more details.
 
 ​​	从顶级菜单中选择“终端”，运行命令“配置任务”，然后选择要运行的任务类型。这将生成一个内容如下所示的 `tasks.json` 文件。有关更多详细信息，请参阅任务文档。
 
@@ -1284,7 +1284,7 @@ There are occasionally issues with auto generation. Check out the documentation 
 
 ​​	自动生成偶尔会出现问题。查看文档以使事情正常工作。
 
-### [Run tasks from the Terminal menu 从终端菜单运行任务](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_run-tasks-from-the-terminal-menu)
+### [Run tasks from the Terminal menu 从终端菜单运行任务]({{< ref "/GetStarted/TipsandTricks#_run-tasks-from-the-terminal-menu" >}})
 
 Select **Terminal** from the top-level menu, run the command **Run Task**, and select the task you want to run. Terminate the running task by running the command **Terminate Task**
 
@@ -1292,7 +1292,7 @@ Select **Terminal** from the top-level menu, run the command **Run Task**, and s
 
 ![task runner](./TipsandTricks_img/task_runner.gif)
 
-### [Define keyboard shortcuts for tasks 为任务定义键盘快捷键](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_define-keyboard-shortcuts-for-tasks)
+### [Define keyboard shortcuts for tasks 为任务定义键盘快捷键]({{< ref "/GetStarted/TipsandTricks#_define-keyboard-shortcuts-for-tasks" >}})
 
 You can define a keyboard shortcut for any task. From the **Command Palette** (Ctrl+Shift+P), select **Preferences: Open Keyboard Shortcuts File**, bind the desired shortcut to the `workbench.action.tasks.runTask` command, and define the **Task** as `args`.
 
@@ -1310,7 +1310,7 @@ For example, to bind Ctrl+H to the `Run tests` task, add the following:
 }
 ```
 
-### [Run npm scripts as tasks from the Explorer 从资源管理器中将 npm 脚本作为任务运行](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_run-npm-scripts-as-tasks-from-the-explorer)
+### [Run npm scripts as tasks from the Explorer 从资源管理器中将 npm 脚本作为任务运行]({{< ref "/GetStarted/TipsandTricks#_run-npm-scripts-as-tasks-from-the-explorer" >}})
 
 ![Filter problems](./TipsandTricks_img/script_explorer.png)
 
@@ -1322,13 +1322,13 @@ With the setting `npm.enableRunFromFolder`, you can enable to run npm scripts fr
 
 ​​	使用设置 `npm.enableRunFromFolder` ，您可以启用从文件资源管理器的上下文菜单为文件夹运行 npm 脚本。当选择文件夹时，此设置会启用命令在文件夹中运行 NPM 脚本...。此命令会显示此文件夹中包含的 npm 脚本的快速选择列表，您可以选择要作为任务执行的脚本。
 
-## [Portable mode 便携模式](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_portable-mode)
+## [Portable mode 便携模式]({{< ref "/GetStarted/TipsandTricks#_portable-mode" >}})
 
 VS Code has a [Portable mode](https://code.visualstudio.com/docs/editor/portable) which lets you keep settings and data in the same location as your installation, for example, on a USB drive.
 
 ​​	VS Code 具有便携模式，可让您将设置和数据保存在与安装位置相同的位置，例如 USB 驱动器上。
 
-## [Insiders builds 内部版本](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_insiders-builds)
+## [Insiders builds 内部版本]({{< ref "/GetStarted/TipsandTricks#_insiders-builds" >}})
 
 The Visual Studio Code team uses the Insiders version to test the latest features and bug fixes of VS Code. You can also use the Insiders version by [downloading it here](https://code.visualstudio.com/insiders).
 

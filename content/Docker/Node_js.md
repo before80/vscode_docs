@@ -25,14 +25,14 @@ In this guide you will learn how to:
 - Debug the service running within a container
   调试在容器内运行的服务
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/containers/quickstart-node#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Docker/Node_js#_prerequisites" >}})
 
-- Both Docker and the VS Code Docker extension must be installed as described in the [overview](https://code.visualstudio.com/docs/containers/overview#_installation)
+- Both Docker and the VS Code Docker extension must be installed as described in the [overview]({{< ref "/Docker/Overview#_installation" >}})
   必须按照概述中所述安装 Docker 和 VS Code Docker 扩展
 - [Node.js](https://nodejs.org/) version 10 or later
   Node.js 版本 10 或更高版本
 
-## [Create an Express Node.js application 创建 Express Node.js 应用程序](https://code.visualstudio.com/docs/containers/quickstart-node#_create-an-express-nodejs-application)
+## [Create an Express Node.js application 创建 Express Node.js 应用程序]({{< ref "/Docker/Node_js#_create-an-express-nodejs-application" >}})
 
 1. Create a folder for the project.
 
@@ -47,7 +47,7 @@ In this guide you will learn how to:
    npm install
    ```
 
-## [Add Docker files to the project 将 Docker 文件添加到项目](https://code.visualstudio.com/docs/containers/quickstart-node#_add-docker-files-to-the-project)
+## [Add Docker files to the project 将 Docker 文件添加到项目]({{< ref "/Docker/Node_js#_add-docker-files-to-the-project" >}})
 
 1. Open the project folder in VS Code.
 
@@ -79,9 +79,9 @@ The extension creates `Dockerfile` and `.dockerignore` files. If you elected to 
 
 ​​	扩展将创建 `Dockerfile` 和 `.dockerignore` 文件。如果您选择包含 Docker Compose 文件，还将生成 `docker-compose.yml` 和 `docker-compose.debug.yml` 。最后，扩展将在 `.vscode/tasks.json` 中创建一组 VS Code 任务，用于构建和运行容器（在调试和发布配置中），并在 `.vscode/launch.json` 中创建启动调试配置，用于调试容器内的服务。
 
-## [Add an environment variable to the image 向映像添加环境变量](https://code.visualstudio.com/docs/containers/quickstart-node#_add-an-environment-variable-to-the-image)
+## [Add an environment variable to the image 向映像添加环境变量]({{< ref "/Docker/Node_js#_add-an-environment-variable-to-the-image" >}})
 
-The Docker extension helps you author Dockerfiles by using [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) to provide auto-completions and contextual help. To see this feature in action, add an environment variable to your service image by following these steps:
+The Docker extension helps you author Dockerfiles by using [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}) to provide auto-completions and contextual help. To see this feature in action, add an environment variable to your service image by following these steps:
 
 ​​	Docker 扩展通过使用 IntelliSense 提供自动完成和上下文帮助，帮助您编写 Dockerfile。要查看此功能的实际操作，请按照以下步骤向服务映像添加环境变量：
 
@@ -107,7 +107,7 @@ The Docker extension helps you author Dockerfiles by using [IntelliSense](https:
 
    ​​	保存 `Dockerfile` 文件。
 
-## [Run the service locally 在本地运行服务](https://code.visualstudio.com/docs/containers/quickstart-node#_run-the-service-locally)
+## [Run the service locally 在本地运行服务]({{< ref "/Docker/Node_js#_run-the-service-locally" >}})
 
 1. Open a terminal (Ctrl+`).
 
@@ -132,7 +132,7 @@ The Docker extension helps you author Dockerfiles by using [IntelliSense](https:
 
    ​​	测试完成后，在终端中键入 Ctrl+C。
 
-## [Build the service image 构建服务映像](https://code.visualstudio.com/docs/containers/quickstart-node#_build-the-service-image)
+## [Build the service image 构建服务映像]({{< ref "/Docker/Node_js#_build-the-service-image" >}})
 
 1. Open the Command Palette (Ctrl+Shift+P) and select the **Docker Images: Build Image...** command.
 
@@ -144,7 +144,7 @@ The Docker extension helps you author Dockerfiles by using [IntelliSense](https:
 
    ![Verify Docker image exists](./Node_js_img/node-verify-image-dark.png)
 
-## [Run the service container 运行服务容器](https://code.visualstudio.com/docs/containers/quickstart-node#_run-the-service-container)
+## [Run the service container 运行服务容器]({{< ref "/Docker/Node_js#_run-the-service-container" >}})
 
 1. Right-click on the image built in the previous section and select **Run** or **Run Interactive**. The container should start and you should be able to see it in the Docker Containers tree:
 
@@ -162,7 +162,7 @@ The Docker extension helps you author Dockerfiles by using [IntelliSense](https:
 
    ​​	测试完成后，右键单击容器树中的容器并选择停止。
 
-## [Debug in the service container 在服务容器中调试](https://code.visualstudio.com/docs/containers/quickstart-node#_debug-in-the-service-container)
+## [Debug in the service container 在服务容器中调试]({{< ref "/Docker/Node_js#_debug-in-the-service-container" >}})
 
 When the Docker extension adds files to the application, it also adds a **VS Code debugger configuration** in `.vscode/launch.json` for debugging the service when running inside a container. The extension detects the protocol and port used by the service and points the browser to the service.
 
@@ -195,11 +195,11 @@ When the Docker extension adds files to the application, it also adds a **VS Cod
    >
    > ​​	请注意，由于调试器在应用程序启动后附加，因此第一次可能会错过断点；您可能需要刷新浏览器才能在第二次尝试时看到调试器中断。
    >
-   > You can configure the application to wait for the debugger to attach before starting execution by setting the [inspectMode](https://code.visualstudio.com/docs/containers/reference#_node-object-properties-dockerrun-task) property to `break` in the `docker-run: debug` task in `tasks.json` under the `node` object.
+   > You can configure the application to wait for the debugger to attach before starting execution by setting the [inspectMode]({{< ref "/Docker/Customize#_node-object-properties-dockerrun-task" >}}) property to `break` in the `docker-run: debug` task in `tasks.json` under the `node` object.
    >
    > ​​	您可以通过在 `tasks.json` 下的 `node` 对象中的 `docker-run: debug` 任务中将 inspectMode 属性设置为 `break` 来配置应用程序，使其在启动执行之前等待调试器附加。
 
-## [View the application logs 查看应用程序日志](https://code.visualstudio.com/docs/containers/quickstart-node#_view-the-application-logs)
+## [View the application logs 查看应用程序日志]({{< ref "/Docker/Node_js#_view-the-application-logs" >}})
 
 You can view the logs in VS Code by using the **View Logs** command on the container:
 
@@ -219,7 +219,7 @@ You can view the logs in VS Code by using the **View Logs** command on the conta
 
    ​​	输出将显示在终端中。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/quickstart-node#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/Node_js#_next-steps" >}})
 
 You're done! Now that your container is ready, you may want to:
 
@@ -228,8 +228,8 @@ You're done! Now that your container is ready, you may want to:
 - [Learn about debugging Node.js in a container
   了解如何在容器中调试 Node.js](https://code.visualstudio.com/docs/containers/debug-node)
 - [Customize your Docker build and run tasks
-  自定义 Docker 构建并运行任务](https://code.visualstudio.com/docs/containers/reference)
+  自定义 Docker 构建并运行任务]({{< ref "/Docker/Customize" >}})
 - [Push your image to a container registry
-  将您的镜像推送到容器注册表](https://code.visualstudio.com/docs/containers/quickstart-container-registries#_push-an-image-to-a-container-registry)
+  将您的镜像推送到容器注册表]({{< ref "/Docker/Registries#_push-an-image-to-a-container-registry" >}})
 - [Learn about using Docker Compose
-  了解如何使用 Docker Compose](https://code.visualstudio.com/docs/containers/docker-compose)
+  了解如何使用 Docker Compose]({{< ref "/Docker/DockerCompose" >}})

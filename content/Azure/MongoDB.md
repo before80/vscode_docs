@@ -18,7 +18,7 @@ Visual Studio Code has great support for working with [MongoDB](https://www.mong
 
 ​​​	Visual Studio Code 对使用 MongoDB 数据库（无论是您自己的实例还是使用 MongoDB Atlas 在 Azure 中）提供了极好的支持。借助 MongoDB for VS Code 扩展，您可以在 VS Code 中创建、管理和查询 MongoDB 数据库。
 
-## [Install the extension 安装扩展](https://code.visualstudio.com/docs/azure/mongodb#_install-the-extension)
+## [Install the extension 安装扩展]({{< ref "/Azure/MongoDB#_install-the-extension" >}})
 
 MongoDB support for VS Code is provided by the [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode) extension. To install the MongoDB for VS Code extension, open the Extensions view by pressing Ctrl+Shift+X and search for 'MongoDB' to filter the results. Select the **MongoDB for VS Code** extension.
 
@@ -26,7 +26,7 @@ MongoDB support for VS Code is provided by the [MongoDB for VS Code](https://mar
 
 ![Select MongoDB for VS Code](./MongoDB_img/install-cosmosdb-extension.png)
 
-## [Connect to MongoDB 连接到 MongoDB](https://code.visualstudio.com/docs/azure/mongodb#_connect-to-mongodb)
+## [Connect to MongoDB 连接到 MongoDB]({{< ref "/Azure/MongoDB#_connect-to-mongodb" >}})
 
 Once you've installed the MongoDB for VS Code extension, you'll notice there is a new **MongoDB** Activity Bar view. Select the MongoDB view and you'll see the MongoDB Explorer.
 
@@ -66,7 +66,7 @@ You can also attach a MongoDB shell to the active connection, simply by right-cl
 >
 > ​​​	注意：确保已安装 MongoDB shell（ `mongo` 或 `mongosh` ）且位于您的路径中。在扩展的设置中，您可以选择要使用的 shell。
 
-## [MongoDB Commands MongoDB 命令](https://code.visualstudio.com/docs/azure/mongodb#_mongodb-commands)
+## [MongoDB Commands MongoDB 命令]({{< ref "/Azure/MongoDB#_mongodb-commands" >}})
 
 There are MongoDB specific commands available in the VS Code **Command Palette** (Ctrl+Shift+P) as well as through Explorer context menus.
 
@@ -74,7 +74,7 @@ There are MongoDB specific commands available in the VS Code **Command Palette**
 
 ![mongodb commands](./MongoDB_img/mongodb-commands.png)
 
-## [Using Playgrounds 使用游乐场](https://code.visualstudio.com/docs/azure/mongodb#_using-playgrounds)
+## [Using Playgrounds 使用游乐场]({{< ref "/Azure/MongoDB#_using-playgrounds" >}})
 
 One of the most powerful features of the VS Code MongoDB integration is **Mongo Playgrounds**. Playgrounds let you create, run, and save MongoDB commands from a VS Code editor. Create a new playground with the **MongoDB: Create MongoDB Playground** command.
 
@@ -90,7 +90,7 @@ In a playground, you can reference MongoDB entities and commands and you get ric
 
 ![Run Playground queries](./MongoDB_img/run-playground.png)
 
-## [MongoDB on Azure Azure 上的 MongoDB](https://code.visualstudio.com/docs/azure/mongodb#_mongodb-on-azure)
+## [MongoDB on Azure Azure 上的 MongoDB]({{< ref "/Azure/MongoDB#_mongodb-on-azure" >}})
 
 You can easily create a MongoDB cluster on Azure for **Free** with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/signup?utm_campaign=marketplace&utm_source=signup&utm_medium=marketplace).
 
@@ -102,11 +102,11 @@ Choose **Create a New Cluster** from the dashboard and choose **Azure** as the C
 
 ![Create Azure Cluster](./MongoDB_img/create-azure-cluster.png)
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/azure/mongodb#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Azure/MongoDB#_next-steps" >}})
 
-- [Azure Extensions](https://code.visualstudio.com/docs/azure/extensions) - The VS Code Marketplace has hundreds of extensions for Azure and the cloud.
+- [Azure Extensions]({{< ref "/Azure/Extensions" >}}) - The VS Code Marketplace has hundreds of extensions for Azure and the cloud.
   Azure 扩展 - VS Code Marketplace 拥有数百个适用于 Azure 和云的扩展。
-- [Deploying to Azure](https://code.visualstudio.com/docs/azure/deployment) - Learn step-by-step how to deploy your application to Azure.
+- [Deploying to Azure]({{< ref "/Azure/Deployment" >}}) - Learn step-by-step how to deploy your application to Azure.
   在 Azure 中部署 - 逐步了解如何将应用程序部署到 Azure。
-- [Working with Docker](https://code.visualstudio.com/docs/azure/docker) - Put your application in a Docker container for easy reuse and deployment.
+- [Working with Docker]({{< ref "/Azure/Docker" >}}) - Put your application in a Docker container for easy reuse and deployment.
   使用 Docker - 将您的应用程序放入 Docker 容器中，以便轻松重复使用和部署。

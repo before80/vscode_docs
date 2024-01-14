@@ -20,7 +20,7 @@ The [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.
 
 ![Azure Tools extension](./DeployNode_jsApps_img/azure-tools.png)
 
-## [Deployment tutorials 部署教程](https://code.visualstudio.com/docs/nodejs/nodejs-deployment#_deployment-tutorials)
+## [Deployment tutorials 部署教程]({{< ref "/Node_jsJavaScript/DeployNode_jsApps#_deployment-tutorials" >}})
 
 These tutorials from Microsoft Learn describe different ways of creating and deploying Node.js apps to Azure via Visual Studio Code:
 

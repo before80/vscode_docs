@@ -14,7 +14,7 @@ draft = false
 
 
 
-## [What is Live Share? Live Share 是什么？](https://code.visualstudio.com/learn/collaboration/live-share#_what-is-live-share)
+## [What is Live Share? Live Share 是什么？]({{< ref "/Learn/collaboration/LiveShare#_what-is-live-share" >}})
 
 [Live Share](https://learn.microsoft.com/visualstudio/liveshare) enables you to quickly collaborate with a friend, classmate, or professor on the same code without the need to sync code or to configure the same development tools, settings, or environment.
 
@@ -48,7 +48,7 @@ For more details about what you can do with Live Share, visit the [how-to-guide]
 
 ​​​	有关 Live Share 功能的更多详细信息，请访问操作指南或阅读以下快速入门。
 
-## [Get started with Live Share 开始使用 Live Share](https://code.visualstudio.com/learn/collaboration/live-share#_get-started-with-live-share)
+## [Get started with Live Share 开始使用 Live Share]({{< ref "/Learn/collaboration/LiveShare#_get-started-with-live-share" >}})
 
 To get started with using Live Share in VS Code, you'll need to download the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) extension from the VS Code Marketplace.
 
@@ -66,7 +66,7 @@ Once you log into your GitHub account, you'll see the Live Share icon in the Act
 
 ![Live Share icon in the Activity Bar](./LiveShare_img/liveshare-icon.png)
 
-### [Starting a Live Share session 启动 Live Share 会话](https://code.visualstudio.com/learn/collaboration/live-share#_starting-a-live-share-session)
+### [Starting a Live Share session 启动 Live Share 会话]({{< ref "/Learn/collaboration/LiveShare#_starting-a-live-share-session" >}})
 
 If you select **Start Collaboration session** from the Session Details menu, an invitation link to your session will automatically be copied to your clipboard. You can share this link with anyone you'd like to collaborate with, as long as they also have VS Code and the Live Share extension installed.
 
@@ -80,7 +80,7 @@ When your classmate joins the session, you'll get a notification, and see their 
 
 ![Live Share joined](./LiveShare_img/liveshare-joined.png)
 
-### [Joining a Live Share session 加入 Live Share 会话](https://code.visualstudio.com/learn/collaboration/live-share#_joining-a-live-share-session)
+### [Joining a Live Share session 加入 Live Share 会话]({{< ref "/Learn/collaboration/LiveShare#_joining-a-live-share-session" >}})
 
 If you select **Join Collaboration session** from the Session Details menu, you're able to enter the URL you received.
 

@@ -23,7 +23,7 @@ The look of Visual Studio Code's terminal can be customized extensively.
 *[Sapphire](https://marketplace.visualstudio.com/items?itemName=tyriar.theme-sapphire) theme with custom [Starship](https://starship.rs/) prompt using the font [Hack](https://sourcefoundry.org/hack/) with [Nerd Font](https://www.nerdfonts.com/) symbols
 使用带有 Nerd 字体符号的 Hack 字体，自定义 Starship 提示的 Sapphire 主题*
 
-## [Text style 文本样式](https://code.visualstudio.com/docs/terminal/appearance#_text-style)
+## [Text style 文本样式]({{< ref "/Terminal/Appearance#_text-style" >}})
 
 Text in the terminal can be customized with the following settings:
 
@@ -42,9 +42,9 @@ Text in the terminal can be customized with the following settings:
 - `terminal.integrated.fontWeightBold`: Configures the font weight of "bold" text.
   `terminal.integrated.fontWeightBold` ：配置“粗体”文本的字体粗细。
 
-### [Powerline symbols and Nerd Fonts 电力线符号和 Nerd 字体](https://code.visualstudio.com/docs/terminal/appearance#_powerline-symbols-and-nerd-fonts)
+### [Powerline symbols and Nerd Fonts 电力线符号和 Nerd 字体]({{< ref "/Terminal/Appearance#_powerline-symbols-and-nerd-fonts" >}})
 
-[Powerline](https://powerline.readthedocs.io/) fonts are special patched fonts that contain additional characters that can be used in the terminal. VS Code's terminal [renders some of the Powerline symbols without needing to configure a font](https://code.visualstudio.com/docs/terminal/appearance#_custom-glyphs), but if more glyphs are desired, configure a Powerline font with the font family setting. Powerline fonts typically end in `" for Powerline"`, the following setting is an example of how to configure a DejaVu Sans Mono that has been patched:
+[Powerline](https://powerline.readthedocs.io/) fonts are special patched fonts that contain additional characters that can be used in the terminal. VS Code's terminal [renders some of the Powerline symbols without needing to configure a font]({{< ref "/Terminal/Appearance#_custom-glyphs" >}}), but if more glyphs are desired, configure a Powerline font with the font family setting. Powerline fonts typically end in `" for Powerline"`, the following setting is an example of how to configure a DejaVu Sans Mono that has been patched:
 
 ​​	电力线字体是包含可用于终端的附加字符的特殊修补字体。VS Code 的终端无需配置字体即可呈现一些电力线符号，但如果需要更多字形，请使用字体系列设置配置电力线字体。电力线字体通常以 `" for Powerline"` 结尾，以下设置是配置已修补的 DejaVu Sans Mono 的示例：
 
@@ -60,7 +60,7 @@ Nerd Fonts work the same and typically have a `" NF"` suffix, the following is a
 "terminal.integrated.fontFamily": "'Hack NF'"
 ```
 
-## [Terminal cursor 终端光标](https://code.visualstudio.com/docs/terminal/appearance#_terminal-cursor)
+## [Terminal cursor 终端光标]({{< ref "/Terminal/Appearance#_terminal-cursor" >}})
 
 The terminal cursor style and whether it blinks can be customized with the following settings:
 
@@ -75,7 +75,7 @@ The terminal cursor style and whether it blinks can be customized with the follo
 - `terminal.integrated.cursorStyleInactive`: Defines the shape of the cursor, can be outline, block, line, underline or none.
   `terminal.integrated.cursorStyleInactive` ：定义光标的形状，可以是轮廓、块、线、下划线或无。
 
-## [Customizing tabs 自定义选项卡](https://code.visualstudio.com/docs/terminal/appearance#_customizing-tabs)
+## [Customizing tabs 自定义选项卡]({{< ref "/Terminal/Appearance#_customizing-tabs" >}})
 
 Terminal tabs appear on the right of the terminal view when there are two or more terminals by default, showing the active terminal in the view header when there is only one.
 
@@ -83,7 +83,7 @@ Terminal tabs appear on the right of the terminal view when there are two or mor
 
 ![A blank terminal without tabs and then with tabs displayed for three terminals](./Appearance_img/tabs.png)
 
-### [Visibility 可见性](https://code.visualstudio.com/docs/terminal/appearance#_visibility)
+### [Visibility 可见性]({{< ref "/Terminal/Appearance#_visibility" >}})
 
 The default visibility is designed to save horizontal space, but may not be desirable. How tabs are presented can be configured with the following settings:
 
@@ -100,7 +100,7 @@ The default visibility is designed to save horizontal space, but may not be desi
 - `terminal.integrated.tabs.enabled`: Whether to use tabs, disabling will show the original dropdown view.
   `terminal.integrated.tabs.enabled` ：是否使用选项卡，禁用将显示原始的下拉视图。
 
-### [Tab text 选项卡文本](https://code.visualstudio.com/docs/terminal/appearance#_tab-text)
+### [Tab text 选项卡文本]({{< ref "/Terminal/Appearance#_tab-text" >}})
 
 The text on each tab is determined by the following settings:
 
@@ -125,13 +125,13 @@ Other terminals often display the escape sequence sent by the shell as the title
 "terminal.integrated.tabs.title": "${sequence}"
 ```
 
-### [Icons 每个终端都有一个关联的图标，由其终端配置文件决定。默认图标及其颜色（如果在配置文件中未定义，将使用该颜色）可以通过 和 设置进行配置。](https://code.visualstudio.com/docs/terminal/appearance#_icons)
+### [Icons 每个终端都有一个关联的图标，由其终端配置文件决定。默认图标及其颜色（如果在配置文件中未定义，将使用该颜色）可以通过 和 设置进行配置。]({{< ref "/Terminal/Appearance#_icons" >}})
 
-Each terminal has an associated icon that is determined by its [terminal profile](https://code.visualstudio.com/docs/terminal/profiles). The default icon and its color, which will be used if not defined in a profile, can be configured with the `terminal.integrated.tabs.defaultIcon` and `terminal.integrated.tabs.defaultColor` settings.
+Each terminal has an associated icon that is determined by its [terminal profile]({{< ref "/Terminal/TerminalProfiles" >}}). The default icon and its color, which will be used if not defined in a profile, can be configured with the `terminal.integrated.tabs.defaultIcon` and `terminal.integrated.tabs.defaultColor` settings.
 
 ​​	状态
 
-### [Status 终端的“状态”（如果有）由显示在选项卡右侧的图标表示。某些状态涉及动画。如果这会分散注意力，则可以通过以下方式禁用动画：](https://code.visualstudio.com/docs/terminal/appearance#_status)
+### [Status 终端的“状态”（如果有）由显示在选项卡右侧的图标表示。某些状态涉及动画。如果这会分散注意力，则可以通过以下方式禁用动画：]({{< ref "/Terminal/Appearance#_status" >}})
 
 A terminal's "status", if any, is signified by an icon that appears on the right of the tab. Some statuses involve animation. If this is distracting the animation can be disabled with:
 
@@ -141,15 +141,15 @@ A terminal's "status", if any, is signified by an icon that appears on the right
 "terminal.integrated.tabs.enableAnimation": false
 ```
 
-### [Visual bell](https://code.visualstudio.com/docs/terminal/appearance#_visual-bell)
+### [Visual bell]({{< ref "/Terminal/Appearance#_visual-bell" >}})
 
 When the terminal's bell is triggered, a yellow bell icon is briefly shown. This can be disabled with `terminal.integrated.enableBell` and the duration can be configured with `terminal.integrated.bellDuration`.
 
 ​​	当终端的铃声被触发时，会短暂显示一个黄色的铃铛图标。这可以通过 `terminal.integrated.enableBell` 禁用，并且可以通过 `terminal.integrated.bellDuration` 配置持续时间。
 
-## [Terminal colors 终端颜色](https://code.visualstudio.com/docs/terminal/appearance#_terminal-colors)
+## [Terminal colors 终端颜色]({{< ref "/Terminal/Appearance#_terminal-colors" >}})
 
-While the terminal is capable of displaying true color, programs commonly use 8 ANSI colors (black, red, green, yellow, blue, magenta, cyan and white) and bright variants of each. These ANSI colors are determined by the active [color theme](https://code.visualstudio.com/docs/getstarted/themes), but they can also be configured independently from the theme with the [workbench.colorCustomizations](https://code.visualstudio.com/docs/getstarted/themes#_workbench-colors) setting.
+While the terminal is capable of displaying true color, programs commonly use 8 ANSI colors (black, red, green, yellow, blue, magenta, cyan and white) and bright variants of each. These ANSI colors are determined by the active [color theme]({{< ref "/GetStarted/Themes" >}}), but they can also be configured independently from the theme with the [workbench.colorCustomizations]({{< ref "/GetStarted/Themes#_workbench-colors" >}}) setting.
 
 ​​	虽然终端能够显示真彩色，但程序通常使用 8 种 ANSI 颜色（黑色、红色、绿色、黄色、蓝色、品红色、青色和白色）以及每种颜色的亮色变体。这些 ANSI 颜色由活动颜色主题确定，但也可以通过 workbench.colorCustomizations 设置独立于主题进行配置。
 
@@ -157,7 +157,7 @@ Whether bold text uses the normal ANSI colors or the bright variant can be confi
 
 ​​	粗体文本是使用普通 ANSI 颜色还是亮色变体可以通过 `terminal.integrated.drawBoldTextInBrightColors` 设置进行配置。
 
-### [Minimum contrast ratio 最小对比度](https://code.visualstudio.com/docs/terminal/appearance#_minimum-contrast-ratio)
+### [Minimum contrast ratio 最小对比度]({{< ref "/Terminal/Appearance#_minimum-contrast-ratio" >}})
 
 Terminals often have contrast issues due to some conflict with dark/light themes, ANSI colors or shells/programs running, and more.
 
@@ -175,7 +175,7 @@ One downside of this is that colored text may sometimes lose some of its saturat
 "terminal.integrated.minimumContrastRatio": 1
 ```
 
-## [GPU acceleration GPU 加速](https://code.visualstudio.com/docs/terminal/appearance#_gpu-acceleration)
+## [GPU acceleration GPU 加速]({{< ref "/Terminal/Appearance#_gpu-acceleration" >}})
 
 The terminal features three different renderers, each of which have different trade offs:
 
@@ -204,9 +204,9 @@ Sometimes this detection doesn't work and requires manual intervention, setting 
 
 ​​	有时此检测不起作用，需要手动干预，将 `terminal.integrated.gpuAcceleration` 设置为 `"off"` 通常可以解决这些与渲染相关的问题，但会牺牲性能。
 
-### [Custom glyphs 自定义字形](https://code.visualstudio.com/docs/terminal/appearance#_custom-glyphs)
+### [Custom glyphs 自定义字形]({{< ref "/Terminal/Appearance#_custom-glyphs" >}})
 
-When [GPU acceleration](https://code.visualstudio.com/docs/terminal/appearance#_gpu-acceleration) is enabled, custom rendering, rather than the font, improves how some characters display in the terminal. These include box drawing characters (`U+2500-U+257F`), block elements (`U+2580-U+259F`) and a subset of Powerline symbols (`U+E0B0-U+E0BF`). This means that the configured font does not need to support these characters as well as having the characters draw pixel perfect and stretch to the size of the entire cell.
+When [GPU acceleration]({{< ref "/Terminal/Appearance#_gpu-acceleration" >}}) is enabled, custom rendering, rather than the font, improves how some characters display in the terminal. These include box drawing characters (`U+2500-U+257F`), block elements (`U+2580-U+259F`) and a subset of Powerline symbols (`U+E0B0-U+E0BF`). This means that the configured font does not need to support these characters as well as having the characters draw pixel perfect and stretch to the size of the entire cell.
 
 ​​	启用 GPU 加速后，自定义渲染（而非字体）可以改善某些字符在终端中的显示方式。这些字符包括框图字符 ( `U+2500-U+257F` )、块元素 ( `U+2580-U+259F` ) 和 Powerline 符号的子集 ( `U+E0B0-U+E0BF` )。这意味着配置的字体无需支持这些字符，而且这些字符可以像素完美地绘制并延伸至整个单元格的大小。
 
@@ -220,7 +220,7 @@ This feature can be disabled by setting `"terminal.integrated.customGlyphs": fal
 
 ​​	可以通过设置 `"terminal.integrated.customGlyphs": false` 来禁用此功能。
 
-## [Customizing your prompt 自定义提示](https://code.visualstudio.com/docs/terminal/appearance#_customizing-your-prompt)
+## [Customizing your prompt 自定义提示]({{< ref "/Terminal/Appearance#_customizing-your-prompt" >}})
 
 Most shells allow extensive customization of the terminal prompt. This is done by configuring your shell outside VS Code, typically by modifying the `$PS1` variable, setting a `$PROMPT_COMMAND` or installing a plugin.
 
@@ -230,17 +230,17 @@ Some prompts like [Starship](https://starship.rs/) and [oh-my-posh](https://ohmy
 
 ​​	像 Starship 和 oh-my-posh 这样的某些提示符会显示 git 状态等内容，并且适用于大多数 shell，因此在开始时它们是一个不错的选择。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/terminal/appearance#_common-questions)
+## [Common questions 常见问题]({{< ref "/Terminal/Appearance#_common-questions" >}})
 
-### [Why is my terminal showing a multi-colored triangle or a black rectangle? 为什么我的终端显示一个多色三角形或一个黑色矩形？](https://code.visualstudio.com/docs/terminal/appearance#_why-is-my-terminal-showing-a-multicolored-triangle-or-a-black-rectangle)
+### [Why is my terminal showing a multi-colored triangle or a black rectangle? 为什么我的终端显示一个多色三角形或一个黑色矩形？]({{< ref "/Terminal/Appearance#_why-is-my-terminal-showing-a-multicolored-triangle-or-a-black-rectangle" >}})
 
-The terminal can have problems with GPU accelerated rendering in some environments. For example, you might see a big multi-colored triangle instead of text. This is typically caused by driver/VM graphics issues and the same also happens in Chromium. Work around these issues by launching `code` with the `--disable-gpu` flag or by using the setting `"terminal.integrated.gpuAcceleration": "off"` to avoid using the canvas in the terminal. See the [GPU acceleration](https://code.visualstudio.com/docs/terminal/appearance#_gpu-acceleration) section for more information.
+The terminal can have problems with GPU accelerated rendering in some environments. For example, you might see a big multi-colored triangle instead of text. This is typically caused by driver/VM graphics issues and the same also happens in Chromium. Work around these issues by launching `code` with the `--disable-gpu` flag or by using the setting `"terminal.integrated.gpuAcceleration": "off"` to avoid using the canvas in the terminal. See the [GPU acceleration]({{< ref "/Terminal/Appearance#_gpu-acceleration" >}}) section for more information.
 
 ​​	在某些环境中，终端可能会遇到 GPU 加速渲染问题。例如，您可能会看到一个巨大的多色三角形而不是文本。这通常是由驱动程序/VM 图形问题引起的，在 Chromium 中也会发生这种情况。通过使用 `code` 标志启动 `--disable-gpu` 或使用设置 `"terminal.integrated.gpuAcceleration": "off"` 来避免在终端中使用画布，可以解决这些问题。有关更多信息，请参阅 GPU 加速部分。
 
-### [Why are the colors in the terminal not correct? 为什么终端中的颜色不正确？](https://code.visualstudio.com/docs/terminal/appearance#_why-are-the-colors-in-the-terminal-not-correct)
+### [Why are the colors in the terminal not correct? 为什么终端中的颜色不正确？]({{< ref "/Terminal/Appearance#_why-are-the-colors-in-the-terminal-not-correct" >}})
 
-The [minimum contrast ratio feature](https://code.visualstudio.com/docs/terminal/appearance#_minimum-contrast-ratio) can cause colors to not be displayed as expected. It can be disabled with:
+The [minimum contrast ratio feature]({{< ref "/Terminal/Appearance#_minimum-contrast-ratio" >}}) can cause colors to not be displayed as expected. It can be disabled with:
 
 ​​	最低对比度比率功能可能会导致颜色无法按预期显示。可以使用以下方法禁用它：
 

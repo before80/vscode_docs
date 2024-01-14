@@ -20,7 +20,7 @@ draft = false
 
 ![Welcome to React](./ReactTutorial_img/welcome-to-react.png)
 
-## [Welcome to React 欢迎使用 React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_welcome-to-react)
+## [Welcome to React 欢迎使用 React]({{< ref "/Node_jsJavaScript/ReactTutorial#_welcome-to-react" >}})
 
 We'll be using the `create-react-app` [generator](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) for this tutorial. To use the generator as well as run the React application server, you'll need [Node.js](https://nodejs.org/) JavaScript runtime and [npm](https://www.npmjs.com/) (Node.js package manager) installed. npm is included with Node.js which you can download and install from [Node.js downloads](https://nodejs.org/en/download/).
 
@@ -68,15 +68,15 @@ cd my-app
 code .
 ```
 
-### [Markdown preview Markdown 预览](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_markdown-preview)
+### [Markdown preview Markdown 预览]({{< ref "/Node_jsJavaScript/ReactTutorial#_markdown-preview" >}})
 
-In the File Explorer, one file you'll see is the application `README.md` Markdown file. This has lots of great information about the application and React in general. A nice way to review the README is by using the VS Code [Markdown Preview](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). You can open the preview in either the current editor group (**Markdown: Open Preview** Ctrl+Shift+V) or in a new editor group to the side (**Markdown: Open Preview to the Side** Ctrl+K V). You'll get nice formatting, hyperlink navigation to headers, and syntax highlighting in code blocks.
+In the File Explorer, one file you'll see is the application `README.md` Markdown file. This has lots of great information about the application and React in general. A nice way to review the README is by using the VS Code [Markdown Preview]({{< ref "/Languages/Markdown#_markdown-preview" >}}). You can open the preview in either the current editor group (**Markdown: Open Preview** Ctrl+Shift+V) or in a new editor group to the side (**Markdown: Open Preview to the Side** Ctrl+K V). You'll get nice formatting, hyperlink navigation to headers, and syntax highlighting in code blocks.
 
 ​​	在文件资源管理器中，您将看到的一个文件是应用程序 `README.md` Markdown 文件。其中包含有关应用程序和 React 的大量重要信息。查看自述文件的一种好方法是使用 VS Code Markdown 预览。您可以在当前编辑器组（Markdown：打开预览 Ctrl+Shift+V）或侧面的新编辑器组（Markdown：向侧面打开预览 Ctrl+K V）中打开预览。您将在代码块中获得漂亮的格式、到标题的超链接导航和语法突出显示。
 
 ![README Markdown Preview](./ReactTutorial_img/markdown-preview.png)
 
-### [Syntax highlighting and bracket matching 语法突出显示和括号匹配](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_syntax-highlighting-and-bracket-matching)
+### [Syntax highlighting and bracket matching 语法突出显示和括号匹配]({{< ref "/Node_jsJavaScript/ReactTutorial#_syntax-highlighting-and-bracket-matching" >}})
 
 Now expand the `src` folder and select the `index.js` file. You'll notice that VS Code has syntax highlighting for the various source code elements and, if you put the cursor on a parenthesis, the matching bracket is also selected.
 
@@ -84,7 +84,7 @@ Now expand the `src` folder and select the `index.js` file. You'll notice that V
 
 ![React bracket matching](./ReactTutorial_img/bracket-matching.png)
 
-### [IntelliSense](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_intellisense)
+### [IntelliSense]({{< ref "/Node_jsJavaScript/ReactTutorial#_intellisense" >}})
 
 As you start typing in `index.js`, you'll see smart suggestions or completions.
 
@@ -92,13 +92,13 @@ As you start typing in `index.js`, you'll see smart suggestions or completions.
 
 ![React IntelliSense suggestions](./ReactTutorial_img/suggestions.png)
 
-After you select a suggestion and type `.`, you see the types and methods on the object through [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense).
+After you select a suggestion and type `.`, you see the types and methods on the object through [IntelliSense]({{< ref "/UserGuide/IntelliSense" >}}).
 
 ​​	选择建议并键入 `.` 后，您将通过 IntelliSense 看到对象上的类型和方法。
 
 ![React IntelliSense](./ReactTutorial_img/intellisense.png)
 
-VS Code uses the TypeScript language service for its JavaScript code intelligence and it has a feature called [Automatic Type Acquisition](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_typings-and-automatic-type-acquisition) (ATA). ATA pulls down the npm Type Declaration files (`*.d.ts`) for the npm modules referenced in the `package.json`.
+VS Code uses the TypeScript language service for its JavaScript code intelligence and it has a feature called [Automatic Type Acquisition]({{< ref "/Node_jsJavaScript/WorkingwithJavaScript#_typings-and-automatic-type-acquisition" >}}) (ATA). ATA pulls down the npm Type Declaration files (`*.d.ts`) for the npm modules referenced in the `package.json`.
 
 ​​	VS Code 使用 TypeScript 语言服务来实现其 JavaScript 代码智能，并且它有一个名为自动类型获取 (ATA) 的功能。ATA 会提取 `package.json` 中引用的 npm 模块的 npm 类型声明文件 ( `*.d.ts` )。
 
@@ -108,9 +108,9 @@ If you select a method, you'll also get parameter help:
 
 ![React parameter help](./ReactTutorial_img/parameter-help.png)
 
-### [Go to Definition, Peek definition 转到定义、查看定义](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_go-to-definition-peek-definition)
+### [Go to Definition, Peek definition 转到定义、查看定义]({{< ref "/Node_jsJavaScript/ReactTutorial#_go-to-definition-peek-definition" >}})
 
-Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (F12) or **Peek Definition** (Alt+F12). Put the cursor over the `App`, right click and select **Peek Definition**. A [Peek window](https://code.visualstudio.com/docs/editor/editingevolved#_peek) will open showing the `App` definition from `App.js`.
+Through the TypeScript language service, VS Code can also provide type definition information in the editor through **Go to Definition** (F12) or **Peek Definition** (Alt+F12). Put the cursor over the `App`, right click and select **Peek Definition**. A [Peek window]({{< ref "/UserGuide/CodeNavigation#_peek" >}}) will open showing the `App` definition from `App.js`.
 
 ​​	通过 TypeScript 语言服务，VS Code 还可以在编辑器中通过转到定义 (F12) 或查看定义 (Alt+F12) 提供类型定义信息。将光标放在 `App` 上，右键单击并选择查看定义。将打开一个查看窗口，显示来自 `App.js` 的 `App` 定义。
 
@@ -120,7 +120,7 @@ Press Escape to close the Peek window.
 
 ​​	按 Escape 关闭查看窗口。
 
-## [Hello World](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_hello-world)
+## [Hello World]({{< ref "/Node_jsJavaScript/ReactTutorial#_hello-world" >}})
 
 Let's update the sample application to "Hello World!". Create a component inside `index.js` called `HelloWorld` that contains a H1 header with "Hello, world!" and replace the `<App />` tag in `root.render` with `<HelloWorld />`.
 
@@ -154,13 +154,13 @@ Once you save the `index.js` file, the running instance of the server will updat
 
 ​​	一旦您保存 `index.js` 文件，服务器的正在运行的实例将更新网页，当您刷新浏览器时，您将看到“Hello World!”。
 
-> **Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting](https://code.visualstudio.com/docs/getstarted/settings).
+> **Tip**: VS Code supports Auto Save, which by default saves your files after a delay. Check the **Auto Save** option in the **File** menu to turn on Auto Save or directly configure the `files.autoSave` user [setting]({{< ref "/GetStarted/Settings" >}}).
 >
 > ​​	提示：VS Code 支持自动保存，默认情况下会在延迟后保存您的文件。选中“文件”菜单中的“自动保存”选项以启用自动保存，或直接配置 `files.autoSave` 用户设置。
 
 ![Hello, world](./ReactTutorial_img/hello-world.png)
 
-## [Debugging React 调试 React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react)
+## [Debugging React 调试 React]({{< ref "/Node_jsJavaScript/ReactTutorial#_debugging-react" >}})
 
 To debug the client side React code, we'll use the built-in JavaScript debugger.
 
@@ -170,7 +170,7 @@ To debug the client side React code, we'll use the built-in JavaScript debugger.
 >
 > ​​	注意：本教程假定您已安装 Edge 浏览器。如果您想使用 Chrome 进行调试，请将启动 `type` 替换为 `chrome` 。Firefox 浏览器也有一个调试器。
 
-### [Set a breakpoint 设置断点](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_set-a-breakpoint)
+### [Set a breakpoint 设置断点]({{< ref "/Node_jsJavaScript/ReactTutorial#_set-a-breakpoint" >}})
 
 To set a breakpoint in `index.js`, click on the gutter to the left of the line numbers. This will set a breakpoint which will be visible as a red circle.
 
@@ -178,9 +178,9 @@ To set a breakpoint in `index.js`, click on the gutter to the left of the line n
 
 ![Set a breakpoint](./ReactTutorial_img/breakpoint.png)
 
-### [Configure the debugger 配置调试器](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_configure-the-debugger)
+### [Configure the debugger 配置调试器]({{< ref "/Node_jsJavaScript/ReactTutorial#_configure-the-debugger" >}})
 
-We need to initially configure the [debugger](https://code.visualstudio.com/docs/editor/debugging). To do so, go to the **Run and Debug** view (Ctrl+Shift+D) and select the **create a launch.json file** link to create a `launch.json` debugger configuration file. Choose **Web App (Edge)** from the **Select debugger** dropdown list. This will create a `launch.json` file in a new `.vscode` folder in your project which includes a configuration to launch the website.
+We need to initially configure the [debugger]({{< ref "/UserGuide/Debugging" >}}). To do so, go to the **Run and Debug** view (Ctrl+Shift+D) and select the **create a launch.json file** link to create a `launch.json` debugger configuration file. Choose **Web App (Edge)** from the **Select debugger** dropdown list. This will create a `launch.json` file in a new `.vscode` folder in your project which includes a configuration to launch the website.
 
 ​​	我们需要先配置调试器。为此，请转到“运行和调试”视图（Ctrl+Shift+D），然后选择“创建 launch.json 文件”链接以创建一个 `launch.json` 调试器配置文件。从“选择调试器”下拉列表中选择“Web App（Edge）”。这将在项目中的新 `.vscode` 文件夹中创建一个 `launch.json` 文件，其中包含用于启动网站的配置。
 
@@ -215,17 +215,17 @@ You can step through your source code (F10), inspect variables such as `HelloWor
 
 ![Debug element variable](./ReactTutorial_img/debug-variable.png)
 
-For more information about the debugger and its available options, check out our documentation on [browser debugging](https://code.visualstudio.com/docs/nodejs/browser-debugging).
+For more information about the debugger and its available options, check out our documentation on [browser debugging]({{< ref "/Node_jsJavaScript/BrowserDebugging" >}}).
 
 ​​	有关调试器及其可用选项的更多信息，请查看我们关于浏览器调试的文档。
 
-### [Live editing and debugging 实时编辑和调试](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_live-editing-and-debugging)
+### [Live editing and debugging 实时编辑和调试]({{< ref "/Node_jsJavaScript/ReactTutorial#_live-editing-and-debugging" >}})
 
 If you are using [webpack](https://webpack.js.org/) together with your React app, you can have a more efficient workflow by taking advantage of webpack's HMR mechanism which enables you to have live editing and debugging directly from VS Code. You can learn more in this [Live edit and debug your React apps directly from VS Code](https://medium.com/@auchenberg/live-edit-and-debug-your-react-apps-directly-from-vs-code-without-leaving-the-editor-3da489ed905f) blog post and the [webpack Hot Module Replacement documentation](https://webpack.js.org/concepts/hot-module-replacement/).
 
 ​​	如果您将 webpack 与 React 应用程序一起使用，您可以利用 webpack 的 HMR 机制来获得更高效的工作流，这使您能够直接从 VS Code 进行实时编辑和调试。您可以在此 Live edit and debug your React apps directly from VS Code 博客文章和 webpack 热模块替换文档中了解更多信息。
 
-## [Linting](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_linting)
+## [Linting]({{< ref "/Node_jsJavaScript/ReactTutorial#_linting" >}})
 
 Linters analyze your source code and can warn you about potential problems before you run your application. The JavaScript language services included with VS Code has syntax error checking support by default, which you can see in action in the **Problems** panel (**View** > **Problems** Ctrl+Shift+M).
 
@@ -310,19 +310,19 @@ Now when you mistakenly have multiple semicolons on a line, you'll see an error 
 
 ![Extra semicolon error](./ReactTutorial_img/extra-semi-error.png)
 
-## [Popular Starter Kits 流行入门工具包](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_popular-starter-kits)
+## [Popular Starter Kits 流行入门工具包]({{< ref "/Node_jsJavaScript/ReactTutorial#_popular-starter-kits" >}})
 
 In this tutorial, we used the `create-react-app` generator to create a simple React application. There are lots of great samples and starter kits available to help build your first React application.
 
 ​​	在本教程中，我们使用 `create-react-app` 生成器创建了一个简单的 React 应用程序。有很多很棒的示例和入门工具包可帮助您构建第一个 React 应用程序。
 
-### [VS Code React Sample VS Code React 示例](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_vs-code-react-sample)
+### [VS Code React Sample VS Code React 示例]({{< ref "/Node_jsJavaScript/ReactTutorial#_vs-code-react-sample" >}})
 
 This is a [sample](https://github.com/microsoft/vscode-react-sample) React application, which creates a simple TODO application and includes the source code for a Node.js [Express](https://expressjs.com/) server. It also shows how to use the [Babel](https://babeljs.io/) ES6 transpiler and then use [webpack](https://webpack.js.org/) to bundle the site assets.
 
 ​​	这是一个 React 应用程序示例，它创建了一个简单的 TODO 应用程序，并包含 Node.js Express 服务器的源代码。它还演示了如何使用 Babel ES6 转换器，然后使用 webpack 来捆绑网站资源。
 
-### [TypeScript React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_typescript-react)
+### [TypeScript React]({{< ref "/Node_jsJavaScript/ReactTutorial#_typescript-react" >}})
 
 If you're curious about TypeScript and React, you can also create a TypeScript version of the `create-react-app` application by specifying that you want to use the TypeScript template:
 
@@ -336,15 +336,15 @@ See the details at [Adding TypeScript](https://create-react-app.dev/docs/adding-
 
 ​​	请参阅 Create React App 网站上的添加 TypeScript 中的详细信息。
 
-### [Angular](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_angular)
+### [Angular]({{< ref "/Node_jsJavaScript/ReactTutorial#_angular" >}})
 
 [Angular](https://angular.io/) is another popular web framework. If you'd like to see an example of Angular working with VS Code, check out the [Debugging with Angular CLI](https://github.com/microsoft/vscode-recipes/tree/main/Angular-CLI) recipe. It will walk you through creating an Angular application and configuring the `launch.json` file for the JavaScript debugger.
 
 ​​	Angular 是另一个流行的 Web 框架。如果您想看一个 Angular 与 VS Code 配合使用的示例，请查看使用 Angular CLI 进行调试配方。它将指导您创建 Angular 应用程序并为 JavaScript 调试器配置 `launch.json` 文件。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_common-questions)
+## [Common questions 常见问题]({{< ref "/Node_jsJavaScript/ReactTutorial#_common-questions" >}})
 
-### [Can I get IntelliSense within declarative JSX? 我可以在声明式 JSX 中获得 IntelliSense 吗？](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_can-i-get-intellisense-within-declarative-jsx)
+### [Can I get IntelliSense within declarative JSX? 我可以在声明式 JSX 中获得 IntelliSense 吗？]({{< ref "/Node_jsJavaScript/ReactTutorial#_can-i-get-intellisense-within-declarative-jsx" >}})
 
 Yes. For example, if you open the `create-react-app` project's `App.js` file, you can see IntelliSense within the React JSX in the `render()` method.
 

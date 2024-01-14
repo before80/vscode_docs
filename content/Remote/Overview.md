@@ -39,28 +39,28 @@ draft = false
 
 ![Architecture](./Overview_img/architecture.png)
 
-## [Getting started 入门](https://code.visualstudio.com/docs/remote/remote-overview#_getting-started)
+## [Getting started 入门]({{< ref "/Remote/Overview#_getting-started" >}})
 
-### [Remote Development extension pack 远程开发扩展包](https://code.visualstudio.com/docs/remote/remote-overview#_remote-development-extension-pack)
+### [Remote Development extension pack 远程开发扩展包]({{< ref "/Remote/Overview#_remote-development-extension-pack" >}})
 
 The [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) includes four extensions. See the following articles to get started with each of them:
 
 ​​	远程开发扩展包包括四个扩展。请参阅以下文章，开始使用每个扩展：
 
-- [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) - Connect to any location by opening folders on a remote machine/VM using SSH.
+- [Remote - SSH]({{< ref "/Remote/SSH" >}}) - Connect to any location by opening folders on a remote machine/VM using SSH.
   Remote - SSH - 通过 SSH 在远程计算机/VM 上打开文件夹，连接到任何位置。
-- [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) - Work with a separate toolchain or container-based application inside (or mounted into) a container.
+- [Dev Containers]({{< ref "/DevContainers/Overview" >}}) - Work with a separate toolchain or container-based application inside (or mounted into) a container.
   开发容器 - 在容器内（或挂载到容器中）使用单独的工具链或基于容器的应用程序。
-- [WSL](https://code.visualstudio.com/docs/remote/wsl) - Get a Linux-powered development experience in the Windows Subsystem for Linux.
+- [WSL]({{< ref "/Remote/WindowsSubsystemforLinux" >}}) - Get a Linux-powered development experience in the Windows Subsystem for Linux.
   WSL - 在适用于 Linux 的 Windows 子系统中获取由 Linux 提供支持的开发体验。
-- [Remote - Tunnels](https://code.visualstudio.com/docs/remote/tunnels) - Connect to a remote machine via a secure tunnel, without configuring SSH.
+- [Remote - Tunnels]({{< ref "/Remote/Tunnels" >}}) - Connect to a remote machine via a secure tunnel, without configuring SSH.
   Remote - Tunnels - 通过安全隧道连接到远程计算机，无需配置 SSH。
 
 While most VS Code extensions should work unmodified in a remote environment, extension authors can learn more at [Supporting Remote Development](https://code.visualstudio.com/api/advanced-topics/remote-extensions).
 
 ​​	虽然大多数 VS Code 扩展应在远程环境中不经修改即可工作，但扩展作者可以在支持远程开发中了解更多信息。
 
-## [Remote tutorials 远程教程](https://code.visualstudio.com/docs/remote/remote-overview#_remote-tutorials)
+## [Remote tutorials 远程教程]({{< ref "/Remote/Overview#_remote-tutorials" >}})
 
 The tutorials below will walk you through running Visual Studio Code with the Remote Development extensions.
 
@@ -68,20 +68,20 @@ The tutorials below will walk you through running Visual Studio Code with the Re
 
 | Tutorial 教程                                                | Description 说明                                             |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| [Remote via SSH 通过 SSH 远程](https://code.visualstudio.com/docs/remote/ssh-tutorial) | Connect to remote and virtual machines with Visual Studio Code via SSH. 通过 SSH 连接到远程和虚拟机，使用 Visual Studio Code。 |
-| [Work in WSL 在 WSL 中工作](https://code.visualstudio.com/docs/remote/wsl-tutorial) | Run Visual Studio Code in Windows Subsystem for Linux. 在适用于 Linux 的 Windows 子系统中运行 Visual Studio Code。 |
-| [Develop in Containers 在容器中开发](https://code.visualstudio.com/docs/devcontainers/tutorial) | Run Visual Studio Code in a Docker Container. 在 Docker 容器中运行 Visual Studio Code。 |
+| [Remote via SSH 通过 SSH 远程]({{< ref "/Remote/SSHTutorial" >}}) | Connect to remote and virtual machines with Visual Studio Code via SSH. 通过 SSH 连接到远程和虚拟机，使用 Visual Studio Code。 |
+| [Work in WSL 在 WSL 中工作]({{< ref "/Remote/WSLTutorial" >}}) | Run Visual Studio Code in Windows Subsystem for Linux. 在适用于 Linux 的 Windows 子系统中运行 Visual Studio Code。 |
+| [Develop in Containers 在容器中开发]({{< ref "/DevContainers/Tutorial" >}}) | Run Visual Studio Code in a Docker Container. 在 Docker 容器中运行 Visual Studio Code。 |
 | [GitHub Codespaces](https://docs.github.com/github/developing-online-with-codespaces/using-codespaces-in-visual-studio-code) | Connect to a codespace with Visual Studio Code. 使用 Visual Studio Code 连接到代码空间。 |
 
-## [GitHub Codespaces](https://code.visualstudio.com/docs/remote/remote-overview#_github-codespaces)
+## [GitHub Codespaces]({{< ref "/Remote/Overview#_github-codespaces" >}})
 
-[GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces) provides remote development environments that are managed for you. You can configure and create a development environment hosted in the cloud, which is spun up and available when you need it.
+[GitHub Codespaces]({{< ref "/Remote/GitHubCodespaces" >}}) provides remote development environments that are managed for you. You can configure and create a development environment hosted in the cloud, which is spun up and available when you need it.
 
 ​​	GitHub Codespaces 提供了为您管理的远程开发环境。您可以在云中配置并创建托管的开发环境，该环境会在您需要时启动并可用。
 
-## [Questions or feedback 问题或反馈](https://code.visualstudio.com/docs/remote/remote-overview#_questions-or-feedback)
+## [Questions or feedback 问题或反馈]({{< ref "/Remote/Overview#_questions-or-feedback" >}})
 
-- See [Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting) or the [FAQ](https://code.visualstudio.com/docs/remote/faq).
+- See [Tips and Tricks]({{< ref "/Remote/TipsandTricks" >}}) or the [FAQ]({{< ref "/Remote/FAQ" >}}).
   请参阅提示和技巧或常见问题解答。
 - Search on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode-remote).
   在 Stack Overflow 上搜索。

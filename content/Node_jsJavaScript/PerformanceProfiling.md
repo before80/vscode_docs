@@ -14,11 +14,11 @@ draft = false
 
 
 
-Visual Studio Code supports collecting and viewing performance profiles for JavaScript programs. To get started, you'll first need to have the debugger configured for your [Node.js program](https://code.visualstudio.com/docs/nodejs/nodejs-debugging) or [browser app](https://code.visualstudio.com/docs/nodejs/browser-debugging).
+Visual Studio Code supports collecting and viewing performance profiles for JavaScript programs. To get started, you'll first need to have the debugger configured for your [Node.js program]({{< ref "/Node_jsJavaScript/Node_jsDebugging" >}}) or [browser app]({{< ref "/Node_jsJavaScript/BrowserDebugging" >}}).
 
 ​​	Visual Studio Code 支持收集和查看 JavaScript 程序的性能分析。要开始，您首先需要为 Node.js 程序或浏览器应用配置调试器。
 
-## [Types of profiles 分析类型](https://code.visualstudio.com/docs/nodejs/profiling#_types-of-profiles)
+## [Types of profiles 分析类型]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_types-of-profiles" >}})
 
 Depending on what you want to optimize, there are different kinds of profiles you may want to take.
 
@@ -31,7 +31,7 @@ Depending on what you want to optimize, there are different kinds of profiles yo
 - **Heap Snapshot** - A heap snapshot is an instantaneous view of where your program has allocated memory. If you notice your program is using a lot of RAM and want to find out where it's coming from, a heap snapshot can be useful. Note that collecting a heap snapshot can take several minutes for more complex programs, and viewing heap snapshots is not currently supported in the built-in editor.
   堆快照 - 堆快照是程序已分配内存位置的即时视图。如果您注意到程序正在使用大量 RAM，并且想要找出原因，堆快照会很有用。请注意，对于更复杂的程序，收集堆快照可能需要几分钟，并且内置编辑器目前不支持查看堆快照。
 
-## [Collecting a profile 收集分析信息](https://code.visualstudio.com/docs/nodejs/profiling#_collecting-a-profile)
+## [Collecting a profile 收集分析信息]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_collecting-a-profile" >}})
 
 To collect a profile, you'll need to be debugging your program. Once you are, you can collect a profile through a few methods:
 
@@ -42,7 +42,7 @@ To collect a profile, you'll need to be debugging your program. Once you are, yo
 - By calling `console.profile()` in your program. This will collect a CPU profile.
   在程序中调用 `console.profile()` 。这将收集 CPU 分析信息。
 
-### [Using the record button 使用记录按钮](https://code.visualstudio.com/docs/nodejs/profiling#_using-the-record-button)
+### [Using the record button 使用记录按钮]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_using-the-record-button" >}})
 
 Once you're debugging, switch to the Run and Debug view (Ctrl+Shift+D), and find the **Call Stack** view. Hover over the session you want to debug, and select the **Take Performance Profile** button. You can also run this command from the Command Palette (Ctrl+Shift+P).
 
@@ -50,7 +50,7 @@ Once you're debugging, switch to the Run and Debug view (Ctrl+Shift+D), and find
 
 ![Screenshot showing the button](./PerformanceProfiling_img/take-profile.png)
 
-VS Code will then ask what [type of performance](https://code.visualstudio.com/docs/nodejs/profiling#_types-of-profiles) profile you'd like to take; pick the one that's relevant for you.
+VS Code will then ask what [type of performance]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_types-of-profiles" >}}) profile you'd like to take; pick the one that's relevant for you.
 
 ​​	然后，VS Code 将询问您要获取哪种类型的性能分析信息；选择与您相关的一种。
 
@@ -65,11 +65,11 @@ Finally, VS Code will ask when you want to stop taking a profile. You can choose
 - Take the profile until you hit a certain breakpoint.
   获取配置文件，直到您命中某个断点。
 
-If you chose the first option, you can stop the profile by clicking the big red "record" icon shown in the debug toolbar. After the profile is collected, the [profile viewer](https://code.visualstudio.com/docs/nodejs/profiling#_analyzing-a-profile) will open automatically.
+If you chose the first option, you can stop the profile by clicking the big red "record" icon shown in the debug toolbar. After the profile is collected, the [profile viewer]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_analyzing-a-profile" >}}) will open automatically.
 
 ​​	如果您选择了第一个选项，您可以通过单击调试工具栏中显示的大红色“记录”图标来停止获取配置文件。收集配置文件后，配置文件查看器将自动打开。
 
-### [Using console.profile 使用 console.profile](https://code.visualstudio.com/docs/nodejs/profiling#_using-consoleprofile)
+### [Using console.profile 使用 console.profile]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_using-consoleprofile" >}})
 
 You can manually instrument your code using calls to `console.profile` to start a profile, and `console.profileEnd` to stop a profile. A CPU profile will be collected between these two call sites.
 
@@ -81,13 +81,13 @@ doSomeVeryExpensiveWork();
 console.profileEnd();
 ```
 
-The resulting `.cpuprofile` will be saved in your workspace folder automatically. You can select that file to open it in the built-in [profile viewer](https://code.visualstudio.com/docs/nodejs/profiling#_analyzing-a-profile).
+The resulting `.cpuprofile` will be saved in your workspace folder automatically. You can select that file to open it in the built-in [profile viewer]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_analyzing-a-profile" >}}).
 
 ​​	生成的 `.cpuprofile` 将自动保存在您的工作区文件夹中。您可以选择该文件以在内置配置文件查看器中将其打开。
 
-## [Analyzing a profile 分析配置文件](https://code.visualstudio.com/docs/nodejs/profiling#_analyzing-a-profile)
+## [Analyzing a profile 分析配置文件]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_analyzing-a-profile" >}})
 
-### [Table view 表格视图](https://code.visualstudio.com/docs/nodejs/profiling#_table-view)
+### [Table view 表格视图]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_table-view" >}})
 
 VS Code has an integrated visualizer that supports viewing JavaScript `.cpuprofile` and `.heapprofile` files. When you open one of these files, you will first be presented with a table view that looks something like this:
 
@@ -120,7 +120,7 @@ In this case, the Self Time for `a` would be 5 seconds and the Total Time for `a
 
 ​​	在这种情况下， `a` 的自身时间为 5 秒， `a` 的总时间为 8 秒。 `b` 的自身时间和总时间均为 3 秒。堆配置文件以相同的方式运行，但使用自身大小和总大小来指示在每个函数或其被调用者中分配的内存量。
 
-### [Flame view 火焰视图](https://code.visualstudio.com/docs/nodejs/profiling#_flame-view)
+### [Flame view 火焰视图]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_flame-view" >}})
 
 The table view is nice for certain cases, but often you may want to see a more visual representation of the profile. You can do this by clicking the flame 🔥 icon in the top right-hand side of the table view. If you have not already, you'll be prompted to install an additional extension that provides the flame view editor.
 
@@ -144,7 +144,7 @@ You can click on an entry in the flame graph to view more information about it, 
 
 ​​	您可以单击火焰图中的条目以查看有关它的更多信息，并且可以使用鼠标滚轮放大和缩小。如果已放大，您还可以拖动图表上的任意位置以导航。
 
-### [Left-heavy view 左重视图](https://code.visualstudio.com/docs/nodejs/profiling#_leftheavy-view)
+### [Left-heavy view 左重视图]({{< ref "/Node_jsJavaScript/PerformanceProfiling#_leftheavy-view" >}})
 
 If you're working with a CPU profile, there's a good chance the flame graph you're looking at is not as understandable as the one above. You might have lots of individual call stacks that look like this:
 

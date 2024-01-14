@@ -22,14 +22,14 @@ There are a few ways you can debug your Node.js programs in VS Code:
 
 ​​	您可以在 VS Code 中通过以下几种方式调试 Node.js 程序：
 
-- Use [auto attach](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach) to debug processes you run in VS Code's integrated terminal.
+- Use [auto attach]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_auto-attach" >}}) to debug processes you run in VS Code's integrated terminal.
   使用自动附加功能来调试在 VS Code 集成终端中运行的进程。
-- Use the [JavaScript debug terminal](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-debug-terminal), similar to using the integrated terminal.
+- Use the [JavaScript debug terminal]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_javascript-debug-terminal" >}}), similar to using the integrated terminal.
   使用 JavaScript 调试终端，类似于使用集成终端。
-- Use a [launch config](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration) to start your program, or [attach to a process](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_attaching-to-nodejs) launched outside of VS Code.
+- Use a [launch config]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration" >}}) to start your program, or [attach to a process]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_attaching-to-nodejs" >}}) launched outside of VS Code.
   使用启动配置来启动程序，或附加到在 VS Code 外部启动的进程。
 
-## [Auto Attach 自动附加](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach)
+## [Auto Attach 自动附加]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_auto-attach" >}})
 
 If the **Auto Attach** feature is enabled, the Node debugger automatically attaches to certain Node.js processes that have been launched from VS Code's Integrated Terminal. To enable the feature, either use the **Toggle Auto Attach** command from the Command Palette (Ctrl+Shift+P) or, if it's already activated, use the **Auto Attach** Status bar item.
 
@@ -56,12 +56,12 @@ When auto attach is on, the `Auto Attach` item will appear in the status bar acr
 
 ​​	当自动附加处于启用状态时， `Auto Attach` 项将显示在 VS Code 窗口底部的状态栏中。单击它可让您更改自动附加模式，或暂时将其关闭。如果您正在运行不需要调试的一些一次性程序，但又不想完全禁用此功能，则暂时关闭自动附加非常有用。
 
-### [Additional Configuration 其他配置](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_additional-configuration)
+### [Additional Configuration 其他配置]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_additional-configuration" >}})
 
 **Other Launch Configuration Properties
 其他启动配置属性**
 
-You can apply [other properties normally found in launch.json](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration-attributes) to auto attach in the **debug.javascript.terminalOptions** setting. For example, to add node internals to your skipFiles, you could add the following to your user or workspace settings:
+You can apply [other properties normally found in launch.json]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration-attributes" >}}) to auto attach in the **debug.javascript.terminalOptions** setting. For example, to add node internals to your skipFiles, you could add the following to your user or workspace settings:
 
 ​​	您可以在 debug.javascript.terminalOptions 设置中应用通常在 launch.json 中找到的其他属性以自动附加。例如，若要将 node 内部添加到 skipFiles，您可以在用户或工作区设置中添加以下内容：
 
@@ -100,20 +100,20 @@ In `smart` Auto Attach mode, VS Code will try to attach to your code, and not at
 ];
 ```
 
-## [JavaScript Debug Terminal JavaScript 调试终端](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-debug-terminal)
+## [JavaScript Debug Terminal JavaScript 调试终端]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_javascript-debug-terminal" >}})
 
-In a similar way to [auto attach](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach), the JavaScript Debug Terminal will automatically debug any Node.js process you run in it. You can create a Debug Terminal by running the **Debug: Create JavaScript Debug Terminal** command from the Command Palette (`kbs(workbench.action.showCommands)`), or by selecting the **Create JavaScript Debug Terminal** from the terminal switcher dropdown.
+In a similar way to [auto attach]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_auto-attach" >}}), the JavaScript Debug Terminal will automatically debug any Node.js process you run in it. You can create a Debug Terminal by running the **Debug: Create JavaScript Debug Terminal** command from the Command Palette (`kbs(workbench.action.showCommands)`), or by selecting the **Create JavaScript Debug Terminal** from the terminal switcher dropdown.
 
 ​​	与自动附加类似，JavaScript 调试终端会自动调试你在其中运行的任何 Node.js 进程。你可以通过从命令面板 ( `kbs(workbench.action.showCommands)` ) 运行调试：创建 JavaScript 调试终端命令，或从终端切换器下拉列表中选择创建 JavaScript 调试终端来创建调试终端。
 
 ![Create Debug Terminal](./Node_jsDebugging_img/create-debug-terminal.png)
 
-### [Additional Configuration 其他配置](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_additional-configuration)
+### [Additional Configuration 其他配置]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_additional-configuration" >}})
 
 **Other Launch Configuration Properties
 其他启动配置属性**
 
-You can apply [other properties normally found in launch.json](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration-attributes) to the debug terminal in the **debug.javascript.terminalOptions** setting. For example, to add node internals to your skipFiles, you could add the following to your user or workspace settings:
+You can apply [other properties normally found in launch.json]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration-attributes" >}}) to the debug terminal in the **debug.javascript.terminalOptions** setting. For example, to add node internals to your skipFiles, you could add the following to your user or workspace settings:
 
 ​​	你可以将通常在 launch.json 中找到的其他属性应用到 debug.javascript.terminalOptions 设置中的调试终端。例如，若要将节点内部添加到你的 skipFiles，你可以将以下内容添加到你的用户或工作区设置中：
 
@@ -125,13 +125,13 @@ You can apply [other properties normally found in launch.json](https://code.visu
 },
 ```
 
-## [Launch Configuration 启动配置](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration)
+## [Launch Configuration 启动配置]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration" >}})
 
 Launch configs are the traditional way to set up debugging in VS Code, and provide you the most configuration options for running complex applications.
 
 ​​	启动配置是 VS Code 中设置调试的传统方式，并为你提供了运行复杂应用程序的最多的配置选项。
 
-In this section we'll go into more detail about configurations and features for more advanced debugging scenarios. You'll find instruction for debugging with [source maps](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_source-maps), [stepping over external code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_skipping-uninteresting-code), doing [remote debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging), and much more.
+In this section we'll go into more detail about configurations and features for more advanced debugging scenarios. You'll find instruction for debugging with [source maps]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_source-maps" >}}), [stepping over external code]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_skipping-uninteresting-code" >}}), doing [remote debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}), and much more.
 
 ​​	在本节中，我们将更详细地介绍更高级调试方案的配置和功能。你将找到有关使用源映射进行调试、跨过外部代码、执行远程调试等的说明。
 
@@ -139,13 +139,13 @@ If you'd like to watch an introductory video, see [Getting started with Node.js 
 
 ​​	如果你想观看介绍性视频，请参阅 Node.js 调试入门。
 
-> **Note**: If you are just getting started with VS Code, you can learn about general debugging features and creating `launch.json` configuration files in the [Debugging](https://code.visualstudio.com/docs/editor/debugging) topic.
+> **Note**: If you are just getting started with VS Code, you can learn about general debugging features and creating `launch.json` configuration files in the [Debugging]({{< ref "/UserGuide/Debugging" >}}) topic.
 >
 > ​​	注意：如果您刚开始使用 VS Code，您可以在调试主题中了解常规调试功能和创建 `launch.json` 配置文件。
 
-## [Launch configuration attributes 启动配置属性](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration-attributes)
+## [Launch configuration attributes 启动配置属性]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration-attributes" >}})
 
-Debugging configurations are stored in a `launch.json` file located in your workspace's `.vscode` folder. An introduction into the creation and use of debugging configuration files is in the general [Debugging](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) article.
+Debugging configurations are stored in a `launch.json` file located in your workspace's `.vscode` folder. An introduction into the creation and use of debugging configuration files is in the general [Debugging]({{< ref "/UserGuide/Debugging#_launch-configurations" >}}) article.
 
 ​​	调试配置存储在工作区 `.vscode` 文件夹中的 `launch.json` 文件中。有关创建和使用调试配置文件的介绍，请参阅常规调试文章。
 
@@ -157,21 +157,21 @@ The following attributes are supported in launch configurations of type `launch`
 
 ​​	以下属性在 `launch` 和 `attach` 类型的启动配置中受支持：
 
-- `outFiles` - array of [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) for locating generated JavaScript files. See section [Source maps](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_source-maps).
+- `outFiles` - array of [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) for locating generated JavaScript files. See section [Source maps]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_source-maps" >}}).
   `outFiles` - 用于查找生成的 JavaScript 文件的 glob 模式数组。请参阅源映射部分。
-- `resolveSourceMapLocations` - an array of [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) for locations where source maps should be parsed. See section [Source maps](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_source-maps).
+- `resolveSourceMapLocations` - an array of [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) for locations where source maps should be parsed. See section [Source maps]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_source-maps" >}}).
   `resolveSourceMapLocations` - 用于解析源映射的位置的 glob 模式数组。请参阅源映射部分。
-- `timeout` - when restarting a session, give up after this number of milliseconds. See section [Attaching to Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_attaching-to-nodejs).
+- `timeout` - when restarting a session, give up after this number of milliseconds. See section [Attaching to Node.js]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_attaching-to-nodejs" >}}).
   `timeout` - 重新启动会话时，在此毫秒数后放弃。请参阅附加到 Node.js 部分。
 - `stopOnEntry` - break immediately when the program launches.
   `stopOnEntry` - 程序启动时立即中断。
-- `localRoot` - VS Code's root directory. See section [Remote debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging) below.
+- `localRoot` - VS Code's root directory. See section [Remote debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}) below.
   `localRoot` - VS Code 的根目录。请参阅下面的远程调试部分。
-- `remoteRoot` - Node's root directory. See section [Remote debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging) below.
+- `remoteRoot` - Node's root directory. See section [Remote debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}) below.
   `remoteRoot` - Node 的根目录。请参阅下面的远程调试部分。
-- `smartStep`- try to automatically step over code that doesn't map to source files. See section [Smart stepping](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_smart-stepping).
+- `smartStep`- try to automatically step over code that doesn't map to source files. See section [Smart stepping]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_smart-stepping" >}}).
   `smartStep` - 尝试自动跳过未映射到源文件的代码。请参阅智能步进部分。
-- `skipFiles` - automatically skip files covered by these [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns). See section [Skipping uninteresting code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_skipping-uninteresting-code).
+- `skipFiles` - automatically skip files covered by these [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns). See section [Skipping uninteresting code]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_skipping-uninteresting-code" >}}).
   `skipFiles` - 自动跳过这些 glob 模式涵盖的文件。请参阅跳过无意义的代码部分。
 - `trace` - enable diagnostic output.
   `trace` - 启用诊断输出。
@@ -186,17 +186,17 @@ These attributes are only available for launch configurations of request type `l
   `args` - 传递给要调试的程序的参数。此属性的类型为数组，并期望各个参数作为数组元素。
 - `cwd` - launch the program to debug in this directory.
   `cwd` - 在此目录中启动要调试的程序。
-- `runtimeExecutable` - absolute path to the runtime executable to be used. Default is `node`. See section [Launch configuration support for 'npm' and other tools](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration-support-for-npm-and-other-tools).
+- `runtimeExecutable` - absolute path to the runtime executable to be used. Default is `node`. See section [Launch configuration support for 'npm' and other tools]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration-support-for-npm-and-other-tools" >}}).
   `runtimeExecutable` - 要使用的运行时可执行文件的绝对路径。默认值为 `node` 。请参阅“npm”和其他工具的启动配置支持部分。
 - `runtimeArgs` - optional arguments passed to the runtime executable.
   `runtimeArgs` - 传递给运行时可执行文件的可选参数。
-- `runtimeVersion` - if "[nvm](https://github.com/creationix/nvm)" (or "[nvm-windows](https://github.com/coreybutler/nvm-windows)") or "[nvs](https://github.com/jasongin/nvs)" is used for managing Node.js versions, this attribute can be used to select a specific version of Node.js. See section [Multi version support](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_multi-version-support) below.
+- `runtimeVersion` - if "[nvm](https://github.com/creationix/nvm)" (or "[nvm-windows](https://github.com/coreybutler/nvm-windows)") or "[nvs](https://github.com/jasongin/nvs)" is used for managing Node.js versions, this attribute can be used to select a specific version of Node.js. See section [Multi version support]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_multi-version-support" >}}) below.
   `runtimeVersion` - 如果使用“nvm”（或“nvm-windows”）或“nvs”来管理 Node.js 版本，则可以使用此属性选择特定版本的 Node.js。请参阅下面的多版本支持部分。
 - `env` - optional environment variables. This attribute expects environment variables as a list of string typed key/value pairs.
   `env` - 可选环境变量。此属性期望环境变量为字符串类型键/值对的列表。
-- `envFile` - optional path to a file containing environment variable definitions. See section [Load environment variables from external file](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_load-environment-variables-from-external-file) below.
+- `envFile` - optional path to a file containing environment variable definitions. See section [Load environment variables from external file]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_load-environment-variables-from-external-file" >}}) below.
   `envFile` - 包含环境变量定义的文件的可选路径。请参阅下面的从外部文件加载环境变量部分。
-- `console` - the console to launch the program (`internalConsole`, `integratedTerminal`, `externalTerminal`). See section [Node Console](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_node-console) below.
+- `console` - the console to launch the program (`internalConsole`, `integratedTerminal`, `externalTerminal`). See section [Node Console]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_node-console" >}}) below.
   `console` - 用于启动程序的控制台（ `internalConsole` 、 `integratedTerminal` 、 `externalTerminal` ）。请参阅下面的 Node 控制台部分。
 - `outputCapture` - if set to `std`, output from the process stdout/stderr will be shown in the Debug Console, instead of listening to output over the debug port. This is useful for programs or log libraries that write directly to the stdout/stderr streams instead of using `console.*` APIs.
   `outputCapture` - 如果设置为 `std` ，则进程 stdout/stderr 的输出将显示在调试控制台中，而不是侦听调试端口上的输出。这对于直接写入 stdout/stderr 流而不是使用 `console.*` API 的程序或日志库非常有用。
@@ -205,18 +205,18 @@ This attribute is only available for launch configurations of request type `atta
 
 ​​	此属性仅适用于请求类型为 `attach` 的启动配置：
 
-- `restart` - restart the connection on termination. See section [Restarting debug session automatically](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_restarting-debug-sessions-automatically-when-source-is-edited).
+- `restart` - restart the connection on termination. See section [Restarting debug session automatically]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_restarting-debug-sessions-automatically-when-source-is-edited" >}}).
   `restart` - 在终止时重新启动连接。请参阅自动重新启动调试会话部分。
-- `port` - debug port to use. See sections [Attaching to Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_attaching-to-nodejs) and [Remote debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging).
+- `port` - debug port to use. See sections [Attaching to Node.js]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_attaching-to-nodejs" >}}) and [Remote debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}).
   `port` - 要使用的调试端口。请参阅“附加到 Node.js”和“远程调试”部分。
-- `address` - TCP/IP address of the debug port. See sections [Attaching to Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_attaching-to-nodejs) and [Remote debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging).
+- `address` - TCP/IP address of the debug port. See sections [Attaching to Node.js]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_attaching-to-nodejs" >}}) and [Remote debugging]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}}).
   `address` - 调试端口的 TCP/IP 地址。请参阅“附加到 Node.js”和“远程调试”部分。
 - `processId` - the debugger tries to attach to this process after having sent a USR1 signal. With this setting, the debugger can attach to an already running process that was not started in debug mode. When using the `processId` attribute, the debug port is determined automatically based on the Node.js version (and the used protocol) and cannot be configured explicitly. So don't specify a `port` attribute.
   `processId` - 在发送 USR1 信号后，调试器尝试附加到此进程。使用此设置，调试器可以附加到未在调试模式下启动的已运行进程。使用 `processId` 属性时，调试端口会根据 Node.js 版本（和使用的协议）自动确定，无法显式配置。因此，不要指定 `port` 属性。
 - `continueOnAttach` - whether to continue the process if it's paused when we attach to it. This option is useful if you launch your program with `--inspect-brk`.
   `continueOnAttach` - 如果在附加到进程时进程已暂停，是否继续该进程。如果您使用 `--inspect-brk` 启动程序，此选项非常有用。
 
-### [Launch configurations for common scenarios 常见方案的启动配置](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configurations-for-common-scenarios)
+### [Launch configurations for common scenarios 常见方案的启动配置]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configurations-for-common-scenarios" >}})
 
 You can trigger IntelliSense (Ctrl+Space) in your `launch.json` file to see launch configuration snippets for commonly used Node.js debugging scenarios.
 
@@ -255,7 +255,7 @@ The following snippets are available:
 - **Electron Main**: Debug the main Node.js process of an Electron application. The snippet assumes that the Electron executable has been installed inside the `node_modules/.bin` directory of the workspace.
   Electron 主进程：调试 Electron 应用程序的 Node.js 主进程。代码段假定已在工作区的 `node_modules/.bin` 目录中安装了 Electron 可执行文件。
 
-### [Node console Node 控制台](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_node-console)
+### [Node console Node 控制台]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_node-console" >}})
 
 By default, Node.js debug sessions launch the target in the internal VS Code Debug Console. Since the Debug Console does not support programs that need to read input from the console, you can enable either an external terminal or use the VS Code Integrated Terminal by setting the `console` attribute in your launch configuration to `externalTerminal` or `integratedTerminal` respectively. The default is `internalConsole`.
 
@@ -265,7 +265,7 @@ In an external terminal, you can configure which terminal program to use via the
 
 ​​	在外部终端中，您可以通过 `terminal.external.windowsExec` 、 `terminal.external.osxExec` 和 `terminal.external.linuxExec` 设置来配置要使用的终端程序。
 
-### [Launch configuration support for 'npm' and other tools 对“npm”和其他工具的启动配置支持](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_launch-configuration-support-for-npm-and-other-tools)
+### [Launch configuration support for 'npm' and other tools 对“npm”和其他工具的启动配置支持]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_launch-configuration-support-for-npm-and-other-tools" >}})
 
 Instead of launching the Node.js program directly with node, you can use 'npm' scripts or other task runner tools directly from a launch configuration:
 
@@ -301,7 +301,7 @@ the corresponding launch configuration would look like this:
 }
 ```
 
-### [Multi version support 多版本支持](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_multi-version-support)
+### [Multi version support 多版本支持]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_multi-version-support" >}})
 
 If you are using '[nvm](https://github.com/creationix/nvm)' (or '[nvm-windows](https://github.com/coreybutler/nvm-windows)') to manage your Node.js versions, it is possible to specify a `runtimeVersion` attribute in a launch configuration for selecting a specific version of Node.js:
 
@@ -339,7 +339,7 @@ If you omit the minor and patch version and have, for example, `"runtimeVersion"
 
 ​​	如果您省略次要版本和修补程序版本，例如，只有 `"runtimeVersion": "14"` ，则将使用系统上安装的最新 `14.x.y` 版本。
 
-### [Load environment variables from external file 从外部文件加载环境变量](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_load-environment-variables-from-external-file)
+### [Load environment variables from external file 从外部文件加载环境变量]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_load-environment-variables-from-external-file" >}})
 
 The VS Code Node debugger supports loading environment variables from a file and passing them to the Node.js runtime. To use this feature, add an attribute `envFile` to your launch configuration and specify the absolute path to the file containing the environment variables:
 
@@ -373,7 +373,7 @@ empty=
 lines="foo\nbar"
 ```
 
-## [Attaching to Node.js 附加到 Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_attaching-to-nodejs)
+## [Attaching to Node.js 附加到 Node.js]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_attaching-to-nodejs" >}})
 
 If you want to attach the VS Code debugger to an external Node.js program, launch Node.js as follows:
 
@@ -404,7 +404,7 @@ Let's go through these options in detail:
 
 ​​	让我们详细了解这些选项：
 
-### [Attach to Node Process action 附加到 Node 进程操作](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_attach-to-node-process-action)
+### [Attach to Node Process action 附加到 Node 进程操作]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_attach-to-node-process-action" >}})
 
 The **Attach to Node Process** command from the Command Palette (Ctrl+Shift+P) opens a Quick Pick menu that lists all potential processes that are available to the Node.js debugger:
 
@@ -420,7 +420,7 @@ In addition to Node.js processes, the picker also shows other programs that were
 
 ​​	除了 Node.js 进程外，选择器还显示使用各种形式 `--inspect` 参数启动的其他程序。这使得可以附加到 Electron 或 VS Code 的帮助进程。
 
-### [Setting up an "Attach" configuration 设置“附加”配置](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_setting-up-an-attach-configuration)
+### [Setting up an "Attach" configuration 设置“附加”配置]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_setting-up-an-attach-configuration" >}})
 
 This option requires more work but in contrast to the previous two options it allows you to configure various debug configuration options explicitly.
 
@@ -473,7 +473,7 @@ Using the `PickProcess` variable the launch configuration looks like this:
 }
 ```
 
-## [Stop debugging 停止调试](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_stop-debugging)
+## [Stop debugging 停止调试]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_stop-debugging" >}})
 
 Using the **Debug: Stop** action (available in the Debug toolbar or via the **Command Palette**) stops the debug session.
 
@@ -503,7 +503,7 @@ On Windows, pressing **Stop** forcibly kills the debuggee and its child processe
 
 ​​	在 Windows 上，按停止会强制终止被调试程序及其子进程。
 
-## [Source maps 源映射](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_source-maps)
+## [Source maps 源映射]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_source-maps" >}})
 
 The JavaScript debugger of VS Code supports source maps that help debugging of transpiled languages, for example, TypeScript or minified/uglified JavaScript. With source maps, it's possible to single step through or set breakpoints in the original source. If no source map exists for the original source, or if the source map is broken and cannot successfully map between the source and the generated JavaScript, then breakpoints show up as unverified (gray hollow circles).
 
@@ -513,7 +513,7 @@ The `sourceMaps` attribute that defaults to `true` controls the source map featu
 
 ​​	默认值为 `true` 的 `sourceMaps` 属性控制源映射功能。调试器始终尝试使用源映射（如果可以找到任何源映射），因此，您甚至可以使用 `program` 属性指定源文件（例如，app.ts）。如果由于某种原因需要禁用源映射，可以将 `sourceMaps` 属性设置为 `false` 。
 
-### [Tool Configuration 工具配置](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_tool-configuration)
+### [Tool Configuration 工具配置]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_tool-configuration" >}})
 
 Since source maps are not always automatically created, you should make sure to configure your transpiler to create them. For example:
 
@@ -549,7 +549,7 @@ Also, if you have additional compilation steps in webpack, such as using a TypeS
 
 ​​	此外，如果您在 webpack 中有其他编译步骤，例如使用 TypeScript 加载器，您还需要确保这些步骤已设置为生成源映射。否则，webpack 生成的源映射将映射回加载器的已编译代码，而不是真实源。
 
-### [Source Map Discovery 源映射发现](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_source-map-discovery)
+### [Source Map Discovery 源映射发现]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_source-map-discovery" >}})
 
 By default, VS Code will search your entire workspace, excluding `node_modules`, for sourcemaps. In large workspaces, this search might be slow. You can configure the locations where VS Code will search for source maps by setting the `outFiles` attribute in your `launch.json`. For example, this configuration will only discover sourcemaps for `.js` files in the `bin` folder:
 
@@ -574,7 +574,7 @@ Note that the `outFiles` should match your JavaScript files, not the source map 
 
 ​​	请注意， `outFiles` 应与您的 JavaScript 文件匹配，而不是源映射文件（可能以 `.map` 结尾，而不是 `.js` ）。
 
-### [Source Map Resolution 源映射解析](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_source-map-resolution)
+### [Source Map Resolution 源映射解析]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_source-map-resolution" >}})
 
 By default, only source maps in your `outFiles` will be resolved. This behavior is used to prevent dependencies from interfering with breakpoints you set. For example, if you had a file `src/index.ts` and a dependency had a source map that referenced `webpack:///./src/index.ts`, that would incorrectly resolve to your source file and could lead to surprising results.
 
@@ -591,7 +591,7 @@ You can configure this behavior by setting the `resolveSourceMapLocations` optio
   ]
 ```
 
-### [Smart stepping 智能步进](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_smart-stepping)
+### [Smart stepping 智能步进]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_smart-stepping" >}})
 
 With the `smartStep` attribute set to `true` in a launch configuration, VS Code will automatically skip 'uninteresting code' when stepping through code in the debugger. 'Uninteresting code' is code that is generated by a transpiling process but is not covered by a source map so it does not map back to the original source. This code gets in your way when stepping through source code in the debugger because it makes the debugger switch between the original source code and generated code that you are not interested in. `smartStep` will automatically step through code not covered by a source map until it reaches a location that is covered by a source map again.
 
@@ -605,7 +605,7 @@ The `smartStep` feature only applies to JavaScript code that was generated from 
 
 ​​	 `smartStep` 功能仅适用于从源代码生成且因此具有源映射的 JavaScript 代码。对于没有源的 JavaScript，智能步进选项无效。
 
-### [JavaScript source map tips JavaScript 源映射提示](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-source-map-tips)
+### [JavaScript source map tips JavaScript 源映射提示]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_javascript-source-map-tips" >}})
 
 A common issue when debugging with source maps is that you'll set a breakpoint, and it will turn gray. If you hover the cursor over it, you'll see the message, `"Breakpoint ignored because generated code not found (source map problem?)"`. What now? There are a range of issues that can lead to this. First, a quick explanation of how the Node debug adapter handles source maps.
 
@@ -640,9 +640,9 @@ Here are some things to try when your breakpoints turn gray:
 - Try adding a `debugger` statement. If it breaks into the `.ts` file there, but breakpoints at that spot don't bind, that is useful information to include with a GitHub issue.
   尝试添加 `debugger` 语句。如果它中断到那里的 `.ts` 文件，但该处的断点未绑定，那么这是包含在 GitHub 问题中的有用信息。
 
-## [Remote debugging 远程调试](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_remote-debugging)
+## [Remote debugging 远程调试]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_remote-debugging" >}})
 
-> **Note:** VS Code now has universal [remote development capabilities](https://code.visualstudio.com/docs/remote/remote-overview). Using the [Remote Development](https://aka.ms/vscode-remote/download/extension) extensions, Node.js development in remote scenarios and containers is no different than Node.js development in a local setup. **This is the recommended way to remote debug Node.js programs**. Check out the [Getting started](https://code.visualstudio.com/docs/remote/remote-overview#_getting-started) section and [Remote tutorials](https://code.visualstudio.com/docs/remote/remote-overview#_remote-tutorials) to learn more.
+> **Note:** VS Code now has universal [remote development capabilities]({{< ref "/Remote/Overview" >}}). Using the [Remote Development](https://aka.ms/vscode-remote/download/extension) extensions, Node.js development in remote scenarios and containers is no different than Node.js development in a local setup. **This is the recommended way to remote debug Node.js programs**. Check out the [Getting started]({{< ref "/Remote/Overview#_getting-started" >}}) section and [Remote tutorials]({{< ref "/Remote/Overview#_remote-tutorials" >}}) to learn more.
 >
 > ​​	注意：VS Code 现在具有通用的远程开发功能。使用远程开发扩展，远程场景和容器中的 Node.js 开发与本地设置中的 Node.js 开发没有任何区别。这是远程调试 Node.js 程序的推荐方法。查看入门部分和远程教程以了解更多信息。
 
@@ -680,7 +680,7 @@ By default, VS Code will stream the debugged source from the remote Node.js fold
 }
 ```
 
-## [Access Loaded Scripts 访问加载的脚本](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_access-loaded-scripts)
+## [Access Loaded Scripts 访问加载的脚本]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_access-loaded-scripts" >}})
 
 If you need to set a breakpoint in a script that is not part of your workspace and therefore cannot be easily located and opened through normal VS Code file browsing, you can access the loaded scripts via the **LOADED SCRIPTS** view in the **Run and Debug** view:
 
@@ -696,7 +696,7 @@ Scripts are loaded into a read-only editor where you can set breakpoints. These 
 
 ​​	脚本加载到只读编辑器中，您可以在其中设置断点。这些断点在调试会话中会被记住，但您只能在调试会话运行时访问脚本内容。
 
-## [Restarting debug sessions automatically when source is edited 在编辑源代码时自动重新启动调试会话](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_restarting-debug-sessions-automatically-when-source-is-edited)
+## [Restarting debug sessions automatically when source is edited 在编辑源代码时自动重新启动调试会话]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_restarting-debug-sessions-automatically-when-source-is-edited" >}})
 
 The `restart` attribute of a launch configuration controls whether the Node.js debugger automatically restarts after the debug session has ended. This feature is useful if you use [**nodemon**](https://nodemon.io/) to restart Node.js on file changes. Setting the launch configuration attribute `restart` to `true` makes the node debugger automatically try to reattach to Node.js after Node.js has terminated.
 
@@ -748,7 +748,7 @@ Alternatively, you can start your program `server.js` via **nodemon** directly w
 >
 > ​​	提示：如果出现语法错误，nodemon 将无法在错误修复之前成功启动 Node.js。在这种情况下，VS Code 将继续尝试附加到 Node.js，但最终会放弃（10 秒后）。为了避免这种情况，您可以通过添加一个具有较大值（以毫秒为单位）的 `timeout` 属性来增加超时时间。
 
-## [Restart frame 重新启动框架](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_restart-frame)
+## [Restart frame 重新启动框架]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_restart-frame" >}})
 
 The Node debugger supports restarting execution at a stack frame. This can be useful in situations where you have found a problem in your source code and you want to rerun a small portion of the code with modified input values. Stopping and then restarting the full debug session can be time-consuming. The **Restart Frame** action allows you to reenter the current function after you have changed variables with the **Set Value** action:
 
@@ -760,9 +760,9 @@ The Node debugger supports restarting execution at a stack frame. This can be us
 
 ​​	重新启动帧不会回滚函数外部的状态突变，因此可能无法始终按预期工作。
 
-## [Breakpoints 断点](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_breakpoints)
+## [Breakpoints 断点]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_breakpoints" >}})
 
-### [Conditional Breakpoints 条件断点](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_conditional-breakpoints)
+### [Conditional Breakpoints 条件断点]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_conditional-breakpoints" >}})
 
 Conditional breakpoints are breakpoints that only pause when an expression returns a truthy value. You can create one by right-clicking in the gutter beside a line number and selecting "Conditional Breakpoint":
 
@@ -770,7 +770,7 @@ Conditional breakpoints are breakpoints that only pause when an expression retur
 
 ![Conditional breakpoint](./Node_jsDebugging_img/conditional-breakpoint.gif)
 
-### [Logpoints 日志点](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_logpoints)
+### [Logpoints 日志点]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_logpoints" >}})
 
 Sometimes you want to just log a message or value when code hits a certain location, rather than pausing. You can do this with logpoints. Logpoints don't pause, but rather log a message to the Debug Console when hit. In the JavaScript debugger, you can use curly braces to interpolate expressions into the message, like `current value is: {myVariable.property}`.
 
@@ -782,7 +782,7 @@ You can create one by right-clicking in the gutter beside a line number and sele
 
 ![Logpoint](./Node_jsDebugging_img/logpoint-breakpoint.gif)
 
-### [Hit count breakpoints 命中计数断点](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_hit-count-breakpoints)
+### [Hit count breakpoints 命中计数断点]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_hit-count-breakpoints" >}})
 
 The 'hit count condition' controls how many times a breakpoint needs to be hit before it will 'break' execution. You can place a hit count breakpoint by right-clicking in the gutter beside a line number, selecting "Conditional Breakpoint", and then switching to "Hit Count".
 
@@ -807,7 +807,7 @@ Some examples:
 - `%2` break on every other hit
   `%2` 每命中一次中断一次
 
-### [Breakpoint validation 断点验证](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_breakpoint-validation)
+### [Breakpoint validation 断点验证]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_breakpoint-validation" >}})
 
 For performance reasons, Node.js parses the functions inside JavaScript files lazily on first access. As a consequence, breakpoints don't work in source code areas that haven't been seen (parsed) by Node.js.
 
@@ -833,7 +833,7 @@ This breakpoint validation occurs when a session starts and the breakpoints are 
 
 ![Breakpoint Actions](./Node_jsDebugging_img/breakpointstoolbar.png)
 
-## [Skipping uninteresting code 跳过不感兴趣的代码](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_skipping-uninteresting-code)
+## [Skipping uninteresting code 跳过不感兴趣的代码]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_skipping-uninteresting-code" >}})
 
 VS Code Node.js debugging has a feature to avoid source code that you don't want to step through (also known as 'Just My Code'). This feature can be enabled with the `skipFiles` attribute in your launch configuration. `skipFiles` is an array of [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) for script paths to skip.
 
@@ -910,7 +910,7 @@ In the following (`legacy` protocol-only) example all but a 'math' module is ski
 >
 > ​​	注意： `legacy` 协议调试器必须模拟 `skipFiles` 功能，因为 V8 调试器协议本机不支持它。这可能会导致缓慢的单步执行性能。
 
-## [Debugging WebAssembly 调试 WebAssembly](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_debugging-webassembly)
+## [Debugging WebAssembly 调试 WebAssembly]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_debugging-webassembly" >}})
 
 The JavaScript debugger can debug code compiled into WebAssembly if it includes [DWARF](https://dwarfstd.org/) debug information. Many toolchains support emitting this information:
 
@@ -979,19 +979,19 @@ VS Code's WebAssembly debugging is built upon the [C/C++ Debugging Extension](ht
 
 ​​	VS Code 的 WebAssembly 调试基于 Chromium 作者的 C/C++ 调试扩展构建。
 
-## [Supported Node-like runtimes 受支持的类似 Node 的运行时](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_supported-nodelike-runtimes)
+## [Supported Node-like runtimes 受支持的类似 Node 的运行时]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_supported-nodelike-runtimes" >}})
 
 The current VS Code JavaScript debugger supports Node version at or above 8.x, recent Chrome versions, and recent Edge versions (via the `msedge` launch type).
 
 ​​	当前 VS Code JavaScript 调试器支持 8.x 或更高版本的 Node 版本、最新版本的 Chrome 以及最新版本的 Edge（通过 `msedge` 启动类型）。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_next-steps" >}})
 
 In case you didn't already read the Node.js section, take a look at:
 
 ​​	如果您尚未阅读 Node.js 部分，请查看：
 
-- [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) - End to end Node scenario with a sample application
+- [Node.js]({{< ref "/Node_jsJavaScript/Node_jsTutorial" >}}) - End to end Node scenario with a sample application
   Node.js - 带有示例应用程序的端到端 Node 场景
 
 To see tutorials on the basics of Node.js debugging, check out these videos:
@@ -1007,7 +1007,7 @@ To learn about VS Code's task running support, go to:
 
 ​​	要了解 VS Code 的任务运行支持，请转到：
 
-- [Tasks](https://code.visualstudio.com/docs/editor/tasks) - Running tasks with Gulp, Grunt, and Jake. Showing Errors and Warnings
+- [Tasks]({{< ref "/UserGuide/Tasks" >}}) - Running tasks with Gulp, Grunt, and Jake. Showing Errors and Warnings
   任务 - 使用 Gulp、Grunt 和 Jake 运行任务。显示错误和警告
 
 To write your own debugger extension, visit:
@@ -1017,9 +1017,9 @@ To write your own debugger extension, visit:
 - [Debugger Extension](https://code.visualstudio.com/api/extension-guides/debugger-extension) - Steps to create a VS Code debug extension starting from a mock sample
   调试器扩展 - 从模拟示例开始创建 VS Code 调试扩展
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_common-questions)
+## [Common questions 常见问题]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_common-questions" >}})
 
-### [Can I debug if I'm using symlinks? 如果我使用符号链接，是否可以调试？](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_can-i-debug-if-im-using-symlinks)
+### [Can I debug if I'm using symlinks? 如果我使用符号链接，是否可以调试？]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_can-i-debug-if-im-using-symlinks" >}})
 
 Yes, if you've created symlinks for folders inside your project, such as with `npm link`, you can debug the symlinked sources by telling the Node.js runtime to preserve symlinked paths. Use the node.exe `--preserve-symlinks` [switch](https://nodejs.org/api/cli.html#cli_preserve_symlinks) in your launch configuration `runtimeArgs` attribute. `runtimeArgs`, an array of strings, are passed to the debugging session runtime executable, which defaults to node.exe.
 
@@ -1035,7 +1035,7 @@ If your main script is inside a symlinked path, then you will also need to add t
 
 ​​	如果您的主脚本位于符号链接路径中，那么您还需要添加 `"--preserve-symlinks-main"` 选项。此选项仅在 Node 10+ 中可用。
 
-### [How do I debug ECMAScript modules? 如何调试 ECMAScript 模块？](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_how-do-i-debug-ecmascript-modules)
+### [How do I debug ECMAScript modules? 如何调试 ECMAScript 模块？]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_how-do-i-debug-ecmascript-modules" >}})
 
 If you use esm or pass `--experimental-modules` to Node.js in order to use ECMAScript modules, you can pass these options through the `runtimeArgs` attribute of `launch.json`:
 
@@ -1046,7 +1046,7 @@ If you use esm or pass `--experimental-modules` to Node.js in order to use ECMAS
 - `"runtimeArgs": ["-r", "esm"]` - Use the [esm ES module loader](https://github.com/standard-things/esm) (`["-r esm"]` without a comma won't work)
   `"runtimeArgs": ["-r", "esm"]` - 使用 esm ES 模块加载器（ `["-r esm"]` 不带逗号将不起作用）
 
-### [How can I set NODE_OPTIONS? 如何设置 NODE_OPTIONS？](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_how-can-i-set-nodeoptions)
+### [How can I set NODE_OPTIONS? 如何设置 NODE_OPTIONS？]({{< ref "/Node_jsJavaScript/Node_jsDebugging#_how-can-i-set-nodeoptions" >}})
 
 The debugger uses the special `NODE_OPTIONS` environment variable to set up debugging with your application, and overwriting it will prevent debugging from working correctly. Instead of overwriting it, you should append to it instead. For example, a `.bashrc` file might have something like this:
 

@@ -35,7 +35,7 @@ If you are interested in a specific Azure service, you can also directly search 
 
 ​​​	如果您对某个特定的 Azure 服务感兴趣，您还可以在 Visual Studio Code Marketplace 上直接搜索它，以查看是否有可用的扩展。
 
-## [Deployment tutorials 部署教程](https://code.visualstudio.com/docs/java/java-on-azure#_deployment-tutorials)
+## [Deployment tutorials 部署教程]({{< ref "/Java/DeployJavaApps#_deployment-tutorials" >}})
 
 The following tutorials below walk you through the details. You can also check the [Java Azure Developer's Center](https://learn.microsoft.com/azure/developer/java) for all things on Azure for Java developers.
 

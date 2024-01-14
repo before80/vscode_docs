@@ -30,7 +30,7 @@ If you run into any issues when using the features below, you can contact us by 
 
 ​​​	如果您在使用以下功能时遇到任何问题，可以通过打开问题与我们联系。
 
-## [Prerequisites 先决条件](https://code.visualstudio.com/docs/java/java-spring-boot#_prerequisites)
+## [Prerequisites 先决条件]({{< ref "/Java/SpringBoot#_prerequisites" >}})
 
 To develop a Spring Boot application in Visual Studio Code, you need to install the following:
 
@@ -47,15 +47,15 @@ To develop a Spring Boot application in Visual Studio Code, you need to install 
 [Install the Spring Boot Extension Pack
 安装 Spring Boot Extension Pack](vscode:extension/vmware.vscode-boot-dev-pack)
 
-> **Note**: More information about how to get started can be found at [Getting Started with Java](https://code.visualstudio.com/docs/java/java-tutorial) tutorial.
+> **Note**: More information about how to get started can be found at [Getting Started with Java]({{< ref "/Java/GettingStarted" >}}) tutorial.
 >
 > ​​​	注意：有关如何入门的信息，请参阅 Java 教程中的入门。
 
-To help get you started with Java Spring Boot development, you can use the [Java Spring profile template](https://code.visualstudio.com/docs/editor/profiles#_java-spring-profile-template) that includes useful extensions, settings, and Java Spring Boot code snippets.
+To help get you started with Java Spring Boot development, you can use the [Java Spring profile template]({{< ref "/UserGuide/Profiles#_java-spring-profile-template" >}}) that includes useful extensions, settings, and Java Spring Boot code snippets.
 
 ​​​	为了帮助您开始 Java Spring Boot 开发，您可以使用包含有用的扩展、设置和 Java Spring Boot 代码段的 Java Spring 配置文件模板。
 
-## [Create the project 创建项目](https://code.visualstudio.com/docs/java/java-spring-boot#_create-the-project)
+## [Create the project 创建项目]({{< ref "/Java/SpringBoot#_create-the-project" >}})
 
 The [Spring Initializr](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr) extension allows you to search for dependencies and generate new Spring Boot projects.
 
@@ -73,7 +73,7 @@ Once you have the extension installed, open the **Command Palette** (Ctrl+Shift+
 
 
 
-## [Edit the project 编辑项目](https://code.visualstudio.com/docs/java/java-spring-boot#_edit-the-project)
+## [Edit the project 编辑项目]({{< ref "/Java/SpringBoot#_edit-the-project" >}})
 
 The [Spring Initializr](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr) extension allows you to add dependencies after generating a new Spring Boot project.
 
@@ -87,7 +87,7 @@ Navigate to your `pom.xml` file and right-click to select **Add starters...**. A
 
 
 
-## [Develop the application 开发应用程序](https://code.visualstudio.com/docs/java/java-spring-boot#_develop-the-application)
+## [Develop the application 开发应用程序]({{< ref "/Java/SpringBoot#_develop-the-application" >}})
 
 The [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) extension includes rich language support for working with Spring Boot `application.properties`, `application.yml`, and `.java` files.
 
@@ -124,7 +124,7 @@ Below is an example showing live application information.
 
 
 
-## [Run the application 运行应用程序](https://code.visualstudio.com/docs/java/java-spring-boot#_run-the-application)
+## [Run the application 运行应用程序]({{< ref "/Java/SpringBoot#_run-the-application" >}})
 
 In addition to using F5 to run your application, there's the [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard) extension, which lets you view and manage all available Spring Boot projects in your workspace as well as quickly start, stop, or debug your project.
 
@@ -134,13 +134,13 @@ In addition to using F5 to run your application, there's the [Spring Boot Dashbo
 
 
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/java/java-spring-boot#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Java/SpringBoot#_next-steps" >}})
 
-- [Java Spring profile template](https://code.visualstudio.com/docs/editor/profiles#_java-spring-profile-template) - Create a new [profile](https://code.visualstudio.com/docs/editor/profiles) with a curated set of extensions, settings, and snippets.
+- [Java Spring profile template]({{< ref "/UserGuide/Profiles#_java-spring-profile-template" >}}) - Create a new [profile]({{< ref "/UserGuide/Profiles" >}}) with a curated set of extensions, settings, and snippets.
   Java Spring 配置文件模板 - 使用精选的扩展、设置和代码段创建新配置文件。
 - To deploy your web app, see [Java Web Apps with VS Code](https://code.visualstudio.com/docs/java/java-webapp).
   要部署 Web 应用，请参阅使用 VS Code 的 Java Web 应用。
-- To containerize a web app and deploy as a Docker container, check out [Docker in VS Code](https://code.visualstudio.com/docs/containers/overview).
+- To containerize a web app and deploy as a Docker container, check out [Docker in VS Code]({{< ref "/Docker/Overview" >}}).
   要将 Web 应用容器化并作为 Docker 容器部署，请查看 VS Code 中的 Docker。
-- To learn more about Java debugging features, see [Running and debugging Java](https://code.visualstudio.com/docs/java/java-debugging).
+- To learn more about Java debugging features, see [Running and debugging Java]({{< ref "/Java/RunandDebug" >}}).
   要详细了解 Java 调试功能，请参阅运行和调试 Java。

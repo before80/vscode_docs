@@ -26,7 +26,7 @@ To use Docker Compose in VS Code using the Docker extension, you should already 
 
 ​​	若要使用 Docker 扩展在 VS Code 中使用 Docker Compose，您应该已经熟悉 Docker Compose 的基本知识。
 
-## [Adding Docker Compose support to your project 为项目添加 Docker Compose 支持](https://code.visualstudio.com/docs/containers/docker-compose#_adding-docker-compose-support-to-your-project)
+## [Adding Docker Compose support to your project 为项目添加 Docker Compose 支持]({{< ref "/Docker/DockerCompose#_adding-docker-compose-support-to-your-project" >}})
 
 If you already have one or more Dockerfiles, you can add Docker Compose files by opening the **Command Palette** (Ctrl+Shift+P), and using the **Docker: Add Docker Compose Files to Workspace** command. Follow the prompts.
 
@@ -54,7 +54,7 @@ With the docker-compose files, you can now specify port mappings in the docker-c
 >
 > ​​	提示：使用 Docker Compose 时，不要指定主机端口。相反，让 Docker 选择一个随机可用的端口以自动避免端口冲突问题。
 
-## [Add new containers to your projects 向项目添加新容器](https://code.visualstudio.com/docs/containers/docker-compose#_add-new-containers-to-your-projects)
+## [Add new containers to your projects 向项目添加新容器]({{< ref "/Docker/DockerCompose#_add-new-containers-to-your-projects" >}})
 
 If you want to add another app or service, you can run **Add Docker Compose Files to Workspace** again, and choose to overwrite the existing docker-compose files, but you'll lose any customization in those files. If you want to preserve changes to the compose files, you can manually modify the `docker-compose.yml` file to add the new service. Typically, you can copy the existing service section, paste it to create a new entry, and change the names as appropriate for the new service.
 
@@ -76,7 +76,7 @@ For .NET, the folder structure is already set up to handle multiple projects whe
 
 ​​	对于 .NET，在创建 Docker Compose 文件时，文件夹结构已经设置为处理多个项目， `.dockerignore` 和 `docker-compose*.yml` 位于工作区根目录（例如，如果项目位于 `src/project1` ，则文件位于 `src` ），因此，当您添加另一个服务时，您会在文件夹中创建一个另一个项目，比如说 `project2` ，并按照前面所述重新创建或修改 docker-compose 文件。
 
-## [Debug 调试](https://code.visualstudio.com/docs/containers/docker-compose#_debug)
+## [Debug 调试]({{< ref "/Docker/DockerCompose#_debug" >}})
 
 First, refer to the debugging documentation for your target platform, to understand the basics on debugging in containers with VS Code:
 
@@ -93,11 +93,11 @@ If you want to debug in Docker Compose, run the command **Docker Compose Up** us
 
 ​​	如果您想在 Docker Compose 中进行调试，请使用上一节中所述的两个 Docker Compose 文件之一运行命令 Docker Compose Up，然后使用相应的附加启动配置进行附加。直接使用常规启动配置启动不会使用 Docker Compose。
 
-Create an **Attach** [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations). This is a section in `launch.json`. The process is mostly manual, but in some cases, the Docker extension can help by adding a pre-configured launch configuration that you can use as a template and customize. The process for each platform (Node.js, Python, and .NET) is described in the following sections.
+Create an **Attach** [launch configuration]({{< ref "/UserGuide/Debugging#_launch-configurations" >}}). This is a section in `launch.json`. The process is mostly manual, but in some cases, the Docker extension can help by adding a pre-configured launch configuration that you can use as a template and customize. The process for each platform (Node.js, Python, and .NET) is described in the following sections.
 
 ​​	创建附加启动配置。这是 `launch.json` 中的一个部分。该过程大部分是手动的，但在某些情况下，Docker 扩展可以通过添加一个预先配置的启动配置来提供帮助，您可以将其用作模板并进行自定义。每个平台（Node.js、Python 和 .NET）的过程在以下部分中进行了说明。
 
-### [Node.js](https://code.visualstudio.com/docs/containers/docker-compose#_nodejs)
+### [Node.js]({{< ref "/Docker/DockerCompose#_nodejs" >}})
 
 1. On the **Debug** tab, choose the **Configuration** dropdown, choose **New Configuration** and select the `Docker Attach` configuration template **Node.js Docker Attach (Preview)**.
 
@@ -161,7 +161,7 @@ Create an **Attach** [launch configuration](https://code.visualstudio.com/docs/e
 
    ​​	以通常的方式启动调试器。在“调试”选项卡中，选择绿色箭头（“启动”按钮）或使用 F5。
 
-### [Python](https://code.visualstudio.com/docs/containers/docker-compose#_python)
+### [Python]({{< ref "/Docker/DockerCompose#_python" >}})
 
 For debugging Python with Docker Compose, follow these steps:
 
@@ -202,7 +202,7 @@ For debugging Python with Docker Compose, follow these steps:
 
    ​​	如果您已有有效的 Dockerfile，我们建议您运行命令 Docker：将 Docker Compose 文件添加到工作区。这将创建一个 `docker-compose.yml` 文件，还会创建一个 `docker-compose.debug.yml` ，该文件会对卷进行映射并在容器中启动 Python 调试器。如果您还没有 Dockerfile，我们建议您运行 Docker：将 Docker 文件添加到工作区，然后选择是来包含 Docker Compose 文件。
 
-   > **Note**: By default, when using **Docker: Add Docker Files to Workspace**, choosing the Django and Flask options will scaffold a Dockerfile configured for Gunicorn. Follow the instructions in the [Python in a container quickstart](https://code.visualstudio.com/docs/containers/quickstart-python#_gunicorn-modifications-for-django-and-flask-apps) to ensure it is configured properly before proceeding.
+   > **Note**: By default, when using **Docker: Add Docker Files to Workspace**, choosing the Django and Flask options will scaffold a Dockerfile configured for Gunicorn. Follow the instructions in the [Python in a container quickstart]({{< ref "/Docker/Python#_gunicorn-modifications-for-django-and-flask-apps" >}}) to ensure it is configured properly before proceeding.
    >
    > ​​	注意：默认情况下，在使用 Docker 时：将 Docker 文件添加到工作区，选择 Django 和 Flask 选项将构建一个为 Gunicorn 配置的 Dockerfile。在继续之前，请按照容器中的 Python 快速入门中的说明确保其配置正确。
 
@@ -245,7 +245,7 @@ For debugging Python with Docker Compose, follow these steps:
 
    ​​	您现在正在容器中调试正在运行的应用。
 
-### [.NET](https://code.visualstudio.com/docs/containers/docker-compose#_net)
+### [.NET]({{< ref "/Docker/DockerCompose#_net" >}})
 
 1. On the **Debug** tab, choose the **Configuration** dropdown, choose **New Configuration** and select the `Docker Attach` configuration template **.NET Core Docker Attach (Preview)**.
 
@@ -305,7 +305,7 @@ If everything is configured correctly, the debugger should be attached to your .
 
 ![Screenshot of debug session](./DockerCompose_img/docker-compose-debugging.png)
 
-## [Volume mounts 卷装载](https://code.visualstudio.com/docs/containers/docker-compose#_volume-mounts)
+## [Volume mounts 卷装载]({{< ref "/Docker/DockerCompose#_volume-mounts" >}})
 
 By default, the Docker extension does not do any volume mounting for debugging components. There's no need for it in .NET or Node.js, since the required components are built into the runtime. If your app requires volume mounts, specify them by using the `volumes` tag in the `docker-compose*.yml` files.
 
@@ -316,9 +316,9 @@ volumes:
     - /host-folder-path:/container-folder-path
 ```
 
-## [Docker Compose with multiple Compose files 具有多个 Compose 文件的 Docker Compose](https://code.visualstudio.com/docs/containers/docker-compose#_docker-compose-with-multiple-compose-files)
+## [Docker Compose with multiple Compose files 具有多个 Compose 文件的 Docker Compose]({{< ref "/Docker/DockerCompose#_docker-compose-with-multiple-compose-files" >}})
 
-Workspaces can have multiple docker-compose files to handle different environments like development, test, and production. The content of the configuration can be split into multiple files. For example, a base compose file that defines the common information for all environments and separate override files that define environment-specific information. When these files are passed as input to the `docker-compose` command, it combines these files into a single configuration. By default, the **Docker: Compose Up** command passes a single file as input to the compose command, but you can customize the `compose up` command to pass in multiple files using [command customization](https://code.visualstudio.com/docs/containers/reference#_command-customization). Or, you can use a [custom task](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks) to invoke the `docker-compose` command with the desired parameters.
+Workspaces can have multiple docker-compose files to handle different environments like development, test, and production. The content of the configuration can be split into multiple files. For example, a base compose file that defines the common information for all environments and separate override files that define environment-specific information. When these files are passed as input to the `docker-compose` command, it combines these files into a single configuration. By default, the **Docker: Compose Up** command passes a single file as input to the compose command, but you can customize the `compose up` command to pass in multiple files using [command customization]({{< ref "/Docker/Customize#_command-customization" >}}). Or, you can use a [custom task]({{< ref "/UserGuide/Tasks#_custom-tasks" >}}) to invoke the `docker-compose` command with the desired parameters.
 
 ​​	工作区可以有多个 docker-compose 文件来处理不同的环境，如开发、测试和生产。配置的内容可以拆分为多个文件。例如，一个定义所有环境的通用信息的基准 compose 文件和定义特定于环境的信息的单独覆盖文件。当这些文件作为输入传递给 `docker-compose` 命令时，它会将这些文件合并为单个配置。默认情况下，Docker: Compose Up 命令将单个文件作为输入传递给 compose 命令，但您可以自定义 `compose up` 命令以使用命令自定义功能传入多个文件。或者，您可以使用自定义任务来调用具有所需参数的 `docker-compose` 命令。
 
@@ -326,13 +326,13 @@ Workspaces can have multiple docker-compose files to handle different environmen
 >
 > ​​	注意：如果您的工作区具有 `docker-compose.yml` 和 `docker-compose.override.yml` 且没有其他 compose 文件，则 `docker-compose` 命令将不带任何输入文件被调用，并且它会隐式使用这些文件。在这种情况下，无需自定义。
 
-## [Command customization 命令自定义](https://code.visualstudio.com/docs/containers/docker-compose#_command-customization)
+## [Command customization 命令自定义]({{< ref "/Docker/DockerCompose#_command-customization" >}})
 
-[Command customization](https://code.visualstudio.com/docs/containers/reference#_command-customization) provides various ways to customize the `compose up` command based on your requirements. The following are few sample command customization for the `compose up` command.
+[Command customization]({{< ref "/Docker/Customize#_command-customization" >}}) provides various ways to customize the `compose up` command based on your requirements. The following are few sample command customization for the `compose up` command.
 
 ​​	命令自定义提供了多种方法来根据您的要求自定义 `compose up` 命令。以下是 `compose up` 命令的一些示例命令自定义。
 
-### [Base file and an override file 基本文件和覆盖文件](https://code.visualstudio.com/docs/containers/docker-compose#_base-file-and-an-override-file)
+### [Base file and an override file 基本文件和覆盖文件]({{< ref "/Docker/DockerCompose#_base-file-and-an-override-file" >}})
 
 Let's assume your workspace has a base compose file (`docker-compose.yml`) and an override file for each environment (`docker-compose.dev.yml`, `docker-compose.test.yml` and `docker-compose.prod.yml`) and you always run `docker compose up` with the base file and an override file. In this case, the `compose up` command can be customized as in the following example. When the `compose up` command is invoked, the `${configurationFile}` is replaced by the selected file.
 
@@ -347,7 +347,7 @@ Let's assume your workspace has a base compose file (`docker-compose.yml`) and a
 ]
 ```
 
-### [Template matching 模板匹配](https://code.visualstudio.com/docs/containers/docker-compose#_template-matching)
+### [Template matching 模板匹配]({{< ref "/Docker/DockerCompose#_template-matching" >}})
 
 Let's assume you have a different set of input files for each environment. You could define multiple templates with regular expression match, and the selected file name will be matched against this `match` property and the corresponding template will be used.
 
@@ -373,7 +373,7 @@ Let's assume you have a different set of input files for each environment. You c
 ]
 ```
 
-### [Pick a template when the command is invoked 在调用命令时选择模板](https://code.visualstudio.com/docs/containers/docker-compose#_pick-a-template-when-the-command-is-invoked)
+### [Pick a template when the command is invoked 在调用命令时选择模板]({{< ref "/Docker/DockerCompose#_pick-a-template-when-the-command-is-invoked" >}})
 
 If you omit the `match` property from command templates, you're asked which template to use each time `compose up` command is invoked. For example:
 
@@ -396,9 +396,9 @@ If you omit the `match` property from command templates, you're asked which temp
 ],
 ```
 
-## [Custom tasks 自定义任务](https://code.visualstudio.com/docs/containers/docker-compose#_custom-tasks)
+## [Custom tasks 自定义任务]({{< ref "/Docker/DockerCompose#_custom-tasks" >}})
 
-Rather than use command customization, you can also define a task like the following to invoke a `docker-compose` command. Please refer [custom task](https://code.visualstudio.com/docs/editor/tasks#_custom-tasks) for more detail on this option.
+Rather than use command customization, you can also define a task like the following to invoke a `docker-compose` command. Please refer [custom task]({{< ref "/UserGuide/Tasks#_custom-tasks" >}}) for more detail on this option.
 
 ​​	除了使用命令自定义之外，您还可以定义类似于以下内容的任务来调用 `docker-compose` 命令。有关此选项的更多详细信息，请参阅自定义任务。
 
@@ -414,9 +414,9 @@ Rather than use command customization, you can also define a task like the follo
 }
 ```
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/containers/docker-compose#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Docker/DockerCompose#_next-steps" >}})
 
 - [Overview of Docker Compose in the Docker documentation
   Docker 文档中的 Docker Compose 概述](https://docs.docker.com/compose/)
 - [Troubleshooting
-  故障排除](https://code.visualstudio.com/docs/containers/troubleshooting)
+  故障排除]({{< ref "/Docker/TipsandTricks" >}})

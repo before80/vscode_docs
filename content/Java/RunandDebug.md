@@ -58,7 +58,7 @@ If you run into any issues when using the features below, you can contact us by 
 
 ​​​	如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
 
-## [Install 安装](https://code.visualstudio.com/docs/java/java-debugging#_install)
+## [Install 安装]({{< ref "/Java/RunandDebug#_install" >}})
 
 To get the complete Java language support in Visual Studio Code, you can install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack), which includes the Debugger for Java extension.
 
@@ -67,11 +67,11 @@ To get the complete Java language support in Visual Studio Code, you can install
 [Install the Extension Pack for Java
 安装 Java 扩展包](vscode:extension/vscjava.vscode-java-pack)
 
-> For details on how to get started with the extension pack, you can review the [Getting Started with Java](https://code.visualstudio.com/docs/java/java-tutorial) tutorial.
+> For details on how to get started with the extension pack, you can review the [Getting Started with Java]({{< ref "/Java/GettingStarted" >}}) tutorial.
 >
 > ​​​	有关如何开始使用扩展包的详细信息，您可以查看 Java 入门教程。
 
-## [Configure 配置](https://code.visualstudio.com/docs/java/java-debugging#_configure)
+## [Configure 配置]({{< ref "/Java/RunandDebug#_configure" >}})
 
 By default, the debugger will run out-of-box by automatically finding the main class and generating a default launch configuration in memory to launch your application.
 
@@ -87,17 +87,17 @@ The `launch.json` file is located in a `.vscode` folder in your workspace (proje
 
 ​​​	 `launch.json` 文件位于工作区（项目根文件夹）中的 `.vscode` 文件夹中。
 
-For more details on how to create the `launch.json`, read [Launch configurations](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations); for more details on configuration options for Java, you can read [Configuration options](https://code.visualstudio.com/docs/java/java-debugging#_configuration-options).
+For more details on how to create the `launch.json`, read [Launch configurations]({{< ref "/UserGuide/Debugging#_launch-configurations" >}}); for more details on configuration options for Java, you can read [Configuration options]({{< ref "/Java/RunandDebug#_configuration-options" >}}).
 
 ​​​	有关如何创建 `launch.json` 的更多详细信息，请阅读启动配置；有关 Java 配置选项的更多详细信息，可以阅读配置选项。
 
-## [Run and Debug 运行和调试](https://code.visualstudio.com/docs/java/java-debugging#_run-and-debug)
+## [Run and Debug 运行和调试]({{< ref "/Java/RunandDebug#_run-and-debug" >}})
 
 The debugger extension provides multiple ways to run and debug your Java application.
 
 ​​​	调试器扩展提供了多种运行和调试 Java 应用程序的方法。
 
-### [Run from CodeLens 从 CodeLens 运行](https://code.visualstudio.com/docs/java/java-debugging#_run-from-codelens)
+### [Run from CodeLens 从 CodeLens 运行]({{< ref "/Java/RunandDebug#_run-from-codelens" >}})
 
 You will find **Run|Debug** on the [CodeLens](https://code.visualstudio.com/blogs/2017/02/12/code-lens-roundup) of your `main()` function.
 
@@ -105,7 +105,7 @@ You will find **Run|Debug** on the [CodeLens](https://code.visualstudio.com/blog
 
 ![CodeLens](./RunandDebug_img/java-codelens.png)
 
-### [Run from Editor menu 从编辑器菜单运行](https://code.visualstudio.com/docs/java/java-debugging#_run-from-editor-menu)
+### [Run from Editor menu 从编辑器菜单运行]({{< ref "/Java/RunandDebug#_run-from-editor-menu" >}})
 
 Another way to start debugging is to select **Run Java** or **Debug Java** menu from the top editor title bar.
 
@@ -113,13 +113,13 @@ Another way to start debugging is to select **Run Java** or **Debug Java** menu 
 
 ![EditorMenu](./RunandDebug_img/run-menu.png)
 
-### [Run from pressing F5 通过按 F5 运行](https://code.visualstudio.com/docs/java/java-debugging#_run-from-pressing-f5)
+### [Run from pressing F5 通过按 F5 运行]({{< ref "/Java/RunandDebug#_run-from-pressing-f5" >}})
 
-Pressing F5, the debugger will automatically find the entry point of your project and start debugging. You can also start a debugging session from the **Run and Debug** view from the side bar of VS Code. See more at [Debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging).
+Pressing F5, the debugger will automatically find the entry point of your project and start debugging. You can also start a debugging session from the **Run and Debug** view from the side bar of VS Code. See more at [Debugging in VS Code]({{< ref "/UserGuide/Debugging" >}}).
 
 ​​​	按 F5，调试器将自动找到项目的入口点并开始调试。您还可以从 VS Code 侧边栏的“运行和调试”视图中启动调试会话。请参阅 VS Code 中的调试。
 
-## [Debugging single files 调试单个文件](https://code.visualstudio.com/docs/java/java-debugging#_debugging-single-files)
+## [Debugging single files 调试单个文件]({{< ref "/Java/RunandDebug#_debugging-single-files" >}})
 
 In addition to support for debugging Java projects managed by build tools, VS Code also supports for debugging single Java files without any project.
 
@@ -129,7 +129,7 @@ In addition to support for debugging Java projects managed by build tools, VS Co
 
 
 
-## [Debug session inputs 调试会话输入](https://code.visualstudio.com/docs/java/java-debugging#_debug-session-inputs)
+## [Debug session inputs 调试会话输入]({{< ref "/Java/RunandDebug#_debug-session-inputs" >}})
 
 The default Debug Console in VS Code doesn't support inputs. If your program need inputs from a terminal, you can use the Integrated Terminal (Ctrl+`) within VS Code or an external terminal to launch it. You can also use the user setting `java.debug.settings.console` to configure a global console for all Java debug sessions.
 
@@ -139,13 +139,13 @@ The default Debug Console in VS Code doesn't support inputs. If your program nee
 
 
 
-## [Breakpoints 断点](https://code.visualstudio.com/docs/java/java-debugging#_breakpoints)
+## [Breakpoints 断点]({{< ref "/Java/RunandDebug#_breakpoints" >}})
 
 The Debugger for Java supports various breakpoints, such as line breakpoints, conditional breakpoints, data breakpoints, logpoints.
 
 ​​​	Java 调试器支持各种断点，例如行断点、条件断点、数据断点、日志点。
 
-### [Breakpoint - Conditional breakpoint 断点 - 条件断点](https://code.visualstudio.com/docs/java/java-debugging#_breakpoint-conditional-breakpoint)
+### [Breakpoint - Conditional breakpoint 断点 - 条件断点]({{< ref "/Java/RunandDebug#_breakpoint-conditional-breakpoint" >}})
 
 With the help of expression evaluation, the debugger also supports conditional breakpoint. You can set your breakpoint to break when expression evaluates to true.
 
@@ -155,7 +155,7 @@ With the help of expression evaluation, the debugger also supports conditional b
 
 
 
-### [Breakpoint - Data breakpoint 断点 - 数据断点](https://code.visualstudio.com/docs/java/java-debugging#_breakpoint-data-breakpoint)
+### [Breakpoint - Data breakpoint 断点 - 数据断点]({{< ref "/Java/RunandDebug#_breakpoint-data-breakpoint" >}})
 
 You can have the debugger break when a variable changes its value. Note that the data breakpoint can only be set inside a debug session. This means you need to launch your application and break on a regular breakpoint first. You can then pick a field in the **VARIABLES** view and set a data breakpoint.
 
@@ -163,7 +163,7 @@ You can have the debugger break when a variable changes its value. Note that the
 
 ![Data Breakpoint](./RunandDebug_img/data-breakpoint.png)
 
-### [Breakpoint - Logpoints 断点 - 日志点](https://code.visualstudio.com/docs/java/java-debugging#_breakpoint-logpoints)
+### [Breakpoint - Logpoints 断点 - 日志点]({{< ref "/Java/RunandDebug#_breakpoint-logpoints" >}})
 
 [Logpoints](https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach#_introducing-logpoints) is also supported by Java Debugger. Logpoints allow you to send output to Debug Console without editing code. They're different from breakpoints because they don't stop the execution flow of your application.
 
@@ -173,7 +173,7 @@ You can have the debugger break when a variable changes its value. Note that the
 
 
 
-## [Expression evaluation 表达式评估](https://code.visualstudio.com/docs/java/java-debugging#_expression-evaluation)
+## [Expression evaluation 表达式评估]({{< ref "/Java/RunandDebug#_expression-evaluation" >}})
 
 The debugger also lets you evaluate expressions in the **WATCH** window as well as the Debug Console.
 
@@ -183,7 +183,7 @@ The debugger also lets you evaluate expressions in the **WATCH** window as well 
 
 
 
-## [Hot Code Replace 热代码替换](https://code.visualstudio.com/docs/java/java-debugging#_hot-code-replace)
+## [Hot Code Replace 热代码替换]({{< ref "/Java/RunandDebug#_hot-code-replace" >}})
 
 Another advanced feature the debugger supports is 'Hot Code' replacement. Hot Code Replace (HCR) is a debugging technique whereby the Debugger for Java transmits the class changes over the debugging channel to another Java Virtual Machine (JVM). HCR facilitates experimental development and fosters iterative trial-and-error coding. With this new feature, you can start a debugging session and change a Java file in your development environment, and the debugger will replace the code in the running JVM. No restart is required, which is why it's called "hot". Below is an illustration of how you can use HCR with Debugger for Java in VS Code.
 
@@ -204,7 +204,7 @@ You may use the debug setting `java.debug.settings.hotCodeReplace` to control ho
 - `never` - Disable Hot Code Replace.
   `never` - 禁用热代码替换。
 
-## [Step filtering 步骤筛选](https://code.visualstudio.com/docs/java/java-debugging#_step-filtering)
+## [Step filtering 步骤筛选]({{< ref "/Java/RunandDebug#_step-filtering" >}})
 
 Step filter is supported by the extension to filter out types that you do not want to see or step through while debugging. With this feature, you can configure the packages to filter within your `launch.json` so they could be skipped when you step through.
 
@@ -214,7 +214,7 @@ Step filter is supported by the extension to filter out types that you do not wa
 
 
 
-## [Configuration options 配置选项](https://code.visualstudio.com/docs/java/java-debugging#_configuration-options)
+## [Configuration options 配置选项]({{< ref "/Java/RunandDebug#_configuration-options" >}})
 
 There are many options and settings available to configure the debugger. For example, configuring the JVM arguments and environment variables is easily done with launch options.
 
@@ -232,11 +232,11 @@ For many commonly used setups, there are samples available in [VS Code Java Debu
 
 ​​​	对于许多常用设置，VS Code Java 调试器配置中提供了示例。该文档说明了 Java 调试器如何自动为您生成配置，如果您需要修改它们，还说明了如何使用主类、不同的参数、环境、附加到其他 Java 进程以及使用更高级的功能来修改它们。
 
-Below are all the configurations available for `Launch` and `Attach`. For more information about how to write the `launch.json` file, refer to [Debugging](https://code.visualstudio.com/docs/editor/debugging).
+Below are all the configurations available for `Launch` and `Attach`. For more information about how to write the `launch.json` file, refer to [Debugging]({{< ref "/UserGuide/Debugging" >}}).
 
 ​​​	以下是 `Launch` 和 `Attach` 可用的所有配置。有关如何编写 `launch.json` 文件的更多信息，请参阅调试。
 
-### [Launch 启动](https://code.visualstudio.com/docs/java/java-debugging#_launch)
+### [Launch 启动]({{< ref "/Java/RunandDebug#_launch" >}})
 
 - `mainClass` (required) - The fully qualified class name (for example [java module name/]com.xyz.MainApp) or the java file path of the program entry.
   `mainClass` （必需）- 完全限定的类名（例如 [java 模块名称/]com.xyz.MainApp）或程序入口的 java 文件路径。
@@ -390,7 +390,7 @@ Below are all the configurations available for `Launch` and `Attach`. For more i
   - `skipConstructors` - Skip constructor methods when stepping.
     `skipConstructors` - 单步执行时跳过构造函数方法。
 
-### [Attach 附加](https://code.visualstudio.com/docs/java/java-debugging#_attach)
+### [Attach 附加]({{< ref "/Java/RunandDebug#_attach" >}})
 
 - `hostName` (required) - The host name or IP address of remote debuggee.
   `hostName` （必需） - 远程调试程序的主机名或 IP 地址。
@@ -445,7 +445,7 @@ Below are all the configurations available for `Launch` and `Attach`. For more i
   - `skipConstructors` - Skip constructor methods when stepping.
     `skipConstructors` - 跳过构造函数方法时进行单步调试。
 
-### [User settings 用户设置](https://code.visualstudio.com/docs/java/java-debugging#_user-settings)
+### [User settings 用户设置]({{< ref "/Java/RunandDebug#_user-settings" >}})
 
 - `java.debug.logLevel`: Minimum level of debugger logs that are sent to VS Code, defaults to `warn`.
   `java.debug.logLevel` ：发送到 VS Code 的最低级别的调试器日志，默认为 `warn` 。
@@ -594,7 +594,7 @@ Below are all the configurations available for `Launch` and `Attach`. For more i
 - `java.silentNotification`: Controls whether notifications can be used to report progress. If true, use status bar to report progress instead. Defaults to `false`.
   `java.silentNotification` ：控制是否可以使用通知来报告进度。如果为 true，则使用状态栏来报告进度。默认为 `false` 。
 
-## [Troubleshooting 故障排除](https://code.visualstudio.com/docs/java/java-debugging#_troubleshooting)
+## [Troubleshooting 故障排除]({{< ref "/Java/RunandDebug#_troubleshooting" >}})
 
 If you encounter issues when using the debugger, a detailed troubleshooting guide can be found in the [vscode-java-debug GitHub repository](https://github.com/microsoft/vscode-java-debug/blob/main/Troubleshooting.md).
 
@@ -629,26 +629,26 @@ Common issues explained include:
 - Request type "X" is not supported. Only "launch" and "attach" are supported.
   请求类型“X”不受支持。仅支持“启动”和“附加”。
 
-## [Feedback and questions 反馈和问题](https://code.visualstudio.com/docs/java/java-debugging#_feedback-and-questions)
+## [Feedback and questions 反馈和问题]({{< ref "/Java/RunandDebug#_feedback-and-questions" >}})
 
 You can find the full list of issues at the [vscode-java-debug](https://github.com/microsoft/vscode-java-debug/issues) repository. You can submit a [bug or feature suggestion](https://github.com/microsoft/vscode-java-debug/issues/new) and participate in the community driven [vscode-java-debug Gitter channel](https://gitter.im/Microsoft/vscode-java-debug).
 
 ​​​	您可以在 vscode-java-debug 存储库中找到完整的问题列表。您可以提交错误或功能建议，并参与社区驱动的 vscode-java-debug Gitter 频道。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/java/java-debugging#_next-steps)
+## [Next steps 后续步骤]({{< ref "/Java/RunandDebug#_next-steps" >}})
 
 Read on to find out about:
 
 ​​​	继续阅读以了解：
 
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Find out how to use the debugger in VS Code with your project for any language.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Find out how to use the debugger in VS Code with your project for any language.
   调试 - 了解如何将调试器与任何语言的项目一起在 VS Code 中使用。
 
 And for Java:
 
 ​​​	对于 Java：
 
-- [Java testing](https://code.visualstudio.com/docs/java/java-testing) - Test Java within VS Code with the Java Test Runner extension.
+- [Java testing]({{< ref "/Java/Testing" >}}) - Test Java within VS Code with the Java Test Runner extension.
   Java 测试 - 使用 Java Test Runner 扩展在 VS Code 中测试 Java。
-- [Java extensions](https://code.visualstudio.com/docs/java/extensions) - Learn about more useful Java extensions for VS Code.
+- [Java extensions]({{< ref "/Java/Extensions" >}}) - Learn about more useful Java extensions for VS Code.
   Java 扩展 - 了解 VS Code 的更多有用 Java 扩展。

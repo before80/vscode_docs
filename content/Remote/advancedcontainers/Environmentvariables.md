@@ -22,7 +22,7 @@ You can set environment variables in your container without altering the contain
 >
 > ​​	您应该验证“终端”>“集成：继承环境”在设置中已选中，否则您设置的变量可能不会出现在集成终端中。此设置默认选中。
 
-## [Option 1: Add individual variables 选项 1：添加单独变量](https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_option-1-add-individual-variables)
+## [Option 1: Add individual variables 选项 1：添加单独变量]({{< ref "/Remote/advancedcontainers/Environmentvariables#_option-1-add-individual-variables" >}})
 
 Depending on what you reference in `devcontainer.json`:
 
@@ -48,7 +48,7 @@ Depending on what you reference in `devcontainer.json`:
 
   ​​	如本示例所示， `containerEnv` 可以引用本地变量， `remoteEnv` 可以引用本地变量和现有容器变量。
 
-### [Video: Modify PATH in a dev container 视频：修改开发容器中的 PATH](https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_video-modify-path-in-a-dev-container)
+### [Video: Modify PATH in a dev container 视频：修改开发容器中的 PATH]({{< ref "/Remote/advancedcontainers/Environmentvariables#_video-modify-path-in-a-dev-container" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vEb7hKlagAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 
@@ -74,7 +74,7 @@ Depending on what you reference in `devcontainer.json`:
 
   ​​	如本示例所示， `remoteEnv` 可以引用本地和现有容器变量。
 
-  To update variables that apply to the entire container, update (or [extend](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_extend-your-docker-compose-file-for-development)) your `docker-compose.yml` with the following for the appropriate service:
+  To update variables that apply to the entire container, update (or [extend]({{< ref "/DevContainers/CreateaDevContainer#_extend-your-docker-compose-file-for-development" >}})) your `docker-compose.yml` with the following for the appropriate service:
 
   ​​	要更新适用于整个容器的变量，请使用以下内容更新（或扩展）您的 `docker-compose.yml` 以获取相应服务：
 
@@ -92,7 +92,7 @@ If you've already built the container and connected to it, run **Dev Containers:
 
 ​​	如果您已经构建了容器并连接到它，请从命令面板（F1）运行 Dev Containers：重新构建容器以获取更改。否则，运行 Dev Containers：在容器中打开文件夹... 以连接到容器。
 
-## [Option 2: Use an env file 选项 2：使用 env 文件](https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_option-2-use-an-env-file)
+## [Option 2: Use an env file 选项 2：使用 env 文件]({{< ref "/Remote/advancedcontainers/Environmentvariables#_option-2-use-an-env-file" >}})
 
 If you have a large number of environment variables that you need to set, you can use a `.env` file instead.
 
@@ -139,7 +139,7 @@ If you've already built the container and connected to it, run **Dev Containers:
 
 ​​	如果您已经构建了容器并连接到它，请从命令面板 (F1) 运行 Dev Containers: Rebuild Container 以选择更改。否则，请运行 Dev Containers: Open Folder in Container... 以连接到容器。
 
-### [Video: Load variables from an .env file 视频：从 .env 文件加载变量](https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_video-load-variables-from-an-env-file)
+### [Video: Load variables from an .env file 视频：从 .env 文件加载变量]({{< ref "/Remote/advancedcontainers/Environmentvariables#_video-load-variables-from-an-env-file" >}})
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qTU7w3bWrOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 616.662px; max-width: 100%; height: 400px; color: rgb(36, 36, 36); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
 

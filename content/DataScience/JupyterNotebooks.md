@@ -14,7 +14,7 @@ draft = false
 
 
 
-[Jupyter](https://jupyter-notebook.readthedocs.io/en/latest/) (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. Visual Studio Code supports working with Jupyter Notebooks natively, and through [Python code files](https://code.visualstudio.com/docs/python/jupyter-support-py). This topic covers the native support available for Jupyter Notebooks and demonstrates how to:
+[Jupyter](https://jupyter-notebook.readthedocs.io/en/latest/) (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. Visual Studio Code supports working with Jupyter Notebooks natively, and through [Python code files]({{< ref "/Python/PythonInteractive" >}}). This topic covers the native support available for Jupyter Notebooks and demonstrates how to:
 
 ​​	Jupyter（以前称为 IPython Notebook）是一个开源项目，它允许您轻松地在一个称为笔记本的画布上组合 Markdown 文本和可执行 Python 源代码。Visual Studio Code 原生地支持使用 Jupyter Notebooks 和通过 Python 代码文件进行工作。本主题介绍了 Jupyter Notebooks 可用的原生支持，并演示了如何：
 
@@ -29,7 +29,7 @@ draft = false
 - Debug a Jupyter Notebook
   调试 Jupyter Notebook
 
-## [Setting up your environment 设置您的环境](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_setting-up-your-environment)
+## [Setting up your environment 设置您的环境]({{< ref "/DataScience/JupyterNotebooks#_setting-up-your-environment" >}})
 
 To work with Python in Jupyter Notebooks, you must activate an Anaconda environment in VS Code, or another Python environment in which you've installed the [Jupyter package](https://pypi.org/project/jupyter/). To select an environment, use the **Python: Select Interpreter** command from the Command Palette (Ctrl+Shift+P).
 
@@ -39,17 +39,17 @@ Once the appropriate environment is activated, you can create and open a Jupyter
 
 ​​	一旦激活了适当的环境，您就可以创建和打开 Jupyter Notebook，连接到远程 Jupyter 服务器以运行代码单元格，并将 Jupyter Notebook 导出为 Python 文件。
 
-## [Workspace Trust 工作区信任](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_workspace-trust)
+## [Workspace Trust 工作区信任]({{< ref "/DataScience/JupyterNotebooks#_workspace-trust" >}})
 
-When getting started with Jupyter Notebooks, you'll want to make sure that you are working in a trusted workspace. Harmful code can be embedded in notebooks and the [Workspace Trust](https://code.visualstudio.com/docs/editor/workspace-trust) feature allows you to indicate which folders and their contents should allow or restrict automatic code execution.
+When getting started with Jupyter Notebooks, you'll want to make sure that you are working in a trusted workspace. Harmful code can be embedded in notebooks and the [Workspace Trust]({{< ref "/UserGuide/WorkspaceTrust" >}}) feature allows you to indicate which folders and their contents should allow or restrict automatic code execution.
 
 ​​	在开始使用 Jupyter Notebooks 时，您需要确保您在受信任的工作区中工作。有害代码可以嵌入到笔记本中，而工作区信任功能允许您指示哪些文件夹及其内容应该允许或限制自动代码执行。
 
-If you attempt to open a notebook when VS Code is in an untrusted workspace running [Restricted Mode](https://code.visualstudio.com/docs/editor/workspace-trust#_restricted-mode), you will not be able to execute cells and rich outputs will be hidden.
+If you attempt to open a notebook when VS Code is in an untrusted workspace running [Restricted Mode]({{< ref "/UserGuide/WorkspaceTrust#_restricted-mode" >}}), you will not be able to execute cells and rich outputs will be hidden.
 
 ​​	如果您尝试在 VS Code 处于运行受限模式的非受信任工作区中打开笔记本，您将无法执行单元格，并且富输出将被隐藏。
 
-## [Create or open a Jupyter Notebook 创建或打开 Jupyter Notebook](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_create-or-open-a-jupyter-notebook)
+## [Create or open a Jupyter Notebook 创建或打开 Jupyter Notebook]({{< ref "/DataScience/JupyterNotebooks#_create-or-open-a-jupyter-notebook" >}})
 
 You can create a Jupyter Notebook by running the **Create: New Jupyter Notebook** command from the Command Palette (Ctrl+Shift+P) or by creating a new `.ipynb` file in your workspace.
 
@@ -73,7 +73,7 @@ If you have an existing Jupyter Notebook, you can open it by right-clicking on t
 
 ​​	如果您有现有的 Jupyter Notebook，您可以通过右键单击该文件并使用 VS Code 打开，或通过 VS Code 文件资源管理器来打开它。
 
-## [Running cells 运行单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_running-cells)
+## [Running cells 运行单元格]({{< ref "/DataScience/JupyterNotebooks#_running-cells" >}})
 
 Once you have a notebook, you can run a code cell using the **Run** icon to the left of the cell and the output will appear directly below the code cell.
 
@@ -91,13 +91,13 @@ You can run multiple cells by selecting **Run All**, **Run All Above**, or **Run
 
 ![Run Jupyter code cells](https://code.visualstudio.com/assets/docs/datascience/jupyter/native-code-runs.png)
 
-## [Save your Jupyter Notebook 保存您的 Jupyter 笔记本](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_save-your-jupyter-notebook)
+## [Save your Jupyter Notebook 保存您的 Jupyter 笔记本]({{< ref "/DataScience/JupyterNotebooks#_save-your-jupyter-notebook" >}})
 
 You can save your Jupyter Notebook using the keyboard shortcut Ctrl+S or **File** > **Save**.
 
 ​​	您可以使用键盘快捷键 Ctrl+S 或“文件”>“保存”来保存您的 Jupyter 笔记本。
 
-## [Export your Jupyter Notebook 导出您的 Jupyter 笔记本](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_export-your-jupyter-notebook)
+## [Export your Jupyter Notebook 导出您的 Jupyter 笔记本]({{< ref "/DataScience/JupyterNotebooks#_export-your-jupyter-notebook" >}})
 
 You can export a Jupyter Notebook as a Python file (`.py`), a PDF, or an HTML file. To export, select the **Export** action on the main toolbar. You'll then be presented with a dropdown of file format options.
 
@@ -109,13 +109,13 @@ You can export a Jupyter Notebook as a Python file (`.py`), a PDF, or an HTML fi
 >
 > ​​	注意：对于 PDF 导出，您必须安装 TeX。如果您没有安装，当您选择 PDF 选项时，系统会通知您需要安装它。此外，请注意，如果您在笔记本中只有 SVG 输出，它们将不会显示在 PDF 中。要在 PDF 中显示 SVG 图形，请确保您的输出包含非 SVG 图像格式，或者您可以先导出为 HTML，然后使用浏览器另存为 PDF。
 
-## [Work with code cells in the Notebook Editor 在 Notebook 编辑器中使用代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_work-with-code-cells-in-the-notebook-editor)
+## [Work with code cells in the Notebook Editor 在 Notebook 编辑器中使用代码单元格]({{< ref "/DataScience/JupyterNotebooks#_work-with-code-cells-in-the-notebook-editor" >}})
 
 The Notebook Editor makes it easy to create, edit, and run code cells within your Jupyter Notebook.
 
 ​​	Notebook 编辑器可以轻松地在 Jupyter Notebook 中创建、编辑和运行代码单元格。
 
-### [Create a code cell 创建代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_create-a-code-cell)
+### [Create a code cell 创建代码单元格]({{< ref "/DataScience/JupyterNotebooks#_create-a-code-cell" >}})
 
 By default, a blank notebook will have an empty code cell for you to start with and an existing notebook will place one at the bottom. Add your code to the empty code cell to get started.
 
@@ -128,7 +128,7 @@ print(msg)
 
 ![Simple Jupyter code cell](https://code.visualstudio.com/assets/docs/datascience/jupyter/native-code-cells-02.png)
 
-### [Code cell modes 代码单元格模式](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_code-cell-modes)
+### [Code cell modes 代码单元格模式]({{< ref "/DataScience/JupyterNotebooks#_code-cell-modes" >}})
 
 While working with code cells, a cell can be in three states: unselected, command mode, and edit mode. A vertical bar to the left of a code cell and editor border shows the current state of a cell. When no bar is visible, the cell is unselected. When a cell is selected, it can be in command mode or in edit mode.
 
@@ -152,7 +152,7 @@ To switch modes, you can use your keyboard or mouse. On your keyboard, press the
 
 ​​	要切换模式，可以使用键盘或鼠标。在键盘上，按 Enter 键切换到编辑模式，或按 Esc 键切换到命令模式。使用鼠标，单击单元格左侧的竖线或代码单元格中代码/Markdown 区域之外的位置。
 
-### [Add additional code cells 添加其他代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_add-additional-code-cells)
+### [Add additional code cells 添加其他代码单元格]({{< ref "/DataScience/JupyterNotebooks#_add-additional-code-cells" >}})
 
 You can add code cells using the main toolbar, a cell's add cell toolbar (visible with hover), and through keyboard commands.
 
@@ -168,13 +168,13 @@ When a code cell is in command mode, use the A key to add a cell above and the B
 
 ​​	当代码单元格处于命令模式时，使用 A 键在选定单元格上方添加单元格，使用 B 键在选定单元格下方添加单元格。
 
-### [Select a code cell 选择代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_select-a-code-cell)
+### [Select a code cell 选择代码单元格]({{< ref "/DataScience/JupyterNotebooks#_select-a-code-cell" >}})
 
 You can change a selected code cell using the mouse or the up/down arrow keys on the keyboard. When a code cell is in command mode, you can also use the J key (down) and K key (up).
 
 ​​	可以使用鼠标或键盘上的向上/向下箭头键更改选定的代码单元格。当代码单元格处于命令模式时，还可以使用 J 键（向下）和 K 键（向上）。
 
-### [Select multiple code cells 选择多个代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_select-multiple-code-cells)
+### [Select multiple code cells 选择多个代码单元格]({{< ref "/DataScience/JupyterNotebooks#_select-multiple-code-cells" >}})
 
 To select multiple cells, start with one cell in selected mode. A filled background indicates selected cells. To select consecutive cells, hold down the Shift key and click the last cell you want to select. To select any group of cells, hold down the Ctrl key and click the cells you'd like to add to your selection.
 
@@ -182,7 +182,7 @@ To select multiple cells, start with one cell in selected mode. A filled backgro
 
 ![Multiselected cells](https://code.visualstudio.com/assets/docs/datascience/jupyter/multiselect.png)
 
-### [Run a single code cell 运行单个代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_run-a-single-code-cell)
+### [Run a single code cell 运行单个代码单元格]({{< ref "/DataScience/JupyterNotebooks#_run-a-single-code-cell" >}})
 
 Once your code is added, you can run a cell using the **Run** icon to the left of the cell and the output will be displayed below the code cell.
 
@@ -194,7 +194,7 @@ To run a selected code cell, you can also use keyboard shortcuts in both command
 
 ​​	要运行选定的代码单元格，您还可以在命令和编辑模式下使用键盘快捷键。Ctrl+Enter 运行当前选定的单元格。Shift+Enter 运行当前选定的单元格并在其正下方插入一个新单元格（焦点移至新单元格）。Alt+Enter 运行当前选定的单元格并在其正下方插入一个新单元格（焦点停留在当前单元格）。
 
-### [Run multiple code cells 运行多个代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_run-multiple-code-cells)
+### [Run multiple code cells 运行多个代码单元格]({{< ref "/DataScience/JupyterNotebooks#_run-multiple-code-cells" >}})
 
 Running multiple code cells can be accomplished in many ways. You can use the double arrow in the main toolbar of the Notebook Editor to run all cells within the Notebook or the **Run** icons with directional arrows in the cell toolbar to run all cells above or below the current code cell.
 
@@ -202,7 +202,7 @@ Running multiple code cells can be accomplished in many ways. You can use the do
 
 ![Run multiple code cells](https://code.visualstudio.com/assets/docs/datascience/jupyter/native-code-runs.png)
 
-### [Move a code cell 移动代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_move-a-code-cell)
+### [Move a code cell 移动代码单元格]({{< ref "/DataScience/JupyterNotebooks#_move-a-code-cell" >}})
 
 You can move cells up or down within a notebook via dragging and dropping. For code cells, the drag and drop area is to the left of the cell editor as indicated below. For rendered Markdown cells, you may click anywhere to drag and drop cells.
 
@@ -218,7 +218,7 @@ The keyboard shortcut Alt+Arrow also moves one or multiple selected cells.
 
 ​​	键盘快捷键 Alt+箭头键也会移动一个或多个选定的单元格。
 
-### [Delete a code cell 删除代码单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_delete-a-code-cell)
+### [Delete a code cell 删除代码单元格]({{< ref "/DataScience/JupyterNotebooks#_delete-a-code-cell" >}})
 
 To delete code, you can use the **Delete** icon in the code cell toolbar. When the selected code cell is in command mode, you can use the keyboard shortcut dd.
 
@@ -226,13 +226,13 @@ To delete code, you can use the **Delete** icon in the code cell toolbar. When t
 
 ![Delete a code cell](https://code.visualstudio.com/assets/docs/datascience/jupyter/native-code-delete.png)
 
-### [Undo your last change 撤消上一次更改](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_undo-your-last-change)
+### [Undo your last change 撤消上一次更改]({{< ref "/DataScience/JupyterNotebooks#_undo-your-last-change" >}})
 
 You can use the z key to undo your previous change, for example, if you've made an accidental edit, you can undo it to the previous correct state, or if you've deleted a cell accidentally, you can recover it.
 
 ​​	您可以使用 z 键撤消上一次更改，例如，如果您进行了意外编辑，您可以将其撤消到上一个正确状态，或者如果您意外删除了单元格，您可以恢复它。
 
-### [Switch between code and Markdown 在代码和 Markdown 之间切换](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_switch-between-code-and-markdown)
+### [Switch between code and Markdown 在代码和 Markdown 之间切换]({{< ref "/DataScience/JupyterNotebooks#_switch-between-code-and-markdown" >}})
 
 The Notebook Editor allows you to easily change code cells between Markdown and code. Selecting the language picker in the bottom right of a cell will allow you to switch between Markdown and, if applicable, any other language supported by the selected kernel.
 
@@ -258,7 +258,7 @@ To render Markdown cells, you can select the check mark in the cell toolbar, or 
 
 ![Rendered Markdown displayed in code cell](https://code.visualstudio.com/assets/docs/datascience/jupyter/native-markdown-rendered.png)
 
-### [Clear output or restart/interrupt the kernel 清除输出或重新启动/中断内核](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_clear-output-or-restartinterrupt-the-kernel)
+### [Clear output or restart/interrupt the kernel 清除输出或重新启动/中断内核]({{< ref "/DataScience/JupyterNotebooks#_clear-output-or-restartinterrupt-the-kernel" >}})
 
 If you'd like to clear all code cell outputs or restart/interrupt the kernel, you can accomplish that using the main Notebook Editor toolbar.
 
@@ -266,7 +266,7 @@ If you'd like to clear all code cell outputs or restart/interrupt the kernel, yo
 
 ![Notebook Toolbar](https://code.visualstudio.com/assets/docs/datascience/jupyter/notebook-toolbar.png)
 
-### [Enable/disable line numbers 启用/禁用行号](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_enabledisable-line-numbers)
+### [Enable/disable line numbers 启用/禁用行号]({{< ref "/DataScience/JupyterNotebooks#_enabledisable-line-numbers" >}})
 
 When you are in command mode, you can enable or disable line numbering within a single code cell by using the L key.
 
@@ -280,7 +280,7 @@ To toggle line numbering for the entire notebook, use Shift+L when in command mo
 
 ![Line numbers enabled for notebook](https://code.visualstudio.com/assets/docs/datascience/jupyter/notebook-toggle-line-num.png)
 
-## [Table of Contents 目录](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_table-of-contents)
+## [Table of Contents 目录]({{< ref "/DataScience/JupyterNotebooks#_table-of-contents" >}})
 
 To navigate through your notebook, open the File Explorer in the Activity bar. Then open the **Outline** tab in the Side bar.
 
@@ -292,7 +292,7 @@ To navigate through your notebook, open the File Explorer in the Activity bar. T
 >
 > ​​	注意：默认情况下，大纲只会显示 Markdown。若要显示代码单元格，请启用以下设置：笔记本 > 大纲：显示代码单元格。
 
-## [IntelliSense support in the Jupyter Notebook Editor Jupyter Notebook 编辑器中的 IntelliSense 支持](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_intellisense-support-in-the-jupyter-notebook-editor)
+## [IntelliSense support in the Jupyter Notebook Editor Jupyter Notebook 编辑器中的 IntelliSense 支持]({{< ref "/DataScience/JupyterNotebooks#_intellisense-support-in-the-jupyter-notebook-editor" >}})
 
 The Python Jupyter Notebook Editor window has full IntelliSense – code completions, member lists, quick info for methods, and parameter hints. You can be just as productive typing in the Notebook Editor window as you are in the code editor.
 
@@ -300,7 +300,7 @@ The Python Jupyter Notebook Editor window has full IntelliSense – code complet
 
 ![IntelliSense support](https://code.visualstudio.com/assets/docs/datascience/jupyter/intellisense.png)
 
-## [Variable Explorer and Data Viewer 变量资源管理器和数据查看器](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_variable-explorer-and-data-viewer)
+## [Variable Explorer and Data Viewer 变量资源管理器和数据查看器]({{< ref "/DataScience/JupyterNotebooks#_variable-explorer-and-data-viewer" >}})
 
 Within a Python Notebook, it's possible to view, inspect, sort, and filter the variables within your current Jupyter session. By selecting the **Variables** icon in the main toolbar after running code and cells, you'll see a list of the current variables, which will automatically update as variables are used in code. The variables pane will open at the bottom of the notebook.
 
@@ -310,7 +310,7 @@ Within a Python Notebook, it's possible to view, inspect, sort, and filter the v
 
 ![Variable Explorer](https://code.visualstudio.com/assets/docs/datascience/jupyter/variable-explorer-02.png)
 
-### [Data Viewer 数据查看器](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_data-viewer)
+### [Data Viewer 数据查看器]({{< ref "/DataScience/JupyterNotebooks#_data-viewer" >}})
 
 For additional information about your variables, you can also double-click a row or use the **Show variable in data viewer** button next to the variable for a more detailed view of a variable in the Data Viewer.
 
@@ -318,7 +318,7 @@ For additional information about your variables, you can also double-click a row
 
 ![Data Viewer](https://code.visualstudio.com/assets/docs/datascience/jupyter/data-viewer.png)
 
-### [Filtering rows 过滤行](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_filtering-rows)
+### [Filtering rows 过滤行]({{< ref "/DataScience/JupyterNotebooks#_filtering-rows" >}})
 
 Filtering rows in the data viewer can be done by typing in the textbox at the top of each column. Type a string you want to search for and any row that has that string in the column will be found:
 
@@ -338,7 +338,7 @@ More complex filtering can be done by typing a [regular expression](https://deve
 
 ![Data Viewer](https://code.visualstudio.com/assets/docs/datascience/jupyter/filter-regex.png)
 
-## [Saving plots 保存绘图](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_saving-plots)
+## [Saving plots 保存绘图]({{< ref "/DataScience/JupyterNotebooks#_saving-plots" >}})
 
 To save a plot from your notebook, simply hover over the output and select the **Save** icon in the top right.
 
@@ -350,7 +350,7 @@ To save a plot from your notebook, simply hover over the output and select the *
 >
 > ​​	注意：支持使用 matplotlib 和 Altair 创建的绘图的渲染。
 
-## [Custom notebook diffing 自定义笔记本差异](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_custom-notebook-diffing)
+## [Custom notebook diffing 自定义笔记本差异]({{< ref "/DataScience/JupyterNotebooks#_custom-notebook-diffing" >}})
 
 Under the hood, Jupyter Notebooks are JSON files. The segments in a JSON file are rendered as cells that are comprised of three components: input, output, and metadata. Comparing changes made in a notebook using lined-based diffing is difficult and hard to parse. The rich diffing editor for notebooks allows you to easily see changes for each component of a cell.
 
@@ -362,11 +362,11 @@ You can even customize what types of changes you want displayed within your diff
 
 ![Custom notebook diffing](https://code.visualstudio.com/assets/docs/datascience/jupyter/notebook-diffing.png)
 
-To learn more about Git integration within VS Code, visit [Source Control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
+To learn more about Git integration within VS Code, visit [Source Control in VS Code]({{< ref "/SourceControl/Overview" >}}).
 
 ​​	若要详细了解 VS Code 中的 Git 集成，请访问 VS Code 中的源代码管理。
 
-## [Debug a Jupyter Notebook 调试 Jupyter Notebook](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_debug-a-jupyter-notebook)
+## [Debug a Jupyter Notebook 调试 Jupyter Notebook]({{< ref "/DataScience/JupyterNotebooks#_debug-a-jupyter-notebook" >}})
 
 There are two different ways to debug a Jupyter notebook: a simpler mode called "Run by Line", and full debugging mode.
 
@@ -376,7 +376,7 @@ There are two different ways to debug a Jupyter notebook: a simpler mode called 
 >
 > ​​	注意：这两个功能都需要 ipykernel 6+。请参阅此 wiki 页面了解有关安装或升级 ipykernel 的详细信息。
 
-### [Run by Line 按行运行](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_run-by-line)
+### [Run by Line 按行运行]({{< ref "/DataScience/JupyterNotebooks#_run-by-line" >}})
 
 Run by Line lets you execute a cell one line at a time, without being distracted by other VS Code debug features. To start, select the **Run by Line** button in the cell toolbar:
 
@@ -388,7 +388,7 @@ Use the same button to advance by one statement. You can select the cell **Stop*
 
 ​​	使用相同的按钮逐个语句前进。您可以选择单元格“停止”按钮提前停止，或选择工具栏中的“继续”按钮继续运行到单元格末尾。
 
-### [Debug Cell 调试单元格](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_debug-cell)
+### [Debug Cell 调试单元格]({{< ref "/DataScience/JupyterNotebooks#_debug-cell" >}})
 
 If you want to use the full set of debugging features supported in VS Code, such as breakpoints and the ability to step in to other cells and modules, you can use the full VS Code debugger.
 
@@ -403,7 +403,7 @@ If you want to use the full set of debugging features supported in VS Code, such
 
 ![Debug cell button](https://code.visualstudio.com/assets/docs/datascience/jupyter/debug-cell.png)
 
-### [Search through notebook 在笔记本中搜索](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_search-through-notebook)
+### [Search through notebook 在笔记本中搜索]({{< ref "/DataScience/JupyterNotebooks#_search-through-notebook" >}})
 
 You can search through a notebook (or parts of it by filtering the search options) by using the keyboard shortcut Ctrl/Cmd + F. Click the Filter option (funnel icon) to search across:
 
@@ -424,7 +424,7 @@ Notebook searches are filtered cell inputs only by default.
 
 ![Search options](https://code.visualstudio.com/assets/docs/datascience/jupyter/search-filter.png)
 
-## [Connect to a remote Jupyter server 连接到远程 Jupyter 服务器](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_connect-to-a-remote-jupyter-server)
+## [Connect to a remote Jupyter server 连接到远程 Jupyter 服务器]({{< ref "/DataScience/JupyterNotebooks#_connect-to-a-remote-jupyter-server" >}})
 
 You can offload intensive computation in a Jupyter Notebook to other computers by connecting to a remote Jupyter server. Once connected, code cells run on the remote server rather than the local computer.
 
@@ -462,9 +462,9 @@ To connect to a remote Jupyter server:
 >
 > ​​	注意：为了增加安全性，Microsoft 建议使用 SSL 和令牌支持等安全预防措施来配置 Jupyter 服务器。这有助于确保发送到 Jupyter 服务器的请求经过身份验证，并且与远程服务器的连接已加密。有关保护笔记本服务器安全的指导，请参阅 Jupyter 文档。
 
-## [Data Science profile template 数据科学配置文件模板](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_data-science-profile-template)
+## [Data Science profile template 数据科学配置文件模板]({{< ref "/DataScience/JupyterNotebooks#_data-science-profile-template" >}})
 
-[Profiles](https://code.visualstudio.com/docs/editor/profiles) let you quickly switch your extensions, settings, and UI layout depending on your current project or task. To help you get started with Jupyter Notebooks, you can use the [Data Science profile template](https://code.visualstudio.com/docs/editor/profiles#_data-science-profile-template), which is a curated profile with useful extensions, settings, and snippets. You can use a profile template as is or use it as a starting point to customize further for you own workflows.
+[Profiles]({{< ref "/UserGuide/Profiles" >}}) let you quickly switch your extensions, settings, and UI layout depending on your current project or task. To help you get started with Jupyter Notebooks, you can use the [Data Science profile template]({{< ref "/UserGuide/Profiles#_data-science-profile-template" >}}), which is a curated profile with useful extensions, settings, and snippets. You can use a profile template as is or use it as a starting point to customize further for you own workflows.
 
 ​​	配置文件允许您根据当前项目或任务快速切换扩展、设置和 UI 布局。为了帮助您开始使用 Jupyter Notebooks，您可以使用 Data Science 配置文件模板，这是一个经过策划的配置文件，其中包含有用的扩展、设置和代码段。您可以按原样使用配置文件模板，也可以将其用作起点，以便进一步自定义以适应您自己的工作流。
 

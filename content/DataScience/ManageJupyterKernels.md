@@ -33,11 +33,11 @@ To see other kernels, you can click **Select Another Kernel...**. All existing k
 ​​	要查看其他内核，可以单击“选择其他内核...”。所有现有内核都归类为内核源选项，Jupyter 扩展开箱即用地支持这些源：
 
 - [Jupyter Kernels
-  Jupyter 内核](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_jupyter-kernels)
+  Jupyter 内核]({{< ref "/DataScience/ManageJupyterKernels#_jupyter-kernels" >}})
 - [Python Environments
-  Python 环境](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_python-environments)
+  Python 环境]({{< ref "/DataScience/ManageJupyterKernels#_python-environments" >}})
 - [Existing Jupyter Server
-  现有 Jupyter 服务器](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_existing-jupyter-server)
+  现有 Jupyter 服务器]({{< ref "/DataScience/ManageJupyterKernels#_existing-jupyter-server" >}})
 
 ![Notebook Kernel Picker](./ManageJupyterKernels_img/noterbook-kernel-picker.gif)
 
@@ -45,13 +45,13 @@ By default, VS Code will recommend the one you've previously used with your note
 
 ​​	默认情况下，VS Code 会推荐您之前在笔记本中使用过的内核，但您可以选择连接到任何其他 Jupyter 内核，如下所示。VS Code 还将记住您为笔记本选择的最后一个内核，并在您下次打开笔记本时自动选择该内核。
 
-## [Jupyter Kernels Jupyter 内核](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_jupyter-kernels)
+## [Jupyter Kernels Jupyter 内核]({{< ref "/DataScience/ManageJupyterKernels#_jupyter-kernels" >}})
 
 The **Jupyter Kernels** category lists all Jupyter kernels that VS Code detects in the context of the compute system it's operating in (your desktop, [GitHub Codespaces](https://github.com/features/codespaces), remote server, etc.). Each Jupyter kernel has a Jupyter [kernel specification](https://jupyter-client.readthedocs.io/en/stable/kernels.html#kernel-specs), or Jupyter kernelspec, which contains a JSON file (`kernel.json`) with details about the kernel—name, description, and CLI information required to launch a process as a kernel.
 
 ​​	Jupyter Kernels 类别列出 VS Code 在其运行的计算系统（您的桌面、GitHub Codespaces、远程服务器等）的上下文中检测到的所有 Jupyter 内核。每个 Jupyter 内核都有一个 Jupyter 内核规范，或 Jupyter kernelspec，其中包含一个 JSON 文件 ( `kernel.json` )，其中包含有关内核的详细信息，包括名称、说明和启动进程作为内核所需的 CLI 信息。
 
-## [Python Environments Python 环境](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_python-environments)
+## [Python Environments Python 环境]({{< ref "/DataScience/ManageJupyterKernels#_python-environments" >}})
 
 The **Python Environments** category lists the Python environments that VS Code detects from the compute system it's operating in (your desktop, Codespaces, remote server, etc.). It shows all Python environments grouped by type (for example, conda, venv)—whether the [IPyKernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) is installed or not.
 
@@ -61,7 +61,7 @@ The **Python Environments** category lists the Python environments that VS Code 
 >
 > ​​	注意：您无需将 jupyter 安装到要使用的 Python 环境中。只需 IPyKernel 包即可启动 Python 进程作为内核，并针对您的笔记本执行代码 ( `pip install ipykernel` )。访问 Jupyter 扩展 wiki 以了解更多信息。
 
-## [Existing Jupyter Server 现有 Jupyter 服务器](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_existing-jupyter-server)
+## [Existing Jupyter Server 现有 Jupyter 服务器]({{< ref "/DataScience/ManageJupyterKernels#_existing-jupyter-server" >}})
 
 The **Existing Jupyter Server** category lists remote Jupyter servers previously connected. You can also use this option to connect to an existing Jupyter server running remotely or locally. Find the URL for your Jupyter server, for example, `http://<ip-address>:<port>/?token=<token>` and paste it in the **Enter the URL of the running Jupyter server** option to connect to the remote server and execute code against your notebook using that server.
 
@@ -95,7 +95,7 @@ You can create a new session from the server's kernelspec by:
 4. Select your server.
    选择您的服务器。
 
-## [Codespaces Jupyter Server Codespaces Jupyter 服务器](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_codespaces-jupyter-server)
+## [Codespaces Jupyter Server Codespaces Jupyter 服务器]({{< ref "/DataScience/ManageJupyterKernels#_codespaces-jupyter-server" >}})
 
 The **Connect to Codespace** category contains a special type of Jupyter server where you can use remote Jupyter servers powered by [GitHub Codespaces](https://docs.github.com/codespaces/overview), a cloud resource that you get [up to 60 hours free](https://github.com/features/codespaces) each month. To use the Codespaces Jupyter server:
 
@@ -125,7 +125,7 @@ It is not required, but you can also manage all your Codespaces and Codespaces J
 
 ​​	这不是必需的，但您还可以在 GitHub Codespaces 页面上管理您的所有 Codespaces 和 Codespaces Jupyter 服务器。要了解更多信息，您可以阅读 GitHub Codespaces 文档。
 
-## [Adding Kernel Options 添加内核选项](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_adding-kernel-options)
+## [Adding Kernel Options 添加内核选项]({{< ref "/DataScience/ManageJupyterKernels#_adding-kernel-options" >}})
 
 If you do not have any Jupyter kernel or Python environment on your machine, VS Code can help you set up: go to the Command Palette (Ctrl+Shift+P), select **Python: Create Environment**, and follow the prompts. You can also add additional ways to select kernels, by installing additional extensions like [Azure Machine Learning](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vscode-ai).
 
@@ -133,7 +133,7 @@ If you do not have any Jupyter kernel or Python environment on your machine, VS 
 
 ![More Kernel Sources](./ManageJupyterKernels_img/more-kernel-sources.png)
 
-## [Questions or feedback 问题或反馈](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_questions-or-feedback)
+## [Questions or feedback 问题或反馈]({{< ref "/DataScience/ManageJupyterKernels#_questions-or-feedback" >}})
 
 You can add a [feature request](https://github.com/microsoft/vscode-jupyter/issues/new?assignees=&labels=feature-request&template=3_feature_request.md) or [report a problem](https://github.com/microsoft/vscode-jupyter/issues/new?assignees=&labels=bug&template=1_bug_report.md) by creating an issue in our repository, which is actively being monitored and managed by our engineering team.
 

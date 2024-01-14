@@ -18,9 +18,9 @@ NuGet is the package manager for .NET. It defines how packages for .NET are crea
 
 ​​​	NuGet 是 .NET 的包管理器。它定义了 .NET 包的创建、托管和使用方式，并为每个角色提供工具。重要的是，NuGet 还代表项目管理依赖项树，因此您只需关注在项目中直接使用的包即可。有关详细信息，请转到 NuGet 文档。
 
-## [Dependency management 依赖管理](https://code.visualstudio.com/docs/csharp/package-management#_dependency-management)
+## [Dependency management 依赖管理]({{< ref "/C#/PackageManagement#_dependency-management" >}})
 
-### [Automatic NuGet restore 自动 NuGet 还原](https://code.visualstudio.com/docs/csharp/package-management#_automatic-nuget-restore)
+### [Automatic NuGet restore 自动 NuGet 还原]({{< ref "/C#/PackageManagement#_automatic-nuget-restore" >}})
 
 For a .NET project, a package restore happens automatically when you create a project from a template, build, load, or make changes to an SDK-style project.
 

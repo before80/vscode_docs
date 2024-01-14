@@ -14,7 +14,7 @@ draft = false
 
 
 
-Visual Studio Code is a source code editor first and foremost with rich editing [features](https://code.visualstudio.com/docs/editor/codebasics). In this document, we will go through a few Java-specific features, which are helpful when working with Java.
+Visual Studio Code is a source code editor first and foremost with rich editing [features]({{< ref "/UserGuide/BasicEditing" >}}). In this document, we will go through a few Java-specific features, which are helpful when working with Java.
 
 ​​​	Visual Studio Code 首先是一款具有丰富编辑功能的源代码编辑器。在本文档中，我们将介绍一些特定于 Java 的功能，这些功能在使用 Java 时非常有用。
 
@@ -22,19 +22,19 @@ If you run into any issues when using the features below, you can contact us by 
 
 ​​​	如果您在使用以下功能时遇到任何问题，可以通过输入问题与我们联系。
 
-## [Code navigation 代码导航](https://code.visualstudio.com/docs/java/java-editing#_code-navigation)
+## [Code navigation 代码导航]({{< ref "/Java/NavigateandEdit#_code-navigation" >}})
 
-With the [Outline view](https://code.visualstudio.com/docs/getstarted/userinterface#_outline-view), you can conveniently navigate the members within the current file. [Projects view](https://code.visualstudio.com/docs/java/java-project#_projects-view) also provide a great overview of your project. As a Java editor, it also supports Call Hierarchy, Type Hierarchy, Definition Navigation, Search Types in Workspace, etc.
+With the [Outline view]({{< ref "/GetStarted/UserInterface#_outline-view" >}}), you can conveniently navigate the members within the current file. [Projects view]({{< ref "/Java/ProjectManagement#_projects-view" >}}) also provide a great overview of your project. As a Java editor, it also supports Call Hierarchy, Type Hierarchy, Definition Navigation, Search Types in Workspace, etc.
 
 ​​​	借助“轮廓”视图，您可以方便地浏览当前文件中的成员。“项目”视图还提供了项目的出色概览。作为 Java 编辑器，它还支持调用层次结构、类型层次结构、定义导航、在工作区中搜索类型等。
 
-## [Search for symbols 搜索符号](https://code.visualstudio.com/docs/java/java-editing#_search-for-symbols)
+## [Search for symbols 搜索符号]({{< ref "/Java/NavigateandEdit#_search-for-symbols" >}})
 
 You can search for symbols in the current file or workspace to navigate your code more quickly.
 
 ​​​	您可以在当前文件或工作区中搜索符号，以便更快地浏览代码。
 
-### [Search for symbols in the workspace 在工作区中搜索符号](https://code.visualstudio.com/docs/java/java-editing#_search-for-symbols-in-the-workspace)
+### [Search for symbols in the workspace 在工作区中搜索符号]({{< ref "/Java/NavigateandEdit#_search-for-symbols-in-the-workspace" >}})
 
 To search for a symbol in the current workspace, start by pressing Ctrl+T, then enter the name of the symbol. A list of potential matches will appear as before. If you choose a match that was found in a file that's not already open, the file will be opened before navigating to the match's location. Alternatively, you can also use **Quick Open** (Ctrl+P) then enter the '#' command to search the current workspace. Ctrl+T is just the shortcut for the '#' commands, so everything works the same.
 
@@ -44,7 +44,7 @@ To search for a symbol in the current workspace, start by pressing Ctrl+T, then 
 
 
 
-### [Search for symbols in current file 在当前文件中搜索符号](https://code.visualstudio.com/docs/java/java-editing#_search-for-symbols-in-current-file)
+### [Search for symbols in current file 在当前文件中搜索符号]({{< ref "/Java/NavigateandEdit#_search-for-symbols-in-current-file" >}})
 
 To search for a symbol in the current file, use **Quick Open** (Ctrl+P) then enter the '@' command, then enter the name of the symbol you're looking for. A list of potential matches will appear and be filtered as you type. Choose from the list of matches to navigate to its location.
 
@@ -54,7 +54,7 @@ To search for a symbol in the current file, use **Quick Open** (Ctrl+P) then ent
 
 
 
-## [Peek Definition 查看定义](https://code.visualstudio.com/docs/java/java-editing#_peek-definition)
+## [Peek Definition 查看定义]({{< ref "/Java/NavigateandEdit#_peek-definition" >}})
 
 You can take a quick look at how a symbol was defined by using the Peek Definition feature. This feature displays a few lines of code near the definition inside a peek window, so you can take a look without navigating away from your current location.
 
@@ -64,7 +64,7 @@ To peek at a symbol's definition, place your cursor on the symbol anywhere it's 
 
 ​​​	要查看符号的定义，请将光标放在源代码中使用该符号的任何位置，然后按 Alt+F12。或者，您可以从上下文菜单中选择“查看定义”（右键单击，然后选择“查看定义”）。
 
-## [Go to Definition 转到定义](https://code.visualstudio.com/docs/java/java-editing#_go-to-definition)
+## [Go to Definition 转到定义]({{< ref "/Java/NavigateandEdit#_go-to-definition" >}})
 
 You can also quickly navigate to where a symbol is defined by using the Go to Definition feature.
 
@@ -74,7 +74,7 @@ To go to a symbol's definition, place your cursor on the symbol anywhere it is u
 
 ​​​	要转到符号的定义，请将光标放在源代码中使用该符号的任何位置，然后按 F12。或者，您可以从上下文菜单中选择“转到定义”（右键单击，然后选择“转到定义”）。如果符号只有一个定义，您将直接导航到其位置，否则将在预览窗口中显示竞争定义，如上一节所述，您必须选择要转到的定义。
 
-## [Go to Super Implementation 转到超级实现](https://code.visualstudio.com/docs/java/java-editing#_go-to-super-implementation)
+## [Go to Super Implementation 转到超级实现]({{< ref "/Java/NavigateandEdit#_go-to-super-implementation" >}})
 
 You can keep track of class implementations and overriding methods by clicking the **Go to Super Implementation** link on hover.
 
@@ -86,7 +86,7 @@ You can keep track of class implementations and overriding methods by clicking t
 
 
 
-## [Call Hierarchy 调用层次结构](https://code.visualstudio.com/docs/java/java-editing#_call-hierarchy)
+## [Call Hierarchy 调用层次结构]({{< ref "/Java/NavigateandEdit#_call-hierarchy" >}})
 
 A Call Hierarchy view shows all calls from or to a function and allows you to drill into callers of callers and call of calls. Right-click on a function and select **Peek** > **Peek Call Hierarchy**.
 
@@ -100,7 +100,7 @@ You can also right-click in a function body and pick **Show Call Hierarchy**.
 
 ![Call Hierarchy Menu](./NavigateandEdit_img/call-hierarchy.gif)
 
-## [Type Hierarchy 类型层次结构](https://code.visualstudio.com/docs/java/java-editing#_type-hierarchy)
+## [Type Hierarchy 类型层次结构]({{< ref "/Java/NavigateandEdit#_type-hierarchy" >}})
 
 A Type Hierarchy view shows the inheritance relationships between Java Objects. You can right-click on a type and pick **Show Type Hierarchy**.
 
@@ -110,7 +110,7 @@ A Type Hierarchy view shows the inheritance relationships between Java Objects. 
 
 
 
-## [Folding regions 折叠区域](https://code.visualstudio.com/docs/java/java-editing#_folding-regions)
+## [Folding regions 折叠区域]({{< ref "/Java/NavigateandEdit#_folding-regions" >}})
 
 Folding regions allows you to fold or unfold code snippet to better view the source code.
 
@@ -120,7 +120,7 @@ Folding regions allows you to fold or unfold code snippet to better view the sou
 
 
 
-## [Smart Selection 智能选择](https://code.visualstudio.com/docs/java/java-editing#_smart-selection)
+## [Smart Selection 智能选择]({{< ref "/Java/NavigateandEdit#_smart-selection" >}})
 
 With [Smart Selection](https://code.visualstudio.com/updates/v1_33#_smart-select-api) (semantic selection), you can expand or shrink the selection range based on the semantic information of the caret position in your source code.
 
@@ -135,7 +135,7 @@ With [Smart Selection](https://code.visualstudio.com/updates/v1_33#_smart-select
 
 
 
-## [Semantic Highlighting 语义突出显示](https://code.visualstudio.com/docs/java/java-editing#_semantic-highlighting)
+## [Semantic Highlighting 语义突出显示]({{< ref "/Java/NavigateandEdit#_semantic-highlighting" >}})
 
 Syntax highlighting is an important feature that allows you to read code more efficiently. With the help of [Semantic Highlighting](https://github.com/microsoft/vscode/wiki/Semantic-Highlighting-Overview), VS Code can provide more accurate source code coloring based on symbol information from the Java language service.
 
@@ -151,7 +151,7 @@ You can learn more about the details of Java semantic highlighting on the [Java 
 
 ​​​	您可以在 Java 语言支持扩展 Wiki 上了解有关 Java 语义突出显示的详细信息。
 
-## [Navigating code with Spring Boot 使用 Spring Boot 导航代码](https://code.visualstudio.com/docs/java/java-editing#_navigating-code-with-spring-boot)
+## [Navigating code with Spring Boot 使用 Spring Boot 导航代码]({{< ref "/Java/NavigateandEdit#_navigating-code-with-spring-boot" >}})
 
 The [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot) extension provides enhanced navigation and code completion support for Spring Boot projects.
 
@@ -168,11 +168,11 @@ The [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmwa
 
 ![Spring Navigation](./NavigateandEdit_img/spring-navigation.png)
 
-To learn more about Spring Boot support with Visual Studio Code, read [Spring Boot in Visual Studio Code](https://code.visualstudio.com/docs/java/java-spring-boot).
+To learn more about Spring Boot support with Visual Studio Code, read [Spring Boot in Visual Studio Code]({{< ref "/Java/SpringBoot" >}}).
 
 ​​​	要了解有关 Visual Studio Code 中 Spring Boot 支持的更多信息，请阅读 Visual Studio Code 中的 Spring Boot。
 
-## [Code editing 代码编辑](https://code.visualstudio.com/docs/java/java-editing#_code-editing)
+## [Code editing 代码编辑]({{< ref "/Java/NavigateandEdit#_code-editing" >}})
 
 Editing code is also easy with IntelliSense for smart code completions and signature details. You can use code snippets as well as various code actions such as generating Getters/Setters and organizing imports to further boost your productivity.
 
@@ -190,11 +190,11 @@ Java support in Visual Studio Code detects issues within your code automatically
 
 
 
-For more details about refactoring and code actions, see [Refactoring and Source Actions](https://code.visualstudio.com/docs/java/java-refactoring).
+For more details about refactoring and code actions, see [Refactoring and Source Actions]({{< ref "/Java/Refactoring" >}}).
 
 ​​​	有关重构和代码操作的更多详细信息，请参阅重构和源操作。
 
-## [IntelliSense](https://code.visualstudio.com/docs/java/java-editing#_intellisense)
+## [IntelliSense]({{< ref "/Java/NavigateandEdit#_intellisense" >}})
 
 Code completion in Visual Studio Code for Java is provided by [Language Support for Java™ by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java). The extension is powered by the same [Java development tools (JDT)](https://www.eclipse.org/jdt/) behind Eclipse, so you can expect the same level of support.
 
@@ -212,7 +212,7 @@ IntelliCode works well with popular Java libraries and frameworks like Java SE a
 
 ​​​	IntelliCode 适用于 Java SE 和 Spring 等流行的 Java 库和框架。无论您是进行单体 Web 应用还是现代微服务，它都能为您提供帮助。
 
-## [Create new file 创建新文件](https://code.visualstudio.com/docs/java/java-editing#_create-new-file)
+## [Create new file 创建新文件]({{< ref "/Java/NavigateandEdit#_create-new-file" >}})
 
 VS Code supports applying templates when you create a Java source file. When you create a `.java` file in the File Explorer, the language server will automatically generate the class body, and fill the package info for you:
 
@@ -222,7 +222,7 @@ VS Code supports applying templates when you create a Java source file. When you
 
 
 
-## [Code snippets 代码片段](https://code.visualstudio.com/docs/java/java-editing#_code-snippets)
+## [Code snippets 代码片段]({{< ref "/Java/NavigateandEdit#_code-snippets" >}})
 
 Visual Studio Code supports a wide range of popular Java code snippets to make you more productive, such as class/interface, syserr, sysout, if/else, try/catch, static main method. Using information from Java language server, it also provides a preview of the code snippet during the selection.
 
@@ -241,7 +241,7 @@ The complete list of shortcuts are listed below:
 
 ​​​	完整的快捷方式列表如下：
 
-### [Code snippet shortcuts 代码片段快捷方式](https://code.visualstudio.com/docs/java/java-editing#_code-snippet-shortcuts)
+### [Code snippet shortcuts 代码片段快捷方式]({{< ref "/Java/NavigateandEdit#_code-snippet-shortcuts" >}})
 
 | shortcut key 快捷键               | description                                                  |
 | :-------------------------------- | :----------------------------------------------------------- |
@@ -269,7 +269,7 @@ The complete list of shortcuts are listed below:
 | try_resources                     | Try-with-resources statement try-with-resources 语句         |
 | while                             | While statement while 语句                                   |
 
-### [Postfix snippet shortcuts 后缀代码段快捷方式](https://code.visualstudio.com/docs/java/java-editing#_postfix-snippet-shortcuts)
+### [Postfix snippet shortcuts 后缀代码段快捷方式]({{< ref "/Java/NavigateandEdit#_postfix-snippet-shortcuts" >}})
 
 | shortcut key 快捷键 | template content 模板内容                | description 说明                                             |
 | :------------------ | :--------------------------------------- | :----------------------------------------------------------- |

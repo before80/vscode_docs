@@ -24,11 +24,11 @@ For example, a common refactoring used to avoid duplicating code (a maintenance 
 
 ​​	例如，为了避免重复代码（维护难题），常用的重构是提取方法重构，您可以在其中选择要重用在其他地方的源代码，并将其提取到其自己的共享方法中。
 
-Refactorings are provided by a language service and VS Code has built-in support for TypeScript and JavaScript refactoring through the [TypeScript](https://www.typescriptlang.org/) language service. Refactoring support for other programming languages is provided through VS Code [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace) that contribute language services. The UI and commands for refactoring are the same across languages, and in this topic we'll demonstrate refactoring support with the TypeScript language service.
+Refactorings are provided by a language service and VS Code has built-in support for TypeScript and JavaScript refactoring through the [TypeScript](https://www.typescriptlang.org/) language service. Refactoring support for other programming languages is provided through VS Code [extensions]({{< ref "/UserGuide/ExtensionMarketplace" >}}) that contribute language services. The UI and commands for refactoring are the same across languages, and in this topic we'll demonstrate refactoring support with the TypeScript language service.
 
 ​​	重构由语言服务提供，VS Code 通过 TypeScript 语言服务内置了对 TypeScript 和 JavaScript 重构的支持。其他编程语言的重构支持通过提供语言服务的 VS Code 扩展提供。重构的 UI 和命令在所有语言中都是相同的，在本主题中，我们将演示使用 TypeScript 语言服务进行重构支持。
 
-## [Code Actions = Quick Fixes and refactorings 代码操作 = 快速修复和重构](https://code.visualstudio.com/docs/editor/refactoring#_code-actions-quick-fixes-and-refactorings)
+## [Code Actions = Quick Fixes and refactorings 代码操作 = 快速修复和重构]({{< ref "/UserGuide/Refactoring#_code-actions-quick-fixes-and-refactorings" >}})
 
 In VS Code, Code Actions can provide both refactorings and Quick Fixes for detected issues (highlighted with red squiggles). An available Code Action is announced by a lightbulb near the source code when the cursor is on a squiggle or selected text region. Clicking on the Code Action lightbulb or using the **Quick Fix** command Ctrl+. will display Quick Fixes and refactorings.
 
@@ -38,19 +38,19 @@ If you'd just like to see refactorings without Quick Fixes, you can use the **Re
 
 ​​	如果您只想查看不带快速修复的重构，可以使用重构命令 (Ctrl+Shift+R)。
 
-> **Note:** If you prefer to not see the Code Action lightbulb in your editor, you can disable lightbulbs with the `editor.lightbulb.enable` [setting](https://code.visualstudio.com/docs/getstarted/settings). You can still open Quick Fixes through **Quick Fix** command and Ctrl+. keyboard shortcut.
+> **Note:** If you prefer to not see the Code Action lightbulb in your editor, you can disable lightbulbs with the `editor.lightbulb.enable` [setting]({{< ref "/GetStarted/Settings" >}}). You can still open Quick Fixes through **Quick Fix** command and Ctrl+. keyboard shortcut.
 >
 > ​​	注意：如果您不想在编辑器中看到代码操作灯泡，可以使用 `editor.lightbulb.enable` 设置禁用灯泡。您仍然可以通过快速修复命令和 Ctrl+. 键盘快捷方式打开快速修复。
 
-## [Refactoring actions 重构操作](https://code.visualstudio.com/docs/editor/refactoring#_refactoring-actions)
+## [Refactoring actions 重构操作]({{< ref "/UserGuide/Refactoring#_refactoring-actions" >}})
 
-### [Extract Method 提取方法](https://code.visualstudio.com/docs/editor/refactoring#_extract-method)
+### [Extract Method 提取方法]({{< ref "/UserGuide/Refactoring#_extract-method" >}})
 
 Select the source code you'd like to extract and then click on the lightbulb in the gutter or press (Ctrl+.) to see available refactorings. Source code fragments can be extracted into a new method, or into a new function at various different scopes. During the extract refactoring, you will be prompted to provide a meaningful name.
 
 ​​	选择要提取的源代码，然后单击边距中的灯泡或按 (Ctrl+.) 查看可用的重构。源代码片段可以提取到新方法中，也可以提取到不同范围的新函数中。在提取重构期间，系统会提示您提供一个有意义的名称。
 
-### [Extract Variable 提取变量](https://code.visualstudio.com/docs/editor/refactoring#_extract-variable)
+### [Extract Variable 提取变量]({{< ref "/UserGuide/Refactoring#_extract-variable" >}})
 
 TypeScript language service provides **Extract to const** refactoring to create a new local variable for the currently selected expression:
 
@@ -62,7 +62,7 @@ When working with classes, you can also extract a value to a new property.
 
 ​​	在使用类时，您还可以将值提取到新属性中。
 
-## [Rename symbol 重命名符号](https://code.visualstudio.com/docs/editor/refactoring#_rename-symbol)
+## [Rename symbol 重命名符号]({{< ref "/UserGuide/Refactoring#_rename-symbol" >}})
 
 Renaming is a common operation related to refactoring source code and VS Code has a separate **Rename Symbol** command (F2). Some languages support rename symbol across files. Press F2 and then type the new desired name and press Enter. All usages of the symbol will be renamed, across files.
 
@@ -70,7 +70,7 @@ Renaming is a common operation related to refactoring source code and VS Code ha
 
 ![Rename](./Refactoring_img/rename.png)
 
-## [Keybindings for Code Actions 代码操作的键绑定](https://code.visualstudio.com/docs/editor/refactoring#_keybindings-for-code-actions)
+## [Keybindings for Code Actions 代码操作的键绑定]({{< ref "/UserGuide/Refactoring#_keybindings-for-code-actions" >}})
 
 The `editor.action.codeAction` command lets you configure keybindings for specific Code Actions. This keybinding, for example, triggers the **Extract function** refactoring Code Actions:
 
@@ -142,7 +142,7 @@ This keybinding uses `"preferred": true` to create a refactoring that always tri
 }
 ```
 
-## [Extensions with refactorings 具有重构功能的扩展](https://code.visualstudio.com/docs/editor/refactoring#_extensions-with-refactorings)
+## [Extensions with refactorings 具有重构功能的扩展]({{< ref "/UserGuide/Refactoring#_extensions-with-refactorings" >}})
 
 You can find extensions that support refactoring by looking in the VS Code [Marketplace](https://marketplace.visualstudio.com/vscode). You can go to the Extensions view (Ctrl+Shift+X) and type 'refactor' in the search box. You can then sort by install count or ratings to see which extensions are popular.
 
@@ -186,18 +186,18 @@ TabNine
 >
 > ​​	提示：上面显示的扩展名是动态查询的。单击上面的扩展名磁贴以阅读描述和评论，以决定哪个扩展名最适合您。
 
-## [Next steps 后续步骤](https://code.visualstudio.com/docs/editor/refactoring#_next-steps)
+## [Next steps 后续步骤]({{< ref "/UserGuide/Refactoring#_next-steps" >}})
 
 - [Intro Video - Code Editing](https://code.visualstudio.com/docs/introvideos/codeediting) - Watch an introductory video on code editing features.
   简介视频 - 代码编辑 - 观看有关代码编辑功能的介绍性视频。
-- [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved) - VS Code lets you move quickly through your source code.
+- [Code Navigation]({{< ref "/UserGuide/CodeNavigation" >}}) - VS Code lets you move quickly through your source code.
   代码导航 - VS Code 允许您快速浏览源代码。
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging) - Learn about debugging with VS Code.
+- [Debugging]({{< ref "/UserGuide/Debugging" >}}) - Learn about debugging with VS Code.
   调试 - 了解如何使用 VS Code 进行调试。
 
-## [Common questions 常见问题](https://code.visualstudio.com/docs/editor/refactoring#_common-questions)
+## [Common questions 常见问题]({{< ref "/UserGuide/Refactoring#_common-questions" >}})
 
-### [Why don't I see any lightbulbs when there are errors in my code? 为什么在我的代码中出现错误时看不到任何灯泡？](https://code.visualstudio.com/docs/editor/refactoring#_why-dont-i-see-any-lightbulbs-when-there-are-errors-in-my-code)
+### [Why don't I see any lightbulbs when there are errors in my code? 为什么在我的代码中出现错误时看不到任何灯泡？]({{< ref "/UserGuide/Refactoring#_why-dont-i-see-any-lightbulbs-when-there-are-errors-in-my-code" >}})
 
 Lightbulbs (Code Actions) are only shown when your cursor hovers over the text showing the error. Hovering over the text will show the error description, but you need to move the cursor or select text to see lightbulbs for Quick Fixes and refactorings.
 
